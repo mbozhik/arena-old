@@ -1,13 +1,18 @@
 
 import style from "@/app/Component/home/Footer.module.css";
-// import icon1 from "../../../asset/image/New_Assets/address.png";
-// import icon2 from "../../../asset/image/New_Assets/telephone.png";
-// import icon3 from "../../../asset/image/New_Assets/at.png";
+import social1 from "@/app/Images/facebook.png";
+import social2 from "@/app/Images/youtube.png";
+import social3 from "@/app/Images/linkedin.png";
+import icon1 from "@/app/Images/address.png";
+import icon3 from "@/app/Images/at.png";
+import favIcon from "@/app/Images/favicon.ico";
+import icon2 from "@/app/Images/telephone.png";
+
 // import social1 from "../../../asset/image/New_Assets/facebook.png";
-// import social2 from "../../../asset/image/New_Assets/youtube.png";
-// import social3 from "../../../asset/image/New_Assets/linkedin.png";
-// import favIcon from "../../../asset/image/favicon.ico";
+
+
 import Link from "next/link";
+import Image from "next/image";
 const Footer = () => {
 
   return (
@@ -16,7 +21,7 @@ const Footer = () => {
       <div className={` ${style.footerCard} container mx-auto `}>
         <div className={style.footer_wrapper}>
           <div className={style.footer_wrapper_img}>
-            {/* <img className={style.icon} src={icon1} alt="" /> */}
+            <Image className={style.icon} src={icon1} alt="" />
           </div>
           <div>
             <h5>Address</h5>
@@ -28,7 +33,7 @@ const Footer = () => {
         </div>
         <div className={`${style.phone} ${style.footer_wrapper}`}>
           <div className={style.footer_wrapper_img}>
-            {/* <img className={style.icon} src={icon2} alt="" /> */}
+            <Image className={style.icon} src={icon2} alt="" />
           </div>
 
           <div>
@@ -41,7 +46,7 @@ const Footer = () => {
         </div>
         <div className={style.footer_wrapper}>
           <div className={style.footer_wrapper_img}>
-            {/* <img className={style.icon} src={icon3} alt="" /> */}
+            <Image className={style.icon} src={icon3} alt="" />
           </div>
           <div>
             <h5>Email</h5>
@@ -52,11 +57,11 @@ const Footer = () => {
       <footer className={`${style.footer} `}>
         <div>
           <div className={`position-relative ${style.contactWrapper} `}>
-            {/* <img src={favIcon} alt="" /> */}
-            <h1 className="text-white text-center">Contact Us</h1>
+            <Image src={favIcon} alt="arena" />
+            {/* <h1 className="text-white text-center">Contact Us</h1>
             <p className="text-white text-center pb-5">
               Please contact us to want know more about us.
-            </p>
+            </p> */}
           </div>
           <div className={`${style.footerContainer} container  mx-auto `}>
             <div>
@@ -169,7 +174,7 @@ const Footer = () => {
                 className="text-decoration-none"
               >
                 <div className={style.socialWrapper}>
-                  {/* <img src={social1} alt="facebook icon" /> */}
+                  <Image src={social1} alt="facebook icon" />
                   <span>Facebook</span>
                 </div>
               </a>
@@ -178,7 +183,7 @@ const Footer = () => {
                 className="text-decoration-none"
               >
                 <div className={style.socialWrapper}>
-                  {/* <img src={social2} alt="youtube icon" /> */}
+                  <Image src={social2} alt="youtube icon" />
                   <span>Youtube</span>
                 </div>
               </a>
@@ -187,7 +192,7 @@ const Footer = () => {
                 className="text-decoration-none"
               >
                 <div className={style.socialWrapper}>
-                  {/* <img src={social3} alt="linkedin icon" /> */}
+                  <Image src={social3} alt="linkedin icon" />
                   <span>Linkedin</span>
                 </div>
               </a>
