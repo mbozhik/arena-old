@@ -10,12 +10,12 @@ const Navber = () => {
             </article>
             <nav className="flex justify-center items-center">
                 <ul className="flex text-white  font-semibold gap-x-4">
-                    <li className="hover:text-[#01FF01]"> <Link href='#'>Home</Link></li>
-                    <li className="hover:text-[#01FF01]"><Link href='#'>About</Link></li>
-                    <li className="hover:text-[#01FF01]"><Link href='#'>Courses</Link></li>
-                    <li className="hover:text-[#01FF01]"><Link href='#'>Blog</Link></li>
-                    <li className="hover:text-[#01FF01]"><Link href='#'>Services</Link></li>
-                    <li className="hover:text-[#01FF01]"><Link href='#'>Gallery</Link></li>
+                    <li className="hover:text-[#ffd321]"> <Link href='#'>Home</Link></li>
+                    <li className="hover:text-[#ffd321]"><Link href='#'>About</Link></li>
+                    <li className="hover:text-[#ffd321]"><Link href='#'>Courses</Link></li>
+                    <li className="hover:text-[#ffd321]"><Link href='#'>Blog</Link></li>
+                    <li className="hover:text-[#ffd321]"><Link href='#'>Services</Link></li>
+                    <li className="hover:text-[#ffd321]"><Link href='#'>Gallery</Link></li>
                 </ul>
             </nav>
             <article className="flex justify-center items-center">

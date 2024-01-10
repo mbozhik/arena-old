@@ -25,6 +25,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
     
 }
 /* Home  */
@@ -51,7 +52,7 @@ body {
 }
 .navBtn:hover{
   background-color: #8e7ba8 ;
-  color: #01FF01 !important;
+  color: #ffd321 !important;
   border: none;
   border-radius: 30px;
   padding: 5px 15px !important;
@@ -77,7 +78,7 @@ body {
 }
 .review_animation{
   animation-name:review;
-  animation-duration: 5s;
+  animation-duration: 20s;
   animation-iteration-count:infinite;
   animation-fill-mode: both;
   position: absolute;
@@ -86,18 +87,6 @@ body {
   0%{
     left: 0;
    }
-  /* 15%{
-    left: 25%;
-  }
-  25%{
-    left: 50%;
-  }
-  50%{
-    left: 75%;
-  }
-  75%{
-    left: 50%;
-  }  */
   50%{
     left: 80%;
   }
@@ -105,5 +94,86 @@ body {
     left: 0%;
   }
   
+}
+.Course_parents{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Assuming a 3-column grid layout */
+  justify-content: center;
+  align-items: center;
+}
+.CyberCard{
+  background-image: url('../app/Images/cyber.jpg');
+}
+.CyberCard::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(79, 76, 76, 0.53);
+}
+.PythonCard{
+  background-image: url('../app/Images/python.jpg');
+}
+.Combo{
+  background-image: url('../app/Images/combo.jpg');
+}
+.Combo::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(79, 76, 76, 0.53);
+}
+.Master{
+  background-image: url('../app/Images/MasterClass.jpg');
+}
+.Master::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(79, 76, 76, 0.53);
+}
+.Linax{
+  background-image: url('../app/Images/linax.jpg');
+}
+.Linax::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(79, 76, 76, 0.53);
+}
+.network{
+  background-image: url('../app/Images/network.jpg');
+}
+.network::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(79, 76, 76, 0.53);
+}
+.Int{
+  background-image: url('../app/Images/int.jpg');
+}
+.Int::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(79, 76, 76, 0.53);
 }
 

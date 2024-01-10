@@ -1,0 +1,206 @@
+
+import style from "@/app/Component/home/Footer.module.css";
+// import icon1 from "../../../asset/image/New_Assets/address.png";
+// import icon2 from "../../../asset/image/New_Assets/telephone.png";
+// import icon3 from "../../../asset/image/New_Assets/at.png";
+// import social1 from "../../../asset/image/New_Assets/facebook.png";
+// import social2 from "../../../asset/image/New_Assets/youtube.png";
+// import social3 from "../../../asset/image/New_Assets/linkedin.png";
+// import favIcon from "../../../asset/image/favicon.ico";
+import Link from "next/link";
+const Footer = () => {
+
+  return (
+    <section className={style.parent_container} id="main">
+      {/* <ScrollToTop smooth /> */}
+      <div className={` ${style.footerCard} container mx-auto `}>
+        <div className={style.footer_wrapper}>
+          <div className={style.footer_wrapper_img}>
+            {/* <img className={style.icon} src={icon1} alt="" /> */}
+          </div>
+          <div>
+            <h5>Address</h5>
+            <p>
+              House No-1, BLOCK-B Banasree, <br /> Main Road Rampura, Dhaka -
+              1219
+            </p>
+          </div>
+        </div>
+        <div className={`${style.phone} ${style.footer_wrapper}`}>
+          <div className={style.footer_wrapper_img}>
+            {/* <img className={style.icon} src={icon2} alt="" /> */}
+          </div>
+
+          <div>
+            <h5>Phone</h5>
+            <div>
+              <p>+880 1310 333 444</p>
+              <p>+880 1885 841 489</p>
+            </div>
+          </div>
+        </div>
+        <div className={style.footer_wrapper}>
+          <div className={style.footer_wrapper_img}>
+            {/* <img className={style.icon} src={icon3} alt="" /> */}
+          </div>
+          <div>
+            <h5>Email</h5>
+            <p>info@arenawebsecurity.net</p>
+          </div>
+        </div>
+      </div>
+      <footer className={`${style.footer} `}>
+        <div>
+          <div className={`position-relative ${style.contactWrapper} `}>
+            {/* <img src={favIcon} alt="" /> */}
+            <h1 className="text-white text-center">Contact Us</h1>
+            <p className="text-white text-center pb-5">
+              Please contact us to want know more about us.
+            </p>
+          </div>
+          <div className={`${style.footerContainer} container  mx-auto `}>
+            <div>
+              <h5>Information</h5>
+              <ul className={style.list_wrapper}>
+                <Link href="/about" className="text-decoration-none">
+                  {" "}
+                  <li>About Us</li>
+                </Link>
+                <Link href="/contact" className="text-decoration-none">
+                  {" "}
+                  <li>Contact</li>
+                </Link>
+                <Link href="/faq" className="text-decoration-none">
+                  {" "}
+                  <li>FAQ</li>
+                </Link>
+                <Link href="/career" className="text-decoration-none">
+                  {" "}
+                  <li>Career</li>
+                </Link>
+                <a
+                  href="https://www.hackers.institute/"
+                  className="text-decoration-none"
+                >
+                  {" "}
+                  <li>Blog</li>
+                </a>
+                <Link href="/all-services" className="text-decoration-none">
+                  {" "}
+                  <li>Service</li>
+                </Link>
+                <Link href="/gallery" className="text-decoration-none">
+                  {" "}
+                  <li>Gallery</li>
+                </Link>
+                <Link href="/Privacy-policy" className="text-decoration-none">
+                  {" "}
+                  <li>Privacy Policy</li>
+                </Link>
+              </ul>
+            </div>
+            <div>
+              <h5>Courses</h5>
+              <ul className={style.list_wrapper}>
+                <Link
+                  href="/cyber-security-ethical-hacking"
+                  className="text-decoration-none"
+                >
+                  {" "}
+                  <li>Cyber Security & Ethical Hacking</li>
+                </Link>
+                <Link
+                  href="/advance-python-with-django"
+                  className="text-decoration-none"
+                >
+                  {" "}
+                  <li>Advanced Python & Freelancing</li>
+                </Link>
+                <Link
+                  href="/cyber-security-and-python-course"
+                  className="text-decoration-none"
+                >
+                  {" "}
+                  <li>Cyber Security & Python (Combo)</li>
+                </Link>
+                <Link href="/cosint-course" className="text-decoration-none">
+                  {" "}
+                  <li>C|OSINT</li>
+                </Link>
+                <Link href="/linux-course" className="text-decoration-none">
+                  {" "}
+                  <li>Linux</li>
+                </Link>
+                <Link href="/networking-course" className="text-decoration-none">
+                  {" "}
+                  <li>Networking Security</li>
+                </Link>
+                <Link
+                  href="/advanced-cyber-security-course"
+                  className="text-decoration-none"
+                >
+                  {" "}
+                  <li>CEHF Masterclass</li>
+                </Link>
+              </ul>
+            </div>
+            <div>
+              <h5>Technologies</h5>
+              <ul className={style.list_wrapper}>
+                <li>React</li>
+                <li> Vue Js</li>
+                <li> jQuery</li>
+                <li>Python</li>
+                <li> Node.js</li>
+                <li>SQL</li>
+                <li> MySQL</li>
+                <li> FireBase</li>
+                <li> SQLite</li>
+                <li>Java, Dart, Flutter</li>
+                <li>UI/UX</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className={`  ${style.social} container mx-auto`}>
+            <div className={style.socialContainer}>
+              <a
+                href="https://www.facebook.com/ArenaBangladesh/"
+                className="text-decoration-none"
+              >
+                <div className={style.socialWrapper}>
+                  {/* <img src={social1} alt="facebook icon" /> */}
+                  <span>Facebook</span>
+                </div>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCABV9wzGHQcgyIMP-Vr57tw"
+                className="text-decoration-none"
+              >
+                <div className={style.socialWrapper}>
+                  {/* <img src={social2} alt="youtube icon" /> */}
+                  <span>Youtube</span>
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/arena-web-security"
+                className="text-decoration-none"
+              >
+                <div className={style.socialWrapper}>
+                  {/* <img src={social3} alt="linkedin icon" /> */}
+                  <span>Linkedin</span>
+                </div>
+              </a>
+            </div>
+          </div>
+         
+        </div>
+        <p className="text-center !text-white relative m-0 py-5">
+            Copyright © 2024 All Rights Reserved by Arena Web Security.
+          </p>
+      </footer>
+    </section>
+  );
+};
+
+export default Footer;
