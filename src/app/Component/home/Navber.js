@@ -4,7 +4,7 @@ import Logo from "@/app/Images/Logo.png"
 import Link from "next/link";
 const Navber = () => {
     return (
-        <div className="lg:flex navber px-10">
+        <div className="lg:flex navber px-10 sticky top-0">
             <article>
                 <Image src={Logo} alt="Arena-Logo"/>
             </article>

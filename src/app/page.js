@@ -6,7 +6,6 @@ import Courses from './Component/home/Courses'
 export default function Home() {
   return (
    <div className='overflow-hidden'>
-    <Navber/>
     <Banner/>
     <Courses/>
    </div>
