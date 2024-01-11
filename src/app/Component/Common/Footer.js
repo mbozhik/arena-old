@@ -1,5 +1,5 @@
 
-import style from "@/app/Component/home/Footer.module.css";
+import style from "@/app/Component/Common/Footer.module.css"
 import social1 from "@/app/Images/facebook.png";
 import social2 from "@/app/Images/youtube.png";
 import social3 from "@/app/Images/linkedin.png";

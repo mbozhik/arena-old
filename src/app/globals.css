@@ -176,4 +176,57 @@ body {
   left:0;
   background-color: rgba(79, 76, 76, 0.53);
 }
+/* Services Start */
+.CyberService{
+  background-image: url('../app/Images/sc.png');
+}
+.CyberService::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(27, 26, 26, 0.459);
+}
+.Sof{
+  background-image: url('../app/Images/sof.png');
+}
+.Sof::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(27, 26, 26, 0.459);
+}
+.Net{
+  background-image: url('../app/Images/Networking\ Security.png');
+}
+.Net::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(27, 26, 26, 0.459);
+}
+.Mobile{
+  background-image: url('../app/Images/mobile.jpg');
+}
+.Mobile::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(27, 26, 26, 0.459);
+}
+/* Events */
+.Events{
+  background-image:url('../app/Images/texcer1.png');
+}
 

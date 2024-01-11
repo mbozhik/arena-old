@@ -160,7 +160,7 @@ import ceo from '@/app/Images/ceo.png'
         </CardBody>
       </Card>
       </div>
-      <div className="flex justify-center items-center mx-auto mt-4">
+      {/* <div className="flex justify-center items-center mx-auto mt-4">
       <div className=" grid grid-cols-3  lg:col-span-3 gap-4 lg:col-start-2 ">
       <Card
         shadow={false}
@@ -271,7 +271,7 @@ import ceo from '@/app/Images/ceo.png'
         </CardBody>
       </Card>
       </div>
-      </div>
+      </div> */}
       </div>
     );
   }
