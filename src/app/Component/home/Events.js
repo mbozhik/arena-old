@@ -1,18 +1,22 @@
 import Image from "next/image";
-import event from '@/app/Images/Event.jpg'
-import eventemg from '@/app/Images/eventsimg.png'
+import event from '@/app/Images/Event/Event.jpg'
+import eventemg from '@/app/Images/Event/eventsimg.png'
 const Events = () => {
     return (
         <div className="px-20 lg:mt-16 h-[80vh] bg-[#EBE7F8]  ">
-            <div className="grid grid-cols-6">
-                <div className="lg:col-span-2 ">
-                  <Image src={event} alt="Events" />
+            <div className="grid grid-cols-6 h-full">
+                <div className="lg:col-span-2 h-full relative ">
+                  <Image src={event} alt="Events" className="" fill={true}  />
                 </div>
                 <div className="lg:col-span-4 ">
-                    <article>
-                        <h3 className="lg:text-3xl font-bold pl-5 py-4 ">Upcoming Events</h3>
+                    <article className="py-4 relative pl-5">
+                        <div className="relative">
+                        <h3 className="lg:text-3xl font-bold  pb-2  ">Upcoming Events</h3>
+                        <p className="w-60 bg-[#ffd321] h-[3px]"></p>
+                        </div>
+                       
                     </article>
-                    <div className="lg:-ml-10 flex gap-x-5">
+                    <div className="lg:-ml-10 flex gap-x-5 relative">
                         <article className="Events w-2/6 lg:h-auto bg-white group p-3 rounded-md hover:scale-105 transition duration-500 ease-in-out">
                             <div className="flex justify-between py-6">
                             <p><addr className='font-semibold'>Date :</addr>21-01-22</p>

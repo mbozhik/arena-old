@@ -102,7 +102,7 @@ body {
   align-items: center;
 }
 .CyberCard{
-  background-image: url('../app/Images/cyber.jpg');
+  background-image: url('../app/Images/Course/cyber.jpg');
 }
 .CyberCard::after{
   content: '';
@@ -111,13 +111,22 @@ body {
   height: 100%;
   top:0;
   left:0;
-  background-color: rgba(79, 76, 76, 0.53);
+  background-color: #76599e6e;
 }
 .PythonCard{
-  background-image: url('../app/Images/python.jpg');
+  background-image: url('../app/Images/Course/python.jpg');
+}
+.PythonCard::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: #76599e6e;
 }
 .Combo{
-  background-image: url('../app/Images/combo.jpg');
+  background-image: url('../app/Images/Course/combo.jpg');
 }
 .Combo::after{
   content: '';
@@ -126,10 +135,10 @@ body {
   height: 100%;
   top:0;
   left:0;
-  background-color: rgba(79, 76, 76, 0.53);
+  background-color: #76599e6e;
 }
 .Master{
-  background-image: url('../app/Images/MasterClass.jpg');
+  background-image: url('../app/Images/Course/MasterClass.jpg');
 }
 .Master::after{
   content: '';
@@ -138,10 +147,10 @@ body {
   height: 100%;
   top:0;
   left:0;
-  background-color: rgba(79, 76, 76, 0.53);
+  background-color: #76599e6e;
 }
 .Linax{
-  background-image: url('../app/Images/linax.jpg');
+  background-image: url('../app/Images/Course/linax.jpg');
 }
 .Linax::after{
   content: '';
@@ -150,10 +159,10 @@ body {
   height: 100%;
   top:0;
   left:0;
-  background-color: rgba(79, 76, 76, 0.53);
+  background-color: #76599e6e;
 }
 .network{
-  background-image: url('../app/Images/network.jpg');
+  background-image: url('../app/Images/Course/network.jpg');
 }
 .network::after{
   content: '';
@@ -162,10 +171,10 @@ body {
   height: 100%;
   top:0;
   left:0;
-  background-color: rgba(79, 76, 76, 0.53);
+  background-color: #76599e6e;
 }
 .Int{
-  background-image: url('../app/Images/int.jpg');
+  background-image: url('../app/Images/Course/int.jpg');
 }
 .Int::after{
   content: '';
@@ -174,11 +183,11 @@ body {
   height: 100%;
   top:0;
   left:0;
-  background-color: rgba(79, 76, 76, 0.53);
+  background-color: #76599e6e;
 }
 /* Services Start */
 .CyberService{
-  background-image: url('../app/Images/sc.png');
+  background-image: url('../app/Images/Services/sc.png');
 }
 .CyberService::after{
   content: '';
@@ -187,10 +196,10 @@ body {
   height: 100%;
   top:0;
   left:0;
-  background-color: rgba(27, 26, 26, 0.459);
+  background-color: #76599e6e;
 }
 .Sof{
-  background-image: url('../app/Images/sof.png');
+  background-image: url('../app/Images/Services/sof.png');
 }
 .Sof::after{
   content: '';
@@ -199,10 +208,10 @@ body {
   height: 100%;
   top:0;
   left:0;
-  background-color: rgba(27, 26, 26, 0.459);
+  background-color: #76599e6e;
 }
 .Net{
-  background-image: url('../app/Images/Networking\ Security.png');
+  background-image: url('../app/Images/Services/Networking\ Security.png');
 }
 .Net::after{
   content: '';
@@ -211,10 +220,10 @@ body {
   height: 100%;
   top:0;
   left:0;
-  background-color: rgba(27, 26, 26, 0.459);
+  background-color: #76599e6e;
 }
 .Mobile{
-  background-image: url('../app/Images/mobile.jpg');
+  background-image: url('../app/Images/Services/mobile.jpg');
 }
 .Mobile::after{
   content: '';
@@ -223,10 +232,29 @@ body {
   height: 100%;
   top:0;
   left:0;
-  background-color: rgba(27, 26, 26, 0.459);
+  background-color: #76599e6e;
 }
 /* Events */
 .Events{
-  background-image:url('../app/Images/texcer1.png');
+  background-image:url('../app/Images/Event/texcer1.png');
+}
+/* CourseStatistic  */
+.CourseStatistic{
+  position: relative;
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../app/Images/Static/backFixed.jpg');
+  background-attachment: fixed;
+}
+.CourseStatistic::after{
+  content: '';
+  top:0;
+  left:0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #76599e6e;
 }
 

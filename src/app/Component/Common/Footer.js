@@ -1,12 +1,12 @@
 
 import style from "@/app/Component/Common/Footer.module.css"
-import social1 from "@/app/Images/facebook.png";
-import social2 from "@/app/Images/youtube.png";
-import social3 from "@/app/Images/linkedin.png";
-import icon1 from "@/app/Images/address.png";
-import icon3 from "@/app/Images/at.png";
-import favIcon from "@/app/Images/favicon.ico";
-import icon2 from "@/app/Images/telephone.png";
+import social1 from "@/app/Images/footer/facebook.png";
+import social2 from "@/app/Images/footer/youtube.png";
+import social3 from "@/app/Images/footer/linkedin.png";
+import icon1 from "@/app/Images/footer/address.png";
+import icon3 from "@/app/Images/footer/at.png";
+import favIcon from "@/app/Images/footer/favicon.ico";
+import icon2 from "@/app/Images/footer/telephone.png";
 
 // import social1 from "../../../asset/image/New_Assets/facebook.png";
 

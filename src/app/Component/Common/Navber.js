@@ -1,6 +1,6 @@
 import Image from "next/image";
 import '@/app/globals.css'
-import Logo from "@/app/Images/Logo.png"
+import Logo from "@/app/Images/Banner/Logo.png"
 import Link from "next/link";
 const Navber = () => {
     return (

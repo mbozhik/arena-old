@@ -1,12 +1,23 @@
+import Counter from "../Utility/Counter";
 
 
 const CourseStatistic = () => {
-    return (
-        <div>
-            <h1>Course Statitic</h1>
-            
+ 
+  return (
+    <div className="relative">
+      <div className="CourseStatistic"></div>
+      <div className="absolute left-1/2 top-20 transform -translate-x-1/2 ">
+        <h1 className="font-bold lg:text-3xl text-white">Course Statitic</h1>
+        <p className="lg:w-56 bg-[#ffd321] h-1 "></p>
+      </div>
+      <div className="absolute bottom-0 left-0 w-full ">
+        <div className="bg-transparent w-full h-48">
+            <Counter/>
+       
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default CourseStatistic;

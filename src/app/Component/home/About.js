@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ceo from "@/app/Images/ceo.png";
-import sng from "@/app/Images/ta.png";
+import ceo from "@/app/Images/HomeAbout/ceo.png";
+import sng from "@/app/Images/HomeAbout/ta.png";
 
 const About = () => {
   return (

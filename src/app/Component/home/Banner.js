@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Type from "../Utility/Type";
 import { IoPlayOutline } from "react-icons/io5";
-import bannerImg from '@/app/Images/BannerBg.png'
-import bannerPic from '@/app/Images/BannerPic.png'
+import bannerImg from '@/app/Images/Banner/BannerBg.png'
+import bannerPic from '@/app/Images/Banner/BannerPic.png'
 import { IoMdStar } from "react-icons/io";
 
 const Banner = () => {
