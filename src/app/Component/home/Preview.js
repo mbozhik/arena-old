@@ -5,11 +5,11 @@ import Review from "../Utility/Reviews";
 const Preview = () => {
   return (
     <div className="px-20 lg:mt-16 h-[80vh]   ">
-      <div className="grid grid-cols-6 h-full">
+      <div className="grid grid-cols-6 h-full ">
         <div className="lg:col-span-2 h-full relative  ">
           <Image src={event} alt="Events" className="" fill={true} />
         </div>
-        <div className="lg:col-span-4 ">
+        <div className="lg:col-span-4 h-full  ">
           <article className="pl-5 py-2">
             <div className="relative">
               <h3 className="lg:text-3xl font-bold  pb-2  ">
@@ -26,7 +26,7 @@ const Preview = () => {
               built their own career.
             </p>
           </article>
-          <div>
+          <div className="h-5/6  ">
             <Review />
           </div>
         </div>

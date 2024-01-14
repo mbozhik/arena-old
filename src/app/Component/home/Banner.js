@@ -28,8 +28,8 @@ const Banner = () => {
          <div className="absolute right-[-100px] top-0  h-[100%] ">
          <Image src={bannerImg} alt="Banner" className="h-[100%]"/>
          </div>
-         <div className="absolute right-[-100px] bottom-0 h-[90%] z-0  ">
-         <Image src={bannerPic} alt="Banner" className=" h-full"/>
+         <div className="absolute right-[-100px] bottom-0 h-[90%]  z-0  ">
+         <Image src={bannerPic} alt="Banner" className=" h-full" />
          </div>
        
          <div className=" absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2   bg-red-500 w-2/3">

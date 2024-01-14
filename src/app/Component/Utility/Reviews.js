@@ -28,7 +28,7 @@ import Reviews15 from "@/app/Images/Student_reviews/upwork2.svg";
 
 const Review= () => {
   return (
-    <div className="lg:-ml-10 flex gap-x-5 relative h-full ">
+    <div className="lg:-ml-10 flex gap-x-5 relative  h-full w-full  ">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -46,83 +46,84 @@ const Review= () => {
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         className="mySwiper "
       >
+     
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full  relative ">
           <Image src={Reviews0} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews1} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews2} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews3} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews4} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews5} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews6} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews7} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews8} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews9} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews10} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews11} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews12} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews13} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews14} alt="review"  />
           </div>
         </SwiperSlide>
         <SwiperSlide className="h-full">
-          <div className="h-[600px] relative">
+          <div className="h-full relative">
           <Image src={Reviews15} alt="review"  />
           </div>
         </SwiperSlide>
