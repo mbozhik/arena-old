@@ -31,11 +31,11 @@ import ceo from '@/app/Images/ceo.png'
           <Typography
             variant="h2"
             color="white"
-            className="mb-6 font-bold leading-[1.5] text-white group-hover:text-[#FFA121]  transition duration-[1s] ease-in-out "
+            className="mb-6 font-bold leading-[1.5] text-white group-hover:text-[#FFA121]  transition  ease-in-out "
           >
             Cyber Security & Ethical Hacking
           </Typography>
-          <Typography variant="p" className="mb-4  group-hover:w-full transition-all duration-1000   ease-in-out text-white mt-40 group-hover:mt-0   font-semibold ">
+          <Typography variant="p" className="mb-4  group-hover:w-full   text-white mt-40 group-hover:mt-0   font-semibold ">
           Whether you’re interested in landing your first IT security job, becoming a full-time white hat hacker, or preparing to test the security of your own home network, Arena Web Security offers approachable, hands-on ethical hacking courses to help you keep your networks safe from cyber criminals & make your career at professional marketplace.
           </Typography>
         
