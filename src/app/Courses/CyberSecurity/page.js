@@ -227,22 +227,45 @@ const page = () => {
                 </ul>
               </div>
             </article>
+            <div>
+            <h2 className="font-semibold text-[25px] mt-4">Information</h2>
+                 <div>
+                    <div className="flex gap-3 items-center py-1">
+                      <p className="font-semibold">Duration :</p>
+                      <span>18 weeks (2 Days per week)</span>
+                    </div>
+                  </div>
+                 <div>
+                    <div className="flex gap-3 items-center py-1">
+                      <p className="font-semibold">Course Fee :</p>
+                      <span>BDT 14,000/-</span>
+                    </div>
+                  </div>
+                 <div>
+                    <div className="flex gap-3 items-center py-1">
+                      <p className="font-semibold">	Course Type :</p>
+                      <span>Professional certified course that everyone can avail.</span>
+                    </div>
+                  </div>
           </div>
+          </div>
+         
           <div className="col-span-2 flex justify-end">
             <Image alt="Cyber Security And Ethical Hacking" src={Banner} />
           </div>
         </div>
       </div>
+
+
+
       {/* Teacher Slider */}
       <div className="bg-[#F3F6FA] mt-10 relative">
-        {/* <h1>TEAM Learn from the best techers</h1> */}
         <div>
           <Image src={Review} alt="teachers" className='absolute -top-14 w-40 left-1/2 transform -translate-x-1/2'/>
         </div>
         <h2 className="title lg:text-4xl font-bold drop-shadow-lg py-2 text-center pt-20">
     <span className="title-word title-word-1"> TEAM Learn </span>
     <span className="title-word title-word-2"> from the </span>
-    {/* <span className="title-word title-word-3">my</span> */}
     <span className="title-word title-word-4">techers</span>
   </h2> <div className="pb-10">
         <MentorSlides />
