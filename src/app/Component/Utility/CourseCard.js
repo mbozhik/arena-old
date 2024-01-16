@@ -8,13 +8,15 @@ import {
   } from "@material-tailwind/react";
 import Image from "next/image";
 import ceo from '@/app/Images/ceo.png'
+import Link from "next/link";
     
   export function BackgroundBlogCard() {
     return (
 
         <div className="grid">
             <div className="grid lg:grid-cols-4 gap-4 mt-6 ">
-      <Card
+              <Link href='Courses/CyberSecurity'>
+              <Card
         shadow={false}
         className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]"
       >
@@ -53,6 +55,8 @@ import ceo from '@/app/Images/ceo.png'
            
         </CardBody>
       </Card>
+              </Link>
+   
       <Card
         shadow={false}
         className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]"

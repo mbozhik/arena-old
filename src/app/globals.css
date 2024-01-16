@@ -427,7 +427,7 @@ body {
     #231557 0%,
     #44107a 29%,
     #ff1361 67%,
-    #fff800 100%
+    #231557 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -447,3 +447,80 @@ body {
     background-position: 200% center;
   }
 }
+
+/* Summary tag  */
+.details{
+  position: relative;
+}
+.details .summary{
+  list-style: none;
+  background: linear-gradient(-120deg, #668FC9 50%, #6B82C1 50%);
+  position: relative;
+}
+/* .details[open] .summary {
+  list-style-type: '👇 ';
+  float: right;
+} */
+.summary::after {
+  content: ' +';
+  position: absolute;
+  right:20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.details[open] .summary:after {
+  content: " -";
+}
+
+/* details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    { opacity: 0; margin-left: -50px; }
+  100%  { opacity: 1; margin-left: 0px; }
+} */
+.details[open] summary ~ * {
+  animation: sweep-open .5s ease-in-out;
+}
+
+.details:not([open]) summary ~ * {
+  animation: sweep-close .5s ease-in-out;
+}
+
+@keyframes sweep-open {
+  0%   { opacity: 0; margin-left: -50px; }
+  100% { opacity: 1; margin-left: 0px; }
+}
+
+@keyframes sweep-close {
+  0%   { opacity: 1; margin-left: 0px; }
+  100% { opacity: 0; margin-left: -50px; }
+}
+.waviy {
+  position: relative;
+}
+.waviy span{
+  font-size:30px;
+  color:#231557;
+  font-weight: 700;
+ text-transform: uppercase;
+
+} 
+.waviy .span {
+  position: relative;
+  display: inline-block;
+  /* font-size: 40px;
+  color: #fff; */
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) ;
+    color:#ff1361;
+  }
+}
+
+

@@ -5,7 +5,7 @@ import sng from "@/app/Images/HomeAbout/ta.png";
 const About = () => {
   return (
     <div className="container mx-auto bg-[#F3F6FA] lg:px-10 py-5 -mt-10 z-50 relative rounded-md">
-      <h1 className="text-2xl font-semibold text-[#4aabff]">About US</h1>
+      <h1 className="text-2xl font-semibold text-[#ff1361]">About US</h1>
       <h3 className="text-3xl font-bold pt-3 ">
         World Best Virtual Learnig Network Arena Web Security
       </h3>
