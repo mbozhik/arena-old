@@ -1,11 +1,20 @@
+
 import Image from "next/image";
 import Logo from "@/app/Images/mainLogo.png";
 import ABoutH1 from "../Component/Utility/ABoutH1";
+import Pdf from "./Pdf";
+import CourseStatistic from "../Component/home/CourseStatistic";
+import OurConcern from "../Component/home/OurConcern";
+
+
+
 
 
 const page = () => {
+ 
   return (
-    <div className="h-[90vh] relative ">
+    <div className="h-auto relative ">
+      <div className="relative h-[90vh]">
       <div className="h-3/5 flex justify-center items-center flex-col container mx-auto  ">
         <div>
           <Image
@@ -16,10 +25,10 @@ const page = () => {
           <p className="lg:w-42 bg-[#ffd321] h-[3px] mt-2 "></p>
         </div>
 
-        <div className="mt-5 text-justify">
+        <div className="mt-5 text-justify relative">
         <ABoutH1/>
           
-          <p className="text-justify">
+          <p className="text-justify pt-5">
           Arena Web Security, a distinguished subsidiary of Arena Web
           Technology, stands as a leading IT security firm in Bangladesh, making
           its mark since its inception in 2012. Over the years, Arena Web
@@ -59,8 +68,22 @@ const page = () => {
         <botton className='bg-white px-10 py-2 rounded-full text-[#ffd321] '>Contact Us</botton>
         <botton className='bg-[#76599E] px-10 py-2 rounded-full text-[white] '>Join US Facebook</botton>
       </div>
+      </div>
+      {/* <iframe className="" src={`${AWTBrochure}#view=fitH`} frameBorder="0"
+                                            height="1000px" width="100%"/> */}
+    <div className="px-20 container mx-auto my-5">
+    <Pdf/>
+ 
+    </div>
+    <CourseStatistic/>
+    <OurConcern/>
+   
     </div>
   );
 };
 
 export default page;
+
+
+
+

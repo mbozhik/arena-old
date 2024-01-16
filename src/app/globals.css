@@ -262,20 +262,23 @@ body {
 
 /* Gallery  */
 .gallery{
-  -webkit-column-count: 3;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+  /* -webkit-column-count: 4; 
   -moz-column-count: 3;
   column-count: 3;
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
-  column-width:33%;
-  padding: 0 12px ;
+  -webkit-column-width: 30%;
+  -moz-column-width: 30%;
+  column-width:30%;
+  padding: 0 12px ;  */
 
 }
 .gallery .pics{
   -webkit-transition: all 350ms ease;
   transition:all 350ms ease ;
   cursor: pointer;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
 }
 .gallery .pics:hover{
   filter: opacity(.8);
@@ -334,4 +337,113 @@ body {
   margin: 0 auto;
   max-height: 100%;
 }
+/* About  */
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
 
+.title-word-1 {
+  --color-1: #e67b42;
+  --color-2: #3D8DAE;
+  --color-3: #44107a;
+}
+
+.title-word-2 {
+  --color-1: #dea11b;
+  --color-2: #2d6e66;
+  --color-3: #0f4c51;
+}
+
+.title-word-3 {
+  --color-1: #3dc4b4;
+  --color-2: #44107a;
+  --color-3: #6cd1c5;
+}
+
+.title-word-4 {
+  --color-1: #16a6e4;
+  --color-2: #e25a10;
+  --color-3: #44107a;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-3)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+/* .container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 100vh
+} */
+
+.title {
+  text-transform: uppercase;
+}
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+/* Cyber Security Page  */
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      /* font-size: 190px; */
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

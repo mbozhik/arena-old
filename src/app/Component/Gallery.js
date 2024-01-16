@@ -1,5 +1,4 @@
 'use client'
-
 import img from "@/app/Images/Gallery/aws1.webp"
 import img1 from "@/app/Images/Gallery/aws2.webp"
 import img2 from "@/app/Images/Gallery/aws3.webp"
@@ -36,7 +35,7 @@ const Gallery = () => {
 
             </div>
            
-            <div className={`gallery ${!model?'block':'hidden'}`}>
+            <div className={` ${!model?'block gallery':'hidden'}`}>
                 {
                     data.map((img,index)=>{
                       return(

@@ -24,7 +24,7 @@ import { Fade } from "react-reveal";
           className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
         >
           <div className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/90 from-black/80 via-black/50 group-hover:via-black/80" />
+           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100" />
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
@@ -52,7 +52,7 @@ import { Fade } from "react-reveal";
           className="absolute inset-0 m-0 h-full w-full rounded-none Sof bg-cover bg-center"
         >
           <div className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/90 from-black/80 via-black/50 group-hover:via-black/80" />
+           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100" />
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
@@ -81,7 +81,7 @@ import { Fade } from "react-reveal";
           className="absolute inset-0 m-0 h-full w-full rounded-none Net bg-cover bg-center"
         >
           <div className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/90 from-black/80 via-black/50 group-hover:via-black/80" />
+           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100" />
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
@@ -110,7 +110,7 @@ import { Fade } from "react-reveal";
           className="absolute inset-0 m-0 h-full w-full rounded-none Mobile bg-cover bg-center"
         >
           <div className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/90 from-black/80 via-black/50 group-hover:via-black/80" />
+           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100" />
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
@@ -140,7 +140,7 @@ import { Fade } from "react-reveal";
           className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
         >
           <div className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/90 from-black/80 via-black/50 group-hover:via-black/80" />
+           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100" />
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
@@ -170,7 +170,7 @@ import { Fade } from "react-reveal";
           className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
         >
           <div className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/90 from-black/80 via-black/50 group-hover:via-black/80" />
+           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100" />
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
@@ -199,7 +199,7 @@ import { Fade } from "react-reveal";
           className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
         >
           <div className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/90 from-black/80 via-black/50 group-hover:via-black/80" />
+           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100" />
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
@@ -228,7 +228,7 @@ import { Fade } from "react-reveal";
           className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
         >
           <div className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/90 from-black/80 via-black/50 group-hover:via-black/80" />
+           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100" />
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
@@ -257,7 +257,7 @@ import { Fade } from "react-reveal";
           className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
         >
           <div className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/90 from-black/80 via-black/50 group-hover:via-black/80" />
+           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100" />
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
@@ -286,7 +286,7 @@ import { Fade } from "react-reveal";
           className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
         >
           <div className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/90 from-black/80 via-black/50 group-hover:via-black/80" />
+           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100" />
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
@@ -315,7 +315,7 @@ import { Fade } from "react-reveal";
           className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
         >
           <div className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/90 from-black/80 via-black/50 group-hover:via-black/80" />
+           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100" />
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
