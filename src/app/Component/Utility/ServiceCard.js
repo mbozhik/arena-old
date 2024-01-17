@@ -15,12 +15,12 @@ import { Fade } from "react-reveal";
         
             <Fade left>
             <Card
-        shadow={false}
+        
         className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]"
       >
         <CardHeader
-          floated={false}
-          shadow={false}
+         
+          
           color="transparent"
           className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
         >
@@ -35,7 +35,7 @@ import { Fade } from "react-reveal";
           >
             Cyber Security Consultancy
           </Typography>
-          <Typography variant="p" className="mb-4  group-hover:w-full  text-white   font-semibold ">
+          <Typography variant="paragraph" className="mb-4  group-hover:w-full  text-white   font-semibold ">
           The threats of cyber-attacks are a fact of life and a fact of business. Wipro’s Cyber security and Risk Service can help you stay ahead of the threats and put your customer’s minds at ease. We take an integrated approach to protection that prioritizes not only prevention, but also minimizing risk and controlling loss.
           </Typography>
         
@@ -44,12 +44,12 @@ import { Fade } from "react-reveal";
       </Card>
             </Fade>
             <Card
-        shadow={false}
+        
         className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]"
       >
         <CardHeader
-          floated={false}
-          shadow={false}
+         
+          
           color="transparent"
           className="absolute inset-0 m-0 h-full w-full rounded-none Sof bg-cover bg-center"
         >
@@ -64,7 +64,7 @@ import { Fade } from "react-reveal";
           >
            Software Development
           </Typography>
-          <Typography variant="p" className="mb-4  group-hover:w-full  text-white   font-semibold ">
+          <Typography variant="paragraph" className="mb-4  group-hover:w-full  text-white   font-semibold ">
           Software development services are aimed at designing, engineering, deploying, supporting, and evolving various software types. We are develops quality software services – software consulting, cloud migration, app integration, and more. We serve mid and large enterprises and software product companies across multiple industries.
           </Typography>
         
@@ -73,12 +73,12 @@ import { Fade } from "react-reveal";
       </Card>
       
       <Card
-        shadow={false}
+        
         className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]"
       >
         <CardHeader
-          floated={false}
-          shadow={false}
+         
+          
           color="transparent"
           className="absolute inset-0 m-0 h-full w-full rounded-none Net bg-cover bg-center"
         >
@@ -93,7 +93,7 @@ import { Fade } from "react-reveal";
           >
            Networking Security Service (NSS)
           </Typography>
-          <Typography variant="p" className="mb-4  group-hover:w-full  text-white   font-semibold ">
+          <Typography variant="paragraph" className="mb-4  group-hover:w-full  text-white   font-semibold ">
           Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSL v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X. 509 v3 certificates, and other security standards.
           </Typography>
         
@@ -104,12 +104,12 @@ import { Fade } from "react-reveal";
       
       <Fade right>
       <Card
-        shadow={false}
+        
         className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]"
       >
         <CardHeader
-          floated={false}
-          shadow={false}
+         
+          
           color="transparent"
           className="absolute inset-0 m-0 h-full w-full rounded-none Mobile bg-cover bg-center"
         >
@@ -124,7 +124,7 @@ import { Fade } from "react-reveal";
           >
            Mobile App Development
           </Typography>
-          <Typography variant="p" className="mb-4  group-hover:w-full  text-white   font-semibold ">
+          <Typography variant="paragraph" className="mb-4  group-hover:w-full  text-white   font-semibold ">
           We have leading mobile app developers who always stay up-to-date with the latest technology trends to serving firms across the globe. While our analysts make qualitative and quantitative market study and well-researched forecasts for mobile app market fluctuations, our developers and designers craft stunning for our clients.
           </Typography>
         

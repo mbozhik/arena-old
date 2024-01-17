@@ -7,6 +7,7 @@ const EnrollComponent = () => {
 
   return (
     <div className="waviy drop-shadow-md">
+      <div>
       {letters.map((letter, index) => (
         <span className='span' key={index} style={{'--i': index + 1}}>{letter} </span>
       ))}
@@ -16,6 +17,10 @@ const EnrollComponent = () => {
         <span className='span' key={index} style={{'--i': index + 1}}>{letter} </span>
       ))}
       {/* <addr> an Ethical Hacker</addr> */}
+    </div>
+    <div className="flex justify-center items-center mt-2 "> 
+         <button className="uppercase shadow-2xl px-10 py-3 bg-[#76599E] font-semibold text-white">Enroll Now</button>
+         </div>
     </div>
   );
 };

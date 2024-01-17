@@ -19,7 +19,7 @@ const Pdf = () => {
         frameBorder="0"
         height="1000px"
         width="80%"
-        themeColor="red"
+        // themeColor="red"
       />
     </div>
   );

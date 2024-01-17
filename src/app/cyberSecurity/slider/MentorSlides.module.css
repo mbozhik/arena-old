@@ -15,7 +15,8 @@
   background-color: white;
 
   /* background-image: url('/image/New_Assets/test03.png'); */
-  background-image:url('../../../Images/Event/texcer1.png');
+  /* ../../../Images/Event/texcer1.png */
+  background-image:url('../../Images/Event/texcer1.png');
   border:2px solid #44107a;
   background-repeat: no-repeat;
   background-size: cover;

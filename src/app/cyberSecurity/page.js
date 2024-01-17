@@ -12,6 +12,8 @@ import { FaHandPointRight } from "react-icons/fa";
 import MentorSlides from "./slider/slider";
 import Tanjim from "@/app/Images/TanjimVai.png";
 import EnrollComponent from "@/app/Component/Utility/CyberSecurityEnroll";
+import Outline from "./Outline";
+import { PaymentModal } from "./Payment";
 
 
 const page = () => {
@@ -429,9 +431,14 @@ const page = () => {
       <div className="bg-[#EBE7F8]  flex justify-center items-center mt-10">
         <div className='my-10'>
           <EnrollComponent />
-          <div className="flex justify-center items-center mt-2 ">      <button className="uppercase shadow-2xl px-10 py-3 bg-[#76599E] font-semibold text-white">Enroll Now</button></div>
-    
+         
         </div>
+        </div>
+        <div className="px-20 my-10 ">
+        <Outline/>
+        </div>
+        <div className=" my-10 ">
+        <PaymentModal/>
         </div>
     </Fragment>
   );

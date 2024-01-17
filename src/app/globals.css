@@ -40,6 +40,8 @@ body {
   justify-content: space-between;
   font-family: 'Roboto', sans-serif !important;
   padding: 12px 40px;
+  height: 70px;
+  /* position: relative; */
 }
 .navBtn{
   background-color: white;
@@ -521,6 +523,17 @@ body {
     transform: rotateY(360deg) ;
     color:#ff1361;
   }
+}
+
+/* OutLine Images */
+.OutLineImg::after{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #44107a;
 }
 
 
