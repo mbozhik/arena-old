@@ -56,7 +56,7 @@ import Link from "next/link";
         </article>
       </div>
               </Link>
-   
+   <Link href='/python'>
       <div
         
         className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]"
@@ -99,6 +99,8 @@ import Link from "next/link";
            
         </article>
       </div>
+      </Link>
+      <Link href='/combo'>
       <div
         
         className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]"
@@ -138,6 +140,8 @@ import Link from "next/link";
            
         </article>
       </div>
+      </Link>
+      <Link href='/cehf'>
       <div
         
         className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]"
@@ -177,6 +181,7 @@ import Link from "next/link";
            
         </article>
       </div>
+      </Link>
      
      
      

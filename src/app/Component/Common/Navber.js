@@ -32,7 +32,7 @@ const Navber = () => {
               <li className="hover:text-[#ffd321] cursor-pointer my-1"><Link href='/cehf'>CEHF Masterclass</Link></li>
               <li className="hover:text-[#ffd321] cursor-pointer my-1"><Link href='/cosint'>Certified in Open Source Intelligence (C|OSINT)</Link></li>
               <li className="hover:text-[#ffd321] cursor-pointer my-1"><Link href='/linux'>Linux</Link></li>
-              <li className="hover:text-[#ffd321] cursor-pointer my-1"><Link href='/netwok'>Networking Security</Link></li>
+              <li className="hover:text-[#ffd321] cursor-pointer my-1"><Link href='/network'>Networking Security</Link></li>
               </div>
             </div>
             {/* <ul className=" bg-red-700">
