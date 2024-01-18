@@ -1,29 +1,57 @@
 import Image from "next/image";
 import React, { Fragment } from "react";
-import Cyber from "@/app/Courses/cyber.svg";
 import Banner from "@/app/Courses/banner.webp";
 import CyberSecurityH1 from "@/app/Component/Utility/CyberSecurityH1";
+import Cyber from "@/app/Courses/cyber.svg";
 import Linux from "@/app/Courses/linux.svg";
 import network from "@/app/Courses/networking.svg";
 import doller from "@/app/Courses/doller.svg";
 import intelligence from "@/app/Courses/intelligence.svg";
 import Review from "@/app/Courses/TeacherSliderImages/review.png";
 import { FaHandPointRight } from "react-icons/fa";
-import MentorSlides from "./slider/slider";
 import Tanjim from "@/app/Images/TanjimVai.png";
 import EnrollComponent from "@/app/Component/Utility/CyberSecurityEnroll";
-import Outline from "./Outline";
+import MentorSlides from "../Component/Common/slider/slider";
+import Outline from "../Component/Common/Outline";
 import { PaymentModal } from "./Payment";
 
 
+
 const page = () => {
+  const images=[
+    {
+      original:"/cyber-security1.svg",
+      thumbnail:"/cyber-security1.svg",
+    },
+    {
+      original:"/cyber-security2.svg",
+      thumbnail:"/cyber-security2.svg",
+    },
+    {
+      original:"/cyber-security3.svg",
+      thumbnail:"/cyber-security3.svg",
+    },
+    {
+      original:"/cyber-security4.svg",
+      thumbnail:"/cyber-security4.svg",
+    },
+    {
+      original:"/cyber-security5.svg",
+      thumbnail:"/cyber-security5.svg",
+    },
+    {
+      original:"/cyber-security6.svg",
+      thumbnail:"/cyber-security6.svg",
+    },
+   
+  ]
   return (
     <Fragment>
       <div className="bg-[#EBE7F8] lg:h-[40vh] group">
         <div className="container mx-auto ">
           <article className="flex pt-20 justify-center items-center">
             <div className="w-[80%]">
-              <CyberSecurityH1 />
+              <CyberSecurityH1 title={'Cyber Security & Ethical Hacking'}/>
 
               <p className="text-1xl leading-5 pt-8">
                 Whether you’re interested in landing your first IT security job,
@@ -430,12 +458,12 @@ const page = () => {
       </div>
       <div className="bg-[#EBE7F8]  flex justify-center items-center mt-10">
         <div className='my-10'>
-          <EnrollComponent />
+          <EnrollComponent data={['BECOME','An_ETHICAL','HACKER']} />
          
         </div>
         </div>
         <div className="px-20 my-10 ">
-        <Outline/>
+        <Outline data={images}/>
         </div>
         <div className=" my-10 ">
         <PaymentModal/>

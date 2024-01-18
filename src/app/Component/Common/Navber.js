@@ -24,13 +24,16 @@ const Navber = () => {
             <Link href="/courses " className="hover:text-[#ffd321] absolute pr-6 opacity-0 ">
               Courses
             </Link>
-            <div  className="absolute mt-5 w-96 opacity-150 z-0 bg-[#678cc9cc] py-5 px-10 -translate-y-80 group-hover:translate-y-0 duration-500 ease-in-out transition-all">
-              <li className="hover:text-[#ffd321] cursor-pointer "><Link href='/cyberSecurity'>Cyber Security & Ethical Hacking</Link></li>
-              <li className="hover:text-[#ffd321] cursor-pointer my-1 ">Advanced Python With Freelancing</li>
-              <li className="hover:text-[#ffd321] cursor-pointer my-1">Cyber Security and Advance Python (Combo)</li>
-              <li className="hover:text-[#ffd321] cursor-pointer my-1">Certified in Open Source Intelligence (C|OSINT)</li>
-              <li className="hover:text-[#ffd321] cursor-pointer my-1">Linux</li>
-              <li className="hover:text-[#ffd321] cursor-pointer my-1">Networking Security</li>
+            <div  className="absolute mt-5 w-96 group-hover:h-72  group-hover:opacity-100 h-0 overflow-hidden z-0 bg-[#678cc9cc]   duration-500 ease-in-out transition-all">
+              <div className="py-5 px-10">
+              <li className="hover:text-[#ffd321] cursor-pointer "><Link href='/cybersecurity'>Cyber Security & Ethical Hacking</Link></li>
+              <li className="hover:text-[#ffd321] cursor-pointer my-1 "><Link href='/python'>Advanced Python With Freelancing</Link></li>
+              <li className="hover:text-[#ffd321] cursor-pointer my-1"><Link href='/combo'>Cyber Security and Advance Python (Combo)</Link></li>
+              <li className="hover:text-[#ffd321] cursor-pointer my-1"><Link href='/cehf'>CEHF Masterclass</Link></li>
+              <li className="hover:text-[#ffd321] cursor-pointer my-1"><Link href='/cosint'>Certified in Open Source Intelligence (C|OSINT)</Link></li>
+              <li className="hover:text-[#ffd321] cursor-pointer my-1"><Link href='/linux'>Linux</Link></li>
+              <li className="hover:text-[#ffd321] cursor-pointer my-1"><Link href='/netwok'>Networking Security</Link></li>
+              </div>
             </div>
             {/* <ul className=" bg-red-700">
                        

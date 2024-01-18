@@ -27,12 +27,13 @@ import wespayment from '@/app/courses/payment/westernPayment.jpg'
 
  
 export function PaymentModal() {
-  const [img,setImage]=useState(null)
+  const [img,setImage]=useState('')
   const [open, setOpen] = React.useState(false);
   const handleOpen = (data)=>{
     setImage(data)
     setOpen(!open);
-  } 
+  }
+
   return (
     <div className="bg-[#EBE7F8] px-20 py-20">
     <h2 className="text-2xl font-bold text-center pt-8 pb-4">You can pay via online and offline both. Online process via #Bkash #Nagad #Rocket #Western_Union #EBL.</h2>
