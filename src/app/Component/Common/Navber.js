@@ -53,7 +53,7 @@ const Navber = () => {
       <article className="flex justify-center items-center">
         <ul className="flex text-white font-semibold gap-x-4">
           <li>
-            <Link href="#" className="">
+            <Link href="/admission" className="">
               {" "}
               <span className="navBtn ">Apply Now</span>
             </Link>

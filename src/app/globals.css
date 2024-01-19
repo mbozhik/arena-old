@@ -547,3 +547,47 @@ body {
 }
 
 
+
+/* Application scroll ber */
+.applyCardPadding {
+  padding: 0px 20px 10px 20px;
+  background: #ffffff;
+  border-radius: 2px !important;
+  height: 100%;
+  overflow-y: scroll;
+
+
+
+}
+.applyCardPadding::-webkit-scrollbar {
+  width: 12px;
+}
+
+.applyCardPadding::-webkit-scrollbar-thumb {
+  background-color: #7d58a5;
+  border-radius: 30px;
+}
+
+.applyCardPadding::-webkit-scrollbar-track {
+  background-color: #bfe1f1;
+}
+.applicationTitle{
+  list-style: none;
+  background: linear-gradient(-120deg, #668FC9 50%, #6B82C1 50%);
+  position: relative;
+}
+.admissionSideber{
+  position: relative;
+  background-image: url(../app/admission/admission.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.admissionSideber::after{
+  content: '';
+  background-color: #6e42c0ac;
+  /* background-color: red; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
