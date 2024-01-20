@@ -15,9 +15,9 @@ import Review from "@/app/Courses/TeacherSliderImages/review.png";
 import { FaHandPointRight } from "react-icons/fa";
 import Tanjim from "@/app/Images/TanjimVai.png";
 import EnrollComponent from "@/app/Component/Utility/CyberSecurityEnroll";
-import MentorSlides from "../Component/Common/slider/slider";
+import MentorSlides from "../Component/Common/slider/Slider";
 import Outline from "../Component/Common/Outline";
-import { PaymentModal } from "../cybersecurity/Payment";
+import { PaymentModal } from "../Component/Common/Payment";
 
 
 const page = () => {

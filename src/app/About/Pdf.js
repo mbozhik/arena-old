@@ -15,6 +15,7 @@ const Pdf = () => {
       <iframe
         id="Ifrem"
         style={iframeStyle}
+        sizes="100vw"
         src={`/AWTBrochure.pdf`}
         frameBorder="0"
         height="1000px"

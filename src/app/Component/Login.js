@@ -9,7 +9,7 @@ const Login = () => {
     <div className=" w-[50%]">
       <form className="mt-36 pl-40">
         <h1 className="text-3xl font-bold">Log in</h1>
-        <div class="relative z-0 w-2/3 mb-5 group mt-10">
+        <div className="relative z-0 w-2/3 mb-5 group mt-10">
           <input
             type="email"
             name="floating_email"
@@ -20,12 +20,12 @@ const Login = () => {
           />
           <label
             for="floating_email"
-            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           >
             Email address
           </label>
         </div>
-        <div class="relative z-0 w-2/3 mb-5 group mt-10 ">
+        <div className="relative z-0 w-2/3 mb-5 group mt-10 ">
           {eye ? (
             <input
               type="text"
@@ -48,7 +48,7 @@ const Login = () => {
 
           <label
             for="floating_email"
-            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           >
             Password
           </label>
@@ -70,9 +70,10 @@ const Login = () => {
             Apply Now!
           </Link>
         </p>
-        <button className="w-2/3 bg-purple-700 text-white py-3 rounded-md mt-5">
+        <Link href='profile'> <button className="w-2/3 bg-purple-700 text-white py-3 rounded-md mt-5">
           Log In
-        </button>
+        </button></Link>
+      
       </form>
     </div>
   );

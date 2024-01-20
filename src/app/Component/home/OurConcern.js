@@ -33,17 +33,17 @@ const OurConcern = () => {
         
             >
          
-                    <Image src={img}  style={{ marginRight: '20px' }}  className="rounded-md " alt="ict" width={120} height={120}/>
-                    <Image src={img1}  style={{ marginRight: '20px' }} className="rounded-md" alt="ict"width={120} height={120} />
-                    <Image src={img2}  style={{ marginRight: '20px' }} className="rounded-md" alt="ict"width={120} height={120} />
-                    <Image src={img3} style={{ marginRight: '20px' }}  className="rounded-md" alt="ict"width={120} height={120} />
-                    <Image src={img4} style={{ marginRight: '20px' }} className="rounded-md" alt="ict"width={120} height={120} />
-                    <Image src={img5} style={{ marginRight: '20px' }} className="rounded-md" alt="ict"width={120} height={120} />
-                    <Image src={img6} style={{ marginRight: '20px' }} className="rounded-md" alt="ict"width={120} height={120} />
-                    <Image src={img7} style={{ marginRight: '20px' }} className="rounded-md" alt="ict"width={120} height={120} />
-                    <Image src={img8} style={{ marginRight: '20px' }} className="rounded-md" alt="ict"width={120} height={120} />
-                    <Image src={img9} style={{ marginRight: '20px' }} className="rounded-md" alt="ict"width={120} height={120} />
-                    <Image src={img10} style={{ marginRight: '20px' }} className="rounded-md " alt="ict"width={120} height={120} />
+                    <Image  sizes="100vw" src={img}  style={{ marginRight: '20px' }}  className="rounded-md h-24 w-28 " alt="ict" width='auto' height='auto' />
+                    <Image  sizes="100vw" src={img1}  style={{ marginRight: '20px' }} className="rounded-md h-24 w-28 " alt="ict" width='auto' height='auto' />
+                    <Image  sizes="100vw" src={img2}  style={{ marginRight: '20px' }} className="rounded-md h-24 w-28 " alt="ict" width='auto' height='auto' />
+                    <Image  sizes="100vw" src={img3} style={{ marginRight: '20px' }}  className="rounded-md h-24 w-28 " alt="ict" width='auto' height='auto' />
+                    <Image  sizes="100vw" src={img4} style={{ marginRight: '20px' }} className="rounded-md h-24 w-28 " alt="ict" width='auto' height='auto' />
+                    <Image  sizes="100vw" src={img5} style={{ marginRight: '20px' }} className="rounded-md h-24 w-28 " alt="ict" width='auto' height='auto' />
+                    <Image  sizes="100vw" src={img6} style={{ marginRight: '20px' }} className="rounded-md h-24 w-28 " alt="ict" width='auto' height='auto' />
+                    <Image  sizes="100vw" src={img7} style={{ marginRight: '20px' }} className="rounded-md h-24 w-28 " alt="ict" width='auto' height='auto' />
+                    <Image  sizes="100vw" src={img8} style={{ marginRight: '20px' }} className="rounded-md h-24 w-28 " alt="ict" width='auto' height='auto' />
+                    <Image  sizes="100vw" src={img9} style={{ marginRight: '20px' }} className="rounded-md h-24 w-28 " alt="ict" width='auto' height='auto' />
+                    <Image  sizes="100vw" src={img10} style={{ marginRight: '20px' }} className="rounded-md h-24 w-28 " alt="ict" width='auto' height='auto' />
                     </Marquee>
  
 

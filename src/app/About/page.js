@@ -20,6 +20,9 @@ const page = () => {
           <Image
             alt="Arena Web and Security"
             src={Logo}
+            width="0"
+    height="0"
+    sizes="100vw"
             className="h-20 w-52"
           />
           <p className="lg:w-42 bg-[#ffd321] h-[3px] mt-2 "></p>

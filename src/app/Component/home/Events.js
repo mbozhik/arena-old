@@ -6,7 +6,7 @@ const Events = () => {
         <div className="px-20 lg:mt-16 h-[80vh] bg-[#EBE7F8]  ">
             <div className="grid grid-cols-6 h-full">
                 <div className="lg:col-span-2 h-full relative ">
-                  <Image src={event} alt="Events" className="" fill={true}  />
+                  <Image src={event} alt="Events" className="h-auto w-auto" fill={true} sizes="1000vh" />
                 </div>
                 <div className="lg:col-span-4 ">
                     <article className="py-4 relative pl-5">

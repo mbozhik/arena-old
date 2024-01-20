@@ -14,7 +14,7 @@ import { Fade } from "react-reveal";
             <div className="grid lg:grid-cols-4 gap-4 mt-6 ">
             <Fade bottom delay={200} distance='20%'>
                 <Card
-        
+    
         className="relative grid h-[40rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center"
       >
         <CardHeader

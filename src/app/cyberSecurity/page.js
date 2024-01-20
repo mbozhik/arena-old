@@ -11,9 +11,9 @@ import Review from "@/app/Courses/TeacherSliderImages/review.png";
 import { FaHandPointRight } from "react-icons/fa";
 import Tanjim from "@/app/Images/TanjimVai.png";
 import EnrollComponent from "@/app/Component/Utility/CyberSecurityEnroll";
-import MentorSlides from "../Component/Common/slider/slider";
+import MentorSlides from "../Component/Common/slider/Slider";
 import Outline from "../Component/Common/Outline";
-import { PaymentModal } from "./Payment";
+import { PaymentModal } from "../Component/Common/Payment";
 
 
 
@@ -357,11 +357,11 @@ const page = () => {
                 ভাষায় সেখানে অসংখ্য রিসোর্স পাওয়া যাবে। প্রয়োজন শুধু ধৈর্য্য ও
                 অনুশীলন। আপনি বাংলায় সাজানো রিসোর্স পেতে চাইলে সাইবার ৭১ এর
                 Learn with Cyber 71{" "}
-                <addr className="text-blue-400">
+                <span className="text-blue-400">
                   <a href="https://www.youtube.com/c/LearnwithCyber71">
                     ( লিঙ্কঃ https://www.youtube.com/c/LearnwithCyber71 )
                   </a>
-                </addr>{" "}
+                </span>{" "}
                 এই ইউটিউব চ্যানেলটি সাবস্ক্রাইব করে রাখতে পারেন। বাংলাতে এখানে
                 সাইবার সিকিউরিটি, ইথিক্যাল হ্যাকিং শীর্ষক কয়েকটি ডেমো ক্লাস
                 রয়েছে। বিদেশি কিছু প্রতিষ্ঠান পরীক্ষার মাধ্যমে সাইবার সিকিউরিটি

@@ -24,11 +24,17 @@ const About = () => {
         <Image
           src={ceo}
           alt="Tanjim AL Fahim"
+          width="0"
+          height="0"
+          sizes="100vw"
           className="border-2 border-white h-32 w-32 rounded-full  "
         />
         <div>
         <Image
           src={sng}
+          width="0"
+    height="0"
+    sizes="100vw"
           alt="Tanjim AL Fahim"
           className="border-2 w-40 h-10 border-white   "
         />

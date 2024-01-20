@@ -7,7 +7,7 @@ const Preview = () => {
     <div className="px-20 lg:mt-16 h-[80vh]   ">
       <div className="grid grid-cols-6 h-full ">
         <div className="lg:col-span-2 h-full relative  ">
-          <Image src={event} alt="Events" className="" fill={true} />
+          <Image src={event} alt="Events" className="" fill={true} sizes="1000vh" />
         </div>
         <div className="lg:col-span-4 h-full  ">
           <article className="pl-5 py-2">

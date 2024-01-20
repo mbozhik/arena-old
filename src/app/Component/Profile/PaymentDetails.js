@@ -1,0 +1,63 @@
+import React from 'react';
+
+const PaymentDetails = () => {
+    return (
+        <div className="container mx-auto">
+      <h4 className=' py-3 text-black mt-4   text-3xl font-semibold'>Payment Summary</h4>
+   <div className="relative overflow-x-auto">
+    <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" className="px-6 py-3">
+                Date of Payment
+                </th>
+                <th scope="col" className="px-6 py-3">
+                Payment Type
+                </th>
+                <th scope="col" className="px-6 py-3">
+                Payment Number/Account Number
+                </th>
+                <th scope="col" className="px-6 py-3">
+                Amount
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                   25-05-2023
+                </th>
+                <td className="px-6 py-4">
+                    Bkash
+                </td>
+                <td className="px-6 py-4">
+                    +8801707018322
+                </td>
+                <td className="px-6 py-4">
+                   BDT 2999
+                </td>
+            </tr>
+            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                   
+                </th>
+                <td className="px-6 py-4">
+                   
+                </td>
+                <td className="px-6 py-4 font-semibold text-black text-right">
+                    Due
+                </td>
+                <td className="px-6 py-4 font-semibold text-yellow-800">
+                   BDT 25000
+                </td>
+            </tr>
+          
+        </tbody>
+    </table>
+</div>
+
+      </div>
+    );
+};
+
+export default PaymentDetails;

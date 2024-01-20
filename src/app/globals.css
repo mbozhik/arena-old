@@ -591,3 +591,43 @@ body {
   height: 100%;
   width: 100%;
 }
+/* CourseStatistic  */
+.ProfileImages{
+  position: relative;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../app/Images/profile/profile.svg);
+  /* background-attachment: fixed; */
+}
+.ProfileImages::after{
+  content: '';
+  top:0;
+  left:0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #452d65c3;
+  z-index: 0;
+}
+/* Bkash */
+.bKashImg {
+  padding: 1px 25px 1px 25px;
+  width: 160px !important;
+  height: 60px !important;
+  align-content: center !important;
+  justify-content: center !important;
+  justify-items: center;
+}
+
+.placeholderAmount {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #c2c2c2;
+}
+
+.bKashBackCard {
+  background-color: #FFC0CB !important;
+}
