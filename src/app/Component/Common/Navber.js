@@ -2,8 +2,21 @@ import Image from "next/image";
 import "@/app/globals.css";
 import Logo from "@/app/Images/Banner/Logo.png";
 import Link from "next/link";
-const Navber = () => {
+import Marquee from "react-fast-marquee";
+import NavberData from "@/app/AllDataFatchingFunction/Topber";
+
+const Navber = async() => {
+  const data = await NavberData();
+
   return (
+    <div>
+      <Marquee>
+      Admission going on for <span className="font-bold text-purple-400 px-2">{data[0].batch_schedule_name}</span>course by Arena Web Academy. The class will start on <span className="font-bold text-purple-400 px-2">{data[0].deadline_date_s}</span>
+      Admission going on for <span className="font-bold text-purple-400 px-2">{data[1].batch_schedule_name}</span>course by Arena Web Academy. The class will start on <span className="font-bold text-purple-400 px-2">{data[2].deadline_date_s}</span>
+      Admission going on for <span className="font-bold text-purple-400 px-2">{data[2].batch_schedule_name}</span>course by Arena Web Academy. The class will start on <span className="font-bold text-purple-400 px-2">{data[2].deadline_date_s}</span>
+                                    
+
+      </Marquee>
     <div className="lg:flex navber px-10 sticky top-0">
       <article>
         <Image src={Logo} alt="Arena-Logo" />
@@ -61,6 +74,7 @@ const Navber = () => {
           {/* <li><Link href='#'>Verify Student</Link></li> */}
         </ul>
       </article>
+    </div>
     </div>
   );
 };

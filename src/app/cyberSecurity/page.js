@@ -9,15 +9,18 @@ import doller from "@/app/Courses/doller.svg";
 import intelligence from "@/app/Courses/intelligence.svg";
 import Review from "@/app/Courses/TeacherSliderImages/review.png";
 import { FaHandPointRight } from "react-icons/fa";
-import Tanjim from "@/app/Images/TanjimVai.png";
+// import Tanjim from "@/app/Images/TanjimVai.png";
 import EnrollComponent from "@/app/Component/Utility/CyberSecurityEnroll";
-import MentorSlides from "../Component/Common/slider/Slider";
+import MentorSlides from "../Component/Common/slider/slider";
 import Outline from "../Component/Common/Outline";
-import { PaymentModal } from "../Component/Common/Payment";
+import { PaymentModal } from "./Payment";
+import BannerImage from "../AllDataFatchingFunction/BannerImage";
 
 
 
-const page = () => {
+const page = async () => {
+  const Tanjim=await BannerImage()
+  console.log(Tanjim);
   const images=[
     {
       original:"/cyber-security1.svg",
@@ -357,11 +360,11 @@ const page = () => {
                 ভাষায় সেখানে অসংখ্য রিসোর্স পাওয়া যাবে। প্রয়োজন শুধু ধৈর্য্য ও
                 অনুশীলন। আপনি বাংলায় সাজানো রিসোর্স পেতে চাইলে সাইবার ৭১ এর
                 Learn with Cyber 71{" "}
-                <span className="text-blue-400">
+                <addr className="text-blue-400">
                   <a href="https://www.youtube.com/c/LearnwithCyber71">
                     ( লিঙ্কঃ https://www.youtube.com/c/LearnwithCyber71 )
                   </a>
-                </span>{" "}
+                </addr>{" "}
                 এই ইউটিউব চ্যানেলটি সাবস্ক্রাইব করে রাখতে পারেন। বাংলাতে এখানে
                 সাইবার সিকিউরিটি, ইথিক্যাল হ্যাকিং শীর্ষক কয়েকটি ডেমো ক্লাস
                 রয়েছে। বিদেশি কিছু প্রতিষ্ঠান পরীক্ষার মাধ্যমে সাইবার সিকিউরিটি
@@ -450,8 +453,9 @@ const page = () => {
               </p>
             </details>
           </article>
-          <article className="w-[50%]">
-            <Image alt="Tanjim Al Fahim" src={Tanjim} className="" />
+          <article className="w-[50%] h-full">
+            {/* <img alt="Tanjim Al Fahim" src={Tanjim}   className="" /> */}
+            <Image alt="Tanjim Al Fahim" src={Tanjim} height={1000} width={1000}  className="" />
           </article>
         </div>
         

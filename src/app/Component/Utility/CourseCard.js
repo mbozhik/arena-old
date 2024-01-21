@@ -15,7 +15,7 @@ import Link from "next/link";
 
         <div className="grid">
             <div className="grid lg:grid-cols-4 gap-4 mt-6 ">
-              <Link href='/cyberSecurity'>
+              <Link href='/cybersecurity'>
               <div
         
         className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]"
