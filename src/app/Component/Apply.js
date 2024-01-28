@@ -11,27 +11,31 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Confetti from "react-confetti";
 import NavberData from "../AllDataFatchingFunction/Topber";
+import Registration from "../AllDataFatchingFunction/Registration";
 
 const Apply = (e) => {
   const [sucess, setSucess] = useState(false);
   const [open, setOpen] = useState(false);
-  const [year, setYear] = useState(null);
-  const [month, setMonth] = useState(null);
-  const [day, setDay] = useState(null);
+  const [year, setYear] = useState('Year');
+  const [month, setMonth] = useState('Month');
+  const [day, setDay] = useState('Day');
   const [birth_date, setBirth_date] = useState(null);
   const [course, setCourse] = useState(null);
   const [nationality, setNationality] = useState("Bangladeshi");
   const [gander, setGander] = useState(null);
   const [allcourse, setAllcoures] = useState([]);
   const [copy,setCopy]=useState(false)
-  // for copy present address
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
   const [postal, setPostal] = useState("");
+  const [validNumber,setValidNumber]=useState(null)
+  const [course_title,setCourse_title]=useState(null);
+  const [from_id,setFormId]=useState('')
+  const [pending, setPending] = useState(false);
 
-  console.log(copy);
 
-  // Couse Function Call hare
+
+  // Course Function Call hare
   useEffect(() => {
     NavberData()
       .then((data) => {
@@ -67,24 +71,21 @@ const Apply = (e) => {
   const handleOpen = () => {
     setOpen(!open);
   };
-
+  // Number Validation 
+ const student_mobileOnChange = (event) => {
+    let student_mobiles = event.target.value.replace(/[^0-9+]/g, "");
+    setValidNumber(student_mobiles)
+  }
+ const onChangeCourse=(e)=>{
+  for (var i = 0; i < allcourse.length; i++) {
+    if (allcourse[i]?.batch_schedule_time_id === e) {
+      setCourse_title(allcourse[i]?.batch_schedule_name);
+    }
+  }
+ }
   const RegistationSucess = (e) => {
     e.preventDefault();
-
-    if(!year){
-    console.log(year);
-    }
-    // if (){
-    //   Swal.fire({
-    //       position: 'top-center',
-    //       icon: 'error',
-    //       title: 'For admission you have to pay 1st installment(7000TK).',
-    //       showConfirmButton: false,
-    //       showDenyButton: true,
-    //       denyButtonText: `ok`,
-    //       timer:5000
-    //   });
-    // Create a new FormData with values replaced using the regex
+    // Create a new FormData with empty values replaced throw regex
     let formdata = new FormData(e.target);
     const replaceSticker = (value) =>
       value.replace(
@@ -95,15 +96,70 @@ const Apply = (e) => {
     for (const [key, value] of formdata.entries()) {
       newFormData.append(key, replaceSticker(value));
     }
-    newFormData.append("reg_course ", course);
-    newFormData.append("nationality", nationality);
+    newFormData.append("batch_schedule_time",course);
     newFormData.append("nationality", nationality);
     newFormData.append("birth_date", birth_date);
-    newFormData.append("reg_gender ", gander);
+    newFormData.append("gender", gander);
+    newFormData.append("course_title",course_title);
     let object = Object.fromEntries(newFormData);
-    console.log(object);
-    setSucess(true);
-    setOpen(true);
+  
+    if(gander===null){
+      Swal.fire({
+        position: 'top-center',
+        icon: 'error',
+        title: 'Select a Gander',
+        showConfirmButton: false,
+        showDenyButton: true,
+        denyButtonText: `ok`,
+        timer:2000
+    });
+    }
+    else if(year==='Year'){
+      Swal.fire({
+        position: 'top-center',
+        icon: 'error',
+        title: 'Birth Date Required a Year',
+        showConfirmButton: false,
+        showDenyButton: true,
+        denyButtonText: `ok`,
+        timer:2000
+    });
+    }
+    else if(month==='Month'){
+      Swal.fire({
+        position: 'top-center',
+        icon: 'error',
+        title: 'Birth Date Required a Month',
+        showConfirmButton: false,
+        showDenyButton: true,
+        denyButtonText: `ok`,
+        timer:2000
+    });
+    }
+    else if(day==='Day'){
+      Swal.fire({
+        position: 'top-center',
+        icon: 'error',
+        title: 'Birth Date Required a day',
+        showConfirmButton: false,
+        showDenyButton: true,
+        denyButtonText: `ok`,
+        timer:2000
+    });
+    }
+    else if(course===null){
+      Swal.fire({
+        position: 'top-center',
+        icon: 'error',
+        title: 'Select a Course',
+        showConfirmButton: false,
+        showDenyButton: true,
+        denyButtonText: `ok`,
+        timer:2000
+    });
+    }else{
+  Registration(newFormData,setSucess,setOpen,setFormId,setPending)  
+    }
   };
 
   return (
@@ -118,7 +174,7 @@ const Apply = (e) => {
             Your Registration ID
           </h3>
           <p className="text-1xl text-blue-400">
-            <span>#</span>64654654
+            <span>#</span>{from_id}
           </p>
 
           <p>
@@ -162,6 +218,7 @@ const Apply = (e) => {
                 label="Student Name"
                 size="md"
                 color="indigo"
+                maxLength={255}
               />
             </div>
             <div className="w-full col-span-3">
@@ -172,6 +229,12 @@ const Apply = (e) => {
                 size="md"
                 color="indigo"
                 name="student_mobile"
+                type="text"
+                value={validNumber}
+                onChange={student_mobileOnChange}
+                onInput={(e) =>
+                  (e.target.value = e.target.value.slice(0, 15))
+                }
               />
             </div>
           </div>
@@ -184,7 +247,7 @@ const Apply = (e) => {
                 size="md"
                 type="email"
                 color="indigo"
-                name="student_email"
+                name='student_email'
               />
             </div>
             <div className="w-full col-span-3">
@@ -195,6 +258,7 @@ const Apply = (e) => {
                 size="md"
                 color="indigo"
                 name="fb_id"
+                maxLength={255}
               />
             </div>
           </div>
@@ -208,6 +272,7 @@ const Apply = (e) => {
                 color="indigo"
                 name="present_address"
                 onChange={(e) => setAddress(e.target.value)}
+                maxLength={300}
               />
             </div>
             <div className="w-full col-span-3 grid grid-cols-2 gap-x-2">
@@ -220,6 +285,7 @@ const Apply = (e) => {
                   color="indigo"
                   name="present_city"
                   onChange={(e) => setCity(e.target.value)}
+                  maxLength={50}
                 />
               </div>
               <div className="">
@@ -231,6 +297,7 @@ const Apply = (e) => {
                   color="indigo"
                   name="present_postal"
                   onChange={(e) => setPostal(e.target.value)}
+                  maxLength={15}
                 />
               </div>
             </div>
@@ -249,6 +316,7 @@ const Apply = (e) => {
                 size="md"
                 color="indigo"
                 name="permanent_address"
+                maxLength={300}
               />
             </div>
             <div className="w-full col-span-3 grid grid-cols-2 gap-x-2">
@@ -261,6 +329,7 @@ const Apply = (e) => {
                   color="indigo"
                   name="permanent_city"
                   value={copy ? city : undefined}
+                  maxLength={50}
                 />
               </div>
               <div className="">
@@ -272,6 +341,7 @@ const Apply = (e) => {
                   color="indigo"
                   name="permanent_postal"
                   value={copy ? postal : undefined}
+                  maxLength={15}
                   
                 />
               </div>
@@ -287,8 +357,8 @@ const Apply = (e) => {
                     id="Gander"
                     onChange={(e) => setGander(e)}
                   >
-                    <Option value="Bangladeshi">Male</Option>
-                    <Option value="Others">Female</Option>
+                    <Option value="Male">Male</Option>
+                    <Option value="Female">Female</Option>
                   </Select>
                 </div>
                 <div className="w-full col-span-3  border-b border-[#B0BEC5] grid grid-cols-3 gap-x-2 relative ">
@@ -302,7 +372,7 @@ const Apply = (e) => {
                       setDay(e.target.value);
                       setBirth_date(`${year}-${month}-${e.target.value}`);
                     }}
-                  >
+                  > <option value={'Day'}>Day</option>
                     {Day.map((day, index) => {
                       return (
                         <option key={index} value={day}>
@@ -318,7 +388,7 @@ const Apply = (e) => {
                       setMonth(e.target.value);
                       setBirth_date(`${year}-${e.target.value}-${day}`);
                     }}
-                  >
+                  ><option value={'Month'}>Month</option>
                     {MonthsArray.map((month, index) => {
                       return (
                         <option key={index} value={index + 1}>
@@ -334,7 +404,7 @@ const Apply = (e) => {
                       setYear(e.target.value);
                       setBirth_date(`${e.target.value}-${month}-${day}`);
                     }}
-                  >
+                  ><option value={'Year'}>Year</option>
                     {yearsArray.map((year, index) => {
                       return (
                         <option key={index} value={year}>
@@ -355,6 +425,7 @@ const Apply = (e) => {
                 size="md"
                 color="indigo"
                 name="office_address"
+                maxLength={200}
               />
             </div>
             <div className="w-full col-span-3">
@@ -365,6 +436,7 @@ const Apply = (e) => {
                 size="md"
                 color="indigo"
                 name="nid"
+                maxLength={50}
               />
             </div>
           </div>
@@ -378,7 +450,10 @@ const Apply = (e) => {
                   label="Select a Course *"
                   name="course_title"
                   id="Course"
-                  onChange={(e) => setCourse(e)}
+                  onChange={(e) =>{
+                    setCourse(e);
+                    onChangeCourse(e)
+                  } }
                 >
                   {allcourse &&
                     allcourse?.map((x, index) => {
@@ -401,6 +476,7 @@ const Apply = (e) => {
                 size="md"
                 color="indigo"
                 name="student_occupation"
+                maxLength={100}
               />
             </div>
           </div>
@@ -412,6 +488,7 @@ const Apply = (e) => {
                 size="md"
                 color="indigo"
                 name="varsity_name"
+                maxLength={200}
               />
             </div>
             <div className="w-full col-span-3 grid grid-cols-2 gap-x-2">
@@ -422,6 +499,7 @@ const Apply = (e) => {
                   size="md"
                   color="indigo"
                   name="varsity_dpt"
+                  maxLength={100}
                 />
               </div>
               <div className="">
@@ -431,6 +509,7 @@ const Apply = (e) => {
                   size="md"
                   color="indigo"
                   name="varsity_id"
+                  maxLength={35}
                 />
               </div>
             </div>
@@ -443,6 +522,7 @@ const Apply = (e) => {
                 size="md"
                 color="indigo"
                 name="alt_name"
+                maxLength={255}
               />
             </div>
             <div className="w-full col-span-3 grid grid-cols-2 gap-x-2">
@@ -452,7 +532,9 @@ const Apply = (e) => {
                   label="Mobile"
                   size="md"
                   color="indigo"
+                  type="number"
                   name="alt_mobile"
+                  maxLength={15}
                 />
               </div>
               <div className="">
@@ -462,6 +544,7 @@ const Apply = (e) => {
                   size="md"
                   color="indigo"
                   name="alt_relation"
+                  maxLength={100}
                 />
               </div>
             </div>
@@ -472,6 +555,7 @@ const Apply = (e) => {
             size="md"
             color="indigo"
             name="hobby"
+            maxLength={100}
           />
           <Input
             variant="standard"
@@ -479,13 +563,15 @@ const Apply = (e) => {
             size="md"
             color="indigo"
             name="des_question"
+            maxLength={500}
           />
         </div>
 
         <div className="flex justify-center py-5">
           <button
             type="submit"
-            className="px-8 py-3 bg-deep-purple-600 text-white rounded-lg"
+            className={`px-8 py-3 ${pending?'bg-[#90bde0]':'bg-deep-purple-600'} text-white rounded-lg`}
+            disabled={pending}
           >
             Submit
           </button>

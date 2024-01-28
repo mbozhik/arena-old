@@ -3,16 +3,24 @@ import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
+import StudentLogin from "../AllDataFatchingFunction/Login";
 const Login = () => {
   const [eye, setEye] = useState(false);
+
+  const UserLogin=(e)=>{
+   
+    let formdata = {'email': e.target.email.value, 'password': e.target.password.value};
+    e.preventDefault();
+    StudentLogin(formdata)
+  }
   return (
     <div className=" w-[50%]">
-      <form className="mt-36 pl-40">
+      <form className="mt-36 pl-40" onSubmit={(e) => UserLogin(e)}>
         <h1 className="text-3xl font-bold">Log in</h1>
         <div className="relative z-0 w-2/3 mb-5 group mt-10">
           <input
             type="email"
-            name="floating_email"
+            name="email"
             id="floating_email"
             className="block py-2.5 px-2 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-purple-700 peer"
             placeholder=" "
@@ -29,7 +37,7 @@ const Login = () => {
           {eye ? (
             <input
               type="text"
-              name="floating_email"
+              name="password"
               id="floating_email"
               className="block py-2.5 px-2 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-purple-700 peer"
               placeholder=" "
@@ -38,7 +46,7 @@ const Login = () => {
           ) : (
             <input
               type="password"
-              name="floating_email"
+              name="password"
               id="floating_email"
               className="block py-2.5 px-2 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-purple-700 peer"
               placeholder=" "
@@ -70,9 +78,9 @@ const Login = () => {
             Apply Now!
           </Link>
         </p>
-        <Link href='profile'> <button className="w-2/3 bg-purple-700 text-white py-3 rounded-md mt-5">
+        <button className="w-2/3 bg-purple-700 text-white py-3 rounded-md mt-5" type="submit">
           Log In
-        </button></Link>
+        </button>
       
       </form>
     </div>
