@@ -4,14 +4,33 @@ import { FaEyeSlash } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
 import StudentLogin from "../AllDataFatchingFunction/Login";
+import { useRouter } from 'next/navigation'
+
 const Login = () => {
   const [eye, setEye] = useState(false);
-
-  const UserLogin=(e)=>{
+  const router = useRouter()
+  const UserLogin=async(e)=>{
    
     let formdata = {'email': e.target.email.value, 'password': e.target.password.value};
     e.preventDefault();
-    StudentLogin(formdata)
+   const result= await StudentLogin(formdata);
+   console.log(result);
+     if(result?.status===200 && result?.login===0 || result?.login===2 ){
+      Swal.fire({
+        position: "top-center",
+        icon: "error",
+        title:result.msg,
+        showConfirmButton: false,
+        showDenyButton: true,
+        denyButtonText: `ok`,
+        timer: 2000,
+      });
+     }
+     if(result?.login===1){
+      router.push('/profile');
+    
+     }
+   
   }
   return (
     <div className=" w-[50%]">
