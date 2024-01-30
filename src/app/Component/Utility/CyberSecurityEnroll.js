@@ -4,7 +4,7 @@ const str = data[0];
 const First = str.split('');
 const str2 = data[1];
 const First2 = str2.split('_');
-console.log(First2);
+// console.log(First2);
 const Last =data[data.length - 1]
 const Lastst=Last.split('')
 

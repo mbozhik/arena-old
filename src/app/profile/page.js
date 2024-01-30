@@ -3,7 +3,8 @@ import BkashPayment from "../Component/Common/BkashPyament";
 import PaymentDetails from "../Component/Profile/PaymentDetails";
 import ProfileTime from "../Component/Profile/ProfileTime";
 import Profiledetails from "../Component/Profile/Profiledetails";
-const page = () => {
+const page = async() => {
+ 
   return (
     <div className="relative">
       <div className="ProfileImages relative"></div>

@@ -7,7 +7,7 @@ import { IoMdStar } from "react-icons/io";
 
 const Banner = () => {
   return (
-    <div className="lg:h-[90vh] bg-[#EBE7F8] flex">
+    <div className="lg:h-[90vh] bg-[#EBE7F8] flex ">
       <article className="lg:w-1/2 flex justify-center items-center flex-col lg:px-28">
         <h1 className="lg:text-6xl font-bold drop-shadow-lg text-[#44107a]">Arena Web Security</h1>
       <h3 className="uppercase text-[#ff1361] lg:text-3xl drop-shadow-md font-bold my-4">

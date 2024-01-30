@@ -13,8 +13,8 @@ const Login = () => {
    
     let formdata = {'email': e.target.email.value, 'password': e.target.password.value};
     e.preventDefault();
-   const result= await StudentLogin(formdata);
-   console.log(result);
+   const result= await StudentLogin(formdata,e.target.email.value);
+  //  console.log(result);
      if(result?.status===200 && result?.login===0 || result?.login===2 ){
       Swal.fire({
         position: "top-center",

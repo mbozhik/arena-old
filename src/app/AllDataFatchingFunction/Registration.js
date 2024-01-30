@@ -23,7 +23,7 @@ export default function Registration(data, setOpen, setSuccess,form_id,setPendin
       });
   } catch (error) {
     setPending(false)
-    console.error("An error occurred:", error.message);
+    // console.error("An error occurred:", error.message);
     // Handle errors here
   }
  

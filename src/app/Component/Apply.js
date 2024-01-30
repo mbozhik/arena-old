@@ -42,7 +42,7 @@ const Apply = (e) => {
         setAllcoures(data);
       })
       .catch((error) => {
-        console.error("Error during data fetching:", error.message);
+        // console.error("Error during data fetching:", error.message);
       });
   }, []);
 

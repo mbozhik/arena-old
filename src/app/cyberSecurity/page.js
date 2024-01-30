@@ -20,7 +20,7 @@ import BannerImage from "../AllDataFatchingFunction/BannerImage";
 
 const page = async () => {
   const Tanjim=await BannerImage()
-  console.log(Tanjim);
+  // console.log(Tanjim);
   const images=[
     {
       original:"/cyber-security1.svg",

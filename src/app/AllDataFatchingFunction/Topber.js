@@ -8,6 +8,6 @@ const { default: ApiUrl } = require("./ApiUrl");
      const result= await res.json()
       return result?.data.reverse()
     } catch (error) {
-      console.error('An error occurred:', error.message);
+      // console.error('An error occurred:', error.message);
     }
   }

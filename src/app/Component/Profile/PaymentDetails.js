@@ -1,6 +1,9 @@
+import PaymentHistory from '@/app/AllDataFatchingFunction/PaymentHistory';
 import React from 'react';
 
-const PaymentDetails = () => {
+const PaymentDetails = async() => {
+   const data=await PaymentHistory();
+   console.log(data);
     return (
         <div className="container mx-auto">
       <h4 className=' py-3 text-black mt-4   text-3xl font-semibold'>Payment Summary</h4>

@@ -11,6 +11,7 @@ export default async function Delete() {
         cookies().delete('admission')
         cookies().delete('day_active')
         cookies().delete('create_at')
+        cookies().delete('email')
         revalidatePath('/login') // Update cached posts
         redirect('/login') // Navigate to the new post page
    
