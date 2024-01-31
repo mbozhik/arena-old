@@ -17,6 +17,7 @@ export default async function StudentLogin(data, email) {
         msg: response.data.msg,
         status: response.status,
         login: response.data.login,
+        
       };
     } else if (
       response.status === 200 &&
@@ -54,10 +55,13 @@ export default async function StudentLogin(data, email) {
         { path: "/" },
         { expires: Date.now() - oneDay }
       );
+      
       return {
         msg: response.data.msg,
         status: response.status,
         login: response.data.login,
+        u_id:response.data.u_id,
+        Course_title:response.data.title
       };
     } else if (
       response.status === 200 &&
@@ -83,6 +87,12 @@ export default async function StudentLogin(data, email) {
         { path: "/" },
         { expires: Date.now() - oneDay }
       );
+        // For Bkash payment
+        // localStorage.setItem("u_id", response.data.u_id);
+        // sessionStorage.setItem("u_id", response.data.u_id);
+        // localStorage.setItem("Type", 1);
+        // localStorage.setItem("Course_title",response.data.title);
+        // localStorage.setItem("UserEmail", email);
       return {
         msg: response.data.msg,
         status: response.status,

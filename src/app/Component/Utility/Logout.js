@@ -1,8 +1,10 @@
 'use client'
+import ClearSession from "../Profile/ClearStirage";
 import Delete from "../Profile/Cookies";
 const LogOut = () => {
 const cookiesdelete=()=>{
     Delete()
+    ClearSession()
 }
     return (
         <div>

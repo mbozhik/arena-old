@@ -1,0 +1,85 @@
+.module-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 120px;
+}
+/* absolute top-[-65px] right-[45%] left-[55%] rotate-45 w-24 */
+.down-arrow{
+    position: absolute;
+    top: -45px;
+    right: 45%;
+    left: 55%;
+    transform: rotate(45deg);
+    width: 120px;
+}
+.modules{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.modules div{
+    width: 33.33%;
+    padding: 2px;
+}
+.modules img{
+    border: 1px solid rgb(167, 204, 233);
+}
+.module-btn{
+    /* display: flex;
+    justify-content: center; */
+    text-decoration: none !important;
+    margin: auto;
+    width: 95%;
+}
+.module-btn a{
+    width: 40%;
+}
+.module-btn button{
+    background-color: #ffc417;
+    border-color: #ffc417;
+    color: white;
+    width: 100%;
+    font-family: 'Roboto Slab';
+}
+.module-container h1{
+    font-family: 'Ubuntu';
+}
+@media screen and (max-width:576px) {
+    .module-container{
+        padding-top: 0px;
+    }
+    .modules div{
+        width: 100%;
+        padding: 2px;
+    }
+    .module-btn a{
+        width: 100%;
+    }
+    .down-arrow{
+        display: none;
+    }
+}
+@media screen and (min-width:577px) and (max-width:767px) {
+    .module-container h1{
+        font-size: 7vw;
+    }
+    .modules div{
+        width: 50%;
+        padding: 2px;
+    }
+    .module-btn a{
+        width: 50%;
+    }
+}
+@media screen and (min-width:768px) {
+    .modules div{
+        width: 33.33%;
+        padding: 2px;
+    }
+    .module-btn{
+        display: flex;
+        justify-content: center;
+        text-decoration: none !important;
+    }
+}

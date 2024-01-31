@@ -27,6 +27,12 @@ const Login = () => {
       });
      }
      if(result?.login===1){
+        // For Bkash payment
+        localStorage.setItem("u_id", result.u_id);
+        sessionStorage.setItem("u_id",result.u_id);
+        localStorage.setItem("Type", 1);
+        localStorage.setItem("Course_title",result.Course_title);
+        localStorage.setItem("UserEmail",e.target.email.value);
       router.push('/profile');
     
      }

@@ -19,24 +19,24 @@ import { PaymentModal } from "../Component/Common/Payment";
 const page = () => {
     const images=[
         {
-          original:"/python1.png",
-          thumbnail:"/python1.png",
+          original:"./python/python1.png",
+          thumbnail:"./python/python1.png",
         },
         {
-          original:"/python2.png",
-          thumbnail:"/python2.png",
+          original:"./python/python2.png",
+          thumbnail:"./python/python2.png",
         },
         {
-          original:"/python3.png",
-          thumbnail:"/python3.png",
+          original:"./python/python3.png",
+          thumbnail:"./python/python3.png",
         },
         {
-          original:"/python4.png",
-          thumbnail:"/python4.png",
+          original:"./python/python4.png",
+          thumbnail:"./python/python4.png",
         },
         {
-          original:"/python5.png",
-          thumbnail:"/python5.png",
+          original:"./python/python5.png",
+          thumbnail:"./python/python5.png",
         },
      
     ]

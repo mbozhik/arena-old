@@ -1,0 +1,50 @@
+.about-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.about-container h1{
+    margin-bottom: 30px;
+    font-family: 'Ubuntu';
+}
+.about-parent{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 0px 60px;
+}
+.about-btn{
+    display: flex;
+    justify-content: center;
+}
+.about-btn a{
+    width: 90%;
+}
+.about-btn button{
+    width: 100%;
+    margin-top: 20px;
+    margin: auto;
+    padding: 15px 0px;
+    color: white;
+    background-color: #ffc417;
+    border-color: #ffc417;
+    font-family: 'Roboto Slab';
+}
+@media screen and (max-width:576px) {
+    .about-container h1{
+        font-size: 7vw;
+    }
+}
+@media screen and (max-width:768px) {
+    .about-parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px 0px;
+    }
+}

@@ -16,10 +16,10 @@ bKash.init({
     /* request['amount'] = document.getElementById("tk").value;*/
 
         let Amount=document.getElementById("tk").value;
-        // console.log(Amount);
+        console.log(Amount);
 
         request['amount']=Amount;
-        // console.log('amount = ', request['amount']);
+        console.log('amount = ', request['amount']);
 
         if (request['amount']<500){
             Swal.fire({
@@ -48,7 +48,7 @@ bKash.init({
                     if (data && data.paymentID != null) {
                         paymentID = data.paymentID;
                         bKash.create().onSuccess(data); //pass the whole response data in bKash.create().onSucess() method as a parameter
-                        // console.log(data)
+                        console.log(data)
                     } else {
                         // alert("Payment Failed ", JSON.stringify(data.errorMessage))
                         Swal.fire("Payment Failed ", JSON.stringify(data.errorMessage));

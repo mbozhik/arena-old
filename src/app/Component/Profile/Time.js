@@ -1,11 +1,22 @@
 'use client'
 import { useState } from "react";
 import Delete from "./Cookies";
+import ClearSession from "./ClearStirage";
 const Time = ({CreateDates,activeday}) => {
     const [duration,setDuration]=useState(false);
     if(duration)
     {
+        Swal.fire({
+            title: 'Session Expire ! Please Call The Help Number +88 01324176407',
+            timer: 1000,
+            button: false,
+            timerProgressBar: true,
+            customClass: 'swal-Title',
+        }).then((result) => {
+            ClearSession()
         Delete()
+        })
+        
     }
     const [day,setDay]=useState(0)
     const [houre,setHoure]=useState(0)

@@ -23,28 +23,28 @@ const page = async () => {
   // console.log(Tanjim);
   const images=[
     {
-      original:"/cyber-security1.svg",
-      thumbnail:"/cyber-security1.svg",
+      original:"./cyber-security-course-outline/cyber-security1.svg",
+      thumbnail:"./cyber-security-course-outline/cyber-security1.svg",
     },
     {
-      original:"/cyber-security2.svg",
-      thumbnail:"/cyber-security2.svg",
+      original:"./cyber-security-course-outline/cyber-security2.svg",
+      thumbnail:"./cyber-security-course-outline/cyber-security2.svg",
     },
     {
-      original:"/cyber-security3.svg",
-      thumbnail:"/cyber-security3.svg",
+      original:"./cyber-security-course-outline/cyber-security3.svg",
+      thumbnail:"./cyber-security-course-outline/cyber-security3.svg",
     },
     {
-      original:"/cyber-security4.svg",
-      thumbnail:"/cyber-security4.svg",
+      original:"./cyber-security-course-outline/cyber-security4.svg",
+      thumbnail:"./cyber-security-course-outline/cyber-security4.svg",
     },
     {
-      original:"/cyber-security5.svg",
-      thumbnail:"/cyber-security5.svg",
+      original:"./cyber-security-course-outline/cyber-security5.svg",
+      thumbnail:"./cyber-security-course-outline/cyber-security5.svg",
     },
     {
-      original:"/cyber-security6.svg",
-      thumbnail:"/cyber-security6.svg",
+      original:"./cyber-security-course-outline/cyber-security6.svg",
+      thumbnail:"./cyber-security-course-outline/cyber-security6.svg",
     },
    
   ]

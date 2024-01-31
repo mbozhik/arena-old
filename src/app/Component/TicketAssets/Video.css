@@ -1,0 +1,336 @@
+/* Ticket */
+
+/* Ticekt Video Part */
+.vid-section{
+    /* background-image: url('../../asset/image/TicketAssets/Shapes/bg1.svg'); */
+    background-image: linear-gradient(20deg,#6600ffb5,#00CC99,#6600FF);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+  }
+  .container-cstm{
+    max-width: 1536px!important;
+    margin: auto;
+  }
+  .vid-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 40px;
+  }
+  .vid-alert{
+  background-color: red;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  text-align: center;
+  }
+  .unmute{
+  position: absolute;
+    top: 0;
+    width: 5vw;
+    height: 5vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    border-radius: 5px;
+    opacity: 0.8;
+    max-width: 96px;
+    max-height: 96px;
+  }
+  .unmute2{
+  position: absolute;
+    bottom: 10px ;
+    width: 5vw;
+    height: 5vw;
+    right: 10px;
+    margin:auto;
+    border-radius: 5px;
+    opacity: 0.8;
+    max-width: 96px;
+    max-height: 96px;
+  }
+  .unmute:hover{
+  cursor: pointer;
+  }
+  .all-keys{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+  .all-keys h3{
+  font-family: 'Alkatra';
+  margin-top: 25px;
+  margin-bottom: 12px;
+  }
+  .enroll-btn{
+  width: 100%;
+  
+  }
+  .enroll-btn button{
+  width: 100%;
+  box-shadow: 0px 0px 20px 2px white;
+  padding: 15px 0px;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #ffc417;
+  border-color: #ffc417;
+  margin: auto;
+  }
+  .vid-container h1{
+  font-size: 3vw;
+  font-family: 'Tiro Telugu';
+  font-weight: 900;
+  }
+  .vid-container sub{
+  font-size: 1.5vw;
+  }
+  .vid-container ul{
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  height: 100%;
+  margin-bottom: 0px;
+  }
+  .key, .li{
+  border: 1px solid white;
+  padding: 15px 10px;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0px 0px 10px 0px rgb(255 255 255 / 42%);
+  font-family: 'Montserrat';
+  }
+  .key p, .li p{
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 600;
+  }
+  .li{
+  margin-top: 15px;
+  }
+  .btn-animate{
+    animation: zoom-in-zoom-out 1s ease infinite;
+  }
+  /*Button Animation */
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.05, 1.05);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  /* Responsive start */
+  @media screen and (max-width:576px) {
+  .vid-section{
+    padding:10px 0px;
+  }
+  .vid-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 40px;
+  }
+  .vid-container:nth-child(1){
+    width: 95%;
+    margin: auto;
+  }
+  .unmute{
+    width: 15vw;
+    height: 15vw;
+  }
+  .key, .li{
+    border: 1px solid white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgb(255 255 255 / 42%);
+    font-family: 'Montserrat';
+  }
+  .key p, .li p{
+    margin: 0px;
+    font-size: 4vw;
+    font-weight: 600;
+  }
+  .vid-alert{
+    font-size: small;
+  }
+  .video{
+    max-width: calc(177.778vh);
+    height: calc(56.25vw);
+  }
+  .vid-container:nth-child(1){
+    order: 1;
+  }
+  .all-keys{
+    order: 2;
+  }
+  .li{
+    order: 3;
+  }
+  .enroll-btn{
+    order:4;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    font-size: 4vw;
+  }
+  .enroll-btn button{
+    font-size: 4vw;
+  }
+  .vid-container h1{
+    font-size: 7vw;
+    font-family: 'Tiro Telugu';
+    font-weight: 900;
+    margin-top: 20px;
+  }
+  .all-keys sub{
+    font-size: medium;
+  }
+  
+  }
+  @media screen and (min-width:577px) and (max-width:768px) {
+  .vid-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 40px;
+  }
+  .vid-container:nth-child(1){
+    width: 95%;
+    margin: auto;
+  }
+  .unmute{
+    width: 15vw;
+    height: 15vw;
+  }
+  .key, .li{
+    border: 1px solid white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgb(255 255 255 / 42%);
+    font-family: 'Montserrat';
+  }
+  .key p, .li p{
+    margin: 0px;
+    font-size: 3vw;
+    font-weight: 600;
+  }
+  .vid-alert{
+    font-size: small;
+  }
+  .video{
+    max-width: calc(177.778vh);
+    height: calc(56.25vw);
+  }
+  .vid-container:nth-child(1){
+    order: 1;
+  }
+  .all-keys{
+    order: 2;
+  }
+  .li{
+    order: 3;
+  }
+  .enroll-btn{
+    order:4;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  .vid-container h1{
+    font-size: 5vw;
+    font-family: 'Tiro Telugu';
+    font-weight: 900;
+    margin-top: 20px;
+  }
+  }
+  @media screen and (min-width:769px) and (max-width:992px) {
+  .vid-container:nth-child(1){
+    width: 95%;
+    margin: auto;
+  }
+  .unmute{
+    width: 10vw;
+    height: 10vw;
+  }
+  .key, .li{
+    border: 1px solid white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    width: 75%;
+    box-shadow: 0px 0px 10px 0px rgb(255 255 255 / 42%);
+    font-family: 'Montserrat';
+  }
+  .vid-alert{
+    font-size:large;
+  }
+  .vid-section{
+    padding: 10px 0px;
+  }
+  embed{
+    width: 100%;
+    height:325px;
+  }
+  .vid-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 40px;
+  }
+  .enroll-btn{
+    order:4;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  .li{
+    order: 3;
+  }
+  .vid-container h1{
+    font-size: 2em;
+    font-family: 'Tiro Telugu';
+    font-weight: 900;
+    margin-top: 20px;
+  }
+  .all-keys sub{
+    font-size: medium;
+  }
+  }
+  @media screen and (min-width:993px) and (max-width:1200px) {
+  .key, .li{
+    border: 1px solid white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    width: 75%;
+    box-shadow: 0px 0px 10px 0px rgb(255 255 255 / 42%);
+    font-family: 'Montserrat';
+  }
+  .vid-alert{
+    font-size:larger;
+  }
+  }

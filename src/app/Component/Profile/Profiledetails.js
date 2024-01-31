@@ -5,17 +5,26 @@ import male from '@/app/Images/profile/AZMail.jpg'
 import female from '@/app/Images/profile/AzFemail.jpg'
 import logo from '@/app/Images/profile/logo.png'
 import Image from 'next/image';
-const Profiledetails = async() => {
-     const data = await ProfileData();
+const Profiledetails = async({data,paymetdata}) => {
+    console.log(paymetdata?.data?.total.total_amount);
     return (
         <div className="  relative container mx-auto">
         <article className='flex'>
             <Image src={male} alt='Arena Web and Security' className='h-52 w-52 rounded-full border-2 border-yellow-800 -mt-10'/>
             <div className='mt-14 pl-10'>
                 <h3 className='font-bold text-2xl'>{data?.data.Fullname}</h3>
-                <p  className='font-semibold text-1xl'>#{data?.uid}</p>
+                <p  className='font-semibold text-1xl'>#{data?.data.u_id}</p>
                 <p  className='font-semibold text-1xl'>Admission 
-                {data?.data.admission===false?<span className='text-yellow-800'> Panding</span>:<span className='text-green-500'> Done</span>}
+                {
+                   paymetdata?.data?.total.total_amount>=data?.data?.course_fee_divide && <span className='text-green-500'> Done</span>
+                }
+                
+                 {
+                   !paymetdata && <span className='text-yellow-800'> Panding</span>
+                }
+               {
+                   paymetdata?.data?.total.total_amount < data?.data?.course_fee_divide && <span className='text-light-blue-800'> Set Booking</span>
+                } 
                 </p>
                 <p  className=' text-1xl'> {data?.data.batch_schedule_name}</p>
             </div>
