@@ -74,7 +74,7 @@ const ContactForm = () => {
     <div className=" w-[100%]">
       <form className="mt-36 border p-3" onSubmit={(e) => UserLogin(e)}>
       
-        <h1 className="text-3xl font-bold">Contact Us</h1>
+        <h1 className="text-3xl font-bold text-purple-700">Contact Us</h1>
         <div className="relative z-0 w-2/3 mb-5 group mt-10 ">
           <input
             type="text"
