@@ -1,0 +1,84 @@
+.state-parent{
+    padding: 40px 0px;
+  }
+  .state-parent h1{
+    font-family: 'Ubuntu';
+  }
+  .gradientText{
+      background: -webkit-linear-gradient(#56b5e3, #7d58a5);
+      background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .stat-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .icons{
+    font-size: 40px;
+  }
+  @media screen and (max-width:576px) {
+    .stat-container{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center;
+      font-size: 20px;
+      width: 100%;
+    }
+    .state-parent h1{
+      font-size: 7vw;
+    }
+    .stat-container div{
+      width: 25%;
+    }
+    .icons{
+      font-size: 6vw;
+    }
+    .state-parent p{
+      font-size: 2vw;
+    }
+  }
+  @media screen and (min-width:577px) and (max-width:768px) {
+    .stat-container{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center;
+      font-size: 20px;
+      width: 100%;
+    }
+    .stat-container div{
+      width: 30%;
+    }
+    .icons{
+      font-size: 7vw;
+    }
+    .state-parent p{
+      font-size: 2vw;
+    }
+  }
+  @media screen and (min-width:769px) and (max-width:992px) {
+    .stat-container{
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center;
+      font-size: 20px;
+      padding: 50px 0px;
+    }
+    .icons{
+      font-size: 5vw;
+    }
+    .state-parent p{
+      font-size: 2vw;
+    }
+  }
+  

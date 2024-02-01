@@ -3,6 +3,7 @@
 import React from 'react';
 import './Price.css'
 import { FaArrowRight } from "react-icons/fa";
+import Link from 'next/link';
 const Price = () => {
     return (
         <section className="price-container">
@@ -29,7 +30,8 @@ const Price = () => {
                             <li className='flex items-center gap-3'><FaArrowRight icon="material-symbols:arrow-circle-right-outline" className='text-green-500' />Internship</li>
                             <li className='flex items-center gap-3'><FaArrowRight icon="material-symbols:arrow-circle-right-outline" className='text-green-500' />Certification</li>
                         </ul>
-                        <a href="https://arenawebsecurity.net/admission"><button type="" className='card-btn'>ENROLL NOW! <FaArrowRight icon="svg-spinners:pulse" /></button></a>
+                        <Link href="/admission"><button type="" className='card-btn'>ENROLL NOW! <FaArrowRight icon="svg-spinners:pulse" /></button></Link>
+                        
                     </div>
                 </div>
             </div>

@@ -100,6 +100,6 @@ export default async function StudentLogin(data, email) {
       };
     }
   } catch (error) {
-    // console.log("An error occurred:", error);
+    console.log(error);
   }
 }

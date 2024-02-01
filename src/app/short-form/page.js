@@ -3,6 +3,7 @@ import Image from "next/image";
 import Logo from '@/app/admission/Logo.png'
 import right from "@/app/admission/right.svg"
 import Apply from "../Component/Apply";
+import ShortFrom from "../Component/ShortFrom";
 const page = () => {
   
   return (
@@ -35,7 +36,7 @@ const page = () => {
          </div>
         </div>
              {/* Addmission Form */}
-             <Apply/>
+             <ShortFrom/>
       </div>
     </div>
   );

@@ -16,7 +16,8 @@ const Navber = async () => {
 
   return (
     <div className="sticky top-0 z-50">
-      <Marquee className="bg-white">
+      {
+        data && <Marquee className="bg-white">
         Admission going on for{" "}
         <span className="font-bold text-purple-400 px-2">
           {data[0]?.batch_schedule_name}
@@ -42,6 +43,8 @@ const Navber = async () => {
           {data[2]?.deadline_date_s}
         </span>
       </Marquee>
+      }
+      
       <div className="lg:flex navber px-10  ">
         <article>
           <Image src={Logo} alt="Arena-Logo" />

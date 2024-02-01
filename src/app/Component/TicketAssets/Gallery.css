@@ -1,0 +1,78 @@
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+}
+.gallery-container h1{
+    font-family: 'Ubuntu';
+}
+.gallery-container img{
+    margin: 20px 0px;
+}
+.gallery-btn{
+    /* display: flex;
+    justify-content: center; */
+    margin: auto;
+}
+.gallery-btn a{
+    width: 100%;
+    padding: 10px 5px;
+}
+.gallery-btn button{
+    width: 100%;
+    background-color: #ffc417;
+    border-color: #ffc417;
+    color: white;
+    font-family: 'Roboto Slab';
+}
+/* .circle-1{
+    content: '';
+    background-color: rgb(4 249 192 / 22%);;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    top: 280px;
+    left: 10%;
+    z-index: -1;
+}
+.circle-2{
+    content: '';
+    background-color: rgb(4 249 192 / 22%);;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    bottom: 90px;
+    right: 10%;
+    z-index: -1;
+} */
+
+@media screen and (max-width:572px) {
+    .gallery-container h1{
+        font-size: 7vw;
+    }
+    .gallery-btn a{
+        width: 90%;
+        padding: 10px 5px;
+    }
+    .gallery-btn button {
+        font-size: 4vw;
+    }
+}
+@media screen and (min-width:992px) {
+    .gallery-container img{
+        width: 75%;
+    }
+    .gallery-btn{
+        width: 50%;
+        margin: auto;
+    }
+    .gallery-btn a{
+        width: 100%;
+        padding: 10px 5px;
+    }
+}

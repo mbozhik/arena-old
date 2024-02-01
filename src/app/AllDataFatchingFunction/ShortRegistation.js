@@ -2,7 +2,7 @@
 import axios from "axios";
 import ApiUrl from "./ApiUrl";
 
-export default function Registration(
+export default function ShortRegistration(
   data,
   setOpen,
   setSuccess,
@@ -15,13 +15,13 @@ export default function Registration(
     };
     setPending(true);
 
-    axios.post(ApiUrl.SendApply, data, config).then((response) => {
+    axios.post(ApiUrl.BaseUrl+'api/simple-form/', data).then((response) => {
       setSuccess(true);
       setOpen(true);
-      form_id(response.data[0].form_id);
+      form_id(response.data.id);
       setPending(false);
 
-      // form_id(response.data.form_id);
+ console.log(response);
     });
   } catch (error) {
     setPending(false);

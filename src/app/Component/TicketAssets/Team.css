@@ -1,0 +1,146 @@
+.team-container{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+}
+.team-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.trainer-title{
+    font-family: 'Ubuntu';
+}
+.hands-on{
+    margin-bottom: 70px;
+    text-align: center;
+}
+.name{
+    font-size: 20px;
+}
+.desig{
+    font-size: 15px;
+}
+.expertise{
+    font-weight: 600;
+}
+.team-parent img{
+    border-radius: 50%;
+    width: 30vw;
+    max-width: 150px;
+}
+.team-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-size: 20px !important;
+    box-shadow: 0px 0px 10px 5px #dedede;
+    /* max-width: 370px; */
+}
+.team-card:nth-child(1){
+    flex: 0 1;
+}
+.team-card:nth-child(2){
+    flex: 0 1;
+}
+/* Responsive start */
+@media screen and (max-width:576px) {
+    .team-parent{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .trainer-title{
+        font-size: 7vw;
+    }
+    .team-parent img{
+        border-radius: 50%;
+        width: 15vw;
+        max-width: 150px;
+    }
+    .team-card :nth-child(1){
+        margin: 5px 0px !important;
+    }
+    .name{
+        font-size: 4vw;
+        text-align: center;
+    }
+    .desig{
+        font-size: 2vw;
+        text-align: center;
+        margin-bottom: 2px !important;
+    }
+    .descrip{
+        text-align: center;
+        font-size: 2vw;
+        margin-bottom: 2px !important;
+    }
+    .expertise{
+        font-size: 2.5vw;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+    .team-card :nth-child(1){
+        margin: 5px 0px !important;
+    }
+    .cont{
+        padding: 2px !important;
+    }
+    .team-parent{
+        gap: 10px;
+    }
+    .team-parent img{
+        border-radius: 50%;
+        width: 10vw;
+        max-width: 150px;
+    }
+    .name{
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    .desig{
+        font-size: 1.5vw;
+        text-align: center;
+        margin-bottom: 3px !important;
+    }
+    .descrip{
+        text-align: center;
+        font-size: 1vw;
+        margin-bottom: 0px !important;
+    }
+    .expertise{
+        font-size: 1.5vw;
+    }
+}
+@media screen and (min-width:767px) and (max-width:992px) {
+    .team-parent img{
+        border-radius: 50%;
+        width: 10vw;
+        max-width: 150px;
+    }
+    .name{
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    .desig{
+        font-size: 1.5vw;
+        text-align: center;
+    }
+    .descrip{
+        text-align: center;
+        font-size: 1vw;
+    }
+    .expertise{
+        font-size: 1.5vw;
+    }
+}
+@media screen and (min-width:993px) {
+    .cont{
+        padding: 10px !important;
+    }
+    .descrip{
+        margin-bottom: 0px;
+        font-size: 18px;
+    }
+}
