@@ -7,17 +7,11 @@ import icon1 from "@/app/Images/footer/address.png";
 import icon3 from "@/app/Images/footer/at.png";
 import favIcon from "@/app/Images/footer/favicon.ico";
 import icon2 from "@/app/Images/footer/telephone.png";
-
-// import social1 from "../../../asset/image/New_Assets/facebook.png";
-
-
 import Link from "next/link";
 import Image from "next/image";
 const Footer = () => {
-
   return (
     <section className={style.parent_container} id="main">
-      {/* <ScrollToTop smooth /> */}
       <div className={` ${style.footerCard} container mx-auto `}>
         <div className={style.footer_wrapper}>
           <div className={style.footer_wrapper_img}>
@@ -58,10 +52,6 @@ const Footer = () => {
         <div>
           <div className={`position-relative ${style.contactWrapper} `}>
             <Image src={favIcon} alt="arena" />
-            {/* <h1 className="text-white text-center">Contact Us</h1>
-            <p className="text-white text-center pb-5">
-              Please contact us to want know more about us.
-            </p> */}
           </div>
           <div className={`${style.footerContainer} container  mx-auto `}>
             <div>
@@ -90,7 +80,7 @@ const Footer = () => {
                   {" "}
                   <li>Blog</li>
                 </a>
-                <Link href="/all-services" className="text-decoration-none">
+                <Link href="/services" className="text-decoration-none">
                   {" "}
                   <li>Service</li>
                 </Link>
@@ -108,40 +98,40 @@ const Footer = () => {
               <h5>Courses</h5>
               <ul className={style.list_wrapper}>
                 <Link
-                  href="/cyber-security-ethical-hacking"
+                  href="/cybersecurity"
                   className="text-decoration-none"
                 >
                   {" "}
                   <li>Cyber Security & Ethical Hacking</li>
                 </Link>
                 <Link
-                  href="/advance-python-with-django"
+                  href="/python"
                   className="text-decoration-none"
                 >
                   {" "}
                   <li>Advanced Python & Freelancing</li>
                 </Link>
                 <Link
-                  href="/cyber-security-and-python-course"
+                  href="/combo"
                   className="text-decoration-none"
                 >
                   {" "}
                   <li>Cyber Security & Python (Combo)</li>
                 </Link>
-                <Link href="/cosint-course" className="text-decoration-none">
+                <Link href="/cosint" className="text-decoration-none">
                   {" "}
                   <li>C|OSINT</li>
                 </Link>
-                <Link href="/linux-course" className="text-decoration-none">
+                <Link href="/linux" className="text-decoration-none">
                   {" "}
                   <li>Linux</li>
                 </Link>
-                <Link href="/networking-course" className="text-decoration-none">
+                <Link href="/network" className="text-decoration-none">
                   {" "}
                   <li>Networking Security</li>
                 </Link>
                 <Link
-                  href="/advanced-cyber-security-course"
+                  href="/cehf"
                   className="text-decoration-none"
                 >
                   {" "}

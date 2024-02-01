@@ -30,8 +30,9 @@
     margin: auto;
     padding: 15px 0px;
     color: white;
-    background-color: #ffc417;
-    border-color: #ffc417;
+    font-weight: 700;
+    background-color: #FFA121;
+    border-color: #FFA121;
     font-family: 'Roboto Slab';
 }
 @media screen and (max-width:576px) {

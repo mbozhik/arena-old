@@ -30,7 +30,8 @@ const Price = () => {
                             <li className='flex items-center gap-3'><FaArrowRight icon="material-symbols:arrow-circle-right-outline" className='text-green-500' />Internship</li>
                             <li className='flex items-center gap-3'><FaArrowRight icon="material-symbols:arrow-circle-right-outline" className='text-green-500' />Certification</li>
                         </ul>
-                        <Link href="/admission"><button type="" className='card-btn'>ENROLL NOW! <FaArrowRight icon="svg-spinners:pulse" /></button></Link>
+                        <Link href="/admission"><button type="" className='card-btn'>ENROLL NOW! 
+                        </button></Link>
                         
                     </div>
                 </div>

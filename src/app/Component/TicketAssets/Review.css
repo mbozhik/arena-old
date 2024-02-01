@@ -30,9 +30,10 @@
 }
 .review-btn button{
     width: 100%;
-    background-color: #ffc417;
-    border-color: #ffc417;
+    background-color: #FFA121;
+    border-color: #FFA121;
     color: white;
+    font-weight: 700;
     font-family: 'Roboto Slab';
     
 }
@@ -58,8 +59,8 @@
     }
     .review-btn button{
         width: 100%;
-        background-color: #ffc417;
-        border-color: #ffc417;
+        background-color: #FFA121;
+        border-color: #FFA121;
         color: white;
         font-family: 'Roboto Slab';
         

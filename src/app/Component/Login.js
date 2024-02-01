@@ -1,73 +1,75 @@
-'use client'
+"use client";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
 import StudentLogin from "../AllDataFatchingFunction/Login";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
 const Login = () => {
   const [eye, setEye] = useState(false);
   const [pending, setPending] = useState(false);
-  const router = useRouter()
-  const UserLogin=async(e)=>{
-   
-    let formdata = {'email': e.target.email.value, 'password': e.target.password.value};
+  const router = useRouter();
+  const UserLogin = async (e) => {
+    let formdata = {
+      email: e.target.email.value,
+      password: e.target.password.value,
+    };
     e.preventDefault();
-    try{
-      const result= await StudentLogin(formdata,e.target.email.value);
+    try {
+      const result = await StudentLogin(formdata, e.target.email.value);
       console.log(result);
-      setPending(true)
-        if(result?.status===200 && result?.login===0 || result?.login===2 ){
-          setPending(false)
-         Swal.fire({
-           position: "top-center",
-           icon: "error",
-           title:result.msg,
-           showConfirmButton: false,
-           showDenyButton: true,
-           denyButtonText: `ok`,
-           timer: 2000,
-         });
-        }
-        else if(result?.login===1){
-          setPending(false)
-           // For Bkash payment
-           localStorage.setItem("u_id", result.u_id);
-           sessionStorage.setItem("u_id",result.u_id);
-           localStorage.setItem("Type", 1);
-           localStorage.setItem("Course_title",result.Course_title);
-           localStorage.setItem("UserEmail",e.target.email.value);
-         router.push('/profile');
-       
-        }
-        else{
-          setPending(false)
-         Swal.fire({
-           position: "top-center",
-           icon: "error",
-           title:'Server-side developer is currently working. Please try again later if you encounter an error',
-           showConfirmButton: false,
-           showDenyButton: true,
-           denyButtonText: `ok`,
-           timer: 2000,
-         });
-        }
-    }catch(error){
-      setPending(false)
+      setPending(true);
+      if (
+        (result?.status === 200 && result?.login === 0) ||
+        result?.login === 2
+      ) {
+        setPending(false);
+        Swal.fire({
+          position: "top-center",
+          icon: "error",
+          title: result.msg,
+          showConfirmButton: false,
+          showDenyButton: true,
+          denyButtonText: `ok`,
+          timer: 2000,
+        });
+      } else if (result?.login === 1) {
+        setPending(false);
+        // For Bkash payment
+        localStorage.setItem("u_id", result.u_id);
+        sessionStorage.setItem("u_id", result.u_id);
+        localStorage.setItem("Type", 1);
+        localStorage.setItem("Course_title", result.Course_title);
+        localStorage.setItem("UserEmail", e.target.email.value);
+        router.push("/profile");
+      } else {
+        setPending(false);
+        Swal.fire({
+          position: "top-center",
+          icon: "error",
+          title:
+            "Server-side developer is currently working. Please try again later if you encounter an error",
+          showConfirmButton: false,
+          showDenyButton: true,
+          denyButtonText: `ok`,
+          timer: 2000,
+        });
+      }
+    } catch (error) {
+      setPending(false);
       Swal.fire({
         position: "top-center",
         icon: "error",
-        title:'Server-side developer is currently working. Please try again later if you encounter an error',
+        title:
+          "Server-side developer is currently working. Please try again later if you encounter an error",
         showConfirmButton: false,
         showDenyButton: true,
         denyButtonText: `ok`,
         timer: 2000,
       });
     }
-   
-   
-  }
+  };
   return (
     <div className=" w-[50%]">
       <form className="mt-36 pl-40" onSubmit={(e) => UserLogin(e)}>
@@ -144,7 +146,6 @@ const Login = () => {
         >
           Log In
         </button>
-      
       </form>
     </div>
   );

@@ -2,8 +2,10 @@
 
 /* Ticekt Video Part */
 .vid-section{
-    /* background-image: url('../../asset/image/TicketAssets/Shapes/bg1.svg'); */
-    background-image: linear-gradient(20deg,#6600ffb5,#00CC99,#6600FF);
+    /* background-image: url('../../../../public/Shapes/bg1.svg'); */
+    /* background-image: linear-gradient(20deg,#6600ffb5,#00CC99,#6600FF); */
+    /* background-image: linear-gradient(187deg, #000000,#363636,#000000); */
+    background: #EBE7F8;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -80,12 +82,12 @@
   }
   .enroll-btn button{
   width: 100%;
-  box-shadow: 0px 0px 20px 2px white;
+  /* box-shadow: 0px 0px 5px 2px white; */
   padding: 15px 0px;
   font-size: 24px;
-  font-weight: 600;
-  background-color: #ffc417;
-  border-color: #ffc417;
+  font-weight: 700;
+  background-color: #FFA121;
+  border-color: #FFA121;
   margin: auto;
   }
   .vid-container h1{
@@ -107,11 +109,12 @@
   margin-bottom: 0px;
   }
   .key, .li{
-  border: 1px solid white;
+  border: 1px solid #44107A;
   padding: 15px 10px;
   border-radius: 10px;
   width: 60%;
-  box-shadow: 0px 0px 10px 0px rgb(255 255 255 / 42%);
+ 
+  /* box-shadow: 0px 0px 10px 0px rgb(255 255 255 / 42%); */
   font-family: 'Montserrat';
   }
   .key p, .li p{
@@ -158,7 +161,7 @@
     height: 15vw;
   }
   .key, .li{
-    border: 1px solid white;
+    border: 1px solid #44107A;
     padding: 15px 10px;
     border-radius: 10px;
     width: 100%;
@@ -169,6 +172,7 @@
     margin: 0px;
     font-size: 4vw;
     font-weight: 600;
+    
   }
   .vid-alert{
     font-size: small;
@@ -225,7 +229,7 @@
     height: 15vw;
   }
   .key, .li{
-    border: 1px solid white;
+    border: 1px solid #44107A;
     padding: 15px 10px;
     border-radius: 10px;
     width: 100%;
@@ -277,7 +281,7 @@
     height: 10vw;
   }
   .key, .li{
-    border: 1px solid white;
+    border: 1px solid #44107A;
     padding: 15px 10px;
     border-radius: 10px;
     width: 75%;
@@ -323,7 +327,7 @@
   }
   @media screen and (min-width:993px) and (max-width:1200px) {
   .key, .li{
-    border: 1px solid white;
+    border: 1px solid #44107A;
     padding: 15px 10px;
     border-radius: 10px;
     width: 75%;

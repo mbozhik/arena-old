@@ -2,6 +2,7 @@ import Image from "next/image";
 import event from '@/app/Images/Event/Event.jpg'
 import eventemg from '@/app/Images/Event/eventsimg.png'
 import NavberData from "@/app/AllDataFatchingFunction/Topber";
+import Link from "next/link";
 
 const Events = async() => {
     const data = await NavberData();
@@ -27,7 +28,7 @@ const Events = async() => {
                             </div>
                             <Image src={eventemg} alt="Cyber"/>
                                
-                            <h4 className="lg:font-semibold text-[#4aabff] text-[20px] pt-5 pb-2 group-hover:text-[#cbcb50]">{data[0]?.batch_schedule_name}</h4>
+                            <Link href='cybersecurity'><h4 className="lg:font-semibold text-[#4aabff] text-[20px] pt-5 pb-2 group-hover:text-[#cbcb50]">{data[0]?.batch_schedule_name}</h4></Link>
                             <p className="pt-5 pb-10">Admission going on for Cyber Security course by Arena Web Academy. The class will start on 21-01-2024. For admission: 01310333444</p>
                         </article>
                         <article className="Events w-2/6 lg:h-auto bg-white group p-3 rounded-md hover:scale-105 transition duration-500 ease-in-out">
@@ -37,7 +38,7 @@ const Events = async() => {
                             </div>
                             <Image src={eventemg} alt="Cyber"/>
                                
-                            <h4 className="lg:font-semibold text-[#4aabff] text-[20px] pt-5 pb-2 group-hover:text-[#cbcb50]">{data[1]?.batch_schedule_name}</h4>
+                            <Link href='python'><h4 className="lg:font-semibold text-[#4aabff] text-[20px] pt-5 pb-2 group-hover:text-[#cbcb50]">{data[1]?.batch_schedule_name}</h4></Link>
                             <p className="pt-5 pb-10">Admission going on for Cyber Security course by Arena Web Academy. The class will start on 21-01-2024. For admission: 01310333444</p>
                         </article>
                       

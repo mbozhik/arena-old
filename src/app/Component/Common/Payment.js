@@ -19,16 +19,12 @@ import roketpayment from '@/app/courses/payment/RocketPayment.jpg'
 import eblpayment from '@/app/courses/payment/eblPayment.jpg'
 import wespayment from '@/app/courses/payment/westernPayment.jpg'
 
-// import west from '@/app/courses/payment/wester-union-logo.png'
-// import west from '@/app/courses/payment/wester-union-logo.png'
-// import west from '@/app/courses/payment/wester-union-logo.png'
-// import west from '@/app/courses/payment/wester-union-logo.png'
 
 
  
 export function PaymentModal() {
   const [img,setImage]=useState('')
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = (data)=>{
     setImage(data)
     setOpen(!open);

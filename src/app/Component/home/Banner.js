@@ -4,6 +4,8 @@ import { IoPlayOutline } from "react-icons/io5";
 import bannerImg from '@/app/Images/Banner/BannerBg.png'
 import bannerPic from '@/app/Images/Banner/BannerPic.png'
 import { IoMdStar } from "react-icons/io";
+import Link from "next/link";
+import BannerVaideo from "../Utility/BannerVaideo";
 
 const Banner = () => {
   return (
@@ -20,8 +22,10 @@ const Banner = () => {
           world.
         </p>
         <div className="mt-10 flex justify-center items-center gap-x-10">
-          <button className="lg:text-2px font-semibold bg-white text-[#76599E] px-8 py-3 rounded-md hover:bg-[#76599E] hover:text-white">Apply Now</button>
-          <button className="lg:text-2px font-semibold bg-[#76599E] rounded-full h-10 w-10 flex justify-center video items-center"><IoPlayOutline className="text-white" /></button>
+          <Link href='/admission'>
+          <button className="lg:text-2px font-semibold bg-white text-[#76599E] px-8 py-3 rounded-md hover:bg-[#76599E] hover:text-white">Apply Now</button></Link>
+          {/* <button className="lg:text-2px font-semibold bg-[#76599E] rounded-full h-10 w-10 flex justify-center video items-center"><IoPlayOutline className="text-white" /></button> */}
+          <BannerVaideo/>
         </div>
       </article>
       <article className="relative lg:w-[50%]">
