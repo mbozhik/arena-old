@@ -82,7 +82,7 @@ const ShortFrom = (e) => {
   };
 
   return (
-    <div className="w-[50%] shadow-sm  px-5 applyCardPadding">
+    <div className="w-[50%] shadow-sm  px-5 ">
       <Dialog open={open} handler={handleOpen} size="md">
         {sucess && <Confetti width={750} height={350} />}
         <div className="text-center py-10 px-5">
