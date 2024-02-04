@@ -8,6 +8,7 @@ class ApiUrl{
     static ProfileApi=`${Base}v1/profile/`
     static Topbar=`${Base}api/time-date/`
     static BannerApi = `${Base}api/image-list/` 
+    static Contact = `${Base}contacts` 
 }
 export default ApiUrl;
 

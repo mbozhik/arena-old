@@ -360,8 +360,8 @@ const Apply = (e) => {
                 <div className="w-full col-span-3 relative group">
                   <Select
                     variant="standard"
-                    label="Gander *"
-                    id="Gander"
+                    label="Gender *"
+                    id="Gender"
                     onChange={(e) => setGander(e)}
                   >
                     <Option value="Male">Male</Option>

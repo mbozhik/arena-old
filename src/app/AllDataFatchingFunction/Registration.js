@@ -14,7 +14,6 @@ export default function Registration(
       headers: { "content-type": "multipart/form-data" },
     };
     setPending(true);
-
     axios.post(ApiUrl.SendApply, data, config).then((response) => {
       setSuccess(true);
       setOpen(true);

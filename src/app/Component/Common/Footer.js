@@ -69,10 +69,10 @@ const Footer = () => {
                   {" "}
                   <li>FAQ</li>
                 </Link>
-                <Link href="/career" className="text-decoration-none">
+                {/* <Link href="/career" className="text-decoration-none">
                   {" "}
                   <li>Career</li>
-                </Link>
+                </Link> */}
                 <a
                   href="https://www.hackers.institute/"
                   className="text-decoration-none"
@@ -88,7 +88,7 @@ const Footer = () => {
                   {" "}
                   <li>Gallery</li>
                 </Link>
-                <Link href="/Privacy-policy" className="text-decoration-none">
+                <Link href="/privacy" className="text-decoration-none">
                   {" "}
                   <li>Privacy Policy</li>
                 </Link>
