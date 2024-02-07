@@ -5,10 +5,10 @@ import { ServiceCard } from "../Utility/ServiceCard";
 
 const Services = () => {
     return (
-        <div className="px-20 lg:pt-16 ">
+        <div className="2xl:px-20 xl:px-10 md:px-5 md:pt-8 lg:pt-16  ">
         <header className="flex justify-between">
         <div className="relative">
-                <h2 className="lg:text-3xl lg:font-bold">Our Services</h2>
+                <h2 className="lg:text-3xl md:text-2xl md:font-bold">Our Services</h2>
                 <p className="lg:w-42 bg-[#ffd321] h-[3px] "></p>
                 </div>
            <Link href='/services'>

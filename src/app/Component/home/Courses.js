@@ -3,10 +3,10 @@ import { BackgroundBlogCard } from "../Utility/CourseCard";
 
 const Courses = () => {
     return (
-        <div className="px-20 lg:pt-16 ">
+        <div className="2xl:px-20 xl:px-10 md:px-5 md:pt-8 lg:pt-16  ">
             <header className="flex justify-between">
                 <div className="relative">
-                <h2 className="lg:text-3xl lg:font-bold">Our Courses</h2>
+                <h2 className="lg:text-3xl md:text-2xl md:font-bold">Our Courses</h2>
                 <p className="lg:w-42 bg-[#ffd321] h-[3px] "></p>
         
                 </div>

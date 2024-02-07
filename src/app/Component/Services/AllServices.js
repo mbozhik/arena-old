@@ -10,7 +10,7 @@ import { Fade } from "react-reveal";
   export function AllServices() {
     return (
 
-        <div className="grid px-20 lg:pt-16">
+        <div className="grid 2xl:px-20 xl:px-10 lg:pt-16">
             <div className="grid lg:grid-cols-4 gap-4 mt-6 ">
             <Fade bottom delay={200} distance='20%'>
                 <Card

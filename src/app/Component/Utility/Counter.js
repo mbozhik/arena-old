@@ -9,7 +9,7 @@ import { useState } from "react";
 const Counter = () => {
     const [visible, setVisible] = useState(false);
     return (
-        <div className=" container mx-auto grid lg:grid-cols-4">
+        <div className=" container mx-auto grid grid-cols-4">
         <article className="flex justify-center flex-col border-r-2">
           <div className="flex justify-center">
             <IoMdPeople className=" text-6xl text-white font-semibold text-center" />

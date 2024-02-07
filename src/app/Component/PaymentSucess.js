@@ -1,87 +1,67 @@
-// 'use client'
-// import React from 'react';
-// import { Col, Container, Row } from "react-bootstrap";
-// import { withRouter } from 'react-router-dom';
-// import { ToastContainer, toast } from 'react-toastify';
+'use client'
+// import { useRouter } from "next/navigation";
 
-// class PaymentSuccess extends React.Component {
-//   constructor(props) {
-//     super(props);
+import { useSearchParams } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+const PaymentSuccess = () => {
+  const searchParams = useSearchParams();
+//   console.log(router);
+ 
+  const [trxID, setTrxID] = useState('');
+  const [amount, setAmount] = useState('');
+  const [emailID, setEmailID] = useState('');
 
-//     this.state = {
-//       trxID: '',
-//       amount: '',
-//       emailID: '',
-//     };
-//   }
+  useEffect(() => {
+    const query = searchParams.get('trxID');
+    const amount = searchParams.get('amount');
+    setTrxID(query)
+    setAmount(amount)
+  }, []);
 
-//   componentDidMount() {
-//     const { location } = this.props;
+  const handleCopyClick = () => {
+    const textToCopy = `Transaction ID: ${trxID}\nAmount: ${amount}\nEmail: ${emailID}`;
 
-//     if (location && location.search) {
-//       const searchParams = new URLSearchParams(location.search);
+    // Create a textarea element, set its value, and copy the value to the clipboard
+    const textarea = document.createElement('textarea');
+    textarea.value = textToCopy;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
 
-//       const trxID = searchParams.get('trxID');
-//       const amount = searchParams.get('amount');
-//       const emailID = localStorage.getItem('UserEmail');
+    toast('Copied to clipboard!')
+  };
 
-//       this.setState({ trxID, amount, emailID });
-//       // console.log(trxID, amount, emailID);
-//       window.history.replaceState({}, '', '/paymentSuccess');
-//     } else {
-//       console.error('Location or search params not available.');
-//     }
-//   }
+  const ContentTop = {
+    marginTop: "50px"
+  };
 
-//   handleCopyClick = () => {
-//     const { trxID, amount, emailID } = this.state;
-//     const textToCopy = `Transaction ID: ${trxID}\nAmount: ${amount}\nEmail: ${emailID}`;
+  return (
+    <div>
+      <div className="p-2" style={ContentTop}>
+        <div className="flex items-center justify-center">
+          <div className="p-5 card SuccessCard shadow-sm border-0 justify-center align-center lg:w-[500px]">
+            <h6 className="CongratulationText text-center mb-3 text-3xl text-green-500 font-bold">Congratulations!</h6>
+     
+            <div className='border-left border-bottom border-right pl-5 pt-4 pb-1 pr-5'>
+            <h6 className="SuccessMsgText text-center">Your Payment has been completed successfully.</h6>
+              <p className='text-center'>Transaction ID: <span className="text-success"> {trxID}</span> </p>
+              <p className='text-center'>Amount:  <span className="text-success">{amount}</span></p>
+              <p className='text-center'>Email:  <span className="text-success">{emailID}</span></p>
+              <p className='text-center text-success pt-2'>(Copy Your Transaction Id,Amount & Email for Future Reference)</p>
+               <div className='flex justify-center align-center'>
+                 <button className='px-10 py-2 bg-green-600 text-white mt-2 rounded-lg' onClick={handleCopyClick}>Copy</button>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ToastContainer position="top-right" ></ToastContainer>
+    </div>
+  );
+};
 
-//     // Create a textarea element, set its value, and copy the value to the clipboard
-//     const textarea = document.createElement('textarea');
-//     textarea.value = textToCopy;
-//     document.body.appendChild(textarea);
-//     textarea.select();
-//     document.execCommand('copy');
-//     document.body.removeChild(textarea);
+export default PaymentSuccess;
 
-//     // alert('Copied to clipboard!');
-//     toast('Copied to clipboard!')
-//   };
-
-//   render() {
-//     const ContentTop = {
-//       marginTop: "50px"
-//     };
-
-//     const { trxID, amount } = this.state;
-
-//     return (
-//       <React.Fragment>
-//         <Container className="p-2" style={ContentTop}>
-//           <Row className="align-content-center justify-content-center">
-//             <Col xl={6} lg={6} sm={12} md={12}
-//               className="p-5 card SuccessCard shadow-sm border-0 justify-content-center align-content-center">
-//               <h6 className="CongratulationText text-center mb-3">Congratulations!</h6>
-//               <div className="SmsBox">
-//                 <h6 className="SuccessMsgText">Your Payment has been completed successfully.</h6>
-//               </div>
-//               <div className='border-left border-bottom border-right pl-5 pt-4 pb-1 pr-5'>
-//                 <p className='text-center'>Transaction ID: <span className="text-success"> {trxID}</span> </p>
-//                 <p className='text-center'>Amount:  <span className="text-success">{amount}</span></p>
-//                 <p className='text-center'>Email:  <span className="text-success">{this.state.emailID}</span></p>
-//                 <p className='text-center text-success pt-2'>(Copy Your Transaction Id,Amount & Email for Future Reference)</p>
-//                  <div className='d-flex justify-content-center align-items-center'>
-//                    <button className='btn btn-dark' onClick={this.handleCopyClick}>Copy</button>
-//                  </div>
-//               </div>
-//               <ToastContainer></ToastContainer>
-//             </Col>
-//           </Row>
-//         </Container>
-//       </React.Fragment>
-//     );
-//   }
-// }
-
-// export default withRouter(PaymentSuccess);

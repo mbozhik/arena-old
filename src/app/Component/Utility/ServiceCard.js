@@ -12,9 +12,9 @@ import { Fade } from "react-reveal";
 export function ServiceCard() {
   return (
     <div className="grid">
-      <div className="grid lg:grid-cols-4 gap-4 mt-6 ">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-6 ">
         <Fade left>
-          <Card className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
+          <Card className="relative grid 2xl:h-[40rem]  md:h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
@@ -24,17 +24,17 @@ export function ServiceCard() {
            w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
               />
             </CardHeader>
-            <CardBody className=" py-14 px-6 md:px-12 absolute  translate-y-72 transition-all group-hover:translate-y-0 duration-700 ease-in-out ">
+            <CardBody className=" 2xl:py-14 2xl:px-3 xl:px-2  absolute  xl:translate-y-60 2xl:translate-y-52 transition-all group-hover:translate-y-0 duration-700 ease-in-out ">
               <Typography
                 variant="h2"
                 color="white"
-                className="mb-6 font-bold leading-[1.5] text-white    "
+                className="mb-6 font-bold leading-[1.5] text-white  2xl:text-3xl xl:text-2xl   "
               >
                 Cyber Security Consultancy
               </Typography>
               <Typography
                 variant="paragraph"
-                className="mb-4  group-hover:w-full  text-white   font-semibold "
+                className="mb-4  group-hover:w-full     lg:opacity-0 group-hover:opacity-100 text-white   font-semibold transition-all duration-700 ease-in-out "
               >
                 The threats of cyber-attacks are a fact of life and a fact of
                 business. Wipro’s Cyber security and Risk Service can help you
@@ -46,7 +46,7 @@ export function ServiceCard() {
             </CardBody>
           </Card>
         </Fade>
-        <Card className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
+        <Card className="relative grid 2xl:h-[40rem]  md:h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
           <CardHeader
             color="transparent"
             className="absolute inset-0 m-0 h-full w-full rounded-none Sof bg-cover bg-center"
@@ -56,17 +56,17 @@ export function ServiceCard() {
            w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
             />
           </CardHeader>
-          <CardBody className=" py-14 px-6 md:px-12 absolute  translate-y-80 transition-all group-hover:translate-y-0 duration-700 ease-in-out ">
+          <CardBody className="2xl:py-14 2xl:px-3 xl:px-2  absolute  xl:translate-y-60 2xl:translate-y-52 transition-all group-hover:translate-y-0 duration-700 ease-in-out ">
             <Typography
               variant="h2"
               color="white"
-              className="mb-6 font-bold leading-[1.5] text-white    "
+              className="mb-6 font-bold leading-[1.5] text-white 2xl:text-3xl xl:text-2xl    "
             >
               Software Development
             </Typography>
             <Typography
               variant="paragraph"
-              className="mb-4  group-hover:w-full  text-white   font-semibold "
+              className="mb-4  group-hover:w-full     lg:opacity-0 group-hover:opacity-100 text-white   font-semibold transition-all duration-700 ease-in-out"
             >
               Software development services are aimed at designing, engineering,
               deploying, supporting, and evolving various software types. We are
@@ -78,7 +78,7 @@ export function ServiceCard() {
           </CardBody>
         </Card>
 
-        <Card className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
+        <Card className="relative grid 2xl:h-[40rem]  md:h-[35rem]w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
           <CardHeader
             color="transparent"
             className="absolute inset-0 m-0 h-full w-full rounded-none Net bg-cover bg-center"
@@ -88,17 +88,17 @@ export function ServiceCard() {
            w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
             />
           </CardHeader>
-          <CardBody className=" py-14 px-6 md:px-12 absolute  translate-y-72 transition-all group-hover:translate-y-0 duration-700 ease-in-out ">
+          <CardBody className=" 2xl:py-14 2xl:px-3 xl:px-2  absolute  xl:translate-y-60 2xl:translate-y-52 transition-all group-hover:translate-y-0 duration-700 ease-in-out ">
             <Typography
               variant="h2"
               color="white"
-              className="mb-6 font-bold leading-[1.5] text-white    "
+              className="mb-6 font-bold leading-[1.5] text-white  2xl:text-3xl xl:text-2xl   "
             >
-              Networking Security Service (NSS)
+              Networking Security Service
             </Typography>
             <Typography
               variant="paragraph"
-              className="mb-4  group-hover:w-full  text-white   font-semibold "
+              className="mb-4  group-hover:w-full     lg:opacity-0 group-hover:opacity-100 text-white   font-semibold transition-all duration-700 ease-in-out "
             >
               Network Security Services (NSS) is a set of libraries designed to
               support cross-platform development of security-enabled client and
@@ -110,7 +110,7 @@ export function ServiceCard() {
         </Card>
 
         <Fade right>
-          <Card className="relative grid h-[40rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
+          <Card className="relative grid 2xl:h-[40rem]  md:h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none Mobile bg-cover bg-center"
@@ -120,17 +120,17 @@ export function ServiceCard() {
            w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
               />
             </CardHeader>
-            <CardBody className=" py-14 px-6 md:px-12 absolute  translate-y-72 transition-all group-hover:translate-y-0 duration-700 ease-in-out ">
+            <CardBody className="2xl:py-14 2xl:px-3 xl:px-2  absolute  xl:translate-y-60 2xl:translate-y-56 transition-all group-hover:translate-y-0 duration-700 ease-in-out  ">
               <Typography
                 variant="h2"
                 color="white"
-                className="mb-6 font-bold leading-[1.5] text-white    "
+                className="mb-6 font-bold leading-[1.5] text-white  2xl:text-3xl xl:text-2xl   "
               >
                 Mobile App Development
               </Typography>
               <Typography
                 variant="paragraph"
-                className="mb-4  group-hover:w-full  text-white   font-semibold "
+                className=" mb-4  group-hover:w-full     lg:opacity-0 group-hover:opacity-100 text-white   font-semibold transition-all duration-700 ease-in-out"
               >
                 We have leading mobile app developers who always stay up-to-date
                 with the latest technology trends to serving firms across the

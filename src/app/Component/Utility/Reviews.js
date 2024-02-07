@@ -28,7 +28,7 @@ import Reviews15 from "@/app/Images/Student_reviews/upwork2.svg";
 
 const Review= () => {
   return (
-    <div className="lg:-ml-10 flex gap-x-5 relative  h-full w-full  ">
+    <div className="md:-ml-10 flex gap-x-5 relative  h-full w-full  ">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
