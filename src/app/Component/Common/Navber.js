@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 import NavberData from "@/app/AllDataFatchingFunction/Topber";
 import { cookies } from "next/headers";
 import LogOut from "../Utility/Logout";
-import { AiOutlineDown, AiOutlineMenu } from "react-icons/ai";
+// import { AiOutlineDown, AiOutlineMenu } from "react-icons/ai";
 import MobileNav from "../Utility/MobileNav";
 
 
