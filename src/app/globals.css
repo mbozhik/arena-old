@@ -47,6 +47,20 @@ body {
   top: 0 !important;
 
 }
+.mobile-menu{
+background-color: #44107a;
+}
+/* .navber:hover .mobile-menu{
+  display: none;
+} */
+.menu {
+  background: yellow;
+}
+
+.menu:hover ~ .mobile {
+  display: none;
+  background: red;
+}
 .navBtn{
   background-color: white;
   color: #76599E !important;
@@ -65,6 +79,12 @@ body {
   font-weight: 700;
   /* box-shadow: 2px 2px 2px 2px black; */
 }
+/* google */
+
+.blur{
+  background-color: rgba(0, 0, 0, 0.576);
+}
+
 .video{
   animation-name:vd;
   animation-duration: 1.5s;
@@ -94,6 +114,7 @@ body {
   animation-iteration-count:infinite;
   animation-fill-mode: both;
   position: absolute;
+  
 }
 @keyframes review {
   0%{

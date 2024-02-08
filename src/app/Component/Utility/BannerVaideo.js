@@ -16,7 +16,7 @@ const BannerVaideo = () => {
 
   return (
     <div>
-      <button className="lg:text-2px font-semibold bg-[#76599E] rounded-full !h-[40px] w-10 flex justify-center video items-center">
+      <button className="lg:text-2px font-semibold bg-[#76599E] rounded-full !h-[40px]  w-10 flex justify-center video items-center">
         <IoPlayOutline className="text-white" onClick={handleOpen} />
       </button>
       <Dialog open={open} handler={handleOpen} size="md">
