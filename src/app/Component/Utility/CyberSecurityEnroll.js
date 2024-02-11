@@ -16,7 +16,7 @@ const EnrollComponent = ({ data }) => {
 
   return (
     <div className="waviy drop-shadow-md">
-      <div>
+      <div className="text-center">
         {First.map((letter, index) => (
           <span className="span" key={index} style={{ "--i": index + 1 }}>
             {letter}{" "}

@@ -135,55 +135,55 @@ const page = () => {
               <ul className="mt-5">
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span> Introduction</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span> Online privacy / anonymity</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span> Counterintelligence techniques used by the criminal elements</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span> On line database systems</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>Archiving methodologies and tools and methods for obtaining archived pages & hidden information</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>Advance search methods for blogs and social networks</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>Geolocation methods</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>Image recognition technology</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span> Best ways to use SS capabilities</span>
                     </div>
                   </li>
@@ -191,56 +191,56 @@ const page = () => {
                 {/* <ul className="mt-5">
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>  Input-Output</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>  Exception Handling</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span> Packages</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span> File Handling,OOPS</span>
                     </div>
                   </li>
 
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>Introduction to Django Introduction <br/> to Back-End Web Development using Django</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span> Advanced Django for Web and Automation</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>Building Web APIs using Django REST</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span> Deploying Web APIs</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>Scrapping with BeautifulSoup</span>
                     </div>
                   </li>

@@ -135,49 +135,49 @@ const page = () => {
               <ul className="mt-5">
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span> Introduction</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>Configure and architect a small network for maximum physical and wireless security.</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>Understand how we are tracked online by corporations, nation-states your ISP and others.</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>The very latest up-to-date information and methods.</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>Able to configure firewalls on all platforms including Windows, MacOS, and Linux for all types of attack scenarios.</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>Perform network monitoring to discover and identify potential hackers and malware using tools like Wireshark, Tcpdump, and Syslog.</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                       <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>Will look at search engine privacy - understand how to mitigate the tracking and privacy issues of search engines and their associated services.</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
-                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <p><FaHandPointRight className="text-[#44107A] text-2xl  " /></p>
                       <span>What are the best password managers to use and why. How passwords are cracked, and how to mitigate the password attacks.</span>
                     </div>
                   </li>
@@ -225,7 +225,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#EBE7F8]  flex justify-center items-center mt-10">
+      <div className="bg-[#EBE7F8]  flex justify-center items-center mt-10 px-3 md:px-0 ">
         <div className='my-10'>
           <EnrollComponent data={['Become','AN_Network_Security','SPECIALIST']} />
          

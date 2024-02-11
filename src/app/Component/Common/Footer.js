@@ -33,7 +33,7 @@ const Footer = () => {
           <div>
             <h5 className="text-center">Phone</h5>
             <div>
-              <p>+880 1310 333 444</p>
+              <p>+880 1536101214</p>
               <p>+880 1885 841 489</p>
             </div>
           </div>
