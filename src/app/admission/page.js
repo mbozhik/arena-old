@@ -6,9 +6,9 @@ import Apply from "../Component/Apply";
 const page = () => {
   
   return (
-    <div className="px-20 mt-5">
+    <div className="lg:px-20 md:px-5 px-0 mt-5">
       <div className="flex h-[80vh] gap-2 ">
-        <div className="relative w-[50%] ">
+        <div className="relative w-[50%] hidden lg:block">
         <article className="admissionSideber w-[100%] h-[100%]">
          
          </article>

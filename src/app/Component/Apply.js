@@ -172,7 +172,7 @@ const Apply = (e) => {
   };
 
   return (
-    <div className="w-[50%] shadow-sm  px-5 applyCardPadding">
+    <div className="lg:w-[50%] shadow-sm   applyCardPadding">
       <Dialog open={open} handler={handleOpen} size="md">
         {sucess && <Confetti width={750} height={350} />}
         <div className="text-center py-10 px-5">
@@ -220,7 +220,7 @@ const Apply = (e) => {
         </h1>
         <div className="grid gap-y-4 mt-3">
           <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full col-span-3">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
                 required
@@ -231,7 +231,7 @@ const Apply = (e) => {
                 maxLength={255}
               />
             </div>
-            <div className="w-full col-span-3">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
                 required
@@ -247,7 +247,7 @@ const Apply = (e) => {
             </div>
           </div>
           <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full col-span-3">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
                 required
@@ -258,7 +258,7 @@ const Apply = (e) => {
                 name="student_email"
               />
             </div>
-            <div className="w-full col-span-3">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
                 required
@@ -271,7 +271,7 @@ const Apply = (e) => {
             </div>
           </div>
           <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full col-span-3">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
                 required
@@ -283,8 +283,8 @@ const Apply = (e) => {
                 maxLength={300}
               />
             </div>
-            <div className="w-full col-span-3 grid grid-cols-2 gap-x-2">
-              <div className="">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
+              <div className="overflow-hidden pt-1">
                 <Input
                   variant="standard"
                   required
@@ -296,7 +296,7 @@ const Apply = (e) => {
                   maxLength={50}
                 />
               </div>
-              <div className="">
+              <div className="overflow-hidden pt-1">
                 <Input
                   variant="standard"
                   required
@@ -315,7 +315,7 @@ const Apply = (e) => {
             <p className="pl-2">Same as Present Address</p>
           </div>
           <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full col-span-3">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
                 required
@@ -327,8 +327,8 @@ const Apply = (e) => {
                 maxLength={300}
               />
             </div>
-            <div className="w-full col-span-3 grid grid-cols-2 gap-x-2">
-              <div className="">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
+              <div className="overflow-hidden pt-1">
                 <Input
                   variant="standard"
                   required
@@ -340,7 +340,7 @@ const Apply = (e) => {
                   maxLength={50}
                 />
               </div>
-              <div className="">
+              <div className="overflow-hidden pt-1">
                 <Input
                   variant="standard"
                   required
@@ -357,7 +357,7 @@ const Apply = (e) => {
           <div className="grid grid-cols-6 gap-x-2">
             <div className="w-full col-span-6">
               <div className="grid grid-cols-6 gap-x-2">
-                <div className="w-full col-span-3 relative group">
+                <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 relative group">
                   <Select
                     variant="standard"
                     label="Gender *"
@@ -368,7 +368,7 @@ const Apply = (e) => {
                     <Option value="Female">Female</Option>
                   </Select>
                 </div>
-                <div className="w-full col-span-3  border-b border-[#B0BEC5] grid grid-cols-3 gap-x-2 relative ">
+                <div className="w-full md:col-span-3 col-span-6 mt-5  md:mt-0  border-b border-[#B0BEC5] grid grid-cols-3 gap-x-2 relative ">
                   <p className="absolute -top-3 left-0 text-sm text-[#B0BEC5]">
                     Date Of Birth <span className="text-red-400">*</span>
                   </p>
@@ -429,7 +429,7 @@ const Apply = (e) => {
             </div>
           </div>
           <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full col-span-3">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
                 label="Office Address (if Applicable)"
@@ -439,7 +439,7 @@ const Apply = (e) => {
                 maxLength={200}
               />
             </div>
-            <div className="w-full col-span-3">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
                 required
@@ -453,8 +453,8 @@ const Apply = (e) => {
           </div>
 
           <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full col-span-3">
-              <div className="w-full col-span-3  relative ">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
+              <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0  relative ">
                 {allcourse ? (
                   <Select
                     required
@@ -491,7 +491,7 @@ const Apply = (e) => {
                 )}
               </div>
             </div>
-            <div className="w-full col-span-3">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
                 label="Occupation (if Applicable)"
@@ -503,7 +503,7 @@ const Apply = (e) => {
             </div>
           </div>
           <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full col-span-3">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
                 label="School/College/University"
@@ -513,8 +513,8 @@ const Apply = (e) => {
                 maxLength={200}
               />
             </div>
-            <div className="w-full col-span-3 grid grid-cols-2 gap-x-2">
-              <div className="">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
+              <div className="overflow-hidden pt-1">
                 <Input
                   variant="standard"
                   label="Department"
@@ -524,7 +524,7 @@ const Apply = (e) => {
                   maxLength={100}
                 />
               </div>
-              <div className="">
+              <div className="overflow-hidden pt-1">
                 <Input
                   variant="standard"
                   label="Roll"
@@ -537,7 +537,7 @@ const Apply = (e) => {
             </div>
           </div>
           <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full col-span-3">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
                 label="Alternative Name"
@@ -547,8 +547,8 @@ const Apply = (e) => {
                 maxLength={255}
               />
             </div>
-            <div className="w-full col-span-3 grid grid-cols-2 gap-x-2">
-              <div className="">
+            <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
+              <div className="overflow-hidden pt-1">
                 <Input
                   variant="standard"
                   label="Mobile"
@@ -559,7 +559,7 @@ const Apply = (e) => {
                   maxLength={15}
                 />
               </div>
-              <div className="">
+              <div className="overflow-hidden pt-1">
                 <Input
                   variant="standard"
                   label="Relation With Student"
