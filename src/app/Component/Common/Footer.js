@@ -14,11 +14,11 @@ const Footer = () => {
     <section className={style.parent_container} id="main">
       <div className={` ${style.footerCard} container mx-auto `}>
         <div className={style.footer_wrapper}>
-          <div className={style.footer_wrapper_img}>
+          <div className={`${style.footer_wrapper_img} mx-auto flex justify-center`}>
             <Image className={style.icon} src={icon1} alt="" />
           </div>
           <div>
-            <h5>Address</h5>
+            <h5 className="text-center">Address</h5>
             <p>
               House No-1, BLOCK-B Banasree, <br /> Main Road Rampura, Dhaka -
               1219
@@ -26,12 +26,12 @@ const Footer = () => {
           </div>
         </div>
         <div className={`${style.phone} ${style.footer_wrapper}`}>
-          <div className={style.footer_wrapper_img}>
+          <div className={`${style.footer_wrapper_img}  mx-auto flex justify-center`}>
             <Image className={style.icon} src={icon2} alt="" />
           </div>
 
           <div>
-            <h5>Phone</h5>
+            <h5 className="text-center">Phone</h5>
             <div>
               <p>+880 1310 333 444</p>
               <p>+880 1885 841 489</p>
@@ -39,11 +39,11 @@ const Footer = () => {
           </div>
         </div>
         <div className={style.footer_wrapper}>
-          <div className={style.footer_wrapper_img}>
+          <div className={`${style.footer_wrapper_img} mx-auto flex justify-center`}>
             <Image className={style.icon} src={icon3} alt="" />
           </div>
           <div>
-            <h5>Email</h5>
+            <h5 className="text-center">Email</h5>
             <p>info@arenawebsecurity.net</p>
           </div>
         </div>

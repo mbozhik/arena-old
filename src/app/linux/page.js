@@ -47,8 +47,8 @@ const page = () => {
     <Fragment>
       <div className="bg-[#EBE7F8] lg:h-[40vh] group">
         <div className="container mx-auto ">
-          <article className="flex pt-20 justify-center items-center">
-            <div className="w-[80%]">
+        <article className="flex py-10 justify-center items-center">
+          <div className="md:w-[80%] w-full px-3 md:px-0">
               <CyberSecurityH1 title={'Linux'} />
 
               <p className="text-1xl leading-5 pt-8">
@@ -56,7 +56,7 @@ const page = () => {
               </p>
             </div>
 
-            <div className="flex justify-center items-center">
+            <div className="md:flex justify-center items-center hidden">
               <Image
                 alt="Linux"
                 src={Linux}
@@ -67,22 +67,22 @@ const page = () => {
         </div>
       </div>
       {/* Course Module */}
-      <div className="flex px-20 pt-10">
+      <div className="flex lg:px-20 md:px-5 px-3 pt-10">
         <div className="grid  grid-cols-8 w-full">
-          <div className=" col-span-2 flex justify-start">
+        <div className=" col-span-2 hidden lg:block">
  
             <Image alt="Advance Python And Ethical Hacking" src={Banner} />
           </div>
 
-          <div className=" col-span-4">
+          <div className=" lg:col-span-4 col-span-8 lg:px-3">
             {/*KEY FEATURES  */}
             <div className="relative">
               <h3 className="text-[20px] font-semibold mt-5">KEY FEATURES</h3>
               <p className="lg:w-44 bg-[#ffd321] h-[3px] "></p>
             </div>
 
-            {/* <article className="grid grid-cols-5 gap-4 mt-5 "> */}
-            <article className="grid grid-cols-5 gap-4 mt-5 ">
+    
+            <article className="grid md:grid-cols-5 grid-cols-2 gap-4 mt-5 ">
               <div className="bg-[#EBE7F8] justify-center flex flex-col py-2 rounded-md">
                 <Image
                   src={network}
@@ -129,7 +129,7 @@ const page = () => {
                 <h3 className="text-[20px] font-semibold mt-5">MODULE</h3>
                 <p className="lg:w-24 bg-[#ffd321] h-[3px] "></p>
               </div>
-              <div className="flex justify-between">
+              <div className="md:flex justify-between">
               <ul className="mt-5">
                   <li>
                     <div className="flex gap-3 items-center py-1">
@@ -251,7 +251,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="col-span-2 flex justify-end">
+          <div className="col-span-2 hidden lg:block">
           {/* <div className=" col-span-2">
             <Image
               alt="Advance Python And Ethical Hacking"

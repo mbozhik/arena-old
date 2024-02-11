@@ -11,7 +11,7 @@ const PaymentSuccess = () => {
  
   const [trxID, setTrxID] = useState('');
   const [amount, setAmount] = useState('');
-  const [emailID, setEmailID] = useState('');
+  const [emailID, setEmailID] = useState(localStorage.getItem('UserEmail'));
 
   useEffect(() => {
     const query = searchParams.get('trxID');

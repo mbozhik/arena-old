@@ -87,7 +87,7 @@ const page = async () => {
             />
           </div>
 
-          <div className=" lg:col-span-4 col-span-8">
+          <div className=" lg:col-span-4 col-span-8 lg:px-3">
             {/*KEY FEATURES  */}
             <div className="relative">
               <h3 className="text-[20px] font-semibold mt-5">KEY FEATURES</h3>

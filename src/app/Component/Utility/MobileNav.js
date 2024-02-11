@@ -176,7 +176,7 @@ const MobileNav = ({ uid }) => {
             </li>
           )}
           {uid ? (
-            <li className="mt-5 " onClick={() => setNave(false)}>
+            <li className="mt-5 md:hidden  " onClick={() => setNave(false)}>
               {" "}
               {/* <span className="navBtn " >Log Out</span> */}
               <LogOut />

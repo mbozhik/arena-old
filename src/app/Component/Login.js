@@ -16,10 +16,11 @@ const Login = () => {
       password: e.target.password.value,
     };
     e.preventDefault();
+    setPending(true);
     try {
       const result = await StudentLogin(formdata, e.target.email.value);
       console.log(result);
-      setPending(true);
+
       if (
         (result?.status === 200 && result?.login === 0) ||
         result?.login === 2
@@ -143,6 +144,7 @@ const Login = () => {
             pending ? "bg-[#90bde0]" : "bg-deep-purple-600"
           } text-white rounded-lg`}
           type="submit"
+           disabled={pending}
         >
           Log In
         </button>

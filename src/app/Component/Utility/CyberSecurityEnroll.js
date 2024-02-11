@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const EnrollComponent = ({ data }) => {
   const str = data[0];
   const First = str.split("");
@@ -35,9 +37,11 @@ const EnrollComponent = ({ data }) => {
         {/* <addr> an Ethical Hacker</addr> */}
       </div>
       <div className="flex justify-center items-center mt-2 ">
+        <Link href='/admission'>
         <button className="uppercase shadow-2xl px-10 py-3 bg-[#76599E] font-semibold text-white">
           Enroll Now
         </button>
+        </Link>
       </div>
     </div>
   );

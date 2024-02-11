@@ -546,7 +546,7 @@ background-color: #44107a;
 } 
 @media (max-width:600px) {
   .waviy span{
-    font-size:25px;
+    font-size:20px;
     color:#231557;
     font-weight: 700;
    text-transform: uppercase;

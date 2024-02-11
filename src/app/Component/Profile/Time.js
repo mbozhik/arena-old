@@ -50,7 +50,7 @@ const Time = ({CreateDates,activeday}) => {
     Admission Time Remaining
     </h1>
     <p className="lg:w-full bg-[#ffd321] h-1 mt-1 mx-auto "></p>
-    <div className="mt-5 flex justify-between">
+    <div className="mt-5 flex justify-between gap-4">
         <div className=" fetext-center" >
             <h3 className="text-white text-3xl font-bold">{day}</h3>
             <p className="text-yellow-700 text-1xl font-bold">Day</p>

@@ -5,8 +5,8 @@ const PaymentDetails = async({paymetdata,courseFee}) => {
     const data=paymetdata;
 
     return (
-        <div className="container mx-auto">
-      <h4 className=' py-3 text-black mt-4   text-3xl font-semibold'>Payment Summary</h4>
+        <div className="container mx-auto px-3 md:px-0">
+      <h4 className=' py-3 text-black mt-4   md:text-3xl text-2xl font-semibold'>Payment Summary</h4>
    <div className="relative overflow-x-auto">
     <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
