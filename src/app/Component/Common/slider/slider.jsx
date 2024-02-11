@@ -49,10 +49,10 @@ const MentorSlides = () => {
             //    scrollbar={{ draggable: true }}
             //    onSwiper={(swiper) => console.log(swiper)}
             //    onSlideChange={() => console.log('slide change')}
-                className={`${style.slider_container} mySwipe py-5 mb-5`}
+                className={`${style.slider_container} mySwipe py-5 mb-5 `}
             >
                 <SwiperSlide>
-                    <div className={`${style.slider_wrapper}`}>
+                    <div className={`${style.slider_wrapper}  mt-6 md:mt-0`}>
                         <div className={`${style.slider_avatar}`}>
                         <Image src={image} alt=""/>
                         </div>
@@ -70,7 +70,7 @@ const MentorSlides = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className={`${style.slider_wrapper}`}>
+                <div className={`${style.slider_wrapper} mt-6 md:mt-0`}>
                         <div className={`${style.slider_avatar}`}>
                         <Image src={image5} alt=""/>
                         </div>
@@ -88,7 +88,7 @@ const MentorSlides = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className={`${style.slider_wrapper}`}>
+                <div className={`${style.slider_wrapper} mt-6 md:mt-0`}>
                         <div className={`${style.slider_avatar}`}>
                         <Image src={image3} alt=""/>
                         </div>
@@ -106,7 +106,7 @@ const MentorSlides = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className={`${style.slider_wrapper}`}>
+                <div className={`${style.slider_wrapper} mt-6 md:mt-0`}>
                         <div className={`${style.slider_avatar}`}>
                         <Image src={image4} alt=""/>
                         </div>
@@ -124,7 +124,7 @@ const MentorSlides = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className={`${style.slider_wrapper}`}>
+                <div className={`${style.slider_wrapper} mt-6 md:mt-0`}>
                         <div className={`${style.slider_avatar}`}>
                         <Image src={image2} alt=""/>
                         </div>
@@ -142,7 +142,7 @@ const MentorSlides = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className={`${style.slider_wrapper}`}>
+                <div className={`${style.slider_wrapper} mt-6 md:mt-0`}>
                         <div className={`${style.slider_avatar}`}>
                         <Image src={image6} alt=""/>
                         </div>
