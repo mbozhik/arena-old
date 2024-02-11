@@ -215,7 +215,7 @@ const Apply = (e) => {
         </DialogFooter>
       </Dialog>
       <form onSubmit={(e) => RegistationSucess(e)}>
-        <h1 className="text-3xl font-bold py-2 text-center  applicationTitle text-[#FFD321]">
+        <h1 className="md:text-3xl text-2xl font-bold py-2 text-center  applicationTitle text-[#FFD321]">
           Student Application Form
         </h1>
         <div className="grid gap-y-4 mt-3">

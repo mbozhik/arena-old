@@ -71,10 +71,10 @@ const Login = () => {
     }
   };
   return (
-    <div className=" w-[50%]">
-      <form className="mt-36 pl-40" onSubmit={(e) => UserLogin(e)}>
+    <div className=" md:w-[50%] w-full px-3 md:px-0">
+      <form className="lg:mt-36 mt-10 lg:pl-40 md:pl-5" onSubmit={(e) => UserLogin(e)}>
         <h1 className="text-3xl font-bold">Log in</h1>
-        <div className="relative z-0 w-2/3 mb-5 group mt-10">
+        <div className="relative z-0 lg:w-2/3 mb-5 group mt-10">
           <input
             type="email"
             name="email"
@@ -90,7 +90,7 @@ const Login = () => {
             Email address
           </label>
         </div>
-        <div className="relative z-0 w-2/3 mb-5 group mt-10 ">
+        <div className="relative z-0 lg:w-2/3 mb-5 group mt-10 ">
           {eye ? (
             <input
               type="text"
@@ -129,7 +129,7 @@ const Login = () => {
             />
           )}
         </div>
-        <p className="w-2/3 text-right ">
+        <p className="lg:w-2/3 text-right ">
           Don't have an ID?{" "}
           <Link href="admission" className="text-blue-400 font-semibold">
             Apply Now!
@@ -139,7 +139,7 @@ const Login = () => {
           
         </button> */}
         <button
-          className={`w-2/3  mt-4 py-2 ${
+          className={`lg:w-2/3 w-full  mt-4 py-2 ${
             pending ? "bg-[#90bde0]" : "bg-deep-purple-600"
           } text-white rounded-lg`}
           type="submit"

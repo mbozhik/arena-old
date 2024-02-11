@@ -82,7 +82,7 @@ const ShortFrom = (e) => {
   };
 
   return (
-    <div className="w-[50%] shadow-sm  px-5 ">
+    <div className="md:w-[50%] w-full shadow-sm  lg:px-5 px-1 ">
       <Dialog open={open} handler={handleOpen} size="md">
         {sucess && <Confetti width={750} height={350} />}
         <div className="text-center py-10 px-5">
@@ -125,7 +125,7 @@ const ShortFrom = (e) => {
         </DialogFooter>
       </Dialog>
       <form onSubmit={(e) => RegistationSucess(e)}>
-        <h1 className="text-3xl font-bold py-2 text-center  applicationTitle text-[#FFD321]">
+        <h1 className="md:text-3xl text-2xl font-bold py-2 text-center  applicationTitle text-[#FFD321]">
           Student Application Form
         </h1>
 
