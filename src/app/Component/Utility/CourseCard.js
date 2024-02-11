@@ -7,7 +7,7 @@ export function BackgroundBlogCard() {
     <div className="grid">
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-6 ">
         <Link href="/cybersecurity">
-          <div className="relative grid 2xl:h-[40rem]  md:h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
+          <div className="relative grid 2xl:h-[40rem]  h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
             <div
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberCard bg-cover bg-center"
@@ -32,7 +32,7 @@ export function BackgroundBlogCard() {
               <h2
                 variant="h2"
                 color="white"
-                className="mb-6 font-bold leading-[1.5] text-white 2xl:text-3xl xl:text-2xl   "
+                className="mb-6 font-bold leading-[1.5] text-white 2xl:text-3xl text-2xl   "
               >
                 Cyber Security & Ethical Hacking
               </h2>
@@ -52,7 +52,7 @@ export function BackgroundBlogCard() {
           </div>
         </Link>
         <Link href="/python">
-          <div className="relative grid 2xl:h-[40rem]  md:h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
+          <div className="relative grid 2xl:h-[40rem]  h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
             <div
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none PythonCard bg-cover bg-center"
@@ -80,7 +80,7 @@ export function BackgroundBlogCard() {
               <h2
                 variant="h2"
                 color="white"
-                className="mb-6 font-bold leading-[1.5] text-white 2xl:text-3xl xl:text-2xl   "
+                className="mb-6 font-bold leading-[1.5] text-white 2xl:text-3xl text-2xl   "
               >
                 Advanced Python With Freelancing
               </h2>
@@ -98,7 +98,7 @@ export function BackgroundBlogCard() {
           </div>
         </Link>
         <Link href="/combo">
-          <div className="relative grid 2xl:h-[40rem]  md:h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
+          <div className="relative grid 2xl:h-[40rem]  h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
             <div
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none Combo bg-cover bg-center"
@@ -123,7 +123,7 @@ export function BackgroundBlogCard() {
               <h2
                 variant="h2"
                 color="white"
-                className="mb-6 font-bold leading-[1.5] text-white 2xl:text-3xl xl:text-2xl   "
+                className="mb-6 font-bold leading-[1.5] text-white 2xl:text-3xl text-2xl   "
               >
                 Cyber Security and Advance Python (Combo)
               </h2>
@@ -140,7 +140,7 @@ export function BackgroundBlogCard() {
           </div>
         </Link>
         <Link href="/cehf">
-          <div className="relative grid  2xl:h-[40rem]  md:h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
+          <div className="relative grid  2xl:h-[40rem]  h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
             <div
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none Master bg-cover bg-center"
@@ -165,7 +165,7 @@ export function BackgroundBlogCard() {
               <h2
                 variant="h2"
                 color="white"
-                className="mb-6 font-bold leading-[1.5] text-white text-3xl  2xl:text-3xl xl:text-2xl"
+                className="mb-6 font-bold leading-[1.5] text-white text-3xl  2xl:text-3xl text-2xl"
               >
                 CEHF Masterclass
               </h2>

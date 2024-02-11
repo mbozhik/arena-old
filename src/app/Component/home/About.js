@@ -4,7 +4,7 @@ import sng from "@/app/Images/HomeAbout/ta.png";
 
 const About = () => {
   return (
-    <div className="container mx-auto bg-[#F3F6FA] md:px-10 py-5 -mt-10 z-10 relative rounded-md">
+    <div className="container mx-auto bg-[#F3F6FA] md:px-10 py-5 -mt-10 z-10 relative rounded-md px-3 ">
       <h1 className="text-2xl font-semibold text-[#ff1361]">About US</h1>
       <h3 className="text-3xl font-bold pt-3 ">
         World Best Virtual Learnig Network Arena Web Security

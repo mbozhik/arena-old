@@ -157,7 +157,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className={`  ${style.social} container mx-auto`}>
+          <div className={`  ${style.social} container mx-auto `}>
             <div className={style.socialContainer}>
               <a
                 href="https://www.facebook.com/ArenaBangladesh/"

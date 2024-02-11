@@ -225,7 +225,12 @@
     }
 }
 @media (max-width:600px) {
-    
+    .socialContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+    }
 .footerCard{
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
@@ -296,7 +301,7 @@
     margin: 30px;
 }
 .footerContainer h5{
-    color: #00c389;
+    color: #ffd321;
     font-size: 25px;
     font-weight: 700;
 }

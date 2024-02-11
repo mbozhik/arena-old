@@ -12,9 +12,9 @@ const Counter = () => {
         <div className=" container mx-auto grid grid-cols-4">
         <article className="flex justify-center flex-col border-r-2">
           <div className="flex justify-center">
-            <IoMdPeople className=" text-6xl text-white font-semibold text-center" />
+            <IoMdPeople className=" md:text-6xl text-4xl  text-white font-semibold text-center" />
           </div>
-          <div className="text-4xl text-white font-semibold text-center flex justify-center gap-2">
+          <div className="md:text-4xl text-white font-semibold text-center flex justify-center gap-2">
             <ScrollTrigger
               onEnter={() => setVisible(true)}
               onExit={() => setVisible(false)}
@@ -31,10 +31,10 @@ const Counter = () => {
         </article>
         <article className="flex justify-center flex-col border-r-2">
           <div className="flex justify-center">
-            <FaBookReader className=" text-6xl text-white font-semibold text-center" />
+            <FaBookReader className="  md:text-6xl text-4xl text-white font-semibold text-center" />
           </div>
       
-           <div className="text-4xl text-white font-semibold text-center flex justify-center gap-2">
+           <div className="md:text-4xl text-white font-semibold text-center flex justify-center gap-2">
             <ScrollTrigger
               onEnter={() => setVisible(true)}
               onExit={() => setVisible(false)}
@@ -51,10 +51,10 @@ const Counter = () => {
         </article>
         <article className="flex justify-center flex-col border-r-2">
           <div className="flex justify-center">
-            <MdCalendarMonth className=" text-6xl text-white font-semibold text-center" />
+            <MdCalendarMonth className="  md:text-6xl text-4xl text-white font-semibold text-center" />
           </div>
       
-           <div className="text-4xl text-white font-semibold text-center flex justify-center gap-2">
+           <div className="md:text-4xl text-white font-semibold text-center flex justify-center gap-2">
             <ScrollTrigger
               onEnter={() => setVisible(true)}
               onExit={() => setVisible(false)}
@@ -71,9 +71,9 @@ const Counter = () => {
         </article>
         <article className="flex justify-center flex-col ">
           <div className="flex justify-center">
-            <TbUserDollar className=" text-6xl text-white font-semibold text-center" />
+            <TbUserDollar className="  md:text-6xl text-4xl text-white font-semibold text-center" />
           </div>
-          <div className="text-4xl text-white font-semibold text-center flex justify-center gap-2">
+          <div className="md:text-4xl text-white font-semibold text-center flex justify-center gap-2">
             <ScrollTrigger
               onEnter={() => setVisible(true)}
               onExit={() => setVisible(false)}
