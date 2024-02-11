@@ -13,11 +13,11 @@ import Link from "next/link";
 
 export function AllCourses() {
   return (
-    <div className="grid px-20 lg:pt-16">
-      <div className="grid lg:grid-cols-4 gap-4 mt-6 ">
+    <div className="grid lg:px-20 md:px-5 px-3 lg:pt-16">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-6 ">
         <Fade bottom delay={200} distance="20%">
           <Link href='/cybersecurity'>
-          <Card className="relative grid h-[40rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberCard bg-cover bg-center"
@@ -27,11 +27,11 @@ export function AllCourses() {
            w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
               />
             </CardHeader>
-            <CardBody className="relative py-14 px-6 md:px-12">
+            <CardBody className="relative py-14 px-6 ">
               <Typography
                 variant="h2"
                 color="white"
-                className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out "
+                className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl "
               >
                 Cyber Security & Ethical Hacking
               </Typography>
@@ -47,21 +47,14 @@ export function AllCourses() {
                 professional marketplace.
               </Typography>
 
-              <Typography variant="h5" className="mb-4 text-gray-400">
-                Tanjim AL Fahim
-              </Typography>
-              <Image
-                src={ceo}
-                alt="Tanjim AL Fahim"
-                className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto"
-              />
+             
             </CardBody>
           </Card>
           </Link>
         </Fade>
         <Fade bottom delay={200} distance="20%">
         <Link href='/python'>
-          <Card className="relative grid h-[40rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none PythonCard bg-cover bg-center"
@@ -71,11 +64,11 @@ export function AllCourses() {
            w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
               />
             </CardHeader>
-            <CardBody className="relative py-14 px-6 md:px-12">
+            <CardBody className="relative py-14 px-6 ">
               <Typography
                 variant="h2"
                 color="white"
-                className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out"
+                className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl"
               >
                 Advanced Python With Freelancing
               </Typography>
@@ -89,14 +82,7 @@ export function AllCourses() {
                 other languages use punctuation, and it has fewer syntactical
                 constructions than other languages.
               </Typography>
-              <Typography variant="h5" className="mb-4 text-gray-400">
-                Tanjim AL Fahim
-              </Typography>
-              <Image
-                src={ceo}
-                alt="Tanjim AL Fahim"
-                className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto"
-              />
+             
             </CardBody>
           </Card>
           </Link>
@@ -104,7 +90,7 @@ export function AllCourses() {
 
         <Fade bottom delay={200} distance="20%">
         <Link href='/combo'>
-          <Card className="relative grid h-[40rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none Combo bg-cover bg-center"
@@ -114,11 +100,11 @@ export function AllCourses() {
            w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
               />
             </CardHeader>
-            <CardBody className="relative py-14 px-6 md:px-12">
+            <CardBody className="relative py-14 px-6 ">
               <Typography
                 variant="h2"
                 color="white"
-                className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out"
+                className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl"
               >
                 Cyber Security and Advance Python (Combo)
               </Typography>
@@ -131,21 +117,14 @@ export function AllCourses() {
                 features. This course can help to build skills across the
                 cyberattack world for both cyber attackers and defenders.
               </Typography>
-              <Typography variant="h5" className="mb-4 text-gray-400">
-                Tanjim AL Fahim
-              </Typography>
-              <Image
-                src={ceo}
-                alt="Tanjim AL Fahim"
-                className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto"
-              />
+             
             </CardBody>
           </Card>
           </Link>
         </Fade>
         <Fade bottom delay={200} distance="20%">
         <Link href='/cehf'>
-          <Card className="relative grid h-[40rem] w-full max-w-[28rem] group   items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group   items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none Master bg-cover bg-center"
@@ -155,11 +134,11 @@ export function AllCourses() {
            w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
               />
             </CardHeader>
-            <CardBody className="relative py-14 px-6 md:px-12">
+            <CardBody className="relative py-14 px-6 ">
               <Typography
                 variant="h2"
                 color="white"
-                className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out"
+                className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl"
               >
                 CEHF Masterclass
               </Typography>
@@ -173,24 +152,17 @@ export function AllCourses() {
                 advancement. Advanced Cyber Security & Ethical Hacking products
                 provide the first.
               </Typography>
-              <Typography variant="h5" className="mb-4 text-gray-400">
-                Tanjim AL Fahim
-              </Typography>
-              <Image
-                src={ceo}
-                alt="Tanjim AL Fahim"
-                className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto"
-              />
+             
             </CardBody>
           </Card>
           </Link>
         </Fade>
       </div>
       <div className="flex justify-center items-center mx-auto mt-4">
-        <div className=" grid grid-cols-3  lg:col-span-3 gap-4 lg:col-start-2 ">
+        <div className=" grid lg:grid-cols-3 md:grid-cols-2  lg:col-span-3 gap-4 lg:col-start-2 ">
           <Fade bottom delay={200} distance="20%">
           <Link href='/cosint'>
-            <Card className="relative grid h-[40rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+            <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
               <CardHeader
                 color="transparent"
                 className="absolute inset-0 m-0 h-full w-full rounded-none Int bg-cover bg-center"
@@ -200,11 +172,11 @@ export function AllCourses() {
            w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
                 />
               </CardHeader>
-              <CardBody className="relative py-14 px-6 md:px-12">
+              <CardBody className="relative py-14 px-6 ">
                 <Typography
                   variant="h2"
                   color="white"
-                  className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out"
+                  className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl"
                 >
                   C|OSINT (Certified Open Source Intelligence)
                 </Typography>
@@ -219,21 +191,14 @@ export function AllCourses() {
                   enjoying the activities. Learn to direct your searches to
                   obtain results quickly!
                 </Typography>
-                <Typography variant="h5" className="mb-4 text-gray-400">
-                  Tanjim AL Fahim
-                </Typography>
-                <Image
-                  src={ceo}
-                  alt="Tanjim AL Fahim"
-                  className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto"
-                />
+               
               </CardBody>
             </Card>
             </Link>
           </Fade>
           <Fade bottom delay={200} distance="20%">
           <Link href='/linux'>
-            <Card className="relative grid h-[40rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+            <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
               <CardHeader
                 color="transparent"
                 className="absolute inset-0 m-0 h-full w-full rounded-none Linax bg-cover bg-center"
@@ -243,11 +208,11 @@ export function AllCourses() {
            w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
                 />
               </CardHeader>
-              <CardBody className="relative py-14 px-6 md:px-12">
+              <CardBody className="relative py-14 px-6 ">
                 <Typography
                   variant="h2"
                   color="white"
-                  className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out"
+                  className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl"
                 >
                   Linux
                 </Typography>
@@ -262,21 +227,14 @@ export function AllCourses() {
                   who complete the course and pass the exam earn the coveted
                   Arena Web Certified Professional certification.
                 </Typography>
-                <Typography variant="h5" className="mb-4 text-gray-400">
-                  Tanjim AL Fahim
-                </Typography>
-                <Image
-                  src={ceo}
-                  alt="Tanjim AL Fahim"
-                  className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto"
-                />
+            
               </CardBody>
             </Card>
             </Link>
           </Fade>
           <Fade bottom delay={200} distance="20%">
           <Link href='/network'>
-            <Card className="relative grid h-[40rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+            <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
               <CardHeader
                 color="transparent"
                 className="absolute inset-0 m-0 h-full w-full rounded-none network bg-cover bg-center"
@@ -286,11 +244,11 @@ export function AllCourses() {
            w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
                 />
               </CardHeader>
-              <CardBody className="relative py-14 px-6 md:px-12">
+              <CardBody className="relative py-14 px-6 ">
                 <Typography
                   variant="h2"
                   color="white"
-                  className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out"
+                  className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl"
                 >
                   Networking Security
                 </Typography>
@@ -306,14 +264,7 @@ export function AllCourses() {
                   largest risks online, the browser. The doorway into your
                   system.
                 </Typography>
-                <Typography variant="h5" className="mb-4 text-gray-400">
-                  Tanjim AL Fahim
-                </Typography>
-                <Image
-                  src={ceo}
-                  alt="Tanjim AL Fahim"
-                  className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto"
-                />
+             
               </CardBody>
             </Card>
             </Link>

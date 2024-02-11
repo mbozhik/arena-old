@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className="h-auto relative ">
+    <div className="h-auto relative overflow-hidden ">
       <div className="relative md:h-[90vh]">
         <div className="h-3/5 flex justify-center items-center flex-col container mx-auto px-3 md:px-0  ">
           <div className="md:mt-20 lg:mt-10 mt-10">
@@ -66,11 +66,11 @@ const page = () => {
         </svg>
         <div className="flex w-full md:gap-4 gap-2 px-2 justify-center  left-1/2 transform -translate-x-1/2 absolute md:bottom-5 bottom-2">
           <Link href="/contact">
-            <botton className="md:bg-white bg-[#76599E] px-10 py-2 rounded-full text-[#ffd321] hover:text-green-400 cursor-pointer ">
+            <botton className="md:bg-white bg-[#76599E] px-10 py-2 rounded-full text-[#ffd321] hover:text-green-500 cursor-pointer ">
               Contact Us
             </botton>
           </Link>
-          <Link href="https://www.facebook.com/ArenaBangladesh/">`  `
+          <Link href="https://www.facebook.com/ArenaBangladesh/">
             <botton className="bg-[#76599E] hover:text-[#ffd321] md:px-10 px-5 py-1 md:py-2 rounded-full text-[white] ">
               Join US Facebook
             </botton>
