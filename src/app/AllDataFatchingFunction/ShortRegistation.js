@@ -21,7 +21,7 @@ export default function ShortRegistration(
       form_id(response.data.id);
       setPending(false);
 
- console.log(response);
+//  console.log(response);
     });
   } catch (error) {
     setPending(false);

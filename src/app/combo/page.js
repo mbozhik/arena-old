@@ -19,7 +19,10 @@ import MentorSlides from "../Component/Common/slider/Slider";
 import Outline from "../Component/Common/Outline";
 import { PaymentModal } from "../Component/Common/Payment";
 
-
+export const metadata = {
+  title: 'Ethical Hacking & Advanced Python Course Combo Offer!',
+  description: 'Level up your skills in Python and Ethical Hacking! Our expert-led courses empower you to excel in IT security. Enroll now for a brighter future!',
+}; 
 const page = () => {
     const images=[
         {
@@ -47,10 +50,10 @@ const page = () => {
        
   return (
     <Fragment>
-      <div className="bg-[#EBE7F8] lg:h-[40vh] group">
+ <div className="bg-[#EBE7F8] lg:h-[45vh] group">
         <div className="container mx-auto ">
         <article className="flex py-10 justify-center items-center">
-            <div className="md:w-[80%] w-full px-3 md:px-0">
+            <div className="md:w-[80%] w-full px-6 md:px-0">
               <CyberSecurityH1 title={'Cyber Security and Advance Python (Combo)'} />
 
               <p className="text-1xl leading-5 pt-8">
@@ -69,7 +72,7 @@ const page = () => {
         </div>
       </div>
       {/* Course Module */}
-      <div className="flex lg:px-20 md:px-5 px-3 pt-10">
+      <div className="flex lg:px-20 md:px-5 px-6 pt-10">
         <div className="grid  grid-cols-8 w-full">
           <div className=" col-span-2 hidden lg:block">
             {/* <Image

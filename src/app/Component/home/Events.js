@@ -6,17 +6,17 @@ import Link from "next/link";
 
 const Events = async() => {
     const data = await NavberData();
-    console.log(data);
+    // console.log(data);
     return (
-        <div className="lg:px-20 md:px-5 lg:mt-16 md:mt-8 lg:h-[100vh] md:h-h[60vh] bg-[#EBE7F8]  ">
+        <div className="lg:px-20 md:px-5 px-5 lg:mt-16 md:mt-8 lg:h-[100vh] md:h-h[60vh] bg-[#EBE7F8] py-5 ">
             <div className="md:grid grid-cols-6 h-full">
-                <div className="md:col-span-2 h-full relative hidden md:block">
+                <div className="md:col-span-2 h-full relative hidden md:block ">
                   <Image src={event} alt="Events" className="h-auto w-auto" fill={true} sizes="1000vh" />
                 </div>
                 <div className="md:col-span-4  px-3 md:px-0">
                     <article className="py-4 relative pl-5">
                         <div className="relative">
-                        <h3 className="md:text-3xl font-bold  pb-2  ">Upcoming Events</h3>
+                        <h3 className="md:text-3xl text-2xl font-bold  pb-2  ">Upcoming Events</h3>
                         <p className="w-60 bg-[#ffd321] h-[3px]"></p>
                         </div>
                        

@@ -20,7 +20,10 @@ import MentorSlides from "../Component/Common/slider/Slider";
 import Outline from "../Component/Common/Outline";
 import { PaymentModal } from "../Component/Common/Payment";
 
-
+export const metadata = {
+  title: 'Dive into Digital Sleuthing & Earn Your C|OSINT Certification',
+  description: 'Uncover hidden insights and enhance your investigative prowess with our C|OSINT certification course. Dive into the world of digital sleuthing today!',
+}; 
 const page = () => {
     const images=[
         {
@@ -48,10 +51,10 @@ const page = () => {
        
   return (
     <Fragment>
-      <div className="bg-[#EBE7F8] lg:h-[40vh] group">
+      <div className="bg-[#EBE7F8] lg:h-[45vh] group">
         <div className="container mx-auto ">
         <article className="flex py-10 justify-center items-center">
-          <div className="md:w-[80%] w-full px-3 md:px-0">
+          <div className="md:w-[80%] w-full px-6 md:px-0">
               <CyberSecurityH1 title={'CEHF Masterclass'} />
 
               <p className="text-1xl leading-5 pt-8">
@@ -70,7 +73,7 @@ const page = () => {
         </div>
       </div>
       {/* Course Module */}
-      <div className="flex lg:px-20 md:px-5 px-3 pt-10">
+      <div className="flex lg:px-20 md:px-5 px-6 pt-10">
         <div className="grid  grid-cols-8 w-full">
         <div className=" col-span-2 hidden lg:block">
             <Image

@@ -14,7 +14,7 @@ export function ServiceCard() {
     <div className="grid">
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-6 ">
         <Fade left>
-          <Card className="relative grid 2xl:h-[40rem]  h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
+          <Card className="relative grid 2xl:h-[40rem]  md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
@@ -46,7 +46,7 @@ export function ServiceCard() {
             </CardBody>
           </Card>
         </Fade>
-        <Card className="relative grid 2xl:h-[40rem]  h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
+        <Card className="relative grid 2xl:h-[40rem]  md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
           <CardHeader
             color="transparent"
             className="absolute inset-0 m-0 h-full w-full rounded-none Sof bg-cover bg-center"
@@ -110,7 +110,7 @@ export function ServiceCard() {
         </Card>
 
         <Fade right>
-          <Card className="relative grid 2xl:h-[40rem]  h-[35rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
+          <Card className="relative grid 2xl:h-[40rem]  md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none Mobile bg-cover bg-center"

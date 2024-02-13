@@ -19,7 +19,7 @@ const Login = () => {
     setPending(true);
     try {
       const result = await StudentLogin(formdata, e.target.email.value);
-      console.log(result);
+      // console.log(result);
 
       if (
         (result?.status === 200 && result?.login === 0) ||

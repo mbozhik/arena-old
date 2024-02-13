@@ -369,7 +369,7 @@ const Apply = (e) => {
                   </Select>
                 </div>
                 <div className="w-full md:col-span-3 col-span-6 mt-5  md:mt-0  border-b border-[#B0BEC5] grid grid-cols-3 gap-x-2 relative ">
-                  <p className="absolute -top-3 left-0 text-sm text-[#B0BEC5]">
+                  <p className="absolute md:-top-3 -top-5 left-0 text-sm text-[#B0BEC5]">
                     Date Of Birth <span className="text-red-400">*</span>
                   </p>
                   <select
@@ -586,7 +586,7 @@ const Apply = (e) => {
             color="indigo"
             name="des_question"
             maxLength={500}
-          />
+          />0
         </div>
 
         <div className="flex justify-center py-5">

@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Logo from "@/app/admission/Logo.png";
 import Login from "../Component/Login";
+
+export const metadata = {
+  title: 'Ethical Hacking & Advanced Python Course Combo Offer!',
+  description: 'Level up your skills in Python and Ethical Hacking! Our expert-led courses empower you to excel in IT security. Enroll now for a brighter future!',
+}; 
 const page = () => {
   return (
     <div className="lg:px-20 md:px-5 px-3 mt-5">

@@ -13,11 +13,11 @@ import Link from "next/link";
 
 export function AllCourses() {
   return (
-    <div className="grid lg:px-20 md:px-5 px-3 lg:pt-16">
+    <div className="grid lg:px-20 md:px-5 px-6 lg:pt-16">
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-6 ">
         <Fade bottom delay={200} distance="20%">
           <Link href='/cybersecurity'>
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberCard bg-cover bg-center"
@@ -54,7 +54,7 @@ export function AllCourses() {
         </Fade>
         <Fade bottom delay={200} distance="20%">
         <Link href='/python'>
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none PythonCard bg-cover bg-center"
@@ -90,7 +90,7 @@ export function AllCourses() {
 
         <Fade bottom delay={200} distance="20%">
         <Link href='/combo'>
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none Combo bg-cover bg-center"
@@ -124,7 +124,7 @@ export function AllCourses() {
         </Fade>
         <Fade bottom delay={200} distance="20%">
         <Link href='/cehf'>
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group   items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group   items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none Master bg-cover bg-center"
@@ -162,7 +162,7 @@ export function AllCourses() {
         <div className=" grid lg:grid-cols-3 md:grid-cols-2  lg:col-span-3 gap-4 lg:col-start-2 ">
           <Fade bottom delay={200} distance="20%">
           <Link href='/cosint'>
-            <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+            <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
               <CardHeader
                 color="transparent"
                 className="absolute inset-0 m-0 h-full w-full rounded-none Int bg-cover bg-center"
@@ -198,7 +198,7 @@ export function AllCourses() {
           </Fade>
           <Fade bottom delay={200} distance="20%">
           <Link href='/linux'>
-            <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+            <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
               <CardHeader
                 color="transparent"
                 className="absolute inset-0 m-0 h-full w-full rounded-none Linax bg-cover bg-center"
@@ -234,7 +234,7 @@ export function AllCourses() {
           </Fade>
           <Fade bottom delay={200} distance="20%">
           <Link href='/network'>
-            <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+            <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
               <CardHeader
                 color="transparent"
                 className="absolute inset-0 m-0 h-full w-full rounded-none network bg-cover bg-center"

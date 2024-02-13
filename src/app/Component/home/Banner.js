@@ -9,10 +9,10 @@ import BannerVaideo from "../Utility/BannerVaideo";
 
 const Banner = () => {
   return (
-    <div className=" h-auto lg:h-[90vh] md:h-[60vh]    bg-[#EBE7F8] md:flex  ">
+    <div className=" h-auto lg:h-[90vh] md:h-[60vh]    bg-[#EBE7F8] md:flex  px-3 md:px-3 ">
     {/* <div className=" h-auto lg:h-[90vh] md:h-[60vh]    bg-white md:flex  "> */}
-      <article className="md:w-1/2  flex md:justify-center justify-start items-center flex-col 2xl:px-20 lg:px-12 px-0">
-        <h1 className="2xl:text-6xl  lg:text-5xl text-3xl  font-bold drop-shadow-lg text-[#44107a] mt-20 md:mt-0  w-full pl-2 lg:pl-0 ">Arena Web Security</h1>
+      <article className=" md:w-1/2 flex md:justify-center justify-start items-center flex-col 2xl:px-10 lg:px-10 px-0 2xl:text-center">
+        <h1 className="2xl:text-6xl   lg:text-5xl text-3xl  font-bold drop-shadow-lg text-[#44107a] mt-20 md:mt-0  w-full pl-2 lg:pl-0 ">Arena Web Security</h1>
       <h3 className="uppercase text-[#ff1361]  2xl:text-3xl  lg:text-[26px] md:text:2xl  drop-shadow-md font-bold md:my-4 w-full pl-2 lg:pl-0 my-1">
     {<Type/>}
       </h3>
@@ -22,7 +22,7 @@ const Banner = () => {
           has provided Cyber Security Services and Trainings to many around the
           world.
         </p>
-        <div className="md:mt-10 mt-5 flex  justify-start  items-center gap-x-10  w-full pl-2 lg:pl-0">
+        <div className="md:mt-10 mt-5 flex  justify-start 2xl:justify-center  items-center gap-x-10  w-full pl-2 lg:pl-0">
           <Link href='/admission'>
           <button className="lg:text-2px font-semibold bg-[#76599E] text-white md:px-8 md:py-3 px-4 py-2 rounded-md hover:bg-[#76599E] hover:text-white">Apply Now</button></Link>
           <div className="h-10 w-10">
@@ -31,7 +31,7 @@ const Banner = () => {
         
         </div>
       </article>
-      <article className="relative md:w-1/2 w-full h-[50vh] md:h-auto mt-5 md:mt-0">
+      <article className="relative md:w-1/2  w-full h-[50vh] md:h-auto mt-5 md:mt-0">
          <div className="absolute md:right-[-100px] lg:top-0 md:top-20  lg:h-[100%] md:h-[80%] h-[50vh]  ">
          <Image src={bannerImg} alt="Banner" className="h-[100%]"/>
          </div>

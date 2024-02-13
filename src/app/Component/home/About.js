@@ -2,9 +2,14 @@ import Image from "next/image";
 import ceo from "@/app/Images/HomeAbout/ceo.png";
 import sng from "@/app/Images/HomeAbout/ta.png";
 
+
+export const metadata = {
+  title: 'Arena Web Security | Master Ethical Hacking in Bangladesh',
+  description:'Arena Web Security is  first level IT security company in Bangladesh since its establishment in 2012. Arena Web Security has provided Cyber Security Services', 
+};
 const About = () => {
   return (
-    <div className="container mx-auto bg-[#F3F6FA] md:px-10 py-5 -mt-10 z-10 relative rounded-md px-3 ">
+    <div className="container mx-auto bg-[#F3F6FA] md:px-10 py-5 -mt-10 z-10 relative rounded-md px-6 ">
       <h1 className="text-2xl font-semibold text-[#ff1361]">About US</h1>
       <h3 className="text-3xl font-bold pt-3 ">
         World Best Virtual Learnig Network Arena Web Security

@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react";
 const VideoContent = ({props}) => {
-  console.log(props);
+  // console.log(props);
     const [mute,setMute]=useState(props)
     function toggleMute() {
       const video=document.getElementById("promoVideo");

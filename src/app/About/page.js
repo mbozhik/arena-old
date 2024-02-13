@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div className="h-auto relative overflow-hidden ">
       <div className="relative md:h-[90vh]">
-        <div className="h-3/5 flex justify-center items-center flex-col container mx-auto px-3 md:px-0  ">
+        <div className="h-3/5 flex justify-center items-center flex-col container mx-auto px-6 md:px-0  ">
           <div className="md:mt-20 lg:mt-10 mt-10">
             <Image
               alt="Arena Web and Security"

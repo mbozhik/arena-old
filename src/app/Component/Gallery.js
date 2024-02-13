@@ -112,7 +112,7 @@ const Gallery = () => {
         </div>
     </div>;
     return (
-        <div className='module-container bg-circle lg:px-20 md:px-5 px-3'>
+        <div className='module-container bg-circle lg:px-20 md:px-5 px-6 '>
             <div className='container-cstm'>
             <img src='./Shapes/down2.png' alt="" className='down-arrow cursor-pointer'/>
             <h1 className='text-center lg:text-3xl lg:font-bold font-semibold text-2xl'>Gallery</h1>

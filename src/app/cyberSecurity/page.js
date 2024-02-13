@@ -17,6 +17,10 @@ import { PaymentModal } from "./Payment";
 import BannerImage from "../AllDataFatchingFunction/BannerImage";
 
 
+export const metadata = {
+  title: 'Cyber Security Training Course - Ethical Hacking',
+  description: 'Learn ethical hacking  with industry experts. Our immersive courses help you land dream IT security jobs or become a freelance white hat hacker. Enroll now!',
+};
 
 const page = async () => {
   const Tanjim=await BannerImage()
@@ -50,10 +54,10 @@ const page = async () => {
   ]
   return (
     <Fragment>
-      <div className="bg-[#EBE7F8] lg:h-[40vh] group">
-        <div className="container mx-auto ">
-          <article className="flex py-10 justify-center items-center">
-            <div className="md:w-[80%] w-full px-3 md:px-0">
+      <div className="bg-[#EBE7F8] lg:h-[45vh] group">
+        <div className="container mx-auto  ">
+          <article className="flex py-10  justify-center items-center">
+            <div className="md:w-[80%] w-full px-6 md:px-0">
               <CyberSecurityH1 title={'Cyber Security & Ethical Hacking'}/>
 
               <p className="text-1xl leading-5 pt-8">
@@ -77,7 +81,7 @@ const page = async () => {
         </div>
       </div>
       {/* Course Module */}
-      <div className="flex lg:px-20 md:px-5 px-3 pt-10">
+      <div className="flex lg:px-20 md:px-5 px-6 pt-10">
         <div className="grid  grid-cols-8 w-full">
           <div className=" col-span-2 hidden lg:block">
             <Image
@@ -315,7 +319,7 @@ const page = async () => {
 
       {/* Inforfation About Cyber Security */}
 
-      <div className="lg:px-20 md:px-5 px-3 pt-10">
+      <div className="lg:px-20 md:px-5 px-6 pt-10">
         <div className="md:flex gap-5">
           <article className="md:w-[50%] w-full">
             <details className="details " open>
@@ -460,13 +464,13 @@ const page = async () => {
         </div>
         
       </div>
-      <div className="bg-[#EBE7F8]  flex justify-center items-center mt-10 px-3 md:px-0">
+      <div className="bg-[#EBE7F8]  flex justify-center items-center mt-10 px-6 md:px-0">
         <div className='my-10'>
           <EnrollComponent data={['BECOME','An_ETHICAL','HACKER']} />
          
         </div>
         </div>
-        <div className="lg:px-20 md:px-5 px-3 my-10 ">
+        <div className="lg:px-20 md:px-5 px-6 my-10 ">
         <Outline data={images}/>
         </div>
         <div className=" my-10 ">

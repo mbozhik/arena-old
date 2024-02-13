@@ -6,7 +6,7 @@ import female from '@/app/Images/profile/AzFemail.jpg'
 import logo from '@/app/Images/profile/logo.png'
 import Image from 'next/image';
 const Profiledetails = async({data,paymetdata}) => {
-    console.log(paymetdata?.data?.total.total_amount);
+    // console.log(paymetdata?.data?.total.total_amount);
     return (
         <div className="  relative container mx-auto px-3 md:px-0">
         <article className='flex'>

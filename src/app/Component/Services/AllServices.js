@@ -9,10 +9,10 @@ import {
 import { Fade } from "react-reveal";
 export function AllServices() {
   return (
-    <div className="grid 2xl:px-20 xl:px-10 md:px-5 px-3 lg:pt-16">
+    <div className="grid 2xl:px-20 xl:px-10 md:px-5 px-6 lg:pt-16">
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-6 ">
         <Fade bottom delay={200} distance="20%">
-          <Card className="relative grid lg:h-[40rem] h-[35rem]  w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem]  w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
@@ -45,7 +45,7 @@ export function AllServices() {
           </Card>
         </Fade>
         <Fade delay={200} bottom distance="20%">
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none Sof bg-cover bg-center"
@@ -78,7 +78,7 @@ export function AllServices() {
           </Card>
         </Fade>
         <Fade delay={200} bottom distance="20%">
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none Net bg-cover bg-center"
@@ -110,7 +110,7 @@ export function AllServices() {
           </Card>
         </Fade>
         <Fade delay={200} bottom distance="20%">
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group   items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group   items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none Mobile bg-cover bg-center"
@@ -144,7 +144,7 @@ export function AllServices() {
         </Fade>
 
         <Fade bottom delay={200} distance="20%">
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
@@ -178,7 +178,7 @@ export function AllServices() {
         </Fade>
 
         <Fade bottom delay={200} distance="20%">
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
@@ -211,7 +211,7 @@ export function AllServices() {
           </Card>
         </Fade>
         <Fade bottom delay={200} distance="20%">
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
@@ -244,7 +244,7 @@ export function AllServices() {
           </Card>
         </Fade>
         <Fade bottom delay={200} distance="20%">
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
@@ -276,7 +276,7 @@ export function AllServices() {
           </Card>
         </Fade>
         <Fade bottom delay={200} distance="20%">
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
@@ -308,7 +308,7 @@ export function AllServices() {
           </Card>
         </Fade>
         <Fade bottom delay={200} distance="20%">
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
@@ -340,7 +340,7 @@ export function AllServices() {
           </Card>
         </Fade>
         <Fade bottom delay={200} distance="20%">
-          <Card className="relative grid lg:h-[40rem] h-[35rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
+          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"
               className="absolute inset-0 m-0 h-full w-full rounded-none CyberService bg-cover bg-center"
