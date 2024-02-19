@@ -9,7 +9,7 @@ import style from './MentorSlides.module.css'
 
 import image from '@/app/Courses/TeacherSliderImages/Fahim.svg'
 import image2 from '@/app/Courses/TeacherSliderImages/SA_MUBIN.jpg'
-import image3 from '@/app/Courses/TeacherSliderImages/jewele.svg'
+import image3 from '@/app/Courses/TeacherSliderImages/roman.jpg'
 import image4 from '@/app/Courses/TeacherSliderImages/ashif.jpeg'
 import image5 from '@/app/Courses/TeacherSliderImages/bijoy.jpeg'
 import image6 from '@/app/Courses/TeacherSliderImages/zawad.png'
@@ -93,8 +93,8 @@ const MentorSlides = () => {
                         <Image src={image3} alt=""/>
                         </div>
                         <div className='text-center px-5'>
-                            <h2>Md Jewele Islam</h2>
-                            <h6>Software Engineer & Senior Trainer</h6>
+                            <h2>Roman Moonshi</h2>
+                            <h6> Cyber Security, Ethical Hacking, Linux RedHat.</h6>
                             <div className={`${style.divider}`}>
                                 <div></div>
                                 <Image src={star} alt=""/>

@@ -9,7 +9,7 @@ export const metadata = {
 };
 const About = () => {
   return (
-    <div className="container mx-auto bg-[#F3F6FA] md:px-10 py-5 -mt-10 z-10 relative rounded-md px-6 ">
+    <div className="container mx-auto bg-[#F3F6FA] md:px-10 py-5 -mt-10 z-10 hidden md:block relative rounded-md px-6 ">
       <h1 className="text-2xl font-semibold text-[#ff1361]">About US</h1>
       <h3 className="text-3xl font-bold pt-3 ">
         World Best Virtual Learnig Network Arena Web Security
@@ -32,7 +32,7 @@ const About = () => {
           width="0"
           height="0"
           sizes="100vw"
-          className="border-2 border-white h-32 w-32 rounded-full  "
+          className=" h-32 w-32 rounded-full  "
         />
         <div>
         <Image
@@ -41,7 +41,7 @@ const About = () => {
     height="0"
     sizes="100vw"
           alt="Tanjim AL Fahim"
-          className="border-2 w-40 h-10 border-white   "
+          className=" w-40 h-10  "
         />
         <p className="font-semibold mt-2 lg:text-1xl">Ceo & Founder of Arena</p>
         </div>

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Lightbox from 'react-image-lightbox';
 import "react-image-lightbox/style.css";
 import './Module.css'
+import Link from 'next/link';
 
 const Module = () => {
     const [open, setOpen] = useState(false)
@@ -58,7 +59,7 @@ const Module = () => {
                     }
                 />
             )}
-            <div className='module-btn'><a href="https://arenawebsecurity.net/admission" className='flex justify-center'><button type="" className="btn btn-animate">Interested? <br /> Join The Course</button></a></div>
+            <div className='module-btn'><Link href="/admission" className='flex justify-center'><button type="" className="btn btn-animate">Interested? <br /> Join The Course</button></Link></div>
             </div>
         </div>
     );

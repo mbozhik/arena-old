@@ -9,11 +9,13 @@ import CourseStatistic from './Component/home/CourseStatistic'
 import Preview from './Component/home/Preview'
 import OurConcern from './Component/home/OurConcern'
 
+
 export default function Home() {
   return (
    <div className='overflow-hidden'>
+
     <Banner/>
-    <About/>
+    <About />
     <Courses/>
     <Services/>
     <Events/>

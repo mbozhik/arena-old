@@ -54,7 +54,7 @@ const page = async () => {
   ]
   return (
     <Fragment>
-      <div className="bg-[#EBE7F8] lg:h-[45vh] group">
+      <div className="bg-[#EBE7F8] lg:h-[45vh] group ">
         <div className="container mx-auto  ">
           <article className="flex py-10  justify-center items-center">
             <div className="md:w-[80%] w-full px-6 md:px-0">
@@ -282,10 +282,10 @@ const page = async () => {
                 </div>
               </div>
               <div>
-                <div className="flex gap-3 items-center py-1">
-                  <p className="font-semibold"> Course Type :</p>
+                <div className="flex gap-3  py-1">
+                  <p className="font-semibold ">Course Type :</p>
                   <span>
-                    Professional certified course that everyone can avail.
+                    Professional certified course <br className="block md:hidden"/> that  everyone can avail.
                   </span>
                 </div>
               </div>

@@ -116,47 +116,48 @@ const Apply = (e) => {
     newFormData.append("course_title", course_title);
     let object = Object.fromEntries(newFormData);
 
-    if (gander === null) {
-      Swal.fire({
-        position: "top-center",
-        icon: "error",
-        title: "Select a Gander",
-        showConfirmButton: false,
-        showDenyButton: true,
-        denyButtonText: `ok`,
-        timer: 2000,
-      });
-    } else if (year === "Year") {
-      Swal.fire({
-        position: "top-center",
-        icon: "error",
-        title: "Birth Date Required a Year",
-        showConfirmButton: false,
-        showDenyButton: true,
-        denyButtonText: `ok`,
-        timer: 2000,
-      });
-    } else if (month === "Month") {
-      Swal.fire({
-        position: "top-center",
-        icon: "error",
-        title: "Birth Date Required a Month",
-        showConfirmButton: false,
-        showDenyButton: true,
-        denyButtonText: `ok`,
-        timer: 2000,
-      });
-    } else if (day === "Day") {
-      Swal.fire({
-        position: "top-center",
-        icon: "error",
-        title: "Birth Date Required a day",
-        showConfirmButton: false,
-        showDenyButton: true,
-        denyButtonText: `ok`,
-        timer: 2000,
-      });
-    } else if (course === null) {
+    // if (gander === null) {
+    //   Swal.fire({
+    //     position: "top-center",
+    //     icon: "error",
+    //     title: "Select a Gander",
+    //     showConfirmButton: false,
+    //     showDenyButton: true,
+    //     denyButtonText: `ok`,
+    //     timer: 2000,
+    //   });
+    // } else if (year === "Year") {
+    //   Swal.fire({
+    //     position: "top-center",
+    //     icon: "error",
+    //     title: "Birth Date Required a Year",
+    //     showConfirmButton: false,
+    //     showDenyButton: true,
+    //     denyButtonText: `ok`,
+    //     timer: 2000,
+    //   });
+    // } else if (month === "Month") {
+    //   Swal.fire({
+    //     position: "top-center",
+    //     icon: "error",
+    //     title: "Birth Date Required a Month",
+    //     showConfirmButton: false,
+    //     showDenyButton: true,
+    //     denyButtonText: `ok`,
+    //     timer: 2000,
+    //   });
+    // } else if (day === "Day") {
+    //   Swal.fire({
+    //     position: "top-center",
+    //     icon: "error",
+    //     title: "Birth Date Required a day",
+    //     showConfirmButton: false,
+    //     showDenyButton: true,
+    //     denyButtonText: `ok`,
+    //     timer: 2000,
+    //   });
+    // } 
+    if (course === null) {
       Swal.fire({
         position: "top-center",
         icon: "error",
@@ -214,10 +215,14 @@ const Apply = (e) => {
           </Button>
         </DialogFooter>
       </Dialog>
-      <form onSubmit={(e) => RegistationSucess(e)}>
+      <form onSubmit={(e) => RegistationSucess(e)} className="shadow-sm px-2">
         <h1 className="md:text-3xl text-2xl font-bold py-2 text-center  applicationTitle text-[#FFD321]">
           Student Application Form
         </h1>
+        <div className="flex mt-4">
+            {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
+            <p className=" md:text-2xl text-1xl font-semibold  text-purple-500 border-b-2 border-purple-500">Personal & Contact Information :</p>
+          </div>
         <div className="grid gap-y-4 mt-3">
           <div className="grid grid-cols-6 gap-x-2">
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
@@ -261,7 +266,6 @@ const Apply = (e) => {
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
-                required
                 label="Facebook url"
                 size="md"
                 color="indigo"
@@ -274,7 +278,6 @@ const Apply = (e) => {
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
-                required
                 label="Present Address"
                 size="md"
                 color="indigo"
@@ -287,7 +290,6 @@ const Apply = (e) => {
               <div className="overflow-hidden pt-1">
                 <Input
                   variant="standard"
-                  required
                   label="Present City"
                   size="md"
                   color="indigo"
@@ -299,7 +301,6 @@ const Apply = (e) => {
               <div className="overflow-hidden pt-1">
                 <Input
                   variant="standard"
-                  required
                   label="Postal Code"
                   size="md"
                   color="indigo"
@@ -318,7 +319,6 @@ const Apply = (e) => {
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
-                required
                 value={copy ? address : undefined}
                 label="Permanent Address"
                 size="md"
@@ -331,7 +331,6 @@ const Apply = (e) => {
               <div className="overflow-hidden pt-1">
                 <Input
                   variant="standard"
-                  required
                   label="Permanent City"
                   size="md"
                   color="indigo"
@@ -343,7 +342,6 @@ const Apply = (e) => {
               <div className="overflow-hidden pt-1">
                 <Input
                   variant="standard"
-                  required
                   label="Postal Code"
                   size="md"
                   color="indigo"
@@ -360,7 +358,7 @@ const Apply = (e) => {
                 <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 relative group">
                   <Select
                     variant="standard"
-                    label="Gender *"
+                    label="Gender "
                     id="Gender"
                     onChange={(e) => setGander(e)}
                   >
@@ -370,7 +368,8 @@ const Apply = (e) => {
                 </div>
                 <div className="w-full md:col-span-3 col-span-6 mt-5  md:mt-0  border-b border-[#B0BEC5] grid grid-cols-3 gap-x-2 relative ">
                   <p className="absolute md:-top-3 -top-5 left-0 text-sm text-[#B0BEC5]">
-                    Date Of Birth <span className="text-red-400">*</span>
+                    Date Of Birth 
+                    {/* <span className="text-red-400">*</span> */}
                   </p>
                   <select
                     className="outline-none  "
@@ -442,7 +441,6 @@ const Apply = (e) => {
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
-                required
                 label="Nid/Birth Certificate/Passport No"
                 size="md"
                 color="indigo"
@@ -501,6 +499,11 @@ const Apply = (e) => {
                 maxLength={100}
               />
             </div>
+           
+          </div>
+          <div className="flex mt-1 w-full">
+            {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
+            <p className=" md:text-2xl text-1xl font-semibold  text-purple-500 border-b-2 border-purple-500">Educational Background :</p>
           </div>
           <div className="grid grid-cols-6 gap-x-2">
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
@@ -535,6 +538,10 @@ const Apply = (e) => {
                 />
               </div>
             </div>
+          </div>
+          <div className="flex mt-1 w-full">
+            {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
+            <p className=" md:text-2xl text-1xl font-semibold  text-purple-500 border-b-2 border-purple-500 ">Alternative Contact :</p>
           </div>
           <div className="grid grid-cols-6 gap-x-2">
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
@@ -571,6 +578,10 @@ const Apply = (e) => {
               </div>
             </div>
           </div>
+          <div className="flex mt-1 w-full">
+            {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
+            <p className=" md:text-2xl text-1xl font-semibold  text-purple-500 border-b-2 border-purple-500">Others :</p>
+          </div>
           <Input
             variant="standard"
             label="Interest/Hobbies"
@@ -586,7 +597,7 @@ const Apply = (e) => {
             color="indigo"
             name="des_question"
             maxLength={500}
-          />0
+          />
         </div>
 
         <div className="flex justify-center py-5">

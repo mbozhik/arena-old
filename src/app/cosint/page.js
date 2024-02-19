@@ -15,7 +15,7 @@ import Review from "@/app/Courses/TeacherSliderImages/review.png";
 import { FaHandPointRight } from "react-icons/fa";
 import Tanjim from "@/app/Images/TanjimVai.png";
 import EnrollComponent from "@/app/Component/Utility/CyberSecurityEnroll";
-import MentorSlides from "../Component/Common/slider/Slider";
+import MentorSlides from "../Component/Common/slider/slider";
 import Outline from "../Component/Common/Outline";
 import { PaymentModal } from "../Component/Common/Payment";
 
@@ -262,10 +262,10 @@ const page = () => {
                 </div>
               </div>
               <div>
-                <div className="flex gap-3 items-center py-1">
-                  <p className="font-semibold"> Course Type :</p>
+              <div className="flex gap-3  py-1">
+                  <p className="font-semibold ">Course Type :</p>
                   <span>
-                    Professional certified course that everyone can avail.
+                    Professional certified course <br className="block md:hidden"/> that  everyone can avail.
                   </span>
                 </div>
               </div>

@@ -2,6 +2,7 @@
 import './About.css'
 import BannerImage from '@/app/AllDataFatchingFunction/BannerImage';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const About = async() => {
@@ -18,7 +19,7 @@ const About = async() => {
                         <p data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000" className="text-justify text-lg font-['Libre-Baskerville']">Arena Web Security is a sister concern of Arena Web Technology. Arena Web Security is a renowned IT security company in Bangladesh since its establishment in 2012. During these years, Arena Web Security has provided Cyber Security Services and Trainings to many around the world.
 
                             Involved with Government entities in 2012 like ICT Ministry, Academy for Rural Development, University of Engineering and Technology. Experienced with cyber security support in corporate area linked with outsourcing market. Already 46 batchs received this training and have started to earn through online and corporate job.</p>
-                        <div className='about-btn'><a href="https://arenawebsecurity.net/admission"><button type="" className="btn btn-warning btn-animate">What are you waiting for? <br /> Enroll Now! </button></a></div>
+                        <div className='about-btn'><Link href="/admission"><button type="" className="btn btn-warning btn-animate">What are you waiting for? <br /> Enroll Now! </button></Link></div>
                     </div>
                 </div>
             </div>

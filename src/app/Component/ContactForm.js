@@ -40,7 +40,7 @@ const ContactForm = () => {
           Contact Us
         </h1>
         <div className=" ">
-          <div className="relative z-0 w-2/3 mb-5 group mt-10 mx-auto  ">
+          <div className="relative z-0 md:w-2/3 w-4/5 mb-5 group mt-10 mx-auto  ">
             <input
               type="text"
               name="name"
@@ -56,7 +56,7 @@ const ContactForm = () => {
               Name
             </label>
           </div>
-          <div className="relative z-0 w-2/3 mb-5 group mt-10  mx-auto">
+          <div className="relative z-0 md:w-2/3 w-4/5  mb-5 group mt-10  mx-auto">
             <input
               type="text"
               name="email"
@@ -72,7 +72,7 @@ const ContactForm = () => {
               Enter Your Email
             </label>
           </div>
-          <div class="w-2/3 mx-auto">
+          <div class="md:w-2/3 w-4/5  mx-auto">
             <div class="relative w-full min-w-[200px] ">
               <textarea
                 class="peer h-full min-h-[100px] w-full resize-none rounded-[7px] border border-blue-gray-200  bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-purple-700 focus:border-t-transparent border-t-transparent focus:outline-0 disabled:resize-none disabled:border-0 "

@@ -10,7 +10,10 @@ import Steps from "../Component/TicketAssets/Steps";
 import Team from "../Component/TicketAssets/Team";
 import Video from "../Component/TicketAssets/Video";
 
-
+export const metadata = {
+    title: 'Cyber Security Training Course - Ethical Hacking',
+    description: 'Learn ethical hacking  with industry experts. Our immersive courses help you land dream IT security jobs or become a freelance white hat hacker. Enroll now!',
+  };
 const page = () => {
   
     return (

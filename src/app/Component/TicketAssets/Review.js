@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import './Review.css'
 
 const Review = () => {
@@ -16,7 +17,7 @@ const Review = () => {
                 <div className='review-img'>
                     <img src='./icons/main_review.svg' alt="" className='' width="100%"/>
                 </div>
-                <div className='review-btn'><a href="https://arenawebsecurity.net/admission" className='mt-5 flex justify-center'><button type="" className="btn btn-warning btn-animate">If you Want To See Yourself Here. Then <br /> Join Now! </button></a></div>
+                <div className='review-btn'><Link href="/admission" className='mt-5 flex justify-center'><button type="" className="btn btn-warning btn-animate">If you Want To See Yourself Here. Then <br /> Join Now! </button></Link></div>
             </div>
         </section>
     );

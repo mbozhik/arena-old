@@ -3,6 +3,7 @@ import './globals.css'
 import Footer from './Component/Common/Footer'
 import Navber from './Component/Common/Navber'
 import Script from 'next/script'
+// import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const inter = Inter({ subsets: ['latin'] })
 // export const metadata = {
@@ -20,8 +21,9 @@ export default function RootLayout({ children }) {
         <Script src="https://scripts.pay.bka.sh/versions/1.2.0-beta/checkout/bKash-checkout.js"/>
          <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"/>
       <body className={inter.className}>
-        <Navber/>
-        {children}
+    
+        <Navber />
+        {children }
         <Footer/>
         
         </body>

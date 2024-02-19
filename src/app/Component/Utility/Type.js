@@ -5,9 +5,9 @@ const Type = () => {
         <div>
         <TypeAnimation
       sequence={[
-        'Hacking was passion', 
+        'The Hackers Arena', 
         3000, // Waits 1s
-        'Security is profession',
+        'New window of World Wide Web',
         3000, // Waits 2s
       ]}
       wrapper="span"

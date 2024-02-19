@@ -35,6 +35,23 @@ body {
 .navber{
   border: none !important;
   padding: 12px;
+  /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); */
+  /* background-image: linear-gradient(to right, rgba(86, 181, 227, 100), rgba(125, 88, 165, 100)); */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif !important;
+  padding: 12px 40px;
+  height: 70px;
+  position:sticky !important;
+  top: 0 !important;
+  /* background-color:rgba(0, 0, 0, 0.385) ; */
+  background-color:rgba(0, 0, 0, 0.187) ;
+
+}
+.navber2{
+  border: none !important;
+  padding: 12px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to right, rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
   z-index: 1000;
@@ -115,6 +132,26 @@ background-color: #44107a;
   animation-fill-mode: both;
   position: absolute;
   
+}
+.BannerImg{
+  background-image:url('../app/Images/Banner/bg.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+}
+.BannerImg::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.609); */
+  background-color: #76599e9d;
 }
 @keyframes review {
   0%{
@@ -547,7 +584,7 @@ background-color: #44107a;
 } 
 @media (max-width:600px) {
   .waviy span{
-    font-size:20px;
+    font-size:18px;
     color:#231557;
     font-weight: 700;
    text-transform: uppercase;

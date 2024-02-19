@@ -1,5 +1,9 @@
 import Image from "next/image";
 import ceo from "@/app/Images/ceo.png";
+import cyber from "@/app/Images/Course/cyber.svg"
+import python from "@/app/Images/Course/python.svg"
+import combo from "@/app/Images/Course/combo.svg"
+import chf from "@/app/Images/Course/cfh.svg"
 import Link from "next/link";
 
 export function BackgroundBlogCard() {
@@ -19,15 +23,15 @@ export function BackgroundBlogCard() {
             </div>
             <article className=" 2xl:py-14 2xl:px-3 px-2  absolute  xl:translate-y-60 2xl:translate-y-52 transition-all group-hover:translate-y-0 duration-700 ease-in-out ">
               <Image
-                src={ceo}
+                src={cyber}
                 alt="Tanjim AL Fahim"
-                className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto "
+                className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto p-1 "
               />
               <footer
                 variant="h5"
                 className="mb-4 text-[#FFA121] font-bold 2xl:text-[20px] xl:text-[16px]"
               >
-                Tanjim AL Fahim
+                {/* Tanjim AL Fahim */}
               </footer>
               <h2
                 variant="h2"
@@ -64,9 +68,9 @@ export function BackgroundBlogCard() {
             </div>
             <article className=" 2xl:py-14 2xl:px-3 px-2  absolute  lg:translate-y-48 transition-all group-hover:translate-y-0 duration-700 ease-in-out ">
               <Image
-                src={ceo}
+                src={python}
                 alt="Tanjim AL Fahim"
-                className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto "
+                className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto p-1 "
               />
               {/*   <footer variant="h5" className="mb-4 text-[#FFA121] font-bold text-[20px]">
           Tanjim AL Fahim
@@ -75,7 +79,7 @@ export function BackgroundBlogCard() {
                 variant="h5"
                 className="mb-4 text-[#FFA121] font-bold 2xl:text-[20px] xl:text-[16px]"
               >
-                Tanjim AL Fahim
+                {/* Tanjim AL Fahim */}
               </footer>
               <h2
                 variant="h2"
@@ -110,15 +114,15 @@ export function BackgroundBlogCard() {
             </div>
             <article className=" 2xl:py-14 2xl:px-3 px-2  absolute xl:translate-y-48    2xl:translate-y-40 transition-all group-hover:translate-y-0 duration-700 ease-in-out ">
               <Image
-                src={ceo}
+                src={combo}
                 alt="Tanjim AL Fahim"
-                className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto "
+                className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto p-1 "
               />
               <footer
                 variant="h5"
                 className="mb-4 text-[#FFA121] font-bold 2xl:text-[20px] xl:text-[16px]"
               >
-                Tanjim AL Fahim
+                {/* Tanjim AL Fahim */}
               </footer>
               <h2
                 variant="h2"
@@ -152,15 +156,15 @@ export function BackgroundBlogCard() {
             </div>
             <article className=" 2xl:py-14 2xl:px-3 px-2  absolute   2xl:translate-y-40 xl:translate-y-40  transition-all group-hover:translate-y-0 duration-700 ease-in-out ">
               <Image
-                src={ceo}
+                src={chf}
                 alt="Tanjim AL Fahim"
-                className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto "
+                className="border-2 border-white h-16 w-16 rounded-full justify-center mx-auto p-1 "
               />
               <footer
                 variant="h5"
                 className="mb-4 text-[#FFA121] font-bold 2xl:text-[20px] xl:text-[16px]"
               >
-                Tanjim AL Fahim
+                {/* Tanjim AL Fahim */}
               </footer>
               <h2
                 variant="h2"

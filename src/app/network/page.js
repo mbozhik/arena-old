@@ -15,7 +15,7 @@ import Review from "@/app/Courses/TeacherSliderImages/review.png";
 import { FaHandPointRight } from "react-icons/fa";
 import Tanjim from "@/app/Images/TanjimVai.png";
 import EnrollComponent from "@/app/Component/Utility/CyberSecurityEnroll";
-import MentorSlides from "../Component/Common/slider/Slider";
+import MentorSlides from "../Component/Common/slider/slider";
 import Outline from "../Component/Common/Outline";
 import { PaymentModal } from "../Component/Common/Payment";
 
@@ -229,8 +229,12 @@ const page = () => {
         </div>
       </div>
       <div className="bg-[#EBE7F8]  flex justify-center items-center mt-10 px-6 md:px-0 ">
-        <div className='my-10'>
+        <div className='my-10 hidden md:block'>
           <EnrollComponent data={['Become','AN_Network_Security','SPECIALIST']} />
+         
+        </div>
+        <div className='my-10 block md:hidden'>
+          <EnrollComponent data={['Become','AN_Network','SPECIALIST']} />
          
         </div>
         </div>

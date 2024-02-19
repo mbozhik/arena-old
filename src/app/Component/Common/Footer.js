@@ -13,6 +13,7 @@ const Footer = () => {
   return (
     <section className={style.parent_container} id="main">
       <div className={` ${style.footerCard} container mx-auto `}>
+        <Link href='/contact' className="cursor-pointer">
         <div className={style.footer_wrapper}>
           <div className={`${style.footer_wrapper_img} mx-auto flex justify-center`}>
             <Image className={style.icon} src={icon1} alt="" />
@@ -25,6 +26,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
+        </Link>
         <div className={`${style.phone} ${style.footer_wrapper}`}>
           <div className={`${style.footer_wrapper_img}  mx-auto flex justify-center`}>
             <Image className={style.icon} src={icon2} alt="" />
@@ -33,8 +35,9 @@ const Footer = () => {
           <div>
             <h5 className="text-center">Phone</h5>
             <div>
-              <p>+880 1536101214</p>
-              <p>+880 1885 841 489</p>
+              <p><a href="tel:+8801310333444" className="text-blue-400">+880 1310333444</a></p>
+              <p><a href="tel:+8801885841489" className="text-blue-400">+880 1885841489</a></p>
+              {/* <p>+880 1885841489</p> */}
             </div>
           </div>
         </div>
@@ -44,7 +47,8 @@ const Footer = () => {
           </div>
           <div>
             <h5 className="text-center">Email</h5>
-            <p>info@arenawebsecurity.net</p>
+           <p><a href="mailto:info@arenawebsecurity.net" className="text-blue-400">info@arenawebsecurity.net</a></p> 
+            {/* <p></p> */}
           </div>
         </div>
       </div>
