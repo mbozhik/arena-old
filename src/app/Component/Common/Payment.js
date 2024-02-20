@@ -8,21 +8,21 @@ import {
   DialogFooter,
 } from "@material-tailwind/react";
 import Image from "next/image";
-import bkash from '@/app/Component/Common/payment/bkash.png'
-import nagad from '@/app/Component/Common/payment/nagad.png'
-import rocket from '@/app/Component/Common/payment/dbbl.jpg'
-import evl from '@/app/Component/Common/payment/ebl.png'
-import west from '@/app/Component/Common/payment/wester-union-logo.png'
-import bkashpayment from '@/app/courses/payment/BkashPayment.jpg'
-import nagadpayment from '@/app/courses/payment/NagadPayment.jpg'
-import roketpayment from '@/app/courses/payment/RocketPayment.jpg'
-import eblpayment from '@/app/courses/payment/eblPayment.jpg'
-import wespayment from '@/app/courses/payment/westernPayment.jpg'
+import bkash from '../Common/payment/bkash.png'
+import nagad from '../Common/payment/nagad.png'
+import rocket from '../Common/payment/dbbl.jpg'
+import evl from '../Common/payment/ebl.png'
+import west from '../Common/payment/wester-union-logo.png'
+import bkashpayment from '../Common/payment/BkashPayment.jpg'
+import nagadpayment from '../Common/payment/NagadPayment.jpg'
+import roketpayment from '../Common/payment/RocketPayment.jpg'
+import eblpayment from '../Common/payment/eblPayment.jpg'
+import wespayment from '../Common/payment/westernPayment.jpg'
 
-// import west from '@/app/courses/payment/wester-union-logo.png'
-// import west from '@/app/courses/payment/wester-union-logo.png'
-// import west from '@/app/courses/payment/wester-union-logo.png'
-// import west from '@/app/courses/payment/wester-union-logo.png'
+// import west from '../Common/payment/wester-union-logo.png'
+// import west from '../Common/payment/wester-union-logo.png'
+// import west from '../Common/payment/wester-union-logo.png'
+// import west from '../Common/payment/wester-union-logo.png'
 
 
  
