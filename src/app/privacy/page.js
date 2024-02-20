@@ -4,7 +4,7 @@ const page = () => {
     return (
         <div className="lg:px-20 mt-10 md:px-5 px-3">
             <h1 className="text-3xl font-bold text-purple-500">PRIVACY POLICY OF ARENA</h1>
-            <p className="mt-1">This privacy notice for Arena Web Security, describes how and why we might collect, store, use, ('process' your information when you use our services Services'), such as when you:</p>
+            <p className="mt-1">This privacy notice for Arena Web Security, describes how and why we might collect, store, use, (process your information when you use our services Services), such as when you:</p>
              <div className="pl-10 mt-5">
              <p className="flex items-center gap-x-2 "><span><Image alt="cyber security" src={right} className="h-5 w-5"/></span>Cyber Register at our website at arenawebsecurity.net, or any website of ours that links to this privacy notice</p>
              <p className="flex items-center gap-x-2 "><span><Image alt="cyber security" src={right} className="h-5 w-5"/></span>Engage with us in other related ways, including any sales, marketing, or events</p>     

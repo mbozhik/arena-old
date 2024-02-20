@@ -56,7 +56,7 @@ const page = () => {
               <CyberSecurityH1 title={'Linux'} />
 
               <p className="text-1xl leading-5 pt-8">
-              The industry-leading Penetration Testing with Kali Linux (KLIN-ACS) course just got even better. This online ethical hacking course is self-paced. It introduces penetration testing tools and techniques via hands-on experience. Students who complete the course and pass the exam earn the coveted Arena Web Certified Professional (AWCP) certification.
+              The industry-leading Penetration Testing with Kali Linux KLIN-ACS course just got even better. This online ethical hacking course is self-paced. It introduces penetration testing tools and techniques via hands-on experience. Students who complete the course and pass the exam earn the coveted Arena Web Certified Professional AWCP certification.
               </p>
             </div>
 
@@ -162,7 +162,7 @@ const page = () => {
                   <li>
                     <div className="flex gap-3 items-center py-1">
                       <FaHandPointRight className="text-[#44107A] text-2xl" />
-                      <span>Learn the "Try Harder" method and mindset</span>
+                      <span>Learn the Try Harder method and mindset</span>
                     </div>
                   </li>
                   <li>

@@ -97,7 +97,7 @@ const Login = () => {
               type="text"
               name="password"
               id="floating_email"
-              className="block py-2.5 px-2 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-purple-700 peer text-black"
+              className="block py-2.5 px-2 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-purple-700 peer "
               placeholder=" "
               required
             />
@@ -106,7 +106,7 @@ const Login = () => {
               type="password"
               name="password"
               id="floating_email"
-              className="block py-2.5 px-2 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-purple-700 peer text-black"
+              className="block py-2.5 px-2 w-full text-sm  bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-purple-700 peer text-black"
               placeholder=" "
               required
             />
@@ -136,9 +136,7 @@ const Login = () => {
             Apply Now!
           </Link>
         </p>
-        {/* <button className="w-2/3 bg-purple-700 text-white py-3 rounded-md mt-5 cursor-pointer" type="submit">
-          
-        </button> */}
+    
         <button
           className={`lg:w-2/3 w-full  mt-4 py-2 ${
             pending ? "bg-[#90bde0]" : "bg-deep-purple-600"
