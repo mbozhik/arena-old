@@ -8,14 +8,15 @@ import {
 } from "@material-tailwind/react";
 import Image from "next/image";
 import ceo from "@/app/Images/ceo.png";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
 
 export function AllCourses() {
   return (
     <div className="grid lg:px-20 md:px-5 px-6 lg:pt-16">
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-6 ">
-        <Fade bottom delay={200} distance="20%">
+        <Fade cascade={true} direction="up" duration={1000} distance="20%">
           <Link href='/cybersecurity'>
           <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
@@ -52,7 +53,7 @@ export function AllCourses() {
           </Card>
           </Link>
         </Fade>
-        <Fade bottom delay={200} distance="20%">
+        <Fade direction="down" delay={200} distance="20%">
         <Link href='/python'>
           <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
@@ -88,7 +89,7 @@ export function AllCourses() {
           </Link>
         </Fade>
 
-        <Fade bottom delay={200} distance="20%">
+        <Fade direction="down" delay={200} distance="20%">
         <Link href='/combo'>
           <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
@@ -122,7 +123,7 @@ export function AllCourses() {
           </Card>
           </Link>
         </Fade>
-        <Fade bottom delay={200} distance="20%">
+        <Fade direction="down" delay={200} distance="20%">
         <Link href='/cehf'>
           <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group   items-end justify-center overflow-hidden text-center">
             <CardHeader
@@ -160,7 +161,7 @@ export function AllCourses() {
       </div>
       <div className="flex justify-center items-center mx-auto mt-4">
         <div className=" grid lg:grid-cols-3 md:grid-cols-2  lg:col-span-3 gap-4 lg:col-start-2 ">
-          <Fade bottom delay={200} distance="20%">
+          <Fade direction="down" delay={200} distance="20%">
           <Link href='/cosint'>
             <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
               <CardHeader
@@ -196,7 +197,7 @@ export function AllCourses() {
             </Card>
             </Link>
           </Fade>
-          <Fade bottom delay={200} distance="20%">
+          <Fade direction="down" delay={200} distance="20%">
           <Link href='/linux'>
             <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
               <CardHeader
@@ -232,7 +233,7 @@ export function AllCourses() {
             </Card>
             </Link>
           </Fade>
-          <Fade bottom delay={200} distance="20%">
+          <Fade direction="down" delay={200} distance="20%">
           <Link href='/network'>
             <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
               <CardHeader

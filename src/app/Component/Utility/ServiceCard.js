@@ -6,14 +6,15 @@ import {
   Typography,
   Avatar,
 } from "@material-tailwind/react";
-import config from 'react-reveal/globals';
-config({ ssrFadeout: true });
-import { Fade } from "react-reveal";
+// import config from 'react-reveal/globals';
+// config({ ssrFadeout: true });
+// import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 export function ServiceCard() {
   return (
     <div className="grid">
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-6 ">
-        <Fade left>
+        <Fade direction="left">
           <Card className="relative grid 2xl:h-[40rem]  md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
             <CardHeader
               color="transparent"
@@ -109,7 +110,7 @@ export function ServiceCard() {
           </CardBody>
         </Card>
 
-        <Fade right>
+        <Fade direction="right" duration={1000}>
           <Card className="relative grid 2xl:h-[40rem]  md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
             <CardHeader
               color="transparent"

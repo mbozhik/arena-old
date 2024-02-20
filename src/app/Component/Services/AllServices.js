@@ -6,7 +6,8 @@ import {
   Typography,
   Avatar,
 } from "@material-tailwind/react";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 export function AllServices() {
   return (
     <div className="grid 2xl:px-20 xl:px-10 md:px-5 px-6 lg:pt-16">
