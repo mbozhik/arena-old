@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 // import BKash from 'bkash';
 // import BkashPayment from '@/components/Bkash';
-import BkashLogo from '@/app/courses/payment/bkash.png'
+import BkashLogo from '../Common/payment/bkash.png'
 import Image from 'next/image';
 const BkashPayment = () => {
   const divRef = useRef(null);
