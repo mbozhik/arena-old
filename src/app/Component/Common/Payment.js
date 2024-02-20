@@ -8,11 +8,11 @@ import {
   DialogFooter,
 } from "@material-tailwind/react";
 import Image from "next/image";
-import bkash from '@/app/courses/payment/bkash.png'
-import nagad from '@/app/courses/payment/nagad.png'
-import rocket from '@/app/courses/payment/dbbl.jpg'
-import evl from '@/app/courses/payment/ebl.png'
-import west from '@/app/courses/payment/wester-union-logo.png'
+import bkash from '@/app/Component/Common/payment/bkash.png'
+import nagad from '@/app/Component/Common/payment/nagad.png'
+import rocket from '@/app/Component/Common/payment/dbbl.jpg'
+import evl from '@/app/Component/Common/payment/ebl.png'
+import west from '@/app/Component/Common/payment/wester-union-logo.png'
 import bkashpayment from '@/app/courses/payment/BkashPayment.jpg'
 import nagadpayment from '@/app/courses/payment/NagadPayment.jpg'
 import roketpayment from '@/app/courses/payment/RocketPayment.jpg'

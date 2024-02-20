@@ -13,7 +13,8 @@ import { FaHandPointRight } from "react-icons/fa";
 import EnrollComponent from "@/app/Component/Utility/CyberSecurityEnroll";
 import MentorSlides from "../Component/Common/slider/slider";
 import Outline from "../Component/Common/Outline";
-import { PaymentModal } from "./Payment";
+// import { PaymentModal } from "./Payment";
+import { PaymentModal } from "../Component/Common/Payment";
 import BannerImage from "../AllDataFatchingFunction/BannerImage";
 
 
