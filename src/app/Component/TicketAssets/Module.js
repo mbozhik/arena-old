@@ -1,7 +1,9 @@
 'use client'
 import React, { useState } from 'react';
-import Lightbox from 'react-image-lightbox';
-import "react-image-lightbox/style.css";
+// import Lightbox from 'react-image-lightbox';
+import Lightbox from 'react-18-image-lightbox';
+import 'react-18-image-lightbox/style.css'; // This only needs to be imported once in your app
+// import "react-image-lightbox/style.css";
 import './Module.css'
 import Link from 'next/link';
 

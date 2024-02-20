@@ -52,12 +52,15 @@
 // export default Gallery;
 'use client'
 import React, { useEffect, useState } from 'react';
-import Lightbox from 'react-image-lightbox';
-import "react-image-lightbox/style.css";
+// import Lightbox from 'react-image-lightbox';
+// import "react-image-lightbox/style.css";
+
 import '../../app/Component/TicketAssets/Module.css'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
+import Lightbox from 'react-18-image-lightbox';
+import 'react-18-image-lightbox/style.css'; // This only needs to be imported once in your app
 
 const Gallery = () => {
     useEffect(() => {
