@@ -36,8 +36,8 @@ export function AllServices() {
                 className="mb-4  text-white  font-semibold  "
               >
                 The threats of cyber-attacks are a fact of life and a fact of
-                business. Wipro’s Cyber security and Risk Service can help you
-                stay ahead of the threats and put your customer’s minds at ease.
+                business. Wipros Cyber security and Risk Service can help you
+                stay ahead of the threats and put your customers minds at ease.
                 We take an integrated approach to protection that prioritizes
                 not only prevention, but also minimizing risk and controlling
                 loss.
@@ -70,7 +70,7 @@ export function AllServices() {
               >
                 Software development services are aimed at designing,
                 engineering, deploying, supporting, and evolving various
-                software types. We are develops quality software services –
+                software types. We are develops quality software services 
                 software consulting, cloud migration, app integration, and more.
                 We serve mid and large enterprises and software product
                 companies across multiple industries.
@@ -203,9 +203,9 @@ export function AllServices() {
               >
                 Vulnerability Assessment & Penetration Testing describes a broad
                 range of security assessment services designed to identify &
-                help address cyber security exposures across an organisation’s
+                help address cyber security exposures across an organisations
                 IT estate. To ensure that you choose the right type of
-                assessment for your company’s needs, it’s important to
+                assessment for your companys needs, its important to
                 understand the other types of VAPT services.
               </Typography>
             </CardBody>
@@ -299,11 +299,11 @@ export function AllServices() {
                 variant="paragraph"
                 className="mb-4  text-white  font-semibold  "
               >
-                SEO is not magic. Google doesn't randomly decide which website's
+                SEO is not magic. Google does not randomly decide which websites
                 go to the top of the search results. The algorithm adjusts
                 rankings based on several factors. Our SEO campaigns optimize
                 for each of those factors to show Google your website has what
-                it's looking for.
+                it is looking for.
               </Typography>
             </CardBody>
           </Card>
@@ -364,10 +364,10 @@ export function AllServices() {
                 className="mb-4  text-white  font-semibold  "
               >
                 We design user friendly and intuitive interfaces expected by
-                today’s consumer using the latest UX and UI best practices. Want
+                todays consumer using the latest UX and UI best practices. Want
                 to build your product with a team that establishes a clear
                 design process, meets deadlines, and delivers. Turn to Arena Web
-                Security’s UI and UX services.
+                Securitys UI and UX services.
               </Typography>
             </CardBody>
           </Card>

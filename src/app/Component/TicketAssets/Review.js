@@ -6,7 +6,7 @@ const Review = () => {
     return (
         <section className='review-container bg-circle'>
             <div className='container-cstm'>
-                <h1 className='text-center mb-3'>Here's what others have to Say...</h1>
+                <h1 className='text-center mb-3'>Here what others have to Say...</h1>
                 <div className='star'>
                 <img src='./icons/star.png' alt="" />
                 <img src='./icons/star.png' alt="" />

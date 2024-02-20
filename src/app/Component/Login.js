@@ -131,7 +131,7 @@ const Login = () => {
           )}
         </div>
         <p className="lg:w-2/3 text-right ">
-          Don't have an ID?{" "}
+          Don not have an ID?{" "}
           <Link href="admission" className="text-blue-400 font-semibold">
             Apply Now!
           </Link>
