@@ -5,7 +5,7 @@ const Team = () => {
     return (
         <section className='team-container'>
             <div className='container-cstm'>
-                <h1 className='text-center trainer-title'>Trainer's Portfolio</h1>
+                <h1 className='text-center trainer-title'>Trainers Portfolio</h1>
                 <p className='hands-on'>Hands-on training from country top rated hackers</p>
                 <div className='team-parent'>
                     <div data-aos="flip-left" data-aos-delay="50" data-aos-duration="1000" className='team-card'>
