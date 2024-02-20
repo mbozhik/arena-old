@@ -260,9 +260,10 @@ const Apply = (e) => {
               required
   country={'bd'}
   name="student_mobile"
+ 
   inputStyle={{ 
     border: 'none', 
-    borderColor:'gray !important',
+    borderColor:'#B0BEC5 !important',
     borderBottom: '1px solid #000', 
     width: '100%', 
     borderRadius: '0px', 
@@ -270,6 +271,12 @@ const Apply = (e) => {
     transition: 'border-color 0.3s ease',
      // Add transition for smooth animation
   }}
+  buttonStyle={{
+     border: 'none !important',
+    //  borderBottom: '1px solid #000 !important',
+     backgroundColor:'transparent',
+     marginBottom:'2px !important'
+   }} 
 />
 
   
@@ -571,7 +578,7 @@ const Apply = (e) => {
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
                 variant="standard"
-                label="Alternative Name"
+                label="Alternative contact Name"
                 size="md"
                 color="indigo"
                 name="alt_name"
