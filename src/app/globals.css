@@ -631,6 +631,19 @@ background-color: #44107a;
 
 
 }
+.input-normal {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  border-radius: 0px;
+  margin-top: 15px;
+  transition: border-color 0.3s ease;
+}
+
+/* Focused state */
+.input-focused {
+  border-bottom: 2px solid blue !important;
+}
 .applyCardPadding::-webkit-scrollbar {
   width: 12px;
 }

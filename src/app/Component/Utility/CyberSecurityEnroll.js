@@ -38,7 +38,7 @@ const EnrollComponent = ({ data }) => {
       </div>
       <div className="flex justify-center items-center mt-2 ">
         <Link href='/admission'>
-        <button className="uppercase shadow-2xl px-10 py-3 bg-[#76599E] font-semibold text-white">
+        <button className="uppercase shadow-2xl px-10 py-3 bg-[#76599E] font-semibold text-white hover:text-black">
           Enroll Now
         </button>
         </Link>

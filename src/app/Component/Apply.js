@@ -12,6 +12,8 @@ import { useEffect, useState } from "react";
 import Confetti from "react-confetti";
 import NavberData from "../AllDataFatchingFunction/Topber";
 import Registration from "../AllDataFatchingFunction/Registration";
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 const Apply = (e) => {
   const [sucess, setSucess] = useState(false);
@@ -86,8 +88,9 @@ const Apply = (e) => {
   };
   // Number Validation
   const student_mobileOnChange = (event) => {
-    let student_mobiles = event.target.value.replace(/[^0-9+]/g, "");
-    setValidNumber(student_mobiles);
+    // let student_mobiles = event.target.value.replace(/[^0-9+]/g, "");
+    // setValidNumber(student_mobiles);
+    setValidNumber(event);
   };
   const onChangeCourse = (e) => {
     for (var i = 0; i < allcourse.length; i++) {
@@ -110,54 +113,56 @@ const Apply = (e) => {
       newFormData.append(key, replaceSticker(value));
     }
     newFormData.append("batch_schedule_time", course);
+    newFormData.append("student_mobile",validNumber);
     newFormData.append("nationality", nationality);
     newFormData.append("birth_date", birth_date);
     newFormData.append("gender", gander);
     newFormData.append("course_title", course_title);
     let object = Object.fromEntries(newFormData);
 
-    // if (gander === null) {
-    //   Swal.fire({
-    //     position: "top-center",
-    //     icon: "error",
-    //     title: "Select a Gander",
-    //     showConfirmButton: false,
-    //     showDenyButton: true,
-    //     denyButtonText: `ok`,
-    //     timer: 2000,
-    //   });
-    // } else if (year === "Year") {
-    //   Swal.fire({
-    //     position: "top-center",
-    //     icon: "error",
-    //     title: "Birth Date Required a Year",
-    //     showConfirmButton: false,
-    //     showDenyButton: true,
-    //     denyButtonText: `ok`,
-    //     timer: 2000,
-    //   });
-    // } else if (month === "Month") {
-    //   Swal.fire({
-    //     position: "top-center",
-    //     icon: "error",
-    //     title: "Birth Date Required a Month",
-    //     showConfirmButton: false,
-    //     showDenyButton: true,
-    //     denyButtonText: `ok`,
-    //     timer: 2000,
-    //   });
-    // } else if (day === "Day") {
-    //   Swal.fire({
-    //     position: "top-center",
-    //     icon: "error",
-    //     title: "Birth Date Required a day",
-    //     showConfirmButton: false,
-    //     showDenyButton: true,
-    //     denyButtonText: `ok`,
-    //     timer: 2000,
-    //   });
-    // } 
-    if (course === null) {
+    if (validNumber === null) {
+      Swal.fire({
+        position: "top-center",
+        icon: "error",
+        title: "Mobile Number required",
+        showConfirmButton: false,
+        showDenyButton: true,
+        denyButtonText: `ok`,
+        timer: 2000,
+      });
+    }
+     else if (year === "Year") {
+      Swal.fire({
+        position: "top-center",
+        icon: "error",
+        title: "Birth Date Required a Year",
+        showConfirmButton: false,
+        showDenyButton: true,
+        denyButtonText: `ok`,
+        timer: 2000,
+      });
+    } else if (month === "Month") {
+      Swal.fire({
+        position: "top-center",
+        icon: "error",
+        title: "Birth Date Required a Month",
+        showConfirmButton: false,
+        showDenyButton: true,
+        denyButtonText: `ok`,
+        timer: 2000,
+      });
+    } else if (day === "Day") {
+      Swal.fire({
+        position: "top-center",
+        icon: "error",
+        title: "Birth Date Required a day",
+        showConfirmButton: false,
+        showDenyButton: true,
+        denyButtonText: `ok`,
+        timer: 2000,
+      });
+    } 
+    else if (course === null) {
       Swal.fire({
         position: "top-center",
         icon: "error",
@@ -237,7 +242,7 @@ const Apply = (e) => {
               />
             </div>
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <Input
+              {/* <Input
                 variant="standard"
                 required
                 label="Mobile Number"
@@ -248,7 +253,26 @@ const Apply = (e) => {
                 value={validNumber}
                 onChange={student_mobileOnChange}
                 onInput={(e) => (e.target.value = e.target.value.slice(0, 15))}
-              />
+              /> */}
+<PhoneInput
+              value={validNumber}
+              onChange={student_mobileOnChange}
+              required
+  country={'bd'}
+  name="student_mobile"
+  inputStyle={{ 
+    border: 'none', 
+    borderColor:'gray !important',
+    borderBottom: '1px solid #000', 
+    width: '100%', 
+    borderRadius: '0px', 
+    marginTop: '9px !important',
+    transition: 'border-color 0.3s ease',
+     // Add transition for smooth animation
+  }}
+/>
+
+  
             </div>
           </div>
           <div className="grid grid-cols-6 gap-x-2">

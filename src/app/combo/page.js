@@ -183,6 +183,54 @@ const page = () => {
                   <li>
                     <div className="flex gap-3 items-center py-1">
                       <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span> Footprinting</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span> PHP & MySQL Basic:</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span> Website Penetration Testing</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span> Website Hacking</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span> System Hacking</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span> keylogger Spyware</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span> Malware Threats [Virus]</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span> Website Development</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
                       <span> Conditional Statements</span>
                     </div>
                   </li>
@@ -230,6 +278,61 @@ const page = () => {
                   </li>
                 </ul>
                 <ul className="mt-5">
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span> Social Engineering</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span> Denial-of-Service</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span>SQL Injection All method</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span>Evading IDS, Firewalls</span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span>Scanning Networks web server</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span> Linux OS</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span>Cross-Site Request Forgery</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span> Outsourcing in Fiverr/Upwork</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-3 items-center py-1">
+                      <FaHandPointRight className="text-[#44107A] text-2xl" />
+                      <span>Outsourcing in Hackerone</span>
+                    </div>
+                  </li>
                   <li>
                     <div className="flex gap-3 items-center py-1">
                       <FaHandPointRight className="text-[#44107A] text-2xl" />

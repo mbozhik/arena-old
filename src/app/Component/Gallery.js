@@ -66,7 +66,7 @@ const Gallery = () => {
     const [open, setOpen] = useState(false)
     const [photoIndex, setPhotoIndex] = useState(0)
     const images = [
-        './Gallery/aws1.webp',
+
         './Gallery/aws2.webp',
         './Gallery/aws3.webp',
         './Gallery/aws4.webp',
@@ -77,12 +77,11 @@ const Gallery = () => {
         './Gallery/aws8.webp',
         './Gallery/aws9.webp',
         './Gallery/aws10.webp',
+        './Gallery/aws1.webp',
       
       ];
     const newLocal = <div className='modules'>
-        <div data-aos="flip-left" data-aos-delay="50" data-aos-duration="2000" className='w-1/3 p-2 cursor-pointer'>
-            <img className='LightImgPreview' src='./Gallery/aws1.webp' alt="module_img_1" onClick={() => setOpen(true)} />
-        </div>
+        
         <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000" className='w-1/3 p-2'>
             <img className='LightImgPreview' src='./Gallery/aws2.webp' alt="module_img_2" onClick={() => setOpen(true)} />
         </div>
@@ -109,6 +108,9 @@ const Gallery = () => {
         </div>
         <div data-aos="flip-right" data-aos-delay="50" data-aos-duration="2000" className='w-1/3 p-2'>
             <img className='LightImgPreview' src='./Gallery/aws10.webp' alt="module_img_5" onClick={() => setOpen(true)} />
+        </div>
+        <div data-aos="flip-left" data-aos-delay="50" data-aos-duration="2000" className='w-1/3 p-2 cursor-pointer'>
+            <img className='LightImgPreview' src='./Gallery/aws1.webp' alt="module_img_1" onClick={() => setOpen(true)} />
         </div>
     </div>;
     return (
