@@ -61,7 +61,7 @@ const Footer = () => {
             <div>
               <h5>Information</h5>
               <ul className={style.list_wrapper}>
-                <Link href="/about" className="text-decoration-none">
+                <Link href="/about-us" className="text-decoration-none">
                   {" "}
                   <li>About Us</li>
                 </Link>
@@ -81,7 +81,7 @@ const Footer = () => {
                   {" "}
                   <li>Blog</li>
                 </a>
-                <Link href="/services" className="text-decoration-none">
+                <Link href="/all-services" className="text-decoration-none">
                   {" "}
                   <li>Service</li>
                 </Link>
