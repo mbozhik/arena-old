@@ -15,7 +15,7 @@ import MentorSlides from "../Component/Common/slider/slider";
 import Outline from "../Component/Common/Outline";
 // import { PaymentModal } from "./Payment";
 import { PaymentModal } from "../Component/Common/Payment";
-// import BannerImage from "../AllDataFatchingFunction/BannerImage";
+import BannerImage from "../AllDataFatchingFunction/BannerImage";
 
 
 export const metadata = {
@@ -24,7 +24,7 @@ export const metadata = {
 };
 
 const page = async () => {
-  // const Tanjim=await BannerImage()
+  const Tanjim=await BannerImage()
   // console.log(Tanjim);
   const images=[
     {
@@ -458,9 +458,9 @@ const page = async () => {
               </p>
             </details>
           </article>
-          {/* <article className="md:w-[50%] w-full h-full mt-3 md:mt-0">
+          <article className="md:w-[50%] w-full h-full mt-3 md:mt-0">
             <Image alt="Tanjim Al Fahim" src={Tanjim} height={1000} width={1000}  className="" />
-          </article> */}
+          </article>
         </div>
         
       </div>
