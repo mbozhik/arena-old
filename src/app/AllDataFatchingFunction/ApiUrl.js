@@ -1,5 +1,6 @@
 
-const Base='http://192.168.0.121:8000/'
+// const Base='http://192.168.0.121:8000/'
+const Base='https://arenawebsecurity.net/admission-api/'
 class ApiUrl{
     static SendApiUrl="https://hw.arenaclass.stream/cross-login/"
     static BaseUrl=`${Base}`;

@@ -9,8 +9,8 @@ const BkashPayment = () => {
   useEffect(() => {
     const script = document.createElement("script");
     script.async = true;
-    // script.src = 'https://arenawebsecurity.net/static/cdn/bkash.js';
-    script.src = 'http://192.168.0.121:8000/static/admin/js/bkash.js';
+    script.src = 'https://arenawebsecurity.net/static/cdn/bkash.js';
+    // script.src = 'http://192.168.0.121:8000/static/admin/js/bkash.js';
     divRef.current.appendChild(script);
   }, []);
 
