@@ -46,9 +46,6 @@ const MentorSlides = () => {
        
           }}
                pagination={{ clickable: true }}
-            //    scrollbar={{ draggable: true }}
-            //    onSwiper={(swiper) => console.log(swiper)}
-            //    onSlideChange={() => console.log('slide change')}
                 className={`${style.slider_container} mySwipe py-5 mb-5 `}
             >
                 <SwiperSlide>
