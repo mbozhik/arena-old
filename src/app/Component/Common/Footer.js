@@ -88,7 +88,7 @@ const Footer = () => {
                   {" "}
                   <li>Service</li>
                 </Link>
-                <Link href="/gallery" className="text-decoration-none">
+                <Link href="/arena-gallery" className="text-decoration-none">
                   {" "}
                   <li>Gallery</li>
                 </Link>
@@ -102,7 +102,7 @@ const Footer = () => {
               <h5>Courses</h5>
               <ul className={style.list_wrapper}>
                 <Link
-                  href="/cybersecurity"
+                  href="/cyber-security"
                   className="text-decoration-none"
                 >
                   {" "}

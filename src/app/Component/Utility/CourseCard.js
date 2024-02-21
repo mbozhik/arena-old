@@ -10,7 +10,7 @@ export function BackgroundBlogCard() {
   return (
     <div className="grid">
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-6 ">
-        <Link href="/cybersecurity">
+        <Link href="/cyber-security">
           <div className="relative grid 2xl:h-[40rem]  md:h-[35rem] h-[28rem] w-full max-w-[28rem] group  transition-all duration-350  items-end justify-center overflow-hidden text-center border-3 border-[#8444c8cc]">
             <div
               color="transparent"

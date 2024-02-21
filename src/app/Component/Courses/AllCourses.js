@@ -17,7 +17,7 @@ export function AllCourses() {
     <div className="grid lg:px-20 md:px-5 px-6 lg:pt-16">
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-6 ">
         <Fade cascade={true} direction="up" duration={1000} distance="20%">
-          <Link href='/cybersecurity'>
+          <Link href='/cyber-security'>
           <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
             <CardHeader
               color="transparent"

@@ -7,13 +7,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import style from './MentorSlides.module.css'
 
-import image from '@/app/Courses/TeacherSliderImages/Fahim.svg'
-import image2 from '@/app/Courses/TeacherSliderImages/SA_MUBIN.jpg'
-import image3 from '@/app/Courses/TeacherSliderImages/roman.jpg'
-import image4 from '@/app/Courses/TeacherSliderImages/ashif.jpeg'
-import image5 from '@/app/Courses/TeacherSliderImages/bijoy.jpeg'
-import image6 from '@/app/Courses/TeacherSliderImages/zawad.png'
-import star from '@/app/Courses/TeacherSliderImages/star.png'
+import image from '@/app/all-courses/TeacherSliderImages/Fahim.svg'
+import image2 from '@/app/all-courses/TeacherSliderImages/SA_MUBIN.jpg'
+import image3 from '@/app/all-courses/TeacherSliderImages/roman.jpg'
+import image4 from '@/app/all-courses/TeacherSliderImages/ashif.jpeg'
+import image5 from '@/app/all-courses/TeacherSliderImages/bijoy.jpeg'
+import image6 from '@/app/all-courses/TeacherSliderImages/zawad.png'
+import star from '@/app/all-courses/TeacherSliderImages/star.png'
 import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
 import Image from 'next/image';
 const MentorSlides = () => {

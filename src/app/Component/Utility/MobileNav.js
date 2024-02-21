@@ -178,7 +178,7 @@ const MobileNav = ({ uid }) => {
             </div>
           </div>
           <li className="hover:text-[#ffd321]  md:mt-0">
-            <Link href="/services" onClick={() => setNave(false)}>
+            <Link href="/all-services" onClick={() => setNave(false)}>
               Services
             </Link>
           </li>
@@ -191,7 +191,7 @@ const MobileNav = ({ uid }) => {
             </Link>
           </li>
           <li className="hover:text-[#ffd321] mt-2 md:mt-0">
-            <Link href="/gallery" onClick={() => setNave(false)}>
+            <Link href="/arena-gallery" onClick={() => setNave(false)}>
               Gallery
             </Link>
           </li>{" "}

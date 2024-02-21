@@ -10,7 +10,7 @@ const Courses = () => {
                 <p className="lg:w-42 bg-[#ffd321] h-[3px] "></p>
         
                 </div>
-                <Link href='/courses'>
+                <Link href='/all-courses'>
                 <button className="uppercase border border-blue-600 hover:border-[#ffd321] md:text-1xl text-[14px]
                  font-semibold md:px-8 py-2 px-4 rounded-full hover:bg-[#76599E] transition hover:text-white duration-300">View All Courses</button></Link>
                 

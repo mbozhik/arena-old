@@ -35,7 +35,7 @@ const Events = async() => {
                             </div>
                             <Image src={eventemg} alt="Cyber"/>
                                
-                            <Link href='cybersecurity'><h4 className="lg:font-semibold text-[#4aabff] text-[20px] pt-5 pb-2 group-hover:text-purple-400">{data &&  data[0]?.batch_schedule_name}</h4></Link>
+                            <Link href='cyber-security'><h4 className="lg:font-semibold text-[#4aabff] text-[20px] pt-5 pb-2 group-hover:text-purple-400">{data &&  data[0]?.batch_schedule_name}</h4></Link>
                             <p className="pt-5 lg:pb-10 md:pb-5">Admission going on for Cyber Security course by Arena Web Academy. The class will start on 21-01-2024. For admission: 01310333444</p>
                         </article>
                         <article className="Events w-full  lg:w-5/12 md:w-6/12 xl:px-3 lg:px-1   lg:h-auto bg-white group p-3 rounded-md hover:scale-105 transition duration-500 ease-in-out mt-4 md:mt-0">
