@@ -148,7 +148,7 @@ const MobileNav = ({ uid }) => {
             <div className="absolute hidden md:block  mt-5 w-96 group-hover:h-72  group-hover:opacity-100 h-0 overflow-hidden z-0 bg-[#678cc9]   duration-500 ease-in-out transition-all">
               <div className="md:py-5 md:px-10">
                 <li className="hover:text-[#ffd321] cursor-pointer ">
-                  <Link href="/cybersecurity">
+                  <Link href="/cyber-security">
                     Cyber Security & Ethical Hacking
                   </Link>
                 </li>
