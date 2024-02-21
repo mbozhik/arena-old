@@ -73,10 +73,7 @@ const Footer = () => {
                   {" "}
                   <li>FAQ</li>
                 </Link>
-                {/* <Link href="/career" className="text-decoration-none">
-                  {" "}
-                  <li>Career</li>
-                </Link> */}
+         
                 <a
                   href="https://www.hackers.institute/"
                   className="text-decoration-none"
