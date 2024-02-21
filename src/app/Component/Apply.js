@@ -241,7 +241,7 @@ const Apply = (e) => {
                 maxLength={255}
               />
             </div>
-            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
+            <div className="w-full md:col-span-3 col-span-6 mt-4 pt-1 md:mt-[9px]">
               {/* <Input
                 variant="standard"
                 required
@@ -267,7 +267,7 @@ const Apply = (e) => {
     borderBottom: '1px solid #000', 
     width: '100%', 
     borderRadius: '0px', 
-    marginTop: '9px !important',
+    // marginTop: '9px !important',
     transition: 'border-color 0.3s ease',
      // Add transition for smooth animation
   }}
