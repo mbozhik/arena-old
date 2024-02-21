@@ -73,7 +73,7 @@ const MobileNav = ({ uid }) => {
             className="hover:text-[#ffd321] mt-2 md:mt-0"
             onClick={() => setNave(false)}
           >
-            <Link href="/about">About</Link>
+            <Link href="/about-us">About</Link>
           </li>
           <div className="  group mt-2 md:mt-0 ">
             <span className="hover:text-[#ffd321]  ">
@@ -89,7 +89,7 @@ const MobileNav = ({ uid }) => {
                   className="hover:text-[#ffd321] cursor-pointer "
                   onClick={() => setNave(false)}
                 >
-                  <Link href="/cybersecurity">
+                  <Link href="/cyber-security">
                     Cyber Security & Ethical Hacking
                   </Link>
                 </li>
