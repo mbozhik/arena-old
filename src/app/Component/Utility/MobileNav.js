@@ -38,14 +38,15 @@ const MobileNav = ({ uid }) => {
   };
 
   return (
-    <div className={`md:flex ${!scrolling && pathname==='/' ?'navber ':'navber2'} lg:px-10 md:px-5 relative  `}>
-      <article className=" flex items-center">
+    <div className={`md:flex ${!scrolling && pathname==='/' ?'navber2 ':'navber2'} lg:px-10 md:px-5 relative  `}>
+      <div className="container mx-auto flex justify-between">
+      {/* <article className=" flex items-center">
         <Image
           src={Logo}
           alt="Arena-Logo"
           className="w-20 h-8 md:w-auto md:h-auto "
         />
-      </article>
+      </article> */}
       <div
         className={`${
           nav ? "h-full w-full blur fixed top-0 left-0" : ""
@@ -240,6 +241,7 @@ const MobileNav = ({ uid }) => {
         onClick={() => setNave(true)}
       >
         <AiOutlineMenu className="text-white text-2xl menu-bar" />
+      </div>
       </div>
     </div>
   );

@@ -1,11 +1,16 @@
-import { Inter } from 'next/font/google'
+
+import {Poppins} from "next/font/google";
 import './globals.css'
 import Footer from './Component/Common/Footer'
 import Navber from './Component/Common/Navber'
 import Script from 'next/script'
 // import MessengerCustomerChat from 'react-messenger-customer-chat';
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["400", "700", "800"], // Adjust weights as needed
+});
 // export const metadata = {
   export const metadata = {
     title: 'Arena Web Security | Master Ethical Hacking in Bangladesh',
@@ -20,7 +25,8 @@ export default function RootLayout({ children }) {
         <Script src="https://scripts.pay.bka.sh/versions/1.2.0-beta/checkout/bKash-checkout.js"/>
         <Script src="https://scripts.pay.bka.sh/versions/1.2.0-beta/checkout/bKash-checkout.js"/>
          <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"/>
-      <body className={inter.className}>
+      <body   className={` ${poppins.variable}`}
+      >
     
         <Navber />
         {children }

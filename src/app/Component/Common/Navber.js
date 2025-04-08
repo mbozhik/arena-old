@@ -16,7 +16,7 @@ const Navber = async () => {
   const cookieValue = cookieStore.get("uid");
   const uid = cookieValue?.value;
   return (
-    <div className="sticky w-full !top-0 z-50">
+    <div className=" w-full !top-0 z-50">
       <Navparents data={data} uid={uid}/>
     {/* <div className="fixed w-full !top-0 z-50 ">
       <Marque data={data}/>
