@@ -17,7 +17,7 @@ const Events = async () => {
 
       <div className="">
         <div className="flex gap-x-4 w-full">
-          <div className=" md:flex gap-x-5 relative py-3 mb-5 border  rounded-xl shadow-2xl">
+          <div className=" md:flex gap-x-5 relative py-3 mb-5 border  rounded-xlshadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]">
             <div className="w-5/12 overflow-hidden ">
               <Image
                 src={eventemg}
@@ -59,7 +59,7 @@ const Events = async () => {
             </article>
           </div>
          
-           <div className=" md:flex gap-x-5 relative mb-5 border rounded-xl py-3 shadow-2xl">
+           <div className=" md:flex gap-x-5 relative mb-5 border rounded-xl py-3 shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]">
             <div className="w-5/12 overflow-hidden ">
               <Image
                 src={eventemg}
