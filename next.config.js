@@ -8,7 +8,7 @@
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'i.ibb.co',
+          hostname: 'i.imgur.com',
           port: '',
           pathname: '/**',
         },

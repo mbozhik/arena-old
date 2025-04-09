@@ -12,9 +12,9 @@ const Counter = () => {
         <div className=" container mx-auto grid grid-cols-4">
         <article className="flex justify-center flex-col border-r-2">
           <div className="flex justify-center">
-            <IoMdPeople className=" md:text-6xl text-4xl  text-white font-semibold text-center" />
+            <IoMdPeople className=" md:text-6xl text-4xl  text-[#0b6481] font-semibold text-center" />
           </div>
-          <div className="md:text-4xl text-white font-semibold text-center flex justify-center gap-2">
+          <div className="md:text-4xl text-[#0b6481] font-semibold text-center flex justify-center gap-2">
             <ScrollTrigger
               onEnter={() => setVisible(true)}
               onExit={() => setVisible(false)}
@@ -25,16 +25,16 @@ const Counter = () => {
             </ScrollTrigger>
             <span>+</span>
           </div>
-          <p className="text-center text-[#ffd321] font-semibold">
+          <p className="text-center sectionSubTitle font-semibold">
             Total Students
           </p>
         </article>
         <article className="flex justify-center flex-col border-r-2">
           <div className="flex justify-center">
-            <FaBookReader className="  md:text-6xl text-4xl text-white font-semibold text-center" />
+            <FaBookReader className="  md:text-6xl text-4xl text-[#0b6481] font-semibold text-center" />
           </div>
       
-           <div className="md:text-4xl text-white font-semibold text-center flex justify-center gap-2">
+           <div className="md:text-4xl text-[#0b6481] font-semibold text-center flex justify-center gap-2">
             <ScrollTrigger
               onEnter={() => setVisible(true)}
               onExit={() => setVisible(false)}
@@ -45,16 +45,16 @@ const Counter = () => {
             </ScrollTrigger>
             <span>+</span>
           </div>
-          <p className="text-center text-[#ffd321] font-semibold">
+          <p className="text-center sectionSubTitle font-semibold">
             Course Outline
           </p>
         </article>
         <article className="flex justify-center flex-col border-r-2">
           <div className="flex justify-center">
-            <MdCalendarMonth className="  md:text-6xl text-4xl text-white font-semibold text-center" />
+            <MdCalendarMonth className="  md:text-6xl text-4xl text-[#0b6481] font-semibold text-center" />
           </div>
       
-           <div className="md:text-4xl text-white font-semibold text-center flex justify-center gap-2">
+           <div className="md:text-4xl text-[#0b6481] font-semibold text-center flex justify-center gap-2">
             <ScrollTrigger
               onEnter={() => setVisible(true)}
               onExit={() => setVisible(false)}
@@ -65,15 +65,15 @@ const Counter = () => {
             </ScrollTrigger>
             <span>Month</span>
           </div>
-          <p className="text-center text-[#ffd321] font-semibold">
+          <p className="text-center sectionSubTitle font-semibold">
             Course duration
           </p>
         </article>
         <article className="flex justify-center flex-col ">
           <div className="flex justify-center">
-            <TbUserDollar className="  md:text-6xl text-4xl text-white font-semibold text-center" />
+            <TbUserDollar className="  md:text-6xl text-4xl text-[#0b6481] font-semibold text-center" />
           </div>
-          <div className="md:text-4xl text-white font-semibold text-center flex justify-center gap-2">
+          <div className="md:text-4xl text-[#0b6481] font-semibold text-center flex justify-center gap-2">
             <ScrollTrigger
               onEnter={() => setVisible(true)}
               onExit={() => setVisible(false)}
@@ -84,7 +84,7 @@ const Counter = () => {
             </ScrollTrigger>
             <span>+</span>
           </div>
-          <p className="text-center text-[#ffd321] font-semibold">
+          <p className="text-center sectionSubTitle font-semibold">
             Successful Freelancer
           </p>
         </article>

@@ -23,6 +23,7 @@
 }
 body {
   color: rgb(var(--foreground-rgb));
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -42,7 +43,7 @@ body {
   z-index: 1000;
   display: flex;
   justify-content: space-between;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Poppins', sans-serif;
   padding: 12px 40px;
   height: 70px;
   /* position:sticky !important; */
@@ -59,7 +60,7 @@ body {
   z-index: 1000;
   display: flex;
   justify-content: space-between;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Poppins', sans-serif;
   padding: 12px 40px;
   height: 70px;
   /* position:sticky !important; */
@@ -115,6 +116,60 @@ background-color: #44107a;
   height: 0px !important;
   padding: 0;
   margin: 0;
+}
+/* .a-box {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.img-container {
+  height: 230px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 0px 0px 20px 20px;
+  display: inline-block;
+}
+
+.img-container img {
+  transform: skew(0deg, -13deg);
+  height: 250px;
+  margin: -35px 0px 0px -70px;
+}
+
+.inner-skew {
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0px;
+  transform: skew(0deg, 13deg);
+  font-size: 0px;
+  margin: 30px 0px 0px 0px;
+  background: #c8c2c2;
+  height: 250px;
+  width: 200px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+
+.inner-skew:hover {
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0px;
+  transform: skew(0deg, 11deg);
+  font-size: 0px;
+  margin: 30px 0px 0px 0px;
+  background: #c8c2c2;
+  height: 250px;
+  width: 200px;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+} */
+.sectionSubTitle{
+  color:#5e5e5e;
 }
 @keyframes vd {
   0%{
@@ -328,7 +383,7 @@ background-color: #44107a;
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #76599e6e;
+  background-color: #f1f1f1de;
 }
 
 
@@ -719,4 +774,14 @@ background-color: #44107a;
   background-color: #FFC0CB !important;
 }
 
-
+/* new Code in hare */
+.img-avatar {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid white;
+  background-image: linear-gradient(rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
+  top: 15px;
+  left: 130px;
+}

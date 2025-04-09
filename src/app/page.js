@@ -15,7 +15,7 @@ export default function Home() {
    <div className='overflow-hidden'>
 
     <Banner/>
-    <About />
+    {/* <About /> */}
     <Courses/>
     <Services/>
     <Events/>
