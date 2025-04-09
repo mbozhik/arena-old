@@ -12,6 +12,17 @@ module.exports = withMT({
       // Set background color to white
       white: '#FFFFFF',
     },
+    container: {
+      center: true, // Center the container
+      padding: '1rem', // Optional: consistent inner spacing
+      screens: {
+        sm: '540px',
+        md: '720px',
+        lg: '960px',
+        xl: '1140px',
+        '2xl': '1200px',
+      },
+    },
   },
   plugins: [
    

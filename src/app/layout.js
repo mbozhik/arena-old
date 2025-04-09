@@ -9,7 +9,7 @@ import Script from 'next/script'
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["400", "700", "800"], // Adjust weights as needed
+  weight: ["400", "700", "800","500","300","200"], // Adjust weights as needed
 });
 // export const metadata = {
   export const metadata = {

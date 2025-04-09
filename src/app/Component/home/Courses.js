@@ -64,38 +64,38 @@ const courses = [
 ];
 
 const OurCourses = () => {
-  const sliderRef = useRef(null);
+  // const sliderRef = useRef(null);
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    autoplaySpeed: 1800,
-    autoplay: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 3, slidesToScroll: 1 },
-      },
-      {
-        breakpoint: 600,
-        settings: { slidesToShow: 2, slidesToScroll: 1, initialSlide: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
-      },
-    ],
-  };
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   autoplaySpeed: 1800,
+  //   autoplay: true,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: { slidesToShow: 3, slidesToScroll: 1 },
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: { slidesToShow: 2, slidesToScroll: 1, initialSlide: 2 },
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: { slidesToShow: 1, slidesToScroll: 1 },
+  //     },
+  //   ],
+  // };
 
   return (
-    <div className="container  mx-auto px-4  pt-20">
+    <div className="container mx-auto   pt-20">
       <h5 className="text-center text-[26px] font-bold text-[#0b6481]  mb-2">
         Our Courses
       </h5>
-      <h6 className="text-center text-gray-600 text-sm mb-8">
+      <h6 className="text-center text-gray-600 text-sm mb-16">
         Arena Web Security is the best place to do Cyber Security & Ethical
         Hacking, OSINT, Linux and Freelancing Course. To become a cyber hero it
         is your first step. We design the entire course from basic to advance.
@@ -104,7 +104,7 @@ const OurCourses = () => {
 
       <Swiper
         modules={[Navigation, Scrollbar, A11y, Autoplay]}
-        spaceBetween={50}
+        spaceBetween={2}
         //    slidesPerView={1}
         //    navigation
         autoplay={true}
@@ -130,10 +130,11 @@ const OurCourses = () => {
         {courses?.map((course, index) => (
           <SwiperSlide key={index}>
             <div className="p-2 ">
-              <div className="inline-block text-center font-[Poppins]">
+              <div className="inline-block text-center ">
                 {/* Outer Skewed Container */}
-                <div className="inline-block  overflow-hidden h-[230px] w-[250px] rounded-b-[20px]  ">
-                  <div className="inline-block skew-y-[13deg] h-[250px] w-[200px] rounded-[20px]  bg-[#c8c2c2] transition-all duration-300 mt-[30px] overflow-hidden ">
+                <div className="inline-block  overflow-hidden h-[230px] w-[200px] rounded-b-[20px] rounded-md  ">
+                  <div className="inline-block skew-y-[13deg] h-[250px] w-[200px] rounded-[20px]  bg-[#c8c2c2] transition-all duration-300 mt-[30px] overflow-hidden
+                   ">
                     <div className="relative  h-[250px] -ml-[30px] -mt-[30px]">
                       <Image
                         src={course.image}
@@ -146,10 +147,12 @@ const OurCourses = () => {
                 </div>
 
                 {/* Text Content Container */}
-                <div className="px-5 pt-20 pb-10 shadow-md hover:shadow-xl rounded-[10px] bg-white mt-[-60px] h-full ">
+                <div className="px-5 pt-40 pb-10   rounded-[10px] bg-white mt-[-120px] h-full  
+                   shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]">
+              
                   <Link
                     href={course.link}
-                    className="text-[#0b6481] text-lg font-normal hover:text-black hover:font-medium pt-10"
+                    className="text-[#0b6481] text-lg font-normal hover:text-black hover:font-medium "
                   >
                     {course.title}
                   </Link>

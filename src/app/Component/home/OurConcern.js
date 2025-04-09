@@ -14,12 +14,12 @@ import Marquee from "react-fast-marquee";
 
 const OurConcern = () => {
   return (
-    <div className=" lg:mt-44 md:mt-8  relative  bg-[#fbfcfd]">
+    <div className=" lg:mt-56 md:mt-8 container relative  bg-[#fbfcfd]">
       <div className="">
         <h5 className="text-center text-[26px] font-bold text-[#0b6481]  mb-2">
           Our Concerns
         </h5>
-        <h6 className="text-center text-gray-600 text-sm mb-8">
+        <h6 className="text-center text-gray-600 text-sm mb-16">
           We starting a project by maturing of project plans and researching the
           business needs and setting a goal to develop the project accordingly.
           Prerequisite requirements are our designing thoughts to our concerns.

@@ -6,15 +6,27 @@ import { TbUserDollar } from "react-icons/tb";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
+import month from "./../../../../public/statitic/Month.svg";
+import TotalStudent from "./../../../../public/statitic//TotalStudent.svg"
+import outline from "./../../../../public/statitic//outline.svg"
+import freelancer from "./../../../../public/statitic//freelancer.svg"
+import Image from "next/image";
 const Counter = () => {
     const [visible, setVisible] = useState(false);
     return (
         <div className=" container mx-auto grid grid-cols-4">
         <article className="flex justify-center flex-col border-r-2">
           <div className="flex justify-center">
-            <IoMdPeople className=" md:text-6xl text-4xl  text-[#0b6481] font-semibold text-center" />
+          {/* <img className="statistics-img" src={month} alt=""/> */}
+            <Image
+                                  src={TotalStudent}
+                                  alt="Course Image"
+                                  width={70}
+                                  height={70}
+                                  // className="-skew-y-[13deg] object-cover hover:skew-y-[-12deg]"
+                                />
           </div>
-          <div className="md:text-4xl text-[#0b6481] font-semibold text-center flex justify-center gap-2">
+          <div className="text-[20px] mt-4 text-[#7D58A5FF] font-semibold text-center flex justify-center gap-2">
             <ScrollTrigger
               onEnter={() => setVisible(true)}
               onExit={() => setVisible(false)}
@@ -25,16 +37,22 @@ const Counter = () => {
             </ScrollTrigger>
             <span>+</span>
           </div>
-          <p className="text-center sectionSubTitle font-semibold">
+          <p className="text-center text-sm mt-3">
             Total Students
           </p>
         </article>
         <article className="flex justify-center flex-col border-r-2">
           <div className="flex justify-center">
-            <FaBookReader className="  md:text-6xl text-4xl text-[#0b6481] font-semibold text-center" />
+          <Image
+                                  src={outline}
+                                  alt="Course Image"
+                                  width={70}
+                                  height={70}
+                                  // className="-skew-y-[13deg] object-cover hover:skew-y-[-12deg]"
+                                />
           </div>
       
-           <div className="md:text-4xl text-[#0b6481] font-semibold text-center flex justify-center gap-2">
+           <div className="text-[20px] mt-4 text-[#7D58A5FF] font-semibold text-center flex justify-center gap-2">
             <ScrollTrigger
               onEnter={() => setVisible(true)}
               onExit={() => setVisible(false)}
@@ -45,16 +63,22 @@ const Counter = () => {
             </ScrollTrigger>
             <span>+</span>
           </div>
-          <p className="text-center sectionSubTitle font-semibold">
+          <p className="text-center text-sm mt-3">
             Course Outline
           </p>
         </article>
         <article className="flex justify-center flex-col border-r-2">
           <div className="flex justify-center">
-            <MdCalendarMonth className="  md:text-6xl text-4xl text-[#0b6481] font-semibold text-center" />
+          <Image
+                                  src={month}
+                                  alt="Course Image"
+                                  width={70}
+                                  height={70}
+                                  // className="-skew-y-[13deg] object-cover hover:skew-y-[-12deg]"
+                                />
           </div>
       
-           <div className="md:text-4xl text-[#0b6481] font-semibold text-center flex justify-center gap-2">
+           <div className="text-[20px] mt-4 text-[#7D58A5FF] font-semibold text-center flex justify-center gap-2">
             <ScrollTrigger
               onEnter={() => setVisible(true)}
               onExit={() => setVisible(false)}
@@ -65,15 +89,21 @@ const Counter = () => {
             </ScrollTrigger>
             <span>Month</span>
           </div>
-          <p className="text-center sectionSubTitle font-semibold">
+          <p className="text-center text-sm mt-3">
             Course duration
           </p>
         </article>
         <article className="flex justify-center flex-col ">
           <div className="flex justify-center">
-            <TbUserDollar className="  md:text-6xl text-4xl text-[#0b6481] font-semibold text-center" />
+          <Image
+                                  src={freelancer}
+                                  alt="Course Image"
+                                  width={70}
+                                  height={70}
+                                  // className="-skew-y-[13deg] object-cover hover:skew-y-[-12deg]"
+                                />
           </div>
-          <div className="md:text-4xl text-[#0b6481] font-semibold text-center flex justify-center gap-2">
+          <div className="text-[20px] mt-4 text-[#7D58A5FF] font-semibold text-center flex justify-center gap-2">
             <ScrollTrigger
               onEnter={() => setVisible(true)}
               onExit={() => setVisible(false)}
@@ -84,7 +114,7 @@ const Counter = () => {
             </ScrollTrigger>
             <span>+</span>
           </div>
-          <p className="text-center sectionSubTitle font-semibold">
+          <p className="text-center text-sm mt-3">
             Successful Freelancer
           </p>
         </article>

@@ -38,8 +38,8 @@ const MobileNav = ({ uid }) => {
   };
 
   return (
-    <div className={`md:flex ${!scrolling && pathname==='/' ?'navber2 ':'navber2'} lg:px-10 md:px-5 relative  `}>
-      <div className="container mx-auto flex justify-between">
+    <div className={`md:flex ${!scrolling && pathname==='/' ?'navber2 ':'navber2'} lg:px-10 md:px-5 relative font-bold `}>
+      <div className="container mx-auto flex justify-between font-bold ">
       {/* <article className=" flex items-center">
         <Image
           src={Logo}
@@ -51,33 +51,35 @@ const MobileNav = ({ uid }) => {
         className={`${
           nav ? "h-full w-full blur fixed top-0 left-0" : ""
         } md:hidden z-10`}
-        onClick={() => setNave(false)}></div>
-      <nav className="flex justify-center items-center  ">
+        onClick={() => setNave(false)}>
+          
+        </div>
+      <nav className="flex justify-center items-center font-bold  ">
         <ul
-          className={`md:flex block peer z-50  text-white ${
+          className={`md:flex block peer z-50  text-white font-bold ${
             nav
               ? "translate-x-0 md:translate-x-0"
               : "translate-x-96 md:translate-x-0 "
-          } transition-all duration-350 ease-in-out font-semibold gap-x-4 bg-[#331E6D] md:bg-transparent fixed md:relative lg:relative top-0 right-0 h-screen md:h-auto    w-2/3 md:w-auto pt-10 pl-5 md:pt-0 md:pl-0 `}
+          } transition-all duration-350 ease-in-out  gap-x-4 bg-[#331E6D] md:bg-transparent fixed md:relative lg:relative top-0 right-0 h-screen md:h-auto    w-2/3 md:w-auto pt-10 pl-5 md:pt-0 md:pl-0 `}
         >
           <div className="block md:hidden text-white absolute right-5 top-3 text-3xl">
             <IoIosCloseCircle onClick={() => setNave(false)}></IoIosCloseCircle>
           </div>
           <li
-            className="hover:text-[#ffd321] mt-5 md:mt-0"
+            className="hover:text-black mt-5 md:mt-0"
             onClick={() => setNave(false)}
           >
             {" "}
             <Link href="/">Home</Link>
           </li>
           <li
-            className="hover:text-[#ffd321] mt-2 md:mt-0"
+            className="hover:text-black mt-2 md:mt-0"
             onClick={() => setNave(false)}
           >
             <Link href="/about-us">About</Link>
           </li>
           <div className="  group mt-2 md:mt-0 ">
-            <span className="hover:text-[#ffd321]  ">
+            <span className="hover:text-black  ">
               <p className="hidden md:inline-flex relative"> Courses</p>
               <span className="flex md:hidden lg:hidden items-center gap-3">
                 Courses
@@ -87,7 +89,7 @@ const MobileNav = ({ uid }) => {
             <div className="  w-full group-hover:h-48 block md:hidden  group-hover:opacity-100 h-0 overflow-hidden z-0    duration-500 ease-in-out transition-all text-[12px] ml-5">
               <div className="md:py-5 md:px-10">
                 <li
-                  className="hover:text-[#ffd321] cursor-pointer "
+                  className="hover:text-black cursor-pointer "
                   onClick={() => setNave(false)}
                 >
                   <Link href="/cyber-security">
@@ -95,13 +97,13 @@ const MobileNav = ({ uid }) => {
                   </Link>
                 </li>
                 <li
-                  className="hover:text-[#ffd321] cursor-pointer my-1 "
+                  className="hover:text-black cursor-pointer my-1 "
                   onClick={() => setNave(false)}
                 >
                   <Link href="/python">Advanced Python With Freelancing</Link>
                 </li>
                 <li
-                  className="hover:text-[#ffd321] cursor-pointer my-1"
+                  className="hover:text-black cursor-pointer my-1"
                   onClick={() => setNave(false)}
                 >
                   <Link href="/combo">
@@ -109,13 +111,13 @@ const MobileNav = ({ uid }) => {
                   </Link>
                 </li>
                 <li
-                  className="hover:text-[#ffd321] cursor-pointer my-1"
+                  className="hover:text-black cursor-pointer my-1"
                   onClick={() => setNave(false)}
                 >
                   <Link href="/cehf">CEHF Masterclass</Link>
                 </li>
                 <li
-                  className="hover:text-[#ffd321] cursor-pointer my-1"
+                  className="hover:text-black cursor-pointer my-1"
                   onClick={() => setNave(false)}
                 >
                   <Link href="/cosint">
@@ -123,13 +125,13 @@ const MobileNav = ({ uid }) => {
                   </Link>
                 </li>
                 <li
-                  className="hover:text-[#ffd321] cursor-pointer my-1"
+                  className="hover:text-black cursor-pointer my-1"
                   onClick={() => setNave(false)}
                 >
                   <Link href="/linux">Linux</Link>
                 </li>
                 <li
-                  className="hover:text-[#ffd321] cursor-pointer my-1"
+                  className="hover:text-black cursor-pointer my-1"
                   onClick={() => setNave(false)}
                 >
                   <Link href="/network">Networking Security</Link>
@@ -142,48 +144,48 @@ const MobileNav = ({ uid }) => {
             />
             <Link
               href="/courses "
-              className="hover:text-[#ffd321] absolute pr-6 opacity-0 hidden md:block  "
+              className="hover:text-black absolute pr-6 opacity-0 hidden md:block  "
             >
               Courses
             </Link>
-            <div className="absolute hidden md:block  mt-5 w-96 group-hover:h-72  group-hover:opacity-100 h-0 overflow-hidden z-0 bg-[#678cc9]   duration-500 ease-in-out transition-all">
+            {/* <div className="absolute hidden md:block  mt-5 w-96 group-hover:h-72  group-hover:opacity-100 h-0 overflow-hidden z-0 bg-[#678cc9]   duration-500 ease-in-out transition-all">
               <div className="md:py-5 md:px-10">
-                <li className="hover:text-[#ffd321] cursor-pointer ">
+                <li className="hover:text-black cursor-pointer ">
                   <Link href="/cyber-security">
                     Cyber Security & Ethical Hacking
                   </Link>
                 </li>
-                <li className="hover:text-[#ffd321] cursor-pointer my-1 ">
+                <li className="hover:text-black cursor-pointer my-1 ">
                   <Link href="/python">Advanced Python With Freelancing</Link>
                 </li>
-                <li className="hover:text-[#ffd321] cursor-pointer my-1">
+                <li className="hover:text-black cursor-pointer my-1">
                   <Link href="/combo">
                     Cyber Security and Advance Python (Combo)
                   </Link>
                 </li>
-                <li className="hover:text-[#ffd321] cursor-pointer my-1">
+                <li className="hover:text-black cursor-pointer my-1">
                   <Link href="/cehf">CEHF Masterclass</Link>
                 </li>
-                <li className="hover:text-[#ffd321] cursor-pointer my-1">
+                <li className="hover:text-black cursor-pointer my-1">
                   <Link href="/cosint">
                     Certified in Open Source Intelligence (C|OSINT)
                   </Link>
                 </li>
-                <li className="hover:text-[#ffd321] cursor-pointer my-1">
+                <li className="hover:text-black cursor-pointer my-1">
                   <Link href="/linux">Linux</Link>
                 </li>
-                <li className="hover:text-[#ffd321] cursor-pointer my-1">
+                <li className="hover:text-black cursor-pointer my-1">
                   <Link href="/network">Networking Security</Link>
                 </li>
               </div>
-            </div>
+            </div> */}
           </div>
-          <li className="hover:text-[#ffd321]  md:mt-0">
+          <li className="hover:text-black  md:mt-0">
             <Link href="/all-services" onClick={() => setNave(false)}>
               Services
             </Link>
           </li>
-          <li className="hover:text-[#ffd321] mt-2 md:mt-0">
+          <li className="hover:text-black mt-2 md:mt-0">
             <Link
               href="https://www.hackers.institute/"
               onClick={() => setNave(false)}
@@ -191,13 +193,13 @@ const MobileNav = ({ uid }) => {
               Blog
             </Link>
           </li>
-          <li className="hover:text-[#ffd321] mt-2 md:mt-0">
+          <li className="hover:text-black mt-2 md:mt-0">
             <Link href="/arena-gallery" onClick={() => setNave(false)}>
               Gallery
             </Link>
           </li>{" "}
           {uid && (
-            <li className="hover:text-[#ffd321]">
+            <li className="hover:text-black">
               <Link href="/profile" onClick={() => setNave(false)}>
                 Profile
               </Link>
