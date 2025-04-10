@@ -8,6 +8,26 @@ module.exports = withMT({
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    
+    animation: {
+      fadeInDown: 'fadeInDown 1s ease-out',
+    },
+    keyframes: {
+      fadeInDown: {
+        '0%': { opacity: '0', transform: 'translateY(-50px)' },
+        '100%': { opacity: '1', transform: 'translateY(0)' },
+      },
+    },
+    animation: {
+      throw: 'throwAnimation 0.8s ease-in-out',
+    },
+    keyframes: {
+      throwAnimation: {
+        '0%': { transform: 'translateX(200px) translateY(-20px) scale(1.1)', opacity: '0' },
+        '100%': { transform: 'translateX(0) translateY(0) scale(1)', opacity: '1' },
+      },
+    },
+  
     colors: {
       // Set background color to white
       white: '#FFFFFF',
