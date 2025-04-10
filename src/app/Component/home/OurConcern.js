@@ -14,7 +14,7 @@ import Marquee from "react-fast-marquee";
 
 const OurConcern = () => {
   return (
-    <div className=" lg:mt-56 md:mt-8 container relative  bg-[#fbfcfd]">
+    <div className=" lg:mt-56 md:mt-8 container relative  bg-[#fbfcfd] pb-16">
       <div className="">
         <h5 className="text-center text-[26px] font-bold text-[#0b6481]  mb-2">
           Our Concerns
