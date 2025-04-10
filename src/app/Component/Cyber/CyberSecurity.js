@@ -1,34 +1,18 @@
 'use client'
 import React from 'react'
-import AnimatedText from 'react-animated-text-content'
+
 import Banner from "@/app/all-courses/banner.webp";
 import Image from 'next/image';
-import { Animated } from 'react-animated-css';
+
 
 
 const CyberSecurity = () => {
   return (
     <div>
-        <div className='text-[24px] font-semibold leading-9 mt-14 text-[#424242]'>
-        <AnimatedText
-                        type="words"
-                        animation={{
-                            x: '200px',
-                            y: '-20px',
-                            scale: 1.1,
-                            ease: 'ease-in-out',
-                        }}
-                        animationType="throw"
-                        interval={0.06}
-                        duration={0.8}
-                        tag="p"
-                        className="CourseDetailsMainTitle text-center"
-                        includeWhiteSpaces
-                        threshold={0.1}
-                        rootMargin="20%"
-                    >
+        <div className='text-[24px] font-semibold leading-9 mt-14 text-[#424242] text-center'>
+     
                         Cyber Security & Ethical Hacking
-                    </AnimatedText>
+                   
         </div>
            {/* Course Module */}
       <div className="flex ">
@@ -43,22 +27,19 @@ const CyberSecurity = () => {
 
           <div className=" lg:col-span-9 col-span-8 lg:px-3">
             {/*KEY FEATURES  */}
-            <Animated animationIn="fadeInDown" animationInDuration={1000} animationOutDuration={2000}
-                                      isVisible={true}> 
+          
                                            <div className="relative">
               <h3 className="  text-[#424242] text-[22px] font-medium leading-6">Overview</h3>
               <p className="text-[#424242] font-[300] text-[16px] leading-6 text-justify mt-5">Embark on a journey into the realm of cybersecurity with Arena Web Security. Whether you're aiming for your first role in IT security, envisioning a full-time career as a white hat hacker, or preparing to strengthen the defenses of your home network, our courses are customized to align with your aspirations. Through an accessible and hands-on approach to ethical hacking, we empower you to protect your networks efficiently. Elevate your skills with us and pave the way to a successful career in the professional marketplace. Your path to cybersecurity excellence starts right here.</p>
               
             </div>
-                                      </Animated>
-                                      <Animated animationIn="fadeInDown" animationInDuration={1000} animationOutDuration={2000}
-                                      isVisible={true}>
+                                      
+                                     
                                 <h4 className="serviceDetailsHeadline mt-2">Overview</h4>
                                 <h6 className="text-justify serviceDetailsDes">
                                 Embark on a journey into the realm of cybersecurity with Arena Web Security. Whether you're aiming for your first role in IT security, envisioning a full-time career as a white hat hacker, or preparing to strengthen the defenses of your home network, our courses are customized to align with your aspirations. Through an accessible and hands-on approach to ethical hacking, we empower you to protect your networks efficiently. Elevate your skills with us and pave the way to a successful career in the professional marketplace. Your path to cybersecurity excellence starts right here.
                                     </h6>
-                            </Animated>
-       
+                    
 
             {/* <article className="grid md:grid-cols-5 grid-cols-2 gap-4 mt-5 ">
               <div className="bg-[#EBE7F8] justify-center flex flex-col py-2 rounded-md">
