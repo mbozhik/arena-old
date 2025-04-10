@@ -236,7 +236,7 @@ const CyberSecurity = () => {
           </div>
 
           <div className="col-span-3 hidden lg:block">
-            <Image alt="Cyber Security And Ethical Hacking" src={Banner} />
+            <Image alt="Cyber Security And Ethical Hacking " src={Banner} />
           </div>
         </div>
       </div>
