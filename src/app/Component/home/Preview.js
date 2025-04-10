@@ -4,7 +4,7 @@ import Review from "../Utility/Reviews";
 
 const Preview = () => {
   return (
-    <div className=" container mx-auto px-3 lg:mt-16 md:mt-8 md:h-[50vh]   ">
+    <div className=" container mx-auto px-3 lg:mt-16 md:mt-8    ">
       <div className="">
         {/* <div className="md:col-span-2 h-full relative  hidden md:block">
           <Image src={event} alt="Events" className="" fill={true} sizes="1000vh" />

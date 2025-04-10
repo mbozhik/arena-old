@@ -78,15 +78,21 @@ const MobileNav = ({ uid }) => {
           >
             <Link href="/about-us">About</Link>
           </li>
-          <div className="  group mt-2 md:mt-0 ">
-            <span className="hover:text-black  ">
-              <p className="hidden md:inline-flex relative"> Courses</p>
-              <span className="flex md:hidden lg:hidden items-center gap-3">
+          <li
+            className="hover:text-black mt-2 md:mt-0"
+            onClick={() => setNave(false)}
+          >
+            <Link href="/all-courses"> Courses</Link>
+          </li>
+          {/* <div className="  group mt-2 md:mt-0 "> */}
+            {/* <span className="hover:text-black  ">
+              <p className="hidden md:inline-flex relative"> Courses</p> */}
+              {/* <span className="flex md:hidden lg:hidden items-center gap-3">
                 Courses
                 <AiOutlineDown className="text-white block md:hidden" />
               </span>
-            </span>
-            <div className="  w-full group-hover:h-48 block md:hidden  group-hover:opacity-100 h-0 overflow-hidden z-0    duration-500 ease-in-out transition-all text-[12px] ml-5">
+            </span> */}
+            {/* <div className="  w-full group-hover:h-48 block md:hidden  group-hover:opacity-100 h-0 overflow-hidden z-0    duration-500 ease-in-out transition-all text-[12px] ml-5">
               <div className="md:py-5 md:px-10">
                 <li
                   className="hover:text-black cursor-pointer "
@@ -136,18 +142,29 @@ const MobileNav = ({ uid }) => {
                 >
                   <Link href="/network">Networking Security</Link>
                 </li>
-              </div>
-            </div>
-            <br
-              className="hidden md:block mt-2 md:mt-0"
-              onClick={() => setNave(false)}
-            />
-            <Link
-              href="/courses "
-              className="hover:text-black absolute pr-6 opacity-0 hidden md:block  "
+                <li
+                  className="hover:text-black cursor-pointer my-1"
+                  onClick={() => setNave(false)}
+                >
+                     <Link
+              href="/all-courses "
+              className="hover:text-black absolute pr-6 opacity-0 hidden md:block cursor-pointer  "
             >
               Courses
             </Link>
+                </li>
+              </div>
+            </div> */}
+            {/* <br
+              className="hidden md:block mt-2 md:mt-0"
+              onClick={() => setNave(false)}
+            /> */}
+            {/* <Link
+              href="/all-courses "
+              className="hover:text-black absolute pr-6 opacity-0 hidden md:block cursor-pointer  "
+            >
+              Courses
+            </Link> */}
             {/* <div className="absolute hidden md:block  mt-5 w-96 group-hover:h-72  group-hover:opacity-100 h-0 overflow-hidden z-0 bg-[#678cc9]   duration-500 ease-in-out transition-all">
               <div className="md:py-5 md:px-10">
                 <li className="hover:text-black cursor-pointer ">
@@ -179,7 +196,7 @@ const MobileNav = ({ uid }) => {
                 </li>
               </div>
             </div> */}
-          </div>
+          {/* </div> */}
           <li className="hover:text-black  md:mt-0">
             <Link href="/all-services" onClick={() => setNave(false)}>
               Services

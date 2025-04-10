@@ -147,7 +147,7 @@ const OurCourses = () => {
                 </div>
 
                 {/* Text Content Container */}
-                <div className="px-5 pt-40 pb-10   rounded-[10px] bg-white mt-[-120px] h-full  
+                <div className="px-5 pt-32 pb-10   rounded-[10px] bg-white mt-[-120px] h-full  
                    shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]">
               
                   <Link
@@ -156,7 +156,7 @@ const OurCourses = () => {
                   >
                     {course.title}
                   </Link>
-                  <p className="sectionSubTitle text-sm font-light mt-2 leading-relaxed">
+                  <p className=" text-sm font-[300] mt-2 leading-[22px]">
                     {course.description}
                   </p>
                 </div>

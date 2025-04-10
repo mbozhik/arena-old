@@ -1,277 +1,118 @@
-"use client";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-  Avatar,
-} from "@material-tailwind/react";
-import Image from "next/image";
-import ceo from "@/app/Images/ceo.png";
-// import { Fade } from "react-reveal";
-import { Fade } from "react-awesome-reveal";
-import Link from "next/link";
 
+import Image from "next/image";
+import Link from "next/link";
+import cyberSecurity from "./../../../../public/cyber-security-course-outline/cyberSecurity.svg";
+import network from "./../../../../public/cyber-security-course-outline/network.svg";
+import linux from "./../../../../public/cyber-security-course-outline/linux.svg";
+import AdvancedCourse from "./../../../../public/cyber-security-course-outline/networking.svg";
+const courses = [
+  {
+    image: cyberSecurity,
+    title: "Cyber Security & Ethical Hacking",
+    link: "/cyber-security-ethical-hacking",
+    description:
+      "Whether you’re interested in landing your first IT security job, becoming a full-time white hat hacker, or preparing to test the security of your own home network, Arena Web Security offers approachable, hands-on ethical hacking courses to help you keep your networks safe from cyber criminals & make your career at professional marketplace.",
+  },
+  {
+    image: cyberSecurity,
+    title: "Advance Python With Freelancing",
+    link: "/advance-python-with-django",
+    description:
+      "Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.",
+  },
+  {
+    image: cyberSecurity,
+    title: "Cyber Security and Advance Python (Combo)",
+    link: "/advance-python-with-django",
+    description:
+      "Cybersecurity needs a programming language and today Python is very popular because of its flexibility and lightweight features. This course can help to build skills across the cyberattack world for both cyber attackers and defenders",
+  },
+  {
+    image: AdvancedCourse,
+    title: "CEHF Masterclass",
+    link: "/advanced-cyber-security-course",
+    description:
+      "Advanced Cyber Security & Ethical Hacking is a pioneer in endpoint security, with proactive security solutions that stop advanced persistent threats in their initial stages and prevent advancement. Advanced Cyber Security & Ethical Hacking products provide the first.",
+  },
+  {
+    image: network,
+    title: "C|OSINT (Certified Open Source Intelligence)",
+    link: "/cosint-course",
+    description:
+      "Open Source Intelligence Training™ - Syllabus and Featured Topics This course will provide an education and information you will not be able to acquire anywhere else. The class is completely interactive keeping you busy every moment and enjoying the activities. Learn to direct your searches to obtain results quickly!",
+  },
+  {
+    image: linux,
+    title: "Linux",
+    link: "/linux-course",
+    description:
+      "The industry-leading Penetration Testing with Kali Linux (KLIN-ACS) course just got even better. This online ethical hacking course is self-paced. It introduces penetration testing tools and techniques via hands-on experience. Students who complete the course and pass the exam earn the coveted Arena Web Certified Professional certification.",
+  },
+  {
+    image: network,
+    title: "Networking Security",
+    link: "/networking-course",
+    description:
+      "In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. We cover one of the largest risks online, the browser. The doorway into your system.",
+  },
+  {
+    image: network,
+    title: "Additional Courses",
+    link: "/networking-course",
+    description:
+      "In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. We cover one of the largest risks online, the browser. The doorway into your system.",
+  },
+];
 export function AllCourses() {
   return (
-    <div className="grid lg:px-20 md:px-5 px-6 lg:pt-16">
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-6 ">
-        <Fade cascade={true} direction="up" duration={1000} distance="20%">
-          <Link href='/cyber-security'>
-          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
-            <CardHeader
-              color="transparent"
-              className="absolute inset-0 m-0 h-full w-full rounded-none CyberCard bg-cover bg-center"
-            >
-              <div
-                className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
-              />
-            </CardHeader>
-            <CardBody className="relative py-14 px-6 ">
-              <Typography
-                variant="h2"
-                color="white"
-                className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl "
-              >
-                Cyber Security & Ethical Hacking
-              </Typography>
-              <Typography
-                variant="paragraph"
-                className="mb-4 text-white  font-semibold "
-              >
-                Whether you’re interested in landing your first IT security job,
-                becoming a full-time white hat hacker, or preparing to test the
-                security of your own home network, Arena Web Security offers
-                approachable, hands-on ethical hacking courses to help you keep
-                your networks safe from cyber criminals & make your career at
-                professional marketplace.
-              </Typography>
+   
+    <div className="container">
+      <div className="shadow-sm bg-gradient-to-r from-[#56b5e3] to-[#7d58a5] rounded-sm py-3 mb-5 mt-5">
+  <h4 className="text-[28px] font-medium text-white text-center my-4 font-poppins">
+    All Courses
+  </h4>
+</div>
+  <div className="grid grid-cols-4 place-content-end justify-center py-10 gap-2">
+  {courses?.map((course, index) => (
+        
+        <div className="p-2 " key={index}>
+          <div className="inline-block text-center ">
+            {/* Outer Skewed Container */}
+            <div className="inline-block  overflow-hidden h-[230px] w-[200px] rounded-b-[20px] rounded-md  ">
+              <div className="inline-block skew-y-[13deg] h-[250px] w-[200px] rounded-[20px]  bg-[#c8c2c2] transition-all duration-300 mt-[30px] overflow-hidden
+               ">
+                <div className="relative  h-[250px] -ml-[30px] -mt-[30px]">
+                  <Image
+                    src={course.image}
+                    alt="Course Image"
+                    fill
+                    className="-skew-y-[13deg] object-cover hover:skew-y-[-12deg]"
+                  />
+                </div>
+              </div>
+            </div>
 
-             
-            </CardBody>
-          </Card>
-          </Link>
-        </Fade>
-        <Fade direction="down" delay={200} distance="20%">
-        <Link href='/python'>
-          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
-            <CardHeader
-              color="transparent"
-              className="absolute inset-0 m-0 h-full w-full rounded-none PythonCard bg-cover bg-center"
-            >
-              <div
-                className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
-              />
-            </CardHeader>
-            <CardBody className="relative py-14 px-6 ">
-              <Typography
-                variant="h2"
-                color="white"
-                className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl"
+            {/* Text Content Container */}
+            <div className="px-5 pt-32 pb-10   rounded-[10px] bg-white mt-[-120px] h-full  
+               shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]">
+          
+              <Link
+                href={course.link}
+                className="text-[#0b6481] text-lg font-normal hover:text-black hover:font-medium "
               >
-                Advanced Python With Freelancing
-              </Typography>
-              <Typography
-                variant="paragraph"
-                className="mb-4 text-white  font-semibold "
-              >
-                Python is a high-level, interpreted, interactive and
-                object-oriented scripting language. Python is designed to be
-                highly readable. It uses English keywords frequently where as
-                other languages use punctuation, and it has fewer syntactical
-                constructions than other languages.
-              </Typography>
-             
-            </CardBody>
-          </Card>
-          </Link>
-        </Fade>
-
-        <Fade direction="down" delay={200} distance="20%">
-        <Link href='/combo'>
-          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
-            <CardHeader
-              color="transparent"
-              className="absolute inset-0 m-0 h-full w-full rounded-none Combo bg-cover bg-center"
-            >
-              <div
-                className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
-              />
-            </CardHeader>
-            <CardBody className="relative py-14 px-6 ">
-              <Typography
-                variant="h2"
-                color="white"
-                className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl"
-              >
-                Cyber Security and Advance Python (Combo)
-              </Typography>
-              <Typography
-                variant="paragraph"
-                className="mb-4 text-white  font-semibold "
-              >
-                Cybersecurity needs a programming language and today Python is
-                very popular because of its flexibility and lightweight
-                features. This course can help to build skills across the
-                cyberattack world for both cyber attackers and defenders.
-              </Typography>
-             
-            </CardBody>
-          </Card>
-          </Link>
-        </Fade>
-        <Fade direction="down" delay={200} distance="20%">
-        <Link href='/cehf'>
-          <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group   items-end justify-center overflow-hidden text-center">
-            <CardHeader
-              color="transparent"
-              className="absolute inset-0 m-0 h-full w-full rounded-none Master bg-cover bg-center"
-            >
-              <div
-                className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
-              />
-            </CardHeader>
-            <CardBody className="relative py-14 px-6 ">
-              <Typography
-                variant="h2"
-                color="white"
-                className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl"
-              >
-                CEHF Masterclass
-              </Typography>
-              <Typography
-                variant="paragraph"
-                className="mb-4 text-white  font-semibold "
-              >
-                Advanced Cyber Security & Ethical Hacking is a pioneer in
-                endpoint security, with proactive security solutions that stop
-                advanced persistent threats in their initial stages and prevent
-                advancement. Advanced Cyber Security & Ethical Hacking products
-                provide the first.
-              </Typography>
-             
-            </CardBody>
-          </Card>
-          </Link>
-        </Fade>
-      </div>
-      <div className="flex justify-center items-center mx-auto mt-4">
-        <div className=" grid lg:grid-cols-3 md:grid-cols-2  lg:col-span-3 gap-4 lg:col-start-2 ">
-          <Fade direction="down" delay={200} distance="20%">
-          <Link href='/cosint'>
-            <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
-              <CardHeader
-                color="transparent"
-                className="absolute inset-0 m-0 h-full w-full rounded-none Int bg-cover bg-center"
-              >
-                <div
-                  className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
-                />
-              </CardHeader>
-              <CardBody className="relative py-14 px-6 ">
-                <Typography
-                  variant="h2"
-                  color="white"
-                  className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl"
-                >
-                  C|OSINT (Certified Open Source Intelligence)
-                </Typography>
-                <Typography
-                  variant="paragraph"
-                  className="mb-4 text-white  font-semibold "
-                >
-                  Open Source Intelligence Training™ - Syllabus and Featured
-                  Topics This course will provide an education and information
-                  you will not be able to acquire anywhere else. The class is
-                  completely interactive keeping you busy every moment and
-                  enjoying the activities. Learn to direct your searches to
-                  obtain results quickly!
-                </Typography>
-               
-              </CardBody>
-            </Card>
-            </Link>
-          </Fade>
-          <Fade direction="down" delay={200} distance="20%">
-          <Link href='/linux'>
-            <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
-              <CardHeader
-                color="transparent"
-                className="absolute inset-0 m-0 h-full w-full rounded-none Linax bg-cover bg-center"
-              >
-                <div
-                  className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
-                />
-              </CardHeader>
-              <CardBody className="relative py-14 px-6 ">
-                <Typography
-                  variant="h2"
-                  color="white"
-                  className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl"
-                >
-                  Linux
-                </Typography>
-                <Typography
-                  variant="paragraph"
-                  className="mb-4 text-white  font-semibold "
-                >
-                  The industry-leading Penetration Testing with Kali Linux
-                  (KLIN-ACS) course just got even better. This online ethical
-                  hacking course is self-paced. It introduces penetration
-                  testing tools and techniques via hands-on experience. Students
-                  who complete the course and pass the exam earn the coveted
-                  Arena Web Certified Professional certification.
-                </Typography>
-            
-              </CardBody>
-            </Card>
-            </Link>
-          </Fade>
-          <Fade direction="down" delay={200} distance="20%">
-          <Link href='/network'>
-            <Card className="relative grid lg:h-[40rem] md:h-[35rem] h-[26rem] w-full max-w-[28rem] group  items-end justify-center overflow-hidden text-center">
-              <CardHeader
-                color="transparent"
-                className="absolute inset-0 m-0 h-full w-full rounded-none network bg-cover bg-center"
-              >
-                <div
-                  className="to-bg-black-10 absolute  inset-0 h-full
-           w-full bg-gradient-to-t group-hover:from-black/100 from-black/90 via-black/80 group-hover:via-black/100"
-                />
-              </CardHeader>
-              <CardBody className="relative py-14 px-6 ">
-                <Typography
-                  variant="h2"
-                  color="white"
-                  className="mb-6 font-bold leading-[1.5] text-[#FFA121]  transition duration-[1s] ease-in-out 2xl:text-3xl text-2xl"
-                >
-                  Networking Security
-                </Typography>
-                <Typography
-                  variant="paragraph"
-                  className="mb-4 text-white  font-semibold "
-                >
-                  In this course, you will be able to discover security
-                  vulnerabilities across an entire network, by using network
-                  hacking techniques and vulnerability scanning. You will be
-                  able to design & construct your network for maximum security
-                  and prevent local and remote attacks. We cover one of the
-                  largest risks online, the browser. The doorway into your
-                  system.
-                </Typography>
-             
-              </CardBody>
-            </Card>
-            </Link>
-          </Fade>
+                {course.title}
+              </Link>
+              <p className=" text-sm font-[300] mt-2 leading-[20px]">
+                {course.description}
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+     
+    ))}
+
+  </div>
+
     </div>
   );
 }
