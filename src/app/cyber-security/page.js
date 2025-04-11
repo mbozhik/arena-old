@@ -17,6 +17,8 @@ import Outline from "../Component/Common/Outline";
 import { PaymentModal } from "../Component/Common/Payment";
 import BannerImage from "../AllDataFatchingFunction/BannerImage";
 import CyberSecurity from "../Component/Cyber/CyberSecurity";
+import Link from "next/link";
+import { MdPersonAddAlt1 } from "react-icons/md";
 
 
 export const metadata = {
@@ -26,7 +28,6 @@ export const metadata = {
 
 const page = async () => {
   const Tanjim=await BannerImage()
-  // console.log(Tanjim);
   const images=[
     {
       original:"./cyber-security-course-outline/cyber-security1.svg",
@@ -85,28 +86,21 @@ const page = async () => {
 
    
 
-      {/* Teacher Slider */}
-      <div className="bg-[#F3F6FA] mt-10 relative">
-        <div>
-          <Image
-            src={Review}
-            alt="teachers"
-            className="absolute -top-14 w-40 left-1/2 transform -translate-x-1/2"
-          />
-        </div>
-        <h2 className="title lg:text-4xl text-[#44107a] font-bold drop-shadow-lg py-2 text-center pt-20">
-          <span className="title-word-1"> TEAM Learn </span>
-          <span className=" title-word-2"> from the </span>
-          <span className=" title-word-4">techers</span>
-        </h2>{" "}
-        <div className="pb-10">
-          <MentorSlides />
-        </div>
-      </div>
+    
 
       {/* Inforfation About Cyber Security */}
-
-      <div className="lg:px-20 md:px-5 px-6 pt-10">
+      <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">         <p className="text-[24px] leading-9 font-semibold mt-5">Be a Freelancer on Cyber Security</p>
+        <div className='my-5'>
+          {/* <EnrollComponent data={['BECOME','An_ETHICAL','HACKER']} /> */}
+ 
+          <Link href="/admission" className="animated-button1  gap-x-2 ">
+          <p className="flex gap-x-1 items-center ">   <MdPersonAddAlt1  className="text-2xl"/>ENROLL NOW</p>
+       
+          </Link>
+         
+        </div>
+        </div>
+      <div className="lg:px-3 md:px-5 px-3 pt-10">
         <div className="md:flex gap-5">
           <article className="md:w-[50%] w-full">
             <details className="details " open>
@@ -250,13 +244,20 @@ const page = async () => {
         </div>
         
       </div>
-      <div className="bg-[#EBE7F8]  flex justify-center items-center mt-10 px-6 md:px-0">
-        <div className='my-10'>
-          <EnrollComponent data={['BECOME','An_ETHICAL','HACKER']} />
+      <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">         <p className="text-[24px] leading-9 font-semibold mt-5">
+      Be a Freelancer on Cyber Security
+        </p>
+        <div className='my-5'>
+          {/* <EnrollComponent data={['BECOME','An_ETHICAL','HACKER']} /> */}
+ 
+          <Link href="/admission" className="animated-button1  gap-x-2 ">
+          <p className="flex gap-x-1 items-center ">   <MdPersonAddAlt1  className="text-2xl"/>ENROLL NOW</p>
+       
+          </Link>
          
         </div>
         </div>
-        <div className="lg:px-20 md:px-5 px-6 my-10 ">
+        <div className=" my-10 ">
         <Outline data={images}/>
         </div>
         <div className=" my-10 ">

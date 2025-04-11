@@ -2,12 +2,13 @@
 import React from "react";
 import Banner from "@/app/all-courses/banner.webp";
 import Image from "next/image";
-import { FaCheck,  FaHandPointRight } from "react-icons/fa";
-import Fahim from '@/app/all-courses/TeacherSliderImages/Fahim.svg'
-import Sakib from '@/app/all-courses/TeacherSliderImages/SA_MUBIN.jpg'
-import Noman from '@/app/all-courses/TeacherSliderImages/roman.jpg'
-import ashif from '@/app/all-courses/TeacherSliderImages/ashif.jpeg'
-import Bijoy from '@/app/all-courses/TeacherSliderImages/bijoy.jpeg'
+import { FaCheck, FaHandPointRight } from "react-icons/fa";
+import Fahim from "@/app/all-courses/TeacherSliderImages/Fahim.svg";
+import Sakib from "@/app/all-courses/TeacherSliderImages/SA_MUBIN.jpg";
+import Noman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
+import ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpeg";
+import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpeg";
+import backGround from "./../../../../public/file/liquid-cheese.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -45,16 +46,16 @@ const CyberSecurity = () => {
   ];
   const trainers = [
     {
-      name: 'Tanjim Al Fahim',
-      designation: 'CEO of Arena Web Security',
+      name: "Tanjim Al Fahim",
+      designation: "CEO of Arena Web Security",
       expertise:
-        'Vulnerability Assessment & Penetration Testing, Ethical Hacking, Cloud Security, OSINT, Cyber Forensics.',
+        "Vulnerability Assessment & Penetration Testing, Ethical Hacking, Cloud Security, OSINT, Cyber Forensics.",
       image: Fahim,
     },
     {
-      name: 'Syed Sakib Alam Mubin',
-      designation: 'Faculty Member',
-      expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
+      name: "Syed Sakib Alam Mubin",
+      designation: "Faculty Member",
+      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
       image: Sakib,
     },
     // {
@@ -70,9 +71,9 @@ const CyberSecurity = () => {
     //   image: Ifty,
     // },
     {
-      name: 'Roman Moonshi',
-      designation: 'Faculty Member',
-      expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
+      name: "Roman Moonshi",
+      designation: "Faculty Member",
+      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
       image: Noman,
     },
     // {
@@ -82,15 +83,15 @@ const CyberSecurity = () => {
     //   image: Salman,
     // },
     {
-      name: 'Bijoy Mondal',
-      designation: 'Faculty Member',
-      expertise: 'Cyber Security, Freelancing, Ethical Hacking, Linux.',
+      name: "Bijoy Mondal",
+      designation: "Faculty Member",
+      expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
       image: Bijoy,
     },
     {
-      name: 'Md Ashif Islam',
-      designation: 'Faculty Member',
-      expertise: 'Cyber Security.',
+      name: "Md Ashif Islam",
+      designation: "Faculty Member",
+      expertise: "Cyber Security.",
       image: ashif,
     },
   ];
@@ -100,7 +101,7 @@ const CyberSecurity = () => {
         Cyber Security & Ethical Hacking
       </div>
       {/* Course Module */}
-      <div className="flex px-10">
+      <div className="flex px-3">
         <div className="grid  grid-cols-12 gap-x-2 w-full  mt-16">
           {/* <div className=" col-span-2 hidden lg:block">
             <Image
@@ -110,7 +111,7 @@ const CyberSecurity = () => {
             />
           </div> */}
 
-          <div className=" lg:col-span-9 col-span-8 lg:px-3">
+          <div className=" lg:col-span-8 col-span-8 lg:px-3">
             {/*KEY FEATURES  */}
 
             <div className="relative animate-fadeInDown">
@@ -304,70 +305,73 @@ const CyberSecurity = () => {
             </div>
           </div>
 
-          <div className="col-span-3 hidden lg:block">
-          <Swiper
-        // modules={[Pagination]}
-        // pagination={{ clickable: true }}
-        spaceBetween={20}
-        slidesPerView={1}
-        loop={true}
-      >
-       
-      </Swiper>
-      <Swiper
-        modules={[Navigation, Scrollbar, A11y, Autoplay]}
-        spaceBetween={2}
-        //    slidesPerView={1}
-        //    navigation
-        autoplay={true}
-        breakpoints={{
-          // when window width is >= 640px
-          0: {
-            //   width: 300,
-            slidesPerView: 1,
-          },
-          520: {
-            //   width: 300,
-            slidesPerView: 1,
-          },
-          // when window width is >= 768px
-          950: {
-            //   width: 768,
-            slidesPerView: 1,
-          },
-        }}
-        pagination={{ clickable: true }}
-        // className={`${style.slider_container} mySwipe py-5 mb-5 `}
-      >
-         {trainers.map((trainer, idx) => (
-          <SwiperSlide key={idx}>
-            <div className="rounded-md p-4 bg-white shadow-md relative overflow-hidden">
-              <div
-                className="absolute inset-0 bg-cover bg-no-repeat opacity-10 z-0"
-                style={{
-                  backgroundImage: `url('/file/liquid-cheese.svg')`,
-                }}
-              />
-              <div className="relative z-10 flex flex-col items-center text-center space-y-3">
-                <Image
-                  src={trainer.image}
-                  alt={trainer.name}
-                  className="rounded-full object-cover border border-gray-200"
-                  width={120}
-                  height={120}
-                />
-                <h6 className="text-lg font-semibold">{trainer.name}</h6>
-                <p className="text-sm font-medium text-gray-500">{trainer.designation}</p>
-                <div className="bg-white rounded p-3 mt-2 shadow-sm">
-                  <p className="text-sm text-gray-700">
-                    <strong>Areas of expertise:</strong> {trainer.expertise}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+          <div className="col-span-4 hidden lg:block">
+            <Swiper
+              // modules={[Pagination]}
+              // pagination={{ clickable: true }}
+              spaceBetween={20}
+              slidesPerView={1}
+              loop={true}
+            ></Swiper>
+            <Swiper
+              modules={[Navigation, Scrollbar, A11y, Autoplay]}
+              spaceBetween={2}
+              //    slidesPerView={1}
+              //    navigation
+              autoplay={true}
+              breakpoints={{
+                // when window width is >= 640px
+                0: {
+                  //   width: 300,
+                  slidesPerView: 1,
+                },
+                520: {
+                  //   width: 300,
+                  slidesPerView: 1,
+                },
+                // when window width is >= 768px
+                950: {
+                  //   width: 768,
+                  slidesPerView: 1,
+                },
+              }}
+              pagination={{ clickable: true }}
+              // className={`${style.slider_container} mySwipe py-5 mb-5 `}
+            >
+              {trainers.map((trainer, idx) => (
+                <SwiperSlide key={idx}>
+                  <div className="rounded-md p-4  shadow-md relative overflow-hidden svg-background">
+                    {/* <div
+                className=" "
+                // style={{
+                //   backgroundImage: "url('/file/liquid-cheese.svg')",
+                // }}
+              /> */}
+                    <div className="relative  flex flex-col items-center text-center space-y-3">
+                      <Image
+                        src={trainer.image}
+                        alt={trainer.name}
+                        className="rounded-full object-cover border border-gray-200"
+                        width={120}
+                        height={120}
+                      />
+                      <h6 className="text-lg font-normal text-[#0b6481]">
+                        {trainer.name}
+                      </h6>
+                      <p className="text-sm font-[300] leading-[17px]">
+                        {trainer.designation}
+                      </p>
+                      <div className=" rounded p-3 mt-2  px-5 bg-white">
+                        <p className="text-sm font-[300] leading-[17px]">
+                          <strong>Areas of expertise:</strong>{" "}
+                          {trainer.expertise}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
 
             <Image alt="Cyber Security And Ethical Hacking " src={Banner} />
           </div>

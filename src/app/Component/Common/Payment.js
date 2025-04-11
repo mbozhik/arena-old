@@ -33,27 +33,27 @@ export function PaymentModal() {
   }
 
   return (
-    <div className="bg-[#EBE7F8] lg:px-20 md:px-5 px-3 py-20">
-    <h2 className="text-2xl font-bold text-center pt-8 pb-4">Payment Methods</h2>
+    <div className=" container ">
+    <p className="text-[16px] font-[300] pt-20 pb-5 leading-[19px] text-center">you can pay via online and offline both. Online process via #Bkash #Nagad #Rocket <br/> #Western_Union #EBL.</p>
     <div className="flex flex-wrap  lg:w-2/3 justify-center gap-2 container mx-auto ">
       <artical onClick={()=>handleOpen(bkashpayment)}>
-           <Image src={bkash} alt="bkash" className="bg-white p-6 md:h-32 md:w-52 h-20 w-28 rounded-lg cursor-pointer" />
+           <Image src={bkash} alt="bkash" className="bg-[#F6F6F6] p-6 md:h-32 md:w-52 h-20 w-28 rounded-lg cursor-pointer" />
       </artical>
       <artical onClick={()=>handleOpen(nagadpayment)}>
-           <Image src={nagad} alt="bkash" className="bg-white cursor-pointer p-6 md:h-32 md:w-52 h-20 w-28 rounded-lg" />
+           <Image src={nagad} alt="bkash" className="bg-[#F6F6F6] cursor-pointer p-6 md:h-32 md:w-52 h-20 w-28 rounded-lg" />
       </artical>
       <artical onClick={()=>handleOpen(roketpayment)}>
-           <Image src={rocket} alt="bkash" className="bg-white cursor-pointer p-6 md:h-32 md:w-52 h-20 w-28 rounded-lg" />
+           <Image src={rocket} alt="bkash" className="bg-[#F6F6F6] cursor-pointer p-6 md:h-32 md:w-52 h-20 w-28 rounded-lg" />
       </artical>
       <artical onClick={()=>handleOpen(eblpayment)}>
-           <Image src={evl} alt="bkash" className="bg-white cursor-pointer p-6 md:h-32 md:w-52 h-20 w-28 rounded-lg" />
+           <Image src={evl} alt="bkash" className="bg-[#F6F6F6] cursor-pointer p-6 md:h-32 md:w-52 h-20 w-28 rounded-lg" />
       </artical>
       <artical onClick={()=>handleOpen(wespayment)}>
-           <Image src={west} alt="bkash" className="bg-white cursor-pointer p-6 md:h-32 md:w-52 h-20 w-28 rounded-lg" />
+           <Image src={west} alt="bkash" className="bg-[#F6F6F6] cursor-pointer p-6 md:h-32 md:w-52 h-20 w-28 rounded-lg" />
       </artical>
     
     </div>
-    
+    <p className="text-[12px] font-[400] pt-5 leading-[18px] text-center">Click the Payment icon to see the payment Process.</p>
       <Dialog open={open} handler={handleOpen} size="lg">
         <Image src={img} alt="bkash" className="h-[80%]"/>
 

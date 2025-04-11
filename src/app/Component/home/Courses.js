@@ -64,31 +64,7 @@ const courses = [
 ];
 
 const OurCourses = () => {
-  // const sliderRef = useRef(null);
 
-  // const settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 500,
-  //   autoplaySpeed: 1800,
-  //   autoplay: true,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: { slidesToShow: 3, slidesToScroll: 1 },
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: { slidesToShow: 2, slidesToScroll: 1, initialSlide: 2 },
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: { slidesToShow: 1, slidesToScroll: 1 },
-  //     },
-  //   ],
-  // };
 
   return (
     <div className="container mx-auto   pt-20">
