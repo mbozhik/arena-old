@@ -15,25 +15,21 @@ const Outline = () => {
   const [open, setOpen] = useState(false);
   const images = [
     {
-      src: "./cyber-security-course-outline/cyber-security1.svg",
+      src: "./python/python1.png",
     },
     {
-      src: "./cyber-security-course-outline/cyber-security2.svg",
+      src: "./python/python2.png",
     },
     {
-      src: "./cyber-security-course-outline/cyber-security3.svg",
+      src: "./python/python3.png",
     },
     {
-      src: "./cyber-security-course-outline/cyber-security4.svg",
+      src: "./python/python4.png",
     },
     {
-      src: "./cyber-security-course-outline/cyber-security5.svg",
-    },
-    {
-      src: "./cyber-security-course-outline/cyber-security6.svg",
+      src: "./python/python5.png",
     },
   ];
-
   // return <ImageGallery items={images} />;
   return (
     <div>

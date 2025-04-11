@@ -1,33 +1,107 @@
-import Image from "next/image";
-import React, { Fragment } from "react";
+"use client";
+import React from "react";
 import Banner from "@/app/all-courses/banner.webp";
-import CyberSecurityH1 from "@/app/Component/Utility/CyberSecurityH1";
-import Cyber from "@/app/all-courses/cyber.svg";
-import Linux from "@/app/all-courses/linux.svg";
-import network from "@/app/all-courses/networking.svg";
-import doller from "@/app/all-courses/doller.svg";
-import intelligence from "@/app/all-courses/intelligence.svg";
-import Review from "@/app/all-courses/TeacherSliderImages/review.png";
-import { FaHandPointRight } from "react-icons/fa";
-// import Tanjim from "@/app/Images/TanjimVai.png";
-import EnrollComponent from "@/app/Component/Utility/CyberSecurityEnroll";
-import MentorSlides from "../Component/Common/slider/slider";
-import Outline from "../Component/Common/Outline";
-// import { PaymentModal } from "./Payment";
-import { PaymentModal } from "../Component/Common/Payment";
-import BannerImage from "../AllDataFatchingFunction/BannerImage";
-import CyberSecurity from "../Component/Cyber/CyberSecurity";
+import Image from "next/image";
+import { FaCheck, FaHandPointRight } from "react-icons/fa";
+import Fahim from "@/app/all-courses/TeacherSliderImages/Fahim.svg";
+import Sakib from "@/app/all-courses/TeacherSliderImages/SA_MUBIN.jpg";
+import Noman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
+import ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpeg";
+import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpeg";
+import "react-image-gallery/styles/css/image-gallery.css";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import Link from "next/link";
 import { MdPersonAddAlt1 } from "react-icons/md";
+import Outline from "../../Common/Outline";
+import { PaymentModal } from "../../Common/Payment";
+import BannerImage from "@/app/AllDataFatchingFunction/BannerImage";
+// import image6 from '@/app/all-courses/TeacherSliderImages/zawad.png'
+const CyberSecurity = () => {
+  const Tanjim= BannerImage()
+  const features = [
+    "Cyber Security",
+    "Linux",
+    "Digital Forensic",
+    "Open Source Intelligence",
+    "Freelancing",
+  ];
 
-
-export const metadata = {
-  title: 'Cyber Security Training Course - Ethical Hacking',
-  description: 'Learn ethical hacking  with industry experts. Our immersive courses help you land dream IT security jobs or become a freelance white hat hacker. Enroll now!',
-};
-
-const page = async () => {
-  const Tanjim=await BannerImage()
+  const info = [
+    {
+      id: 1,
+      type: "Date & Time",
+      description: "Duration: 18 weeks (2 Days per week)",
+    },
+    {
+      id: 2,
+      type: "Course Fee",
+      description: "BDT 14,000/-",
+    },
+    {
+      id: 3,
+      type: "Course Type",
+      description: "Professional certified course that everyone can avail.",
+    },
+  ];
+  const trainers = [
+    {
+      name: "Tanjim Al Fahim",
+      designation: "CEO of Arena Web Security",
+      expertise:
+        "Vulnerability Assessment & Penetration Testing, Ethical Hacking, Cloud Security, OSINT, Cyber Forensics.",
+      image: Fahim,
+    },
+    {
+      name: "Syed Sakib Alam Mubin",
+      designation: "Faculty Member",
+      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
+      image: Sakib,
+    },
+    // {
+    //   name: 'Anika Tabassum Nira',
+    //   designation: 'Faculty Member',
+    //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
+    //   image: anika,
+    // },
+    // {
+    //   name: 'Sarwar Alam',
+    //   designation: 'Faculty Member',
+    //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
+    //   image: Ifty,
+    // },
+    {
+      name: "Roman Moonshi",
+      designation: "Faculty Member",
+      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
+      image: Noman,
+    },
+    // {
+    //   name: 'Salman Hafizur Rahman',
+    //   designation: 'Faculty Member',
+    //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
+    //   image: Salman,
+    // },
+    {
+      name: "Bijoy Mondal",
+      designation: "Faculty Member",
+      expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
+      image: Bijoy,
+    },
+    {
+      name: "Md Ashif Islam",
+      designation: "Faculty Member",
+      expertise: "Cyber Security.",
+      image: ashif,
+    },
+  ];
   const images=[
     {
       original:"./cyber-security-course-outline/cyber-security1.svg",
@@ -56,48 +130,292 @@ const page = async () => {
    
   ]
   return (
-    <Fragment>
-     <div className="container mx-auto  ">
-        <div className=" ">
-          {/* <article className="flex py-10  justify-center items-center">
-            <div className="md:w-[80%] w-full px-6 md:px-0">
-              <CyberSecurityH1 title={'Cyber Security & Ethical Hacking'}/>
+    <div>
+      <div className="text-[24px] font-semibold leading-9 mt-14 text-[#424242] text-center ">
+        Cyber Security & Ethical Hacking
+      </div>
+      {/* Course Module */}
+      <div className="flex px-3">
+        <div className="grid  grid-cols-12 gap-x-2 w-full  mt-16">
+          {/* <div className=" col-span-2 hidden lg:block">
+            <Image
+              alt="Cyber Security And Ethical Hacking"
+              src={Banner}
+              className=""
+            />
+          </div> */}
 
-              <p className="text-1xl leading-5 pt-8">
-                Whether you’re interested in landing your first IT security job,
-                becoming a full-time white hat hacker, or preparing to test the
-                security of your own home network, Arena Web Security offers
-                approachable, hands-on ethical hacking courses to help you keep
-                your networks safe from cyber criminals & make your career at
-                professional marketplace.{" "}
+          <div className=" lg:col-span-8 col-span-8 lg:px-3">
+            {/*KEY FEATURES  */}
+
+            <div className="relative animate-fadeInDown">
+              <h3 className="  text-[#424242] text-[22px] font-medium leading-6">
+                Overview
+              </h3>
+              <p className="text-[#424242] font-[300] text-[16px] leading-6 text-justify mt-5">
+                Embark on a journey into the realm of cybersecurity with Arena
+                Web Security. Whether you're aiming for your first role in IT
+                security, envisioning a full-time career as a white hat hacker,
+                or preparing to strengthen the defenses of your home network,
+                our courses are customized to align with your aspirations.
+                Through an accessible and hands-on approach to ethical hacking,
+                we empower you to protect your networks efficiently. Elevate
+                your skills with us and pave the way to a successful career in
+                the professional marketplace. Your path to cybersecurity
+                excellence starts right here.
               </p>
             </div>
 
-            <div className="md:flex justify-center items-center hidden">
-              <Image
-                alt="Cyber Security"
-                src={Cyber}
-                className="h-60 w-60 group-hover:scale-110 transition-all duration-500 ease-in-out"
-              />
+            {/* Moudele Start */}
+            <article className="p-1">
+              <div className="relative">
+                <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                  Cyber Security & Ethical Hacking (Module)
+                </h3>
+                <hr className="mt-2" />
+              </div>
+              <div className="md:flex justify-between">
+                <ul className="mt-3 text-[[16px] leading-5 font-[300] text-[#424242] ">
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Introduction</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Footprinting</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> PHP & MySQL Basic:</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Website Penetration Testing</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Website Hacking</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> System Hacking</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> keylogger Spyware</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Malware Threats [Virus]</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Website Development</span>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Social Engineering</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Denial-of-Service</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>SQL Injection All method</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>Evading IDS, Firewalls</span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>Scanning Networks web server</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Linux OS</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>Cross-Site Request Forgery</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Outsourcing in Fiverr/Upwork</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>Outsourcing in Hackerone</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <div>
+              <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                Key Features
+              </h3>
+              <div className="bg-white shadow rounded-md p-4 mb-6">
+                <ul className="space-y-2 text-[16px] leading-5 font-[300] text-[#424242] ">
+                  {features.map((item, index) => (
+                    <li key={index} className="flex items-center ">
+                      <FaCheck className="text-[#715296]  mr-2" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border border-gray-200">
+                  <thead className="bg-gray-100">
+                    <tr className="text-[16px]">
+                      <th className="border px-4 py-2 text-left font-medium">
+                        #
+                      </th>
+                      <th className="border px-4 py-2 text-left font-medium">
+                        Information Type
+                      </th>
+                      <th className="border px-4 py-2 text-left font-medium">
+                        Description
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {info.map((item) => (
+                      <tr
+                        key={item.id}
+                        className="bg-white text-[16px] leading-6 font-[300] text-[#424242] "
+                      >
+                        <td className="border px-4 py-2 font-semibold">
+                          {item.id}
+                        </td>
+                        <td className="border px-4 py-2">{item.type}</td>
+                        <td className="border px-4 py-2">{item.description}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </article> */}
-          <CyberSecurity></CyberSecurity>
+          </div>
+
+          <div className="col-span-4 hidden lg:block">
+            <Swiper
+              // modules={[Pagination]}
+              // pagination={{ clickable: true }}
+              spaceBetween={20}
+              slidesPerView={1}
+              loop={true}
+            ></Swiper>
+            <Swiper
+              modules={[Navigation, Scrollbar, A11y, Autoplay]}
+              spaceBetween={2}
+              //    slidesPerView={1}
+              //    navigation
+              autoplay={true}
+              breakpoints={{
+                // when window width is >= 640px
+                0: {
+                  //   width: 300,
+                  slidesPerView: 1,
+                },
+                520: {
+                  //   width: 300,
+                  slidesPerView: 1,
+                },
+                // when window width is >= 768px
+                950: {
+                  //   width: 768,
+                  slidesPerView: 1,
+                },
+              }}
+              pagination={{ clickable: true }}
+              // className={`${style.slider_container} mySwipe py-5 mb-5 `}
+            >
+              {trainers.map((trainer, idx) => (
+                <SwiperSlide key={idx}>
+                  <div className="rounded-md p-4  shadow-md relative overflow-hidden svg-background">
+                    {/* <div
+                className=" "
+                // style={{
+                //   backgroundImage: "url('/file/liquid-cheese.svg')",
+                // }}
+              /> */}
+                    <div className="relative  flex flex-col items-center text-center space-y-3">
+                      <Image
+                        src={trainer.image}
+                        alt={trainer.name}
+                        className="rounded-full object-cover border border-gray-200"
+                        width={120}
+                        height={120}
+                      />
+                      <h6 className="text-lg font-normal text-[#0b6481]">
+                        {trainer.name}
+                      </h6>
+                      <p className="text-sm font-[300] leading-[17px]">
+                        {trainer.designation}
+                      </p>
+                      <div className=" rounded p-3 mt-2  px-5 bg-white">
+                        <p className="text-sm font-[300] leading-[17px]">
+                          <strong>Areas of expertise:</strong>{" "}
+                          {trainer.expertise}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            <Image alt="Cyber Security And Ethical Hacking " src={Banner} />
+          </div>
         </div>
-
-   
-
-    
-
-      {/* Inforfation About Cyber Security */}
+      </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">         <p className="text-[24px] leading-9 font-semibold mt-5">Be a Freelancer on Cyber Security</p>
         <div className='my-5'>
-          {/* <EnrollComponent data={['BECOME','An_ETHICAL','HACKER']} /> */}
- 
           <Link href="/admission" className="animated-button1  gap-x-2 ">
           <p className="flex gap-x-1 items-center ">   <MdPersonAddAlt1  className="text-2xl"/>ENROLL NOW</p>
-       
           </Link>
-         
         </div>
         </div>
       <div className="lg:px-3 md:px-5 px-3 pt-10">
@@ -258,14 +576,13 @@ const page = async () => {
         </div>
         </div>
         <div className=" my-10 ">
-        <Outline data={images}/>
+        <Outline />
         </div>
         <div className=" my-10 ">
         <PaymentModal/>
         </div>
-        </div>
-    </Fragment>
+    </div>
   );
 };
 
-export default page;
+export default CyberSecurity;

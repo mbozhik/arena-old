@@ -8,7 +8,6 @@ import Sakib from "@/app/all-courses/TeacherSliderImages/SA_MUBIN.jpg";
 import Noman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
 import ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpeg";
 import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpeg";
-import backGround from "./../../../../public/file/liquid-cheese.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -17,13 +16,17 @@ import {
   A11y,
   Autoplay,
 } from "swiper/modules";
-// import image6 from '@/app/all-courses/TeacherSliderImages/zawad.png'
-const CyberSecurity = () => {
+import Link from "next/link";
+import { MdPersonAddAlt1 } from "react-icons/md";
+import { PaymentModal } from "../../../Common/Payment";
+import BannerImage from "@/app/AllDataFatchingFunction/BannerImage";
+import Outline from "./Outline";
+const Python = () => {
+  const Tanjim= BannerImage()
   const features = [
-    "Cyber Security",
-    "Linux",
-    "Digital Forensic",
-    "Open Source Intelligence",
+    "Core Python",
+    " Django and REST Framework.",
+    "Web Scraping.",
     "Freelancing",
   ];
 
@@ -36,7 +39,7 @@ const CyberSecurity = () => {
     {
       id: 2,
       type: "Course Fee",
-      description: "BDT 14,000/-",
+      description: "BDT 20,000/-",
     },
     {
       id: 3,
@@ -95,22 +98,15 @@ const CyberSecurity = () => {
       image: ashif,
     },
   ];
+
   return (
     <div>
       <div className="text-[24px] font-semibold leading-9 mt-14 text-[#424242] text-center ">
-        Cyber Security & Ethical Hacking
+      Advanced Python With Freelancing
       </div>
       {/* Course Module */}
       <div className="flex px-3">
         <div className="grid  grid-cols-12 gap-x-2 w-full  mt-16">
-          {/* <div className=" col-span-2 hidden lg:block">
-            <Image
-              alt="Cyber Security And Ethical Hacking"
-              src={Banner}
-              className=""
-            />
-          </div> */}
-
           <div className=" lg:col-span-8 col-span-8 lg:px-3">
             {/*KEY FEATURES  */}
 
@@ -119,16 +115,7 @@ const CyberSecurity = () => {
                 Overview
               </h3>
               <p className="text-[#424242] font-[300] text-[16px] leading-6 text-justify mt-5">
-                Embark on a journey into the realm of cybersecurity with Arena
-                Web Security. Whether you're aiming for your first role in IT
-                security, envisioning a full-time career as a white hat hacker,
-                or preparing to strengthen the defenses of your home network,
-                our courses are customized to align with your aspirations.
-                Through an accessible and hands-on approach to ethical hacking,
-                we empower you to protect your networks efficiently. Elevate
-                your skills with us and pave the way to a successful career in
-                the professional marketplace. Your path to cybersecurity
-                excellence starts right here.
+              Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
               </p>
             </div>
 
@@ -136,121 +123,141 @@ const CyberSecurity = () => {
             <article className="p-1">
               <div className="relative">
                 <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  Cyber Security & Ethical Hacking (Module)
+                Advance Python with Django and Scrapping (Module)
                 </h3>
                 <hr className="mt-2" />
               </div>
-              <div className="md:flex justify-between">
+              <div className="grid grid-cols-2 justify-between gap-x-5">
                 <ul className="mt-3 text-[[16px] leading-5 font-[300] text-[#424242] ">
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Introduction</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span> Footprinting</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Conditional Statements</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span> PHP & MySQL Basic:</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>  Looping</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span> Website Penetration Testing</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Control Statements</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span> Website Hacking</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Tuple</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span> System Hacking</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Lists</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span> keylogger Spyware</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>  Dictionaries</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span> Malware Threats [Virus]</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Functions</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span> Website Development</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Lambda Operator, Filter, Reduce and Map</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>  List Comprehension</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2 items-center py-1">
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Modules</span>
                     </div>
                   </li>
                 </ul>
                 <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span> Social Engineering</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Input-Output</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span> Denial-of-Service</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>  Exception Handling</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span>SQL Injection All method</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Packages</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span>Evading IDS, Firewalls</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>File Handling</span>
                     </div>
                   </li>
 
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span>Scanning Networks web server</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>OOPS</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex gap-2  items-start  py-1">
+                      {/* <FaHandPointRight className="text-[#715296]  text-xl" /> */}
+                      <FaHandPointRight className="text-[#715296] text-xl min-w-[16px] mt-1" />
+
+                      <span> introduction to Django Introduction to Back-End Web Development <br/>using Django</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span> Linux OS</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>Advanced Django for Web and Automation</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span>Cross-Site Request Forgery</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span> Building Web APIs using Django REST</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span> Outsourcing in Fiverr/Upwork</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>Deploying Web APIs</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
-                      <FaHandPointRight className="text-[#715296]  text-1xl" />
-                      <span>Outsourcing in Hackerone</span>
+                      <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                      <span>Scrapping with BeautifulSoup</span>
                     </div>
                   </li>
                 </ul>
@@ -377,8 +384,23 @@ const CyberSecurity = () => {
           </div>
         </div>
       </div>
+      <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">         <p className="text-[24px] leading-9 font-semibold mt-5">
+      Become a Python Specialist
+        </p>
+        <div className='my-5'>
+          <Link href="/admission" className="animated-button1  gap-x-2 ">
+          <p className="flex gap-x-1 items-center ">   <MdPersonAddAlt1  className="text-2xl"/>ENROLL NOW</p>
+          </Link>
+        </div>
+        </div>
+        <div className=" my-10 ">
+        <Outline/>
+        </div>
+        <div className=" my-10 ">
+        <PaymentModal/>
+        </div>
     </div>
   );
 };
 
-export default CyberSecurity;
+export default Python;

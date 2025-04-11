@@ -16,14 +16,6 @@ import nagadpayment from '../Common/payment/NagadPayment.jpg'
 import roketpayment from '../Common/payment/RocketPayment.jpg'
 import eblpayment from '../Common/payment/eblPayment.jpg'
 import wespayment from '../Common/payment/westernPayment.jpg'
-
-// import west from '../Common/payment/wester-union-logo.png'
-// import west from '../Common/payment/wester-union-logo.png'
-// import west from '../Common/payment/wester-union-logo.png'
-// import west from '../Common/payment/wester-union-logo.png'
-
-
- 
 export function PaymentModal() {
   const [img,setImage]=useState('')
   const [open, setOpen] = React.useState(false);
