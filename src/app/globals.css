@@ -904,4 +904,37 @@ background-color: #44107a;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
 }
 
+.focus-border:focus {
+  border-color: #7B5DA7 !important;
+  box-shadow: none;
+  outline: none;
+}
 
+.inputDateP {
+
+  border-color:#59A8EA !important;
+  border-radius: 5px !important;
+  /* overflow: hidden; */
+  border: 1px solid #59A8EA !important;
+  height: 55px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+ 
+  
+}
+.inputDateP .row{
+width: 100%;
+/* display: flex;
+justify-content: center; */
+}
+.inputDateP span{
+  font-size: 14px;
+  position: absolute;
+  top:-10px;
+  left:10px;
+  background-color: white;
+  z-index: 10;
+  
+}

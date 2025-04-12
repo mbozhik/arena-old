@@ -3,22 +3,24 @@ import Image from "next/image";
 import Logo from '@/app/admission/Logo.png'
 import right from "@/app/admission/right.svg"
 import Apply from "../Component/Apply";
+import NavberData from "../AllDataFatchingFunction/Topber";
 
 export const metadata = {
   title: 'Ethical Hacking & Advanced Python Course Combo Offer!',
   description: 'Level up your skills in Python and Ethical Hacking! Our expert-led courses empower you to excel in IT security. Enroll now for a brighter future!',
 }; 
-const page = () => {
-  
+const page = async() => {
+    const data = await NavberData();
+   
   return (
-    <div className="lg:px-20 md:px-5 px-0 mt-5">
-      <div className="flex h-[80vh] gap-2 ">
+    <div className="px-0 mt-5 max-w-[1260px] mx-auto  shadow-[0px_0px_5px_0px_rgba(0,0,0,0.3)]  my-10 pr-3 rounded-2xl ">
+      <div className="flex h-[90vh] gap-2  ">
         <div className="relative w-[50%] hidden lg:block">
-        <article className="admissionSideber w-[100%] h-[100%]">
+        {/* <article className="admissionSideber w-[100%] h-[100%]">
          
-         </article>
-         <div className="absolute top-0 left-0 h-[100%] w-[100%] px-5">
-            <div className="flex justify-center mt-4"><Image src={Logo} alt="Logo" className="w-44"/></div>
+         </article> */}
+         <div className=" px-5 bg-gradient-to-br from-[#56b5e3] to-[#7d58a5] rounded-s-2xl h-full ">
+            <div className="flex justify-center "><Image src={Logo} alt="Logo" className="w-44"/></div>
             <h1 className="text-3xl font-bold py-2   text-[#FFD321] mt-5">Admission going on 2024</h1>
             <hr/>
             <h3 className="mt-3 text-2xl text-white">Master the art of Ethical  <span className="font-semibold"><span className="text-yellow-700">H</span>ac<span className="text-yellow-700">K</span>ing</span></h3>
