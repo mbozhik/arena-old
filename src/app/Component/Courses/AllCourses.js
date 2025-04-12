@@ -23,7 +23,7 @@ const courses = [
   {
     image: cyberSecurity,
     title: "Cyber Security and Advance Python (Combo)",
-    link: "/advance-python-with-django",
+    link: "/cyber-security-and-python-course",
     description:
       "Cybersecurity needs a programming language and today Python is very popular because of its flexibility and lightweight features. This course can help to build skills across the cyberattack world for both cyber attackers and defenders",
   },
