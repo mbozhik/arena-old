@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import cyberSecurity from "./../../../../public/cyber-security-course-outline/cyberSecurity.svg";
@@ -65,54 +64,52 @@ const courses = [
 ];
 export function AllCourses() {
   return (
-   
     <div className="container">
       <div className="shadow-sm bg-gradient-to-r from-[#56b5e3] to-[#7d58a5] rounded-sm py-3 mb-5 mt-5">
-  <h4 className="text-[28px] font-medium text-white text-center my-4 font-poppins">
-    All Courses
-  </h4>
-</div>
-  <div className="grid grid-cols-4 place-content-end justify-center py-10 gap-2">
-  {courses?.map((course, index) => (
-        
-        <div className="p-2 " key={index}>
-          <div className="inline-block text-center ">
-            {/* Outer Skewed Container */}
-            <div className="inline-block  overflow-hidden h-[230px] w-[200px] rounded-b-[20px] rounded-md  ">
-              <div className="inline-block skew-y-[13deg] h-[250px] w-[200px] rounded-[20px]  bg-[#c8c2c2] transition-all duration-300 mt-[30px] overflow-hidden
-               ">
-                <div className="relative  h-[250px] -ml-[30px] -mt-[30px]">
-                  <Image
-                    src={course.image}
-                    alt="Course Image"
-                    fill
-                    className="-skew-y-[13deg] object-cover hover:skew-y-[-12deg]"
-                  />
+        <h4 className="text-[28px] font-medium text-white text-center my-4 font-poppins">
+          All Courses
+        </h4>
+      </div>
+      <div className="grid grid-cols-4 place-content-end justify-center py-10 gap-2">
+        {courses?.map((course, index) => (
+          <div className="p-2 " key={index}>
+            <div className="inline-block text-center ">
+              {/* Outer Skewed Container */}
+              <div className="inline-block  overflow-hidden h-[230px] w-[200px] rounded-b-[20px] rounded-md  ">
+                <div
+                  className="inline-block skew-y-[13deg] h-[250px] w-[200px] rounded-[20px]  bg-[#c8c2c2] transition-all duration-300 mt-[30px] overflow-hidden
+               "
+                >
+                  <div className="relative  h-[250px] -ml-[30px] -mt-[30px]">
+                    <Image
+                      src={course.image}
+                      alt="Course Image"
+                      fill
+                      className="-skew-y-[13deg] object-cover hover:skew-y-[-12deg]"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Text Content Container */}
-            <div className="px-5 pt-32 pb-10   rounded-[10px] bg-white mt-[-120px] h-full  
-               shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]">
-          
-              <Link
-                href={course.link}
-                className="text-[#0b6481] text-lg font-normal hover:text-black hover:font-medium "
+              {/* Text Content Container */}
+              <div
+                className="px-5 pt-32 pb-10   rounded-[10px] bg-white mt-[-120px] h-full  
+               shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]"
               >
-                {course.title}
-              </Link>
-              <p className=" text-sm font-[300] mt-2 leading-[20px]">
-                {course.description}
-              </p>
+                <Link
+                  href={course.link}
+                  className="text-[#0b6481] text-lg font-normal hover:text-black hover:font-medium "
+                >
+                  {course.title}
+                </Link>
+                <p className=" text-sm font-[300] mt-2 leading-[20px]">
+                  {course.description}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-     
-    ))}
-
-  </div>
-
+        ))}
+      </div>
     </div>
   );
 }

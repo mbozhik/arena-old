@@ -7,9 +7,9 @@ const cookiesdelete=()=>{
     ClearSession()
 }
     return (
-        <div>
-             <span className="navBtn cursor-pointer" onClick={cookiesdelete}>Log Out</span>
-        </div>
+     
+             <p className="navBtn cursor-pointer" onClick={cookiesdelete}>Log Out</p>
+        
     );
 };
 

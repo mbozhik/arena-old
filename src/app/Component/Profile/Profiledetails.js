@@ -36,7 +36,7 @@ const Profiledetails = async({data,paymetdata}) => {
             <div className='py-5 px-5'>
                 <li className='grid grid-cols-10'>
                     <p className='md:col-span-1 col-span-2 font-semibold'>Name </p>
-                    <p className='md:md:col-span-8 col-span-7 col-span-7 '>: {data?.data.Fullname}</p>
+                    <p className='md:md:col-span-8  col-span-7 '>: {data?.data.Fullname}</p>
                 </li>
                 <li className='grid grid-cols-10'>
                     <p className='md:col-span-1 col-span-2 font-semibold'>Phone </p>

@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import Confetti from "react-confetti";
 import NavberData from "../AllDataFatchingFunction/Topber";
 import ShortRegistration from "../AllDataFatchingFunction/ShortRegistation";
+import { MenuItem, TextField } from "@mui/material";
 
 const ShortFrom = (e) => {
   const [sucess, setSucess] = useState(false);
@@ -46,7 +47,7 @@ const ShortFrom = (e) => {
   const onChangeCourse = (e) => {
     for (var i = 0; i < allcourse.length; i++) {
       if (allcourse[i]?.batch_schedule_time_id === e) {
-        setCourse_title(allcourse[i]?.batch_schedule_name);
+        // setCourse_title(allcourse[i]?.batch_schedule_name);
       }
     }
   };
@@ -82,7 +83,7 @@ const ShortFrom = (e) => {
   };
 
   return (
-    <div className="md:w-[50%] w-full shadow-sm  lg:px-5 px-1 ">
+    <div className=" w-full shadow-sm  lg:px-5 px-1 ">
       <Dialog open={open} handler={handleOpen} size="md">
         {sucess && <Confetti width={750} height={350} />}
         <div className="text-center py-10 px-5">
@@ -124,14 +125,17 @@ const ShortFrom = (e) => {
           </Button>
         </DialogFooter>
       </Dialog>
-      <form onSubmit={(e) => RegistationSucess(e)}>
-        <h1 className="md:text-3xl text-2xl font-bold py-2 text-center  applicationTitle text-[#FFD321]">
-          Student Application Form
-        </h1>
+      <form onSubmit={(e) => RegistationSucess(e)} className=" shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)]   p-5 rounded-md">
+      <div className="shadow-sm bg-gradient-to-r from-[#56b5e3] to-[#7d58a5] rounded-sm py-3 mb-5 mt-5">
+  <h4 className="text-[28px] font-medium text-white text-center my-4 font-poppins">
+  Easy Apply
+  </h4>
+</div>
+
 
         <div className="grid gap-y-4 mt-3">
           <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full col-span-6">
+            {/* <div className="w-full col-span-3">
               <Input
                 variant="standard"
                 required
@@ -141,8 +145,8 @@ const ShortFrom = (e) => {
                 color="indigo"
                 maxLength={255}
               />
-            </div>
-            <div className="w-full col-span-6  mt-2">
+            </div> */}
+            {/* <div className="w-full col-span-3  ">
               <Input
                 variant="standard"
                 required
@@ -155,12 +159,62 @@ const ShortFrom = (e) => {
                 onChange={student_mobileOnChange}
                 onInput={(e) => (e.target.value = e.target.value.slice(0, 15))}
               />
-            </div>
+            </div> */}
+            <div className="w-full col-span-3">
+  <TextField
+    fullWidth
+    required
+    name="name"
+    label="Student Name"
+    type="text"
+    inputProps={{ maxLength: 255 }}
+    sx={{
+      "& .MuiOutlinedInput-root": {
+        "&:hover fieldset": {
+          borderColor: "#5BA9DB",
+        },
+        "& fieldset": {
+          borderColor: "#5BA9DB",
+        },
+        "&.Mui-focused fieldset": {
+          borderColor: "#7B5DA7",
+          borderWidth: "1px",
+        },
+      },
+    }}
+  />
+</div>
+
+            <div className="w-full col-span-3">
+  <TextField
+    fullWidth
+    required
+    label="Mobile Number"
+    name="mobile"
+    type="text"
+    inputProps={{ maxLength: 15 }}
+    sx={{
+      "& .MuiOutlinedInput-root": {
+        "&:hover fieldset": {
+          borderColor: "#5BA9DB", // Hover color
+        },
+        "& fieldset": {
+          borderColor: "#5BA9DB", // Default border color
+        },
+        "&.Mui-focused fieldset": {
+          borderColor: "#7B5DA7", // Focused color
+          borderWidth: "1px",
+        },
+      },
+    }}
+  />
+</div>
+
           </div>
 
           <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full col-span-6   mt-2">
-              <div className="w-full col-span-6  relative ">
+            <div className="w-full col-span-3   mt-2">
+              {/* <div className="w-full col-span-3  relative ">
                 {allcourse ? (
                   <Select
                     required
@@ -195,9 +249,52 @@ const ShortFrom = (e) => {
                     <Option className="text-red-500">Server Error</Option>
                   </Select>
                 )}
-              </div>
+              </div> */}
+              <div className="w-full col-span-3 relative">
+  <TextField
+    fullWidth
+    required
+    select
+    label="Select a Course *"
+    name="course_title"
+    id="Course"
+    value={course}
+    onChange={(e) => {
+      setCourse(e.target.value);
+      onChangeCourse(e.target.value);
+    }}
+    variant="outlined"
+    sx={{
+      "& .MuiOutlinedInput-root": {
+        "&:hover fieldset": {
+          borderColor: "#5BA9DB",
+        },
+        "& fieldset": {
+          borderColor: "#5BA9DB",
+        },
+        "&.Mui-focused fieldset": {
+          borderColor: "#7B5DA7",
+          borderWidth: "1px",
+        },
+      },
+    }}
+  >
+    {allcourse && allcourse.length > 0 ? (
+      allcourse.map((x, index) => (
+        <MenuItem key={index + 1} value={x.batch_schedule_time_id}>
+          {x.batch_schedule_name}
+        </MenuItem>
+      ))
+    ) : (
+      <MenuItem disabled className="text-red-500">
+        Server Error
+      </MenuItem>
+    )}
+  </TextField>
+</div>
+
             </div>
-            <div className="w-full col-span-6 mt-2">
+            {/* <div className="w-full col-span-3 mt-2">
               <Input
                 variant="standard"
                 required
@@ -207,18 +304,44 @@ const ShortFrom = (e) => {
                 color="indigo"
                 name="email"
               />
-            </div>
+            </div> */}
+            <div className="w-full col-span-3 mt-2">
+  <TextField
+    fullWidth
+    required
+    label="Valid Email Address"
+    name="email"
+    type="email"
+    sx={{
+      "& .MuiOutlinedInput-root": {
+        "&:hover fieldset": {
+          borderColor: "#5BA9DB",
+        },
+        "& fieldset": {
+          borderColor: "#5BA9DB",
+        },
+        "&.Mui-focused fieldset": {
+          borderColor: "#7B5DA7",
+          borderWidth: "1px",
+        },
+      },
+    }}
+  />
+</div>
+
           </div>
         </div>
-
+        <div className="flex justify-center items-center mt-5">
         <button
-          className={`w-full mt-4 py-2 ${
-            pending ? "bg-[#90bde0]" : "bg-deep-purple-600"
-          } text-white rounded-lg`}
+          className={`mx-auto mt-4 py-2 px-5 ${
+            pending ? "bg-[#90bde0]" : "bg-gradient-to-r from-[#56b5e3] to-[#7d58a5]"
+          } text-white rounded-lg `}
           type="submit"
         >
           Submit
         </button>
+        </div>
+        
       </form>
     </div>
   );

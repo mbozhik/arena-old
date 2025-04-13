@@ -243,10 +243,10 @@ const MobileNav = ({ uid }) => {
           )}
         </ul>
       </nav>
-      <article className=" justify-center items-center hidden md:flex ">
-        <ul className="flex text-white font-semibold gap-x-4">
+      <article className=" justify-center items-center hidden md:flex  ">
+        <ul className="flex text-white font-semibold gap-x-4 ">
           {uid ? (
-            <li>
+              <li className=" mt-2 md:mt-0   ">
               {" "}
               <LogOut />
             </li>
@@ -254,18 +254,38 @@ const MobileNav = ({ uid }) => {
             <li>
               <Link href="/admission" className="">
                 {" "}
-                <span className={`${!scrolling && pathname==='/'?'hover:text-yellow-600  bg-[#1a1a1a8e] px-3 py-1 rounded-3xl':'navBtn'} `}>Apply Now</span>
+                <span className={`${!scrolling && pathname==='/'?'  navB':'navBtn'} `}>Apply Now</span>
               </Link>
             </li>
           )}
+                 <li className="hover:text-black mt-2 md:mt-0  flex items-center ">
+            <Link
+              href="https://admission.arenawebsecurity.net/"
+              onClick={() => setNave(false)}
+            >
+              Verify Certificate
+            </Link>
+          </li>
+              {
+              pathname==='/profile' &&  <li className='navBtn' onClick={() => setNave(false)}> 
+              {/* <Link href="/arena-gallery" > */}
+              <a href="#paymentId">Pay Now</a>
+          {/* </Link> */}
+          </li>
+            }
+         
         </ul>
       </article>
+
       <div
         className="  justify-center   relative flex items-center md:hidden"
         onClick={() => setNave(true)}
       >
         <AiOutlineMenu className="text-white text-2xl menu-bar" />
       </div>
+      
+     
+     
       </div>
     </div>
   );

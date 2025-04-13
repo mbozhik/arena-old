@@ -25,7 +25,7 @@ export function PaymentModal() {
   }
 
   return (
-    <div className=" container ">
+    <div className=" container " >
     <p className="text-[16px] font-[300] pt-20 pb-5 leading-[19px] text-center">you can pay via online and offline both. Online process via #Bkash #Nagad #Rocket <br/> #Western_Union #EBL.</p>
     <div className="flex flex-wrap  lg:w-2/3 justify-center gap-2 container mx-auto ">
       <artical onClick={()=>handleOpen(bkashpayment)}>
@@ -45,7 +45,7 @@ export function PaymentModal() {
       </artical>
     
     </div>
-    <p className="text-[12px] font-[400] pt-5 leading-[18px] text-center">Click the Payment icon to see the payment Process.</p>
+    <p className="text-[12px] font-[400] pt-5 pb-4 leading-[18px] text-center">Click the Payment icon to see the payment Process.</p>
       <Dialog open={open} handler={handleOpen} size="lg">
         <Image src={img} alt="bkash" className="h-[80%]"/>
 

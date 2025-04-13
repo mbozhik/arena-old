@@ -5,7 +5,7 @@ const PaymentDetails = async({paymetdata,courseFee}) => {
     const data=paymetdata;
 
     return (
-        <div className="container mx-auto px-3 md:px-0">
+        <div className="container mx-auto px-3 md:px-0"id="paymentId">
       <h4 className=' py-3 text-black mt-4   md:text-3xl text-2xl font-semibold'>Payment Summary</h4>
    <div className="relative overflow-x-auto">
     <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
