@@ -12,7 +12,7 @@ export function AccordionCustomStyles() {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
  
   return (
-    <>
+    <div className="container mx-auto py-5">
       <Accordion open={open === 1} className="mb-2 rounded-lg border border-blue-gray-100 px-4">
         <AccordionHeader
           onClick={() => handleOpen(1)}
@@ -52,6 +52,6 @@ export function AccordionCustomStyles() {
         Our seats are limited.So you have to take admission before the seats will fill.
         </AccordionBody>
       </Accordion>
-    </>
+    </div>
   );
 }

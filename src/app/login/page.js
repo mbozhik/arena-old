@@ -8,9 +8,9 @@ export const metadata = {
 }; 
 const page = () => {
   return (
-    <div className="lg:px-20 md:px-5 px-3 mt-5">
-      <div className="flex md:h-[50vh] lg:h-[80vh] gap-2 ">
-        <div className="relative w-[50%] hidden md:block ">
+    <div className="container  px-3 mt-5">
+      <div className="flex gap-2  py-10">
+        {/* <div className="relative w-[50%] hidden md:block ">
           <article className="admissionSideber w-[100%] h-[100%]"></article>
           <div className="absolute top-0 left-0 h-[100%] w-[100%] px-5">
             <div className="flex justify-center mt-4">
@@ -28,7 +28,7 @@ const page = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <Login />
       </div>
     </div>

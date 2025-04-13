@@ -215,6 +215,11 @@ const MobileNav = ({ uid }) => {
               Gallery
             </Link>
           </li>{" "}
+          <li className="hover:text-black mt-2 md:mt-0">
+            <Link href="/contact" onClick={() => setNave(false)}>
+            Contact
+            </Link>
+          </li>{" "}
           {uid && (
             <li className="hover:text-black">
               <Link href="/profile" onClick={() => setNave(false)}>
