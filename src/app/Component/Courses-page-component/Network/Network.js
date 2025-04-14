@@ -55,8 +55,8 @@ const Network =()=> {
     },
     {
       name: "Syed Sakib Alam Mubin",
-      designation: "Faculty Member",
-      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
+      designation: "Trainer",
+      expertise: "Cyber Security",
       image: Sakib,
     },
     // {
@@ -71,12 +71,7 @@ const Network =()=> {
     //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
     //   image: Ifty,
     // },
-    {
-      name: "Roman Moonshi",
-      designation: "Faculty Member",
-      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
-      image: Noman,
-    },
+
     // {
     //   name: 'Salman Hafizur Rahman',
     //   designation: 'Faculty Member',
@@ -85,16 +80,11 @@ const Network =()=> {
     // },
     {
       name: "Bijoy Mondal",
-      designation: "Faculty Member",
+      designation: "Admin Support",
       expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
       image: Bijoy,
     },
-    {
-      name: "Md Ashif Islam",
-      designation: "Faculty Member",
-      expertise: "Cyber Security.",
-      image: ashif,
-    },
+    
   ];
 
   return (
@@ -112,7 +102,7 @@ const Network =()=> {
               <h3 className="  text-[#424242] text-[22px] font-medium leading-6">
                 Overview
               </h3>
-              <p className="text-[#424242] font-[300] text-[16px] leading-6 text-justify mt-5">
+              <p className="text-[#424242] font-[300] text-[16px] leading-[19px] text-justify mt-5">
               In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. Browser security - We cover one of the largest risks online, the browser. The doorway into your system. How to best reduce the attack surface of the browser and harden it for maximum security and privacy. A critical consideration for reducing your risk.
               </p>
             </div>
@@ -252,7 +242,7 @@ const Network =()=> {
                       </p>
                       <div className=" rounded p-3 mt-2  px-5 bg-white">
                         <p className="text-sm font-[300] leading-[17px]">
-                          <strong>Areas of expertise:</strong>{" "}
+                          Areas of expertise :{" "}
                           {trainer.expertise}
                         </p>
                       </div>

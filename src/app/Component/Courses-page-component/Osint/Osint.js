@@ -54,8 +54,8 @@ const Osint =()=> {
     },
     {
       name: "Syed Sakib Alam Mubin",
-      designation: "Faculty Member",
-      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
+      designation: "Trainer",
+      expertise: "Cyber Security",
       image: Sakib,
     },
     // {
@@ -70,12 +70,7 @@ const Osint =()=> {
     //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
     //   image: Ifty,
     // },
-    {
-      name: "Roman Moonshi",
-      designation: "Faculty Member",
-      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
-      image: Noman,
-    },
+
     // {
     //   name: 'Salman Hafizur Rahman',
     //   designation: 'Faculty Member',
@@ -84,16 +79,11 @@ const Osint =()=> {
     // },
     {
       name: "Bijoy Mondal",
-      designation: "Faculty Member",
+      designation: "Admin Support",
       expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
       image: Bijoy,
     },
-    {
-      name: "Md Ashif Islam",
-      designation: "Faculty Member",
-      expertise: "Cyber Security.",
-      image: ashif,
-    },
+    
   ];
 
   return (
@@ -111,7 +101,7 @@ const Osint =()=> {
               <h3 className="  text-[#424242] text-[22px] font-medium leading-6">
                 Overview
               </h3>
-              <p className="text-[#424242] font-[300] text-[16px] leading-6 text-justify mt-5">
+              <p className="text-[#424242] font-[300] text-[16px] leading-[19px] text-justify mt-5">
               Open Source Intelligence Training™ - Syllabus and Featured Topics This course will provide an education and information you will not be able to acquire anywhere else. The class is completely interactive keeping you busy every moment and enjoying the activities. Learn to direct your searches to obtain results quickly!
               </p>
             </div>
@@ -280,7 +270,7 @@ const Osint =()=> {
                       </p>
                       <div className=" rounded p-3 mt-2  px-5 bg-white">
                         <p className="text-sm font-[300] leading-[17px]">
-                          <strong>Areas of expertise:</strong>{" "}
+                          Areas of expertise :{" "}
                           {trainer.expertise}
                         </p>
                       </div>

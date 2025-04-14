@@ -64,8 +64,8 @@ const Combo= () => {
     },
     {
       name: "Syed Sakib Alam Mubin",
-      designation: "Faculty Member",
-      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
+      designation: "Trainer",
+      expertise: "Cyber Security",
       image: Sakib,
     },
     // {
@@ -80,12 +80,7 @@ const Combo= () => {
     //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
     //   image: Ifty,
     // },
-    {
-      name: "Roman Moonshi",
-      designation: "Faculty Member",
-      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
-      image: Noman,
-    },
+
     // {
     //   name: 'Salman Hafizur Rahman',
     //   designation: 'Faculty Member',
@@ -94,16 +89,11 @@ const Combo= () => {
     // },
     {
       name: "Bijoy Mondal",
-      designation: "Faculty Member",
+      designation: "Admin Support",
       expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
       image: Bijoy,
     },
-    {
-      name: "Md Ashif Islam",
-      designation: "Faculty Member",
-      expertise: "Cyber Security.",
-      image: ashif,
-    },
+    
   ];
 
   return (
@@ -121,7 +111,7 @@ const Combo= () => {
               <h3 className="  text-[#424242] text-[22px] font-medium leading-6">
                 Overview
               </h3>
-              <p className="text-[#424242] font-[300] text-[16px] leading-6 text-justify mt-5">
+              <p className="text-[#424242] font-[300] text-[16px] leading-[19px] text-justify mt-5">
               Cybersecurity needs a programming language and today Python is very popular because of its flexibility and lightweight features. This course can help to build skills across the cyberattack world for both cyber attackers and defenders. Near future Python is and will be the most demanding programming and scripting language for cybersecurity. So, by completing this course you can land your first IT job or you can start your career in freelancing. This course could open the door become a complete web expert. Arena Web Security offers approachable, hands-on ethical hacking and python programming courses to help you keep your networks safe from cyber criminals & make your career at the professional marketplace in the field of both ethical hacking and python programming.
               </p>
             </div>
@@ -515,7 +505,7 @@ const Combo= () => {
                       </p>
                       <div className=" rounded p-3 mt-2  px-5 bg-white">
                         <p className="text-sm font-[300] leading-[17px]">
-                          <strong>Areas of expertise:</strong>{" "}
+                          Areas of expertise :{" "}
                           {trainer.expertise}
                         </p>
                       </div>
