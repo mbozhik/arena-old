@@ -8,7 +8,7 @@ import Sakib from "@/app/all-courses/TeacherSliderImages/SA_MUBIN.jpg";
 import Noman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
 import ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpeg";
 import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpeg";
-import "react-image-gallery/styles/css/image-gallery.css";
+// import "react-image-gallery/styles/css/image-gallery.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import {

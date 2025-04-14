@@ -1,9 +1,9 @@
 'use client'
-import { TypeAnimation } from "react-type-animation";
+// import { TypeAnimation } from "react-type-animation";
 const Type = () => {
     return (
         <div>
-        <TypeAnimation
+        {/* <TypeAnimation
       sequence={[
         'The Hackers Arena', 
         3000, // Waits 1s
@@ -13,7 +13,8 @@ const Type = () => {
       wrapper="span"
       cursor={true}
       repeat={Infinity}
-    />
+    /> */}
+    <p>deleted</p>
         </div>
     );
 };

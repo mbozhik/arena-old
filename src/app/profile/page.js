@@ -16,8 +16,10 @@ const page = async() => {
 
  
   return (
-    <div className="relative">
+    <div className="relative container">
+       <h6 className={`CountTitle text-center mt-5`}>Admission Time Remaining</h6>
       <div className="ProfileImages relative"></div>
+     
        <ProfileTime/>
       <Profiledetails data={data}  paymetdata={paymetdata} />
       <PaymentDetails courseFee={courseFee} paymetdata={paymetdata}/>

@@ -1,8 +1,5 @@
 "use client";
-import { IoMdPeople } from "react-icons/io";
-import { FaBookReader } from "react-icons/fa";
-import { MdCalendarMonth } from "react-icons/md";
-import { TbUserDollar } from "react-icons/tb";
+
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
@@ -17,13 +14,12 @@ const Counter = () => {
         <div className=" container mx-auto grid grid-cols-4">
         <article className="flex justify-center flex-col border-r-2">
           <div className="flex justify-center">
-          {/* <img className="statistics-img" src={month} alt=""/> */}
             <Image
                                   src={TotalStudent}
                                   alt="Course Image"
                                   width={70}
                                   height={70}
-                                  // className="-skew-y-[13deg] object-cover hover:skew-y-[-12deg]"
+  
                                 />
           </div>
           <div className="text-[20px] mt-4 text-[#7D58A5FF] font-semibold text-center flex justify-center gap-2">
@@ -48,7 +44,7 @@ const Counter = () => {
                                   alt="Course Image"
                                   width={70}
                                   height={70}
-                                  // className="-skew-y-[13deg] object-cover hover:skew-y-[-12deg]"
+
                                 />
           </div>
       
@@ -74,7 +70,6 @@ const Counter = () => {
                                   alt="Course Image"
                                   width={70}
                                   height={70}
-                                  // className="-skew-y-[13deg] object-cover hover:skew-y-[-12deg]"
                                 />
           </div>
       
@@ -100,7 +95,6 @@ const Counter = () => {
                                   alt="Course Image"
                                   width={70}
                                   height={70}
-                                  // className="-skew-y-[13deg] object-cover hover:skew-y-[-12deg]"
                                 />
           </div>
           <div className="text-[20px] mt-4 text-[#7D58A5FF] font-semibold text-center flex justify-center gap-2">

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import event from "@/app/Images/Reviews/Event.jpg";
+// import Image from "next/image";
+// import event from "@/app/Images/Reviews/Event.jpg";
 import Review from "../Utility/Reviews";
 
 const Preview = () => {

@@ -12,7 +12,7 @@ const ProfileTime = async() => {
     const newCreateDates=regTime?.value
     const CreateDates= new Date(newCreateDates).getTime()
     if(admissionvalue== 'true'){
-      return  (<div className="absolute left-1/2 top-40 transform -translate-x-1/2 ">
+      return  (<div className="  absolute left-1/2 top-40 transform -translate-x-1/2 ">
       <h1 className="font-bold lg:text-3xl text-white">
       Arena Web Security
       </h1>

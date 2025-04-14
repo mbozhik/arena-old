@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ceo from "@/app/Images/HomeAbout/ceo.png";
-import sng from "@/app/Images/HomeAbout/ta.png";
+// import ceo from "@/app/Images/HomeAbout/ceo.png";
+// import sng from "@/app/Images/HomeAbout/ta.png";
 
 
 export const metadata = {
@@ -25,7 +25,7 @@ const About = () => {
         market. Already 45 batches received this training and have started to
         earn through online and corporate job.
       </p>
-      <div className="flex items-center gap-x-4 mt-5">
+      {/* <div className="flex items-center gap-x-4 mt-5">
         <Image
           src={ceo}
           alt="Tanjim AL Fahim"
@@ -45,7 +45,7 @@ const About = () => {
         />
         <p className="font-semibold mt-2 lg:text-1xl">Ceo & Founder of Arena</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

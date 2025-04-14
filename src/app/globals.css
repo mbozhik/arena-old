@@ -723,7 +723,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #452d65c3;
+  background-color: #2b203aec;
   z-index: 0;
 }
 .bKashImg {
@@ -909,4 +909,26 @@ body {
   left: 10px;
   background-color: white;
   z-index: 10;
+}
+.profile_img_sec{
+  padding: 0px 50px 50px 50px;
+  background-image: linear-gradient(to left, rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
+}
+.profile_title{
+  background-image: linear-gradient(to right, rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
+  color:white;
+  text-align: center;
+  padding: 10px ;
+}
+.CountTitle {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  background-image: linear-gradient(to right, rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
+  color:white;
+  text-align: center;
+  padding: 10px ;
+  width: 100%;
 }
