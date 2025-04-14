@@ -1,5 +1,5 @@
 
-import {Poppins} from "next/font/google";
+import {Poppins,JetBrains_Mono} from "next/font/google";
 import './globals.css'
 import Footer from './Component/Common/Footer'
 import Navber from './Component/Common/Navber'
@@ -11,6 +11,12 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "700", "800","500","300","200"], // Adjust weights as needed
 });
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+  weight: "400",
+});
+
 // export const metadata = {
   export const metadata = {
     title: 'Arena Web Security | Master Ethical Hacking in Bangladesh',
@@ -25,7 +31,7 @@ export default function RootLayout({ children }) {
         <Script src="https://scripts.pay.bka.sh/versions/1.2.0-beta/checkout/bKash-checkout.js"/>
         <Script src="https://scripts.pay.bka.sh/versions/1.2.0-beta/checkout/bKash-checkout.js"/>
          <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"/>
-      <body   className={` ${poppins.variable}`}
+      <body   className={` ${poppins.variable}  ${jetbrainsMono.variable}`}
       >
     
         <Navber />

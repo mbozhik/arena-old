@@ -35,6 +35,8 @@ const Apply = (e) => {
   const [course_title, setCourse_title] = useState(null);
   const [from_id, setFormId] = useState("");
   const [pending, setPending] = useState(false);
+  const [notRequired, setNotRequired] = useState(false);
+
 
   // Course Function Call hare
   useEffect(() => {
@@ -213,47 +215,48 @@ const Apply = (e) => {
           </Button>
         </DialogFooter>
       </Dialog>
-      
+
       <form onSubmit={(e) => RegistationSucess(e)} className="shadow-sm ">
         <h1 className="md:text-2xl text-2xl font-medium py-3 mt-2 text-center  applicationTitle text-white">
           Student Application Form
         </h1>
         <div className="flex mt-4">
           {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
-          <p 
-          className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 "
-          >
+          <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
             Personal & Contact Information :
           </p>
         </div>
         <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 relative group">
- 
-  <div className="flex space-x-6 items-center mt-4">
-  <p className="text-sm font-[300] ">Prefix*:</p>
-    <div className="flex items-center">
-      <input
-        type="radio"
-        id="mr"
-        name="prefix"
-        value="Mr."
-        onChange={(e) => setGander(e.target.value)}
-        className="form-radio text-indigo-600"
-      />
-      <label htmlFor="mr" className="ml-2 text-sm text-gray-700">Mr.</label>
-    </div>
-    <div className="flex items-center">
-      <input
-        type="radio"
-        id="missMrs"
-        name="prefix"
-        value="Miss/Mrs."
-        onChange={(e) => setGander(e.target.value)}
-        className="form-radio text-indigo-600"
-      />
-      <label htmlFor="missMrs" className="ml-2 text-sm text-gray-700">Miss/Mrs.</label>
-    </div>
-  </div>
-</div>
+          <div className="flex space-x-6 items-center mt-4">
+            <p className="text-sm font-[300] ">Prefix*:</p>
+            <div className="flex items-center">
+              <input
+                type="radio"
+                id="mr"
+                name="prefix"
+                value="male"
+                onChange={(e) => setGander(e.target.value)}
+                className="form-radio text-indigo-600"
+              />
+              <label htmlFor="mr" className="ml-2 text-sm text-gray-700">
+                Mr.
+              </label>
+            </div>
+            <div className="flex items-center">
+              <input
+                type="radio"
+                id="missMrs"
+                name="prefix"
+                value="female"
+                onChange={(e) => setGander(e.target.value)}
+                className="form-radio text-indigo-600"
+              />
+              <label htmlFor="missMrs" className="ml-2 text-sm text-gray-700">
+                Miss/Mrs.
+              </label>
+            </div>
+          </div>
+        </div>
 
         <div className="grid gap-y-4 mt-3">
           <div className="grid grid-cols-6 gap-x-2">
@@ -576,7 +579,7 @@ const Apply = (e) => {
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <TextField
                 fullWidth
-                value={copy ? address : undefined}
+                value={copy ? address : ""}
                 label="Permanent Address"
                 size="medium"
                 color="primary"
@@ -606,7 +609,7 @@ const Apply = (e) => {
                   size="medium"
                   color="primary"
                   name="permanent_city"
-                  value={copy ? city : undefined}
+                  value={copy ? city : ""}
                   inputProps={{ maxLength: 50 }}
                   sx={{
                     "& .MuiOutlinedInput-root": {
@@ -631,7 +634,7 @@ const Apply = (e) => {
                   size="medium"
                   color="primary"
                   name="permanent_postal"
-                  value={copy ? postal : undefined}
+                  value={copy ? postal : ''}
                   inputProps={{ maxLength: 15 }}
                   sx={{
                     "& .MuiOutlinedInput-root": {
@@ -666,7 +669,7 @@ const Apply = (e) => {
                     <Option value="Female">Female</Option>
                   </Select>
                 </div> */}
-                
+
                 {/* <div className="w-full md:col-span-3 col-span-6 mt-5  md:mt-0  border-b border-[#B0BEC5] grid grid-cols-3 gap-x-2 relative ">
                   <p className="absolute md:-top-3 -top-5 left-0 text-sm text-[#B0BEC5]">
                     Date Of Birth 
@@ -777,33 +780,33 @@ const Apply = (e) => {
                   </select>
                 </div>
                 <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-    <TextField
-      fullWidth
-      name="nid"
-      label="Nid/Birth Certificate/Passport No"
-      variant="outlined"
-      size="medium"
-      inputProps={{ maxLength: 50 }}
-      sx={{
-        "& .MuiOutlinedInput-root": {
-          "&:hover fieldset": {
-            borderColor: "#5BA9DB",
-          },
-          "& fieldset": {
-            borderColor: "#5BA9DB",
-          },
-          "&.Mui-focused fieldset": {
-            borderColor: "#7B5DA7",
-            borderWidth: "1px",
-          },
-        },
-      }}
-    />
-  </div>
+                  <TextField
+                    fullWidth
+                    name="nid"
+                    label="Nid/Birth Certificate/Passport No"
+                    variant="outlined"
+                    size="medium"
+                    inputProps={{ maxLength: 50 }}
+                    sx={{
+                      "& .MuiOutlinedInput-root": {
+                        "&:hover fieldset": {
+                          borderColor: "#5BA9DB",
+                        },
+                        "& fieldset": {
+                          borderColor: "#5BA9DB",
+                        },
+                        "&.Mui-focused fieldset": {
+                          borderColor: "#7B5DA7",
+                          borderWidth: "1px",
+                        },
+                      },
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </div>
-          
+
           {/* <div className="grid grid-cols-6 gap-x-2">
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
@@ -865,46 +868,111 @@ const Apply = (e) => {
                   </Select>
                 )}
               </div> */}
-              
-<TextField
-  fullWidth
-  required
-  select
-  label="Select a Course *"
-  name="course_title"
-  value={course}
-  onChange={(e) => {
-    setCourse(e.target.value);
-    onChangeCourse(e.target.value);
-  }}
-  variant="outlined"
-  sx={{
-    "& .MuiOutlinedInput-root": {
-      "&:hover fieldset": {
-        borderColor: "#5BA9DB",
-      },
-      "& fieldset": {
-        borderColor: "#5BA9DB",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "#7B5DA7",
-        borderWidth: "1px",
-      },
-    },
-  }}
->
-  {allcourse && allcourse.length > 0 ? (
-    allcourse.map((x, index) => (
-      <MenuItem key={index + 1} value={x.batch_schedule_time_id}>
-        {x.batch_schedule_name}
-      </MenuItem>
-    ))
-  ) : (
-    <MenuItem disabled className="text-red-500">
-      Server Error
-    </MenuItem>
-  )}
-</TextField>
+              <TextField
+                fullWidth
+                required
+                select
+                label="Nationality*"
+                name="nationality"
+                value={nationality}
+                onChange={(e) => setNationality(e.target.value)}
+                variant="outlined"
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "&:hover fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "& fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#7B5DA7",
+                      borderWidth: "1px",
+                    },
+                  },
+                }}
+              >
+                <MenuItem value="Bangladeshi">Bangladeshi</MenuItem>
+                <MenuItem value="Others">Others</MenuItem>
+              </TextField>
+            </div>
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
+              {/* <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0  relative ">
+                {allcourse ? (
+                  <Select
+                    required
+                    variant="standard"
+                    label="Select a Course *"
+                    name="course_title"
+                    id="Course"
+                    onChange={(e) => {
+                      setCourse(e);
+                      onChangeCourse(e);
+                    }}
+                  >
+                    {allcourse &&
+                      allcourse?.map((x, index) => {
+                        return (
+                          <Option
+                            key={index + 1}
+                            value={x.batch_schedule_time_id}
+                          >
+                            {x.batch_schedule_name}
+                          </Option>
+                        );
+                      })}
+                  </Select>
+                ) : (
+                  <Select
+                    required
+                    variant="standard"
+                    label="Select a Course *"
+                    name="course_title"
+                  >
+                    <Option className="text-red-500">Server Error</Option>
+                  </Select>
+                )}
+              </div> */}
+
+              <TextField
+                fullWidth
+                required
+                select
+                label="Select a Course *"
+                name="course_title"
+                value={course}
+                onChange={(e) => {
+                  setCourse(e.target.value);
+                  onChangeCourse(e.target.value);
+                }}
+                variant="outlined"
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "&:hover fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "& fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#7B5DA7",
+                      borderWidth: "1px",
+                    },
+                  },
+                }}
+              >
+                {allcourse && allcourse.length > 0 ? (
+                  allcourse.map((x, index) => (
+                    <MenuItem key={index + 1} value={x.batch_schedule_time_id}>
+                      {x.batch_schedule_name}
+                    </MenuItem>
+                  ))
+                ) : (
+                  <MenuItem disabled className="text-red-500">
+                    Server Error
+                  </MenuItem>
+                )}
+              </TextField>
             </div>
             {/* <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
@@ -916,66 +984,75 @@ const Apply = (e) => {
                 maxLength={100}
               />
             </div> */}
-            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-  <TextField
-    fullWidth
-    name="student_occupation"
-    label="Occupation (if Applicable)"
-    variant="outlined"
-    size="medium"
-    inputProps={{ maxLength: 100 }}
-    sx={{
-      "& .MuiOutlinedInput-root": {
-        "&:hover fieldset": {
-          borderColor: "#5BA9DB",
-        },
-        "& fieldset": {
-          borderColor: "#5BA9DB",
-        },
-        "&.Mui-focused fieldset": {
-          borderColor: "#7B5DA7",
-          borderWidth: "1px",
-        },
-      },
-    }}
-  />
-</div>
-
           </div>
           <div className="grid grid-cols-6 gap-x-2">
-  <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-    <TextField
-      fullWidth
-      name="office_address"
-      label="Office Address (if Applicable)"
-      variant="outlined"
-      size="medium"
-      inputProps={{ maxLength: 200 }}
-      sx={{
-        "& .MuiOutlinedInput-root": {
-          "&:hover fieldset": {
-            borderColor: "#5BA9DB",
-          },
-          "& fieldset": {
-            borderColor: "#5BA9DB",
-          },
-          "&.Mui-focused fieldset": {
-            borderColor: "#7B5DA7",
-            borderWidth: "1px",
-          },
-        },
-      }}
-    />
-  </div>
-
- 
-</div>
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
+              <TextField
+                fullWidth
+                name="office_address"
+                label="Office Address (if Applicable)"
+                variant="outlined"
+                size="medium"
+                inputProps={{ maxLength: 200 }}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "&:hover fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "& fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#7B5DA7",
+                      borderWidth: "1px",
+                    },
+                  },
+                }}
+              />
+            </div>
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
+              <TextField
+                fullWidth
+                name="student_occupation"
+                label="Occupation (if Applicable)"
+                variant="outlined"
+                size="medium"
+                inputProps={{ maxLength: 100 }}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "&:hover fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "& fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#7B5DA7",
+                      borderWidth: "1px",
+                    },
+                  },
+                }}
+              />
+            </div>
+          </div>
           <div className="flex mt-1 w-full">
             {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
             <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
               Educational Background :
             </p>
           </div>
+   
+          <div className="flex items-center mb-1">
+    <input
+      type="checkbox"
+      id="notRequired"
+      checked={notRequired}
+      onChange={(e) => setNotRequired(e.target.checked)}
+      className="mr-2"
+    />
+    <label htmlFor="notRequired" className="text-sm">Not Required</label>
+  </div>
+          
           {/* <div className="grid grid-cols-6 gap-x-2">
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
@@ -1010,91 +1087,90 @@ const Apply = (e) => {
               </div>
             </div>
           </div> */}
-          <div className="grid grid-cols-6 gap-x-2">
-  {/* School/College/University */}
-  <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-    <TextField
-      fullWidth
-      name="varsity_name"
-      label="School/College/University"
-      variant="outlined"
-      size="medium"
-      inputProps={{ maxLength: 200 }}
-      sx={{
-        "& .MuiOutlinedInput-root": {
-          "&:hover fieldset": {
-            borderColor: "#5BA9DB",
-          },
-          "& fieldset": {
-            borderColor: "#5BA9DB",
-          },
-          "&.Mui-focused fieldset": {
-            borderColor: "#7B5DA7",
-            borderWidth: "1px",
-          },
-        },
-      }}
-    />
-  </div>
+          {!notRequired &&     <div className="grid grid-cols-6 gap-x-2">
+            {/* School/College/University */}
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
+              <TextField
+                fullWidth
+                name="varsity_name"
+                label="School/College/University"
+                variant="outlined"
+                size="medium"
+                inputProps={{ maxLength: 200 }}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "&:hover fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "& fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#7B5DA7",
+                      borderWidth: "1px",
+                    },
+                  },
+                }}
+              />
+            </div>
 
-  {/* Department & Roll */}
-  <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
-    <div className=" pt-1">
-      <TextField
-        fullWidth
-        name="varsity_dpt"
-        label="Department"
-        variant="outlined"
-        size="medium"
-        inputProps={{ maxLength: 100 }}
-        sx={{
-          "& .MuiOutlinedInput-root": {
-            "&:hover fieldset": {
-              borderColor: "#5BA9DB",
-            },
-            "& fieldset": {
-              borderColor: "#5BA9DB",
-            },
-            "&.Mui-focused fieldset": {
-              borderColor: "#7B5DA7",
-              borderWidth: "1px",
-            },
-          },
-        }}
-      />
-    </div>
-    <div className=" pt-1">
-      <TextField
-        fullWidth
-        name="varsity_id"
-        label="Roll"
-        variant="outlined"
-        size="medium"
-        inputProps={{ maxLength: 35 }}
-        sx={{
-          "& .MuiOutlinedInput-root": {
-            "&:hover fieldset": {
-              borderColor: "#5BA9DB",
-            },
-            "& fieldset": {
-              borderColor: "#5BA9DB",
-            },
-            "&.Mui-focused fieldset": {
-              borderColor: "#7B5DA7",
-              borderWidth: "1px",
-            },
-          },
-        }}
-      />
-    </div>
-  </div>
-</div>
+            {/* Department & Roll */}
+            <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
+              <div className=" pt-1">
+                <TextField
+                  fullWidth
+                  name="varsity_dpt"
+                  label="Department"
+                  variant="outlined"
+                  size="medium"
+                  inputProps={{ maxLength: 100 }}
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      "&:hover fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "& fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#7B5DA7",
+                        borderWidth: "1px",
+                      },
+                    },
+                  }}
+                />
+              </div>
+              <div className=" pt-1">
+                <TextField
+                  fullWidth
+                  name="varsity_id"
+                  label="Roll"
+                  variant="outlined"
+                  size="medium"
+                  inputProps={{ maxLength: 35 }}
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      "&:hover fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "& fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#7B5DA7",
+                        borderWidth: "1px",
+                      },
+                    },
+                  }}
+                />
+              </div>
+            </div>
+          </div> }
+      
           <div className="flex mt-1 w-full">
-     
-          <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
-  Alternative Contact :
-</p>
-
+            <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
+              Alternative Contact :
+            </p>
           </div>
           {/* <div className="grid grid-cols-6 gap-x-2">
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
@@ -1132,85 +1208,85 @@ const Apply = (e) => {
             </div>
           </div> */}
           <div className="grid grid-cols-6 gap-x-2">
-  {/* Alternative Contact Name */}
-  <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-    <TextField
-      fullWidth
-      name="alt_name"
-      label="Alternative Contact Name"
-      variant="outlined"
-      size="medium"
-      inputProps={{ maxLength: 255 }}
-      sx={{
-        "& .MuiOutlinedInput-root": {
-          "&:hover fieldset": {
-            borderColor: "#5BA9DB",
-          },
-          "& fieldset": {
-            borderColor: "#5BA9DB",
-          },
-          "&.Mui-focused fieldset": {
-            borderColor: "#7B5DA7",
-            borderWidth: "1px",
-          },
-        },
-      }}
-    />
-  </div>
+            {/* Alternative Contact Name */}
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
+              <TextField
+                fullWidth
+                name="alt_name"
+                label="Alternative Contact Name"
+                variant="outlined"
+                size="medium"
+                inputProps={{ maxLength: 255 }}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "&:hover fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "& fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#7B5DA7",
+                      borderWidth: "1px",
+                    },
+                  },
+                }}
+              />
+            </div>
 
-  {/* Mobile & Relation */}
-  <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
-    <div className=" pt-1">
-      <TextField
-        fullWidth
-        name="alt_mobile"
-        label="Mobile"
-        variant="outlined"
-        size="medium"
-        type="number"
-        inputProps={{ maxLength: 15 }}
-        sx={{
-          "& .MuiOutlinedInput-root": {
-            "&:hover fieldset": {
-              borderColor: "#5BA9DB",
-            },
-            "& fieldset": {
-              borderColor: "#5BA9DB",
-            },
-            "&.Mui-focused fieldset": {
-              borderColor: "#7B5DA7",
-              borderWidth: "1px",
-            },
-          },
-        }}
-      />
-    </div>
-    <div className=" pt-1">
-      <TextField
-        fullWidth
-        name="alt_relation"
-        label="Relation With Student"
-        variant="outlined"
-        size="medium"
-        inputProps={{ maxLength: 100 }}
-        sx={{
-          "& .MuiOutlinedInput-root": {
-            "&:hover fieldset": {
-              borderColor: "#5BA9DB",
-            },
-            "& fieldset": {
-              borderColor: "#5BA9DB",
-            },
-            "&.Mui-focused fieldset": {
-              borderColor: "#7B5DA7",
-              borderWidth: "1px",
-            },
-          },
-        }}
-      />
-    </div>
-  </div>
-</div>
+            {/* Mobile & Relation */}
+            <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
+              <div className=" pt-1">
+                <TextField
+                  fullWidth
+                  name="alt_mobile"
+                  label="Mobile"
+                  variant="outlined"
+                  size="medium"
+                  type="number"
+                  inputProps={{ maxLength: 15 }}
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      "&:hover fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "& fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#7B5DA7",
+                        borderWidth: "1px",
+                      },
+                    },
+                  }}
+                />
+              </div>
+              <div className=" pt-1">
+                <TextField
+                  fullWidth
+                  name="alt_relation"
+                  label="Relation With Student"
+                  variant="outlined"
+                  size="medium"
+                  inputProps={{ maxLength: 100 }}
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      "&:hover fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "& fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#7B5DA7",
+                        borderWidth: "1px",
+                      },
+                    },
+                  }}
+                />
+              </div>
+            </div>
+          </div>
           <div className="flex mt-1 w-full">
             {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
             <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
@@ -1226,27 +1302,27 @@ const Apply = (e) => {
             maxLength={100}
           /> */}
           <TextField
-  fullWidth
-  name="hobby"
-  label="Interest/Hobbies"
-  variant="outlined"
-  size="medium"
-  inputProps={{ maxLength: 100 }}
-  sx={{
-    "& .MuiOutlinedInput-root": {
-      "&:hover fieldset": {
-        borderColor: "#5BA9DB",
-      },
-      "& fieldset": {
-        borderColor: "#5BA9DB",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "#7B5DA7",
-        borderWidth: "1px",
-      },
-    },
-  }}
-/>
+            fullWidth
+            name="hobby"
+            label="Interest/Hobbies"
+            variant="outlined"
+            size="medium"
+            inputProps={{ maxLength: 100 }}
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                "&:hover fieldset": {
+                  borderColor: "#5BA9DB",
+                },
+                "& fieldset": {
+                  borderColor: "#5BA9DB",
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "#7B5DA7",
+                  borderWidth: "1px",
+                },
+              },
+            }}
+          />
 
           {/* <Input
             variant="standard"
@@ -1257,29 +1333,29 @@ const Apply = (e) => {
             maxLength={500}
           /> */}
           <TextField
-  fullWidth
-  name="des_question"
-  label="Why do you learn Cyber Security / Python?"
-  variant="outlined"
-  size="medium"
-  inputProps={{ maxLength: 500 }}
-  multiline
-  // rows={4} // You can adjust the number of rows as needed
-  sx={{
-    "& .MuiOutlinedInput-root": {
-      "&:hover fieldset": {
-        borderColor: "#5BA9DB",
-      },
-      "& fieldset": {
-        borderColor: "#5BA9DB",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "#7B5DA7",
-        borderWidth: "1px",
-      },
-    },
-  }}
-/>
+            fullWidth
+            name="des_question"
+            label="Why do you learn Cyber Security / Python?"
+            variant="outlined"
+            size="medium"
+            inputProps={{ maxLength: 500 }}
+            multiline
+            // rows={4} // You can adjust the number of rows as needed
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                "&:hover fieldset": {
+                  borderColor: "#5BA9DB",
+                },
+                "& fieldset": {
+                  borderColor: "#5BA9DB",
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "#7B5DA7",
+                  borderWidth: "1px",
+                },
+              },
+            }}
+          />
         </div>
 
         <div className="flex justify-center py-5">

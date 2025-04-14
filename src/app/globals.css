@@ -31,6 +31,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.monoFont {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
 /* Home  */
 /* Navber Style */
 /* .navber{

@@ -15,6 +15,7 @@ const Profiledetails = async ({ data, paymetdata }) => {
             alt="User Image"
             className="w-full h-full rounded-full object-cover"
           />
+            {/* <img className="profileImg " src={data?.data.gender=='male'?male:female} alt="" /> */}
         </div>
         <p className="mt-4 text-sm">ID: #{data?.data.u_id}</p>
         <h2 className="text-lg font-medium">{data?.data.Fullname}</h2>
@@ -23,7 +24,7 @@ const Profiledetails = async ({ data, paymetdata }) => {
           <p className="bg-white text-black py-1 font-medium rounded-md mb-2">
             Admission Status
           </p>
-          
+
           {paymetdata?.data?.total.total_amount >=
           data?.data?.course_fee_divide ? (
             <p className="text-green-300 font-medium">Admission Done</p>
@@ -50,38 +51,37 @@ const Profiledetails = async ({ data, paymetdata }) => {
         </div>
 
         <div className="p-5 space-y-2">
-         <div className="grid grid-cols-5 gap-y-3 gap-x-4 p-5">
-  <span className="font-medium">Name:</span>
-  <span className="col-span-4">{data?.data.Fullname}</span>
+          <div className="grid grid-cols-5 gap-y-3 gap-x-4 p-5">
+            <span className="font-medium">Name:</span>
+            <span className="col-span-4">{data?.data.Fullname}</span>
 
-  <span className="font-medium">Phone:</span>
-  <span className="col-span-4">{data?.data.phn}</span>
+            <span className="font-medium">Phone:</span>
+            <span className="col-span-4">{data?.data.phn}</span>
 
-  <span className="font-medium">Email:</span>
-  <span className="col-span-4">{data?.email}</span>
+            <span className="font-medium">Email:</span>
+            <span className="col-span-4">{data?.email}</span>
 
-  <span className="font-medium">Nid:</span>
-  <span className="col-span-4">{data?.data.nid}</span>
+            <span className="font-medium">Nid:</span>
+            <span className="col-span-4">{data?.data.nid}</span>
 
-  <span className="font-medium">Birth Date:</span>
-  <span className="col-span-4">{data?.data.dob}</span>
+            <span className="font-medium">Birth Date:</span>
+            <span className="col-span-4">{data?.data.dob}</span>
 
-  <span className="font-medium">Gender:</span>
-  <span className="col-span-4">{data?.data.gender}</span>
+            <span className="font-medium">Gender:</span>
+            <span className="col-span-4">{data?.data.gender}</span>
 
-  <span className="font-medium">Institute:</span>
-  <span className="col-span-4">{data?.data.institute}</span>
+            <span className="font-medium">Institute:</span>
+            <span className="col-span-4">{data?.data.institute}</span>
 
-  <span className="font-medium">Address:</span>
-  <span className="col-span-4">{data?.data.p_address}</span>
+            <span className="font-medium">Address:</span>
+            <span className="col-span-4">{data?.data.p_address}</span>
 
-  <span className="font-medium">City:</span>
-  <span className="col-span-4">{data?.data.city}</span>
+            <span className="font-medium">City:</span>
+            <span className="col-span-4">{data?.data.city}</span>
 
-  <span className="font-medium">Hobby:</span>
-  <span className="col-span-4">{data?.data.hobby}</span>
-</div>
-
+            <span className="font-medium">Hobby:</span>
+            <span className="col-span-4">{data?.data.hobby}</span>
+          </div>
         </div>
       </div>
     </div>
