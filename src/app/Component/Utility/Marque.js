@@ -5,7 +5,7 @@ const Marque = ({data}) => {
     return (
         <div>
                {data && (
-        <Marquee className="bg-[#ece9e9] text-sm py-1">
+        <Marquee className="bg-[#ece9e9] text-sm py-1 font-[300]">
           Admission going on for{" "}
           <span className="font-semibold text-purple-400 px-2">
             {data[0]?.batch_schedule_name}

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
     "@material-tailwind/react": "^2.1.10",
     "@mui/material": "^7.0.2",
     "aos": "^2.3.4",
@@ -17,7 +18,7 @@
     "react": "^18",
     "react-18-image-lightbox": "^5.1.4",
     "react-animated-css": "^1.2.1",
-    "react-awesome-reveal": "^4.2.8",
+    "react-awesome-reveal": "^4.3.1",
     "react-confetti": "^6.1.0",
     "react-countup": "^6.5.0",
     "react-dom": "^18",

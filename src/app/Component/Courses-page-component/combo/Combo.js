@@ -22,6 +22,7 @@ import { MdPersonAddAlt1 } from "react-icons/md";
 import BannerImage from "@/app/AllDataFatchingFunction/BannerImage";
 // import Outline from "./Outline";
 import { PaymentModal } from "../../Common/Payment";
+import { Slide } from "react-awesome-reveal";
 const Combo= () => {
   const Tanjim= BannerImage()
   const features = [
@@ -124,6 +125,7 @@ const Combo= () => {
                             </h3>
                             <hr className="mt-2" />
                           </div>
+                          <Slide direction="down"damping={1} cascade triggerOnce>
                           <div className="grid grid-cols-2 justify-between gap-x-5">
                             <ul className="mt-3 text-[[16px] leading-5 font-[300] text-[#424242] ">
                               <li>
@@ -239,6 +241,7 @@ const Combo= () => {
                               </li>
                             </ul>
                           </div>
+                          </Slide>
                         </article>
             <article className="p-1">
               <div className="relative">

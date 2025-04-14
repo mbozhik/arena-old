@@ -9,7 +9,7 @@ import Noman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
 import ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpeg";
 import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpeg";
 // import "react-image-gallery/styles/css/image-gallery.css";
-
+import { keyframes } from "@emotion/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -23,9 +23,10 @@ import { MdPersonAddAlt1 } from "react-icons/md";
 import Outline from "../../Common/Outline";
 import { PaymentModal } from "../../Common/Payment";
 import BannerImage from "@/app/AllDataFatchingFunction/BannerImage";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 // import image6 from '@/app/all-courses/TeacherSliderImages/zawad.png'
 const CyberSecurity = () => {
-  const Tanjim= BannerImage()
+  const Tanjim = BannerImage();
   const features = [
     "Cyber Security",
     "Linux",
@@ -90,40 +91,27 @@ const CyberSecurity = () => {
       expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
       image: Bijoy,
     },
-    
   ];
-  const images=[
-    {
-      original:"./cyber-security-course-outline/cyber-security1.svg",
-      thumbnail:"./cyber-security-course-outline/cyber-security1.svg",
-    },
-    {
-      original:"./cyber-security-course-outline/cyber-security2.svg",
-      thumbnail:"./cyber-security-course-outline/cyber-security2.svg",
-    },
-    {
-      original:"./cyber-security-course-outline/cyber-security3.svg",
-      thumbnail:"./cyber-security-course-outline/cyber-security3.svg",
-    },
-    {
-      original:"./cyber-security-course-outline/cyber-security4.svg",
-      thumbnail:"./cyber-security-course-outline/cyber-security4.svg",
-    },
-    {
-      original:"./cyber-security-course-outline/cyber-security5.svg",
-      thumbnail:"./cyber-security-course-outline/cyber-security5.svg",
-    },
-    {
-      original:"./cyber-security-course-outline/cyber-security6.svg",
-      thumbnail:"./cyber-security-course-outline/cyber-security6.svg",
-    },
-   
-  ]
+
   return (
     <div>
-      <div className="text-[24px] font-semibold leading-9 mt-14 text-[#424242] text-center ">
-        Cyber Security & Ethical Hacking
+      <div className="text-center mt-14">
+        {/* <Slide direction="down" triggerOnce> */}
+        <div className="text-[24px] font-semibold leading-9 text-[#424242]">
+          {/* Apply Fade and Damping Simultaneously */}
+          <Fade
+            fraction={1}
+            direction="up" // Text will fade up
+            delay={500} // Optional delay before fade starts
+            cascade={true} // Apply cascading fade effect
+            damping={0.1} // Smooth transition with damping
+          >
+            Cyber Security & Ethical Hacking
+          </Fade>
+        </div>
+        {/* </Slide> */}
       </div>
+
       {/* Course Module */}
       <div className="flex px-3">
         <div className="grid  grid-cols-12 gap-x-2 w-full  mt-16">
@@ -137,31 +125,39 @@ const CyberSecurity = () => {
 
           <div className=" lg:col-span-8 col-span-8 lg:px-3">
             {/*KEY FEATURES  */}
-
-            <div className="relative animate-fadeInDown">
-              <h3 className="  text-[#424242] text-[22px] font-medium leading-6">
-                Overview
-              </h3>
-              <p className="text-[#424242] font-[300] text-[16px] leading-[19px] text-justify mt-5">
-                Embark on a journey into the realm of cybersecurity with Arena
-                Web Security. Whether you're aiming for your first role in IT
-                security, envisioning a full-time career as a white hat hacker,
-                or preparing to strengthen the defenses of your home network,
-                our courses are customized to align with your aspirations.
-                Through an accessible and hands-on approach to ethical hacking,
-                we empower you to protect your networks efficiently. Elevate
-                your skills with us and pave the way to a successful career in
-                the professional marketplace. Your path to cybersecurity
-                excellence starts right here.
-              </p>
-            </div>
+            <Slide direction="down" cascade triggerOnce>
+              <div className="relative animate-fadeInDown">
+                <h3 className="  text-[#424242] text-[22px] font-medium leading-6">
+                  Overview
+                </h3>
+                <p className="text-[#424242] font-[300] text-[16px] leading-[19px] text-justify mt-5">
+                  Embark on a journey into the realm of cybersecurity with Arena
+                  Web Security. Whether you're aiming for your first role in IT
+                  security, envisioning a full-time career as a white hat
+                  hacker, or preparing to strengthen the defenses of your home
+                  network, our skills with us and pave the way to a successful
+                  career in theur courses are customized to align with your
+                  aspirations. Through an accessible and hands-on approach to
+                  ethical hacking, we empower you to protect your networks
+                  efficiently. Elevate yo professional marketplace. Your path to
+                  cybersecurity excellence starts right here.
+                </p>
+              </div>
+            </Slide>
 
             {/* Moudele Start */}
             <article className="p-1">
               <div className="relative">
-                <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  Cyber Security & Ethical Hacking (Module)
-                </h3>
+              <Fade
+            fraction={1}
+            direction="up" // Text will fade up
+            delay={500} // Optional delay before fade starts
+            cascade={true} // Apply cascading fade effect
+            damping={0.1} // Smooth transition with damping
+          ><h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
+          Cyber Security & Ethical Hacking (Module)
+        </h3></Fade>
+                
                 <hr className="mt-2" />
               </div>
               <div className="md:flex justify-between">
@@ -328,8 +324,10 @@ const CyberSecurity = () => {
               </div>
             </div>
           </div>
-
+          
+         
           <div className="col-span-4 hidden lg:block">
+          <Zoom  cascade triggerOnce>
             <Swiper
               // modules={[Pagination]}
               // pagination={{ clickable: true }}
@@ -387,8 +385,7 @@ const CyberSecurity = () => {
                       </p>
                       <div className=" rounded p-3 mt-2  px-5 bg-white">
                         <p className="text-sm font-[300] leading-[17px]">
-                          Areas of expertise :{" "}
-                          {trainer.expertise}
+                          Areas of expertise : {trainer.expertise}
                         </p>
                       </div>
                     </div>
@@ -396,18 +393,28 @@ const CyberSecurity = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+            </Zoom>
 
             <Image alt="Cyber Security And Ethical Hacking " src={Banner} />
           </div>
+          
         </div>
       </div>
-      <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">         <p className="text-[24px] leading-9 font-semibold mt-5">Be a Freelancer on Cyber Security</p>
-        <div className='my-5'>
+      <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
+        {" "}
+        <p className="text-[24px] leading-9 font-semibold mt-5">
+          Be a Freelancer on Cyber Security
+        </p>
+        <div className="my-5">
           <Link href="/admission" className="animated-button1  gap-x-2 ">
-          <p className="flex gap-x-1 items-center ">   <MdPersonAddAlt1  className="text-2xl"/>ENROLL NOW</p>
+            <p className="flex gap-x-1 items-center ">
+              {" "}
+              <MdPersonAddAlt1 className="text-2xl" />
+              ENROLL NOW
+            </p>
           </Link>
         </div>
-        </div>
+      </div>
       <div className="lg:px-3 md:px-5 px-3 pt-10">
         <div className="md:flex gap-5">
           <article className="md:w-[50%] w-full">
@@ -547,30 +554,39 @@ const CyberSecurity = () => {
             </details>
           </article>
           <article className="md:w-[50%] w-full h-full mt-3 md:mt-0">
-            <Image alt="Tanjim Al Fahim" src={Tanjim} height={1000} width={1000}  className="" />
+            <Image
+              alt="Tanjim Al Fahim"
+              src={Tanjim}
+              height={1000}
+              width={1000}
+              className=""
+            />
           </article>
         </div>
-        
       </div>
-      <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">         <p className="text-[24px] leading-9 font-semibold mt-5">
-      Be a Freelancer on Cyber Security
+      <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
+        {" "}
+        <p className="text-[24px] leading-9 font-semibold mt-5">
+          Be a Freelancer on Cyber Security
         </p>
-        <div className='my-5'>
+        <div className="my-5">
           {/* <EnrollComponent data={['BECOME','An_ETHICAL','HACKER']} /> */}
- 
+
           <Link href="/admission" className="animated-button1  gap-x-2 ">
-          <p className="flex gap-x-1 items-center ">   <MdPersonAddAlt1  className="text-2xl"/>ENROLL NOW</p>
-       
+            <p className="flex gap-x-1 items-center ">
+              {" "}
+              <MdPersonAddAlt1 className="text-2xl" />
+              ENROLL NOW
+            </p>
           </Link>
-         
         </div>
-        </div>
-        <div className=" my-10 ">
+      </div>
+      <div className=" my-10 ">
         <Outline />
-        </div>
-        <div className=" my-10 ">
-        <PaymentModal/>
-        </div>
+      </div>
+      <div className=" my-10 ">
+        <PaymentModal />
+      </div>
     </div>
   );
 };

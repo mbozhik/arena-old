@@ -21,6 +21,7 @@ import { MdPersonAddAlt1 } from "react-icons/md";
 import { PaymentModal } from "../../../Common/Payment";
 import BannerImage from "@/app/AllDataFatchingFunction/BannerImage";
 import Outline from "./Outline";
+import { Slide } from "react-awesome-reveal";
 const Python = () => {
   const Tanjim= BannerImage()
   const features = [
@@ -117,6 +118,7 @@ const Python = () => {
                 </h3>
                 <hr className="mt-2" />
               </div>
+              <Slide direction="down" cascade triggerOnce>
               <div className="grid grid-cols-2 justify-between gap-x-5">
                 <ul className="mt-3 text-[[16px] leading-5 font-[300] text-[#424242] ">
                   <li>
@@ -252,6 +254,7 @@ const Python = () => {
                   </li>
                 </ul>
               </div>
+              </Slide>
             </article>
             <div>
               <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
