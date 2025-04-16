@@ -78,25 +78,27 @@ const Linax = () => {
       expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
       image: Bijoy,
     },
-    
   ];
 
   return (
     <div>
-      <div className="text-[24px] font-semibold leading-9 mt-14 text-[#424242] text-center ">
-        Linux
-      </div>
+      <div className="md:text-center mt-14 px-3 md:px-0">
+        <div className="lg:xl:text-[24px] lg:text-[22px] text-[20px] md:text-[20px]   font-semibold leading-9 text-[#424242]">
+          Linax
+        </div>
+      </div>{" "}
+     
       {/* Course Module */}
       <div className="flex px-3 shadow-md mb-10 pb-5">
-        <div className="grid  grid-cols-12 gap-x-2 w-full  mt-16">
-          <div className=" lg:col-span-8 col-span-8 lg:px-3">
+        <div className="grid  grid-cols-12 gap-x-2 w-full  lg:mt-16 mt-8">
+          <div className=" lg:col-span-8 col-span-12 lg:px-3">
+            {" "}
             {/*KEY FEATURES  */}
-
             <div className="relative animate-fadeInDown">
-              <h3 className="  text-[#424242] text-[22px] font-medium leading-6">
+              <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
                 Overview
               </h3>
-              <p className="text-[#424242] font-[300] text-[16px] leading-[19px] text-justify mt-5">
+              <p className="text-[#424242] font-[300] lg:text-[16px] text-sm leading-[19px] text-justify mt-5">
                 The industry-leading Penetration Testing with Kali Linux
                 (KLIN-ACS) course just got even better. This online ethical
                 hacking course is self-paced. It introduces penetration testing
@@ -105,17 +107,17 @@ const Linax = () => {
                 Certified Professional (AWCP) certification.
               </p>
             </div>
-
             {/* Moudele Start */}
             <article className="p-1">
               <div className="relative">
-                <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                  {" "}
                   Kali Linux-Penetration Testing (Module)
                 </h3>
                 <hr className="mt-2" />
               </div>
-              <div className="grid grid-cols-2 justify-between gap-x-5">
-                <ul className="mt-3 text-[[16px] leading-5 font-[300] text-[#424242] ">
+              <div className="grid grid-cols-1 justify-between gap-x-5">
+                <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
@@ -157,12 +159,13 @@ const Linax = () => {
             </article>
             <article className="p-1">
               <div className="relative">
-                <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                  {" "}
                   Who is the course for?
                 </h3>
                 {/* <hr className="mt-2" /> */}
               </div>
-              <div className="grid grid-cols-2 justify-between gap-x-5">
+              <div className="grid grid-cols-1 justify-between gap-x-5">
                 <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
                   <li>
                     <div className="flex gap-2 items-center py-1">
@@ -205,7 +208,8 @@ const Linax = () => {
             </article>
             <article className="p-1">
               <div className="relative">
-                <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                  {" "}
                   About The Exam
                 </h3>
                 <p className="mt-2  text-[16px] leading-5 font-[300] text-[#424242]">
@@ -217,7 +221,8 @@ const Linax = () => {
             </article>
             <article className="p-1">
               <div className="relative">
-                <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                  {" "}
                   Course Requirements
                 </h3>
                 <p className="mt-2  text-[16px] leading-5 font-[300] text-[#424242]">
@@ -269,7 +274,8 @@ const Linax = () => {
             </div>
           </div>
 
-          <div className="col-span-4 hidden lg:block">
+          <div className="lg:col-span-4 col-span-12 lg:block mt-4 lg:mt-0">
+            {" "}
             <Swiper spaceBetween={20} slidesPerView={1} loop={true}></Swiper>
             <Swiper
               modules={[Navigation, Scrollbar, A11y, Autoplay]}
@@ -313,8 +319,7 @@ const Linax = () => {
                       </p>
                       <div className=" rounded p-3 mt-2  px-5 bg-white">
                         <p className="text-sm font-[300] leading-[17px]">
-                          Areas of expertise :{" "}
-                          {trainer.expertise}
+                          Areas of expertise : {trainer.expertise}
                         </p>
                       </div>
                     </div>
@@ -322,8 +327,11 @@ const Linax = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-
-            <Image alt="Cyber Security And Ethical Hacking " src={Banner} />
+            <Image
+              alt="Cyber Security And Ethical Hacking"
+              src={Banner}
+              className="w-full lg:w-auto"
+            />
           </div>
         </div>
       </div>

@@ -23,8 +23,8 @@ import BannerImage from "@/app/AllDataFatchingFunction/BannerImage";
 // import Outline from "./Outline";
 import { PaymentModal } from "../../Common/Payment";
 import { Slide } from "react-awesome-reveal";
-const Combo= () => {
-  const Tanjim= BannerImage()
+const Combo = () => {
+  const Tanjim = BannerImage();
   const features = [
     "Core Python",
     " Django and REST Framework.",
@@ -94,163 +94,177 @@ const Combo= () => {
       expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
       image: Bijoy,
     },
-    
   ];
 
   return (
     <div>
-      <div className="text-[24px] font-semibold leading-9 mt-14 text-[#424242] text-center ">
-      Cyber Security and Advance Python (Combo)
+      <div className="md:text-center mt-14 px-3 md:px-0">
+        <div className="xl:text-[24px] lg:text-[22px] text-[20px] font-semibold leading-9 text-[#424242]">
+          Cyber Security and Advance Python (Combo)
+        </div>
       </div>
       {/* Course Module */}
       <div className="flex px-3">
-        <div className="grid  grid-cols-12 gap-x-2 w-full  mt-16">
-          <div className=" lg:col-span-8 col-span-8 lg:px-3">
+        <div className="grid  grid-cols-12 gap-x-2 w-full  lg:mt-16 mt-8">
+          <div className=" lg:col-span-8 col-span-12 lg:px-3">
+            {" "}
             {/*KEY FEATURES  */}
-
             <div className="relative animate-fadeInDown">
-              <h3 className="  text-[#424242] text-[22px] font-medium leading-6">
+              <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
                 Overview
               </h3>
-              <p className="text-[#424242] font-[300] text-[16px] leading-[19px] text-justify mt-5">
-              Cybersecurity needs a programming language and today Python is very popular because of its flexibility and lightweight features. This course can help to build skills across the cyberattack world for both cyber attackers and defenders. Near future Python is and will be the most demanding programming and scripting language for cybersecurity. So, by completing this course you can land your first IT job or you can start your career in freelancing. This course could open the door become a complete web expert. Arena Web Security offers approachable, hands-on ethical hacking and python programming courses to help you keep your networks safe from cyber criminals & make your career at the professional marketplace in the field of both ethical hacking and python programming.
+              <p className="text-[#424242] font-[300] lg:text-[16px] text-sm leading-[19px] text-justify mt-5">
+                Cybersecurity needs a programming language and today Python is
+                very popular because of its flexibility and lightweight
+                features. This course can help to build skills across the
+                cyberattack world for both cyber attackers and defenders. Near
+                future Python is and will be the most demanding programming and
+                scripting language for cybersecurity. So, by completing this
+                course you can land your first IT job or you can start your
+                career in freelancing. This course could open the door become a
+                complete web expert. Arena Web Security offers approachable,
+                hands-on ethical hacking and python programming courses to help
+                you keep your networks safe from cyber criminals & make your
+                career at the professional marketplace in the field of both
+                ethical hacking and python programming.
               </p>
             </div>
-
             {/* Moudele Start */}
-             <article className="p-1">
-                          <div className="relative">
-                            <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                              Cyber Security & Ethical Hacking (Module)
-                            </h3>
-                            <hr className="mt-2" />
-                          </div>
-                          <Slide direction="down"damping={1} cascade triggerOnce>
-                          <div className="grid grid-cols-2 justify-between gap-x-5">
-                            <ul className="mt-3 text-[[16px] leading-5 font-[300] text-[#424242] ">
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> Introduction</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> Footprinting</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> PHP & MySQL Basic:</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> Website Penetration Testing</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> Website Hacking</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> System Hacking</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> keylogger Spyware</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> Malware Threats [Virus]</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> Website Development</span>
-                                </div>
-                              </li>
-                            </ul>
-                            <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> Social Engineering</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> Denial-of-Service</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span>SQL Injection All method</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span>Evading IDS, Firewalls</span>
-                                </div>
-                              </li>
-            
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span>Scanning Networks web server</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> Linux OS</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span>Cross-Site Request Forgery</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span> Outsourcing in Fiverr/Upwork</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="flex gap-2 items-center py-1">
-                                  <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                                  <span>Outsourcing in Hackerone</span>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                          </Slide>
-                        </article>
             <article className="p-1">
               <div className="relative">
-                <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                Advance Python with Django and Scrapping (Module)
+                <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                  {" "}
+                  Cyber Security & Ethical Hacking (Module)
                 </h3>
                 <hr className="mt-2" />
               </div>
-              <div className="grid grid-cols-2 justify-between gap-x-5">
+              <Slide direction="down" damping={1} cascade triggerOnce>
+                <div className="grid  grid-cols-1 md:grid-cols-2 justify-between gap-x-5">
+                  <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> Introduction</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> Footprinting</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> PHP & MySQL Basic:</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> Website Penetration Testing</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> Website Hacking</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> System Hacking</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> keylogger Spyware</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> Malware Threats [Virus]</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> Website Development</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> Social Engineering</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> Denial-of-Service</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span>SQL Injection All method</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span>Evading IDS, Firewalls</span>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span>Scanning Networks web server</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> Linux OS</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span>Cross-Site Request Forgery</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span> Outsourcing in Fiverr/Upwork</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex gap-2 items-center py-1">
+                        <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
+                        <span>Outsourcing in Hackerone</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </Slide>
+            </article>
+            <article className="p-1">
+              <div className="relative">
+                <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                  {" "}
+                  Advance Python with Django and Scrapping (Module)
+                </h3>
+                <hr className="mt-2" />
+              </div>
+              <div className="grid md:grid-cols-2 grid-cols-1 justify-between gap-x-5">
                 <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
                   <li>
                     <div className="flex gap-2 items-center py-1">
@@ -267,7 +281,7 @@ const Combo= () => {
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>  Looping</span>
+                      <span> Looping</span>
                     </div>
                   </li>
                   <li>
@@ -291,7 +305,7 @@ const Combo= () => {
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>  Dictionaries</span>
+                      <span> Dictionaries</span>
                     </div>
                   </li>
                   <li>
@@ -309,7 +323,7 @@ const Combo= () => {
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>  List Comprehension</span>
+                      <span> List Comprehension</span>
                     </div>
                   </li>
                   <li>
@@ -329,7 +343,7 @@ const Combo= () => {
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>  Exception Handling</span>
+                      <span> Exception Handling</span>
                     </div>
                   </li>
                   <li>
@@ -356,7 +370,12 @@ const Combo= () => {
                       {/* <FaHandPointRight className="text-[#715296]  text-xl" /> */}
                       <FaHandPointRight className="text-[#715296] text-xl min-w-[16px] mt-1" />
 
-                      <span> introduction to Django Introduction to Back-End Web Development <br/>using Django</span>
+                      <span>
+                        {" "}
+                        introduction to Django Introduction to Back-End Web
+                        Development <br />
+                        using Django
+                      </span>
                     </div>
                   </li>
                   <li>
@@ -387,19 +406,20 @@ const Combo= () => {
               </div>
             </article>
             <div>
-                <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                                Key Features  (Cyber Security)
-                              </h3>
-                              <div className="bg-white shadow rounded-md p-4 mb-6">
-                                <ul className="space-y-2 text-[16px] leading-5 font-[300] text-[#424242] ">
-                                  {features1.map((item, index) => (
-                                    <li key={index} className="flex items-center ">
-                                      <FaCheck className="text-[#715296]  mr-2" />
-                                      {item}
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
+              <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                {" "}
+                Key Features (Cyber Security)
+              </h3>
+              <div className="bg-white shadow rounded-md p-4 mb-6">
+                <ul className="space-y-2 text-[16px] leading-5 font-[300] text-[#424242] ">
+                  {features1.map((item, index) => (
+                    <li key={index} className="flex items-center ">
+                      <FaCheck className="text-[#715296]  mr-2" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
                 Key Features (Advance Python)
               </h3>
@@ -439,8 +459,13 @@ const Combo= () => {
                           {item.id}
                         </td>
                         <td className="border px-4 py-2">{item.type}</td>
-                        <td className="border px-4 py-2">{item.description==='BDT 30,000/-' && <del>{item.description}</del>}<br/>
-                            {item.description}</td>
+                        <td className="border px-4 py-2">
+                          {item.description === "BDT 30,000/-" && (
+                            <del>{item.description}</del>
+                          )}
+                          <br />
+                          {item.description}
+                        </td>
                         {/* <td className="border px-4 py-2"></td> */}
                       </tr>
                     ))}
@@ -450,7 +475,8 @@ const Combo= () => {
             </div>
           </div>
 
-          <div className="col-span-4 hidden lg:block">
+          <div className="lg:col-span-4 col-span-12 lg:block mt-4 lg:mt-0">
+            {" "}
             <Swiper
               // modules={[Pagination]}
               // pagination={{ clickable: true }}
@@ -508,8 +534,7 @@ const Combo= () => {
                       </p>
                       <div className=" rounded p-3 mt-2  px-5 bg-white">
                         <p className="text-sm font-[300] leading-[17px]">
-                          Areas of expertise :{" "}
-                          {trainer.expertise}
+                          Areas of expertise : {trainer.expertise}
                         </p>
                       </div>
                     </div>
@@ -517,26 +542,33 @@ const Combo= () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-
-            <Image alt="Cyber Security And Ethical Hacking " src={Banner} />
+            <Image
+              alt="Cyber Security And Ethical Hacking"
+              src={Banner}
+              className="w-full lg:w-auto"
+            />
           </div>
         </div>
       </div>
-      <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">         <p className="text-[24px] leading-9 font-semibold mt-5">
-      Become a Python Specialist
+      <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
+        {" "}
+        <p className="xl:text-[24px] lg:text-[22px] text-[20px] leading-9 font-semibold mt-5">
+          Become a Python Specialist
         </p>
-        <div className='my-5'>
+        <div className="my-5">
           <Link href="/admission" className="animated-button1  gap-x-2 ">
-          <p className="flex gap-x-1 items-center ">   <MdPersonAddAlt1  className="text-2xl"/>ENROLL NOW</p>
+            <p className="flex gap-x-1 items-center ">
+              {" "}
+              <MdPersonAddAlt1 className="text-2xl" />
+              ENROLL NOW
+            </p>
           </Link>
         </div>
-        </div>
-        <div className=" my-10 ">
-        {/* <Outline/> */}
-        </div>
-        <div className=" my-10 ">
-        <PaymentModal/>
-        </div>
+      </div>
+      <div className=" my-10 ">{/* <Outline/> */}</div>
+      <div className=" my-10 ">
+        <PaymentModal />
+      </div>
     </div>
   );
 };

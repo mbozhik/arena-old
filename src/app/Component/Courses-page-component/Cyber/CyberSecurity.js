@@ -5,26 +5,17 @@ import Image from "next/image";
 import { FaCheck, FaHandPointRight } from "react-icons/fa";
 import Fahim from "@/app/all-courses/TeacherSliderImages/Fahim.svg";
 import Sakib from "@/app/all-courses/TeacherSliderImages/SA_MUBIN.jpg";
-import Noman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
 import ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpeg";
 import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpeg";
-// import "react-image-gallery/styles/css/image-gallery.css";
 import { keyframes } from "@emotion/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
+import { Navigation, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import Link from "next/link";
 import { MdPersonAddAlt1 } from "react-icons/md";
 import Outline from "../../Common/Outline";
 import { PaymentModal } from "../../Common/Payment";
 import BannerImage from "@/app/AllDataFatchingFunction/BannerImage";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
-// import image6 from '@/app/all-courses/TeacherSliderImages/zawad.png'
 const CyberSecurity = () => {
   const Tanjim = BannerImage();
   const features = [
@@ -66,25 +57,6 @@ const CyberSecurity = () => {
       expertise: "Cyber Security",
       image: Sakib,
     },
-    // {
-    //   name: 'Anika Tabassum Nira',
-    //   designation: 'Faculty Member',
-    //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
-    //   image: anika,
-    // },
-    // {
-    //   name: 'Sarwar Alam',
-    //   designation: 'Faculty Member',
-    //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
-    //   image: Ifty,
-    // },
-
-    // {
-    //   name: 'Salman Hafizur Rahman',
-    //   designation: 'Faculty Member',
-    //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
-    //   image: Salman,
-    // },
     {
       name: "Bijoy Mondal",
       designation: "Admin Support",
@@ -95,9 +67,9 @@ const CyberSecurity = () => {
 
   return (
     <div>
-      <div className="text-center mt-14">
+      <div className="md:text-center mt-14 px-3 md:px-0">
         {/* <Slide direction="down" triggerOnce> */}
-        <div className="text-[24px] font-semibold leading-9 text-[#424242]">
+        <div className="lg:text-[24px] md:text-[20px]  text-[18px] font-semibold leading-9 text-[#424242]">
           {/* Apply Fade and Damping Simultaneously */}
           <Fade
             fraction={1}
@@ -114,23 +86,15 @@ const CyberSecurity = () => {
 
       {/* Course Module */}
       <div className="flex px-3">
-        <div className="grid  grid-cols-12 gap-x-2 w-full  mt-16">
-          {/* <div className=" col-span-2 hidden lg:block">
-            <Image
-              alt="Cyber Security And Ethical Hacking"
-              src={Banner}
-              className=""
-            />
-          </div> */}
-
-          <div className=" lg:col-span-8 col-span-8 lg:px-3">
+        <div className="grid  grid-cols-12 gap-x-2 w-full  lg:mt-16 mt-8">
+          <div className=" lg:col-span-8 col-span-12 lg:px-3">
             {/*KEY FEATURES  */}
             <Slide direction="down" cascade triggerOnce>
               <div className="relative animate-fadeInDown">
-                <h3 className="  text-[#424242] text-[22px] font-medium leading-6">
+                <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
                   Overview
                 </h3>
-                <p className="text-[#424242] font-[300] text-[16px] leading-[19px] text-justify mt-5">
+                <p className="text-[#424242] font-[300] lg:text-[16px] text-sm leading-[19px] text-justify mt-5">
                   Embark on a journey into the realm of cybersecurity with Arena
                   Web Security. Whether you're aiming for your first role in IT
                   security, envisioning a full-time career as a white hat
@@ -148,20 +112,22 @@ const CyberSecurity = () => {
             {/* Moudele Start */}
             <article className="p-1">
               <div className="relative">
-              <Fade
-            fraction={1}
-            direction="up" // Text will fade up
-            delay={500} // Optional delay before fade starts
-            cascade={true} // Apply cascading fade effect
-            damping={0.1} // Smooth transition with damping
-          ><h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
-          Cyber Security & Ethical Hacking (Module)
-        </h3></Fade>
-                
+                <Fade
+                  fraction={1}
+                  direction="up" // Text will fade up
+                  delay={500} // Optional delay before fade starts
+                  cascade={true} // Apply cascading fade effect
+                  damping={0.1} // Smooth transition with damping
+                >
+                  <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
+                    Cyber Security & Ethical Hacking (Module)
+                  </h3>
+                </Fade>
+
                 <hr className="mt-2" />
               </div>
               <div className="md:flex justify-between">
-                <ul className="mt-3 text-[[16px] leading-5 font-[300] text-[#424242] ">
+                <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
@@ -217,7 +183,7 @@ const CyberSecurity = () => {
                     </div>
                   </li>
                 </ul>
-                <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
+                <ul className="mt-3 lg:text-[16px] text-sm leading-5 font-[300] text-[#424242] ">
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
@@ -277,11 +243,11 @@ const CyberSecurity = () => {
               </div>
             </article>
             <div>
-              <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
+              <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
                 Key Features
               </h3>
               <div className="bg-white shadow rounded-md p-4 mb-6">
-                <ul className="space-y-2 text-[16px] leading-5 font-[300] text-[#424242] ">
+                <ul className="space-y-2 lg:text-[16px] text-sm leading-5 font-[300] text-[#424242] ">
                   {features.map((item, index) => (
                     <li key={index} className="flex items-center ">
                       <FaCheck className="text-[#715296]  mr-2" />
@@ -294,7 +260,7 @@ const CyberSecurity = () => {
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border border-gray-200">
                   <thead className="bg-gray-100">
-                    <tr className="text-[16px]">
+                    <tr className="lg:text-[16px] text-sm">
                       <th className="border px-4 py-2 text-left font-medium">
                         #
                       </th>
@@ -310,7 +276,7 @@ const CyberSecurity = () => {
                     {info.map((item) => (
                       <tr
                         key={item.id}
-                        className="bg-white text-[16px] leading-6 font-[300] text-[#424242] "
+                        className="bg-white lg:text-[16px] text-sm leading-6 font-[300] text-[#424242] "
                       >
                         <td className="border px-4 py-2 font-semibold">
                           {item.id}
@@ -324,85 +290,68 @@ const CyberSecurity = () => {
               </div>
             </div>
           </div>
-          
-         
-          <div className="col-span-4 hidden lg:block">
-          <Zoom  cascade triggerOnce>
-            <Swiper
-              // modules={[Pagination]}
-              // pagination={{ clickable: true }}
-              spaceBetween={20}
-              slidesPerView={1}
-              loop={true}
-            ></Swiper>
-            <Swiper
-              modules={[Navigation, Scrollbar, A11y, Autoplay]}
-              spaceBetween={2}
-              //    slidesPerView={1}
-              //    navigation
-              autoplay={true}
-              breakpoints={{
-                // when window width is >= 640px
-                0: {
-                  //   width: 300,
-                  slidesPerView: 1,
-                },
-                520: {
-                  //   width: 300,
-                  slidesPerView: 1,
-                },
-                // when window width is >= 768px
-                950: {
-                  //   width: 768,
-                  slidesPerView: 1,
-                },
-              }}
-              pagination={{ clickable: true }}
-              // className={`${style.slider_container} mySwipe py-5 mb-5 `}
-            >
-              {trainers.map((trainer, idx) => (
-                <SwiperSlide key={idx}>
-                  <div className="rounded-md p-4  shadow-md relative overflow-hidden svg-background">
-                    {/* <div
-                className=" "
-                // style={{
-                //   backgroundImage: "url('/file/liquid-cheese.svg')",
-                // }}
-              /> */}
-                    <div className="relative  flex flex-col items-center text-center space-y-3">
-                      <Image
-                        src={trainer.image}
-                        alt={trainer.name}
-                        className="rounded-full object-cover border border-gray-200"
-                        width={120}
-                        height={120}
-                      />
-                      <h6 className="text-lg font-normal text-[#0b6481]">
-                        {trainer.name}
-                      </h6>
-                      <p className="text-sm font-[300] leading-[17px]">
-                        {trainer.designation}
-                      </p>
-                      <div className=" rounded p-3 mt-2  px-5 bg-white">
+
+          <div className="lg:col-span-4 col-span-12 lg:block mt-4 lg:mt-0">
+            <Zoom cascade triggerOnce>
+              <Swiper spaceBetween={20} slidesPerView={1} loop={true}></Swiper>
+              <Swiper
+                modules={[Navigation, Scrollbar, A11y, Autoplay]}
+                spaceBetween={2}
+                autoplay={true}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                  },
+                  520: {
+                    slidesPerView: 1,
+                  },
+
+                  950: {
+                    slidesPerView: 1,
+                  },
+                }}
+                pagination={{ clickable: true }}
+              >
+                {trainers.map((trainer, idx) => (
+                  <SwiperSlide key={idx}>
+                    <div className="rounded-md p-4  shadow-md relative overflow-hidden svg-background">
+                      <div className="relative  flex flex-col items-center text-center space-y-3">
+                        <Image
+                          src={trainer.image}
+                          alt={trainer.name}
+                          className="rounded-full object-cover border border-gray-200"
+                          width={120}
+                          height={120}
+                        />
+                        <h6 className="text-lg font-normal text-[#0b6481]">
+                          {trainer.name}
+                        </h6>
                         <p className="text-sm font-[300] leading-[17px]">
-                          Areas of expertise : {trainer.expertise}
+                          {trainer.designation}
                         </p>
+                        <div className=" rounded p-3 mt-2  px-5 bg-white">
+                          <p className="text-sm font-[300] leading-[17px]">
+                            Areas of expertise : {trainer.expertise}
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </Zoom>
 
-            <Image alt="Cyber Security And Ethical Hacking " src={Banner} />
+            <Image
+              alt="Cyber Security And Ethical Hacking"
+              src={Banner}
+              className="w-full lg:w-auto"
+            />
           </div>
-          
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
         {" "}
-        <p className="text-[24px] leading-9 font-semibold mt-5">
+        <p className="lg:text-[24px] md:text-[20px] text-[20px] leading-9 font-semibold mt-5">
           Be a Freelancer on Cyber Security
         </p>
         <div className="my-5">
@@ -416,8 +365,8 @@ const CyberSecurity = () => {
         </div>
       </div>
       <div className="lg:px-3 md:px-5 px-3 pt-10">
-        <div className="md:flex gap-5">
-          <article className="md:w-[50%] w-full">
+        <div className="lg:flex gap-5">
+          <article className="lg:w-[50%] w-full">
             <details className="details " open>
               <summary className="summary py-5 text-white font-semibold px-7">
                 সাইবার সিকিউরিটি পরিচিতি{" "}
@@ -553,7 +502,7 @@ const CyberSecurity = () => {
               </p>
             </details>
           </article>
-          <article className="md:w-[50%] w-full h-full mt-3 md:mt-0">
+          <article className="lg:w-[50%] w-full h-full mt-3 md:mt-0">
             <Image
               alt="Tanjim Al Fahim"
               src={Tanjim}
@@ -566,12 +515,10 @@ const CyberSecurity = () => {
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
         {" "}
-        <p className="text-[24px] leading-9 font-semibold mt-5">
+        <p className="lg:text-[24px] md:text-[20px] text-[20px] leading-9 font-semibold mt-5">
           Be a Freelancer on Cyber Security
         </p>
         <div className="my-5">
-          {/* <EnrollComponent data={['BECOME','An_ETHICAL','HACKER']} /> */}
-
           <Link href="/admission" className="animated-button1  gap-x-2 ">
             <p className="flex gap-x-1 items-center ">
               {" "}
