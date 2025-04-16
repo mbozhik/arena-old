@@ -184,11 +184,15 @@ const MobileNav = ({ uid }) => {
 >
   <div className="container mx-auto flex justify-between font-bold">
     {/* Hamburger Menu - now shows on md and below */}
+ 
     <div
-      className="justify-center relative flex items-center lg:hidden shadow-2xl"
+      className="justify-center relative flex items-center lg:hidden    p-2"
       onClick={() => setNave(true)}
     >
-      <AiOutlineMenu className="text-white text-2xl shadow-xl" />
+      <div className="h-8 p-1  shadow-lg rounded-md border border-white">
+  <AiOutlineMenu className="text-white text-2xl" />
+</div>
+
     </div>
 
     {/* Overlay when mobile nav is open */}
