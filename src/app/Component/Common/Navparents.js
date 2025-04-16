@@ -30,7 +30,8 @@ const Navparents = ({data,uid}) => {
   <a
     target="_blank"
     href="https://www.facebook.com/ArenaBangladesh/"
-    className="float-right border border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-4 py-2  transition duration-300 rounded-lg h-10"
+    className="float-right border border-red-600 text-red-600 hover:bg-red-600 hover:text-white 
+    xl:px-4 py-2  transition duration-300 rounded-lg h-10 xl:text-sm md:text-[12px] px-5"
   >
     Join Our Facebook
   </a>

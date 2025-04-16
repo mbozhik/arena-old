@@ -94,7 +94,7 @@ export function AllServices() {
   All Services
   </h4>
 </div>
-  <div className="grid grid-cols-4 place-content-end justify-center py-10 gap-2">
+  <div className="grid  grid-cols-1 md:grid-cols-2 xl:grid-cols-4 place-content-end justify-center xl:py-10 py-5 gap-2">
   {courses?.map((course, index) => (
         
         <div className="p-2 " key={index}>

@@ -208,7 +208,7 @@ import { IoLocationOutline, IoMail } from 'react-icons/io5';
 const Footer = () => {
   return (
     <footer className="bg-[#26272b] text-[#8d8d8d]   pt-12 pb-8 text-sm leading-6 ">
-      <div className=" container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 border-b border-gray-500/50 pb-8">
+      <div className=" container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 border-b border-gray-500/50 pb-8 leading-4 lg:leading-normal">
         {/* Address */}
         <div>
           <h3 className="text-white text-[24px] font-normal mb-4">Address</h3>

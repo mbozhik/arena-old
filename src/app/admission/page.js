@@ -13,7 +13,7 @@ const page = async () => {
 
   return (
     <div className="px-0 mt-5 max-w-[1280px] mx-auto  shadow-[0px_0px_5px_0px_rgba(0,0,0,0.3)]  my-10 pr-3 rounded-2xl ">
-      <div className="flex h-[90vh] gap-2  ">
+      <div className="flex xl:h-[90vh] lg:h-[50vh] gap-2  ">
         <div className="relative w-[50%] hidden lg:block">
           <div className="px-5 py-6 bg-gradient-to-br from-[#56b5e3] to-[#7d58a5] rounded-s-2xl text-center h-full">
             {/* Admission Info */}

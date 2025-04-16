@@ -147,7 +147,7 @@ const ShortFrom = (e) => {
                 maxLength={255}
               />
             </div> */}
-            {/* <div className="w-full col-span-3  ">
+            {/* <div className="w-full col-span-6 md:col-span-3 ">
               <Input
                 variant="standard"
                 required
@@ -161,7 +161,7 @@ const ShortFrom = (e) => {
                 onInput={(e) => (e.target.value = e.target.value.slice(0, 15))}
               />
             </div> */}
-            <div className="w-full col-span-3">
+            <div className="w-full col-span-6  md:col-span-3">
               <TextField
                 fullWidth
                 required
@@ -186,7 +186,7 @@ const ShortFrom = (e) => {
               />
             </div>
 
-            <div className="w-full col-span-3">
+            <div className="w-full col-span-6 md:col-span-3 mt-3 md:mt-0">
               <TextField
                 fullWidth
                 required
@@ -213,8 +213,8 @@ const ShortFrom = (e) => {
           </div>
 
           <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full col-span-3   mt-2">
-              {/* <div className="w-full col-span-3  relative ">
+            <div className="w-full col-span-6 md:col-span-3  mt-3 md:mt-0 ">
+              {/* <div className="w-full col-span-6 md:col-span-3 relative ">
                 {allcourse ? (
                   <Select
                     required
@@ -250,7 +250,7 @@ const ShortFrom = (e) => {
                   </Select>
                 )}
               </div> */}
-              <div className="w-full col-span-3 relative">
+              <div className="w-full col-span-6 md:col-span-3 relative">
                 <TextField
                   fullWidth
                   required
@@ -296,7 +296,7 @@ const ShortFrom = (e) => {
                 </TextField>
               </div>
             </div>
-            {/* <div className="w-full col-span-3 mt-2">
+            {/* <div className="w-full col-span-6 md:col-span-3mt-2">
               <Input
                 variant="standard"
                 required
@@ -307,7 +307,7 @@ const ShortFrom = (e) => {
                 name="email"
               />
             </div> */}
-            <div className="w-full col-span-3 mt-2">
+            <div className="w-full col-span-6 md:col-span-3 mt-3 md:mt-0">
               <TextField
                 fullWidth
                 required

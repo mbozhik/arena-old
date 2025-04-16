@@ -70,7 +70,7 @@ export function AllCourses() {
           All Courses
         </h4>
       </div>
-      <div className="grid grid-cols-4 place-content-end justify-center py-10 gap-2">
+      <div className="grid md:grid-cols-2 grid-cols-1 xl:grid-cols-4 place-content-end justify-center lg:py-10 gap-2 py-5">
         {courses?.map((course, index) => (
           <div className="p-2 " key={index}>
             <div className="inline-block text-center ">

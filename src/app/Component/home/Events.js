@@ -7,17 +7,17 @@ const Events = async () => {
   const data = await NavberData();
   // console.log(data);
   return (
-    <div className="container   pt-20">
+    <div className="container   xl:pt-20 pt-10">
  <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">        Upcoming Events
       </h5>
-      <h6 className="text-center text-gray-600 text-sm mb-16">
+      <h6 className="text-center text-gray-600 md:text-sm mb-16 text-[10px]">
         Get motivation from leaders and see your success from the window!
       </h6>
 
       <div className="">
         <div className="lg:flex gap-x-4 w-full">
-          <div className=" md:flex gap-x-5 relative py-3 mb-5 border  rounded-xlshadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]">
-            <div className="w-5/12 overflow-hidden ">
+          <div className=" flex gap-x-5 relative py-3 mb-5 border  rounded-xlshadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]">
+            <div className="w-5/12 overflow-hidden h-[150px] md:h-auto">
               <Image
                 src={eventemg}
                 alt="Cyber"
@@ -28,11 +28,11 @@ const Events = async () => {
             <article className="Events w-full  xl:px-3 lg:px-1   lg:h-auto bg-white group px-3 rounded-md ">
               <div className="flex justify-end  sectionSubTitle text-sm font-light mt-2 leading-relaxed">
                 <div>
-                <p className="text-[14px] ">
+                <p className="md:text-[14px] text-[12px]  ">
                   <addr className=" ">Date :</addr>
                   {data && data[0]?.deadline_date_s}
                 </p>
-                <p className="text-[14px]">
+                <p className="md:text-[14px] text-[12px] ">
                   <addr className="">Time :</addr>
                   {data && (
                     <span>
@@ -50,7 +50,7 @@ const Events = async () => {
                   {data && data[0]?.batch_schedule_name}
                 </h4>
               </Link>
-              <p className="pt-0  font-[300] text-sm leading-[17px] lg:pb-2 md:pb-2">
+              <p className="pt-0  font-[300]  text-[10px] md:text-sm leading-[17px] lg:pb-2 md:pb-2">
                 Admission going on for Cyber Security course by Arena Web
                 Academy. The class will start on 21-01-2024. For admission:
                 01310333444
@@ -58,8 +58,8 @@ const Events = async () => {
             </article>
           </div>
          
-           <div className=" md:flex gap-x-5 relative mb-5 border rounded-xl py-3 shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]">
-            <div className="w-5/12 overflow-hidden ">
+           <div className="flex gap-x-5 relative mb-5 border rounded-xl py-3 shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]">
+            <div className="w-5/12 overflow-hidden h-[150px] md:h-auto">
               <Image
                 src={eventemg}
                 alt="Cyber"
@@ -69,13 +69,13 @@ const Events = async () => {
 
             <div className="img-avatar"></div>
 
-            <article className="Events w-full   xl:px-3 lg:px-1   lg:h-auto bg-white group px-3 rounded-md  mt-4 md:mt-0">
+            <article className="Events w-full    xl:px-3 lg:px-1   lg:h-auto  group px-3 rounded-md  mt-4 md:mt-0">
               <div className="flex justify-end sectionSubTitle">
-                <div> <p className="text-[14px] ">
+                <div> <p className="md:text-[14px] text-[12px]  ">
                   <addr className="">Date :</addr>
                   {data && data[1]?.deadline_date_s}
                 </p>
-                <p className="text-[14px] ">
+                <p className="md:text-[14px] text-[12px]  ">
                   <addr className="">Time :</addr>
                   {data && (
                     <span>
@@ -93,7 +93,7 @@ const Events = async () => {
                   {data && data[1]?.batch_schedule_name}
                 </h4>
               </Link>
-              <p className="pt-0 sectionSubTitle text-sm font-[300] lg:pb-2 md:pb-2">
+              <p className="pt-0 sectionSubTitle text-[10px] md:text-sm leading-[17px] font-[300] lg:pb-2 md:pb-2">
                 Admission going on for Cyber Security course by Arena Web
                 Academy. The class will start on 21-01-2024. For admission:
                 01310333444

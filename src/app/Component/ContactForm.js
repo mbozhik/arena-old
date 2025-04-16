@@ -34,7 +34,7 @@ const ContactForm = () => {
 
   };
   return (
-    <div className=" w-[100%]">
+    <div className=" w-[100%] h-auto">
       <form className=" border p-3" onSubmit={(e) => UserLogin(e)}>
         <h1 className="text-[20px] font-normal text-[#6FC0E7] text-center">
         Contact With Us

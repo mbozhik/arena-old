@@ -8,7 +8,7 @@ const page = () => {
     <div className="h-auto container ">
       <div className="shadow-sm bg-gradient-to-r from-[#56b5e3] to-[#7d58a5] rounded-sm py-3 mb-5 mt-5">
         <h4 className="text-[28px] font-medium text-white text-center my-4 font-poppins">
-          All Courses
+          About AWS
         </h4>
       </div>
       <div className="bg-[#F5F5F5] pt-16 pb-24 px-8 text-[16px] leading-6">
