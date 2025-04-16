@@ -8,15 +8,14 @@ const Events = async () => {
   // console.log(data);
   return (
     <div className="container   pt-20">
-      <h5 className="text-center text-[26px] font-bold text-[#0b6481]  mb-2">
-        Upcoming Events
+ <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">        Upcoming Events
       </h5>
       <h6 className="text-center text-gray-600 text-sm mb-16">
         Get motivation from leaders and see your success from the window!
       </h6>
 
       <div className="">
-        <div className="flex gap-x-4 w-full">
+        <div className="lg:flex gap-x-4 w-full">
           <div className=" md:flex gap-x-5 relative py-3 mb-5 border  rounded-xlshadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]">
             <div className="w-5/12 overflow-hidden ">
               <Image
@@ -47,7 +46,7 @@ const Events = async () => {
               </div>
 
               <Link href="cyber-security">
-                <h4 className="lg:font-semibold text-[#0b6481] text-[20px] pt-2 pb-2 group-hover:text-blue-400">
+                <h4 className="xl:font-semibold md:font-medium text-[#0b6481] md:text-[16px] xl:text-[20px] pt-2 pb-2 group-hover:text-blue-400">
                   {data && data[0]?.batch_schedule_name}
                 </h4>
               </Link>
@@ -90,7 +89,7 @@ const Events = async () => {
               </div>
 
               <Link href="python">
-                <h4 className="lg:font-semibold text-[#0b6481] text-[20px] pt-5 pb-2 hover:text-blue-400">
+                <h4 className="xl:font-semibold md:font-medium text-[#0b6481]  md:text-[16px] xl:text-[20px] pt-5 pb-2 hover:text-blue-400">
                   {data && data[1]?.batch_schedule_name}
                 </h4>
               </Link>

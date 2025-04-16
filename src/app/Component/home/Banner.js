@@ -32,7 +32,7 @@ export default function CarouselComponent() {
   }, []);
 
   return (
-    <div className="relative overflow-hidden h-[60vh] ">
+    <div className="relative overflow-hidden xl:h-[60vh] h-[30vh]">
       {banners.map((banner, index) => (
         <div
           key={index}
@@ -41,9 +41,9 @@ export default function CarouselComponent() {
           }`}
         >
           <img src={banner.src} alt="slide" className="w-full object-cover TopBanner" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 container mx-auto">
-            <h4 className="text-[44px] leading-[53px] font-bold">{banner.title}</h4>
-            <p className="text-[20px] leading-7 mt-1">{banner.subtitle}</p>
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 container mx-auto md:px-10 xl:px-0">
+            <h4 className=" md:text-[42px] xl:text-[44px] md:leading-[50px] xl:leading-[53px] font-bold">{banner.title}</h4>
+            <p className=" md:text-[26px] xl:text-[20px] leading-7 mt-1">{banner.subtitle}</p>
             <p className="text-[14px] text-gray-800 mt-4">{banner.description}</p>
           </div>
         </div>

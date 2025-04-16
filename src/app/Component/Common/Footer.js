@@ -207,8 +207,8 @@ import { IoLocationOutline, IoMail } from 'react-icons/io5';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#26272b] text-[#8d8d8d] px-4 md:px-16 pt-12 pb-8 text-sm leading-6 ">
-      <div className=" container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-500/50 pb-8">
+    <footer className="bg-[#26272b] text-[#8d8d8d]   pt-12 pb-8 text-sm leading-6 ">
+      <div className=" container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 border-b border-gray-500/50 pb-8">
         {/* Address */}
         <div>
           <h3 className="text-white text-[24px] font-normal mb-4">Address</h3>
@@ -231,10 +231,25 @@ const Footer = () => {
               <span className='text-[16px] leading-[22px] font-[300] text-[#8d8d8d]'>www.arenawebsecurity.net</span>
             </li>
           </ul>
+          <h3 className="text-white text-lg font-medium mb-4 mt-16 md:block xl:hidden">Technologies</h3>
+          <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d] md:block xl:hidden">
+            {[
+              'React, Vue Js, jQuery',
+              'Python, Node.js, Php',
+              'SQL, MySQL, FireBase, SQLite',
+              'Java, Dart, Flutter',
+              'UI/UX',
+            ].map(tech => (
+              <li key={tech} className="flex items-center gap-2 hover:text-[#29aafe] transition">
+                 <FaArrowRight className=" text-[#715296] text-[16px]" />
+                {tech}
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Information */}
-        <div>
+        <div className='md:hidden xl:block'>
           <h3 className="text-white text-lg font-medium mb-4">Information</h3>
            <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
             {['About Us', 'Contact', 'FAQ', 'Career', 'Blog', 'Service', 'Gallery', 'Privacy Policy'].map(item => (
@@ -248,7 +263,18 @@ const Footer = () => {
 
         {/* Our Courses */}
         <div>
-          <h3 className="text-white text-lg font-medium mb-4">Our Courses</h3>
+        <div className='md:block xl:hidden'>
+          <h3 className="text-white text-lg font-medium mb-4">Information</h3>
+           <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
+            {['About Us', 'Contact', 'FAQ', 'Career', 'Blog', 'Service', 'Gallery', 'Privacy Policy'].map(item => (
+              <li key={item} className="flex items-center gap-2 hover:text-[#29aafe] transition">
+                 <FaArrowRight className=" text-[#715296] text-[16px]" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+          <h3 className="text-white text-lg font-medium mb-4 md:mt-6 xl:mt-0">Our Courses</h3>
            <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
             {['Cyber Security', 'Advanced Cyber Security', 'Advanced Python', 'C|OSINT', 'Linux', 'Networking Security'].map(course => (
               <li key={course} className="flex items-center gap-2 hover:text-[#29aafe] transition">
@@ -257,8 +283,8 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-          <h3 className="text-white text-lg font-medium mb-4 mt-10">Technologies</h3>
-          <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
+          <h3 className="text-white text-lg font-medium mb-4 mt-10 md:hidden xl:block">Technologies</h3>
+          <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d] md:hidden xl:block">
             {[
               'React, Vue Js, jQuery',
               'Python, Node.js, Php',

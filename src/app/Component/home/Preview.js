@@ -12,8 +12,7 @@ const Preview = () => {
         <div className=" ">
           <article className="pl-5 py-2">
            
-            <h5 className="text-center text-[26px] font-bold text-[#0b6481]  mb-2">
-            Preview of Your Future
+       <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">            Preview of Your Future
       </h5>
       <h6 className="text-center text-gray-600 text-sm mb-16">
       Our dream is to make Cyber heros.Beside this we decided to reduce the security of unemployment rate in our country. Different marketplaces has so many demands on IT security related work. We focus on our learners, we make a path for them to earn money and built their own career.

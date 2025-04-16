@@ -16,8 +16,7 @@ const OurConcern = () => {
   return (
     <div className=" lg:mt-12 md:mt-8 container relative  bg-[#fbfcfd] pb-16">
       <div className="">
-        <h5 className="text-center text-[26px] font-bold text-[#0b6481]  mb-2">
-          Our Concerns
+   <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">          Our Concerns
         </h5>
         <h6 className="text-center text-gray-600 text-sm mb-16">
           We starting a project by maturing of project plans and researching the

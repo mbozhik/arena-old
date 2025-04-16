@@ -103,8 +103,7 @@ const Services = () => {
 
   return (
     <div className="container  mx-auto  pt-20">
-      <h5 className="text-center text-[26px] font-bold text-[#0b6481]  mb-2">
-      Our Services
+ <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">      Our Services
       </h5>
       <h6 className="text-center text-gray-600 text-sm mb-16">
       Get motivation from leaders and see your success from the window!

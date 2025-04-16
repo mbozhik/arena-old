@@ -251,7 +251,7 @@ const Combo= () => {
                 <hr className="mt-2" />
               </div>
               <div className="grid grid-cols-2 justify-between gap-x-5">
-                <ul className="mt-3 text-[[16px] leading-5 font-[300] text-[#424242] ">
+                <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />

@@ -40,13 +40,12 @@ const MobileNav = ({ uid }) => {
   return (
     <div className={`md:flex ${!scrolling && pathname==='/' ?'navber2 ':'navber2'} lg:px-10 md:px-5 relative font-bold `}>
       <div className="container mx-auto flex justify-between font-bold ">
-      {/* <article className=" flex items-center">
-        <Image
-          src={Logo}
-          alt="Arena-Logo"
-          className="w-20 h-8 md:w-auto md:h-auto "
-        />
-      </article> */}
+      <div
+        className="  justify-center   relative flex items-center md:hidden shadow-2xl"
+        onClick={() => setNave(true)}
+      >
+        <AiOutlineMenu className="text-white text-2xl  shadow-xl" />
+      </div>
       <div
         className={`${
           nav ? "h-full w-full blur fixed top-0 left-0" : ""
@@ -58,9 +57,9 @@ const MobileNav = ({ uid }) => {
         <ul
           className={`md:flex block peer z-50  text-white font-bold ${
             nav
-              ? "translate-x-0 md:translate-x-0"
-              : "translate-x-96 md:translate-x-0 "
-          } transition-all duration-350 ease-in-out  gap-x-4 bg-[#331E6D] md:bg-transparent fixed md:relative lg:relative top-0 right-0 h-screen md:h-auto    w-2/3 md:w-auto pt-10 pl-5 md:pt-0 md:pl-0 `}
+              ? "-translate-x-0 md:translate-x-0"
+              : "-translate-x-96 md:translate-x-0 "
+          } transition-all duration-350 ease-in-out  gap-x-4 bg-gradient-to-t from-[#56b5e3] to-[#7d58a5]  md:bg-transparent fixed md:relative lg:relative top-0 left-0 h-screen md:h-auto    w-2/3 md:w-auto pt-10 pl-5 md:pt-0 md:pl-0 `}
         >
           <div className="block md:hidden text-white absolute right-5 top-3 text-3xl">
             <IoIosCloseCircle onClick={() => setNave(false)}></IoIosCloseCircle>
@@ -254,7 +253,7 @@ const MobileNav = ({ uid }) => {
             <li>
               <Link href="/admission" className="">
                 {" "}
-                <span className={`${!scrolling && pathname==='/'?'  navB':'navBtn'} `}>Apply Now</span>
+                <span className={`${!scrolling && pathname==='/'?' navBtn':'navBtn'} `}>Apply Now</span>
               </Link>
             </li>
           )}
@@ -277,12 +276,7 @@ const MobileNav = ({ uid }) => {
         </ul>
       </article>
 
-      <div
-        className="  justify-center   relative flex items-center md:hidden"
-        onClick={() => setNave(true)}
-      >
-        <AiOutlineMenu className="text-white text-2xl menu-bar" />
-      </div>
+     
       
      
      

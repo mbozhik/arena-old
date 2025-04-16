@@ -67,8 +67,8 @@ const OurCourses = () => {
 
 
   return (
-    <div className="container mx-auto   pt-20">
-      <h5 className="text-center text-[26px] font-bold text-[#0b6481]  mb-2">
+    <div className="container mx-auto   xl:pt-20  xl:px-0 ">
+      <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">
         Our Courses
       </h5>
       <h6 className="text-center text-gray-600 text-sm mb-16">
@@ -132,7 +132,7 @@ const OurCourses = () => {
                   >
                     {course.title}
                   </Link>
-                  <p className=" text-sm font-[300] mt-2 leading-[22px]">
+                  <p className=" text-sm font-[300] mt-2 xl:leading-[22px] md:leading-[17px]">
                     {course.description}
                   </p>
                 </div>

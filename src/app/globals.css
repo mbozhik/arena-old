@@ -61,7 +61,7 @@ body {
   display: flex;
   font-weight: 700 !important;
   justify-content: space-between;
-  padding: 12px 40px;
+  /* padding: 12px 40px; */
   height: 70px;
   top: 0 !important;
 }
@@ -760,6 +760,21 @@ body {
   );
   top: 15px;
   left: 130px;
+}
+@media (max-width: 1080px) {
+  .img-avatar {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 50%;
+    border: 6px solid white;
+    background-image: linear-gradient(
+      rgba(86, 181, 227, 100),
+      rgba(125, 88, 165, 100)
+    );
+    top: 15px;
+    left: 130px;
+  }
 }
 .svg-background {
   background-image: url("/file/liquid-cheese.svg");
