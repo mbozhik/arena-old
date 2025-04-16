@@ -45,7 +45,7 @@ const Events = async () => {
                 
               </div>
 
-              <Link href="cyber-security">
+              <Link href="cyber-security-ethical-hacking">
                 <h4 className="xl:font-semibold md:font-medium text-[#0b6481] md:text-[16px] xl:text-[20px] pt-2 pb-2 group-hover:text-blue-400">
                   {data && data[0]?.batch_schedule_name}
                 </h4>
@@ -88,7 +88,7 @@ const Events = async () => {
                
               </div>
 
-              <Link href="python">
+              <Link href="advance-python-with-django">
                 <h4 className="xl:font-semibold md:font-medium text-[#0b6481]  md:text-[16px] xl:text-[20px] pt-5 pb-2 hover:text-blue-400">
                   {data && data[1]?.batch_schedule_name}
                 </h4>
