@@ -46,7 +46,7 @@ const Time = ({CreateDates,activeday}) => {
     return (
         <div>
     <div className="absolute left-1/2 top-40 transform -translate-x-1/2 ">
-    <div className=" mt-16 flex justify-between items-center gap-x-20">
+    <div className=" mt-16 flex justify-between items-center md:gap-x-20 gap-x-6">
         <div className=" text-center" >
             <h3 className="text-white text-3xl font-bold">{day}</h3>
             <p className="text-[#3ED089] mt-1 text-1xl font-bold">Day</p>

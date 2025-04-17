@@ -148,7 +148,7 @@ const Login = () => {
     //     </button>
     //   </form>
     // </div>
-    <div className="lg::w-[50%] w-full px-3 md:px-0 mx-auto shadow-[0px_0px_5px_0px_rgba(0,0,0,0.1)] rounded-lg ">
+    <div className="lg:w-[50%] w-full px-3 md:px-0 mx-auto shadow-[0px_0px_5px_0px_rgba(0,0,0,0.1)] rounded-lg ">
   <form
     className=" m-5  "
     onSubmit={(e) => UserLogin(e)}

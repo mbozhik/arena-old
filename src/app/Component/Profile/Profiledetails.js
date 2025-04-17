@@ -51,7 +51,7 @@ const Profiledetails = async ({ data, paymetdata }) => {
         </div>
 
         <div className="p-5 space-y-2">
-          <div className="grid grid-cols-5 gap-y-3 gap-x-4 p-5">
+          <div className="grid grid-cols-5 gap-y-3 gap-x-4 lg:p-5">
             <span className="font-medium">Name:</span>
             <span className="col-span-4">{data?.data.Fullname}</span>
 
