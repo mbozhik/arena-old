@@ -20,7 +20,7 @@ const page = async () => {
 
   return (
     <div className="relative container">
-      {data?.data.admission === false ? (
+      {data?.data.admission === true ? (
         <></>
       ) : (
         <>
@@ -32,7 +32,7 @@ const page = async () => {
         </>
       )}
 
-      <div className={data?.data.admission === false ? "mt-20" : ""}>
+      <div className={data?.data.admission === true ? "mt-20" : ""}>
         <Profiledetails data={data} paymetdata={paymetdata} />
       </div>
 

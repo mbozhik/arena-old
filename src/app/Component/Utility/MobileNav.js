@@ -35,7 +35,20 @@ const MobileNav = ({ uid }) => {
     transition: "background-color 0.3s ease",
     padding: "10px 0", // Add any other styles you need
   };
+  // Prevent body scroll when the menu is open
+  useEffect(() => {
+    if (nav) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
+    // Cleanup function to reset overflow style when component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+    
+  }, [nav]);
   return (
     // <div
     //   className={`md:flex ${

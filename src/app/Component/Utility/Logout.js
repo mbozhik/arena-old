@@ -8,7 +8,7 @@ const cookiesdelete=()=>{
 }
     return (
      
-             <p className="navBtn cursor-pointer" onClick={cookiesdelete}>Log Out</p>
+             <span className="navBtn cursor-pointer" onClick={cookiesdelete}>Log Out</span>
         
     );
 };
