@@ -90,7 +90,8 @@ const Osint = () => {
       <div className="flex px-3 shadow-md mb-10 pb-5">
         <div className="grid  grid-cols-12 gap-x-2 w-full  lg:mt-16 mt-8">
           <div className=" lg:col-span-8 col-span-12 lg:px-3">
-            {" "}
+            
+
             {/*KEY FEATURES  */}
             <div className="relative animate-fadeInDown">
               <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
@@ -109,7 +110,8 @@ const Osint = () => {
             <article className="p-1">
               <div className="relative">
                 <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  {" "}
+                  
+
                   Certified in Open Source Intelligence (C|OSINT) (Module)
                 </h3>
                 <hr className="mt-2" />
@@ -132,7 +134,8 @@ const Osint = () => {
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>
-                        {" "}
+                        
+
                         Counterintelligence techniques used by the criminal
                         elements
                       </span>
@@ -142,7 +145,8 @@ const Osint = () => {
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>
-                        {" "}
+                        
+
                         Archiving methodologies and tools and methods for
                         obtaining archived pages & hidden information
                       </span>
@@ -152,7 +156,8 @@ const Osint = () => {
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>
-                        {" "}
+                        
+
                         Advance search methods for blogs and social networks
                       </span>
                     </div>
@@ -229,7 +234,8 @@ const Osint = () => {
           </div>
 
           <div className="lg:col-span-4 col-span-12 lg:block mt-4 lg:mt-0">
-            {" "}
+            
+
             <Swiper spaceBetween={20} slidesPerView={1} loop={true}></Swiper>
             <Swiper
               modules={[Navigation, Scrollbar, A11y, Autoplay]}

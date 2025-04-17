@@ -76,7 +76,8 @@ const Python = () => {
       <div className="flex px-3">
         <div className="grid  grid-cols-12 gap-x-2 w-full  lg:mt-16 mt-8">
           <div className=" lg:col-span-8 col-span-12 lg:px-3">
-            {" "}
+            
+
             {/*KEY FEATURES  */}
             <div className="relative animate-fadeInDown">
               <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
@@ -94,7 +95,8 @@ const Python = () => {
             <article className="p-1">
               <div className="relative">
                 <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  {" "}
+                  
+
                   Advance Python with Django and Scrapping (Module)
                 </h3>
                 <hr className="mt-2" />
@@ -207,7 +209,8 @@ const Python = () => {
                         <FaHandPointRight className="text-[#715296] text-xl min-w-[16px] mt-1" />
 
                         <span>
-                          {" "}
+                          
+
                           introduction to Django Introduction to Back-End Web
                           Development <br />
                           using Django
@@ -292,7 +295,8 @@ const Python = () => {
           </div>
 
           <div className="lg:col-span-4 col-span-12 lg:block mt-4 lg:mt-0">
-            {" "}
+            
+
             <Swiper spaceBetween={20} slidesPerView={1} loop={true}></Swiper>
             <Swiper
               modules={[Navigation, Scrollbar, A11y, Autoplay]}
@@ -353,14 +357,16 @@ const Python = () => {
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
-        {" "}
+        
+
         <p className="xl:text-[24px] lg:text-[22px] text-[20px] leading-9 font-semibold mt-5">
           Become a Python Specialist
         </p>
         <div className="my-5">
           <Link href="/admission" className="animated-button1  gap-x-2 ">
             <p className="flex gap-x-1 items-center ">
-              {" "}
+              
+
               <MdPersonAddAlt1 className="text-2xl" />
               ENROLL NOW
             </p>

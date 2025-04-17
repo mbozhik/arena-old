@@ -54,11 +54,13 @@ const HwPanelToAwsSite = () => {
                 <span className="text-primary">{studentName}</span>
               </h6>
               <h6>
-                <span className="font-semibold">Email:</span>{" "}
+                <span className="font-semibold">Email:</span>
+
                 <span className="text-primary">{studentEmail}</span>
               </h6>
               <h6>
-                {" "}
+                
+
                 <span className="font-semibold">Phone: </span>
                 <span className="text-primary">{studentPhone}</span>
               </h6>

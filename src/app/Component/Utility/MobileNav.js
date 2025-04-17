@@ -86,7 +86,8 @@ const MobileNav = ({ uid }) => {
     //           className="hover:text-black mt-5 md:mt-0"
     //           onClick={() => setNave(false)}
     //         >
-    //           {" "}
+    //           
+
     //           <Link href="/">Home</Link>
     //         </li>
     //         <li
@@ -118,12 +119,14 @@ const MobileNav = ({ uid }) => {
     //           <Link href="/arena-gallery" onClick={() => setNave(false)}>
     //             Gallery
     //           </Link>
-    //         </li>{" "}
+    //         </li>
+
     //         <li className="hover:text-black mt-2 md:mt-0">
     //           <Link href="/contact" onClick={() => setNave(false)}>
     //             Contact
     //           </Link>
-    //         </li>{" "}
+    //         </li>
+
     //         {uid && (
     //           <li className="hover:text-black">
     //             <Link href="/profile" onClick={() => setNave(false)}>
@@ -133,7 +136,8 @@ const MobileNav = ({ uid }) => {
     //         )}
     //         {uid ? (
     //           <li className="mt-5 md:hidden  " onClick={() => setNave(false)}>
-    //             {" "}
+    //             
+
     //             {/* <span className="navBtn " >Log Out</span> */}
     //             <LogOut />
     //           </li>
@@ -143,7 +147,8 @@ const MobileNav = ({ uid }) => {
     //             onClick={() => setNave(false)}
     //           >
     //             <Link href="/admission" className="">
-    //               {" "}
+    //               
+
     //               <span className="navBtn ">Apply Now</span>
     //             </Link>
     //           </li>
@@ -154,13 +159,15 @@ const MobileNav = ({ uid }) => {
     //       <ul className="flex text-white font-semibold gap-x-4 ">
     //         {uid ? (
     //           <li className=" mt-2 md:mt-0   ">
-    //             {" "}
+    //             
+
     //             <LogOut />
     //           </li>
     //         ) : (
     //           <li>
     //             <Link href="/admission" className="">
-    //               {" "}
+    //               
+
     //               <span
     //                 className={`${
     //                   !scrolling && pathname === "/" ? " navBtn" : "navBtn"

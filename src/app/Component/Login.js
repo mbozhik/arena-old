@@ -131,7 +131,8 @@ const Login = () => {
     //       )}
     //     </div>
     //     <p className=" text-right ">
-    //       Don not have an ID?{" "}
+    //       Don not have an ID?
+
     //       <Link href="admission" className="text-blue-400 font-semibold">
     //         Apply Now!
     //       </Link>
@@ -204,7 +205,8 @@ const Login = () => {
 
     {/* Link */}
     <p className=" mx-auto text-right text-sm text-gray-600">
-      Don’t have an ID?{" "}
+      Don’t have an ID?
+
       <Link href="admission" className="text-blue-500 font-semibold">
         Apply Now!
       </Link>

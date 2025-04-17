@@ -19,7 +19,8 @@ const EnrollComponent = ({ data }) => {
       <div className="text-center">
         {First.map((letter, index) => (
           <span className="span" key={index} style={{ "--i": index + 1 }}>
-            {letter}{" "}
+            {letter}
+
           </span>
         ))}
         {First2.map((spen, index) => (
@@ -31,7 +32,8 @@ const EnrollComponent = ({ data }) => {
         {/* <span  className='ml-2'>Ethical </span> */}
         {Lastst.map((letter, index) => (
           <span className="span" key={index} style={{ "--i": index + 1 }}>
-            {letter}{" "}
+            {letter}
+
           </span>
         ))}
         {/* <addr> an Ethical Hacker</addr> */}

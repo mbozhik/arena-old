@@ -68,13 +68,13 @@ const Linax = () => {
         <div className="lg:xl:text-[24px] lg:text-[22px] text-[20px] md:text-[20px]   font-semibold leading-9 text-[#424242]">
           Linax
         </div>
-      </div>{" "}
+      </div>
      
       {/* Course Module */}
       <div className="flex px-3 shadow-md mb-10 pb-5">
         <div className="grid  grid-cols-12 gap-x-2 w-full  lg:mt-16 mt-8">
           <div className=" lg:col-span-8 col-span-12 lg:px-3">
-            {" "}
+         
             {/*KEY FEATURES  */}
             <div className="relative animate-fadeInDown">
               <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
@@ -93,7 +93,7 @@ const Linax = () => {
             <article className="p-1">
               <div className="relative">
                 <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  {" "}
+               
                   Kali Linux-Penetration Testing (Module)
                 </h3>
                 <hr className="mt-2" />
@@ -118,7 +118,7 @@ const Linax = () => {
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>
-                        {" "}
+                     
                         Introduction into the latest hacking tools and
                         techniques
                       </span>
@@ -142,7 +142,7 @@ const Linax = () => {
             <article className="p-1">
               <div className="relative">
                 <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  {" "}
+               
                   Who is the course for?
                 </h3>
                 {/* <hr className="mt-2" /> */}
@@ -153,7 +153,7 @@ const Linax = () => {
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>
-                        {" "}
+                     
                         Infosec professionals transitioning into penetration
                         testing
                       </span>
@@ -191,11 +191,11 @@ const Linax = () => {
             <article className="p-1">
               <div className="relative">
                 <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  {" "}
+               
                   About The Exam
                 </h3>
                 <p className="mt-2  text-[16px] leading-5 font-[300] text-[#424242]">
-                  {" "}
+               
                   The KLIN-ACS course and online lab prepares you for the AWCP
                   certification 24-hour exam Proctored.
                 </p>
@@ -204,7 +204,7 @@ const Linax = () => {
             <article className="p-1">
               <div className="relative">
                 <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  {" "}
+               
                   Course Requirements
                 </h3>
                 <p className="mt-2  text-[16px] leading-5 font-[300] text-[#424242]">
@@ -257,7 +257,7 @@ const Linax = () => {
           </div>
 
           <div className="lg:col-span-4 col-span-12 lg:block mt-4 lg:mt-0">
-            {" "}
+         
             <Swiper spaceBetween={20} slidesPerView={1} loop={true}></Swiper>
             <Swiper
               modules={[Navigation, Scrollbar, A11y, Autoplay]}

@@ -79,7 +79,8 @@ const Events = async () => {
                   <addr className="">Time :</addr>
                   {data && (
                     <span>
-                      {" "}
+                      
+
                       {data && data[1]?.time_from}- {data[1]?.time_to}
                       <br /> {data && data[1]?.day_from}-{data[1]?.day_to}
                     </span>

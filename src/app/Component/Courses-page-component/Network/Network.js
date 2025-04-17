@@ -92,7 +92,8 @@ const Network = () => {
       <div className="flex px-3 shadow-md mb-10 pb-5">
         <div className="grid  grid-cols-12 gap-x-2 w-full  lg:mt-16 mt-8">
           <div className="  col-span-12 lg:px-3">
-            {" "}
+            
+
             {/*KEY FEATURES  */}
             <div className="relative animate-fadeInDown">
               <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
@@ -114,7 +115,8 @@ const Network = () => {
             <article className="p-1">
               <div className="relative">
                 <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  {" "}
+                  
+
                   Networking Security (Module)
                 </h3>
                 <hr className="mt-2" />
@@ -205,7 +207,8 @@ const Network = () => {
           </div>
 
           <div className="lg:col-span-4 col-span-12 lg:block mt-4 lg:mt-0">
-            {" "}
+            
+
             <Swiper spaceBetween={20} slidesPerView={1} loop={true}></Swiper>
             <Swiper
               modules={[Navigation, Scrollbar, A11y, Autoplay]}

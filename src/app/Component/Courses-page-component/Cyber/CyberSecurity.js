@@ -350,14 +350,16 @@ const CyberSecurity = () => {
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
-        {" "}
+        
+
         <p className="lg:text-[24px] md:text-[20px] text-[20px] leading-9 font-semibold mt-5">
           Be a Freelancer on Cyber Security
         </p>
         <div className="my-5">
           <Link href="/admission" className="animated-button1  gap-x-2 ">
             <p className="flex gap-x-1 items-center ">
-              {" "}
+              
+
               <MdPersonAddAlt1 className="text-2xl" />
               ENROLL NOW
             </p>
@@ -369,10 +371,12 @@ const CyberSecurity = () => {
           <article className="lg:w-[50%] w-full">
             <details className="details " open>
               <summary className="summary py-5 text-white font-semibold px-7">
-                সাইবার সিকিউরিটি পরিচিতি{" "}
+                সাইবার সিকিউরিটি পরিচিতি
+
               </summary>
               <p className="text-justify mt-2">
-                {" "}
+                
+
                 <b className="!my-4">সাইবার সিকিউরিটি কি ?</b>
                 <br />
                 ইন্টারনেটে হ্যাকিং বা ম্যালওয়ার অ্যাটাক থেকে নিজে কিংবা নিজের
@@ -393,10 +397,12 @@ const CyberSecurity = () => {
             </details>
             <details className="details mt-4">
               <summary className="summary py-5 text-white font-semibold px-7">
-                কিভাবে শিখবেন সাইবার সিকিউরিটি ?{" "}
+                কিভাবে শিখবেন সাইবার সিকিউরিটি ?
+
               </summary>
               <p className="text-justify mt-2">
-                {" "}
+                
+
                 <b className="!my-4">কিভাবে শিখবেন সাইবার সিকিউরিটি ?</b>
                 <br />
                 সরাসরি সাইবার সিকিউরিটি বিষয়টি আমাদের দেশের বিশ্ববিদ্যালয়ে না
@@ -408,12 +414,14 @@ const CyberSecurity = () => {
                 পেতে গুগল এবং ইউটিউবের সাহায্য নিতে পারেন,ইংরেজি সহ বিভিন্ন
                 ভাষায় সেখানে অসংখ্য রিসোর্স পাওয়া যাবে। প্রয়োজন শুধু ধৈর্য্য ও
                 অনুশীলন। আপনি বাংলায় সাজানো রিসোর্স পেতে চাইলে সাইবার ৭১ এর
-                Learn with Cyber 71{" "}
+                Learn with Cyber 71
+
                 <addr className="text-blue-400">
                   <a href="https://www.youtube.com/c/LearnwithCyber71">
                     ( লিঙ্কঃ https://www.youtube.com/c/LearnwithCyber71 )
                   </a>
-                </addr>{" "}
+                </addr>
+
                 এই ইউটিউব চ্যানেলটি সাবস্ক্রাইব করে রাখতে পারেন। বাংলাতে এখানে
                 সাইবার সিকিউরিটি, ইথিক্যাল হ্যাকিং শীর্ষক কয়েকটি ডেমো ক্লাস
                 রয়েছে। বিদেশি কিছু প্রতিষ্ঠান পরীক্ষার মাধ্যমে সাইবার সিকিউরিটি
@@ -431,10 +439,12 @@ const CyberSecurity = () => {
             </details>
             <details className="details mt-4">
               <summary className="summary py-5 text-white font-semibold px-7">
-                সাইবার সিকিউরিটি পরিচিতি{" "}
+                সাইবার সিকিউরিটি পরিচিতি
+
               </summary>
               <p className="text-justify mt-2">
-                {" "}
+                
+
                 <b className="!my-4">সাইবার সিকিউরিটি কি ?</b>
                 <br />
                 ইন্টারনেটে হ্যাকিং বা ম্যালওয়ার অ্যাটাক থেকে নিজে কিংবা নিজের
@@ -455,10 +465,12 @@ const CyberSecurity = () => {
             </details>
             <details className="details mt-4">
               <summary className="summary py-5 text-white font-semibold px-7">
-                সাইবার সিকিউরিটি পরিচিতি{" "}
+                সাইবার সিকিউরিটি পরিচিতি
+
               </summary>
               <p className="text-justify mt-2">
-                {" "}
+                
+
                 <b className="!my-4">সাইবার সিকিউরিটি কি ?</b>
                 <br />
                 ইন্টারনেটে হ্যাকিং বা ম্যালওয়ার অ্যাটাক থেকে নিজে কিংবা নিজের
@@ -479,10 +491,12 @@ const CyberSecurity = () => {
             </details>
             <details className="details mt-4">
               <summary className="summary py-5 text-white font-semibold px-7">
-                সাইবার সিকিউরিটি পরিচিতি{" "}
+                সাইবার সিকিউরিটি পরিচিতি
+
               </summary>
               <p className="text-justify mt-2">
-                {" "}
+                
+
                 <b className="!my-4">সাইবার সিকিউরিটি কি ?</b>
                 <br />
                 ইন্টারনেটে হ্যাকিং বা ম্যালওয়ার অ্যাটাক থেকে নিজে কিংবা নিজের
@@ -514,14 +528,16 @@ const CyberSecurity = () => {
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
-        {" "}
+        
+
         <p className="lg:text-[24px] md:text-[20px] text-[20px] leading-9 font-semibold mt-5">
           Be a Freelancer on Cyber Security
         </p>
         <div className="my-5">
           <Link href="/admission" className="animated-button1  gap-x-2 ">
             <p className="flex gap-x-1 items-center ">
-              {" "}
+              
+
               <MdPersonAddAlt1 className="text-2xl" />
               ENROLL NOW
             </p>

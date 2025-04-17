@@ -25,10 +25,12 @@ const page = async () => {
               Admission going on
             </h2>
             <p className="text-white mt-1">
-              Duration :{" "}
+              Duration :
+
               <span className="text-[#FBC453] font-semibold text-1xl font-[Poppins]">
                 4 Months
-              </span>{" "}
+              </span>
+
               of Hands-on training
             </p>
             <hr className="my-3 border-black/10 mx-10 " />
