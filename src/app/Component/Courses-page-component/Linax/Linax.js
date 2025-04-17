@@ -53,25 +53,7 @@ const Linax = () => {
       expertise: "Cyber Security",
       image: Sakib,
     },
-    // {
-    //   name: 'Anika Tabassum Nira',
-    //   designation: 'Faculty Member',
-    //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
-    //   image: anika,
-    // },
-    // {
-    //   name: 'Sarwar Alam',
-    //   designation: 'Faculty Member',
-    //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
-    //   image: Ifty,
-    // },
 
-    // {
-    //   name: 'Salman Hafizur Rahman',
-    //   designation: 'Faculty Member',
-    //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
-    //   image: Salman,
-    // },
     {
       name: "Bijoy Mondal",
       designation: "Admin Support",

@@ -96,7 +96,7 @@ const CyberSecurity = () => {
                 </h3>
                 <p className="text-[#424242] font-[300] lg:text-[16px] text-sm leading-[19px] text-justify mt-5">
                   Embark on a journey into the realm of cybersecurity with Arena
-                  Web Security. Whether you're aiming for your first role in IT
+                  Web Security. Whether you are aiming for your first role in IT
                   security, envisioning a full-time career as a white hat
                   hacker, or preparing to strengthen the defenses of your home
                   network, our skills with us and pave the way to a successful
