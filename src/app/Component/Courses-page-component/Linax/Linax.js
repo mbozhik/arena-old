@@ -133,7 +133,7 @@ const Linax = () => {
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Learn the "Try Harder" method and mindset</span>
+                      <span> Learn the Try Harder method and mindset</span>
                     </div>
                   </li>
                 </ul>
