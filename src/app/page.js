@@ -18,7 +18,7 @@ export default function Home() {
     {/* <About /> */}
     <Courses/>
     <Services/>
-    <Events/>
+    {/* <Events/> */}
     <CourseStatistic/>
     <Preview/>
     <OurConcern/>

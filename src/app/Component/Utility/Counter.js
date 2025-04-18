@@ -21,7 +21,7 @@ const Counter = () => {
             onEnter={() => setVisible(true)}
             onExit={() => setVisible(false)}
           >
-            {visible && <CountUp start={0} end={10000} duration={10}></CountUp>}
+            {visible && <CountUp start={8000} end={10000} duration={10}></CountUp>}
           </ScrollTrigger>
           <span>+</span>
         </div>

@@ -24,7 +24,7 @@ const Preview = () => {
       </h6>
            
           </article>
-          <div className="grid grid-cols-2 gap-x-5  ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5  ">
             <Review />
             <div >
                 <Image src={OrderImage } alt="review" className="w-full" />
