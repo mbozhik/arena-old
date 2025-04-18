@@ -16,12 +16,11 @@ const OurConcern = () => {
   return (
     <div className=" lg:mt-12 mt-12 container relative  bg-[#fbfcfd] xl:pb-16 pb-10">
       <div className="">
-   <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">          Our Concerns
+   <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">          Our Valued Clients & Partners
         </h5>
         <h6 className="text-center text-gray-600  text-[10px] md:text-sm mb-16">
-          We starting a project by maturing of project plans and researching the
-          business needs and setting a goal to develop the project accordingly.
-          Prerequisite requirements are our designing thoughts to our concerns.
+        Shaping Digital Security Across Government, Military, Education, and Enterprise Sectors. Proudly protecting Bangladesh since 2012.
+
         </h6>
       </div>
 

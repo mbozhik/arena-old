@@ -246,6 +246,8 @@ const MobileNav = ({ uid }) => {
           { label: "Blog", href: "https://www.hackers.institute/" },
           { label: "Gallery", href: "/arena-gallery" },
           { label: "Contact", href: "/contact" },
+          { label: "Verify Certificate", href: "https://admission.arenawebsecurity.net/" },
+       
         ].map(({ label, href }) => (
           <li
             key={label}

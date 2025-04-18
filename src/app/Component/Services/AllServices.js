@@ -6,83 +6,112 @@ import Image from "next/image";
 import Link from "next/link";
 const courses = [
   {
-    image: cyberSecurity,
-    title: "Cyber Security & Ethical Hacking",
-    link: "/cyber-security-ethical-hacking",
+    image: network,
+    title: "VAPT & Pen Testing",
+    link: "/services/vapt",
     description:
-      "Whether you’re interested in landing your first IT security job, becoming a full-time white hat hacker, or preparing to test the security of your own home network, Arena Web Security offers approachable, hands-on ethical hacking courses to help you keep your networks safe from cyber criminals & make your career at professional marketplace.",
-  },
-  {
-    image: cyberSecurity,
-    title: "Cyber Security Consultancy",
-    link: "/advance-python-with-django",
-    description:
-      "The threats of cyber-attacks are a fact of life and a fact of business. Wipro’s Cyber security and Risk Service can help you stay ahead of the threats and put your customer’s minds at ease. We take an integrated approach to protection that prioritizes not only prevention, but also minimizing risk and controlling loss.",
-  },
-  {
-    image: AdvancedCourse,
-    title: "Software Testing",
-    link: "/advanced-cyber-security-course",
-    description:
-      "Web Application & Website Testing Services, Manual Testing, Test Automation, Mobile Testing, Web Testing, Desktop Testing, Security and Penetration Testing, Game Testing, Documentation, QA and Testing, DevOps. Full-cycle Independent QA and Managed testing Services for web, desktop, mobile apps, server-side systems, and devices.",
+      "Identify, analyze, and exploit vulnerabilities across your applications, networks, or infrastructure to assess real-world risks.",
   },
   {
     image: network,
-    title: "VAPT",
-    link: "/cosint-course",
+    title: "Web Application Security Testing",
+    link: "/services/web-app-security-testing",
     description:
-      "Vulnerability Assessment & Penetration Testing describes a broad range of security assessment services designed to identify & help address cyber security exposures across an organisation’s IT estate. To ensure that you choose the right type of assessment for your company’s needs, it’s important to understand the other types of VAPT services.",
-  },
-  {
-    image: linux,
-    title: "Software Maintenance",
-    link: "/linux-course",
-    description:
-      "The Arena Web Security is your one stop solution for complete software and maintenance services. We ami to provided trusted source to maintain and improve your existing application. When you hire web application maintenance services, you will be assigned a cluster of professional with the vast expertise of application maintenance services.",
+      "Secure your web platforms against OWASP Top 10 vulnerabilities and other business logic flaws.",
   },
   {
     image: network,
-    title: "Software Development",
-    link: "/networking-course",
+    title: "Mobile Application Security Testing",
+    link: "/services/mobile-app-security-testing",
     description:
-      "Software development services are aimed at designing, engineering, deploying, supporting, and evolving various software types. We are develops quality software services – software consulting, cloud migration, app integration, and more. We serve mid and large enterprises and software product companies across multiple industries.",
+      "Perform security assessments of Android and iOS apps, including static and dynamic analysis.",
   },
   {
     image: network,
-    title: "Networking Security Service (NSS)",
-    link: "/networking-course",
+    title: "Network Security Assessment",
+    link: "/services/network-security-assessment",
     description:
-      "Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSL v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X. 509 v3 certificates, and other security standards.",
+      "Evaluate internal and external network configurations for potential exploits, weak protocols, and misconfigurations.",
   },
   {
     image: network,
-    title: "Mobile App Development",
-    link: "/networking-course",
+    title: "Cloud Security Assessment",
+    link: "/services/cloud-security-assessment",
     description:
-      "We have leading mobile app developers who always stay up-to-date with the latest technology trends to serving firms across the globe. While our analysts make qualitative and quantitative market study and well-researched forecasts for mobile app market fluctuations, our developers and designers craft stunning for our clients.",
+      "Audit your cloud environments (AWS, Azure, GCP) to ensure compliance, visibility, and security best practices.",
   },
   {
     image: network,
-    title: "Ecommerce Solution",
-    link: "/networking-course",
+    title: "Social Media & OSINT Monitoring",
+    link: "/services/osint-monitoring",
     description:
-      "Our Ecommerce development services cater to multi-disciplinary requirements of performance, security, scalability and usability. Our SEO experts optimize the top selling products of your store with an on-page and off-page Ecommerce SEO strategy that drives loads of organic traffic to your website.",
+      "Detect fake profiles, impersonation, threats, and sensitive leaks through open-source intelligence.",
   },
   {
     image: network,
-    title: "SEO",
-    link: "/networking-course",
+    title: "Red Teaming & Adversary Simulation",
+    link: "/services/red-teaming",
     description:
-      "SEO is not magic. Google doesn't randomly decide which website's go to the top of the search results. The algorithm adjusts rankings based on several factors. Our SEO campaigns optimize for each of those factors to show Google your website has what it's looking for.",
+      "Simulate real-world attacks to test your organization’s detection and response capabilities.",
   },
   {
     image: network,
-    title: "UI/UX & Graphics Design",
-    link: "/networking-course",
+    title: "Security Awareness Training",
+    link: "/services/security-awareness-training",
     description:
-      "We design user friendly and intuitive interfaces expected by today’s consumer using the latest UX and UI best practices. Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers. Turn to Arena Web Security’s UI and UX services.",
+      "Educate employees through phishing simulations, workshops, and threat understanding sessions.",
+  },
+  {
+    image: network,
+    title: "Incident Response & Forensics",
+    link: "/services/incident-response-forensics",
+    description:
+      "React fast to cyber incidents with expert-led digital forensics and root-cause analysis.",
+  },
+  {
+    image: network,
+    title: "Endpoint Security & EDR Implementation",
+    link: "/services/endpoint-security",
+    description:
+      "Protect workstations and servers with advanced detection, response, and endpoint hardening solutions.",
+  },
+  {
+    image: network,
+    title: "Firewall & Perimeter Security Configuration",
+    link: "/services/firewall-security",
+    description:
+      "Set up and review firewalls, IDS/IPS, and security appliances for effective network protection.",
+  },
+  {
+    image: network,
+    title: "Dark Web Monitoring",
+    link: "/services/dark-web-monitoring",
+    description:
+      "Detect compromised credentials, leaks, and threats emerging from the dark web ecosystem.",
+  },
+  {
+    image: network,
+    title: "Security Compliance & Policy Design",
+    link: "/services/security-compliance",
+    description:
+      "Assist in achieving ISO 27001, GDPR, NIST, or other regulatory frameworks.",
+  },
+  {
+    image: network,
+    title: "Cybersecurity Consultancy",
+    link: "/services/cybersecurity-consultancy",
+    description:
+      "Strategic advisory for CISOs, IT heads, or startup founders to design and improve cybersecurity infrastructure.",
+  },
+  {
+    image: network,
+    title: "Managed Security Services (MSSP)",
+    link: "/services/managed-security-services",
+    description:
+      "Ongoing threat monitoring, detection, and mitigation with 24/7 SOC support.",
   },
 ];
+
 export function AllServices() {
   return (
    
@@ -90,10 +119,60 @@ export function AllServices() {
  
  <div className="container">
       <div className="shadow-sm bg-gradient-to-r from-[#56b5e3] to-[#7d58a5] rounded-sm py-3 mb-5 mt-5">
-  <h4 className="text-[28px] font-medium text-white text-center my-4 font-poppins">
-  All Services
+  <h4 className=" text-[22px] lg:text-[28px] font-medium text-white text-center my-4 font-poppins">
+  Our Cybersecurity Services
+
   </h4>
+  
 </div>
+<details className="details bg-[#f0efef] rounded-md overflow-hidden">
+  <summary className="summary py-5 text-white  font-semibold px-7 cursor-pointer">
+    Get Services
+  </summary>
+
+  <div className="px-7 pb-6 mt-5 text-sm space-y-3 leading-relaxed">
+    <div>
+      <p className="font-medium text-base">Arena Web Security</p>
+      <p>House No-1, BLOCK-B</p>
+      <p>Banasree, Main Road Rampura</p>
+      <p>Dhaka - 1219</p>
+    </div>
+
+    <div>
+      <p className="font-medium">Phone</p>
+      <p>+880 1310 333 444</p>
+      <p>+880 1885 841 489</p>
+    </div>
+
+    <div>
+      <p className="font-medium">Email</p>
+      <p>
+        <a
+          href="mailto:info@arenawebsecurity.net"
+          className="hover:underline hover:text-gray-300 transition-colors"
+        >
+          info@arenawebsecurity.net
+        </a>
+      </p>
+    </div>
+
+    <div>
+      <p className="font-medium">Website</p>
+      <p>
+        <a
+          href="https://www.arenawebsecurity.net"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline hover:text-gray-300 transition-colors"
+        >
+          www.arenawebsecurity.net
+        </a>
+      </p>
+    </div>
+  </div>
+</details>
+
+
   <div className="grid  grid-cols-1 md:grid-cols-2 xl:grid-cols-4 place-content-end justify-center xl:py-10 py-5 gap-2">
   {courses?.map((course, index) => (
         
@@ -118,12 +197,12 @@ export function AllServices() {
             <div className="px-5 pt-32 pb-10   rounded-[10px] bg-white mt-[-120px] h-full  
                shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]">
           
-              <Link
-                href={course.link}
+              <p
+                // href={course.link}
                 className="text-[#0b6481] text-lg font-normal hover:text-black hover:font-medium "
               >
                 {course.title}
-              </Link>
+              </p>
               <p className=" text-sm font-[300] mt-2 leading-[20px]">
                 {course.description}
               </p>

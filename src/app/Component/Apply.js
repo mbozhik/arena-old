@@ -36,14 +36,14 @@ const Apply = (e) => {
   const [from_id, setFormId] = useState("");
   const [pending, setPending] = useState(false);
   const [notRequired, setNotRequired] = useState(false);
-
+  const [notRequiredWork, setNotRequiredWork] = useState(false);
 
   // Course Function Call hare
   useEffect(() => {
     try {
       async function DataFatching() {
         const data = await NavberData();
-        setAllcoures(data);
+        setAllcoures(data?.reverse());
       }
       DataFatching();
     } catch (error) {
@@ -192,25 +192,19 @@ const Apply = (e) => {
             Your form has been submitted successfully. To complete registration
           </p>
           <Link href="/login">
-            
-
             <button className="px-10 py-2 text-yellow-600 bg-purple-600 font-semibold my-3 rounded-md">
               pay Now
             </button>
           </Link>
           <p>
             Your
-
             <span className="font-semibold text-purple-800">
               User ID , Password
-
             </span>
             , Password has been send to your email. Please check your
-
             <span className="font-semibold text-purple-800">
               mail inbox or spam box
             </span>
-
             for further instruction.
           </p>
         </div>
@@ -639,7 +633,7 @@ const Apply = (e) => {
                   size="medium"
                   color="primary"
                   name="permanent_postal"
-                  value={copy ? postal : ''}
+                  value={copy ? postal : ""}
                   inputProps={{ maxLength: 15 }}
                   sx={{
                     "& .MuiOutlinedInput-root": {
@@ -746,8 +740,10 @@ const Apply = (e) => {
                       setDay(e.target.value);
                       setBirth_date(`${year}-${month}-${e.target.value}`);
                     }}
+                  
+
                   >
-                    <option value={"Day"}>Day</option>
+                    <option value={"Day"} disabled>Day</option>
                     {Day.map((day, index) => (
                       <option key={index} value={day}>
                         {day}
@@ -762,7 +758,7 @@ const Apply = (e) => {
                       setBirth_date(`${year}-${e.target.value}-${day}`);
                     }}
                   >
-                    <option value={"Month"}>Month</option>
+                    <option value={"Month"} disabled>Month</option>
                     {MonthsArray.map((month, index) => (
                       <option key={index + 1} value={index + 1}>
                         {month}
@@ -777,7 +773,7 @@ const Apply = (e) => {
                       setBirth_date(`${e.target.value}-${month}-${day}`);
                     }}
                   >
-                    <option value={"Year"}>Year</option>
+                    <option value={"Year"} disabled>Year</option>
                     {yearsArray.map((year, index) => (
                       <option key={index} value={year}>
                         {year}
@@ -991,74 +987,98 @@ const Apply = (e) => {
               />
             </div> */}
           </div>
-          <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <TextField
-                fullWidth
-                name="office_address"
-                label="Office Address (if Applicable)"
-                variant="outlined"
-                size="medium"
-                inputProps={{ maxLength: 200 }}
-                sx={{
-                  "& .MuiOutlinedInput-root": {
-                    "&:hover fieldset": {
-                      borderColor: "#5BA9DB",
-                    },
-                    "& fieldset": {
-                      borderColor: "#5BA9DB",
-                    },
-                    "&.Mui-focused fieldset": {
-                      borderColor: "#7B5DA7",
-                      borderWidth: "1px",
-                    },
-                  },
-                }}
-              />
-            </div>
-            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <TextField
-                fullWidth
-                name="student_occupation"
-                label="Occupation (if Applicable)"
-                variant="outlined"
-                size="medium"
-                inputProps={{ maxLength: 100 }}
-                sx={{
-                  "& .MuiOutlinedInput-root": {
-                    "&:hover fieldset": {
-                      borderColor: "#5BA9DB",
-                    },
-                    "& fieldset": {
-                      borderColor: "#5BA9DB",
-                    },
-                    "&.Mui-focused fieldset": {
-                      borderColor: "#7B5DA7",
-                      borderWidth: "1px",
-                    },
-                  },
-                }}
-              />
-            </div>
+          <div className="flex mt-1 w-full">
+            {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
+            <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
+              Work Information :
+            </p>
           </div>
+
+          <div className="flex items-center mb-1">
+            <input
+              type="checkbox"
+              id="notRequired"
+              checked={notRequiredWork}
+              onChange={(e) => setNotRequiredWork(e.target.checked)}
+              className="mr-2"
+            />
+            <label htmlFor="notRequired" className="text-sm">
+              Not Required
+            </label>
+          </div>
+          {!notRequiredWork && (
+            <div className="grid grid-cols-6 gap-x-2">
+              <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
+                <TextField
+                  fullWidth
+                  name="office_address"
+                  label="Office Address (if Applicable)"
+                  variant="outlined"
+                  size="medium"
+                  inputProps={{ maxLength: 200 }}
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      "&:hover fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "& fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#7B5DA7",
+                        borderWidth: "1px",
+                      },
+                    },
+                  }}
+                />
+              </div>
+              <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
+                <TextField
+                  fullWidth
+                  name="student_occupation"
+                  label="Occupation (if Applicable)"
+                  variant="outlined"
+                  size="medium"
+                  inputProps={{ maxLength: 100 }}
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      "&:hover fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "& fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#7B5DA7",
+                        borderWidth: "1px",
+                      },
+                    },
+                  }}
+                />
+              </div>
+            </div>
+          )}
+
           <div className="flex mt-1 w-full">
             {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
             <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
               Educational Background :
             </p>
           </div>
-   
+
           <div className="flex items-center mb-1">
-    <input
-      type="checkbox"
-      id="notRequired"
-      checked={notRequired}
-      onChange={(e) => setNotRequired(e.target.checked)}
-      className="mr-2"
-    />
-    <label htmlFor="notRequired" className="text-sm">Not Required</label>
-  </div>
-          
+            <input
+              type="checkbox"
+              id="notRequired"
+              checked={notRequired}
+              onChange={(e) => setNotRequired(e.target.checked)}
+              className="mr-2"
+            />
+            <label htmlFor="notRequired" className="text-sm">
+              Not Required
+            </label>
+          </div>
+
           {/* <div className="grid grid-cols-6 gap-x-2">
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <Input
@@ -1093,86 +1113,88 @@ const Apply = (e) => {
               </div>
             </div>
           </div> */}
-          {!notRequired &&     <div className="grid grid-cols-6 gap-x-2">
-            {/* School/College/University */}
-            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <TextField
-                fullWidth
-                name="varsity_name"
-                label="School/College/University"
-                variant="outlined"
-                size="medium"
-                inputProps={{ maxLength: 200 }}
-                sx={{
-                  "& .MuiOutlinedInput-root": {
-                    "&:hover fieldset": {
-                      borderColor: "#5BA9DB",
+          {!notRequired && (
+            <div className="grid grid-cols-6 gap-x-2">
+              {/* School/College/University */}
+              <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
+                <TextField
+                  fullWidth
+                  name="varsity_name"
+                  label="School/College/University"
+                  variant="outlined"
+                  size="medium"
+                  inputProps={{ maxLength: 200 }}
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      "&:hover fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "& fieldset": {
+                        borderColor: "#5BA9DB",
+                      },
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#7B5DA7",
+                        borderWidth: "1px",
+                      },
                     },
-                    "& fieldset": {
-                      borderColor: "#5BA9DB",
-                    },
-                    "&.Mui-focused fieldset": {
-                      borderColor: "#7B5DA7",
-                      borderWidth: "1px",
-                    },
-                  },
-                }}
-              />
-            </div>
+                  }}
+                />
+              </div>
 
-            {/* Department & Roll */}
-            <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
-              <div className=" pt-1">
-                <TextField
-                  fullWidth
-                  name="varsity_dpt"
-                  label="Department"
-                  variant="outlined"
-                  size="medium"
-                  inputProps={{ maxLength: 100 }}
-                  sx={{
-                    "& .MuiOutlinedInput-root": {
-                      "&:hover fieldset": {
-                        borderColor: "#5BA9DB",
+              {/* Department & Roll */}
+              <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
+                <div className=" pt-1">
+                  <TextField
+                    fullWidth
+                    name="varsity_dpt"
+                    label="Department"
+                    variant="outlined"
+                    size="medium"
+                    inputProps={{ maxLength: 100 }}
+                    sx={{
+                      "& .MuiOutlinedInput-root": {
+                        "&:hover fieldset": {
+                          borderColor: "#5BA9DB",
+                        },
+                        "& fieldset": {
+                          borderColor: "#5BA9DB",
+                        },
+                        "&.Mui-focused fieldset": {
+                          borderColor: "#7B5DA7",
+                          borderWidth: "1px",
+                        },
                       },
-                      "& fieldset": {
-                        borderColor: "#5BA9DB",
+                    }}
+                  />
+                </div>
+                <div className=" pt-1">
+                  <TextField
+                    fullWidth
+                    name="varsity_id"
+                    label="Roll"
+                    variant="outlined"
+                    size="medium"
+                    inputProps={{ maxLength: 35 }}
+                    sx={{
+                      "& .MuiOutlinedInput-root": {
+                        "&:hover fieldset": {
+                          borderColor: "#5BA9DB",
+                        },
+                        "& fieldset": {
+                          borderColor: "#5BA9DB",
+                        },
+                        "&.Mui-focused fieldset": {
+                          borderColor: "#7B5DA7",
+                          borderWidth: "1px",
+                        },
                       },
-                      "&.Mui-focused fieldset": {
-                        borderColor: "#7B5DA7",
-                        borderWidth: "1px",
-                      },
-                    },
-                  }}
-                />
-              </div>
-              <div className=" pt-1">
-                <TextField
-                  fullWidth
-                  name="varsity_id"
-                  label="Roll"
-                  variant="outlined"
-                  size="medium"
-                  inputProps={{ maxLength: 35 }}
-                  sx={{
-                    "& .MuiOutlinedInput-root": {
-                      "&:hover fieldset": {
-                        borderColor: "#5BA9DB",
-                      },
-                      "& fieldset": {
-                        borderColor: "#5BA9DB",
-                      },
-                      "&.Mui-focused fieldset": {
-                        borderColor: "#7B5DA7",
-                        borderWidth: "1px",
-                      },
-                    },
-                  }}
-                />
+                    }}
+                  />
+                </div>
               </div>
             </div>
-          </div> }
-      
+          )}
+
           <div className="flex mt-1 w-full">
             <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
               Alternative Contact :
