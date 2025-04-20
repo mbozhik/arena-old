@@ -26,7 +26,7 @@ const Footer = () => {
     { name: "About Us", href: "/about-us" },
     { name: "Contact", href: "/contact" },
     { name: "FAQ", href: "/faq" },
-    { name: "Career", href: "/career" }, // Add route if needed
+    // { name: "Career", href: "/career" }, // Add route if needed
     { name: "Blog", href: "https://www.hackers.institute/" }, // External link
     { name: "Service", href: "/all-services" },
     { name: "Gallery", href: "/arena-gallery" },
@@ -185,15 +185,15 @@ const Footer = () => {
               "Mobile Application Security Testing",
               "Network Security Assessment",
               "Cloud Security Assessment",
-              "Social Media & OSINT Monitoring",
-              "Red Teaming & Adversary Simulation",
-              "Security Awareness Training",
-              "Incident Response & Forensics",
-              "Endpoint Security & EDR Implementation",
-              "Firewall & Perimeter Security Configuration",
-              "Dark Web Monitoring",
-              "Cybersecurity Consultancy",
-              "Managed Security Services (MSSP)",
+              // "Social Media & OSINT Monitoring",
+              // "Red Teaming & Adversary Simulation",
+              // "Security Awareness Training",
+              // "Incident Response & Forensics",
+              // "Endpoint Security & EDR Implementation",
+              // "Firewall & Perimeter Security Configuration",
+              // "Dark Web Monitoring",
+              // "Cybersecurity Consultancy",
+              // "Managed Security Services (MSSP)",
               // "Security Compliance & Policy Design",
             ].map((dev) => (
               <li
