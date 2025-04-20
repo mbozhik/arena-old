@@ -1,12 +1,8 @@
-
 import React, { Fragment } from "react";
 
 import MentorSlides from "../Component/Common/slider/slider";
-
-
 import CyberSecurity from "../Component/Courses-page-component/Cyber/CyberSecurity";
-
-
+import CyberSecurityDiploma from "../Component/Courses-page-component/cyber-security-diploma/CyberSecurityDiploma";
 export const metadata = {
   title: "Cyber Security Training Course - Ethical Hacking",
   description:
@@ -18,7 +14,7 @@ const page = async () => {
     <Fragment>
       <div className="container mx-auto  ">
         <div className=" ">
-          <CyberSecurity></CyberSecurity>
+          <CyberSecurityDiploma />
         </div>
       </div>
     </Fragment>

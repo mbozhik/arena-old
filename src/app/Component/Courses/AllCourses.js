@@ -55,11 +55,11 @@ const courses = [
       "In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. We cover one of the largest risks online, the browser. The doorway into your system.",
   },
   {
-    image: network,
-    title: "Additional Courses",
-    link: "/networking-course",
+    image: cyberSecurity,
+    title: "Professional Diploma in Cyber Security ",
+    link: "/cyber-security-diploma",
     description:
-      "In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. We cover one of the largest risks online, the browser. The doorway into your system.",
+      "Step into the frontline of digital defense with Bangladesh’s most trusted 1-year Professional Diploma in Cyber Security, powered by Arena Web Security. This career-focused program is meticulously designed to equip you with hands-on skills in ethical hacking, digital forensics, OSINT, Linux server security, and more — so you're not just learning, you're preparing to lead.",
   },
 ];
 export function AllCourses() {
