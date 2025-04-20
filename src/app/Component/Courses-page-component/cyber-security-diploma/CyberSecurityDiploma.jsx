@@ -119,7 +119,7 @@ const CyberSecurityDiploma = () => {
                   damping={0.1} // Smooth transition with damping
                 >
                   <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                    What You'll Master:
+                    What You will Master:
                   </h3>
                 </Fade>
 
