@@ -74,7 +74,7 @@ const CyberSecurityDiploma = () => {
           {/* Apply Fade and Damping Simultaneously */}
           <Fade
             fraction={1}
-            direction="up" // Text will fade up
+            direction="up" 
             delay={500} // Optional delay before fade starts
             cascade={true} // Apply cascading fade effect
             damping={0.1} // Smooth transition with damping
