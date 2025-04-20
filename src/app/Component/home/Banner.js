@@ -10,14 +10,14 @@ const banners = [
     title: "Arena Web Security",
     subtitle: "New window of World Wide Web",
     description:
-      "Arena Web Security is a renowned & first level IT security company in Bangladesh since its establishment in 2012. During these years, Arena Web Security has provided Cyber Security Services and Trainings to many around the world.",
+      "Arena Web Security is the first and most trusted cyber security company in Bangladesh, established in 2012. Over the years, Arena has provided advanced Cyber Security Services and Professional Training to clients across the globe - including the Government and Ministries of Bangladesh, the Military, the Banking Sector, Educational Institutions, and Private Organizations.",
   },
   {
     src: '/banner/aws-banner2.webp',
     title: "Arena Web Security",
     subtitle: "Hacking was passion, Security is our profession",
     description:
-      "Arena Web Security is a renowned & first level IT security company in Bangladesh since its establishment in 2012. During these years, Arena has provided Cyber Security Services and Trainings to many around the world.",
+      "Arena Web Security is the first and most trusted cyber security company in Bangladesh, established in 2012. Over the years, Arena has provided advanced Cyber Security Services and Professional Training to clients across the globe - including the Government and Ministries of Bangladesh, the Military, the Banking Sector, Educational Institutions, and Private Organizations.",
   },
 ];
 
