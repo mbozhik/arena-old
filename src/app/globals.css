@@ -665,6 +665,7 @@ body {
   border-radius: 2px !important;
   height: 100%;
   overflow-y: scroll;
+  position: relative; 
 }
 /* .input-normal {
   border: none;

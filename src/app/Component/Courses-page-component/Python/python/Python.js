@@ -377,7 +377,7 @@ const Python = () => {
         <Outline />
       </div>
       <div className=" my-10 ">
-        <PaymentModal />
+        {/* <PaymentModal /> */}
       </div>
     </div>
   );

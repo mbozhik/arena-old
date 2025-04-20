@@ -4,6 +4,7 @@ import linux from "./../../../../public/cyber-security-course-outline/linux.svg"
 import AdvancedCourse from "./../../../../public/cyber-security-course-outline/networking.svg";
 import Image from "next/image";
 import Link from "next/link";
+import ServiceToggle from "../Utility/ServicesCheckbox";
 const courses = [
   {
     image: network,
@@ -125,7 +126,7 @@ export function AllServices() {
   </h4>
   
 </div>
-<details className="details bg-[#f0efef] rounded-md overflow-hidden">
+{/* <details className="details bg-[#f0efef] rounded-md overflow-hidden">
   <summary className="summary py-5 text-white  font-semibold px-7 cursor-pointer">
     Get Services
   </summary>
@@ -170,10 +171,10 @@ export function AllServices() {
       </p>
     </div>
   </div>
-</details>
+</details> */}
+<ServiceToggle/>
 
-
-  <div className="grid  grid-cols-1 md:grid-cols-2 xl:grid-cols-4 place-content-end justify-center xl:py-10 py-5 gap-2">
+  <div className="grid  grid-cols-1 md:grid-cols-2 xl:grid-cols-4 place-content-end justify-center  py-5 gap-2">
   {courses?.map((course, index) => (
         
         <div className="p-2 " key={index}>

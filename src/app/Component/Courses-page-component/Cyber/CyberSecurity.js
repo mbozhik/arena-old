@@ -16,6 +16,7 @@ import Outline from "../../Common/Outline";
 import { PaymentModal } from "../../Common/Payment";
 import BannerImage from "@/app/AllDataFatchingFunction/BannerImage";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import BannerComponent from "../../Utility/ImageAd";
 const CyberSecurity = () => {
   const Tanjim = BannerImage();
   const features = [
@@ -344,8 +345,9 @@ const CyberSecurity = () => {
             <Image
               alt="Cyber Security And Ethical Hacking"
               src={Banner}
-              className="w-full lg:w-auto"
+              className="w-full "
             />
+
           </div>
         </div>
       </div>
@@ -459,7 +461,7 @@ const CyberSecurity = () => {
                   <p className="font-semibold mb-2">
                     কোর্স শেষে কেমন ক্যারিয়ার হতে পারে?
                   </p>
-                  <p className="mb-1">✅ Career Opportunities:</p>
+                  <div className="mb-1">✅ Career Opportunities:</div>
                   <ul className="list-disc pl-5 mb-4">
                     <li>Cyber Security Specialist</li>
                     <li>Ethical Hacker</li>
@@ -468,7 +470,7 @@ const CyberSecurity = () => {
                     <li>Freelance Cybersecurity Consultant</li>
                   </ul>
 
-                  <p className="mb-1">✅ Course Benefits:</p>
+                  <div className="mb-1">✅ Course Benefits:</div>
                   <ul className="list-disc pl-5">
                     <li>কোর্স শেষে ১ মাসের ইন্টার্নশিপ প্রজেক্টে অংশগ্রহণ।</li>
                     <li>
@@ -524,7 +526,7 @@ const CyberSecurity = () => {
               </div>
             </details>
           </article>
-          <article className="lg:w-[50%] w-full h-full mt-3 md:mt-0">
+          {/* <article className="lg:w-[50%] w-full h-full mt-3 md:mt-0">
             <Image
               alt="Tanjim Al Fahim"
               src={Tanjim}
@@ -532,7 +534,8 @@ const CyberSecurity = () => {
               width={1000}
               className=""
             />
-          </article>
+          </article> */}
+          <BannerComponent/>
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
@@ -552,7 +555,7 @@ const CyberSecurity = () => {
         <Outline />
       </div>
       <div className=" my-10 ">
-        <PaymentModal />
+        {/* <PaymentModal /> */}
       </div>
     </div>
   );

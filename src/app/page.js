@@ -12,7 +12,7 @@ import OurConcern from './Component/home/OurConcern'
 
 export default function Home() {
   return (
-   <div className='overflow-hidden'>
+   <div className=' relative'>
 
     <Banner/>
     {/* <About /> */}

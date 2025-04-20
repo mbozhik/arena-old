@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import img from "@/app/Images/Concern/ict.png";
 import img1 from "@/app/Images/Concern/sena_kalyan.png";
@@ -10,11 +11,15 @@ import img7 from "@/app/Images/Concern/buet.png";
 import img8 from "@/app/Images/Concern/bpplastic.png";
 import img9 from "@/app/Images/Concern/airForce.png";
 import img10 from "@/app/Images/Concern/s.png";
-import Marquee from "react-fast-marquee";
+// At the top of your file
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectCoverflow } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
 
 const OurConcern = () => {
   return (
-    <div className=" lg:mt-12 mt-12 container relative  bg-[#fbfcfd] xl:pb-16 pb-10">
+    <div className=" lg:mt-12 mt-12 container relative   xl:pb-16 pb-10">
       <div className="">
    <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">          Our Valued Clients & Partners
         </h5>
@@ -23,114 +28,38 @@ const OurConcern = () => {
 
         </h6>
       </div>
+      <div className="mt-20">
+  <Swiper
+    breakpoints={{
+      320: { slidesPerView: 2 },   // Small screens
+      640: { slidesPerView: 3 },   // Tablets
+      768: { slidesPerView: 4 },   // Medium devices
+      1024: { slidesPerView: 6 },  // Laptops
+      1280: { slidesPerView: 6 },  // Desktops and up
+    }}
+    spaceBetween={20}
+    loop={true}
+    autoplay={{ delay: 2000, disableOnInteraction: false }}
+    modules={[Autoplay]}
+    className="mySwiper"
+  >
+    {[img, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10].map(
+      (image, index) => (
+        <SwiperSlide key={index} className="flex justify-center items-center">
+          <Image
+            sizes="100vw"
+            src={image}
+            className="rounded-md 2xl:h-24 2xl:w-28 xl:h-20 xl:w-24 md:h-16 md:w-20 w-16 h-14"
+            alt={`ict-${index}`}
+            width="auto"
+            height="auto"
+          />
+        </SwiperSlide>
+      )
+    )}
+  </Swiper>
+</div>
 
-      <div className="mt-20 ">
-        <Marquee
-          direction="right"
-          gap="20px"
-          // style={{ marginRight: '20px' }}
-        >
-          <Image
-            sizes="100vw"
-            src={img}
-            style={{ marginRight: "20px" }}
-            className="rounded-md 2xl:h-24 2xl:w-28 xl:h-20 xl:w-24 md:h-16 md:w-20 w-16 h-14 "
-            alt="ict"
-            width="auto"
-            height="auto"
-          />
-          <Image
-            sizes="100vw"
-            src={img1}
-            style={{ marginRight: "20px" }}
-            className="rounded-md 2xl:h-24 2xl:w-28 xl:h-20 xl:w-24 md:h-16 md:w-20 w-16 h-14 "
-            alt="ict"
-            width="auto"
-            height="auto"
-          />
-          <Image
-            sizes="100vw"
-            src={img2}
-            style={{ marginRight: "20px" }}
-            className="rounded-md 2xl:h-24 2xl:w-28 xl:h-20 xl:w-24 md:h-16 md:w-20 w-16 h-14 "
-            alt="ict"
-            width="auto"
-            height="auto"
-          />
-          <Image
-            sizes="100vw"
-            src={img3}
-            style={{ marginRight: "20px" }}
-            className="rounded-md 2xl:h-24 2xl:w-28 xl:h-20 xl:w-24 md:h-16 md:w-20 w-16 h-14 "
-            alt="ict"
-            width="auto"
-            height="auto"
-          />
-          <Image
-            sizes="100vw"
-            src={img4}
-            style={{ marginRight: "20px" }}
-            className="rounded-md 2xl:h-24 2xl:w-28 xl:h-20 xl:w-24 md:h-16 md:w-20 w-16 h-14 "
-            alt="ict"
-            width="auto"
-            height="auto"
-          />
-          <Image
-            sizes="100vw"
-            src={img5}
-            style={{ marginRight: "20px" }}
-            className="rounded-md 2xl:h-24 2xl:w-28 xl:h-20 xl:w-24 md:h-16 md:w-20 w-16 h-14 "
-            alt="ict"
-            width="auto"
-            height="auto"
-          />
-          <Image
-            sizes="100vw"
-            src={img6}
-            style={{ marginRight: "20px" }}
-            className="rounded-md 2xl:h-24 2xl:w-28 xl:h-20 xl:w-24 md:h-16 md:w-20 w-16 h-14 "
-            alt="ict"
-            width="auto"
-            height="auto"
-          />
-          <Image
-            sizes="100vw"
-            src={img7}
-            style={{ marginRight: "20px" }}
-            className="rounded-md 2xl:h-24 2xl:w-28 xl:h-20 xl:w-24 md:h-16 md:w-20 w-16 h-14 "
-            alt="ict"
-            width="auto"
-            height="auto"
-          />
-          <Image
-            sizes="100vw"
-            src={img8}
-            style={{ marginRight: "20px" }}
-            className="rounded-md 2xl:h-24 2xl:w-28 xl:h-20 xl:w-24 md:h-16 md:w-20 w-16 h-14 "
-            alt="ict"
-            width="auto"
-            height="auto"
-          />
-          <Image
-            sizes="100vw"
-            src={img9}
-            style={{ marginRight: "20px" }}
-            className="rounded-md 2xl:h-24 2xl:w-28 xl:h-20 xl:w-24 md:h-16 md:w-20 w-16 h-14 "
-            alt="ict"
-            width="auto"
-            height="auto"
-          />
-          <Image
-            sizes="100vw"
-            src={img10}
-            style={{ marginRight: "20px" }}
-            className="rounded-md 2xl:h-24 2xl:w-28 xl:h-20 xl:w-24 md:h-16 md:w-20 w-16 h-14 "
-            alt="ict"
-            width="auto"
-            height="auto"
-          />
-        </Marquee>
-      </div>
       {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"

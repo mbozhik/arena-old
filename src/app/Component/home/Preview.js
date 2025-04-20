@@ -5,7 +5,7 @@ import OrderImage from '../../../../public/statitic/reveiw.jpg';
 import Image from "next/image";
 const Preview = () => {
   return (
-    <div className=" container mx-auto px-3 lg:mt-16 mt-10    ">
+    <div className=" container mx-auto px-3 lg:mt-10 mt-10    ">
       <div className="">
         {/* <div className="md:col-span-2 h-full relative  hidden md:block">
           <Image src={event} alt="Events" className="" fill={true} sizes="1000vh" />
@@ -16,7 +16,7 @@ const Preview = () => {
        <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">            Preview of Your Future
       </h5>
       <p className="text-center text-gray-500 text-[10px] md:text-sm md:mb-3 mb-2">Your Skill. Your Career. Your Global Path.</p>
-      <h6 className="text-center text-gray-600 text-[10px] md:text-sm md:mb-8 mb-6">
+      <h6 className="text-center text-gray-600 text-[10px] md:text-sm mb-4">
       Arena Web Security is not just about learning—it is about transforming your skill into real income,<br/>     global opportunities, and a future-proof career.
       </h6>
       <h6 className="text-center text-gray-600 text-[10px] md:text-sm md:mb-8 mb-6">
@@ -27,7 +27,11 @@ const Preview = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5  ">
             <Review />
             <div >
-                <Image src={OrderImage } alt="review" className="w-full" />
+              <div className="h-[220px] ">
+              <Review />
+
+              </div>
+                {/* <Image src={OrderImage } alt="review" className="w-full" /> */}
             <div className="pt-2">
         <h3 className="text-base font-semibold mb-2">Impact in Numbers – By Our Learners</h3>
         <div className="space-y-1 text-sm">

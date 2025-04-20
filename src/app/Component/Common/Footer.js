@@ -71,7 +71,7 @@ const Footer = () => {
               </span>
             </li>
           </ul>
-          <h3 className="text-white text-lg font-medium mb-4 mt-16 md:block xl:hidden">
+          {/* <h3 className="text-white text-lg font-medium mb-4 mt-16 md:block xl:hidden">
             Technologies
           </h3>
           <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d] md:block xl:hidden">
@@ -90,7 +90,7 @@ const Footer = () => {
                 {tech}
               </li>
             ))}
-          </ul>
+          </ul> */}
         </div>
 
         {/* Information */}
@@ -153,7 +153,7 @@ const Footer = () => {
             ))}
           </ul>
 
-          <h3 className="text-white text-lg font-medium mb-4 mt-10 md:hidden xl:block">
+          {/* <h3 className="text-white text-lg font-medium mb-4 mt-10 md:hidden xl:block">
             Technologies
           </h3>
           <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d] md:hidden xl:block">
@@ -172,34 +172,37 @@ const Footer = () => {
                 {tech}
               </li>
             ))}
-          </ul>
+          </ul> */}
         </div>
 
         {/* Developers */}
         <div>
-          <h3 className="text-white text-lg font-medium mb-4">Developers</h3>
+          <h3 className="text-white text-lg font-medium mb-4">Our Services</h3>
           <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
             {[
-              "Front-End Developers",
-              "Full-Stack Developers",
-              "Backend Developers",
-              "Java Developers",
-              "IOS Developers",
-              "Android Developers",
-              "E-Commerce Developers",
-              "SQL Developers",
-              "QA Engineers",
-              "UI/UX Designers",
-              "DevOps Engineer",
-              "WordPress Developers",
-              "Security Specialist",
+              "VAPT & Pen Testing",
+              "Web Application Security Testing",
+              "Mobile Application Security Testing",
+              "Network Security Assessment",
+              "Cloud Security Assessment",
+              "Social Media & OSINT Monitoring",
+              "Red Teaming & Adversary Simulation",
+              "Security Awareness Training",
+              "Incident Response & Forensics",
+              "Endpoint Security & EDR Implementation",
+              "Firewall & Perimeter Security Configuration",
+              "Dark Web Monitoring",
+              "Cybersecurity Consultancy",
+              "Managed Security Services (MSSP)",
+              // "Security Compliance & Policy Design",
             ].map((dev) => (
               <li
                 key={dev}
                 className="flex items-center gap-2 hover:text-[#29aafe] transition"
               >
                 <FaArrowRight className=" text-[#715296] text-[16px]" />
-                {dev}
+                <a href='/all-services'>{dev}</a>
+
               </li>
             ))}
           </ul>

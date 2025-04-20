@@ -551,8 +551,9 @@ const Combo = () => {
             <Image
               alt="Cyber Security And Ethical Hacking"
               src={Banner}
-              className="w-full lg:w-auto"
+              className="w-full "
             />
+
           </div>
         </div>
       </div>
@@ -575,7 +576,7 @@ const Combo = () => {
       </div>
       <div className=" my-10 ">{/* <Outline/> */}</div>
       <div className=" my-10 ">
-        <PaymentModal />
+        {/* <PaymentModal /> */}
       </div>
     </div>
   );

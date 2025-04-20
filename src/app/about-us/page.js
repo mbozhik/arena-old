@@ -11,7 +11,7 @@ const page = () => {
         About Arena Web Security
         </h4>
       </div>
-      <div className="bg-[#F5F5F5] pt-16 pb-24 px-8 text-sm leading-6 text-gray-800">
+      <div className="bg-[#F5F5F5] pt-8 pb-8 px-8 text-sm leading-6 text-gray-800">
   <p>
     <span className="font-medium">The First & Most Trusted Cybersecurity Company in Bangladesh</span><br />
     Arena Web Security, a sister concern of Arena Web Technology, is the first dedicated cybersecurity company in Bangladesh, established in 2012. Since then, it has become the most trusted name in cybersecurity training and services across the country.

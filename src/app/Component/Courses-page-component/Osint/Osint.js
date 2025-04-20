@@ -290,8 +290,9 @@ const Osint = () => {
             <Image
               alt="Cyber Security And Ethical Hacking"
               src={Banner}
-              className="w-full lg:w-auto"
+              className="w-full "
             />
+
           </div>
         </div>
       </div>

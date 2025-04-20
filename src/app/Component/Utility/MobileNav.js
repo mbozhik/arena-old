@@ -246,7 +246,7 @@ const MobileNav = ({ uid }) => {
           { label: "Blog", href: "https://www.hackers.institute/" },
           { label: "Gallery", href: "/arena-gallery" },
           { label: "Contact", href: "/contact" },
-          { label: "Verify Certificate", href: "https://admission.arenawebsecurity.net/" },
+          // { label: "Verify Certificate", href: "https://admission.arenawebsecurity.net/" },
        
         ].map(({ label, href }) => (
           <li
@@ -257,7 +257,14 @@ const MobileNav = ({ uid }) => {
             <Link href={href}>{label}</Link>
           </li>
         ))}
-
+  <li className="hover:text-black  flex items-center mt-4 lg:hidden">
+          <Link
+            href="https://admission.arenawebsecurity.net/"
+            onClick={() => setNave(false)}
+          >
+            Verify Certificate
+          </Link>
+        </li>
         {uid && (
           <li className="hover:text-black">
             <Link href="/profile" onClick={() => setNave(false)}>

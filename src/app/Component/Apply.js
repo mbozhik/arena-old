@@ -8,13 +8,16 @@ import {
   DialogFooter,
 } from "@material-tailwind/react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Confetti from "react-confetti";
 import NavberData from "../AllDataFatchingFunction/Topber";
 import Registration from "../AllDataFatchingFunction/Registration";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { MenuItem, TextField } from "@mui/material";
+import { CustomDaySelect } from "./Utility/Day";
+import { CustomMonthSelect } from "./Utility/Month";
+import { CustomYearSelect } from "./Utility/Year";
 
 const Apply = (e) => {
   const [sucess, setSucess] = useState(false);
@@ -37,8 +40,11 @@ const Apply = (e) => {
   const [pending, setPending] = useState(false);
   const [notRequired, setNotRequired] = useState(false);
   const [notRequiredWork, setNotRequiredWork] = useState(false);
+  const [showAllDays, setShowAllDays] = useState(false);
+  const days = Array.from({ length: 31 }, (_, i) => i + 1); // 1-31
 
   // Course Function Call hare
+
   useEffect(() => {
     try {
       async function DataFatching() {
@@ -173,7 +179,7 @@ const Apply = (e) => {
   };
 
   return (
-    <div className="lg:w-[70%] shadow-sm   applyCardPadding">
+    <div className="lg:w-[70%] shadow-sm   applyCardPadding relative">
       <Dialog open={open} handler={handleOpen} size="md">
         {sucess && <Confetti width={750} height={350} />}
         <div className="text-center py-10 px-5">
@@ -215,7 +221,10 @@ const Apply = (e) => {
         </DialogFooter>
       </Dialog>
 
-      <form onSubmit={(e) => RegistationSucess(e)} className="shadow-sm ">
+      <form
+        onSubmit={(e) => RegistationSucess(e)}
+        className="shadow-sm relative"
+      >
         <h1 className="md:text-2xl text-2xl font-medium py-3 mt-2 text-center  applicationTitle text-white">
           Student Application Form
         </h1>
@@ -259,23 +268,12 @@ const Apply = (e) => {
 
         <div className="grid gap-y-4 mt-3">
           <div className="grid grid-cols-6 gap-x-2">
-            {/* <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <Input
-                variant="standard"
-                required
-                name="student_name"
-                label="Student Name"
-                size="md"
-                color="indigo"
-                maxLength={255}
-              />
-            </div> */}
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <TextField
                 fullWidth
                 required
                 name="student_name"
-                label="Student Name"
+                label="Student Name "
                 variant="outlined"
                 size="medium"
                 inputProps={{ maxLength: 255 }}
@@ -296,18 +294,6 @@ const Apply = (e) => {
               />
             </div>
             <div className="w-full md:col-span-3 col-span-6  pt-1 ">
-              {/* <Input
-                variant="standard"
-                required
-                label="Mobile Number"
-                size="md"
-                color="indigo"
-                name="student_mobile"
-                type="text"
-                value={validNumber}
-                onChange={student_mobileOnChange}
-                onInput={(e) => (e.target.value = e.target.value.slice(0, 15))}
-              /> */}
               <PhoneInput
                 value={validNumber}
                 onChange={student_mobileOnChange}
@@ -346,17 +332,6 @@ const Apply = (e) => {
             </div>
           </div>
           <div className="grid grid-cols-6 gap-x-2">
-            {/* <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <Input
-                variant="standard"
-                required
-                label="Valid Email Address"
-                size="md"
-                type="email"
-                color="indigo"
-                name="student_email"
-              />
-            </div> */}
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <TextField
                 fullWidth
@@ -383,19 +358,10 @@ const Apply = (e) => {
               />
             </div>
 
-            {/* <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <Input
-                variant="standard"
-                label="Facebook url"
-                size="md"
-                color="indigo"
-                name="fb_id"
-                maxLength={255}
-              />
-            </div> */}
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <TextField
                 fullWidth
+                required
                 label="Facebook url"
                 size="medium"
                 color="primary"
@@ -419,21 +385,11 @@ const Apply = (e) => {
             </div>
           </div>
           <div className="grid grid-cols-6 gap-x-2">
-            {/* <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <Input
-                variant="standard"
-                label="Present Address"
-                size="md"
-                color="indigo"
-                name="present_address"
-                onChange={(e) => setAddress(e.target.value)}
-                maxLength={300}
-              />
-            </div> */}
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <TextField
                 fullWidth
-                label="Present Address"
+                required
+                label="Present Address "
                 size="medium"
                 color="primary"
                 name="present_address"
@@ -456,35 +412,12 @@ const Apply = (e) => {
               />
             </div>
 
-            {/* <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
-              <div className="overflow-hidden pt-1">
-                <Input
-                  variant="standard"
-                  label="Present City"
-                  size="md"
-                  color="indigo"
-                  name="present_city"
-                  onChange={(e) => setCity(e.target.value)}
-                  maxLength={50}
-                />
-              </div>
-              <div className="overflow-hidden pt-1">
-                <Input
-                  variant="standard"
-                  label="Postal Code"
-                  size="md"
-                  color="indigo"
-                  name="present_postal"
-                  onChange={(e) => setPostal(e.target.value)}
-                  maxLength={15}
-                />
-              </div>
-            </div> */}
             <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
               <div className=" pt-1">
                 <TextField
                   fullWidth
-                  label="Present City"
+                  required
+                  label="Present City "
                   size="medium"
                   color="primary"
                   name="present_city"
@@ -509,7 +442,7 @@ const Apply = (e) => {
               <div className=" pt-1">
                 <TextField
                   fullWidth
-                  label="Postal Code"
+                  label="Postal Code "
                   size="medium"
                   color="primary"
                   name="present_postal"
@@ -537,49 +470,14 @@ const Apply = (e) => {
             <input type="checkbox" onChange={() => setCopy(!copy)} />
             <p className="pl-2">Same as Present Address</p>
           </div>
-          {/* <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <Input
-                variant="standard"
-                value={copy ? address : undefined}
-                label="Permanent Address"
-                size="md"
-                color="indigo"
-                name="permanent_address"
-                maxLength={300}
-              />
-            </div>
-            <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
-              <div className="overflow-hidden pt-1">
-                <Input
-                  variant="standard"
-                  label="Permanent City"
-                  size="md"
-                  color="indigo"
-                  name="permanent_city"
-                  value={copy ? city : undefined}
-                  maxLength={50}
-                />
-              </div>
-              <div className="overflow-hidden pt-1">
-                <Input
-                  variant="standard"
-                  label="Postal Code"
-                  size="md"
-                  color="indigo"
-                  name="permanent_postal"
-                  value={copy ? postal : undefined}
-                  maxLength={15}
-                />
-              </div>
-            </div>
-          </div> */}
+
           <div className="grid grid-cols-6 gap-x-2">
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <TextField
                 fullWidth
+                required
                 value={copy ? address : ""}
-                label="Permanent Address"
+                label="Permanent Address "
                 size="medium"
                 color="primary"
                 name="permanent_address"
@@ -604,7 +502,8 @@ const Apply = (e) => {
               <div className=" pt-1">
                 <TextField
                   fullWidth
-                  label="Permanent City"
+                  required
+                  label="Permanent City "
                   size="medium"
                   color="primary"
                   name="permanent_city"
@@ -657,100 +556,20 @@ const Apply = (e) => {
           <div className="grid grid-cols-6 gap-x-2">
             <div className="w-full col-span-6">
               <div className="grid grid-cols-6 gap-x-2">
-                {/* <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 relative group">
-                  <Select
-                    variant="standard"
-                    label="Gender "
-                    id="Gender"
-                    onChange={(e) => setGander(e)}
-                  >
-                    <Option value="Male">Male</Option>
-                    <Option value="Female">Female</Option>
-                  </Select>
-                </div> */}
-
-                {/* <div className="w-full md:col-span-3 col-span-6 mt-5  md:mt-0  border-b border-[#B0BEC5] grid grid-cols-3 gap-x-2 relative ">
-                  <p className="absolute md:-top-3 -top-5 left-0 text-sm text-[#B0BEC5]">
-                    Date Of Birth 
-             
-                  </p>
-                  <select
-                    className="outline-none  "
-                    id="Day"
-                    onChange={(e) => {
-                      setDay(e.target.value);
-                      setBirth_date(`${year}-${month}-${e.target.value}`);
-                    }}
-                  >
-                    
-
-                    <option value={"Day"}>Day</option>
-                    {Day.map((day, index) => {
-                      return (
-                        <option key={index} value={day}>
-                          {day}
-                        </option>
-                      );
-                    })}
-                  </select>
-                  <select
-                    className="outline-none "
-                    id="Month"
-                    onChange={(e) => {
-                      setMonth(e.target.value);
-                      setBirth_date(`${year}-${e.target.value}-${day}`);
-                    }}
-                  >
-                    <option value={"Month"}>Month</option>
-                    {MonthsArray.map((month, index) => {
-                      return (
-                        <option key={index} value={index + 1}>
-                          {month}
-                        </option>
-                      );
-                    })}
-                  </select>
-                  <select
-                    className="outline-none "
-                    id="Year"
-                    onChange={(e) => {
-                      setYear(e.target.value);
-                      setBirth_date(`${e.target.value}-${month}-${day}`);
-                    }}
-                  >
-                    <option value={"Year"}>Year</option>
-                    {yearsArray.map((year, index) => {
-                      return (
-                        <option key={index} value={year}>
-                          {year}
-                        </option>
-                      );
-                    })}
-                  </select>
-                </div> */}
-                <div className="w-full md:col-span-3 col-span-6 mt-5 md:mt-0 border-b border-[#B0BEC5] grid grid-cols-3 gap-4 relative inputDateP ">
+                <div className="w-full md:col-span-3 col-span-6 mt-5 md:mt-0 border-b border-[#B0BEC5] grid grid-cols-3 gap-2 px-4 relative inputDateP ">
                   <span className="">
-                    Date Of Birth
+                    Date Of Birth *
                     {/* <span className="text-red-400">*</span> */}
                   </span>
-                  <select
-                    className="border border-[#B0BEC5] text-center p-1 rounded-md focus:outline-none"
-                    id="Day"
-                    onChange={(e) => {
-                      setDay(e.target.value);
-                      setBirth_date(`${year}-${month}-${e.target.value}`);
-                    }}
-                  
 
-                  >
-                    <option value={"Day"} disabled>Day</option>
-                    {Day.map((day, index) => (
-                      <option key={index} value={day}>
-                        {day}
-                      </option>
-                    ))}
-                  </select>
-                  <select
+                  <CustomDaySelect
+                    year={year}
+                    month={month}
+                    setBirth_date={setBirth_date}
+                    setDay={setDay}
+                  />
+
+                  {/* <select
                     className="border border-[#B0BEC5] text-center p-1 rounded-md focus:outline-none"
                     id="Month"
                     onChange={(e) => {
@@ -764,8 +583,14 @@ const Apply = (e) => {
                         {month}
                       </option>
                     ))}
-                  </select>
-                  <select
+                  </select> */}
+                  <CustomMonthSelect
+                    year={year}
+                    day={day}
+                    setMonth={setMonth}
+                    setBirth_date={setBirth_date}
+                  />
+                  {/* <select
                     className="border border-[#B0BEC5] text-center p-1 rounded-md focus:outline-none"
                     id="Year"
                     onChange={(e) => {
@@ -779,11 +604,18 @@ const Apply = (e) => {
                         {year}
                       </option>
                     ))}
-                  </select>
+                  </select> */}
+                  <CustomYearSelect
+                    month={month}
+                    day={day}
+                    setYear={setYear}
+                    setBirth_date={setBirth_date}
+                  />
                 </div>
                 <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
                   <TextField
                     fullWidth
+                    required
                     name="nid"
                     label="Nid/Birth Certificate/Passport No"
                     variant="outlined"
@@ -809,72 +641,13 @@ const Apply = (e) => {
             </div>
           </div>
 
-          {/* <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <Input
-                variant="standard"
-                label="Office Address (if Applicable)"
-                size="md"
-                color="indigo"
-                name="office_address"
-                maxLength={200}
-              />
-            </div>
-            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <Input
-                variant="standard"
-                label="Nid/Birth Certificate/Passport No"
-                size="md"
-                color="indigo"
-                name="nid"
-                maxLength={50}
-              />
-            </div>
-          </div> */}
-
           <div className="grid grid-cols-6 gap-x-2">
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              {/* <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0  relative ">
-                {allcourse ? (
-                  <Select
-                    required
-                    variant="standard"
-                    label="Select a Course *"
-                    name="course_title"
-                    id="Course"
-                    onChange={(e) => {
-                      setCourse(e);
-                      onChangeCourse(e);
-                    }}
-                  >
-                    {allcourse &&
-                      allcourse?.map((x, index) => {
-                        return (
-                          <Option
-                            key={index + 1}
-                            value={x.batch_schedule_time_id}
-                          >
-                            {x.batch_schedule_name}
-                          </Option>
-                        );
-                      })}
-                  </Select>
-                ) : (
-                  <Select
-                    required
-                    variant="standard"
-                    label="Select a Course *"
-                    name="course_title"
-                  >
-                    <Option className="text-red-500">Server Error</Option>
-                  </Select>
-                )}
-              </div> */}
               <TextField
                 fullWidth
                 required
                 select
-                label="Nationality*"
+                label="Nationality"
                 name="nationality"
                 value={nationality}
                 onChange={(e) => setNationality(e.target.value)}
@@ -899,48 +672,11 @@ const Apply = (e) => {
               </TextField>
             </div>
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              {/* <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0  relative ">
-                {allcourse ? (
-                  <Select
-                    required
-                    variant="standard"
-                    label="Select a Course *"
-                    name="course_title"
-                    id="Course"
-                    onChange={(e) => {
-                      setCourse(e);
-                      onChangeCourse(e);
-                    }}
-                  >
-                    {allcourse &&
-                      allcourse?.map((x, index) => {
-                        return (
-                          <Option
-                            key={index + 1}
-                            value={x.batch_schedule_time_id}
-                          >
-                            {x.batch_schedule_name}
-                          </Option>
-                        );
-                      })}
-                  </Select>
-                ) : (
-                  <Select
-                    required
-                    variant="standard"
-                    label="Select a Course *"
-                    name="course_title"
-                  >
-                    <Option className="text-red-500">Server Error</Option>
-                  </Select>
-                )}
-              </div> */}
-
               <TextField
                 fullWidth
                 required
                 select
-                label="Select a Course *"
+                label="Select a Course "
                 name="course_title"
                 value={course}
                 onChange={(e) => {
@@ -976,19 +712,9 @@ const Apply = (e) => {
                 )}
               </TextField>
             </div>
-            {/* <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <Input
-                variant="standard"
-                label="Occupation (if Applicable)"
-                size="md"
-                color="indigo"
-                name="student_occupation"
-                maxLength={100}
-              />
-            </div> */}
           </div>
-          <div className="flex mt-1 w-full">
-            {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
+          {/* <div className="flex mt-1 w-full">
+       
             <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
               Work Information :
             </p>
@@ -1005,7 +731,7 @@ const Apply = (e) => {
             <label htmlFor="notRequired" className="text-sm">
               Not Required
             </label>
-          </div>
+          </div> */}
           {!notRequiredWork && (
             <div className="grid grid-cols-6 gap-x-2">
               <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
@@ -1036,7 +762,7 @@ const Apply = (e) => {
                 <TextField
                   fullWidth
                   name="student_occupation"
-                  label="Occupation (if Applicable)"
+                  label="Occupation (if Applicable) *"
                   variant="outlined"
                   size="medium"
                   inputProps={{ maxLength: 100 }}
@@ -1060,12 +786,12 @@ const Apply = (e) => {
           )}
 
           <div className="flex mt-1 w-full">
-            {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
+           
             <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
               Educational Background :
             </p>
           </div>
-
+{/* 
           <div className="flex items-center mb-1">
             <input
               type="checkbox"
@@ -1077,48 +803,15 @@ const Apply = (e) => {
             <label htmlFor="notRequired" className="text-sm">
               Not Required
             </label>
-          </div>
-
-          {/* <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <Input
-                variant="standard"
-                label="School/College/University"
-                size="md"
-                color="indigo"
-                name="varsity_name"
-                maxLength={200}
-              />
-            </div>
-            <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
-              <div className="overflow-hidden pt-1">
-                <Input
-                  variant="standard"
-                  label="Department"
-                  size="md"
-                  color="indigo"
-                  name="varsity_dpt"
-                  maxLength={100}
-                />
-              </div>
-              <div className="overflow-hidden pt-1">
-                <Input
-                  variant="standard"
-                  label="Roll"
-                  size="md"
-                  color="indigo"
-                  name="varsity_id"
-                  maxLength={35}
-                />
-              </div>
-            </div>
           </div> */}
+
           {!notRequired && (
             <div className="grid grid-cols-6 gap-x-2">
               {/* School/College/University */}
               <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
                 <TextField
                   fullWidth
+                  required
                   name="varsity_name"
                   label="School/College/University"
                   variant="outlined"
@@ -1146,6 +839,7 @@ const Apply = (e) => {
                 <div className=" pt-1">
                   <TextField
                     fullWidth
+                    required
                     name="varsity_dpt"
                     label="Department"
                     variant="outlined"
@@ -1170,6 +864,7 @@ const Apply = (e) => {
                 <div className=" pt-1">
                   <TextField
                     fullWidth
+                    required
                     name="varsity_id"
                     label="Roll"
                     variant="outlined"
@@ -1200,47 +895,14 @@ const Apply = (e) => {
               Alternative Contact :
             </p>
           </div>
-          {/* <div className="grid grid-cols-6 gap-x-2">
-            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <Input
-                variant="standard"
-                label="Alternative contact Name"
-                size="md"
-                color="indigo"
-                name="alt_name"
-                maxLength={255}
-              />
-            </div>
-            <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 grid grid-cols-2 gap-x-2">
-              <div className="overflow-hidden pt-1">
-                <Input
-                  variant="standard"
-                  label="Mobile"
-                  size="md"
-                  color="indigo"
-                  type="number"
-                  name="alt_mobile"
-                  maxLength={15}
-                />
-              </div>
-              <div className="overflow-hidden pt-1">
-                <Input
-                  variant="standard"
-                  label="Relation With Student"
-                  size="md"
-                  color="indigo"
-                  name="alt_relation"
-                  maxLength={100}
-                />
-              </div>
-            </div>
-          </div> */}
+
           <div className="grid grid-cols-6 gap-x-2">
             {/* Alternative Contact Name */}
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
               <TextField
                 fullWidth
                 name="alt_name"
+                required
                 label="Alternative Contact Name"
                 variant="outlined"
                 size="medium"
@@ -1267,6 +929,7 @@ const Apply = (e) => {
               <div className=" pt-1">
                 <TextField
                   fullWidth
+                  required
                   name="alt_mobile"
                   label="Mobile"
                   variant="outlined"
@@ -1321,14 +984,7 @@ const Apply = (e) => {
               Others :
             </p>
           </div>
-          {/* <Input
-            variant="standard"
-            label="Interest/Hobbies"
-            size="md"
-            color="indigo"
-            name="hobby"
-            maxLength={100}
-          /> */}
+
           <TextField
             fullWidth
             name="hobby"
@@ -1352,16 +1008,9 @@ const Apply = (e) => {
             }}
           />
 
-          {/* <Input
-            variant="standard"
-            label="Why do you learn Cyber Security / Python?"
-            size="md"
-            color="indigo"
-            name="des_question"
-            maxLength={500}
-          /> */}
           <TextField
             fullWidth
+            required
             name="des_question"
             label="Why do you learn Cyber Security / Python?"
             variant="outlined"

@@ -5,7 +5,8 @@ const Marque = ({data}) => {
     return (
         <div>
                {data && (
-        <Marquee className="bg-[#ece9e9] text-sm py-1 font-[300]">
+        <Marquee className="bg-[#ece9e9] text-sm py-1 font-[300]"   pauseOnHover
+>
           Admission going on for
 
           <span className="font-semibold text-purple-400 px-2">

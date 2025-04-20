@@ -44,7 +44,7 @@ export default function CarouselComponent() {
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 container mx-auto md:px-10 xl:px-0">
             <h4 className="text-[28px] md:text-[42px] xl:text-[44px] md:leading-[50px] xl:leading-[53px] font-bold">{banner.title}</h4>
             <p className="text-[18px] md:text-[26px] xl:text-[20px] leading-7 mt-1">{banner.subtitle}</p>
-            <p className=" text-[10px] md:text-[14px] text-gray-800 mt-4">{banner.description}</p>
+            <p className=" text-[10px] md:text-[16px] text-gray-800 mt-4">{banner.description}</p>
           </div>
         </div>
       ))}
