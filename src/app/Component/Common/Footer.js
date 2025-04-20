@@ -214,7 +214,7 @@ const Footer = () => {
         <p className="text-[15px] text-center md:text-left">
           Copyright © 2025 All Rights Reserved by
 
-          <span className="text-[#29aafe]">Arena Web Security</span>.
+          <span className="text-[#29aafe]"> Arena Web Security</span>.
         </p>
         <div className="flex gap-3 mt-4 md:mt-0">
           <a
