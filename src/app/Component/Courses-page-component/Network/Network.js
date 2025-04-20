@@ -91,7 +91,7 @@ const Network = () => {
       {/* Course Module */}
       <div className="flex px-3 shadow-md mb-10 pb-5">
         <div className="grid  grid-cols-12 gap-x-2 w-full  lg:mt-16 mt-8">
-          <div className="  col-span-12 lg:px-3">
+          <div className="lg:col-span-8 col-span-12 lg:px-3">
             
 
             {/*KEY FEATURES  */}
