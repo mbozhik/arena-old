@@ -199,19 +199,19 @@ const Footer = () => {
         </p>
         <div className="flex gap-3 mt-4 md:mt-0">
           <a
-            href="#"
+            href="https://www.facebook.com/ArenaBangladesh"
             className="w-10 h-10 flex items-center justify-center rounded-full bg-[#33353d] text-[#885cbe] hover:bg-[#3b5998] transition"
           >
             <FaFacebookF />
           </a>
           <a
-            href="#"
+            href="https://bd.linkedin.com/company/arena-web-security"
             className="w-10 h-10 flex items-center justify-center rounded-full bg-[#33353d] text-[#885cbe] hover:bg-[#007bb6] transition"
           >
             <FaLinkedinIn />
           </a>
           <a
-            href="#"
+            href="https://www.youtube.com/c/LearnwithCyber71"
             className="w-10 h-10 flex items-center justify-center rounded-full bg-[#33353d] text-[#885cbe] hover:bg-[#007bb6]  transition"
           >
             <FaYoutube />
