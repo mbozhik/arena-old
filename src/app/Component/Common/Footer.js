@@ -212,7 +212,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="flex flex-col md:flex-row justify-between items-center mt-4 container">
         <p className="text-[15px] text-center md:text-left">
-          Copyright © 2021 All Rights Reserved by
+          Copyright © 2025 All Rights Reserved by
 
           <span className="text-[#29aafe]">Arena Web Security</span>.
         </p>
