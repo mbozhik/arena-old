@@ -20,8 +20,8 @@ import BannerComponent from "../../Utility/ImageAd";
 const CyberSecurityDiploma = () => {
   const Tanjim = BannerImage();
   const features = [
-    "•	🧑‍🏫 Trained by Top Cybersecurity Experts",
-    "•	💻 Practical Lab Environment & Live Projects",
+    "Trained by Top Cybersecurity Experts",
+    "Practical Lab Environment & Live Projects",
     "Roadmap for Freelancing & International Jobs",
     "Certificate with Career Support & Job Guidance",
     "Structured for Beginners to Advanced Learners",
@@ -70,7 +70,7 @@ const CyberSecurityDiploma = () => {
     <div>
       <div className="md:text-center mt-14 px-3 md:px-0">
         {/* <Slide direction="down" triggerOnce> */}
-        <div className="lg:text-[24px] md:text-[20px]  text-[18px] font-semibold leading-9 text-[#424242]">
+        <div className="lg:text-[24px] md:text-[20px]  text-[16px] font-semibold leading-9 text-[#424242]">
           {/* Apply Fade and Damping Simultaneously */}
           <Fade
             fraction={1}
@@ -79,7 +79,7 @@ const CyberSecurityDiploma = () => {
             cascade={true} // Apply cascading fade effect
             damping={0.1} // Smooth transition with damping
           >
-          Professional Diploma in Cyber Security (1 Year)
+            Professional Diploma in Cyber Security (1 Year)
           </Fade>
         </div>
         {/* </Slide> */}
@@ -93,12 +93,17 @@ const CyberSecurityDiploma = () => {
             <Slide direction="down" cascade triggerOnce>
               <div className="relative animate-fadeInDown">
                 <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
-                Build a Global Cybersecurity Career — From Fundamentals to Freelancing
+                  Build a Global Cybersecurity Career — From Fundamentals to
+                  Freelancing
                 </h3>
                 <p className="text-[#424242] font-[300] lg:text-[16px] text-sm leading-[19px] text-justify mt-5">
-               
-               
-                Step into the frontline of digital defense with Bangladesh’s most trusted 1-year Professional Diploma in Cyber Security, powered by Arena Web Security. This career-focused program is meticulously designed to equip you with hands-on skills in ethical hacking, digital forensics, OSINT, Linux server security, and more — so you're not just learning, you're preparing to lead.
+                  Step into the frontline of digital defense with Bangladesh’s
+                  most trusted 1-year Professional Diploma in Cyber Security,
+                  powered by Arena Web Security. This career-focused program is
+                  meticulously designed to equip you with hands-on skills in
+                  ethical hacking, digital forensics, OSINT, Linux server
+                  security, and more — so you're not just learning, you're
+                  preparing to lead.
                 </p>
               </div>
             </Slide>
@@ -114,10 +119,10 @@ const CyberSecurityDiploma = () => {
                   damping={0.1} // Smooth transition with damping
                 >
                   <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  What You'll Master:
+                    What You'll Master:
                   </h3>
                 </Fade>
-                
+
                 <hr className="mt-2" />
               </div>
               <div className="">
@@ -158,14 +163,12 @@ const CyberSecurityDiploma = () => {
                       <span> Career Grooming & Global Job Readiness</span>
                     </div>
                   </li>
-                 
                 </ul>
-                
               </div>
             </article>
             <div>
               <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-              Why This Diploma?
+                Why This Diploma?
               </h3>
               <div className="bg-white shadow rounded-md p-4 mb-6">
                 <ul className="space-y-2 lg:text-[16px] text-sm leading-5 font-[300] text-[#424242] ">
@@ -209,15 +212,19 @@ const CyberSecurityDiploma = () => {
                   </tbody>
                 </table>
                 <div className="text-sm text-black leading-relaxed mt-10">
-      <p>
-        <span className="font-semibold">Ideal for:</span> HSC Pass, University Students, IT Professionals, Freelancers, and Career Switchers
-      </p>
-      <p>
-        <span className="font-semibold">Duration:</span> 1 Year{' '}
-        <span className="font-semibold">| Mode:</span> Offline + Online Hybrid{' '}
-        <span className="font-semibold">| Language:</span> Bangla & English Supported
-      </p>
-    </div>
+                  <p>
+                    <span className="font-semibold">Ideal for:</span> HSC Pass,
+                    University Students, IT Professionals, Freelancers, and
+                    Career Switchers
+                  </p>
+                  <p>
+                    <span className="font-semibold">Duration:</span> 1 Year{" "}
+                    <span className="font-semibold">| Mode:</span> Offline +
+                    Online Hybrid{" "}
+                    <span className="font-semibold">| Language:</span> Bangla &
+                    English Supported
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -277,7 +284,6 @@ const CyberSecurityDiploma = () => {
               src={Banner}
               className="w-full "
             />
-
           </div>
         </div>
       </div>
@@ -465,7 +471,7 @@ const CyberSecurityDiploma = () => {
               className=""
             />
           </article> */}
-          <BannerComponent/>
+          <BannerComponent />
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
@@ -484,11 +490,9 @@ const CyberSecurityDiploma = () => {
       <div className=" my-10 ">
         <Outline />
       </div>
-      <div className=" my-10 ">
-        {/* <PaymentModal /> */}
-      </div>
+      <div className=" my-10 ">{/* <PaymentModal /> */}</div>
     </div>
   );
 };
 
-export default CyberSecurityDiploma ;
+export default CyberSecurityDiploma;

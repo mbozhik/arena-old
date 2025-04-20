@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
 
         {/* Information */}
-        <div className="md:hidden xl:block">
+        <div className="">
           <h3 className="text-white text-lg font-medium mb-4">Information</h3>
           <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
             {links.map(({ name, href }) => (
@@ -117,26 +117,7 @@ const Footer = () => {
 
         {/* Our Courses */}
         <div>
-          <div className="md:block xl:hidden">
-            <h3 className="text-white text-lg font-medium mb-4">Information</h3>
-            <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
-              {links.map(({ name, href }) => (
-                <li
-                  key={name}
-                  className="flex items-center gap-2 hover:text-[#29aafe] transition"
-                >
-                  <FaArrowRight className="text-[#715296] text-[16px]" />
-                  <a
-                    href={href}
-                    target={href.startsWith("http") ? "_blank" : "_self"}
-                    rel="noopener noreferrer"
-                  >
-                    {name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          
           <h3 className="text-white text-lg font-medium mb-4 md:mt-6 xl:mt-0">
             Our Courses
           </h3>
