@@ -97,12 +97,12 @@ const CyberSecurityDiploma = () => {
                   Freelancing
                 </h3>
                 <p className="text-[#424242] font-[300] lg:text-[16px] text-sm leading-[19px] text-justify mt-5">
-                  Step into the frontline of digital defense with Bangladesh’s
+                  Step into the frontline of digital defense with Bangladesh is
                   most trusted 1-year Professional Diploma in Cyber Security,
                   powered by Arena Web Security. This career-focused program is
                   meticulously designed to equip you with hands-on skills in
                   ethical hacking, digital forensics, OSINT, Linux server
-                  security, and more — so you're not just learning, you're
+                  security, and more — so you are not just learning, you are
                   preparing to lead.
                 </p>
               </div>
