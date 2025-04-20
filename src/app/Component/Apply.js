@@ -41,10 +41,27 @@ const Apply = (e) => {
   const [notRequired, setNotRequired] = useState(false);
   const [notRequiredWork, setNotRequiredWork] = useState(false);
   const [showAllDays, setShowAllDays] = useState(false);
+  const [versityName, setVersityName] = useState(" ");
+  const [versityDep, setVersityDep] = useState(" ");
+  const [versityRoll, setVersityRoll] = useState(" ");
   const days = Array.from({ length: 31 }, (_, i) => i + 1); // 1-31
 
   // Course Function Call hare
-
+  const handleCheckboxChange = (e) => {
+    const isChecked = e.target.checked;
+    setNotRequired(isChecked);
+    
+    // Set occupation based on checkbox state
+    if (isChecked) {
+      setVersityName("not required");
+      setVersityDep("not required");
+      setVersityRoll("not required");
+    } else {
+      setVersityName(" "); // Or set to empty string "" if preferred
+      setVersityDep(" "); // Or set to empty string "" if preferred
+      setVersityRoll(" "); // Or set to empty string "" if preferred
+    }
+  };
   useEffect(() => {
     try {
       async function DataFatching() {
@@ -121,6 +138,10 @@ const Apply = (e) => {
     newFormData.append("birth_date", birth_date);
     newFormData.append("gender", gander);
     newFormData.append("course_title", course_title);
+    newFormData.append("varsity_name", versityName);
+    newFormData.append("varsity_dpt", versityDep);
+    newFormData.append("varsity_id", versityRoll);
+    // newFormData.append("course_title", course_title);
     let object = Object.fromEntries(newFormData);
 
     if (validNumber === null) {
@@ -728,6 +749,7 @@ const Apply = (e) => {
               onChange={(e) => setNotRequiredWork(e.target.checked)}
               className="mr-2"
             />
+            
             <label htmlFor="notRequired" className="text-sm">
               Not Required
             </label>
@@ -761,9 +783,11 @@ const Apply = (e) => {
               <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
                 <TextField
                   fullWidth
+                  required
                   name="student_occupation"
-                  label="Occupation (if Applicable) *"
+                  label="Occupation (if Applicable)"
                   variant="outlined"
+                 
                   size="medium"
                   inputProps={{ maxLength: 100 }}
                   sx={{
@@ -791,19 +815,26 @@ const Apply = (e) => {
               Educational Background :
             </p>
           </div>
-{/* 
+
           <div className="flex items-center mb-1">
-            <input
+            {/* <input
               type="checkbox"
               id="notRequired"
               checked={notRequired}
               onChange={(e) => setNotRequired(e.target.checked)}
               className="mr-2"
-            />
+            /> */}
+             <input
+        type="checkbox"
+        id="notRequired"
+        checked={notRequired}
+        onChange={handleCheckboxChange}
+        className="mr-2"
+      />
             <label htmlFor="notRequired" className="text-sm">
               Not Required
             </label>
-          </div> */}
+          </div>
 
           {!notRequired && (
             <div className="grid grid-cols-6 gap-x-2">
@@ -815,6 +846,8 @@ const Apply = (e) => {
                   name="varsity_name"
                   label="School/College/University"
                   variant="outlined"
+                  value={versityName}
+                  onChange={(e) => setVersityName(e.target.value)}
                   size="medium"
                   inputProps={{ maxLength: 200 }}
                   sx={{
@@ -843,6 +876,8 @@ const Apply = (e) => {
                     name="varsity_dpt"
                     label="Department"
                     variant="outlined"
+                    value={versityDep}
+                    onChange={(e) => setVersityDep(e.target.value)}
                     size="medium"
                     inputProps={{ maxLength: 100 }}
                     sx={{
@@ -869,6 +904,8 @@ const Apply = (e) => {
                     label="Roll"
                     variant="outlined"
                     size="medium"
+                    value={versityRoll}
+                    onChange={(e) => setVersityRoll(e.target.value)}
                     inputProps={{ maxLength: 35 }}
                     sx={{
                       "& .MuiOutlinedInput-root": {
