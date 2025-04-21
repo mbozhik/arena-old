@@ -12,19 +12,27 @@ const courses = [
     description:
       "Whether you’re interested in landing your first IT security job, becoming a full-time white hat hacker, or preparing to test the security of your own home network, Arena Web Security offers approachable, hands-on ethical hacking courses to help you keep your networks safe from cyber criminals & make your career at professional marketplace.",
   },
-  {
-    image: cyberSecurity,
-    title: "Advance Python With Freelancing",
-    link: "/advance-python-with-django",
-    description:
-      "Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.",
-  },
+
   {
     image: cyberSecurity,
     title: "Cyber Security and Advance Python (Combo)",
     link: "/cyber-security-and-python-course",
     description:
       "Cybersecurity needs a programming language and today Python is very popular because of its flexibility and lightweight features. This course can help to build skills across the cyberattack world for both cyber attackers and defenders",
+  },
+  {
+    image: cyberSecurity,
+    title: "Professional Diploma in Cyber Security ",
+    link: "/diploma-in-cyber-security",
+    description:
+      "Step into the frontline of digital defense with Bangladesh’s most trusted 1-year Professional Diploma in Cyber Security, powered by Arena Web Security. This career-focused program is meticulously designed to equip you with hands-on skills in ethical hacking, digital forensics, OSINT, Linux server security, and more — so you're not just learning, you're preparing to lead.",
+  },
+  {
+    image: cyberSecurity,
+    title: "Advance Python With Freelancing",
+    link: "/advance-python-with-django",
+    description:
+      "Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.",
   },
   {
     image: AdvancedCourse,
@@ -54,13 +62,7 @@ const courses = [
     description:
       "In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. We cover one of the largest risks online, the browser. The doorway into your system.",
   },
-  {
-    image: cyberSecurity,
-    title: "Professional Diploma in Cyber Security ",
-    link: "/cyber-security-diploma",
-    description:
-      "Step into the frontline of digital defense with Bangladesh’s most trusted 1-year Professional Diploma in Cyber Security, powered by Arena Web Security. This career-focused program is meticulously designed to equip you with hands-on skills in ethical hacking, digital forensics, OSINT, Linux server security, and more — so you're not just learning, you're preparing to lead.",
-  },
+
 ];
 export function AllCourses() {
   return (

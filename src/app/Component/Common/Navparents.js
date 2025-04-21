@@ -33,7 +33,7 @@ const Navparents = ({data,uid}) => {
     target="_blank"
     href="https://www.facebook.com/ArenaBangladesh/"
     className="float-right flex justify-center items-center text-center border border-red-600 text-red-600  hover:bg-red-600 hover:text-white 
-    xl:px-4 md:py-2 py-1 transition duration-300 rounded-lg h-10 xl:text-sm md:text-[12px] px-2"
+    xl:px-4 md:py-2 mt-1 md:mt-0 transition duration-300 rounded-lg md:h-10 h-8 xl:text-sm md:text-[12px] text-[12px] px-2"
   >
     Join Our Facebook
   </a>

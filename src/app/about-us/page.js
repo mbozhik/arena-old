@@ -48,7 +48,7 @@ const page = () => {
 
       {/* <iframe className="" src={`${AWTBrochure}#view=fitH`} frameBorder="0"
                                             height="1000px" width="100%"/> */}
-      <div className="px-20 container mx-auto my-5 ">
+      <div className="px-20 container mx-auto my-5 hidden xl:block">
         <Pdf />
       </div>
       <CourseStatistic />
