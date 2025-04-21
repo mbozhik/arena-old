@@ -805,7 +805,7 @@ const Apply = (e) => {
                   fullWidth
                   required
                   name="student_occupation"
-                  label="Occupation (if Applicable)"
+                  label="Occupation "
                   variant="outlined"
                   size="medium"
                   inputProps={{ maxLength: 100 }}
