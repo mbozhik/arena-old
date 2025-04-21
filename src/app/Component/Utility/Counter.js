@@ -29,11 +29,11 @@ const Counter = () => {
       </article>
       <article className="flex justify-center flex-col md:border-r-2">
         <div className="flex justify-center">
-        <Image src={month} alt="Course Image" width={70} height={70} />
+        <Image src={month} alt="Course Image" width={60} height={60} />
 
         </div>
 
-        <div className="text-[20px] mt-4 text-[#7D58A5FF] font-semibold text-center flex justify-center gap-2">
+        <div className="text-[20px] mt-3 text-[#7D58A5FF] font-semibold text-center flex justify-center gap-2">
           <ScrollTrigger
             onEnter={() => setVisible(true)}
             onExit={() => setVisible(false)}
@@ -50,7 +50,7 @@ const Counter = () => {
 
          </div>
 
-        <div className="text-[20px] mt-4 text-[#7D58A5FF] font-semibold text-center flex justify-center gap-2">
+        <div className="text-[20px] mt-3 text-[#7D58A5FF] font-semibold text-center flex justify-center gap-2">
           <ScrollTrigger
             onEnter={() => setVisible(true)}
             onExit={() => setVisible(false)}
@@ -63,7 +63,7 @@ const Counter = () => {
       </article>
       <article className="flex justify-center flex-col ">
         <div className="flex justify-center">
-          <Image src={freelancer} alt="Course Image" width={70} height={70} />
+          <Image src={freelancer} alt="Course Image" width={60} height={60} />
         </div>
         <div className="text-[20px] mt-4 text-[#7D58A5FF] font-semibold text-center flex justify-center gap-2">
           <ScrollTrigger
@@ -74,7 +74,7 @@ const Counter = () => {
           </ScrollTrigger>
           <span>+</span>
         </div>
-        <p className="text-center text-sm mt-3">Project Complited</p>
+        <p className="text-center text-sm mt-3"> Project Completed </p>
       </article>
     </div>
   );
