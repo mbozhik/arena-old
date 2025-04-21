@@ -42,7 +42,7 @@ const Counter = () => {
           </ScrollTrigger>
           <span>+</span>
         </div>
-        <p className="text-center text-sm mt-3">Years In Service</p>
+        <p className="text-center text-sm mt-1">Years In Service</p>
       </article>
       <article className="flex justify-center flex-col md:border-r-2">
         <div className="flex justify-center">
@@ -74,7 +74,7 @@ const Counter = () => {
           </ScrollTrigger>
           <span>+</span>
         </div>
-        <p className="text-center text-sm mt-3"> Project Completed </p>
+        <p className="text-center text-sm "> Project Completed </p>
       </article>
     </div>
   );

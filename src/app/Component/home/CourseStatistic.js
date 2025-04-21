@@ -12,7 +12,7 @@ const CourseStatistic = () => {
       </h5>
         {/* <h1 className="font-bold md:text-3xl text-[#0b6481]"></h1> */}
         {/* <p className="lg:w-56 bg-[#ffd321] h-1 "></p> */}
-        <h6 className="text-center text-gray-600 md:text-sm  mb-10 text-[10px]">Statstic measures the whole progressing report which is organised by Arena Web Security.</h6>
+        <h6 className="text-center text-gray-600 md:text-sm  mb-10 text-[10px]">Statistics measures the whole progressing report which is organised by Arena Web Security.</h6>
    
       </div>
     
