@@ -19,7 +19,7 @@ const BkashPayment = () => {
     <div className="container mt-5 mx-auto" ref={divRef}>
       <div className="row justify-content-center mt-5 mb-5">
         <div className="col-md-3"></div>
-        <div className="w-2/3 mx-auto flex justify-center items-center flex-col bKashBackCard card shadow-sm border-0 p-lg-5 pt-3 pb-3">
+        <div className=" w-full md:w-2/3 mx-auto flex justify-center items-center flex-col bKashBackCard card shadow-sm border-0 p-lg-5 pt-3 pb-3">
           <h6 className="my-5 text-center white-text">Student pay through bKash</h6>
           <div>
           <input className="form-control placeholderAmount amountField py-4 px-2" type="number" id="tk" placeholder=" Enter Your Amount" name="tk" />

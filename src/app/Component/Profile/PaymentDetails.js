@@ -5,11 +5,11 @@ const PaymentDetails = async ({ paymetdata, courseFee }) => {
   const data = paymetdata;
 
   return (
-    <div className="container mx-auto px-3 md:px-0" id="paymentId">
+    <div className="  " id="paymentId">
       <h4 className=" py-3 text-black mt-4   md:text-3xl text-2xl font-semibold">
         Payment Summary
       </h4>
-      <div className="relative overflow-x-auto">
+      {/* <div className="relative overflow-x-auto">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
@@ -89,7 +89,64 @@ const PaymentDetails = async ({ paymetdata, courseFee }) => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </div> */}
+      <div className="relative overflow-x-auto rounded-md border border-gray-200 mt-4">
+  <table className="w-full text-sm text-left text-gray-700">
+    <thead className="text-sm font-bold text-black bg-gray-100">
+      <tr>
+        <th className="px-4 py-3 border border-gray-200">#</th>
+        <th className="px-4 py-3 border border-gray-200">Date of Payment</th>
+        <th className="px-4 py-3 border border-gray-200">Payment Type</th>
+        <th className="px-4 py-3 border border-gray-200">Payment Number/Account Number</th>
+        <th className="px-4 py-3 border border-gray-200">Amount</th>
+      </tr>
+    </thead>
+    <tbody className="text-[15px] text-black">
+      {data?.data?.data.length === 0 ? (
+        <tr>
+          <td colSpan={5} className="text-center py-6 font-medium text-gray-500">
+            No Payment Details Available
+          </td>
+        </tr>
+      ) : (
+        data?.data?.data.map((payment, index) => (
+          <tr className="bg-white border border-gray-200" key={index}>
+            <td className="px-4 py-3 border border-gray-200 text-center">{index + 1}</td>
+            <td className="px-4 py-3 border border-gray-200">
+              {new Date(payment.time).toLocaleDateString("en-GB")}
+            </td>
+            <td className="px-4 py-3 border border-gray-200">{payment.payment_type}</td>
+            <td className="px-4 py-3 border border-gray-200">{payment.pay_number}</td>
+            <td className="px-4 py-3 border border-gray-200">{payment.amount}</td>
+          </tr>
+        ))
+      )}
+
+      {/* Total Paid Row */}
+      <tr className="bg-white border border-gray-200 font-semibold">
+        <td colSpan={3}></td>
+        <td className="px-4 py-3 text-right border border-gray-200">Total Paid:</td>
+        <td className="px-4 py-3 border border-gray-200 text-green-600">
+          {data?.data?.total.total_amount > 0
+            ? data?.data?.total.total_amount
+            : "0.00"} ৳
+        </td>
+      </tr>
+
+      {/* Due Row */}
+      <tr className="bg-white border border-gray-200 font-semibold">
+        <td colSpan={3}></td>
+        <td className="px-4 py-3 text-right border border-gray-200">Due:</td>
+        <td className="px-4 py-3 border border-gray-200 text-yellow-700">
+          {data?.data?.total.total_amount > 0
+            ? courseFee - data?.data?.total.total_amount
+            : courseFee} ৳
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
     </div>
   );
 };

@@ -64,6 +64,7 @@ body {
   /* padding: 12px 40px; */
   height: 70px;
   top: 0 !important;
+  font:uppercase;
 }
 .mobile-menu {
   background-color: #44107a;
@@ -714,7 +715,7 @@ body {
 /* CourseStatistic  */
 .ProfileImages {
   position: relative;
-  height: 50vh;
+  height: 300px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

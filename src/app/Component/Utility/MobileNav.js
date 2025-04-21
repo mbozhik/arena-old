@@ -52,7 +52,7 @@ const MobileNav = ({ uid }) => {
     <div
       className={`lg:flex ${
         !scrolling && pathname === "/" ? "navber2" : "navber2"
-      } lg:px-10 md:px-5 relative font-bold`}
+      } lg:px-10 md:px-5 relative font-bold uppercase`}
     >
       <div className="container mx-auto flex justify-between font-bold">
         {/* Hamburger Menu - now shows on md and below */}
@@ -75,48 +75,58 @@ const MobileNav = ({ uid }) => {
         ></div>
 
         {/* Main Nav */}
-        <nav className="flex justify-center items-center font-bold">
+        <nav className="flex justify-center items-center font-bold text-uppercase">
           <ul
             className={`lg:flex block peer z-50 text-white font-bold ${
               nav
                 ? "-translate-x-0 lg:translate-x-0"
                 : "-translate-x-[800px] lg:translate-x-0"
             } transition-all duration-350 ease-in-out gap-x-4 bg-gradient-to-t
-        from-[#56b5e3] to-[#7d58a5] lg:bg-transparent fixed lg:relative top-0 left-0 h-screen lg:h-auto w-2/3 lg:w-auto pt-10 pl-5 lg:pt-0 lg:pl-0 lg:bg-none`}
+        from-[#56b5e3] to-[#7d58a5] lg:bg-transparent fixed lg:relative top-0 left-0 h-screen lg:h-auto w-2/3 lg:w-auto pt-10 pl-5 lg:pt-0 lg:pl-0 lg:bg-none uppercase`}
           >
             <div className="block lg:hidden text-white absolute right-5 top-3 text-3xl">
               <IoIosCloseCircle onClick={() => setNave(false)} />
             </div>
 
-            {/* Nav Items */}
             {[
               { label: "Home", href: "/" },
               { label: "About", href: "/about-us" },
               { label: "Courses", href: "/all-courses" },
               { label: "Services", href: "/all-services" },
-              { label: "Blog", href: "https://www.hackers.institute/" },
+              {
+                label: "Blog",
+                href: "https://www.hackers.institute/",
+                newTab: true, // Add a flag for external links
+              },
               { label: "Gallery", href: "/arena-gallery" },
               { label: "Contact", href: "/contact" },
-              // { label: "Verify Certificate", href: "https://admission.arenawebsecurity.net/" },
-            ].map(({ label, href }) => (
+            ].map(({ label, href, newTab }) => (
               <li
                 key={label}
                 className="hover:text-black mt-2 lg:mt-0"
                 onClick={() => setNave(false)}
               >
-                <Link href={href}>{label}</Link>
+                {newTab ? (
+                  <Link href={href} target="_blank" rel="noopener noreferrer">
+                    {label}
+                  </Link>
+                ) : (
+                  <Link href={href}>{label}</Link>
+                )}
               </li>
             ))}
-            <li className="hover:text-black  flex items-center mt-4 lg:hidden">
+            <li className="hover:text-black flex items-center mt-2 lg:hidden">
               <Link
                 href="https://admission.arenawebsecurity.net/"
                 onClick={() => setNave(false)}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Verify Certificate
               </Link>
             </li>
             {uid && (
-              <li className="hover:text-black">
+              <li className="hover:text-black mt-2 md:mt-0">
                 <Link href="/profile" onClick={() => setNave(false)}>
                   Profile
                 </Link>
@@ -164,6 +174,8 @@ const MobileNav = ({ uid }) => {
               <Link
                 href="https://admission.arenawebsecurity.net/"
                 onClick={() => setNave(false)}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Verify Certificate
               </Link>

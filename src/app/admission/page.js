@@ -14,7 +14,10 @@ export const metadata = {
 const page = async () => {
   const data = await NavberData();
   return (
-    <div className="px-0 mt-5 max-w-[1280px] mx-auto  shadow-[0px_0px_5px_0px_rgba(0,0,0,0.3)]  my-10 pr-3 rounded-2xl relative ">
+    <div className="px-3 md:px-12">
+
+
+    <div className=" mt-5  mx-auto  shadow-[0px_0px_5px_0px_rgba(0,0,0,0.3)]  my-10 pr-3 rounded-2xl relative ">
       <div className="flex 2xl:h-[600px] xl:h-[90vh]  lg:h-[50vh] overflow-clip gap-2 relative  ">
         <div className="relative w-[50%] hidden lg:block">
           <div className="px-5 py-6 bg-gradient-to-bl  from-[#7d58a5] to-[#56b5e3] rounded-s-2xl text-center h-full">
@@ -82,6 +85,7 @@ const page = async () => {
         {/* Addmission Form */}
         <Apply />
       </div>
+    </div>
     </div>
   );
 };

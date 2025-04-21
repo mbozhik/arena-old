@@ -25,7 +25,7 @@ const Profiledetails = async ({ data, paymetdata }) => {
             Admission Status
           </p>
 
-          {paymetdata?.data?.total.total_amount >=
+          {/* {paymetdata?.data?.total.total_amount >=
           data?.data?.course_fee_divide ? (
             <p className="text-green-300 font-medium">Admission Done</p>
           ) : paymetdata?.data?.total.total_amount <
@@ -33,7 +33,18 @@ const Profiledetails = async ({ data, paymetdata }) => {
             <p className="text-yellow-500 font-medium">Seat Booking</p>
           ) : (
             <p className="text-red-300 font-medium">Pending</p>
-          )}
+          )} */}
+          {data?.data?.discount_user ? (
+  <p className="text-green-300 font-medium">Admission Done</p>
+) : !paymetdata?.data?.total?.total_amount ||
+  paymetdata?.data?.total?.total_amount === 0 ? (
+  <p className="text-yellow-600 font-medium">Pending</p>
+) : paymetdata?.data?.total.total_amount >= data?.data?.course_fee_divide ? (
+  <p className="text-green-300 font-medium">Admission Done</p>
+) : (
+  <p className="text-yellow-500 font-medium">Seat Booking</p>
+)}
+
         </div>
 
         <div className="mt-4 text-center">

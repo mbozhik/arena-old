@@ -50,7 +50,7 @@ const Apply = (e) => {
   const handleCheckboxChange = (e) => {
     const isChecked = e.target.checked;
     setNotRequired(isChecked);
-    
+
     // Set occupation based on checkbox state
     if (isChecked) {
       setVersityName("not required");
@@ -720,12 +720,32 @@ const Apply = (e) => {
                   },
                 }}
               >
-                {allcourse && allcourse.length > 0 ? (
+                {/* {allcourse && allcourse.length > 0 ? (
                   allcourse.map((x, index) => (
                     <MenuItem key={index + 1} value={x.batch_schedule_time_id}>
                       {x.batch_schedule_name}
                     </MenuItem>
                   ))
+                ) : (
+                  <MenuItem disabled className="text-red-500">
+                    Server Error
+                  </MenuItem>
+                )} */}
+                {allcourse && allcourse.length > 0 ? (
+                  allcourse
+                    .filter(
+                      (x) =>
+                        x.batch_schedule_name !==
+                        "Advanced Python With Django and Freelancing"
+                    )
+                    .map((x, index) => (
+                      <MenuItem
+                        key={index + 1}
+                        value={x.batch_schedule_time_id}
+                      >
+                        {x.batch_schedule_name}
+                      </MenuItem>
+                    ))
                 ) : (
                   <MenuItem disabled className="text-red-500">
                     Server Error
@@ -787,7 +807,6 @@ const Apply = (e) => {
                   name="student_occupation"
                   label="Occupation (if Applicable)"
                   variant="outlined"
-                 
                   size="medium"
                   inputProps={{ maxLength: 100 }}
                   sx={{
@@ -810,7 +829,6 @@ const Apply = (e) => {
           )}
 
           <div className="flex mt-1 w-full">
-           
             <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
               Educational Background :
             </p>
@@ -824,13 +842,13 @@ const Apply = (e) => {
               onChange={(e) => setNotRequired(e.target.checked)}
               className="mr-2"
             /> */}
-             <input
-        type="checkbox"
-        id="notRequired"
-        checked={notRequired}
-        onChange={handleCheckboxChange}
-        className="mr-2"
-      />
+            <input
+              type="checkbox"
+              id="notRequired"
+              checked={notRequired}
+              onChange={handleCheckboxChange}
+              className="mr-2"
+            />
             <label htmlFor="notRequired" className="text-sm">
               Not Required
             </label>

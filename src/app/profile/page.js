@@ -19,7 +19,7 @@ const page = async () => {
   // console.log("type of admission:", typeof data?.data.admission);
 
   return (
-    <div className="relative container">
+    <div className="relative px-3 md:px-12">
       {data?.data.admission === true ? (
         <></>
       ) : (
@@ -38,7 +38,7 @@ const page = async () => {
 
       <PaymentDetails courseFee={courseFee} paymetdata={paymetdata} />
       <BkashPayment />
-      <div className="mt-10">
+      <div className="md:mt-10 mt-3">
         <PaymentModal />
       </div>
     </div>
