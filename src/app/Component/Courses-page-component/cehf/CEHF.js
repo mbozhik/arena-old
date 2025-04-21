@@ -4,9 +4,11 @@ import Banner from "@/app/all-courses/banner.webp";
 import Image from "next/image";
 import { FaCheck, FaHandPointRight } from "react-icons/fa";
 import Fahim from "@/app/all-courses/TeacherSliderImages/Fahim.svg";
-import Sakib from "@/app/all-courses/TeacherSliderImages/SA_MUBIN.jpg";
-import ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpeg";
-import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpeg";
+import Sakib from "@/app/all-courses/TeacherSliderImages/sakib.jpg";
+import Mubin from "@/app/all-courses/TeacherSliderImages/mubin.jpg";
+import Ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpg";
+import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpg";
+import Roman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import Link from "next/link";
@@ -47,35 +49,39 @@ const CEHF = () => {
       image: Fahim,
     },
     {
-      name: "Syed Sakib Alam Mubin",
-      designation: "Trainer",
-      expertise: "Cyber Security",
-      image: Sakib,
+      name: "Md Ashif Islam",
+      designation: "Senior Trainer",
+      expertise:
+        "Cyber Security, VAPT, Bug Bounty, Networking.",
+      image: Ashif, // Make sure you import or define `Ashif`
     },
-    // {
-    //   name: 'Anika Tabassum Nira',
-    //   designation: 'Faculty Member',
-    //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
-    //   image: anika,
-    // },
-    // {
-    //   name: 'Sarwar Alam',
-    //   designation: 'Faculty Member',
-    //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
-    //   image: Ifty,
-    // },
-
-    // {
-    //   name: 'Salman Hafizur Rahman',
-    //   designation: 'Faculty Member',
-    //   expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
-    //   image: Salman,
-    // },
     {
       name: "Bijoy Mondal",
-      designation: "Admin Support",
-      expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
+      designation: "Trainer",
+      expertise:
+        "Cyber Security, Freelancing, Ethical Hacking, Linux.",
       image: Bijoy,
+    },
+    {
+      name: "Syed Sakib Alam Mubin",
+      designation: "Trainer",
+      expertise:
+        "Cyber Security, Ethical Hacking, Linux RedHat.",
+      image: Mubin, // Confirm this is the correct image for "Syed Sakib Alam Mubin"
+    },
+    {
+      name: "Sakib Ahmed",
+      designation: "Trainer",
+      expertise:
+        "Cyber Security, Ethical Hacking, Linux.",
+      image: Sakib, // Define or import `SakibAhmed`
+    },
+    {
+      name: "Roman Moonshi",
+      designation: "Auditor",
+      expertise:
+        "Cyber Security, Ethical Hacking, Linux.",
+      image: Roman, // Define or import `Roman`
     },
   ];
 

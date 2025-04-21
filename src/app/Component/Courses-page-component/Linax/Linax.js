@@ -4,10 +4,12 @@ import Banner from "@/app/all-courses/banner.webp";
 import Image from "next/image";
 import { FaCheck, FaHandPointRight } from "react-icons/fa";
 import Fahim from "@/app/all-courses/TeacherSliderImages/Fahim.svg";
-import Sakib from "@/app/all-courses/TeacherSliderImages/SA_MUBIN.jpg";
-import Noman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
-import ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpeg";
-import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpeg";
+
+import Sakib from "@/app/all-courses/TeacherSliderImages/sakib.jpg";
+import Mubin from "@/app/all-courses/TeacherSliderImages/mubin.jpg";
+import Ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpg";
+import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpg";
+import Roman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar, A11y, Autoplay } from "swiper/modules";
 // import Link from "next/link";
