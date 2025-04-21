@@ -13,7 +13,10 @@ import { IoMail } from "react-icons/io5";
 const Footer = () => {
   const courses = [
     { name: "Cyber Security", href: "/cyber-security-ethical-hacking" },
-    { name: "Professional Diploma in Cyber Security", href: "/diploma-in-cyber-security" },
+    {
+      name: "Professional Diploma in Cyber Security",
+      href: "/diploma-in-cyber-security",
+    },
     {
       name: "Advanced Cyber Security",
       href: "/advanced-cyber-security-course",
@@ -72,26 +75,6 @@ const Footer = () => {
               </span>
             </li>
           </ul>
-          {/* <h3 className="text-white text-lg font-medium mb-4 mt-16 md:block xl:hidden">
-            Technologies
-          </h3>
-          <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d] md:block xl:hidden">
-            {[
-              "React, Vue Js, jQuery",
-              "Python, Node.js, Php",
-              "SQL, MySQL, FireBase, SQLite",
-              "Java, Dart, Flutter",
-              "UI/UX",
-            ].map((tech) => (
-              <li
-                key={tech}
-                className="flex items-center gap-2 hover:text-[#29aafe] transition"
-              >
-                <FaArrowRight className=" text-[#715296] text-[16px]" />
-                {tech}
-              </li>
-            ))}
-          </ul> */}
         </div>
 
         {/* Information */}
@@ -118,43 +101,22 @@ const Footer = () => {
 
         {/* Our Courses */}
         <div>
-          
           <h3 className="text-white text-lg font-medium mb-4 md:mt-6 xl:mt-0">
             Our Courses
           </h3>
 
           <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
             {courses.map(({ name, href }) => (
-              <li
-                key={name}
-                className="flex items-center gap-2 hover:text-[#29aafe] transition"
-              >
-                <FaArrowRight className="text-[#715296] text-[16px]" />
-                <a href={href}>{name}</a>
-              </li>
+             <li
+             key={name}
+             className="flex items-start gap-2 hover:text-[#29aafe] transition"
+           >
+             <FaArrowRight className="text-[#715296] text-[16px] mt-[5px] shrink-0" />
+             <a href={href} className="text-[#8d8d8d] leading-[22px] block">{name}</a>
+           </li>
+           
             ))}
           </ul>
-
-          {/* <h3 className="text-white text-lg font-medium mb-4 mt-10 md:hidden xl:block">
-            Technologies
-          </h3>
-          <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d] md:hidden xl:block">
-            {[
-              "React, Vue Js, jQuery",
-              "Python, Node.js, Php",
-              "SQL, MySQL, FireBase, SQLite",
-              "Java, Dart, Flutter",
-              "UI/UX",
-            ].map((tech) => (
-              <li
-                key={tech}
-                className="flex items-center gap-2 hover:text-[#29aafe] transition"
-              >
-                <FaArrowRight className=" text-[#715296] text-[16px]" />
-                {tech}
-              </li>
-            ))}
-          </ul> */}
         </div>
 
         {/* Developers */}
@@ -167,24 +129,13 @@ const Footer = () => {
               "Mobile Application Security Testing",
               "Network Security Assessment",
               "Cloud Security Assessment",
-              // "Social Media & OSINT Monitoring",
-              // "Red Teaming & Adversary Simulation",
-              // "Security Awareness Training",
-              // "Incident Response & Forensics",
-              // "Endpoint Security & EDR Implementation",
-              // "Firewall & Perimeter Security Configuration",
-              // "Dark Web Monitoring",
-              // "Cybersecurity Consultancy",
-              // "Managed Security Services (MSSP)",
-              // "Security Compliance & Policy Design",
             ].map((dev) => (
               <li
                 key={dev}
                 className="flex items-center gap-2 hover:text-[#29aafe] transition"
               >
                 <FaArrowRight className=" text-[#715296] text-[16px]" />
-                <a href='/all-services'>{dev}</a>
-
+                <a href="/all-services">{dev}</a>
               </li>
             ))}
           </ul>
@@ -195,7 +146,6 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between items-center mt-4 container">
         <p className="text-[15px] text-center md:text-left">
           Copyright © 2025 All Rights Reserved by
-
           <span className="text-[#29aafe]"> Arena Web Security</span>.
         </p>
         <div className="flex gap-3 mt-4 md:mt-0">

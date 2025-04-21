@@ -3,6 +3,7 @@
 import Review from "../Utility/Reviews";
 import OrderImage from "../../../../public/statitic/reveiw.jpg";
 import Image from "next/image";
+import Review2 from "../Utility/Review2";
 const Preview = () => {
   return (
     <div className=" container mx-auto px-3 lg:mt-10 mt-10    ">
@@ -34,7 +35,7 @@ const Preview = () => {
             <Review />
             <div>
               <div className="h-[220px] hidden lg:block ">
-                <Review />
+                <Review2 />
               </div>
               {/* <Image src={OrderImage } alt="review" className="w-full" /> */}
               <div className="pt-2">
