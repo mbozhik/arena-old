@@ -13,6 +13,7 @@ import { IoMail } from "react-icons/io5";
 const Footer = () => {
   const courses = [
     { name: "Cyber Security", href: "/cyber-security-ethical-hacking" },
+    { name: "Professional Diploma in Cyber Security", href: "/diploma-in-cyber-security" },
     {
       name: "Advanced Cyber Security",
       href: "/advanced-cyber-security-course",
