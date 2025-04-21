@@ -25,7 +25,7 @@ const BkashPayment = () => {
           <input className="form-control placeholderAmount amountField py-4 px-2" type="number" id="tk" placeholder=" Enter Your Amount" name="tk" />
           </div>
           <button className="bKashBtn justify-content-center mt-2" id="bKash_button">
-            <Image className="bKashImg float-center justify-content-center border-1 shadow-md" src={BkashLogo} alt="" />
+            <Image className="bKashImg bg-white float-center justify-content-center border-1 shadow-md" src={BkashLogo} alt="" />
           </button>
           {/* Any additional content */}
         </div>

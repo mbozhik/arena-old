@@ -123,10 +123,10 @@ const PaymentDetails = async ({ paymetdata, courseFee }) => {
       )}
 
       {/* Total Paid Row */}
-      <tr className="bg-white border border-gray-200 font-semibold">
+      <tr className="bg-white border border-gray-200 font-medium">
         <td colSpan={3}></td>
         <td className="px-4 py-3 text-right border border-gray-200">Total Paid:</td>
-        <td className="px-4 py-3 border border-gray-200 text-green-600">
+        <td className="px-4 py-3 border border-gray-200 ">
           {data?.data?.total.total_amount > 0
             ? data?.data?.total.total_amount
             : "0.00"} ৳
@@ -134,10 +134,10 @@ const PaymentDetails = async ({ paymetdata, courseFee }) => {
       </tr>
 
       {/* Due Row */}
-      <tr className="bg-white border border-gray-200 font-semibold">
+      <tr className="bg-white border border-gray-200 font-medium">
         <td colSpan={3}></td>
         <td className="px-4 py-3 text-right border border-gray-200">Due:</td>
-        <td className="px-4 py-3 border border-gray-200 text-yellow-700">
+        <td className="px-4 py-3 border border-gray-200 ">
           {data?.data?.total.total_amount > 0
             ? courseFee - data?.data?.total.total_amount
             : courseFee} ৳
