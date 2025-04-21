@@ -28,12 +28,12 @@ const OurConcern = () => {
 
         </h6>
       </div>
-      <div className="mt-20">
+      <div className="xl:mt-20 mt-5">
   <Swiper
     breakpoints={{
-      320: { slidesPerView: 2 },   // Small screens
-      640: { slidesPerView: 3 },   // Tablets
-      768: { slidesPerView: 4 },   // Medium devices
+      320: { slidesPerView: 4 },   // Small screens
+      640: { slidesPerView: 4 },   // Tablets
+      768: { slidesPerView: 5 },   // Medium devices
       1024: { slidesPerView: 6 },  // Laptops
       1280: { slidesPerView: 6 },  // Desktops and up
     }}

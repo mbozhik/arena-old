@@ -1,6 +1,7 @@
 'use client'
 
 
+import Link from "next/link";
 import Marque from "../Utility/Marque";
 import MobileNav from "../Utility/MobileNav";
 import { usePathname } from 'next/navigation'
@@ -20,10 +21,11 @@ const Navparents = ({data,uid}) => {
     <div class="w-full xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full px-4 flex justify-center">
     </div>
     <div class="w-full xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full px-4  flex justify-end flex-col items-center ">
-      <img class="w-52 mx-auto " 
+    <Link href="/">    <img class="w-52 mx-auto " 
       // src="https://arenawebsecurity.net/static/media/main-log-new.png"
       src='/nav/main-log-new.webp'
-       alt="image" />
+       alt="image" /></Link>
+  
       <h3 class="text-center text-[22px] font-bold text-[#0B6481]">The Hackers Arena</h3>
     </div>
     <div className="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full w-full flex justify-end items-center  pr-20">
