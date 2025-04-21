@@ -9,13 +9,13 @@ const Profiledetails = async ({ data, paymetdata }) => {
     <div className="  flex flex-col md:flex-row w-full  rounded-md bg-white">
       {/* Left Sidebar */}
       <div className="w-full md:w-[35%]  text-white p-6 flex flex-col items-center profile_img_sec">
-        <div className="bg-white p-2 rounded-full w-32 h-32 md:w-40 md:h-40">
+        <div className="bg-white p-2 rounded-full w-32 h-32 md:w-40 md:h-40 -mt-14 z-10">
           <Image
             src={male}
             alt="User Image"
             className="w-full h-full rounded-full object-cover"
           />
-            {/* <img className="profileImg " src={data?.data.gender=='male'?male:female} alt="" /> */}
+          {/* <img className="profileImg " src={data?.data.gender=='male'?male:female} alt="" /> */}
         </div>
         <p className="mt-4 text-sm">ID: #{data?.data.u_id}</p>
         <h2 className="text-lg font-medium">{data?.data.Fullname}</h2>
@@ -35,16 +35,16 @@ const Profiledetails = async ({ data, paymetdata }) => {
             <p className="text-red-300 font-medium">Pending</p>
           )} */}
           {data?.data?.discount_user ? (
-  <p className="text-green-300 font-medium">Admission Done</p>
-) : !paymetdata?.data?.total?.total_amount ||
-  paymetdata?.data?.total?.total_amount === 0 ? (
-  <p className="text-yellow-600 font-medium">Pending</p>
-) : paymetdata?.data?.total.total_amount >= data?.data?.course_fee_divide ? (
-  <p className="text-green-300 font-medium">Admission Done</p>
-) : (
-  <p className="text-yellow-500 font-medium">Seat Booking</p>
-)}
-
+            <p className="text-green-300 font-medium">Admission Done</p>
+          ) : !paymetdata?.data?.total?.total_amount ||
+            paymetdata?.data?.total?.total_amount === 0 ? (
+            <p className="text-yellow-600 font-medium">Pending</p>
+          ) : paymetdata?.data?.total.total_amount >=
+            data?.data?.course_fee_divide ? (
+            <p className="text-green-300 font-medium">Admission Done</p>
+          ) : (
+            <p className="text-yellow-500 font-medium">Seat Booking</p>
+          )}
         </div>
 
         <div className="mt-4 text-center">

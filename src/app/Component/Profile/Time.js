@@ -57,7 +57,7 @@ const Time = ({CreateDates,activeday}) => {
         </div>
         <div className="text-center" >
             <h3 className="text-white text-3xl font-bold">{munites}</h3>
-            <p className="text-[#3ED089] mt-1 text-1xl font-bold">Munites</p>
+            <p className="text-[#3ED089] mt-1 text-1xl font-bold">Minutes</p>
         </div>
         <div className="text-center" >
             <h3 className="text-white text-3xl font-bold">{seconds}</h3>
