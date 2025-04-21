@@ -70,6 +70,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+             {/* bKash & others */}
+        <Script src="https://code.jquery.com/jquery-3.3.1.min.js" />
+        <Script src="https://scripts.pay.bka.sh/versions/1.2.0-beta/checkout/bKash-checkout.js" />
+        <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" />
         {/* Google Tag Manager */}
         <Script id="gtm-head" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -104,6 +108,33 @@ export default function RootLayout({ children }) {
           fbq('init', '492878632265213');
           fbq('track', 'PageView');`}
         </Script>
+        <Script
+        id="stape-events"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            !function(a,h,e,v,n,t,s){
+              if(a.cbq)return;
+              n=a.cbq=function(){
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+              };
+              if(!a._cbq)a._cbq=n;
+              n.push=n;
+              n.loaded=!0;
+              n.version='2.0';
+              n.queue=[];
+              t=h.createElement(e);
+              t.async=!0;
+              t.src=v;
+              s=h.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)
+            }(window, document,'script','https://sgw.stape.au/sdk/762395682168377211/events.js');
+            cbq('setHost', 'https://sgw.stape.au/');
+            cbq('init', '762395682168377211');
+            cbq('track', 'PageView');
+          `,
+        }}
+      />
         <noscript>
           <img
             height="1"
@@ -124,10 +155,7 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-        {/* bKash & others */}
-        <Script src="https://code.jquery.com/jquery-3.3.1.min.js" />
-        <Script src="https://scripts.pay.bka.sh/versions/1.2.0-beta/checkout/bKash-checkout.js" />
-        <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" />
+   
 
         <Navber />
         {children}

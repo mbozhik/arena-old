@@ -104,7 +104,7 @@ const PaymentDetails = async ({ paymetdata, courseFee }) => {
     <tbody className="text-[15px] text-black">
       {data?.data?.data.length === 0 ? (
         <tr>
-          <td colSpan={5} className="text-center py-6 font-medium text-gray-500">
+          <td colSpan={5} className="text-center py-6 font-medium ">
             No Payment Details Available
           </td>
         </tr>
