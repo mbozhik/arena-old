@@ -38,7 +38,7 @@ const Preview = () => {
                 <Review2 />
               </div>
               {/* <Image src={OrderImage } alt="review" className="w-full" /> */}
-              <div className="pt-2">
+              <div className="md:pt-2 pt-8">
                 <h3 className="text-base font-semibold mb-2">
                   Impact in Numbers – By Our Learners
                 </h3>
