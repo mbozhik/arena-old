@@ -621,38 +621,38 @@ const CyberSecurityDiploma = () => {
               </h3>
 
               <div className="bg-white shadow rounded-md p-4 mb-6">
-                <ul className="space-y-4 lg:text-[16px] text-sm leading-6 font-[300] text-[#424242]">
+                <ul className="space-y-1 lg:text-[16px] text-sm leading-6 font-[300] text-[#424242]">
                   <li className="flex items-start">
-                    <FaCheck className="text-[#715296] mr-2 mt-[3px]" />
+                    <FaCheck className="text-[#715296] mr-2 " />
                     <div className="flex flex-col">
                       <span>
-                        <span className="font-semibold">Ideal for:</span> HSC
+                        <span className="">Ideal for:</span> HSC
                         Pass, University Students, IT Professionals,
                         Freelancers, and Career Switchers
                       </span>
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <FaCheck className="text-[#715296] mr-2 mt-[3px]" />
+                    <FaCheck className="text-[#715296] mr-2 " />
                     <div className="flex flex-wrap gap-x-4">
                       <span>
-                        <span className="font-semibold">Duration:</span> 1 Year
+                        <span className="">Duration:</span> 1 Year
                       </span>
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <FaCheck className="text-[#715296] mr-2 mt-[3px]" />
+                    <FaCheck className="text-[#715296] mr-2 " />
                     <div className="flex flex-wrap gap-x-4">
                       <span>
-                        <span className="font-semibold">Mode:</span> Hybrid
+                        <span className="">Mode:</span> Hybrid
                       </span>
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <FaCheck className="text-[#715296] mr-2 mt-[3px]" />
+                    <FaCheck className="text-[#715296] mr-2 " />
                     <div className="flex flex-wrap gap-x-4">
                       <span>
-                        <span className="font-semibold">Language:</span> Bangla
+                        <span className="">Language:</span> Bangla
                         & English Supported
                       </span>
                     </div>
@@ -689,20 +689,7 @@ const CyberSecurityDiploma = () => {
                     ))}
                   </tbody>
                 </table>
-                <div className="text-sm text-black leading-relaxed mt-10">
-                  <p>
-                    <span className="font-semibold">Ideal for:</span> HSC Pass,
-                    University Students, IT Professionals, Freelancers, and
-                    Career Switchers
-                  </p>
-                  <p>
-                    <span className="font-semibold">Duration:</span> 1 Year{" "}
-                    <span className="font-semibold">| Mode:</span> Offline +
-                    Online Hybrid{" "}
-                    <span className="font-semibold">| Language:</span> Bangla &
-                    English Supported
-                  </p>
-                </div>
+      
               </div>
             </div>
           </div>

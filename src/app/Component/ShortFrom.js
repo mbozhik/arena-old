@@ -28,7 +28,7 @@ const ShortFrom = (e) => {
     try {
       async function DataFatching() {
         const data = await NavberData();
-        setAllcoures(data);
+        setAllcoures(data.reverse());
       }
       DataFatching();
     } catch (error) {
@@ -284,20 +284,26 @@ const ShortFrom = (e) => {
                     },
                   }}
                 >
-                  {allcourse && allcourse.length > 0 ? (
-                    allcourse.map((x, index) => (
-                      <MenuItem
-                        key={index + 1}
-                        value={x.batch_schedule_time_id}
-                      >
-                        {x.batch_schedule_name}
-                      </MenuItem>
-                    ))
-                  ) : (
-                    <MenuItem disabled className="text-red-500">
-                      Server Error
-                    </MenuItem>
-                  )}
+                   {allcourse && allcourse.length > 0 ? (
+                                   allcourse
+                                     .filter(
+                                       (x) =>
+                                         x.batch_schedule_name !==
+                                         "Advanced Python With Django and Freelancing"
+                                     )
+                                     .map((x, index) => (
+                                       <MenuItem
+                                         key={index + 1}
+                                         value={x.batch_schedule_time_id}
+                                       >
+                                         {x.batch_schedule_name}
+                                       </MenuItem>
+                                     ))
+                                 ) : (
+                                   <MenuItem disabled className="text-red-500">
+                                     Server Error
+                                   </MenuItem>
+                                 )}
                 </TextField>
               </div>
             </div>
