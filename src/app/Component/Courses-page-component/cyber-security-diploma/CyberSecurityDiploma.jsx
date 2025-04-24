@@ -89,15 +89,9 @@ const CyberSecurityDiploma = () => {
         {/* <Slide direction="down" triggerOnce> */}
         <div className="lg:text-[24px] md:text-[20px]  text-[16px] font-semibold leading-9 text-[#424242]">
           {/* Apply Fade and Damping Simultaneously */}
-          <Fade
-            fraction={1}
-            direction="up"
-            delay={500} // Optional delay before fade starts
-            cascade={true} // Apply cascading fade effect
-            damping={0.1} // Smooth transition with damping
-          >
+         
             Professional Diploma in Cyber Security (1 Year)
-          </Fade>
+        
         </div>
         {/* </Slide> */}
       </div>
