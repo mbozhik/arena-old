@@ -293,6 +293,12 @@ const ShortFrom = (e) => {
                                      )
                                      .map((x, index) => (
                                        <MenuItem
+                                       sx={{
+                                        fontSize: '12px', // Smaller text
+                                        whiteSpace: 'normal', // Wrap text
+                                        wordBreak: 'break-word', // Break long words
+                                        lineHeight: 1.3,
+                                      }}
                                          key={index + 1}
                                          value={x.batch_schedule_time_id}
                                        >
