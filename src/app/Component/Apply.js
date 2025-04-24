@@ -692,66 +692,86 @@ const Apply = (e) => {
                 <MenuItem value="Others">Others</MenuItem>
               </TextField>
             </div>
-            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0">
-              <TextField
-                fullWidth
-                required
-                select
-                label="Select a Course "
-                name="course_title"
-                value={course}
-                onChange={(e) => {
-                  setCourse(e.target.value);
-                  onChangeCourse(e.target.value);
-                }}
-                variant="outlined"
-                sx={{
-                  "& .MuiOutlinedInput-root": {
-                    "&:hover fieldset": {
-                      borderColor: "#5BA9DB",
-                    },
-                    "& fieldset": {
-                      borderColor: "#5BA9DB",
-                    },
-                    "&.Mui-focused fieldset": {
-                      borderColor: "#7B5DA7",
-                      borderWidth: "1px",
-                    },
-                  },
-                }}
-              >
-                {/* {allcourse && allcourse.length > 0 ? (
-                  allcourse.map((x, index) => (
-                    <MenuItem key={index + 1} value={x.batch_schedule_time_id}>
-                      {x.batch_schedule_name}
-                    </MenuItem>
-                  ))
-                ) : (
-                  <MenuItem disabled className="text-red-500">
-                    Server Error
-                  </MenuItem>
-                )} */}
-                {allcourse && allcourse.length > 0 ? (
-                  allcourse
-                    .filter(
-                      (x) =>
-                        x.batch_schedule_name !==
-                        "Advanced Python With Django and Freelancing"
-                    )
-                    .map((x, index) => (
-                      <MenuItem
-                        key={index + 1}
-                        value={x.batch_schedule_time_id}
-                      >
-                        {x.batch_schedule_name}
-                      </MenuItem>
-                    ))
-                ) : (
-                  <MenuItem disabled className="text-red-500">
-                    Server Error
-                  </MenuItem>
-                )}
-              </TextField>
+            <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0 relative">
+            <TextField
+  fullWidth
+  required
+  select
+  label="Select a Course"
+  name="course_title"
+  value={course}
+  onChange={(e) => {
+    setCourse(e.target.value);
+    onChangeCourse(e.target.value);
+  }}
+  variant="outlined"
+  SelectProps={{
+    MenuProps: {
+      PaperProps: {
+        sx: {
+          // Auto match width of the select box
+          width: 'auto',
+          minWidth: '100%',
+          maxWidth: '100%',
+        },
+      },
+      anchorOrigin: {
+        vertical: 'bottom',
+        horizontal: 'left',
+      },
+      transformOrigin: {
+        vertical: 'top',
+        horizontal: 'left',
+      },
+      getContentAnchorEl: null,
+    },
+  }}
+  sx={{
+    "& .MuiOutlinedInput-root": {
+      "&:hover fieldset": {
+        borderColor: "#5BA9DB",
+      },
+      "& fieldset": {
+        borderColor: "#5BA9DB",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "#7B5DA7",
+        borderWidth: "1px",
+      },
+    },
+  }}
+>
+  {allcourse?.length > 0 ? (
+    allcourse
+      .filter(
+        (x) =>
+          x.batch_schedule_name !==
+          "Advanced Python With Django and Freelancing"
+      )
+      .map((x, index) => (
+        <MenuItem
+          key={index}
+          value={x.batch_schedule_time_id}
+          className="whitespace-normal"
+          sx={{
+            fontSize: '12px', // Smaller text
+            whiteSpace: 'normal', // Wrap text
+            wordBreak: 'break-word', // Break long words
+            lineHeight: 1.3,
+          }}
+        >
+          {x.batch_schedule_name}
+        </MenuItem>
+      ))
+  ) : (
+    <MenuItem disabled className="text-red-500">
+      Server Error
+    </MenuItem>
+  )}
+</TextField>
+
+
+
             </div>
           </div>
           {/* <div className="flex mt-1 w-full">

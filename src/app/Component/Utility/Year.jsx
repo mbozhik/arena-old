@@ -48,7 +48,53 @@ export const CustomYearSelect = ({ month, day, setYear, setBirth_date }) => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [dropdownOpen]);
-
+  useEffect(() => {
+    if (dropdownOpen && buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      const dropdownHeight = 288; // max-h-72 = 18rem = 288px
+      const windowHeight = window.innerHeight;
+  
+      const fitsBelow = rect.bottom + dropdownHeight < windowHeight;
+      const top = fitsBelow ? rect.bottom + 4 : rect.top - dropdownHeight - 4;
+  
+      setPosition({
+        top,
+        left: rect.left,
+        width: rect.width,
+      });
+    }
+  }, [dropdownOpen]);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setDropdownOpen(false);
+      }
+    };
+  
+    const handleWindowScroll = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
+        setDropdownOpen(false);
+      }
+    };
+  
+    if (dropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      window.addEventListener('scroll', handleWindowScroll, true);
+    }
+  
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener('scroll', handleWindowScroll, true);
+    };
+  }, [dropdownOpen]);
   return (
     <>
       <button
