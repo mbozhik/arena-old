@@ -3,10 +3,10 @@
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
-import month from "./../../../../public/statitic/13.jpg";
+import month from "./../../../../public/statitic/13.svg";
 import TotalStudent from "./../../../../public/statitic//TotalStudent.svg";
-import outline from "./../../../../public/statitic/handsake.jpg";
-import freelancer from "./../../../../public/statitic/light.jpg";
+import outline from "./../../../../public/statitic/handsake.svg";
+import freelancer from "./../../../../public/statitic/light.svg";
 import Image from "next/image";
 const Counter = () => {
   const [visible, setVisible] = useState(false);

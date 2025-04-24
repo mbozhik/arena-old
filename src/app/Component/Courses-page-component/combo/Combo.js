@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import Banner from "@/app/all-courses/banner.webp";
+import Banner from "@/app/all-courses/banner.svg";
+
 import Image from "next/image";
 import { FaCheck, FaHandPointRight } from "react-icons/fa";
 import Fahim from "@/app/all-courses/TeacherSliderImages/Fahim.svg";

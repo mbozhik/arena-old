@@ -7,7 +7,8 @@ import Malware1 from "@/app/all-courses/malware (2).svg";
 import Malware2 from "@/app/all-courses/malware (3).svg";
 import Master from "@/app/all-courses/master.svg";
 import Django from "@/app/all-courses/django.svg";
-import Banner from "@/app/all-courses/banner.webp";
+import Banner from "@/app/all-courses/banner.svg";
+
 import CyberSecurityH1 from "@/app/Component/Utility/CyberSecurityH1";
 import web from "@/app/all-courses/web.svg";
 import doller from "@/app/all-courses/doller.svg";
