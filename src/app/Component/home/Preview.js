@@ -12,7 +12,7 @@ const Preview = () => {
           <Image src={event} alt="Events" className="" fill={true} sizes="1000vh" />
         </div> */}
         <div className=" ">
-          <article className="pl-5 py-2">
+          <article className=" py-2">
             <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">
               {" "}
               Preview of Your Future
@@ -23,11 +23,11 @@ const Preview = () => {
             <h6 className="text-center text-gray-600 text-[10px] md:text-sm mb-4">
               Arena Web Security is not just about learning—it is about
               transforming your skill into real income,
-              <br /> global opportunities, and a future-proof career.
+              <br  className="hidden md:block"/> global opportunities, and a future-proof career.
             </h6>
             <h6 className="text-center text-gray-600 text-[10px] md:text-sm md:mb-8 mb-6">
               From Upwork to Fiverr, from international cybersecurity firms to
-              freelance consultancy—our <br /> students are earning, growing,
+              freelance consultancy—our <br className="hidden md:block"/> students are earning, growing,
               and succeeding across the world.
             </h6>
           </article>
