@@ -102,11 +102,11 @@ const Services = () => {
  
 
   return (
-    <div className="container  mx-auto   pt-10">
- <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2"> 
+    <div className="container  mx-auto   md:pt-10 pt-8">
+ <h5 className="text-center text-[18px] md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2"> 
        Our Services
       </h5>
-      <h6 className="text-center text-gray-600 md:text-sm  mb-10 text-[10px]">
+      <h6 className="text-center text-gray-600 md:text-sm  md:mb-10 mb-5 text-[11px]">
       Get motivation from leaders and see your success from the window!
       </h6>
 
@@ -157,11 +157,11 @@ const Services = () => {
                 <div className="px-5 pt-32 pb-10     shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)] rounded-[10px] bg-white mt-[-120px] h-full ">
                   <Link
                     href={course.link}
-                    className="text-[#0b6481] text-lg font-normal hover:text-black hover:font-medium pt-10"
+                    className="text-[#0b6481]  text-[16px] md:text-lg font-normal hover:text-black hover:font-medium pt-10"
                   >
                     {course.title}
                   </Link>
-                  <p className=" text-sm font-[300] mt-2 leading-[22px]">
+                  <p className=" text-[12px] md:text-sm font-[300] mt-2 leading-[22px]">
                     {course.description}
                   </p>
                 </div>

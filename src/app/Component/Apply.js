@@ -246,12 +246,12 @@ const Apply = (e) => {
         onSubmit={(e) => RegistationSucess(e)}
         className="shadow-sm relative"
       >
-        <h1 className="md:text-2xl text-2xl font-medium py-3 mt-2 text-center  applicationTitle text-white">
+        <h1 className="md:text-2xl text-[20px] font-medium py-3 mt-2 text-center  applicationTitle text-white">
           Student Application Form
         </h1>
         <div className="flex mt-4">
           {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
-          <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
+          <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#0c9669] mt-6 ">
             Personal & Contact Information :
           </p>
         </div>
@@ -776,7 +776,7 @@ const Apply = (e) => {
           </div>
           {/* <div className="flex mt-1 w-full">
        
-            <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
+            <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#0c9669] mt-6 ">
               Work Information :
             </p>
           </div>
@@ -849,7 +849,7 @@ const Apply = (e) => {
           )}
 
           <div className="flex mt-1 w-full">
-            <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
+            <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#0c9669] mt-6 ">
               Educational Background :
             </p>
           </div>
@@ -966,7 +966,7 @@ const Apply = (e) => {
           )}
 
           <div className="flex mt-1 w-full">
-            <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
+            <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#0c9669] mt-6 ">
               Alternative Contact :
             </p>
           </div>
@@ -1055,7 +1055,7 @@ const Apply = (e) => {
           </div>
           <div className="flex mt-1 w-full">
             {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
-            <p className="font-poppins text-xl md:text-2xl font-medium text-[#0c9669] mt-6 ">
+            <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#0c9669] mt-6 ">
               Others :
             </p>
           </div>

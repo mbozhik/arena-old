@@ -37,7 +37,7 @@ const Outline = () => {
   // return <ImageGallery items={images} />;
   return (
     <div>
-      <h5 className="text-center text-[24px] font-semibold text-black  pt-8 pb-6">
+      <h5 className="text-center md:text-[24px] text-[20px] font-semibold text-black  pt-8 pb-4">
         Course Outline
       </h5>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 lightgrid">

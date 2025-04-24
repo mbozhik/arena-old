@@ -68,7 +68,7 @@ export function AllCourses() {
   return (
     <div className="container">
       <div className="shadow-sm bg-gradient-to-r from-[#56b5e3] to-[#7d58a5] rounded-sm py-3 mb-5 mt-5">
-        <h4 className="text-[28px] font-medium text-white text-center my-4 font-poppins">
+        <h4 className=" text-[22px] md:text-[28px] font-medium text-white text-center md:my-4 my-2 font-poppins">
           All Courses
         </h4>
       </div>
@@ -100,11 +100,11 @@ export function AllCourses() {
               >
                 <Link
                   href={course.link}
-                  className="text-[#0b6481] text-lg font-normal hover:text-black hover:font-medium "
+                  className="text-[#0b6481] text-[16px] md:text-lg font-normal hover:text-black hover:font-medium "
                 >
                   {course.title}
                 </Link>
-                <p className=" text-sm font-[300] mt-2 leading-[20px]">
+                <p className=" text-[12px] md:text-sm font-[300] mt-2 leading-[20px]">
                   {course.description}
                 </p>
               </div>

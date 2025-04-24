@@ -13,19 +13,19 @@ const Preview = () => {
         </div> */}
         <div className=" ">
           <article className=" py-2">
-            <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">
+            <h5 className="text-center text-[18px] md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">
               {" "}
               Preview of Your Future
             </h5>
-            <p className="text-center text-gray-500 text-[10px] md:text-sm md:mb-3 mb-2">
+            <p className="text-center text-gray-500 text-[11px] md:text-sm md:mb-3 mb-2">
               Your Skill. Your Career. Your Global Path.
             </p>
-            <h6 className="text-center text-gray-600 text-[10px] md:text-sm mb-4">
+            <h6 className="text-center text-gray-600 text-[11px] md:text-sm mb-4">
               Arena Web Security is not just about learning—it is about
               transforming your skill into real income,
               <br  className="hidden md:block"/> global opportunities, and a future-proof career.
             </h6>
-            <h6 className="text-center text-gray-600 text-[10px] md:text-sm md:mb-8 mb-6">
+            <h6 className="text-center text-gray-600 text-[11px] md:text-sm md:mb-8 mb-6">
               From Upwork to Fiverr, from international cybersecurity firms to
               freelance consultancy—our <br className="hidden md:block"/> students are earning, growing,
               and succeeding across the world.

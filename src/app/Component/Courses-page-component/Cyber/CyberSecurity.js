@@ -399,7 +399,7 @@ const CyberSecurity = () => {
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
-        <p className="lg:text-[24px] md:text-[20px] text-[20px] leading-9 font-semibold mt-5">
+        <p className="lg:text-[24px] md:text-[20px] text-[18px] leading-9 font-semibold mt-5">
           Be a Freelancer on Cyber Security
         </p>
         <div className="my-5">
@@ -411,7 +411,7 @@ const CyberSecurity = () => {
           </Link>
         </div>
       </div>
-      <div className="lg:px-3 md:px-5 px-3 pt-10">
+      <div className="lg:px-3 md:px-5 px-3 pt-10 md:text-[15px]  text-sm">
         <div className="lg:flex gap-5">
           <article className="lg:w-[50%] w-full">
             <details className="details " open>
@@ -586,7 +586,7 @@ const CyberSecurity = () => {
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
-        <p className="lg:text-[24px] md:text-[20px] text-[20px] leading-9 font-semibold mt-5">
+        <p className="lg:text-[24px] md:text-[20px] text-[18px] leading-9 font-semibold mt-5">
           Be a Freelancer on Cyber Security
         </p>
         <div className="my-5">

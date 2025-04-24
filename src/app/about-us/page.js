@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div className="h-auto container ">
       <div className="shadow-sm bg-gradient-to-r from-[#56b5e3] to-[#7d58a5] rounded-sm py-3 mb-5 mt-5">
-        <h4 className="text-[28px] font-medium text-white text-center my-4 font-poppins">
+        <h4 className=" text-[22px] md:text-[28px] font-medium text-white text-center md:my-4 my-2 font-poppins">
         About Arena Web Security
         </h4>
       </div>

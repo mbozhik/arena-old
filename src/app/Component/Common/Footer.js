@@ -41,11 +41,11 @@ const Footer = () => {
       <div className=" container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 border-b border-gray-500/50 pb-8 leading-4 lg:leading-normal">
         {/* Address */}
         <div>
-          <h3 className="text-white text-[24px] font-normal mb-4">Address</h3>
+          <h3 className="text-white md:text-[24px] text-[18px] font-normal mb-4">Address</h3>
           <ul className="space-y-2 text-sm">
             <li className="flex items-start gap-2">
-              <FaLocationDot className="mt-1 text-[#715296] text-[16px]" />
-              <span className="text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
+              <FaLocationDot className="mt-1 text-[#715296] md:text-[16px] text-sm" />
+              <span className="md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
                 House No-1, BLOCK-B
                 <br />
                 Banasree, Main Road Rampura,
@@ -54,23 +54,23 @@ const Footer = () => {
               </span>
             </li>
             <li className="flex items-start gap-2">
-              <FaMobileAlt className="mt-1 text-[#715296] text-[16px]" />
-              <span className="text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
+              <FaMobileAlt className="mt-1 text-[#715296] md:text-[16px] text-sm" />
+              <span className="md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
                 +880 1310 333 444,
                 <br />
                 +880 1885 841 489
               </span>
             </li>
             <li className="flex items-center gap-2 ">
-              <IoMail className="text-[#715296] text-[16px] mt-1" />
-              <p className="text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
+              <IoMail className="text-[#715296] md:text-[16px] text-sm mt-1" />
+              <p className="md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
                 info@arenawebsecurity.net
               </p>
             </li>
 
             <li className="flex items-center gap-2">
-              <FaGlobe className="mt-1 text-[#715296] text-[16px]" />
-              <span className="text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
+              <FaGlobe className="mt-1 text-[#715296] md:text-[16px] text-sm" />
+              <span className="md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
                 www.arenawebsecurity.net
               </span>
             </li>
@@ -80,13 +80,13 @@ const Footer = () => {
         {/* Information */}
         <div className="">
           <h3 className="text-white text-lg font-medium mb-4">Information</h3>
-          <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
+          <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
             {links.map(({ name, href }) => (
               <li
                 key={name}
                 className="flex items-center gap-2 hover:text-[#29aafe] transition"
               >
-                <FaArrowRight className="text-[#715296] text-[16px]" />
+                <FaArrowRight className="text-[#715296] md:text-[16px] text-sm" />
                 <a
                   href={href}
                   target={href.startsWith("http") ? "_blank" : "_self"}
@@ -105,13 +105,13 @@ const Footer = () => {
             Our Courses
           </h3>
 
-          <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
+          <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
             {courses.map(({ name, href }) => (
              <li
              key={name}
              className="flex items-start gap-2 hover:text-[#29aafe] transition"
            >
-             <FaArrowRight className="text-[#715296] text-[16px] mt-[5px] shrink-0" />
+             <FaArrowRight className="text-[#715296] md:text-[16px] text-sm mt-[5px] shrink-0" />
              <a href={href} className="text-[#8d8d8d] leading-[22px] block">{name}</a>
            </li>
            
@@ -122,7 +122,7 @@ const Footer = () => {
         {/* Developers */}
         <div>
           <h3 className="text-white text-lg font-medium mb-4">Our Services</h3>
-          <ul className="space-y-2 text-[16px] leading-[22px] font-[300] text-[#8d8d8d]">
+          <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
             {[
               "VAPT & Pen Testing",
               "Web Application Security Testing",
@@ -134,7 +134,7 @@ const Footer = () => {
                 key={dev}
                 className="flex items-center gap-2 hover:text-[#29aafe] transition"
               >
-                <FaArrowRight className=" text-[#715296] text-[16px]" />
+                <FaArrowRight className=" text-[#715296] md:text-[16px] text-sm" />
                 <a href="/all-services">{dev}</a>
               </li>
             ))}
@@ -144,9 +144,9 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="flex flex-col md:flex-row justify-between items-center mt-4 container">
-        <p className="text-[15px] text-center md:text-left">
+        <p className="md:text-[15px] text-[13px] text-center md:text-left">
           Copyright © 2025 All Rights Reserved by
-          <span className="text-[#29aafe]"> Arena Web Security</span>.
+          <span className="text-[#29aafe] text-[13px] md:text-[15px]"> Arena Web Security</span>.
         </p>
         <div className="flex gap-3 mt-4 md:mt-0">
           <a
