@@ -108,8 +108,8 @@ const CyberSecurityDiploma = () => {
             <Slide direction="down" cascade triggerOnce>
               <div className="relative animate-fadeInDown">
                 <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
-                  Build a Global Cybersecurity Career — From Fundamentals to
-                  Freelancing
+                  Build a Global Cybersecurity Career, From Fundamentals to
+                  Professional
                 </h3>
                 <p className="text-[#424242] font-[300] lg:text-[16px] text-sm leading-[19px] text-justify mt-5">
                   Step into the frontline of digital defense with Bangladesh is
@@ -483,8 +483,7 @@ const CyberSecurityDiploma = () => {
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>
                         {" "}
-                        API & microservices hacking: GraphQL, SSRF, JWT
-                        attacks
+                        API & microservices hacking: GraphQL, SSRF, JWT attacks
                       </span>
                     </div>
                   </li>
@@ -505,8 +504,7 @@ const CyberSecurityDiploma = () => {
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>
                         {" "}
-                        Disk/memory forensics: Autopsy, FTK, EnCase,
-                        Volatility
+                        Disk/memory forensics: Autopsy, FTK, EnCase, Volatility
                       </span>
                     </div>
                   </li>
@@ -515,8 +513,7 @@ const CyberSecurityDiploma = () => {
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>
                         {" "}
-                        Network, email, document forensics: Wireshark,
-                        ExifTool
+                        Network, email, document forensics: Wireshark, ExifTool
                       </span>
                     </div>
                   </li>
@@ -533,8 +530,7 @@ const CyberSecurityDiploma = () => {
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>
-                        Recon & access: OSINT, social engineering, Cobalt
-                        Strike
+                        Recon & access: OSINT, social engineering, Cobalt Strike
                       </span>
                     </div>
                   </li>
@@ -543,8 +539,7 @@ const CyberSecurityDiploma = () => {
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>
-                        Post-exploitation: Mimikatz, Empire, persistence
-                        methods
+                        Post-exploitation: Mimikatz, Empire, persistence methods
                       </span>
                     </div>
                   </li>
@@ -579,7 +574,9 @@ const CyberSecurityDiploma = () => {
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>SIEM setup & analytics: Splunk, QRadar, Elastic Stack</span>
+                      <span>
+                        SIEM setup & analytics: Splunk, QRadar, Elastic Stack
+                      </span>
                     </div>
                   </li>
                   <li>
