@@ -19,7 +19,7 @@ const Footer = () => {
     },
     {
       name: "Advanced Cyber Security",
-      href: "/advanced-cyber-security-course",
+      href: "/diploma-in-cyber-security",
     },
     { name: "Advanced Python", href: "/advance-python-with-django" },
     { name: "C|OSINT", href: "/cosint-course" },
@@ -46,9 +46,9 @@ const Footer = () => {
             <li className="flex items-start gap-2">
               <FaLocationDot className="mt-1 text-[#715296] md:text-[16px] text-sm" />
               <span className="md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
-                House No-1, BLOCK-B
+                House No:1, Block: B
                 <br />
-                Banasree, Main Road Rampura,
+                Banasree, Main Road, Rampura,
                 <br />
                 Dhaka - 1219
               </span>
@@ -124,7 +124,7 @@ const Footer = () => {
           <h3 className="text-white text-lg font-medium mb-4">Our Services</h3>
           <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
             {[
-              "VAPT & Pen Testing",
+              "Vulnerability Assessment and Penetration Testing",
               "Web Application Security Testing",
               "Mobile Application Security Testing",
               "Network Security Assessment",

@@ -22,7 +22,7 @@ const courses = [
   },
   {
     image: cyberSecurity,
-    title: "Professional Diploma in Cyber Security ",
+    title: "Professional Diploma in Cyber Security (1 Year)",
     link: "/diploma-in-cyber-security",
     description:
       "Step into the frontline of digital defense with Bangladesh’s most trusted 1-year Professional Diploma in Cyber Security, powered by Arena Web Security. This career-focused program is meticulously designed to equip you with hands-on skills in ethical hacking, digital forensics, OSINT, Linux server security, and more — so you're not just learning, you're preparing to lead.",

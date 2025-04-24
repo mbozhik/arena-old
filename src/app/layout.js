@@ -1,4 +1,3 @@
-
 // import {Poppins,JetBrains_Mono} from "next/font/google";
 // import './globals.css'
 // import Footer from './Component/Common/Footer'
@@ -22,9 +21,9 @@
 //     title: 'Arena Web Security | Master Ethical Hacking in Bangladesh',
 //     description: 'Learn ethical hacking & penetration testing in Python for freelancing with our immersive courses. Become a white hat hacker and fulfill your dream.  Enroll now!',
 //   };
-  
+
 // export default function RootLayout({ children }) {
-  
+
 //   return (
 //     <html lang="en">
 //       <Script src="https://code.jquery.com/jquery-3.3.1.min.js" />
@@ -33,11 +32,11 @@
 //          <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"/>
 //       <body   className={` ${poppins.variable}  ${jetbrainsMono.variable}`}
 //       >
-    
+
 //         <Navber />
 //         {children }
 //         <Footer/>
-        
+
 //         </body>
 //     </html>
 //   )
@@ -61,16 +60,17 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Arena Web Security | Master Ethical Hacking in Bangladesh",
+  title:
+    "Arena Web Security, The First & Most Trusted Cybersecurity Company in Bangladesh",
   description:
-    "Learn ethical hacking & penetration testing in Python for freelancing with our immersive courses. Become a white hat hacker and fulfill your dream. Enroll now!",
+    "cyber security course in Bangladesh, ethical hacking course Bangla, cyber security service in Bangladesh, cyber security service, cyber security training online, ethical hacking training online, CEH course Bangladesh, penetration testing course, bug bounty training, OSINT training Bangladesh, ethical hacking course with freelancing, learn cyber security from home, best cyber security institute in Bangladesh, cyber security certification BD, cyber security online class, advanced ethical hacking course, web application security training, cyber security diploma in Bangladesh, VAPT service Bangladesh, penetration testing service, red teaming service, cyber forensics service, digital forensics Bangladesh, SOC setup service, cyber threat hunting, cyber audit service, information security consultancy, SIEM integration service, cyber security monitoring service",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-             {/* bKash & others */}
+        {/* bKash & others */}
         <Script src="https://code.jquery.com/jquery-3.3.1.min.js" />
         <Script src="https://scripts.pay.bka.sh/versions/1.2.0-beta/checkout/bKash-checkout.js" />
         <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" />
@@ -109,10 +109,10 @@ export default function RootLayout({ children }) {
           fbq('track', 'PageView');`}
         </Script>
         <Script
-        id="stape-events"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+          id="stape-events"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             !function(a,h,e,v,n,t,s){
               if(a.cbq)return;
               n=a.cbq=function(){
@@ -133,8 +133,24 @@ export default function RootLayout({ children }) {
             cbq('init', '762395682168377211');
             cbq('track', 'PageView');
           `,
-        }}
-      />
+          }}
+        />
+        {/* Signals Gateway Pixel Code */}
+        <Script id="Signals Gateway Pixel Code">
+          {`!function(a,h,e,v,n,t,s){
+    if(a.cbq)return;n=a.cbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!a._cbq)a._cbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=h.createElement(e);t.async=!0;
+    t.src=v;s=h.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://sgw.stape.au/sdk/1677815512539401011/events.js');
+    cbq('setHost', 'https://sgw.stape.au/');
+    cbq('init', '1677815512539401011');
+    cbq('track', 'PageView');`}
+        </Script>
+
+        {/* <!-- End Signals Gateway Pixel Code --> */}
         <noscript>
           <img
             height="1"
@@ -155,8 +171,6 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-   
-
         <Navber />
         {children}
         <Footer />
@@ -164,4 +178,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-

@@ -33,8 +33,8 @@ export default function ServiceToggle() {
       >
         <div>
           <p className="font-medium text-base">Arena Web Security</p>
-          <p>House No-1, BLOCK-B</p>
-          <p>Banasree, Main Road Rampura</p>
+          <p>House No:1, Block:B</p>
+          <p>Banasree, Main Road, Rampura</p>
           <p>Dhaka - 1219</p>
         </div>
 

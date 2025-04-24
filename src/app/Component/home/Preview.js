@@ -21,13 +21,13 @@ const Preview = () => {
               Your Skill. Your Career. Your Global Path.
             </p>
             <h6 className="text-center text-gray-600 text-[11px] md:text-sm mb-4">
-              Arena Web Security is not just about learning—it is about
+              Arena Web Security is not just about learning. It is about
               transforming your skill into real income,
               <br  className="hidden md:block"/> global opportunities, and a future-proof career.
             </h6>
             <h6 className="text-center text-gray-600 text-[11px] md:text-sm md:mb-8 mb-6">
               From Upwork to Fiverr, from international cybersecurity firms to
-              freelance consultancy—our <br className="hidden md:block"/> students are earning, growing,
+              freelance consultancy. Our <br className="hidden md:block"/> students are earning, growing,
               and succeeding across the world.
             </h6>
           </article>
@@ -40,11 +40,11 @@ const Preview = () => {
               {/* <Image src={OrderImage } alt="review" className="w-full" /> */}
               <div className="md:pt-2 pt-8">
                 <h3 className="text-base font-semibold mb-2">
-                  Impact in Numbers – By Our Learners
+                  Impact in Numbers – By Our Students
                 </h3>
                 <div className="space-y-1 text-sm">
                   <p>
-                    💡 <strong>Total learners earning online:</strong> 4,000+
+                    💡 <strong>Total Students earning online:</strong> 4,000+
                   </p>
                   <p>
                     💵 <strong>Highest single project earning:</strong> $10,200
@@ -53,7 +53,7 @@ const Preview = () => {
                     📈 <strong>Highest monthly earning:</strong> $13,780
                   </p>
                   <p>
-                    🌍 <strong>Countries served:</strong> 21+
+                    🌍 <strong>Countries served:</strong> 28+
                   </p>
                 </div>
               </div>

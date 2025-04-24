@@ -4,10 +4,10 @@ import Banner from "@/app/all-courses/banner.svg";
 
 import Image from "next/image";
 import { FaCheck, FaHandPointRight } from "react-icons/fa";
-import Fahim from "@/app/all-courses/TeacherSliderImages/Fahim.svg";
+import Fahim from "@/app/all-courses/TeacherSliderImages/fahim.webp";
 import Sakib from "@/app/all-courses/TeacherSliderImages/sakib.jpg";
 import Mubin from "@/app/all-courses/TeacherSliderImages/mubin.jpg";
-import Ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpg";
+import Ashif from "@/app/all-courses/TeacherSliderImages/ashif.webp";
 import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpg";
 import Roman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
 import { keyframes } from "@emotion/react";
@@ -75,44 +75,45 @@ const CyberSecurity = () => {
       expertise:
         "Vulnerability Assessment & Penetration Testing, Ethical Hacking, Cloud Security, OSINT, Cyber Forensics.",
       image: Fahim,
+      years: "14+",
     },
     {
       name: "Md Ashif Islam",
-      designation: "Senior Trainer",
-      expertise:
-        "Cyber Security, VAPT, Bug Bounty, Networking.",
+      designation: "Senior Faculty",
+      expertise: "Cyber Security, VAPT, Bug Bounty, Networking.",
       image: Ashif, // Make sure you import or define `Ashif`
+      years: "8+",
     },
     {
       name: "Bijoy Mondal",
-      designation: "Trainer",
-      expertise:
-        "Cyber Security, Freelancing, Ethical Hacking, Linux.",
+      designation: "Faculty member",
+      expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
       image: Bijoy,
+      years: "8+",
     },
     {
       name: "Syed Sakib Alam Mubin",
-      designation: "Trainer",
-      expertise:
-        "Cyber Security, Ethical Hacking, Linux RedHat.",
+      designation: "Faculty member",
+      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
       image: Mubin, // Confirm this is the correct image for "Syed Sakib Alam Mubin"
+      years: "5+",
     },
     {
       name: "Sakib Ahmed",
-      designation: "Trainer",
-      expertise:
-        "Cyber Security, Ethical Hacking, Linux.",
+      designation: "Faculty member",
+      expertise: "Cyber Security, Ethical Hacking, Linux.",
       image: Sakib, // Define or import `SakibAhmed`
+      years: "3+",
     },
     {
       name: "Roman Moonshi",
-      designation: "Auditor",
-      expertise:
-        "Cyber Security, Ethical Hacking, Linux.",
-      image: Roman, // Define or import `Roman`
+      designation: "Lead Auditor",
+      expertise: "Cyber Security, Ethical Hacking, Linux.",
+      image: Roman, // Define or import `Roman`years: "14+",
+      years: "5+",
     },
   ];
-  
+
   return (
     <div>
       <div className="md:text-center mt-14 px-3 md:px-0">
@@ -381,6 +382,10 @@ const CyberSecurity = () => {
                           <p className="text-sm font-[300] leading-[17px]">
                             Areas of expertise : {trainer.expertise}
                           </p>
+                          <br></br>
+                          <p className="text-sm font-[300] leading-[17px]">
+                            Years in Cyber Security : {trainer.years}
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -394,7 +399,6 @@ const CyberSecurity = () => {
               src={Banner}
               className="w-full "
             />
-
           </div>
         </div>
       </div>
@@ -501,7 +505,7 @@ const CyberSecurity = () => {
               <summary className="summary py-5 text-white font-semibold px-7">
                 কোর্স শেষে কেমন ক্যারিয়ার হতে পারে ?
               </summary>
-              <p className="text-justify mt-2">
+              <div className="text-justify mt-2">
                 <b className="!my-4"> কোর্স শেষে কেমন ক্যারিয়ার হতে পারে ?</b>
                 <br />
                 <div className="mt-4">
@@ -528,7 +532,7 @@ const CyberSecurity = () => {
                     </li>
                   </ul>
                 </div>
-              </p>
+              </div>
             </details>
             <details className="details mt-4">
               <summary className="summary py-5 text-white font-semibold px-7">
@@ -582,7 +586,7 @@ const CyberSecurity = () => {
               className=""
             />
           </article> */}
-          <BannerComponent/>
+          <BannerComponent />
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
@@ -601,9 +605,7 @@ const CyberSecurity = () => {
       <div className=" my-10 ">
         <Outline />
       </div>
-      <div className=" my-10 ">
-        {/* <PaymentModal /> */}
-      </div>
+      <div className=" my-10 ">{/* <PaymentModal /> */}</div>
     </div>
   );
 };

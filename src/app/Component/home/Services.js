@@ -42,7 +42,7 @@ const courses = [
   },
   {
     image: network,
-    title: "VAPT",
+    title: "Vulnerability Assessment and Penetration Testing",
     link: "/cosint-course",
     description:
       "Vulnerability Assessment & Penetration Testing describes a broad range of security assessment services designed to identify & help address cyber security exposures across an organisation’s IT estate. To ensure that you choose the right type of assessment for your company’s needs, it’s important to understand the other types of VAPT services.",
@@ -82,20 +82,20 @@ const courses = [
     description:
       "Our Ecommerce development services cater to multi-disciplinary requirements of performance, security, scalability and usability. Our SEO experts optimize the top selling products of your store with an on-page and off-page Ecommerce SEO strategy that drives loads of organic traffic to your website.",
   },
-  {
-    image: network,
-    title: "SEO",
-    link: "/networking-course",
-    description:
-      "SEO is not magic. Google doesn't randomly decide which website's go to the top of the search results. The algorithm adjusts rankings based on several factors. Our SEO campaigns optimize for each of those factors to show Google your website has what it's looking for.",
-  },
-  {
-    image: network,
-    title: "UI/UX & Graphics Design",
-    link: "/networking-course",
-    description:
-      "We design user friendly and intuitive interfaces expected by today’s consumer using the latest UX and UI best practices. Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers. Turn to Arena Web Security’s UI and UX services.",
-  },
+  // {
+  //   image: network,
+  //   title: "SEO",
+  //   link: "/networking-course",
+  //   description:
+  //     "SEO is not magic. Google doesn't randomly decide which website's go to the top of the search results. The algorithm adjusts rankings based on several factors. Our SEO campaigns optimize for each of those factors to show Google your website has what it's looking for.",
+  // },
+  // {
+  //   image: network,
+  //   title: "UI/UX & Graphics Design",
+  //   link: "/networking-course",
+  //   description:
+  //     "We design user friendly and intuitive interfaces expected by today’s consumer using the latest UX and UI best practices. Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers. Turn to Arena Web Security’s UI and UX services.",
+  // },
 ];
 
 const Services = () => {

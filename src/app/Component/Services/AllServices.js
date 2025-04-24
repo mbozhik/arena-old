@@ -121,7 +121,7 @@ export function AllServices() {
  <div className="container">
       <div className="shadow-sm bg-gradient-to-r from-[#56b5e3] to-[#7d58a5] rounded-sm py-3 mb-5 mt-5">
   <h4 className=" text-[22px] md:text-[28px] font-medium text-white text-center my-4 font-poppins">
-  Our Cybersecurity Services
+  Our Cyber Security Services
 
   </h4>
   

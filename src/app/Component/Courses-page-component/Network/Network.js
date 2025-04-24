@@ -4,11 +4,11 @@ import Banner from "@/app/all-courses/banner.svg";
 
 import Image from "next/image";
 import { FaCheck, FaHandPointRight } from "react-icons/fa";
-import Fahim from "@/app/all-courses/TeacherSliderImages/Fahim.svg";
+import Fahim from "@/app/all-courses/TeacherSliderImages/Ffahim.webp";
 
 import Sakib from "@/app/all-courses/TeacherSliderImages/sakib.jpg";
 import Mubin from "@/app/all-courses/TeacherSliderImages/mubin.jpg";
-import Ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpg";
+import Ashif from "@/app/all-courses/TeacherSliderImages/ashif.webp";
 import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpg";
 import Roman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -50,41 +50,42 @@ const Network = () => {
       expertise:
         "Vulnerability Assessment & Penetration Testing, Ethical Hacking, Cloud Security, OSINT, Cyber Forensics.",
       image: Fahim,
+      years: "14+",
     },
     {
       name: "Md Ashif Islam",
-      designation: "Senior Trainer",
-      expertise:
-        "Cyber Security, VAPT, Bug Bounty, Networking.",
+      designation: "Senior Faculty",
+      expertise: "Cyber Security, VAPT, Bug Bounty, Networking.",
       image: Ashif, // Make sure you import or define `Ashif`
+      years: "8+",
     },
     {
       name: "Bijoy Mondal",
-      designation: "Trainer",
-      expertise:
-        "Cyber Security, Freelancing, Ethical Hacking, Linux.",
+      designation: "Faculty member",
+      expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
       image: Bijoy,
+      years: "8+",
     },
     {
       name: "Syed Sakib Alam Mubin",
-      designation: "Trainer",
-      expertise:
-        "Cyber Security, Ethical Hacking, Linux RedHat.",
+      designation: "Faculty member",
+      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
       image: Mubin, // Confirm this is the correct image for "Syed Sakib Alam Mubin"
+      years: "5+",
     },
     {
       name: "Sakib Ahmed",
-      designation: "Trainer",
-      expertise:
-        "Cyber Security, Ethical Hacking, Linux.",
+      designation: "Faculty member",
+      expertise: "Cyber Security, Ethical Hacking, Linux.",
       image: Sakib, // Define or import `SakibAhmed`
+      years: "3+",
     },
     {
       name: "Roman Moonshi",
-      designation: "Auditor",
-      expertise:
-        "Cyber Security, Ethical Hacking, Linux.",
-      image: Roman, // Define or import `Roman`
+      designation: "Lead Auditor",
+      expertise: "Cyber Security, Ethical Hacking, Linux.",
+      image: Roman, // Define or import `Roman`years: "14+",
+      years: "5+",
     },
   ];
 
@@ -99,8 +100,6 @@ const Network = () => {
       <div className="flex px-3 shadow-md mb-10 pb-5">
         <div className="grid  grid-cols-12 gap-x-2 w-full  lg:mt-16 mt-8">
           <div className="lg:col-span-8 col-span-12 lg:px-3">
-            
-
             {/*KEY FEATURES  */}
             <div className="relative animate-fadeInDown">
               <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
@@ -122,8 +121,6 @@ const Network = () => {
             <article className="p-1">
               <div className="relative">
                 <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  
-
                   Networking Security (Module)
                 </h3>
                 <hr className="mt-2" />
@@ -214,8 +211,6 @@ const Network = () => {
           </div>
 
           <div className="lg:col-span-4 col-span-12 lg:block mt-4 lg:mt-0">
-            
-
             <Swiper spaceBetween={20} slidesPerView={1} loop={true}></Swiper>
             <Swiper
               modules={[Navigation, Scrollbar, A11y, Autoplay]}
@@ -260,6 +255,9 @@ const Network = () => {
                       <div className=" rounded p-3 mt-2  px-5 bg-white">
                         <p className="text-sm font-[300] leading-[17px]">
                           Areas of expertise : {trainer.expertise}
+                        </p><br></br>
+                        <p className="text-sm font-[300] leading-[17px]">
+                          Years in Cyber Security : {trainer.years}
                         </p>
                       </div>
                     </div>
@@ -272,7 +270,6 @@ const Network = () => {
               src={Banner}
               className="w-full "
             />
-
           </div>
         </div>
       </div>

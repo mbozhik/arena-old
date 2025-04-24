@@ -9,7 +9,7 @@ import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 // import reviews1 from '@/app/Images/Student_reviews/fiveer1.svg'
-import Reviews0 from "@/app/Images/Student_reviews/Azhar.svg";
+import Reviews0 from "@/app/Images/Student_reviews/homepage.webp";
 import Reviews1 from "@/app/Images/Student_reviews/Nuruzzaman.svg";
 import Reviews2 from "@/app/Images/Student_reviews/rana.svg";
 import Reviews3 from "@/app/Images/Student_reviews/rejon.svg";
@@ -26,7 +26,7 @@ import Reviews13 from "@/app/Images/Student_reviews/success6.svg";
 import Reviews14 from "@/app/Images/Student_reviews/upwork1.svg";
 import Reviews15 from "@/app/Images/Student_reviews/upwork2.svg";
 
-const Review2= () => {
+const Review2 = () => {
   return (
     <div className=" flex gap-x-5 relative  h-full w-full  ">
       <Swiper
@@ -46,13 +46,12 @@ const Review2= () => {
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         className="mySwiper "
       >
-     
         <SwiperSlide className="h-full">
-          <div className="h-full  relative ">
-          <Image src={Reviews0} alt="review"  />
+          <div className="h-full relative">
+            <Image src={Reviews0} alt="review" height={600} width={600}/>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="h-full">
+        {/* <SwiperSlide className="h-full">
           <div className="h-full relative">
           <Image src={Reviews1} alt="review"  />
           </div>
@@ -126,8 +125,7 @@ const Review2= () => {
           <div className="h-full relative">
           <Image src={Reviews15} alt="review"  />
           </div>
-        </SwiperSlide>
-      
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );

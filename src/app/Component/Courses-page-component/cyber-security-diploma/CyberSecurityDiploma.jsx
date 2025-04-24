@@ -4,10 +4,10 @@ import Banner from "@/app/all-courses/banner.svg";
 
 import Image from "next/image";
 import { FaCheck, FaHandPointRight } from "react-icons/fa";
-import Fahim from "@/app/all-courses/TeacherSliderImages/Fahim.svg";
+import Fahim from "@/app/all-courses/TeacherSliderImages/fahim.webp";
 import Sakib from "@/app/all-courses/TeacherSliderImages/sakib.jpg";
 import Mubin from "@/app/all-courses/TeacherSliderImages/mubin.jpg";
-import Ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpg";
+import Ashif from "@/app/all-courses/TeacherSliderImages/ashif.webp";
 import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpg";
 import Roman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -30,17 +30,17 @@ const CyberSecurityDiploma = () => {
     {
       id: 1,
       type: "Date & Time",
-      description: "Duration: 18 weeks (2 Days per week)",
+      description: "Duration: 1 Year (2 Days per week)",
     },
     {
       id: 2,
       type: "Course Fee",
-      description: "BDT 14,000/-",
+      description: "BDT 50,000/-",
     },
     {
       id: 3,
       type: "Course Type",
-      description: "Professional certified course that everyone can avail.",
+      description: "Professional Diploma that everyone can avail.",
     },
   ];
   const trainers = [
@@ -50,36 +50,42 @@ const CyberSecurityDiploma = () => {
       expertise:
         "Vulnerability Assessment & Penetration Testing, Ethical Hacking, Cloud Security, OSINT, Cyber Forensics.",
       image: Fahim,
+      years: "14+",
     },
     {
       name: "Md Ashif Islam",
-      designation: "Senior Trainer",
+      designation: "Senior Faculty",
       expertise: "Cyber Security, VAPT, Bug Bounty, Networking.",
       image: Ashif, // Make sure you import or define `Ashif`
+      years: "8+",
     },
     {
       name: "Bijoy Mondal",
-      designation: "Trainer",
+      designation: "Faculty member",
       expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
       image: Bijoy,
+      years: "8+",
     },
     {
       name: "Syed Sakib Alam Mubin",
-      designation: "Trainer",
+      designation: "Faculty member",
       expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
       image: Mubin, // Confirm this is the correct image for "Syed Sakib Alam Mubin"
+      years: "5+",
     },
     {
       name: "Sakib Ahmed",
-      designation: "Trainer",
+      designation: "Faculty member",
       expertise: "Cyber Security, Ethical Hacking, Linux.",
       image: Sakib, // Define or import `SakibAhmed`
+      years: "3+",
     },
     {
       name: "Roman Moonshi",
-      designation: "Auditor",
+      designation: "Lead Auditor",
       expertise: "Cyber Security, Ethical Hacking, Linux.",
-      image: Roman, // Define or import `Roman`
+      image: Roman, // Define or import `Roman`years: "14+",
+      years: "5+",
     },
   ];
 
@@ -89,9 +95,7 @@ const CyberSecurityDiploma = () => {
         {/* <Slide direction="down" triggerOnce> */}
         <div className="lg:text-[24px] md:text-[20px]  text-[16px] font-semibold leading-9 text-[#424242]">
           {/* Apply Fade and Damping Simultaneously */}
-         
-            Professional Diploma in Cyber Security (1 Year)
-        
+          Professional Diploma in Cyber Security (1 Year)
         </div>
         {/* </Slide> */}
       </div>
@@ -395,7 +399,7 @@ const CyberSecurityDiploma = () => {
             <article className="p-1">
               <div className="relative">
                 <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  Advance Python with Django and Scrapping (Module)
+                  Advance Cyber Security (Module)
                 </h3>
                 <hr className="mt-2" />
               </div>
@@ -404,67 +408,94 @@ const CyberSecurityDiploma = () => {
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Introduction</span>
+                      <span>
+                        {" "}
+                        Digital Security Act: hacking, data theft, fraud
+                      </span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Conditional Statements</span>
+                      <span> Privacy vs national security (DSA focus)</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Looping</span>
+                      <span> Budapest Convention & cross-border gaps</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Control Statements</span>
+                      <span>
+                        {" "}
+                        OSI/TCP-IP basics, IP addressing, Nmap, Enum4linux
+                      </span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Tuple</span>
+                      <span> Vulnerability scanning (Nessus, OpenVAS)</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Lists</span>
+                      <span>
+                        {" "}
+                        Exploitation: MITM, ARP spoofing, EternalBlue
+                      </span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Dictionaries</span>
+                      <span>
+                        {" "}
+                        Cryptography basics: symmetric, asymmetric, OpenSSL
+                      </span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Functions</span>
+                      <span>
+                        {" "}
+                        Steganography in images, audio, video (Steghide,
+                        OpenStego)
+                      </span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Lambda Operator, Filter, Reduce and Map</span>
+                      <span>
+                        {" "}
+                        Attack surface mapping: Amass, Shodan, Burp Suite Pro
+                      </span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> List Comprehension</span>
+                      <span>
+                        {" "}
+                        API & microservices hacking: GraphQL, SSRF, JWT
+                        attacks
+                      </span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Modules</span>
+                      <span>
+                        {" "}
+                        Burp Suite Pro advanced: Turbo Intruder, Collaborator,
+                        BApps
+                      </span>
                     </div>
                   </li>
                 </ul>
@@ -472,32 +503,49 @@ const CyberSecurityDiploma = () => {
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Input-Output</span>
+                      <span>
+                        {" "}
+                        Disk/memory forensics: Autopsy, FTK, EnCase,
+                        Volatility
+                      </span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Exception Handling</span>
+                      <span>
+                        {" "}
+                        Network, email, document forensics: Wireshark,
+                        ExifTool
+                      </span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Packages</span>
+                      <span>
+                        {" "}
+                        Threat hunting & SIEM basics: YARA, Splunk, ELK
+                      </span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>File Handling</span>
+                      <span>
+                        Recon & access: OSINT, social engineering, Cobalt
+                        Strike
+                      </span>
                     </div>
                   </li>
 
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>OOPS</span>
+                      <span>
+                        Post-exploitation: Mimikatz, Empire, persistence
+                        methods
+                      </span>
                     </div>
                   </li>
                   <li>
@@ -506,34 +554,38 @@ const CyberSecurityDiploma = () => {
                       <FaHandPointRight className="text-[#715296] text-xl min-w-[16px] mt-1" />
 
                       <span>
+                        AD attacks: Kerberoasting, Golden Ticket, lateral
+                        movement
+                      </span>
+                      {/* <span>
                         introduction to Django Introduction to Back-End Web
                         Development <br />
                         using Django
-                      </span>
+                      </span> */}
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>Advanced Django for Web and Automation</span>
+                      <span>AD architecture: LDAP, Kerberos protocols</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span> Building Web APIs using Django REST</span>
+                      <span>Hardening: ACLs, delegation, monitoring</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>Deploying Web APIs</span>
+                      <span>SIEM setup & analytics: Splunk, QRadar, Elastic Stack</span>
                     </div>
                   </li>
                   <li>
                     <div className="flex gap-2 items-center py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>Scrapping with BeautifulSoup</span>
+                      <span>SOAR automation & insider threat hunting</span>
                     </div>
                   </li>
                 </ul>
@@ -621,9 +673,9 @@ const CyberSecurityDiploma = () => {
                     <FaCheck className="text-[#715296] mr-2 " />
                     <div className="flex flex-col">
                       <span>
-                        <span className="">Ideal for:</span> HSC
-                        Pass, University Students, IT Professionals,
-                        Freelancers, and Career Switchers
+                        <span className="">Ideal for:</span> HSC Pass,
+                        University Students, IT Professionals, Freelancers, and
+                        Career Switchers
                       </span>
                     </div>
                   </li>
@@ -639,7 +691,8 @@ const CyberSecurityDiploma = () => {
                     <FaCheck className="text-[#715296] mr-2 " />
                     <div className="flex flex-wrap gap-x-4">
                       <span>
-                        <span className="">Mode:</span> Hybrid
+                        <span className="">Mode:</span> Online + Offline (
+                        Hybrid )
                       </span>
                     </div>
                   </li>
@@ -647,8 +700,8 @@ const CyberSecurityDiploma = () => {
                     <FaCheck className="text-[#715296] mr-2 " />
                     <div className="flex flex-wrap gap-x-4">
                       <span>
-                        <span className="">Language:</span> Bangla
-                        & English Supported
+                        <span className="">Language:</span> Bangla & English
+                        Supported
                       </span>
                     </div>
                   </li>
@@ -684,7 +737,6 @@ const CyberSecurityDiploma = () => {
                     ))}
                   </tbody>
                 </table>
-      
               </div>
             </div>
           </div>
@@ -727,9 +779,13 @@ const CyberSecurityDiploma = () => {
                         <p className="text-sm font-[300] leading-[17px]">
                           {trainer.designation}
                         </p>
-                        <div className=" rounded p-3 mt-2  px-5 bg-white">
+                        <div className=" rounded p-3 mt-2 px-5 bg-white">
                           <p className="text-sm font-[300] leading-[17px]">
                             Areas of expertise : {trainer.expertise}
+                          </p>
+                          <br></br>
+                          <p className="text-sm font-[300] leading-[17px]">
+                            Years in Cyber Security : {trainer.years}
                           </p>
                         </div>
                       </div>
@@ -749,7 +805,7 @@ const CyberSecurityDiploma = () => {
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
         <p className="lg:text-[24px] md:text-[20px] text-[20px] leading-9 font-semibold mt-5">
-          Be a Freelancer on Cyber Security
+          Be a Specialist in Cyber Security
         </p>
         <div className="my-5">
           <Link href="/admission" className="animated-button1  gap-x-2 ">
@@ -850,7 +906,7 @@ const CyberSecurityDiploma = () => {
               <summary className="summary py-5 text-white font-semibold px-7">
                 কোর্স শেষে কেমন ক্যারিয়ার হতে পারে ?
               </summary>
-              <p className="text-justify mt-2">
+              <div className="text-justify mt-2">
                 <b className="!my-4"> কোর্স শেষে কেমন ক্যারিয়ার হতে পারে ?</b>
                 <br />
                 <div className="mt-4">
@@ -868,7 +924,7 @@ const CyberSecurityDiploma = () => {
 
                   <div className="mb-1">✅ Course Benefits:</div>
                   <ul className="list-disc pl-5">
-                    <li>কোর্স শেষে ১ মাসের ইন্টার্নশিপ প্রজেক্টে অংশগ্রহণ।</li>
+                    <li>কোর্স শেষে ৩ মাসের ইন্টার্নশিপ প্রজেক্টে অংশগ্রহণ।</li>
                     <li>
                       মার্কেটপ্লেসে রিয়েল ক্লায়েন্টদের সাথে কাজের অভিজ্ঞতা।
                     </li>
@@ -877,20 +933,20 @@ const CyberSecurityDiploma = () => {
                     </li>
                   </ul>
                 </div>
-              </p>
+              </div>
             </details>
             <details className="details mt-4">
               <summary className="summary py-5 text-white font-semibold px-7">
                 কোর্স ফি কত এবং কিভাবে পরিশোধ করবেন?
               </summary>
               <div className="text-justify mt-2">
-                <b className="!my-4">Course Fee:</b> ১৪,০০০ টাকা
+                <b className="!my-4">Course Fee:</b> ৫০,০০০ টাকা
                 <br />
                 <b className="!my-4">Payment Method:</b>
                 <ul className="list-disc pl-5 mt-2">
-                  <li>1st Installment: ৭,০০০ টাকা (ভর্তি সময়)</li>
+                  <li>1st Installment: ২৫,০০০ টাকা (ভর্তি সময়)</li>
                   <li>
-                    2nd Installment: ৭,০০০ টাকা (ক্লাস শুরুর ১৫–২১ দিনের মধ্যে)
+                    2nd Installment: ২৫,০০০ টাকা (ক্লাস শুরুর ১৫–২১ দিনের মধ্যে)
                   </li>
                 </ul>
               </div>
@@ -936,7 +992,7 @@ const CyberSecurityDiploma = () => {
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
         <p className="lg:text-[24px] md:text-[20px] text-[20px] leading-9 font-semibold mt-5">
-          Be a Freelancer on Cyber Security
+          Be a Specialist in Cyber Security
         </p>
         <div className="my-5">
           <Link href="/admission" className="animated-button1  gap-x-2 ">

@@ -4,11 +4,11 @@ import Banner from "@/app/all-courses/banner.svg";
 
 import Image from "next/image";
 import { FaCheck, FaHandPointRight } from "react-icons/fa";
-import Fahim from "@/app/all-courses/TeacherSliderImages/Fahim.svg";
+import Fahim from "@/app/all-courses/TeacherSliderImages/fahim.webp";
 
 import Sakib from "@/app/all-courses/TeacherSliderImages/sakib.jpg";
 import Mubin from "@/app/all-courses/TeacherSliderImages/mubin.jpg";
-import Ashif from "@/app/all-courses/TeacherSliderImages/ashif.jpg";
+import Ashif from "@/app/all-courses/TeacherSliderImages/ashif.webp";
 import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpg";
 import Roman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -65,41 +65,42 @@ const Combo = () => {
       expertise:
         "Vulnerability Assessment & Penetration Testing, Ethical Hacking, Cloud Security, OSINT, Cyber Forensics.",
       image: Fahim,
+      years: "14+",
     },
     {
       name: "Md Ashif Islam",
-      designation: "Senior Trainer",
-      expertise:
-        "Cyber Security, VAPT, Bug Bounty, Networking.",
+      designation: "Senior Faculty",
+      expertise: "Cyber Security, VAPT, Bug Bounty, Networking.",
       image: Ashif, // Make sure you import or define `Ashif`
+      years: "8+",
     },
     {
       name: "Bijoy Mondal",
-      designation: "Trainer",
-      expertise:
-        "Cyber Security, Freelancing, Ethical Hacking, Linux.",
+      designation: "Faculty member",
+      expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
       image: Bijoy,
+      years: "8+",
     },
     {
       name: "Syed Sakib Alam Mubin",
-      designation: "Trainer",
-      expertise:
-        "Cyber Security, Ethical Hacking, Linux RedHat.",
+      designation: "Faculty member",
+      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
       image: Mubin, // Confirm this is the correct image for "Syed Sakib Alam Mubin"
+      years: "5+",
     },
     {
       name: "Sakib Ahmed",
-      designation: "Trainer",
-      expertise:
-        "Cyber Security, Ethical Hacking, Linux.",
+      designation: "Faculty member",
+      expertise: "Cyber Security, Ethical Hacking, Linux.",
       image: Sakib, // Define or import `SakibAhmed`
+      years: "3+",
     },
     {
       name: "Roman Moonshi",
-      designation: "Auditor",
-      expertise:
-        "Cyber Security, Ethical Hacking, Linux.",
-      image: Roman, // Define or import `Roman`
+      designation: "Lead Auditor",
+      expertise: "Cyber Security, Ethical Hacking, Linux.",
+      image: Roman, // Define or import `Roman`years: "14+",
+      years: "5+",
     },
   ];
 
@@ -114,8 +115,6 @@ const Combo = () => {
       <div className="flex px-3">
         <div className="grid  grid-cols-12 gap-x-2 w-full  lg:mt-16 mt-8">
           <div className=" lg:col-span-8 col-span-12 lg:px-3">
-            
-
             {/*KEY FEATURES  */}
             <div className="relative animate-fadeInDown">
               <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
@@ -141,8 +140,6 @@ const Combo = () => {
             <article className="p-1">
               <div className="relative">
                 <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  
-
                   Cyber Security & Ethical Hacking (Module)
                 </h3>
                 <hr className="mt-2" />
@@ -268,8 +265,6 @@ const Combo = () => {
             <article className="p-1">
               <div className="relative">
                 <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  
-
                   Advance Python with Django and Scrapping (Module)
                 </h3>
                 <hr className="mt-2" />
@@ -381,8 +376,6 @@ const Combo = () => {
                       <FaHandPointRight className="text-[#715296] text-xl min-w-[16px] mt-1" />
 
                       <span>
-                        
-
                         introduction to Django Introduction to Back-End Web
                         Development <br />
                         using Django
@@ -418,8 +411,6 @@ const Combo = () => {
             </article>
             <div>
               <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                
-
                 Key Features (Cyber Security)
               </h3>
               <div className="bg-white shadow rounded-md p-4 mb-6">
@@ -488,8 +479,6 @@ const Combo = () => {
           </div>
 
           <div className="lg:col-span-4 col-span-12 lg:block mt-4 lg:mt-0">
-            
-
             <Swiper
               // modules={[Pagination]}
               // pagination={{ clickable: true }}
@@ -549,6 +538,10 @@ const Combo = () => {
                         <p className="text-sm font-[300] leading-[17px]">
                           Areas of expertise : {trainer.expertise}
                         </p>
+                        <br></br>
+                        <p className="text-sm font-[300] leading-[17px]">
+                          Years in Cyber Security : {trainer.years}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -560,21 +553,16 @@ const Combo = () => {
               src={Banner}
               className="w-full "
             />
-
           </div>
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
-        
-
         <p className="xl:text-[24px] lg:text-[22px] text-[20px] leading-9 font-semibold mt-5">
           Become a Python Specialist
         </p>
         <div className="my-5">
           <Link href="/admission" className="animated-button1  gap-x-2 ">
             <p className="flex gap-x-1 items-center ">
-              
-
               <MdPersonAddAlt1 className="text-2xl" />
               ENROLL NOW
             </p>
@@ -582,9 +570,7 @@ const Combo = () => {
         </div>
       </div>
       <div className=" my-10 ">{/* <Outline/> */}</div>
-      <div className=" my-10 ">
-        {/* <PaymentModal /> */}
-      </div>
+      <div className=" my-10 ">{/* <PaymentModal /> */}</div>
     </div>
   );
 };
