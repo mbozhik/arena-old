@@ -205,10 +205,10 @@ const Login = () => {
 
     {/* Link */}
     <p className=" mx-auto text-right text-sm text-gray-600">
-      Don’t have an ID?
+    New here? &nbsp;
 
       <Link href="admission" className="text-blue-500 font-semibold">
-        Apply Now!
+      Apply for your ID now!
       </Link>
     </p>
 

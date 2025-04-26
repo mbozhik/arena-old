@@ -8,7 +8,7 @@ import ServiceToggle from "../Utility/ServicesCheckbox";
 const courses = [
   {
     image: network,
-    title: "VAPT & Pen Testing",
+    title: "Vulnerability Assessment and Penetration Testing",
     link: "/services/vapt",
     description:
       "Identify, analyze, and exploit vulnerabilities across your applications, networks, or infrastructure to assess real-world risks.",
