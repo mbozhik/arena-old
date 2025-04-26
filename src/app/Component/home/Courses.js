@@ -35,10 +35,10 @@ const courses = [
   },
   {
     image: AdvancedCourse,
-    title: "CEHF Masterclass",
-    link: "/advanced-cyber-security-course",
+    title: "Professional Diploma in Cyber Security (1 Year)",
+    link: "/diploma-in-cyber-security",
     description:
-      "Advanced Cyber Security & Ethical Hacking is a pioneer in endpoint security, with proactive security solutions that stop advanced persistent threats in their initial stages and prevent advancement. Advanced Cyber Security & Ethical Hacking products provide the first.",
+      "Step into the frontline of digital defense with Bangladesh’s most trusted 1-year Professional Diploma in Cyber Security. Build a Global Cybersecurity Career, From Fundamentals to Professional",
   },
   {
     image: network,

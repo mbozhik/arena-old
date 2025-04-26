@@ -252,7 +252,7 @@ const Apply = (e) => {
         <div className="flex mt-4">
           {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
           <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#0c9669] mt-6 ">
-            Personal & Contact Information :
+            Registration Details :
           </p>
         </div>
         <div className="w-full md:col-span-3 col-span-6 mt-2 md:mt-0 relative group">

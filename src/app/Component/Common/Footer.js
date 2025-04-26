@@ -46,7 +46,7 @@ const Footer = () => {
             <li className="flex items-start gap-2">
               <FaLocationDot className="mt-1 text-[#715296] md:text-[16px] text-sm" />
               <span className="md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
-                House No:1, Block: B
+                House No: 1, Block: B
                 <br />
                 Banasree, Main Road, Rampura,
                 <br />

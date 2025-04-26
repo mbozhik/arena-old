@@ -51,6 +51,7 @@ const Combo = () => {
       id: 2,
       type: "Course Fee",
       description: "BDT 30,000/-",
+      discount: "BDT 34,000/-",
     },
     {
       id: 3,
@@ -463,8 +464,8 @@ const Combo = () => {
                         </td>
                         <td className="border px-4 py-2">{item.type}</td>
                         <td className="border px-4 py-2">
-                          {item.description === "BDT 30,000/-" && (
-                            <del>{item.description}</del>
+                          {item.description == "BDT 30,000/-" && (
+                            <del>{item.discount}</del>
                           )}
                           <br />
                           {item.description}

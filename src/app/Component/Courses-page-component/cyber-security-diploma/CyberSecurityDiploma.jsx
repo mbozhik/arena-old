@@ -36,6 +36,7 @@ const CyberSecurityDiploma = () => {
       id: 2,
       type: "Course Fee",
       description: "BDT 50,000/-",
+      discount: "BDT 65,000/-",
     },
     {
       id: 3,
@@ -729,7 +730,13 @@ const CyberSecurityDiploma = () => {
                           {item.id}
                         </td>
                         <td className="border px-4 py-2">{item.type}</td>
-                        <td className="border px-4 py-2">{item.description}</td>
+                        <td className="border px-4 py-2">
+                          {item.description == "BDT 50,000/-" && (
+                            <del>{item.discount}</del>
+                          )}
+                          <br />
+                          {item.description}
+                        </td>
                       </tr>
                     ))}
                   </tbody>
