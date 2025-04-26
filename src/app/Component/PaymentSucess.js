@@ -50,7 +50,7 @@ const PaymentSuccess = () => {
               <p className='text-center mt-4'>Transaction ID: <span className="text-[#28A745]"> {trxID}</span> </p>
               <p className='text-center mt-1'>Amount:  <span className="text-[#28A745]">{amount}</span></p>
               <p className='text-center mt-1'>Email:  <span className="text-[#28A745]">{emailID}</span></p>
-              <p className='text-center text-[#28A745] pt-2'>(Copy Your Transaction Id,Amount & Email for Future Reference)</p>
+              <p className='text-center text-[#28A745] pt-2'>(Copy Your Transaction Id, Amount & Email for Future Reference)</p>
                <div className='flex justify-center align-center mt-1'>
                  <button className='px-5 py-2 bg-[#23272B] text-white mt-2 rounded-lg' onClick={handleCopyClick}>Copy</button>
                </div>

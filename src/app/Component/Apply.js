@@ -216,21 +216,24 @@ const Apply = (e) => {
           </p>
 
           <p>
-            Your form has been submitted successfully. To complete registration
+            Your form has been submitted successfully.
+          </p><br></br>
+          <p>
+            To complete registration, please proceed with the payment.
           </p>
           <Link href="/login">
             <button className="px-10 py-2 text-yellow-600 bg-purple-600 font-semibold my-3 rounded-md">
-              pay Now
+              Pay Now
             </button>
           </Link>
           <p>
-            Your
+            Your&nbsp;
             <span className="font-semibold text-purple-800">
               User ID , Password
             </span>
-            , Password has been send to your email. Please check your
+            , have been sent to your email. Please check your
             <span className="font-semibold text-purple-800">
-              mail inbox or spam box
+            &nbsp;mail inbox or less likely your spam folder
             </span>
             for further instruction.
           </p>

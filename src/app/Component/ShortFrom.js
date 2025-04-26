@@ -97,30 +97,23 @@ const ShortFrom = (e) => {
             {from_id}
           </p>
 
-          <p>
-            Your form has been submitted successfully. To complete registration
-          </p>
+          <p>Your form has been submitted successfully.</p>
+          <p>To complete registration, please proceed with the payment.</p>
           <Link href="/login">
-            
-
             <button className="px-10 py-2 text-yellow-600 bg-purple-600 font-semibold my-3 rounded-md">
-              pay Now
+              Pay Now
             </button>
           </Link>
           <p>
-            Your
-
+            Your&nbsp;
             <span className="font-semibold text-purple-800">
               User ID , Password
-
             </span>
-            , Password has been send to your email. Please check your
-
+            , have been sent to your email. Please check your
             <span className="font-semibold text-purple-800">
-              mail inbox or spam box
+              &nbsp;mail inbox or less likely your spam folder
             </span>
-
-            for further instruction.
+            &nbsp;for further instruction.
           </p>
         </div>
         <DialogFooter>
@@ -284,32 +277,32 @@ const ShortFrom = (e) => {
                     },
                   }}
                 >
-                   {allcourse && allcourse.length > 0 ? (
-                                   allcourse
-                                     .filter(
-                                       (x) =>
-                                         x.batch_schedule_name !==
-                                         "Advanced Python With Django and Freelancing"
-                                     )
-                                     .map((x, index) => (
-                                       <MenuItem
-                                       sx={{
-                                        fontSize: '12px', // Smaller text
-                                        whiteSpace: 'normal', // Wrap text
-                                        wordBreak: 'break-word', // Break long words
-                                        lineHeight: 1.3,
-                                      }}
-                                         key={index + 1}
-                                         value={x.batch_schedule_time_id}
-                                       >
-                                         {x.batch_schedule_name}
-                                       </MenuItem>
-                                     ))
-                                 ) : (
-                                   <MenuItem disabled className="text-red-500">
-                                     Server Error
-                                   </MenuItem>
-                                 )}
+                  {allcourse && allcourse.length > 0 ? (
+                    allcourse
+                      .filter(
+                        (x) =>
+                          x.batch_schedule_name !==
+                          "Advanced Python With Django and Freelancing"
+                      )
+                      .map((x, index) => (
+                        <MenuItem
+                          sx={{
+                            fontSize: "12px", // Smaller text
+                            whiteSpace: "normal", // Wrap text
+                            wordBreak: "break-word", // Break long words
+                            lineHeight: 1.3,
+                          }}
+                          key={index + 1}
+                          value={x.batch_schedule_time_id}
+                        >
+                          {x.batch_schedule_name}
+                        </MenuItem>
+                      ))
+                  ) : (
+                    <MenuItem disabled className="text-red-500">
+                      Server Error
+                    </MenuItem>
+                  )}
                 </TextField>
               </div>
             </div>
