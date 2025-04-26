@@ -4,7 +4,7 @@ import Banner from "@/app/all-courses/banner.svg";
 
 import Image from "next/image";
 import { FaCheck, FaHandPointRight } from "react-icons/fa";
-import Fahim from "@/app/all-courses/TeacherSliderImages/Ffahim.webp";
+import Fahim from "@/app/all-courses/TeacherSliderImages/fahim.webp";
 
 import Sakib from "@/app/all-courses/TeacherSliderImages/sakib.jpg";
 import Mubin from "@/app/all-courses/TeacherSliderImages/mubin.jpg";
@@ -105,7 +105,7 @@ const Network = () => {
               <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
                 Overview
               </h3>
-              <p className="text-[#424242] font-[300] lg:lg:text-[16px] text-sm text-sm leading-[19px] text-justify mt-5">
+              <p className="text-[#424242] font-[300] lg:lg:text-[16px] text-sm leading-[19px] text-justify mt-5">
                 In this course, you will be able to discover security
                 vulnerabilities across an entire network, by using network
                 hacking techniques and vulnerability scanning. You will be able
