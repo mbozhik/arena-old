@@ -26,7 +26,7 @@ const Apply = (e) => {
   const [month, setMonth] = useState("Month");
   const [day, setDay] = useState("Day");
   const [birth_date, setBirth_date] = useState(null);
-  const [course, setCourse] = useState(null);
+  const [course, setCourse] = useState('');
   const [nationality, setNationality] = useState("Bangladeshi");
   const [gander, setGander] = useState(null);
   const [allcourse, setAllcoures] = useState(null);
@@ -34,6 +34,9 @@ const Apply = (e) => {
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
   const [postal, setPostal] = useState("");
+  const [permanentAddress, setPermanentAddress] = useState("");
+  const [permanentCity, setPermanentCity] = useState("");
+  const [permanentPostal, setPermanentPostal] = useState("");
   const [validNumber, setValidNumber] = useState(null);
   const [course_title, setCourse_title] = useState(null);
   const [from_id, setFormId] = useState("");
@@ -45,7 +48,7 @@ const Apply = (e) => {
   const [versityDep, setVersityDep] = useState(" ");
   const [versityRoll, setVersityRoll] = useState(" ");
   const days = Array.from({ length: 31 }, (_, i) => i + 1); // 1-31
-
+  console.log("permanentAddress", permanentAddress);
   // Course Function Call hare
   const handleCheckboxChange = (e) => {
     const isChecked = e.target.checked;
@@ -215,12 +218,9 @@ const Apply = (e) => {
             {from_id}
           </p>
 
-          <p>
-            Your form has been submitted successfully.
-          </p><br></br>
-          <p>
-            To complete registration, please proceed with the payment.
-          </p>
+          <p>Your form has been submitted successfully.</p>
+          <br></br>
+          <p>To complete registration, please proceed with the payment.</p>
           <Link href="/login">
             <button className="px-10 py-2 text-yellow-600 bg-purple-600 font-semibold my-3 rounded-md">
               Pay Now
@@ -233,7 +233,7 @@ const Apply = (e) => {
             </span>
             , have been sent to your email. Please check your
             <span className="font-semibold text-purple-800">
-            &nbsp;mail inbox or less likely your spam folder
+              &nbsp;mail inbox or less likely your spam folder
             </span>
             for further instruction.
           </p>
@@ -500,11 +500,12 @@ const Apply = (e) => {
               <TextField
                 fullWidth
                 required
-                value={copy ? address : ""}
+                value={copy ? address : permanentAddress}
                 label="Permanent Address "
                 size="medium"
                 color="primary"
                 name="permanent_address"
+                onChange={(e) => setPermanentAddress(e.target.value)}
                 inputProps={{ maxLength: 300 }}
                 sx={{
                   "& .MuiOutlinedInput-root": {
@@ -531,7 +532,8 @@ const Apply = (e) => {
                   size="medium"
                   color="primary"
                   name="permanent_city"
-                  value={copy ? city : ""}
+                  value={copy ? city : permanentCity}
+                  onChange={(e)=>setPermanentCity(e.target.value)}
                   inputProps={{ maxLength: 50 }}
                   sx={{
                     "& .MuiOutlinedInput-root": {
@@ -556,7 +558,8 @@ const Apply = (e) => {
                   size="medium"
                   color="primary"
                   name="permanent_postal"
-                  value={copy ? postal : ""}
+                  value={copy ? postal : permanentPostal}
+                  onChange={(e)=>setPermanentPostal(e.target.value)}
                   inputProps={{ maxLength: 15 }}
                   sx={{
                     "& .MuiOutlinedInput-root": {
@@ -696,85 +699,82 @@ const Apply = (e) => {
               </TextField>
             </div>
             <div className="w-full md:col-span-3 col-span-6 mt-2 pt-1 md:mt-0 relative">
-            <TextField
-  fullWidth
-  required
-  select
-  label="Select a Course"
-  name="course_title"
-  value={course}
-  onChange={(e) => {
-    setCourse(e.target.value);
-    onChangeCourse(e.target.value);
-  }}
-  variant="outlined"
-  SelectProps={{
-    MenuProps: {
-      PaperProps: {
-        sx: {
-          // Auto match width of the select box
-          width: 'auto',
-          minWidth: '100%',
-          maxWidth: '100%',
-        },
-      },
-      anchorOrigin: {
-        vertical: 'bottom',
-        horizontal: 'left',
-      },
-      transformOrigin: {
-        vertical: 'top',
-        horizontal: 'left',
-      },
-      getContentAnchorEl: null,
-    },
-  }}
-  sx={{
-    "& .MuiOutlinedInput-root": {
-      "&:hover fieldset": {
-        borderColor: "#5BA9DB",
-      },
-      "& fieldset": {
-        borderColor: "#5BA9DB",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "#7B5DA7",
-        borderWidth: "1px",
-      },
-    },
-  }}
->
-  {allcourse?.length > 0 ? (
-    allcourse
-      .filter(
-        (x) =>
-          x.batch_schedule_name !==
-          "Advanced Python With Django and Freelancing"
-      )
-      .map((x, index) => (
-        <MenuItem
-          key={index}
-          value={x.batch_schedule_time_id}
-          className="whitespace-normal"
-          sx={{
-            fontSize: '12px', // Smaller text
-            whiteSpace: 'normal', // Wrap text
-            wordBreak: 'break-word', // Break long words
-            lineHeight: 1.3,
-          }}
-        >
-          {x.batch_schedule_name}
-        </MenuItem>
-      ))
-  ) : (
-    <MenuItem disabled className="text-red-500">
-      Server Error
-    </MenuItem>
-  )}
-</TextField>
-
-
-
+              <TextField
+                fullWidth
+                required
+                select
+                label="Select a Course"
+                name="course_title"
+                value={course}
+                onChange={(e) => {
+                  setCourse(e.target.value);
+                  onChangeCourse(e.target.value);
+                }}
+                variant="outlined"
+                SelectProps={{
+                  MenuProps: {
+                    PaperProps: {
+                      sx: {
+                        // Auto match width of the select box
+                        width: "auto",
+                        minWidth: "100%",
+                        maxWidth: "100%",
+                      },
+                    },
+                    anchorOrigin: {
+                      vertical: "bottom",
+                      horizontal: "left",
+                    },
+                    transformOrigin: {
+                      vertical: "top",
+                      horizontal: "left",
+                    },
+                    getContentAnchorEl: null,
+                  },
+                }}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "&:hover fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "& fieldset": {
+                      borderColor: "#5BA9DB",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#7B5DA7",
+                      borderWidth: "1px",
+                    },
+                  },
+                }}
+              >
+                {allcourse?.length > 0 ? (
+                  allcourse
+                    .filter(
+                      (x) =>
+                        x.batch_schedule_name !==
+                        "Advanced Python With Django and Freelancing"
+                    )
+                    .map((x, index) => (
+                      <MenuItem
+                        key={index}
+                        value={x.batch_schedule_time_id}
+                        className="whitespace-normal w-64 sm:w-full"
+                        sx={{
+                          fontSize: "16px", // Smaller text
+                          whiteSpace: "normal", // Wrap text
+                          wordBreak: "break-word", // Break long words
+                          lineHeight: 1.3,
+                        }}
+                      >
+                        {x.batch_schedule_name}
+                      </MenuItem>
+                    ))
+                ) : (
+                  <MenuItem disabled className="text-red-500">
+                    Server Error
+                  </MenuItem>
+                )}
+              </TextField>
             </div>
           </div>
           {/* <div className="flex mt-1 w-full">

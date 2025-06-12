@@ -26,7 +26,7 @@ const HwPanelToAwsSite = () => {
             setUserName(response.data[0].username);
 
             localStorage.setItem("UserEmail", response.data[0].email);
-            localStorage.setItem("Type", 2);
+            localStorage.setItem("u_id", 2);
           } else {
             setStudentRedirect(true);
           }
@@ -54,7 +54,7 @@ const HwPanelToAwsSite = () => {
                 <span className="text-primary">{studentName}</span>
               </h6>
               <h6>
-                <span className="font-semibold">Email:</span>
+                <span className="font-semibold">Email: </span>
 
                 <span className="text-primary">{studentEmail}</span>
               </h6>
