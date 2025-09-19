@@ -11,6 +11,7 @@ import img7 from "@/app/Images/Concern/buet.svg";
 import img8 from "@/app/Images/Concern/bpplastic.svg";
 import img9 from "@/app/Images/Concern/airForce.svg";
 import img10 from "@/app/Images/Concern/s.svg";
+import img11 from "@/app/Images/Concern/Bangladesh_Navy.svg";
 // At the top of your file
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow } from "swiper/modules";
@@ -43,7 +44,7 @@ const OurConcern = () => {
     modules={[Autoplay]}
     className="mySwiper"
   >
-    {[img, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10].map(
+    {[img, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11].map(
       (image, index) => (
         <SwiperSlide key={index} className="flex justify-center items-center">
           <Image

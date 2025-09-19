@@ -565,7 +565,7 @@ const Combo = () => {
           Become a Python Specialist
         </p>
         <div className="my-5">
-          <Link href="/admission" className="animated-button1  gap-x-2 ">
+          <Link href="/admission-form" className="animated-button1  gap-x-2 ">
             <p className="flex gap-x-1 items-center ">
               <MdPersonAddAlt1 className="text-2xl" />
               ENROLL NOW

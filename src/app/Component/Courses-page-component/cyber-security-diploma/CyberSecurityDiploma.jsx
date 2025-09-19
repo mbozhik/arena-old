@@ -14,6 +14,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import Link from "next/link";
 import { MdPersonAddAlt1 } from "react-icons/md";
+import { FaDownload } from "react-icons/fa";
 
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
 import BannerComponent from "../../Utility/ImageAd";
@@ -812,13 +813,13 @@ const CyberSecurityDiploma = () => {
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
         <p className="lg:text-[24px] md:text-[20px] text-[20px] leading-9 font-semibold mt-5">
-          Be a Specialist in Cyber Security
+          Professional Diploma in Cyber Security (1 year)
         </p>
         <div className="my-5">
-          <Link href="/admission" className="animated-button1  gap-x-2 ">
+          <Link href="https://drive.google.com/file/d/1zUvuT2YHsbMWECLM0eCmvTh3nMh1GM2g/view" target="_blank" className="animated-button1 gap-x-2 ">
             <p className="flex gap-x-1 items-center ">
-              <MdPersonAddAlt1 className="text-2xl" />
-              ENROLL NOW
+              <FaDownload className="text-lg" />
+              &nbsp;Full Course Module (PDF)
             </p>
           </Link>
         </div>
@@ -1002,7 +1003,7 @@ const CyberSecurityDiploma = () => {
           Be a Specialist in Cyber Security
         </p>
         <div className="my-5">
-          <Link href="/admission" className="animated-button1  gap-x-2 ">
+          <Link href="/admission-form" className="animated-button1  gap-x-2 ">
             <p className="flex gap-x-1 items-center ">
               <MdPersonAddAlt1 className="text-2xl" />
               ENROLL NOW

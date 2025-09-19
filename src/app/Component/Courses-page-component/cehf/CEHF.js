@@ -425,11 +425,11 @@ const CEHF = () => {
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
-        <p className="xl:text-[24px] lg:xl:text-[22px] lg:text-[20px] text-[18px] text-[20px] leading-9 font-semibold mt-5">
+        <p className="xl:text-[24px] lg:xl:text-[22px] lg:text-[20px] text-[20px] leading-9 font-semibold mt-5">
           Become a Python Specialist
         </p>
         <div className="my-5">
-          <Link href="/admission" className="animated-button1  gap-x-2 ">
+          <Link href="/admission-form" className="animated-button1  gap-x-2 ">
             <p className="flex gap-x-1 items-center ">
               <MdPersonAddAlt1 className="text-2xl" />
               ENROLL NOW

@@ -142,7 +142,7 @@ const MobileNav = ({ uid }) => {
                 className="mt-5 block lg:hidden"
                 onClick={() => setNave(false)}
               >
-                <Link href="/admission">
+                <Link href="/admission-form">
                   <span className="navBtn">Apply Now</span>
                 </Link>
               </li>
@@ -159,7 +159,7 @@ const MobileNav = ({ uid }) => {
               </li>
             ) : (
               <li>
-                <Link href="/admission">
+                <Link href="/admission-form">
                   <span
                     className={`${
                       !scrolling && pathname === "/" ? " navBtn" : "navBtn"

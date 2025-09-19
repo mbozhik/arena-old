@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Logo from "@/app/admission/Logo.png";
-import right from "@/app/admission/right.svg";
+import Logo from "@/app/admission-form/Logo.png";
+import right from "@/app/admission-form/right.svg";
 import Apply from "../Component/Apply";
 import NavberData from "../AllDataFatchingFunction/Topber";
 // import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";

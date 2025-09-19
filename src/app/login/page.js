@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "@/app/admission/Logo.png";
+import Logo from "@/app/admission-form/Logo.png";
 import Login from "../Component/Login";
 
 export const metadata = {

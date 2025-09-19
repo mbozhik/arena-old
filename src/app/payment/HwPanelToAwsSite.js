@@ -18,6 +18,7 @@ const HwPanelToAwsSite = () => {
     axios
       .get(ApiUrl.SendApiUrl + apiKey + "/")
       .then((response) => {
+        // console.log('payment', response.data)
         if (response.status === 200) {
           if (response.data.length !== 0) {
             setStudentName(response.data[0].fullname);
@@ -26,7 +27,7 @@ const HwPanelToAwsSite = () => {
             setUserName(response.data[0].username);
 
             localStorage.setItem("UserEmail", response.data[0].email);
-            localStorage.setItem("u_id", 2);
+            localStorage.setItem("u_id", response.data[0].username);
           } else {
             setStudentRedirect(true);
           }

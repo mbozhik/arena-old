@@ -1,4 +1,4 @@
-import right from "@/app/admission/right.svg"
+import right from "@/app/admission-form/right.svg"
 import Image from "next/image";
 const page = () => {
     return (
