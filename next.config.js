@@ -7,11 +7,11 @@ const nextConfig = {
       {
         protocol: 'https', // <-- string, no colon
         hostname: 'imgur.com',
-        port:'',
+        port: '',
         pathname: '/**',
       },
     ],
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

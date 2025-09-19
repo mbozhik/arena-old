@@ -1,21 +1,15 @@
-'use client';
+'use client'
 
-import { useState } from 'react';
+import {useState} from 'react'
 
 export default function ServiceToggle() {
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(false)
 
   return (
-    <div className="relative mb-4 w-full max-w-md">
+    <div className="relative w-full max-w-md mb-4">
       <div className="flex items-center gap-2 mb-2">
         {/* Checkbox */}
-        <input
-          id="services-toggle"
-          type="checkbox"
-          checked={checked}
-          onChange={(e) => setChecked(e.target.checked)}
-          className="w-6 h-6 text-purple-600 focus:ring-purple-500 border-gray-300 rounded"
-        />
+        <input id="services-toggle" type="checkbox" checked={checked} onChange={(e) => setChecked(e.target.checked)} className="w-6 h-6 text-purple-600 border-gray-300 rounded focus:ring-purple-500" />
 
         {/* Label */}
         <label htmlFor="services-toggle" className="cursor-pointer select-none xl:text-[20px] text:[18px] font-medium">
@@ -32,7 +26,7 @@ export default function ServiceToggle() {
         `}
       >
         <div>
-          <p className="font-medium text-base">Arena Web Security</p>
+          <p className="text-base font-medium">Arena Web Security</p>
           <p>House No:1, Block:B</p>
           <p>Banasree, Main Road, Rampura</p>
           <p>Dhaka - 1219</p>
@@ -47,10 +41,7 @@ export default function ServiceToggle() {
         <div>
           <p className="font-medium">Email</p>
           <p>
-            <a
-              href="mailto:info@arenawebsecurity.net"
-              className="hover:underline hover:text-gray-600 transition-colors"
-            >
+            <a href="mailto:info@arenawebsecurity.net" className="transition-colors hover:underline hover:text-gray-600">
               info@arenawebsecurity.net
             </a>
           </p>
@@ -59,17 +50,12 @@ export default function ServiceToggle() {
         <div>
           <p className="font-medium">Website</p>
           <p>
-            <a
-              href="https://www.arenawebsecurity.net"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline hover:text-gray-600 transition-colors"
-            >
+            <a href="https://www.arenawebsecurity.net" target="_blank" rel="noopener noreferrer" className="transition-colors hover:underline hover:text-gray-600">
               www.arenawebsecurity.net
             </a>
           </p>
         </div>
       </div>
     </div>
-  );
+  )
 }

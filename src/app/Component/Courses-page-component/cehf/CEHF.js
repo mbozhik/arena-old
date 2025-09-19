@@ -1,209 +1,187 @@
-"use client";
-import React from "react";
-import Banner from "@/app/all-courses/banner.svg";
+'use client'
+import React from 'react'
+import Banner from '@/app/all-courses/banner.svg'
 
-import Image from "next/image";
-import { FaCheck, FaHandPointRight } from "react-icons/fa";
-import Fahim from "@/app/all-courses/TeacherSliderImages/fahim.webp";
-import Sakib from "@/app/all-courses/TeacherSliderImages/sakib.jpg";
-import Mubin from "@/app/all-courses/TeacherSliderImages/mubin.jpg";
-import Ashif from "@/app/all-courses/TeacherSliderImages/ashif.webp";
-import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpg";
-import Roman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Scrollbar, A11y, Autoplay } from "swiper/modules";
-import Link from "next/link";
-import { MdPersonAddAlt1 } from "react-icons/md";
-import BannerImage from "@/app/AllDataFatchingFunction/BannerImage";
-import AdvancedCourseOutline from "../../../../../public/statitic/AdvancedCourseOutline.svg";
+import Image from 'next/image'
+import {FaCheck, FaHandPointRight} from 'react-icons/fa'
+import Fahim from '@/app/all-courses/TeacherSliderImages/fahim.webp'
+import Sakib from '@/app/all-courses/TeacherSliderImages/sakib.jpg'
+import Mubin from '@/app/all-courses/TeacherSliderImages/mubin.jpg'
+import Ashif from '@/app/all-courses/TeacherSliderImages/ashif.webp'
+import Bijoy from '@/app/all-courses/TeacherSliderImages/bijoy.jpg'
+import Roman from '@/app/all-courses/TeacherSliderImages/roman.jpg'
+import {Swiper, SwiperSlide} from 'swiper/react'
+import {Navigation, Scrollbar, A11y, Autoplay} from 'swiper/modules'
+import Link from 'next/link'
+import {MdPersonAddAlt1} from 'react-icons/md'
+import BannerImage from '@/app/AllDataFatchingFunction/BannerImage'
+import AdvancedCourseOutline from '../../../../../public/statitic/AdvancedCourseOutline.svg'
 const CEHF = () => {
-  const features = [
-    "Mobile Malware, PC Malware",
-    "Programming Knowledge",
-    "Server Exploitation",
-    "Game Hacking",
-  ];
+  const features = ['Mobile Malware, PC Malware', 'Programming Knowledge', 'Server Exploitation', 'Game Hacking']
 
   const info = [
     {
       id: 1,
-      type: "Date & Time",
-      description: "Duration: 12 weeks (2 Days per week)",
+      type: 'Date & Time',
+      description: 'Duration: 12 weeks (2 Days per week)',
     },
     {
       id: 2,
-      type: "Course Fee",
-      description: "BDT 20,000/-",
+      type: 'Course Fee',
+      description: 'BDT 20,000/-',
     },
     {
       id: 3,
-      type: "Course Type",
-      description: "Professional certified course that everyone can avail.",
+      type: 'Course Type',
+      description: 'Professional certified course that everyone can avail.',
     },
-  ];
+  ]
   const trainers = [
     {
-      name: "Tanjim Al Fahim",
-      designation: "CEO of Arena Web Security",
-      expertise:
-        "Vulnerability Assessment & Penetration Testing, Ethical Hacking, Cloud Security, OSINT, Cyber Forensics.",
+      name: 'Tanjim Al Fahim',
+      designation: 'CEO of Arena Web Security',
+      expertise: 'Vulnerability Assessment & Penetration Testing, Ethical Hacking, Cloud Security, OSINT, Cyber Forensics.',
       image: Fahim,
-      years: "14+",
+      years: '14+',
     },
     {
-      name: "Md Ashif Islam",
-      designation: "Senior Faculty",
-      expertise: "Cyber Security, VAPT, Bug Bounty, Networking.",
+      name: 'Md Ashif Islam',
+      designation: 'Senior Faculty',
+      expertise: 'Cyber Security, VAPT, Bug Bounty, Networking.',
       image: Ashif, // Make sure you import or define `Ashif`
-      years: "8+",
+      years: '8+',
     },
     {
-      name: "Bijoy Mondal",
-      designation: "Faculty member",
-      expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
+      name: 'Bijoy Mondal',
+      designation: 'Faculty member',
+      expertise: 'Cyber Security, Freelancing, Ethical Hacking, Linux.',
       image: Bijoy,
-      years: "8+",
+      years: '8+',
     },
     {
-      name: "Syed Sakib Alam Mubin",
-      designation: "Faculty member",
-      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
+      name: 'Syed Sakib Alam Mubin',
+      designation: 'Faculty member',
+      expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
       image: Mubin, // Confirm this is the correct image for "Syed Sakib Alam Mubin"
-      years: "5+",
+      years: '5+',
     },
     {
-      name: "Sakib Ahmed",
-      designation: "Faculty member",
-      expertise: "Cyber Security, Ethical Hacking, Linux.",
+      name: 'Sakib Ahmed',
+      designation: 'Faculty member',
+      expertise: 'Cyber Security, Ethical Hacking, Linux.',
       image: Sakib, // Define or import `SakibAhmed`
-      years: "3+",
+      years: '3+',
     },
     {
-      name: "Roman Moonshi",
-      designation: "Lead Auditor",
-      expertise: "Cyber Security, Ethical Hacking, Linux.",
+      name: 'Roman Moonshi',
+      designation: 'Lead Auditor',
+      expertise: 'Cyber Security, Ethical Hacking, Linux.',
       image: Roman, // Define or import `Roman`years: "14+",
-      years: "5+",
+      years: '5+',
     },
-  ];
+  ]
   return (
     <div>
-      <div className="md:text-center mt-14 px-3 md:px-0">
-        <div className="lg:xl:text-[24px] lg:text-[22px] text-[20px] md:text-[20px]   font-semibold leading-9 text-[#424242]">
-          CEHF Masterclass
-        </div>
+      <div className="px-3 md:text-center mt-14 md:px-0">
+        <div className="lg:xl:text-[24px] lg:text-[22px] text-[20px] md:text-[20px]   font-semibold leading-9 text-[#424242]">CEHF Masterclass</div>
       </div>
       {/* Course Module */}
       <div className="flex px-3">
-        <div className="grid  grid-cols-1 md:grid-cols-12 gap-x-2 w-full  lg:mt-16 mt-8">
-          <div className=" lg:col-span-8 col-span-12 lg:px-3">
+        <div className="grid w-full grid-cols-1 mt-8 md:grid-cols-12 gap-x-2 lg:mt-16">
+          <div className="col-span-12  lg:col-span-8 lg:px-3">
             {/*KEY FEATURES  */}
             <div className="relative animate-fadeInDown">
-              <h3 className="  text-[#424242] lg:xl:text-[22px] lg:text-[20px]  md:text-[20px] text-[18px] font-medium leading-6">
-                Overview
-              </h3>
-              <p className="text-[#424242] font-[300] lg:lg:text-[16px]  text-sm leading-[19px] text-justify mt-5">
-                Advanced Cyber Security & Ethical Hacking is a pioneer in
-                endpoint security, with proactive security solutions that stop
-                advanced persistent threats in their initial stages and prevent
-                advancement. Advanced Cyber Security & Ethical Hacking products
-                provide the first.
-              </p>
+              <h3 className="  text-[#424242] lg:xl:text-[22px] lg:text-[20px]  md:text-[20px] text-[18px] font-medium leading-6">Overview</h3>
+              <p className="text-[#424242] font-[300] lg:lg:text-[16px]  text-sm leading-[19px] text-justify mt-5">Advanced Cyber Security & Ethical Hacking is a pioneer in endpoint security, with proactive security solutions that stop advanced persistent threats in their initial stages and prevent advancement. Advanced Cyber Security & Ethical Hacking products provide the first.</p>
             </div>
             {/* Moudele Start */}
             <article className="p-1">
               <div className="relative">
-                <h3 className="lg:xl:text-[22px] lg:text-[20px]  md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  CEHF Masterclass (Module)
-                </h3>
+                <h3 className="lg:xl:text-[22px] lg:text-[20px]  md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">CEHF Masterclass (Module)</h3>
                 <hr className="mt-2" />
               </div>
-              <div className="grid grid-cols-1   md:grid-cols-2 justify-between gap-x-5">
+              <div className="grid justify-between grid-cols-1 md:grid-cols-2 gap-x-5">
                 <ul className="mt-3 text-[[16px] leading-5 font-[300] text-[#424242] ">
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Introduction</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> OSINT</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Mobile Malware, PC Malware</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Malware Manual Binding with Real File</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>
-                        Advance SQL Injection with SQLmap and other tools
-                      </span>
+                      <span>Advance SQL Injection with SQLmap and other tools</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Advance Remote Code Execution</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Recon by CVE and exploation</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Programming Knowledge</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Programming with Web Server</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Recon Script development by Python</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Crawler by Python</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>
-                        Hack A Game (Binary analysis and Dll injection)
-                      </span>
+                      <span>Hack A Game (Binary analysis and Dll injection)</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Software Penetration Testing</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Freelancing</span>
                     </div>
@@ -211,38 +189,38 @@ const CEHF = () => {
                 </ul>
                 <ul className="mt-3 lg:text-[16px] text-sm leading-5 font-[300] text-[#424242] ">
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Exploit making by Python and Shell Code</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Spidaring with Python</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Complete CRUD Operation</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Cyber Defense</span>
                     </div>
                   </li>
 
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>OOPS</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2  items-start  py-1">
+                    <div className="flex items-start gap-2 py-1">
                       {/* <FaHandPointRight className="text-[#715296]  text-xl" /> */}
                       <FaHandPointRight className="text-[#715296] text-xl min-w-[16px] mt-1" />
 
@@ -250,46 +228,43 @@ const CEHF = () => {
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
-                      <span>
-                        Create Own VM for Server and Linux Advance with others
-                        OS
-                      </span>
+                      <span>Create Own VM for Server and Linux Advance with others OS</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Metasploit with CVE tag</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>Server Audit</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Server Create, Web Application Deploy</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Server Exploitation</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Professional Pentesting Report with Nessus</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>Risk Management</span>
                     </div>
@@ -298,10 +273,8 @@ const CEHF = () => {
               </div>
             </article>
             <div>
-              <h3 className="xl:text-[22px] lg:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                Key Features
-              </h3>
-              <div className="bg-white shadow rounded-md p-4 mb-6">
+              <h3 className="xl:text-[22px] lg:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">Key Features</h3>
+              <div className="p-4 mb-6 bg-white rounded-md shadow">
                 <ul className="space-y-2 lg:text-[16px] text-sm leading-5 font-[300] text-[#424242] ">
                   {features.map((item, index) => (
                     <li key={index} className="flex items-center ">
@@ -316,28 +289,17 @@ const CEHF = () => {
                 <table className="w-full text-sm border border-gray-200">
                   <thead className="bg-gray-100">
                     <tr className="lg:text-[16px] text-sm">
-                      <th className="border px-4 py-2 text-left font-medium">
-                        #
-                      </th>
-                      <th className="border px-4 py-2 text-left font-medium">
-                        Information Type
-                      </th>
-                      <th className="border px-4 py-2 text-left font-medium">
-                        Description
-                      </th>
+                      <th className="px-4 py-2 font-medium text-left border">#</th>
+                      <th className="px-4 py-2 font-medium text-left border">Information Type</th>
+                      <th className="px-4 py-2 font-medium text-left border">Description</th>
                     </tr>
                   </thead>
                   <tbody>
                     {info.map((item) => (
-                      <tr
-                        key={item.id}
-                        className="bg-white lg:text-[16px] text-sm leading-6 font-[300] text-[#424242] "
-                      >
-                        <td className="border px-4 py-2 font-semibold">
-                          {item.id}
-                        </td>
-                        <td className="border px-4 py-2">{item.type}</td>
-                        <td className="border px-4 py-2">{item.description}</td>
+                      <tr key={item.id} className="bg-white lg:text-[16px] text-sm leading-6 font-[300] text-[#424242] ">
+                        <td className="px-4 py-2 font-semibold border">{item.id}</td>
+                        <td className="px-4 py-2 border">{item.type}</td>
+                        <td className="px-4 py-2 border">{item.description}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -346,7 +308,7 @@ const CEHF = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-4 col-span-12 lg:block mt-4 lg:mt-0">
+          <div className="col-span-12 mt-4 lg:col-span-4 lg:block lg:mt-0">
             <Swiper
               // modules={[Pagination]}
               // pagination={{ clickable: true }}
@@ -376,77 +338,54 @@ const CEHF = () => {
                   slidesPerView: 1,
                 },
               }}
-              pagination={{ clickable: true }}
+              pagination={{clickable: true}}
               // className={`${style.slider_container} mySwipe py-5 mb-5 `}
             >
               {trainers.map((trainer, idx) => (
                 <SwiperSlide key={idx}>
-                  <div className="rounded-md p-4  shadow-md relative overflow-hidden svg-background">
+                  <div className="relative p-4 overflow-hidden rounded-md shadow-md svg-background">
                     {/* <div
-                className=" "
+                className=""
                 // style={{
                 //   backgroundImage: "url('/file/liquid-cheese.svg')",
                 // }}
               /> */}
-                    <div className="relative  flex flex-col items-center text-center space-y-3">
-                      <Image
-                        src={trainer.image}
-                        alt={trainer.name}
-                        className="rounded-full object-cover border border-gray-200"
-                        width={120}
-                        height={120}
-                      />
-                      <h6 className="text-lg font-normal text-[#0b6481]">
-                        {trainer.name}
-                      </h6>
-                      <p className="text-sm font-[300] leading-[17px]">
-                        {trainer.designation}
-                      </p>
-                      <div className=" rounded p-3 mt-2  px-5 bg-white">
-                        <p className="text-sm font-[300] leading-[17px]">
-                          Areas of expertise : {trainer.expertise}
-                        </p>
+                    <div className="relative flex flex-col items-center space-y-3 text-center">
+                      <Image src={trainer.image} alt={trainer.name} className="object-cover border border-gray-200 rounded-full" width={120} height={120} />
+                      <h6 className="text-lg font-normal text-[#0b6481]">{trainer.name}</h6>
+                      <p className="text-sm font-[300] leading-[17px]">{trainer.designation}</p>
+                      <div className="p-3 px-5 mt-2 bg-white rounded ">
+                        <p className="text-sm font-[300] leading-[17px]">Areas of expertise : {trainer.expertise}</p>
                         <br></br>
-                        <p className="text-sm font-[300] leading-[17px]">
-                          Years in Cyber Security : {trainer.years}
-                        </p>
+                        <p className="text-sm font-[300] leading-[17px]">Years in Cyber Security : {trainer.years}</p>
                       </div>
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
-            <Image
-              alt="Cyber Security And Ethical Hacking"
-              src={Banner}
-              className="w-full "
-            />
+            <Image alt="Cyber Security And Ethical Hacking" src={Banner} className="w-full " />
           </div>
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
-        <p className="xl:text-[24px] lg:xl:text-[22px] lg:text-[20px] text-[20px] leading-9 font-semibold mt-5">
-          Become a Python Specialist
-        </p>
+        <p className="xl:text-[24px] lg:xl:text-[22px] lg:text-[20px] text-[20px] leading-9 font-semibold mt-5">Become a Python Specialist</p>
         <div className="my-5">
-          <Link href="/admission-form" className="animated-button1  gap-x-2 ">
-            <p className="flex gap-x-1 items-center ">
+          <Link href="/admission-form" className="animated-button1 gap-x-2 ">
+            <p className="flex items-center gap-x-1 ">
               <MdPersonAddAlt1 className="text-2xl" />
               ENROLL NOW
             </p>
           </Link>
         </div>
       </div>
-      <div className="container mx-auto  flex justify-center">
+      <div className="container flex justify-center mx-auto">
         {/* <img class="w-100" src={} alt=""/> */}
-        <Image
-          alt="Cyber Security And Ethical Hacking "
-          src={AdvancedCourseOutline}
-        />
+        <Image alt="Cyber Security And Ethical Hacking " src={AdvancedCourseOutline} />
       </div>
-      <div className=" my-10 ">{/* <PaymentModal/> */}</div>
+      <div className="my-10 ">{/* <PaymentModal/> */}</div>
     </div>
-  );
-};
+  )
+}
 
-export default CEHF;
+export default CEHF

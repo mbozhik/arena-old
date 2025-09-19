@@ -1,16 +1,16 @@
 'use client'
-import ClearSession from "../Profile/ClearStirage";
-import Delete from "../Profile/Cookies";
+import ClearSession from '../Profile/ClearStirage'
+import Delete from '../Profile/Cookies'
 const LogOut = () => {
-const cookiesdelete=()=>{
+  const cookiesdelete = () => {
     Delete()
     ClearSession()
+  }
+  return (
+    <span className="cursor-pointer navBtn" onClick={cookiesdelete}>
+      Log Out
+    </span>
+  )
 }
-    return (
-     
-             <span className="navBtn cursor-pointer" onClick={cookiesdelete}>Log Out</span>
-        
-    );
-};
 
-export default LogOut;
+export default LogOut

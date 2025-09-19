@@ -1,11 +1,10 @@
-import { AllCourses } from "../Component/Courses/AllCourses";
+import {AllCourses} from '../Component/Courses/AllCourses'
 const page = () => {
-    return (
-        <div>
-            <AllCourses/>
-            
-        </div>
-    );
-};
+  return (
+    <div>
+      <AllCourses />
+    </div>
+  )
+}
 
-export default page;
+export default page

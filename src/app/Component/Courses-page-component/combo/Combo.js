@@ -1,203 +1,165 @@
-"use client";
-import React from "react";
-import Banner from "@/app/all-courses/banner.svg";
+'use client'
+import React from 'react'
+import Banner from '@/app/all-courses/banner.svg'
 
-import Image from "next/image";
-import { FaCheck, FaHandPointRight } from "react-icons/fa";
-import Fahim from "@/app/all-courses/TeacherSliderImages/fahim.webp";
+import Image from 'next/image'
+import {FaCheck, FaHandPointRight} from 'react-icons/fa'
+import Fahim from '@/app/all-courses/TeacherSliderImages/fahim.webp'
 
-import Sakib from "@/app/all-courses/TeacherSliderImages/sakib.jpg";
-import Mubin from "@/app/all-courses/TeacherSliderImages/mubin.jpg";
-import Ashif from "@/app/all-courses/TeacherSliderImages/ashif.webp";
-import Bijoy from "@/app/all-courses/TeacherSliderImages/bijoy.jpg";
-import Roman from "@/app/all-courses/TeacherSliderImages/roman.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
-import Link from "next/link";
-import { MdPersonAddAlt1 } from "react-icons/md";
+import Sakib from '@/app/all-courses/TeacherSliderImages/sakib.jpg'
+import Mubin from '@/app/all-courses/TeacherSliderImages/mubin.jpg'
+import Ashif from '@/app/all-courses/TeacherSliderImages/ashif.webp'
+import Bijoy from '@/app/all-courses/TeacherSliderImages/bijoy.jpg'
+import Roman from '@/app/all-courses/TeacherSliderImages/roman.jpg'
+import {Swiper, SwiperSlide} from 'swiper/react'
+import {Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper/modules'
+import Link from 'next/link'
+import {MdPersonAddAlt1} from 'react-icons/md'
 // import { PaymentModal } from "../../../Common/Payment";
-import BannerImage from "@/app/AllDataFatchingFunction/BannerImage";
+import BannerImage from '@/app/AllDataFatchingFunction/BannerImage'
 // import Outline from "./Outline";
-import { PaymentModal } from "../../Common/Payment";
-import { Slide } from "react-awesome-reveal";
+import {PaymentModal} from '../../Common/Payment'
+import {Slide} from 'react-awesome-reveal'
 const Combo = () => {
-  const Tanjim = BannerImage();
-  const features = [
-    "Core Python",
-    " Django and REST Framework.",
-    "Web Scraping.",
-    "Freelancing",
-  ];
-  const features1 = [
-    "Cyber Security",
-    "Linux",
-    "Digital Forensic",
-    "Open Source Intelligence",
-    "Freelancing",
-  ];
+  const Tanjim = BannerImage()
+  const features = ['Core Python', ' Django and REST Framework.', 'Web Scraping.', 'Freelancing']
+  const features1 = ['Cyber Security', 'Linux', 'Digital Forensic', 'Open Source Intelligence', 'Freelancing']
   const info = [
     {
       id: 1,
-      type: "Date & Time",
-      description: "Duration: 18 weeks (2 Days per week)",
+      type: 'Date & Time',
+      description: 'Duration: 18 weeks (2 Days per week)',
     },
     {
       id: 2,
-      type: "Course Fee",
-      description: "BDT 30,000/-",
-      discount: "BDT 34,000/-",
+      type: 'Course Fee',
+      description: 'BDT 30,000/-',
+      discount: 'BDT 34,000/-',
     },
     {
       id: 3,
-      type: "Course Type",
-      description: "Professional certified course that everyone can avail.",
+      type: 'Course Type',
+      description: 'Professional certified course that everyone can avail.',
     },
-  ];
+  ]
   const trainers = [
     {
-      name: "Tanjim Al Fahim",
-      designation: "CEO of Arena Web Security",
-      expertise:
-        "Vulnerability Assessment & Penetration Testing, Ethical Hacking, Cloud Security, OSINT, Cyber Forensics.",
+      name: 'Tanjim Al Fahim',
+      designation: 'CEO of Arena Web Security',
+      expertise: 'Vulnerability Assessment & Penetration Testing, Ethical Hacking, Cloud Security, OSINT, Cyber Forensics.',
       image: Fahim,
-      years: "14+",
+      years: '14+',
     },
     {
-      name: "Md Ashif Islam",
-      designation: "Senior Faculty",
-      expertise: "Cyber Security, VAPT, Bug Bounty, Networking.",
+      name: 'Md Ashif Islam',
+      designation: 'Senior Faculty',
+      expertise: 'Cyber Security, VAPT, Bug Bounty, Networking.',
       image: Ashif, // Make sure you import or define `Ashif`
-      years: "8+",
+      years: '8+',
     },
     {
-      name: "Bijoy Mondal",
-      designation: "Faculty member",
-      expertise: "Cyber Security, Freelancing, Ethical Hacking, Linux.",
+      name: 'Bijoy Mondal',
+      designation: 'Faculty member',
+      expertise: 'Cyber Security, Freelancing, Ethical Hacking, Linux.',
       image: Bijoy,
-      years: "8+",
+      years: '8+',
     },
     {
-      name: "Syed Sakib Alam Mubin",
-      designation: "Faculty member",
-      expertise: "Cyber Security, Ethical Hacking, Linux RedHat.",
+      name: 'Syed Sakib Alam Mubin',
+      designation: 'Faculty member',
+      expertise: 'Cyber Security, Ethical Hacking, Linux RedHat.',
       image: Mubin, // Confirm this is the correct image for "Syed Sakib Alam Mubin"
-      years: "5+",
+      years: '5+',
     },
     {
-      name: "Sakib Ahmed",
-      designation: "Faculty member",
-      expertise: "Cyber Security, Ethical Hacking, Linux.",
+      name: 'Sakib Ahmed',
+      designation: 'Faculty member',
+      expertise: 'Cyber Security, Ethical Hacking, Linux.',
       image: Sakib, // Define or import `SakibAhmed`
-      years: "3+",
+      years: '3+',
     },
     {
-      name: "Roman Moonshi",
-      designation: "Lead Auditor",
-      expertise: "Cyber Security, Ethical Hacking, Linux.",
+      name: 'Roman Moonshi',
+      designation: 'Lead Auditor',
+      expertise: 'Cyber Security, Ethical Hacking, Linux.',
       image: Roman, // Define or import `Roman`years: "14+",
-      years: "5+",
+      years: '5+',
     },
-  ];
+  ]
 
   return (
     <div>
-      <div className="md:text-center mt-14 px-3 md:px-0">
-        <div className="xl:text-[24px] lg:text-[22px] text-[20px] font-semibold leading-9 text-[#424242]">
-          Cyber Security and Advance Python (Combo)
-        </div>
+      <div className="px-3 md:text-center mt-14 md:px-0">
+        <div className="xl:text-[24px] lg:text-[22px] text-[20px] font-semibold leading-9 text-[#424242]">Cyber Security and Advance Python (Combo)</div>
       </div>
       {/* Course Module */}
       <div className="flex px-3">
-        <div className="grid  grid-cols-12 gap-x-2 w-full  lg:mt-16 mt-8">
-          <div className=" lg:col-span-8 col-span-12 lg:px-3">
+        <div className="grid w-full grid-cols-12 mt-8 gap-x-2 lg:mt-16">
+          <div className="col-span-12  lg:col-span-8 lg:px-3">
             {/*KEY FEATURES  */}
             <div className="relative animate-fadeInDown">
-              <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">
-                Overview
-              </h3>
-              <p className="text-[#424242] font-[300] lg:text-[16px] text-sm leading-[19px] text-justify mt-5">
-                Cybersecurity needs a programming language and today Python is
-                very popular because of its flexibility and lightweight
-                features. This course can help to build skills across the
-                cyberattack world for both cyber attackers and defenders. Near
-                future Python is and will be the most demanding programming and
-                scripting language for cybersecurity. So, by completing this
-                course you can land your first IT job or you can start your
-                career in freelancing. This course could open the door become a
-                complete web expert. Arena Web Security offers approachable,
-                hands-on ethical hacking and python programming courses to help
-                you keep your networks safe from cyber criminals & make your
-                career at the professional marketplace in the field of both
-                ethical hacking and python programming.
-              </p>
+              <h3 className="  text-[#424242] lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-6">Overview</h3>
+              <p className="text-[#424242] font-[300] lg:text-[16px] text-sm leading-[19px] text-justify mt-5">Cybersecurity needs a programming language and today Python is very popular because of its flexibility and lightweight features. This course can help to build skills across the cyberattack world for both cyber attackers and defenders. Near future Python is and will be the most demanding programming and scripting language for cybersecurity. So, by completing this course you can land your first IT job or you can start your career in freelancing. This course could open the door become a complete web expert. Arena Web Security offers approachable, hands-on ethical hacking and python programming courses to help you keep your networks safe from cyber criminals & make your career at the professional marketplace in the field of both ethical hacking and python programming.</p>
             </div>
             {/* Moudele Start */}
             <article className="p-1">
               <div className="relative">
-                <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  Cyber Security & Ethical Hacking (Module)
-                </h3>
+                <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">Cyber Security & Ethical Hacking (Module)</h3>
                 <hr className="mt-2" />
               </div>
               <Slide direction="down" damping={1} cascade triggerOnce>
-                <div className="grid  grid-cols-1 md:grid-cols-2 justify-between gap-x-5">
+                <div className="grid justify-between grid-cols-1 md:grid-cols-2 gap-x-5">
                   <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> Introduction</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> Footprinting</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> PHP & MySQL Basic:</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> Website Penetration Testing</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> Website Hacking</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> System Hacking</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> keylogger Spyware</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> Malware Threats [Virus]</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> Website Development</span>
                       </div>
@@ -205,56 +167,56 @@ const Combo = () => {
                   </ul>
                   <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> Social Engineering</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> Denial-of-Service</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span>SQL Injection All method</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span>Evading IDS, Firewalls</span>
                       </div>
                     </li>
 
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span>Scanning Networks web server</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> Linux OS</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span>Cross-Site Request Forgery</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span> Outsourcing in Fiverr/Upwork</span>
                       </div>
                     </li>
                     <li>
-                      <div className="flex gap-2 items-center py-1">
+                      <div className="flex items-center gap-2 py-1">
                         <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                         <span>Outsourcing in Hackerone</span>
                       </div>
@@ -265,75 +227,73 @@ const Combo = () => {
             </article>
             <article className="p-1">
               <div className="relative">
-                <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                  Advance Python with Django and Scrapping (Module)
-                </h3>
+                <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">Advance Python with Django and Scrapping (Module)</h3>
                 <hr className="mt-2" />
               </div>
-              <div className="grid md:grid-cols-2 grid-cols-1 justify-between gap-x-5">
+              <div className="grid justify-between grid-cols-1 md:grid-cols-2 gap-x-5">
                 <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Introduction</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Conditional Statements</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Looping</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Control Statements</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Tuple</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Lists</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Dictionaries</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Functions</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Lambda Operator, Filter, Reduce and Map</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> List Comprehension</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Modules</span>
                     </div>
@@ -341,68 +301,67 @@ const Combo = () => {
                 </ul>
                 <ul className="mt-3 text-[16px] leading-5 font-[300] text-[#424242] ">
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Input-Output</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Exception Handling</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Packages</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>File Handling</span>
                     </div>
                   </li>
 
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>OOPS</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2  items-start  py-1">
+                    <div className="flex items-start gap-2 py-1">
                       {/* <FaHandPointRight className="text-[#715296]  text-xl" /> */}
                       <FaHandPointRight className="text-[#715296] text-xl min-w-[16px] mt-1" />
 
                       <span>
-                        introduction to Django Introduction to Back-End Web
-                        Development <br />
+                        introduction to Django Introduction to Back-End Web Development <br />
                         using Django
                       </span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>Advanced Django for Web and Automation</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span> Building Web APIs using Django REST</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>Deploying Web APIs</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex gap-2 items-center py-1">
+                    <div className="flex items-center gap-2 py-1">
                       <FaHandPointRight className="text-[#715296]  min-w-[16px] " />
                       <span>Scrapping with BeautifulSoup</span>
                     </div>
@@ -411,10 +370,8 @@ const Combo = () => {
               </div>
             </article>
             <div>
-              <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                Key Features (Cyber Security)
-              </h3>
-              <div className="bg-white shadow rounded-md p-4 mb-6">
+              <h3 className="lg:text-[22px] md:text-[20px] text-[18px] font-medium leading-[33px] mt-5 text-[#424242] ">Key Features (Cyber Security)</h3>
+              <div className="p-4 mb-6 bg-white rounded-md shadow">
                 <ul className="space-y-2 text-[16px] leading-5 font-[300] text-[#424242] ">
                   {features1.map((item, index) => (
                     <li key={index} className="flex items-center ">
@@ -424,10 +381,8 @@ const Combo = () => {
                   ))}
                 </ul>
               </div>
-              <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">
-                Key Features (Advance Python)
-              </h3>
-              <div className="bg-white shadow rounded-md p-4 mb-6">
+              <h3 className="text-[22px] font-medium leading-[33px] mt-5 text-[#424242] ">Key Features (Advance Python)</h3>
+              <div className="p-4 mb-6 bg-white rounded-md shadow">
                 <ul className="space-y-2 text-[16px] leading-5 font-[300] text-[#424242] ">
                   {features.map((item, index) => (
                     <li key={index} className="flex items-center ">
@@ -442,28 +397,17 @@ const Combo = () => {
                 <table className="w-full text-sm border border-gray-200">
                   <thead className="bg-gray-100">
                     <tr className="text-[16px]">
-                      <th className="border px-4 py-2 text-left font-medium">
-                        #
-                      </th>
-                      <th className="border px-4 py-2 text-left font-medium">
-                        Information Type
-                      </th>
-                      <th className="border px-4 py-2 text-left font-medium">
-                        Description
-                      </th>
+                      <th className="px-4 py-2 font-medium text-left border">#</th>
+                      <th className="px-4 py-2 font-medium text-left border">Information Type</th>
+                      <th className="px-4 py-2 font-medium text-left border">Description</th>
                     </tr>
                   </thead>
                   <tbody>
                     {info.map((item) => (
-                      <tr
-                        key={item.id}
-                        className="bg-white text-[16px] leading-6 font-[300] text-[#424242] "
-                      >
-                        <td className="border px-4 py-2 font-semibold">
-                          {item.id}
-                        </td>
-                        <td className="border px-4 py-2">{item.type}</td>
-                        <td className="border px-4 py-2">
+                      <tr key={item.id} className="bg-white text-[16px] leading-6 font-[300] text-[#424242] ">
+                        <td className="px-4 py-2 font-semibold border">{item.id}</td>
+                        <td className="px-4 py-2 border">{item.type}</td>
+                        <td className="px-4 py-2 border">
                           {item.discount ? (
                             <div className="flex flex-col">
                               <del>{item.discount}</del>
@@ -473,7 +417,7 @@ const Combo = () => {
                             item.description
                           )}
                         </td>
-                        {/* <td className="border px-4 py-2"></td> */}
+                        {/* <td className="px-4 py-2 border"></td> */}
                       </tr>
                     ))}
                   </tbody>
@@ -482,7 +426,7 @@ const Combo = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-4 col-span-12 lg:block mt-4 lg:mt-0">
+          <div className="col-span-12 mt-4 lg:col-span-4 lg:block lg:mt-0">
             <Swiper
               // modules={[Pagination]}
               // pagination={{ clickable: true }}
@@ -512,71 +456,51 @@ const Combo = () => {
                   slidesPerView: 1,
                 },
               }}
-              pagination={{ clickable: true }}
+              pagination={{clickable: true}}
               // className={`${style.slider_container} mySwipe py-5 mb-5 `}
             >
               {trainers.map((trainer, idx) => (
                 <SwiperSlide key={idx}>
-                  <div className="rounded-md p-4  shadow-md relative overflow-hidden svg-background">
+                  <div className="relative p-4 overflow-hidden rounded-md shadow-md svg-background">
                     {/* <div
-                className=" "
+                className=""
                 // style={{
                 //   backgroundImage: "url('/file/liquid-cheese.svg')",
                 // }}
               /> */}
-                    <div className="relative  flex flex-col items-center text-center space-y-3">
-                      <Image
-                        src={trainer.image}
-                        alt={trainer.name}
-                        className="rounded-full object-cover border border-gray-200"
-                        width={120}
-                        height={120}
-                      />
-                      <h6 className="text-lg font-normal text-[#0b6481]">
-                        {trainer.name}
-                      </h6>
-                      <p className="text-sm font-[300] leading-[17px]">
-                        {trainer.designation}
-                      </p>
-                      <div className=" rounded p-3 mt-2  px-5 bg-white">
-                        <p className="text-sm font-[300] leading-[17px]">
-                          Areas of expertise : {trainer.expertise}
-                        </p>
+                    <div className="relative flex flex-col items-center space-y-3 text-center">
+                      <Image src={trainer.image} alt={trainer.name} className="object-cover border border-gray-200 rounded-full" width={120} height={120} />
+                      <h6 className="text-lg font-normal text-[#0b6481]">{trainer.name}</h6>
+                      <p className="text-sm font-[300] leading-[17px]">{trainer.designation}</p>
+                      <div className="p-3 px-5 mt-2 bg-white rounded ">
+                        <p className="text-sm font-[300] leading-[17px]">Areas of expertise : {trainer.expertise}</p>
                         <br></br>
-                        <p className="text-sm font-[300] leading-[17px]">
-                          Years in Cyber Security : {trainer.years}
-                        </p>
+                        <p className="text-sm font-[300] leading-[17px]">Years in Cyber Security : {trainer.years}</p>
                       </div>
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
-            <Image
-              alt="Cyber Security And Ethical Hacking"
-              src={Banner}
-              className="w-full "
-            />
+            <Image alt="Cyber Security And Ethical Hacking" src={Banner} className="w-full " />
           </div>
         </div>
       </div>
       <div className="bg-[#F8F9FA] shadow-md flex justify-center flex-col items-center mt-10 px-3 md:px-0">
-        <p className="xl:text-[24px] lg:text-[22px] text-[20px] leading-9 font-semibold mt-5">
-          Become a Python Specialist
-        </p>
+        <p className="xl:text-[24px] lg:text-[22px] text-[20px] leading-9 font-semibold mt-5">Become a Python Specialist</p>
         <div className="my-5">
-          <Link href="/admission-form" className="animated-button1  gap-x-2 ">
-            <p className="flex gap-x-1 items-center ">
+          <Link href="/admission-form" className="animated-button1 gap-x-2 ">
+            <p className="flex items-center gap-x-1 ">
               <MdPersonAddAlt1 className="text-2xl" />
               ENROLL NOW
             </p>
           </Link>
         </div>
       </div>
-      <div className=" my-10 ">{/* <Outline/> */}</div>
-      <div className=" my-10 ">{/* <PaymentModal /> */}</div>
+      <div className="my-10 ">{/* <Outline/> */}</div>
+      <div className="my-10 ">{/* <PaymentModal /> */}</div>
     </div>
-  );
-};
+  )
+}
 
-export default Combo;
+export default Combo

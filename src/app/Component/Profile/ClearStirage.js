@@ -1,5 +1,4 @@
-
-export default function ClearSession(){
-    sessionStorage.clear()
-    localStorage.clear()
+export default function ClearSession() {
+  sessionStorage.clear()
+  localStorage.clear()
 }

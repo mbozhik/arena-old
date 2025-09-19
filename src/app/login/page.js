@@ -1,27 +1,27 @@
-import Image from "next/image";
-import Logo from "@/app/admission-form/Logo.png";
-import Login from "../Component/Login";
+import Image from 'next/image'
+import Logo from '@/app/admission-form/Logo.png'
+import Login from '../Component/Login'
 
 export const metadata = {
   title: 'Ethical Hacking & Advanced Python Course Combo Offer!',
   description: 'Level up your skills in Python and Ethical Hacking! Our expert-led courses empower you to excel in IT security. Enroll now for a brighter future!',
-}; 
+}
 const page = () => {
   return (
-    <div className="container  px-3 mt-5">
-      <div className="flex gap-2  py-10">
+    <div className="container px-3 mt-5">
+      <div className="flex gap-2 py-10">
         {/* <div className="relative w-[50%] hidden md:block ">
           <article className="admissionSideber w-[100%] h-[100%]"></article>
           <div className="absolute top-0 left-0 h-[100%] w-[100%] px-5">
             <div className="flex justify-center mt-4">
               <Image src={Logo} alt="Logo" className="w-44" />
             </div>
-            <div className="flex  items-center h-full ">
+            <div className="flex items-center h-full ">
               <div>
-                <h1 className="text-4xl font-bold   text-white pl-20 ">
+                <h1 className="pl-20 text-4xl font-bold text-white ">
                   Welcome back!
                 </h1>
-                <p className="text-1xl font-medium   text-white pl-20 mt-4">
+                <p className="pl-20 mt-4 font-medium text-white text-1xl">
                   We are glad to see you again! Get access to your Orders,
                   Wishlist and Recommendations.
                 </p>
@@ -32,7 +32,7 @@ const page = () => {
         <Login />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default page;
+export default page

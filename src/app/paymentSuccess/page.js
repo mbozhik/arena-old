@@ -1,11 +1,11 @@
-import PaymentSucess from "../Component/PaymentSucess";
+import PaymentSucess from '../Component/PaymentSucess'
 
 const page = () => {
   return (
     <div>
       <PaymentSucess />
     </div>
-  );
-};
+  )
+}
 
-export default page;
+export default page

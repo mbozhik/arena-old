@@ -41,32 +41,30 @@
 //     </html>
 //   )
 // }
-import { Poppins, JetBrains_Mono } from "next/font/google";
-import "./globals.css";
-import Footer from "./Component/Common/Footer";
-import Navber from "./Component/Common/Navber";
-import Script from "next/script";
+import {Poppins, JetBrains_Mono} from 'next/font/google'
+import './globals.css'
+import Footer from './Component/Common/Footer'
+import Navber from './Component/Common/Navber'
+import Script from 'next/script'
 
 const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["400", "700", "800", "500", "300", "200"],
-});
+  variable: '--font-poppins',
+  subsets: ['latin'],
+  weight: ['400', '700', '800', '500', '300', '200'],
+})
 
 const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-  weight: "400",
-});
+  variable: '--font-jetbrains-mono',
+  subsets: ['latin'],
+  weight: '400',
+})
 
 export const metadata = {
-  title:
-    "Arena Web Security, The First & Most Trusted Cybersecurity Company in Bangladesh",
-  description:
-    "cyber security course in Bangladesh, ethical hacking course Bangla, cyber security service in Bangladesh, cyber security service, cyber security training online, ethical hacking training online, CEH course Bangladesh, penetration testing course, bug bounty training, OSINT training Bangladesh, ethical hacking course with freelancing, learn cyber security from home, best cyber security institute in Bangladesh, cyber security certification BD, cyber security online class, advanced ethical hacking course, web application security training, cyber security diploma in Bangladesh, VAPT service Bangladesh, penetration testing service, red teaming service, cyber forensics service, digital forensics Bangladesh, SOC setup service, cyber threat hunting, cyber audit service, information security consultancy, SIEM integration service, cyber security monitoring service",
-};
+  title: 'Arena Web Security, The First & Most Trusted Cybersecurity Company in Bangladesh',
+  description: 'cyber security course in Bangladesh, ethical hacking course Bangla, cyber security service in Bangladesh, cyber security service, cyber security training online, ethical hacking training online, CEH course Bangladesh, penetration testing course, bug bounty training, OSINT training Bangladesh, ethical hacking course with freelancing, learn cyber security from home, best cyber security institute in Bangladesh, cyber security certification BD, cyber security online class, advanced ethical hacking course, web application security training, cyber security diploma in Bangladesh, VAPT service Bangladesh, penetration testing service, red teaming service, cyber forensics service, digital forensics Bangladesh, SOC setup service, cyber threat hunting, cyber audit service, information security consultancy, SIEM integration service, cyber security monitoring service',
+}
 
-export default function RootLayout({ children }) {
+export default function RootLayout({children}) {
   return (
     <html lang="en">
       <head>
@@ -84,10 +82,7 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* Google Analytics */}
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-26KLNL588M"
-        />
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-26KLNL588M" />
         <Script id="gtag-init" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
            function gtag(){dataLayer.push(arguments);}
@@ -152,23 +147,13 @@ export default function RootLayout({ children }) {
 
         {/* <!-- End Signals Gateway Pixel Code --> */}
         <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=492878632265213&ev=PageView&noscript=1"
-          />
+          <img height="1" width="1" style={{display: 'none'}} src="https://www.facebook.com/tr?id=492878632265213&ev=PageView&noscript=1" />
         </noscript>
       </head>
       <body className={`${poppins.variable} ${jetbrainsMono.variable}`}>
         {/* Google Tag Manager noscript */}
         <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-N4882C6H"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4882C6H" height="0" width="0" style={{display: 'none', visibility: 'hidden'}}></iframe>
         </noscript>
 
         <Navber />
@@ -176,5 +161,5 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
-  );
+  )
 }

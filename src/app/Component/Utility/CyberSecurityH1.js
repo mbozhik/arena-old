@@ -1,11 +1,9 @@
-const CyberSecurityH1 = ({ title }) => {
+const CyberSecurityH1 = ({title}) => {
   return (
     <div>
-      <h1 className="text-4xl font-bold drop-shadow-md animate-charcter">
-        {title}
-      </h1>
+      <h1 className="text-4xl font-bold drop-shadow-md animate-charcter">{title}</h1>
     </div>
-  );
-};
+  )
+}
 
-export default CyberSecurityH1;
+export default CyberSecurityH1

@@ -1,108 +1,95 @@
-'use client';
-import { useEffect, useRef, useState } from 'react';
+'use client'
+import {useEffect, useRef, useState} from 'react'
 
-export const CustomYearSelect = ({ month, day, setYear, setBirth_date }) => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [selectYear, setSelectYear] = useState('Year');
-  const [position, setPosition] = useState({ top: 0, left: 0, width: 0 });
+export const CustomYearSelect = ({month, day, setYear, setBirth_date}) => {
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const [selectYear, setSelectYear] = useState('Year')
+  const [position, setPosition] = useState({top: 0, left: 0, width: 0})
 
-  const buttonRef = useRef(null);
-  const dropdownRef = useRef(null);
+  const buttonRef = useRef(null)
+  const dropdownRef = useRef(null)
 
-  const currentYear = new Date().getFullYear();
-  const yearsArray = Array.from({ length: 100 }, (_, i) => currentYear - i);
+  const currentYear = new Date().getFullYear()
+  const yearsArray = Array.from({length: 100}, (_, i) => currentYear - i)
 
   const handleSelect = (year) => {
-    setSelectYear(year);
-    setYear(year);
-    setBirth_date(`${year}-${month}-${day}`);
-    setDropdownOpen(false);
-  };
+    setSelectYear(year)
+    setYear(year)
+    setBirth_date(`${year}-${month}-${day}`)
+    setDropdownOpen(false)
+  }
 
   // Calculate position
   useEffect(() => {
     if (dropdownOpen && buttonRef.current) {
-      const rect = buttonRef.current.getBoundingClientRect();
-      setPosition({ top: rect.bottom + 4, left: rect.left, width: rect.width });
+      const rect = buttonRef.current.getBoundingClientRect()
+      setPosition({top: rect.bottom + 4, left: rect.left, width: rect.width})
     }
-  }, [dropdownOpen]);
+  }, [dropdownOpen])
 
   // Outside click detection
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target) &&
-        buttonRef.current &&
-        !buttonRef.current.contains(event.target)
-      ) {
-        setDropdownOpen(false);
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target) && buttonRef.current && !buttonRef.current.contains(event.target)) {
+        setDropdownOpen(false)
       }
-    };
+    }
 
     if (dropdownOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('mousedown', handleClickOutside)
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [dropdownOpen]);
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [dropdownOpen])
   useEffect(() => {
     if (dropdownOpen && buttonRef.current) {
-      const rect = buttonRef.current.getBoundingClientRect();
-      const dropdownHeight = 288; // max-h-72 = 18rem = 288px
-      const windowHeight = window.innerHeight;
-  
-      const fitsBelow = rect.bottom + dropdownHeight < windowHeight;
-      const top = fitsBelow ? rect.bottom + 4 : rect.top - dropdownHeight - 4;
-  
+      const rect = buttonRef.current.getBoundingClientRect()
+      const dropdownHeight = 288 // max-h-72 = 18rem = 288px
+      const windowHeight = window.innerHeight
+
+      const fitsBelow = rect.bottom + dropdownHeight < windowHeight
+      const top = fitsBelow ? rect.bottom + 4 : rect.top - dropdownHeight - 4
+
       setPosition({
         top,
         left: rect.left,
         width: rect.width,
-      });
+      })
     }
-  }, [dropdownOpen]);
+  }, [dropdownOpen])
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target) &&
-        buttonRef.current &&
-        !buttonRef.current.contains(event.target)
-      ) {
-        setDropdownOpen(false);
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target) && buttonRef.current && !buttonRef.current.contains(event.target)) {
+        setDropdownOpen(false)
       }
-    };
-  
-    const handleWindowScroll = (event) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target)
-      ) {
-        setDropdownOpen(false);
-      }
-    };
-  
-    if (dropdownOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-      window.addEventListener('scroll', handleWindowScroll, true);
     }
-  
+
+    const handleWindowScroll = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false)
+      }
+    }
+
+    if (dropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+      window.addEventListener('scroll', handleWindowScroll, true)
+    }
+
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      window.removeEventListener('scroll', handleWindowScroll, true);
-    };
-  }, [dropdownOpen]);
+      document.removeEventListener('mousedown', handleClickOutside)
+      window.removeEventListener('scroll', handleWindowScroll, true)
+    }
+  }, [dropdownOpen])
   return (
     <>
       <button
         type="button"
         ref={buttonRef}
         onClick={(e) => {
-          e.preventDefault();
-          setDropdownOpen((prev) => !prev);
+          e.preventDefault()
+          setDropdownOpen((prev) => !prev)
         }}
         className="w-full border border-[#B0BEC5] rounded-md py-1 text-center relative z-10 bg-white"
       >
@@ -122,16 +109,12 @@ export const CustomYearSelect = ({ month, day, setYear, setBirth_date }) => {
           className="max-h-72 overflow-y-auto bg-white border border-[#B0BEC5] rounded-md shadow-lg"
         >
           {yearsArray.map((year) => (
-            <div
-              key={year}
-              onClick={() => handleSelect(year)}
-              className="px-2 py-1 hover:bg-gray-100 cursor-pointer text-center"
-            >
+            <div key={year} onClick={() => handleSelect(year)} className="px-2 py-1 text-center cursor-pointer hover:bg-gray-100">
               {year}
             </div>
           ))}
         </div>
       )}
     </>
-  );
-};
+  )
+}

@@ -1,56 +1,38 @@
-import ProfileData from "@/app/AllDataFatchingFunction/ProfileData";
-import male from "@/app/Images/profile/AZMail.jpg";
-import female from "@/app/Images/profile/AzFemail.jpg";
-import logo from "@/app/Images/profile/logo.png";
-import Image from "next/image";
-const Profiledetails = async ({ data, paymetdata }) => {
+import ProfileData from '@/app/AllDataFatchingFunction/ProfileData'
+import male from '@/app/Images/profile/AZMail.jpg'
+import female from '@/app/Images/profile/AzFemail.jpg'
+import logo from '@/app/Images/profile/logo.png'
+import Image from 'next/image'
+const Profiledetails = async ({data, paymetdata}) => {
   // console.log(paymetdata?.data?.total.total_amount);
   return (
-    <div className="  flex flex-col md:flex-row w-full  rounded-md bg-white">
+    <div className="flex flex-col w-full bg-white rounded-md  md:flex-row">
       {/* Left Sidebar */}
       <div className="w-full md:w-[35%]  text-white p-6 flex flex-col items-center profile_img_sec">
-        <div className="bg-white p-2 rounded-full w-32 h-32 md:w-40 md:h-40 -mt-14 z-10">
-          <Image
-            src={male}
-            alt="User Image"
-            className="w-full h-full rounded-full object-cover"
-          />
+        <div className="z-10 w-32 h-32 p-2 bg-white rounded-full md:w-40 md:h-40 -mt-14">
+          <Image src={male} alt="User Image" className="object-cover w-full h-full rounded-full" />
           {/* <img className="profileImg " src={data?.data.gender=='male'?male:female} alt="" /> */}
         </div>
         <p className="mt-4 text-sm">ID: #{data?.data.u_id}</p>
         <h2 className="text-lg font-medium">{data?.data.Fullname}</h2>
 
-        <div className="mt-4 text-center w-full ">
-          <p className="bg-white text-black py-1 font-medium rounded-md mb-2">
-            Admission Status
-          </p>
+        <div className="w-full mt-4 text-center ">
+          <p className="py-1 mb-2 font-medium text-black bg-white rounded-md">Admission Status</p>
 
           {/* {paymetdata?.data?.total.total_amount >=
           data?.data?.course_fee_divide ? (
-            <p className="text-green-300 font-medium">Admission Done</p>
+            <p className="font-medium text-green-300">Admission Done</p>
           ) : paymetdata?.data?.total.total_amount <
             data?.data?.course_fee_divide ? (
-            <p className="text-yellow-500 font-medium">Seat Booking</p>
+            <p className="font-medium text-yellow-500">Seat Booking</p>
           ) : (
-            <p className="text-red-300 font-medium">Pending</p>
+            <p className="font-medium text-red-300">Pending</p>
           )} */}
-          {data?.data?.discount_user ? (
-            <p className="text-green-300 font-medium">Admission Done</p>
-          ) : !paymetdata?.data?.total?.total_amount ||
-            paymetdata?.data?.total?.total_amount === 0 ? (
-            <p className="text-yellow-600 font-medium">Pending</p>
-          ) : paymetdata?.data?.total.total_amount >=
-            data?.data?.course_fee_divide ? (
-            <p className="text-green-300 font-medium">Admission Done</p>
-          ) : (
-            <p className="text-yellow-500 font-medium">Seat Booking</p>
-          )}
+          {data?.data?.discount_user ? <p className="font-medium text-green-300">Admission Done</p> : !paymetdata?.data?.total?.total_amount || paymetdata?.data?.total?.total_amount === 0 ? <p className="font-medium text-yellow-600">Pending</p> : paymetdata?.data?.total.total_amount >= data?.data?.course_fee_divide ? <p className="font-medium text-green-300">Admission Done</p> : <p className="font-medium text-yellow-500">Seat Booking</p>}
         </div>
 
         <div className="mt-4 text-center">
-          <p className="bg-white text-black py-1 font-medium rounded-md mb-2">
-            Course Title
-          </p>
+          <p className="py-1 mb-2 font-medium text-black bg-white rounded-md">Course Title</p>
           <p className="text-sm">{data?.data.batch_schedule_name}</p>
         </div>
       </div>
@@ -58,7 +40,7 @@ const Profiledetails = async ({ data, paymetdata }) => {
       {/* Right Details */}
       <div className="w-full md:w-[65%] ">
         <div className="profile_title">
-          <h3 className="text-white text-xl font-medium">Personal Details</h3>
+          <h3 className="text-xl font-medium text-white">Personal Details</h3>
         </div>
 
         <div className="p-5 space-y-2">
@@ -96,7 +78,7 @@ const Profiledetails = async ({ data, paymetdata }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Profiledetails;
+export default Profiledetails

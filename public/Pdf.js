@@ -3,11 +3,11 @@
 // import p from "@/app/Images/About/AboutPagePdf/AWTBrochure.pdf"
 
 const iframeStyle = {
-  width: "100%",
-  height: "1000px",
-  backgroundColor: "white", // Set your desired background color
-  border: "0",
-};
+  width: '100%',
+  height: '1000px',
+  backgroundColor: 'white', // Set your desired background color
+  border: '0',
+}
 // const iframe = document.getElementById("Ifrem");
 const Pdf = () => {
   return (
@@ -23,7 +23,7 @@ const Pdf = () => {
         // themeColor="red"
       />
     </div>
-  );
-};
+  )
+}
 
-export default Pdf;
+export default Pdf
