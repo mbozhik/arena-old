@@ -1,21 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-const withMT = require("@material-tailwind/react/utils/withMT");
+const withMT = require('@material-tailwind/react/utils/withMT')
 module.exports = withMT({
-  darkMode:false,
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  darkMode: 'media',
+  content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
-    
     animation: {
       fadeInDown: 'fadeInDown 1s ease-out',
     },
     keyframes: {
       fadeInDown: {
-        '0%': { opacity: '0', transform: 'translateY(-50px)' },
-        '100%': { opacity: '1', transform: 'translateY(0)' },
+        '0%': {opacity: '0', transform: 'translateY(-50px)'},
+        '100%': {opacity: '1', transform: 'translateY(0)'},
       },
     },
     animation: {
@@ -23,11 +18,11 @@ module.exports = withMT({
     },
     keyframes: {
       throwAnimation: {
-        '0%': { transform: 'translateX(200px) translateY(-20px) scale(1.1)', opacity: '0' },
-        '100%': { transform: 'translateX(0) translateY(0) scale(1)', opacity: '1' },
+        '0%': {transform: 'translateX(200px) translateY(-20px) scale(1.1)', opacity: '0'},
+        '100%': {transform: 'translateX(0) translateY(0) scale(1)', opacity: '1'},
       },
     },
-  
+
     colors: {
       // Set background color to white
       white: '#FFFFFF',
@@ -44,7 +39,5 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [
-   
-  ],
+  plugins: [],
 })
