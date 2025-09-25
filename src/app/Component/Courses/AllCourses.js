@@ -4,6 +4,12 @@ import cyberSecurity from './../../../../public/cyber-security-course-outline/cy
 import network from './../../../../public/cyber-security-course-outline/network.svg'
 import linux from './../../../../public/cyber-security-course-outline/linux.svg'
 import AdvancedCourse from './../../../../public/cyber-security-course-outline/networking.svg'
+import courseIcon from './../../../../public/cyber-security-course-outline/icon1.svg'
+import courseIcon2 from './../../../../public/cyber-security-course-outline/icon2.svg'
+import courseIcon3 from './../../../../public/cyber-security-course-outline/icon3.svg'
+import courseIcon4 from './../../../../public/cyber-security-course-outline/icon4.svg'
+import courseIcon5 from './../../../../public/cyber-security-course-outline/icon5.svg'
+import courseIcon6 from './../../../../public/cyber-security-course-outline/icon6.svg'
 const courses = [
   {
     image: cyberSecurity,
@@ -13,43 +19,43 @@ const courses = [
   },
 
   {
-    image: cyberSecurity,
+    image: courseIcon,
     title: 'Cyber Security and Advance Python (Combo)',
     link: '/cyber-security-and-python-course',
     description: 'Cybersecurity needs a programming language and today Python is very popular because of its flexibility and lightweight features. This course can help to build skills across the cyberattack world for both cyber attackers and defenders',
   },
   {
-    image: cyberSecurity,
+    image: courseIcon2,
     title: 'Professional Diploma in Cyber Security (1 Year)',
     link: '/diploma-in-cyber-security',
     description: "Step into the frontline of digital defense with Bangladesh’s most trusted 1-year Professional Diploma in Cyber Security, powered by Arena Web Security. This career-focused program is meticulously designed to equip you with hands-on skills in ethical hacking, digital forensics, OSINT, Linux server security, and more — so you're not just learning, you're preparing to lead.",
   },
   {
-    image: cyberSecurity,
+    image: courseIcon3,
     title: 'Advance Python With Freelancing',
     link: '/advance-python-with-django',
     description: 'Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.',
   },
   {
-    image: AdvancedCourse,
+    image: courseIcon4,
     title: 'CEHF Masterclass',
     link: '/advanced-cyber-security-course',
     description: 'Advanced Cyber Security & Ethical Hacking is a pioneer in endpoint security, with proactive security solutions that stop advanced persistent threats in their initial stages and prevent advancement. Advanced Cyber Security & Ethical Hacking products provide the first.',
   },
   {
-    image: network,
+    image: courseIcon5,
     title: 'C|OSINT (Certified Open Source Intelligence)',
     link: '/cosint-course',
     description: 'Open Source Intelligence Training™ - Syllabus and Featured Topics This course will provide an education and information you will not be able to acquire anywhere else. The class is completely interactive keeping you busy every moment and enjoying the activities. Learn to direct your searches to obtain results quickly!',
   },
   {
-    image: linux,
+    image: courseIcon6,
     title: 'Linux',
     link: '/linux-course',
     description: 'The industry-leading Penetration Testing with Kali Linux (KLIN-ACS) course just got even better. This online ethical hacking course is self-paced. It introduces penetration testing tools and techniques via hands-on experience. Students who complete the course and pass the exam earn the coveted Arena Web Certified Professional certification.',
   },
   {
-    image: network,
+    image: courseIcon,
     title: 'Networking Security',
     link: '/networking-course',
     description: 'In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. We cover one of the largest risks online, the browser. The doorway into your system.',
@@ -63,8 +69,8 @@ export function AllCourses() {
       </div>
       <div className="grid justify-center grid-cols-1 gap-2 py-5 md:grid-cols-2 xl:grid-cols-4 place-content-end lg:py-10">
         {courses?.map((course, index) => (
-          <div className="p-2 " key={index}>
-            <div className="inline-block text-center ">
+          <div className="p-2" key={index}>
+            <div className="flex flex-col items-center h-full text-center">
               {/* Outer Skewed Container */}
               <div className="inline-block  overflow-hidden h-[230px] w-[200px] rounded-b-[20px] rounded-md  ">
                 <div
@@ -79,13 +85,13 @@ export function AllCourses() {
 
               {/* Text Content Container */}
               <div
-                className="px-5 pt-32 pb-10   rounded-[10px] bg-white mt-[-120px] h-full  
+                className="px-5 pt-32 pb-10   rounded-[10px] bg-white mt-[-120px] flex-1
                shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]"
               >
                 <Link href={course.link} className="text-[#7BAADA] text-[16px] md:text-lg font-normal hover:text-black hover:font-medium ">
                   {course.title}
                 </Link>
-                <p className=" text-[12px] md:text-sm font-[300] mt-2 leading-[20px]">{course.description}</p>
+                <p className=" text-[12px] md:text-sm font-[300] mt-2 leading-[20px] flex-1">{course.description}</p>
               </div>
             </div>
           </div>
