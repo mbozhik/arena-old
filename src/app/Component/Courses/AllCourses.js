@@ -17,7 +17,6 @@ const courses = [
     link: '/cyber-security-ethical-hacking',
     description: 'Whether you’re interested in landing your first IT security job, becoming a full-time white hat hacker, or preparing to test the security of your own home network, Arena Web Security offers approachable, hands-on ethical hacking courses to help you keep your networks safe from cyber criminals & make your career at professional marketplace.',
   },
-
   {
     image: courseIcon,
     title: 'Cyber Security and Advance Python (Combo)',

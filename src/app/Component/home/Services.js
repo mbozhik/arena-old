@@ -6,63 +6,78 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import {Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper/modules'
-import cyberSecurity from './../../../../public/cyber-security-course-outline/cyberSecurity.svg'
-import network from './../../../../public/cyber-security-course-outline/network.svg'
-import linux from './../../../../public/cyber-security-course-outline/linux.svg'
-import AdvancedCourse from './../../../../public/cyber-security-course-outline/networking.svg'
+// import cyberSecurity from './../../../../public/cyber-security-course-outline/cyberSecurity.svg'
+// import network from './../../../../public/cyber-security-course-outline/network.svg'
+// import linux from './../../../../public/cyber-security-course-outline/linux.svg'
+// import AdvancedCourse from './../../../../public/cyber-security-course-outline/networking.svg'
+// import courseIcon from './../../../../public/cyber-security-course-outline/icon1.svg'
+// import courseIcon2 from './../../../../public/cyber-security-course-outline/icon2.svg'
+// import courseIcon3 from './../../../../public/cyber-security-course-outline/icon3.svg'
+// import courseIcon4 from './../../../../public/cyber-security-course-outline/icon4.svg'
+// import courseIcon5 from './../../../../public/cyber-security-course-outline/icon5.svg'
+// import courseIcon6 from './../../../../public/cyber-security-course-outline/icon6.svg'
+import courseIcon7 from './../../../../public/cyber-security-course-outline/icon7.svg'
+import courseIcon8 from './../../../../public/cyber-security-course-outline/icon8.svg'
+import courseIcon9 from './../../../../public/cyber-security-course-outline/icon9.svg'
+import courseIcon10 from './../../../../public/cyber-security-course-outline/icon10.svg'
+import courseIcon11 from './../../../../public/cyber-security-course-outline/icon11.svg'
+import courseIcon12 from './../../../../public/cyber-security-course-outline/icon12.svg'
+import courseIcon13 from './../../../../public/cyber-security-course-outline/icon13.svg'
+import courseIcon14 from './../../../../public/cyber-security-course-outline/icon14.svg'
+import courseIcon15 from './../../../../public/cyber-security-course-outline/icon15.svg'
 import {Swiper, SwiperSlide} from 'swiper/react'
 
 const courses = [
   {
-    image: cyberSecurity,
+    image: courseIcon7,
     title: 'Cyber Security & Ethical Hacking',
     link: '/cyber-security-ethical-hacking',
     description: 'Whether you’re interested in landing your first IT security job, becoming a full-time white hat hacker, or preparing to test the security of your own home network, Arena Web Security offers approachable, hands-on ethical hacking courses to help you keep your networks safe from cyber criminals & make your career at professional marketplace.',
   },
   {
-    image: cyberSecurity,
+    image: courseIcon8,
     title: 'Cyber Security Consultancy',
     link: '/advance-python-with-django',
     description: 'The threats of cyber-attacks are a fact of life and a fact of business. Wipro’s Cyber security and Risk Service can help you stay ahead of the threats and put your customer’s minds at ease. We take an integrated approach to protection that prioritizes not only prevention, but also minimizing risk and controlling loss.',
   },
   {
-    image: AdvancedCourse,
+    image: courseIcon9,
     title: 'Software Testing',
     link: '/advanced-cyber-security-course',
     description: 'Web Application & Website Testing Services, Manual Testing, Test Automation, Mobile Testing, Web Testing, Desktop Testing, Security and Penetration Testing, Game Testing, Documentation, QA and Testing, DevOps. Full-cycle Independent QA and Managed testing Services for web, desktop, mobile apps, server-side systems, and devices.',
   },
   {
-    image: network,
+    image: courseIcon10,
     title: 'Vulnerability Assessment and Penetration Testing',
     link: '/cosint-course',
     description: 'Vulnerability Assessment & Penetration Testing describes a broad range of security assessment services designed to identify & help address cyber security exposures across an organisation’s IT estate. To ensure that you choose the right type of assessment for your company’s needs, it’s important to understand the other types of VAPT services.',
   },
   {
-    image: linux,
+    image: courseIcon11,
     title: 'Software Maintenance',
     link: '/linux-course',
     description: 'The Arena Web Security is your one stop solution for complete software and maintenance services. We ami to provided trusted source to maintain and improve your existing application. When you hire web application maintenance services, you will be assigned a cluster of professional with the vast expertise of application maintenance services.',
   },
   {
-    image: network,
+    image: courseIcon12,
     title: 'Software Development',
     link: '/networking-course',
     description: 'Software development services are aimed at designing, engineering, deploying, supporting, and evolving various software types. We are develops quality software services – software consulting, cloud migration, app integration, and more. We serve mid and large enterprises and software product companies across multiple industries.',
   },
   {
-    image: network,
+    image: courseIcon13,
     title: 'Networking Security Service (NSS)',
     link: '/networking-course',
     description: 'Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSL v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X. 509 v3 certificates, and other security standards.',
   },
   {
-    image: network,
+    image: courseIcon14,
     title: 'Mobile App Development',
     link: '/networking-course',
     description: 'We have leading mobile app developers who always stay up-to-date with the latest technology trends to serving firms across the globe. While our analysts make qualitative and quantitative market study and well-researched forecasts for mobile app market fluctuations, our developers and designers craft stunning for our clients.',
   },
   {
-    image: network,
+    image: courseIcon15,
     title: 'Ecommerce Solution',
     link: '/networking-course',
     description: 'Our Ecommerce development services cater to multi-disciplinary requirements of performance, security, scalability and usability. Our SEO experts optimize the top selling products of your store with an on-page and off-page Ecommerce SEO strategy that drives loads of organic traffic to your website.',

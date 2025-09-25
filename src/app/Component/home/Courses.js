@@ -9,6 +9,11 @@ import cyberSecurity from './../../../../public/cyber-security-course-outline/cy
 import network from './../../../../public/cyber-security-course-outline/network.svg'
 import linux from './../../../../public/cyber-security-course-outline/linux.svg'
 import AdvancedCourse from './../../../../public/cyber-security-course-outline/networking.svg'
+import courseIcon from './../../../../public/cyber-security-course-outline/icon1.svg'
+import courseIcon2 from './../../../../public/cyber-security-course-outline/icon2.svg'
+import courseIcon3 from './../../../../public/cyber-security-course-outline/icon3.svg'
+import courseIcon5 from './../../../../public/cyber-security-course-outline/icon5.svg'
+import courseIcon6 from './../../../../public/cyber-security-course-outline/icon6.svg'
 import {Swiper, SwiperSlide} from 'swiper/react'
 
 const courses = [
@@ -19,31 +24,31 @@ const courses = [
     description: 'Whether you’re interested in landing your first IT security job, becoming a full-time white hat hacker, or preparing to test the security of your own home network, Arena Web Security offers approachable, hands-on ethical hacking courses to help you keep your networks safe from cyber criminals & make your career at professional marketplace.',
   },
   {
-    image: cyberSecurity,
+    image: courseIcon3,
     title: 'Advance Python With Freelancing',
     link: '/advance-python-with-django',
     description: 'Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.',
   },
   {
-    image: AdvancedCourse,
+    image: courseIcon2,
     title: 'Professional Diploma in Cyber Security (1 Year)',
     link: '/diploma-in-cyber-security',
-    description: 'Step into the frontline of digital defense with Bangladesh’s most trusted 1-year Professional Diploma in Cyber Security. Build a Global Cybersecurity Career, From Fundamentals to Professional',
+    description: "Step into the frontline of digital defense with Bangladesh’s most trusted 1-year Professional Diploma in Cyber Security, powered by Arena Web Security. This career-focused program is meticulously designed to equip you with hands-on skills in ethical hacking, digital forensics, OSINT, Linux server security, and more — so you're not just learning, you're preparing to lead.",
   },
   {
-    image: network,
+    image: courseIcon5,
     title: 'C|OSINT (Certified Open Source Intelligence)',
     link: '/cosint-course',
     description: 'Open Source Intelligence Training™ - Syllabus and Featured Topics This course will provide an education and information you will not be able to acquire anywhere else. The class is completely interactive keeping you busy every moment and enjoying the activities. Learn to direct your searches to obtain results quickly!',
   },
   {
-    image: linux,
+    image: courseIcon6,
     title: 'Linux',
     link: '/linux-course',
     description: 'The industry-leading Penetration Testing with Kali Linux (KLIN-ACS) course just got even better. This online ethical hacking course is self-paced. It introduces penetration testing tools and techniques via hands-on experience. Students who complete the course and pass the exam earn the coveted Arena Web Certified Professional certification.',
   },
   {
-    image: network,
+    image: courseIcon,
     title: 'Networking Security',
     link: '/networking-course',
     description: 'In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. We cover one of the largest risks online, the browser. The doorway into your system.',
