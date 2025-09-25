@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Review2 from '../Utility/Review2'
 const Preview = () => {
   return (
-    <div className="container px-3 mx-auto mt-10  lg:mt-10">
+    <div className="container px-3 mx-auto mt-10 lg:mt-10">
       <div className="">
         {/* <div className="relative hidden h-full md:col-span-2 md:block">
           <Image src={event} alt="Events" className="" fill={true} sizes="1000vh" />
@@ -23,7 +23,7 @@ const Preview = () => {
               From Upwork to Fiverr, from international cybersecurity firms to freelance consultancy. Our <br className="hidden md:block" /> students are earning, growing, and succeeding across the world.
             </h6>
           </article>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 xl:gap-x-7 w-full bg-white rounded-[10px] shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] p-8">
             <Review />
             <div>
               <div className="h-[220px] hidden lg:block ">
