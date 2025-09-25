@@ -8,60 +8,64 @@ import TotalStudent from './../../../../public/statitic//TotalStudent.svg'
 import outline from './../../../../public/statitic/handsake.svg'
 import freelancer from './../../../../public/statitic/project.svg'
 import Image from 'next/image'
+
 const Counter = () => {
   const [visible, setVisible] = useState(false)
+
+  const stats = [
+    {
+      icon: TotalStudent,
+      number: 10000,
+      label: 'Students Trained',
+      start: 8000,
+      duration: 10,
+    },
+    {
+      icon: month,
+      number: 13,
+      label: 'Years in Service',
+      start: 0,
+      duration: 5,
+    },
+    {
+      icon: outline,
+      number: 750,
+      label: 'Successful Clients',
+      start: 0,
+      duration: 5,
+    },
+    {
+      icon: freelancer,
+      number: 4000,
+      label: 'Projects Completed',
+      start: 0,
+      duration: 10,
+    },
+  ]
+
   return (
-    <div className="container grid grid-cols-2 gap-8 mx-auto md:grid-cols-4">
-      <article className="flex flex-col justify-center md:border-r-2">
-        <div className="flex justify-center">
-          <Image src={TotalStudent} alt="Course Image" width={50} height={60} />
-        </div>
-        <div className="text-[20px] mt-4 text-[#7BAADA] font-semibold text-center flex justify-center gap-2">
-          <ScrollTrigger onEnter={() => setVisible(true)} onExit={() => setVisible(false)}>
-            {visible && <CountUp start={8000} end={10000} duration={10}></CountUp>}
-          </ScrollTrigger>
-          <span>+</span>
-        </div>
-        <p className="mt-3 text-sm text-center">Total Students</p>
-      </article>
-      <article className="flex flex-col justify-center md:border-r-2">
-        <div className="flex justify-center">
-          <Image src={month} alt="Course Image" width={60} height={60} />
-        </div>
+    <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+      {stats.map((stat, index) => (
+        <div key={index} className="flex items-center gap-2 text-center xl:gap-4">
+          {/* Gradient Icon Background */}
+          <div className="w-[55px] h-[55px] rounded-full bg-gradient-to-br from-[#A2D6F0] to-[#AC94C5] flex items-center justify-center">
+            <Image src={stat.icon} alt={stat.label} width={27} height={27} className="text-white" />
+          </div>
 
-        <div className="text-[20px] mt-3 text-[#7BAADA] font-semibold text-center flex justify-center gap-2">
-          <ScrollTrigger onEnter={() => setVisible(true)} onExit={() => setVisible(false)}>
-            {visible && <CountUp start={0} end={13} duration={5}></CountUp>}
-          </ScrollTrigger>
-          <span>+</span>
-        </div>
-        <p className="mt-1 text-sm text-center">Years In Service</p>
-      </article>
-      <article className="flex flex-col justify-center md:border-r-2">
-        <div className="flex justify-center">
-          <Image src={outline} alt="Course Image" width={80} height={80} />
-        </div>
+          <div className="flex flex-col items-start justify-start">
+            {/* Number */}
+            <div className="flex items-center text-[28px] leading-none font-bold text-[#7BAADA]">
+              <ScrollTrigger onEnter={() => setVisible(true)} onExit={() => setVisible(false)}>
+                {visible && <CountUp start={stat.start} end={stat.number} duration={stat.duration} />}
+              </ScrollTrigger>
+              <span className="ml-1">+</span>
+            </div>
 
-        <div className="text-[20px] mt-3 text-[#7BAADA] font-semibold text-center flex justify-center gap-2">
-          <ScrollTrigger onEnter={() => setVisible(true)} onExit={() => setVisible(false)}>
-            {visible && <CountUp start={0} end={750} duration={5}></CountUp>}
-          </ScrollTrigger>
-          <span>+</span>
+            {/* Label */}
+            <p className="text-[14px] text-[#757575] font-normal">{stat.label}</p>
+          </div>
         </div>
-        <p className="mt-3 text-sm text-center">Successful Clients</p>
-      </article>
-      <article className="flex flex-col justify-center ">
-        <div className="flex justify-center">
-          <Image src={freelancer} alt="Course Image" width={60} height={60} />
-        </div>
-        <div className="text-[20px] mt-4 text-[#7BAADA] font-semibold text-center flex justify-center gap-2">
-          <ScrollTrigger onEnter={() => setVisible(true)} onExit={() => setVisible(false)}>
-            {visible && <CountUp start={0} end={4000} duration={10}></CountUp>}
-          </ScrollTrigger>
-          <span>+</span>
-        </div>
-        <p className="text-sm text-center "> Project Completed </p>
-      </article>
+      ))}
     </div>
   )
 }
