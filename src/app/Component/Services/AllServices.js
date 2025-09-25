@@ -176,7 +176,7 @@ export function AllServices() {
                 >
                   <p
                     // href={course.link}
-                    className="text-[#0b6481] text-[16px] md:text-lg font-normal hover:text-black hover:font-medium "
+                    className="text-[#7BAADA] text-[16px] md:text-lg font-normal hover:text-black hover:font-medium "
                   >
                     {course.title}
                   </p>

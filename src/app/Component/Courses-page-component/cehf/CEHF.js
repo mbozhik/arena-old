@@ -352,7 +352,7 @@ const CEHF = () => {
               /> */}
                     <div className="relative flex flex-col items-center space-y-3 text-center">
                       <Image src={trainer.image} alt={trainer.name} className="object-cover border border-gray-200 rounded-full" width={120} height={120} />
-                      <h6 className="text-lg font-normal text-[#0b6481]">{trainer.name}</h6>
+                      <h6 className="text-lg font-normal text-[#7BAADA]">{trainer.name}</h6>
                       <p className="text-sm font-[300] leading-[17px]">{trainer.designation}</p>
                       <div className="p-3 px-5 mt-2 bg-white rounded ">
                         <p className="text-sm font-[300] leading-[17px]">Areas of expertise : {trainer.expertise}</p>

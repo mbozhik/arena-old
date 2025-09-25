@@ -82,7 +82,7 @@ export function AllCourses() {
                 className="px-5 pt-32 pb-10   rounded-[10px] bg-white mt-[-120px] h-full  
                shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]"
               >
-                <Link href={course.link} className="text-[#0b6481] text-[16px] md:text-lg font-normal hover:text-black hover:font-medium ">
+                <Link href={course.link} className="text-[#7BAADA] text-[16px] md:text-lg font-normal hover:text-black hover:font-medium ">
                   {course.title}
                 </Link>
                 <p className=" text-[12px] md:text-sm font-[300] mt-2 leading-[20px]">{course.description}</p>

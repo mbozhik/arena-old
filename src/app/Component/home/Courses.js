@@ -54,7 +54,7 @@ const courses = [
 const OurCourses = () => {
   return (
     <div className="container pt-8 mx-auto md:pt-10 xl:px-0 ">
-      <h5 className="text-center text-[18px] md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2">Our Courses</h5>
+      <h5 className="text-center text-[18px] md:text-[24px] xl:text-[26px] font-bold text-[#7BAADA]  mb-2">Our Courses</h5>
       <h6 className="text-center text-gray-600 text-[11px] md:text-sm md:mb-10 mb-5">Arena Web Security is the best place to do Cyber Security & Ethical Hacking, OSINT, Linux and Freelancing Course. To become a cyber hero it is your first step. We design the entire course from basic to advance. We focus hardly on our learners.</h6>
 
       <Swiper
@@ -103,7 +103,7 @@ const OurCourses = () => {
                   className="px-5 pt-32 pb-10   rounded-[10px] bg-white mt-[-120px] h-full  
                    shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]"
                 >
-                  <Link href={course.link} className="text-[#0b6481] text-[16px] md:text-lg font-normal hover:text-black hover:font-medium ">
+                  <Link href={course.link} className="text-[#7BAADA] text-[16px] md:text-lg font-normal hover:text-black hover:font-medium ">
                     {course.title}
                   </Link>
                   <p className=" text-[12px] md:text-sm font-[300] mt-2 xl:leading-[22px]  leading-[20px]">{course.description}</p>

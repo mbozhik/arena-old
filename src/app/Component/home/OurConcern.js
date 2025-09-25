@@ -22,7 +22,7 @@ const OurConcern = () => {
   return (
     <div className="container relative pb-5 mt-12  lg:mt-12 xl:pb-16 md:pb-10">
       <div className="">
-        <h5 className="text-center text-[18px] md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2"> Our Valued Clients & Partners</h5>
+        <h5 className="text-center text-[18px] md:text-[24px] xl:text-[26px] font-bold text-[#7BAADA]  mb-2"> Our Valued Clients & Partners</h5>
         <h6 className="text-center text-gray-600  text-[11px] md:text-sm md:mb-16 mb-10">Shaping Digital Security Across Government, Military, Education, and Enterprise Sectors. Proudly protecting Bangladesh since 2012.</h6>
       </div>
       <div className="mt-5 xl:mt-20">

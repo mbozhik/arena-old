@@ -8,7 +8,7 @@ const Events = async () => {
   // console.log(data);
   return (
     <div className="container pt-10 xl:pt-20">
-      <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#0b6481]  mb-2"> Upcoming Events</h5>
+      <h5 className="text-center md:text-[24px] xl:text-[26px] font-bold text-[#7BAADA]  mb-2"> Upcoming Events</h5>
       <h6 className="text-center text-gray-600 md:text-sm mb-16 text-[10px]">Get motivation from leaders and see your success from the window!</h6>
 
       <div className="">
@@ -38,7 +38,7 @@ const Events = async () => {
               </div>
 
               <Link href="cyber-security-ethical-hacking">
-                <h4 className="xl:font-semibold md:font-medium text-[#0b6481] md:text-[16px] xl:text-[20px] pt-2 pb-2 group-hover:text-blue-400">{data && data[0]?.batch_schedule_name}</h4>
+                <h4 className="xl:font-semibold md:font-medium text-[#7BAADA] md:text-[16px] xl:text-[20px] pt-2 pb-2 group-hover:text-blue-400">{data && data[0]?.batch_schedule_name}</h4>
               </Link>
               <p className="pt-0  font-[300]  text-[10px] md:text-sm leading-[17px] lg:pb-2 md:pb-2">Admission going on for Cyber Security course by Arena Web Academy. The class will start on 21-01-2024. For admission: 01310333444</p>
             </article>
@@ -72,7 +72,7 @@ const Events = async () => {
               </div>
 
               <Link href="advance-python-with-django">
-                <h4 className="xl:font-semibold md:font-medium text-[#0b6481]  md:text-[16px] xl:text-[20px] pt-5 pb-2 hover:text-blue-400">{data && data[1]?.batch_schedule_name}</h4>
+                <h4 className="xl:font-semibold md:font-medium text-[#7BAADA]  md:text-[16px] xl:text-[20px] pt-5 pb-2 hover:text-blue-400">{data && data[1]?.batch_schedule_name}</h4>
               </Link>
               <p className="pt-0 sectionSubTitle text-[10px] md:text-sm leading-[17px] font-[300] lg:pb-2 md:pb-2">Admission going on for Cyber Security course by Arena Web Academy. The class will start on 21-01-2024. For admission: 01310333444</p>
             </article>
