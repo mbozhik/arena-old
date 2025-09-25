@@ -44,15 +44,15 @@ const Counter = () => {
   ]
 
   return (
-    <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+    <div className="grid grid-cols-1 gap-8 px-6 xl:px-0 md:grid-cols-4">
       {stats.map((stat, index) => (
-        <div key={index} className="flex items-center gap-2 text-center xl:gap-4">
+        <div key={index} className="flex items-center justify-start gap-6 text-center xl:gap-4">
           {/* Gradient Icon Background */}
           <div className="w-[55px] h-[55px] rounded-full bg-gradient-to-br from-[#A2D6F0] to-[#AC94C5] flex items-center justify-center">
             <Image src={stat.icon} alt={stat.label} width={27} height={27} className="text-white" />
           </div>
 
-          <div className="flex flex-col items-start justify-start">
+          <div className="flex flex-col items-center xl:items-start">
             {/* Number */}
             <div className="flex items-center text-[28px] leading-none font-bold text-[#7BAADA]">
               <ScrollTrigger onEnter={() => setVisible(true)} onExit={() => setVisible(false)}>
