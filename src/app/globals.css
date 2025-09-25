@@ -8,17 +8,12 @@
 }
 
 :root {
-  --font-poppins: "Poppins", sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
 }
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: var(--font-poppins);
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--font-jakarta);
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 .monoFont {
   font-family: var(--font-jetbrains-mono), monospace;
@@ -41,11 +36,7 @@ body {
   border: none !important;
   padding: 12px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  background-image: linear-gradient(
-    to right,
-    rgba(86, 181, 227, 100),
-    rgba(125, 88, 165, 100)
-  );
+  background-image: linear-gradient(to right, rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
   z-index: 1000;
   display: flex;
   font-weight: 700 !important;
@@ -155,8 +146,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: black;
-  transition: opacity 0.4s ease, visibility 0.4s ease,
-    transform 0.5s ease-in-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.5s ease-in-out;
   visibility: hidden;
   opacity: 0;
   transform: scale(0);
@@ -194,14 +184,14 @@ body {
 }
 
 .summary::after {
-  content: " +";
+  content: ' +';
   position: absolute;
   right: 20px;
   font-size: 20px;
   font-weight: 700;
 }
 .details[open] .summary:after {
-  content: " -";
+  content: ' -';
 }
 
 .details[open] summary ~ * {
@@ -271,7 +261,7 @@ body {
   background-image: url(../app/Images/profile/profile.svg);
 }
 .ProfileImages::after {
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   position: absolute;
@@ -279,7 +269,7 @@ body {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.829);
 
-  z-index: 0; 
+  z-index: 0;
 }
 .bKashImg {
   padding: 1px 25px 1px 25px;
@@ -293,7 +283,7 @@ body {
 .placeholderAmount {
   font-weight: 300;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #c2c2c2;
 }
 
@@ -306,10 +296,7 @@ body {
   position: absolute;
   border-radius: 50%;
   border: 6px solid white;
-  background-image: linear-gradient(
-    rgba(86, 181, 227, 100),
-    rgba(125, 88, 165, 100)
-  );
+  background-image: linear-gradient(rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
   top: 15px;
   left: 130px;
 }
@@ -320,16 +307,13 @@ body {
     position: absolute;
     border-radius: 50%;
     border: 6px solid white;
-    background-image: linear-gradient(
-      rgba(86, 181, 227, 100),
-      rgba(125, 88, 165, 100)
-    );
+    background-image: linear-gradient(rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
     top: 15px;
     left: 80px;
   }
 }
 .svg-background {
-  background-image: url("/file/liquid-cheese.svg");
+  background-image: url('/file/liquid-cheese.svg');
   background-attachment: fixed;
   height: 100%;
   width: 100%;
@@ -360,7 +344,7 @@ body {
 }
 
 .animated-button1::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0px;
   left: 0px;
@@ -386,13 +370,7 @@ body {
   left: 0px;
   width: 100%;
   height: 2px;
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(rgba(43, 8, 8, 0)),
-    to(#d92626)
-  );
+  background: -webkit-gradient(linear, right top, left top, from(rgba(43, 8, 8, 0)), to(#d92626));
   background: linear-gradient(to left, rgba(43, 8, 8, 0), #d92626);
   -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
@@ -441,7 +419,7 @@ body {
 
 .textExpand {
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 22px;
 }
@@ -482,18 +460,10 @@ body {
 }
 .profile_img_sec {
   padding: 0px 50px 50px 50px;
-  background-image: linear-gradient(
-    to left,
-    rgba(86, 181, 227, 100),
-    rgba(125, 88, 165, 100)
-  );
+  background-image: linear-gradient(to left, rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
 }
 .profile_title {
-  background-image: linear-gradient(
-    to right,
-    rgba(86, 181, 227, 100),
-    rgba(125, 88, 165, 100)
-  );
+  background-image: linear-gradient(to right, rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
   color: white;
   text-align: center;
   padding: 10px;
@@ -501,14 +471,10 @@ body {
 .CountTitle {
   margin-bottom: 30px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 22px;
   font-weight: 400;
-  background-image: linear-gradient(
-    to right,
-    rgba(86, 181, 227, 100),
-    rgba(125, 88, 165, 100)
-  );
+  background-image: linear-gradient(to right, rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
   color: white;
   text-align: center;
   padding: 10px;

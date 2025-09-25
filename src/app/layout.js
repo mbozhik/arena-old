@@ -41,16 +41,16 @@
 //     </html>
 //   )
 // }
-import {Poppins, JetBrains_Mono} from 'next/font/google'
+import {Plus_Jakarta_Sans, JetBrains_Mono} from 'next/font/google'
 import './globals.css'
 import Footer from './Component/Common/Footer'
 import Navber from './Component/Common/Navber'
 import Script from 'next/script'
 
-const poppins = Poppins({
-  variable: '--font-poppins',
+const jakarta = Plus_Jakarta_Sans({
+  variable: '--font-jakarta',
   subsets: ['latin'],
-  weight: ['400', '700', '800', '500', '300', '200'],
+  weight: ['200', '300', '400', '500', '700', '800'],
 })
 
 const jetbrainsMono = JetBrains_Mono({
@@ -150,7 +150,7 @@ export default function RootLayout({children}) {
           <img height="1" width="1" style={{display: 'none'}} src="https://www.facebook.com/tr?id=492878632265213&ev=PageView&noscript=1" />
         </noscript>
       </head>
-      <body className={`${poppins.variable} ${jetbrainsMono.variable}`}>
+      <body className={`bg-[#F1F1F1] ${jakarta.variable} ${jetbrainsMono.variable}`}>
         {/* Google Tag Manager noscript */}
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4882C6H" height="0" width="0" style={{display: 'none', visibility: 'hidden'}}></iframe>
