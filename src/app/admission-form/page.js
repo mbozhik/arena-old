@@ -23,14 +23,14 @@ const page = async () => {
               <hr className="mx-10 my-3 border-black/10 " />
               <h2 className="text-xl text-[#FFD321] font-medium">Admission going on</h2>
               <p className="mt-1 text-white">
-                Duration : <span className="text-[#FBC453] font-semibold text-1xl font-[Poppins]">4 Months </span>
+                Duration : <span className="text-[#FBC453] font-semibold text-1xl ">4 Months </span>
                 of Hands-on training
               </p>
               <hr className="mx-10 my-3 border-black/10 " />
 
               {/* Master Ethical Hacking */}
               <h3 className="mt-4 text-xl font-medium text-white">Master the art of</h3>
-              <h2 className="text-xl font-bold text-white font-[Poppins]">
+              <h2 className="text-xl font-bold text-white ">
                 Ethical <span className="text-[#FFD321]">H</span>ack
                 <span className="text-[#FFD321]">i</span>ng
               </h2>

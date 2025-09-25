@@ -151,12 +151,12 @@ const Login = () => {
 
         {/* Email */}
         <div className="mx-auto mb-5 ">
-          <input type="email" name="email" className="w-full py-3 px-4 bg-[#F5F5F5] rounded text-sm text-gray-700 font-[Poppins] placeholder:text-gray-400 outline-none" placeholder="Enter Your Email" required />
+          <input type="email" name="email" className="w-full py-3 px-4 bg-[#F5F5F5] rounded text-sm text-gray-700  placeholder:text-gray-400 outline-none" placeholder="Enter Your Email" required />
         </div>
 
         {/* Password */}
         <div className="relative mx-auto mb-5 ">
-          {eye ? <input type="text" name="password" className="w-full py-3 px-4 bg-[#F5F5F5] rounded text-sm text-gray-700 font-[Poppins] placeholder:text-gray-400 outline-none" placeholder="Enter Your Password" required /> : <input type="password" name="password" className="w-full py-3 px-4 bg-[#F5F5F5] rounded text-sm text-gray-700 font-[Poppins] placeholder:text-gray-400 outline-none" placeholder="Enter Your Password" required />}
+          {eye ? <input type="text" name="password" className="w-full py-3 px-4 bg-[#F5F5F5] rounded text-sm text-gray-700  placeholder:text-gray-400 outline-none" placeholder="Enter Your Password" required /> : <input type="password" name="password" className="w-full py-3 px-4 bg-[#F5F5F5] rounded text-sm text-gray-700  placeholder:text-gray-400 outline-none" placeholder="Enter Your Password" required />}
 
           {eye ? <FaEye onClick={() => setEye(!eye)} className="absolute right-3 top-3.5 text-gray-600 cursor-pointer" /> : <FaEyeSlash onClick={() => setEye(!eye)} className="absolute right-3 top-3.5 text-gray-600 cursor-pointer" />}
         </div>

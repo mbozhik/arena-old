@@ -43,19 +43,19 @@ const ContactForm = () => {
               type="text"
               name="name"
               id="floating_email"
-              className="block py-2.5 px-2 w-full text-sm font-normal text-[#778899] font-[Poppins]  
-    bg-[#F5F5F5] appearance-none focus:outline-none focus:ring-0 peer"
+              className="block py-2.5 px-2 w-full text-sm font-normal text-[#778899]   
+    bg-[#F5F5F5] appearance-none focus:outline-none focus:ring-0 peer placeholder:text-[#778899]"
               placeholder="Name "
               required
             />
           </div>
 
           <div className="relative z-0 w-4/5 mx-auto mt-5 mb-5 md:w-4/5 group">
-            <input type="text" name="email" id="floating_email" className="block py-2.5 px-2 w-full text-sm font-normal text-[#778899] font-[Poppins] bg-[#F5F5F5] appearance-none focus:outline-none focus:ring-0 peer" placeholder="Enter Your Email" required />
+            <input type="text" name="email" id="floating_email" className="block py-2.5 px-2 w-full text-sm font-normal text-[#778899]  bg-[#F5F5F5] appearance-none focus:outline-none focus:ring-0 peer placeholder:text-[#778899]" placeholder="Enter Your Email" required />
           </div>
 
           <div className="w-4/5 mx-auto mt-5 md:w-4/5">
-            <textarea name="message" className="w-full min-h-[100px] px-3 py-2.5 text-sm font-normal text-[#778899] font-[Poppins] bg-[#F5F5F5] resize-none rounded-[7px] focus:outline-none focus:ring-0 placeholder:text-[#778899]" placeholder="Message" required></textarea>
+            <textarea name="message" className="w-full min-h-[100px] px-3 py-2.5 text-sm font-normal text-[#778899]  bg-[#F5F5F5] resize-none rounded-[7px] focus:outline-none focus:ring-0 placeholder:text-[#778899]" placeholder="Message" required></textarea>
           </div>
 
           <div className="flex justify-center">
