@@ -17,18 +17,22 @@ const Navparents = ({data, uid}) => {
       <div className="px-4 py-2 mx-auto ">
         <div className="flex flex-wrap mt-2 mb-2">
           <div className="flex justify-center w-full px-4 xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full"></div>
-          <div className="flex flex-col items-center justify-center w-full px-4 xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full md:justify-end ">
-            <Link href="/" className="">
-              {' '}
+          <div className="flex items-center justify-center w-full px-4 xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full">
+            <Link href="/" className="flex items-center gap-4">
               <img
-                className="mx-auto w-52 "
+                className="mx-auto w-52"
                 // src="https://arenawebsecurity.net/static/media/main-log-new.png"
                 src="/nav/main-log-new.webp"
                 alt="image"
               />
-            </Link>
 
-            <h3 className="text-center text-[22px] font-bold text-[#0B6481]">The Hackers Arena</h3>
+              <img
+                className="hidden mx-auto w-52 md:block"
+                // src="https://arenawebsecurity.net/static/media/main-log-new.png"
+                src="/nav/tagline.png"
+                alt="image"
+              />
+            </Link>
           </div>
           <div className="flex items-center justify-center w-full xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full md:justify-end md:pr-20 ">
             <a

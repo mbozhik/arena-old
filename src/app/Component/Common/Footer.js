@@ -30,15 +30,15 @@ const Footer = () => {
     {name: 'Privacy Policy', href: '/privacy'},
   ]
   return (
-    <footer className="bg-[#26272b] text-[#8d8d8d]   pt-12 pb-8 text-sm leading-6 ">
-      <div className="container grid grid-cols-1 gap-8 pb-8 leading-4 border-b  sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 border-gray-500/50 lg:leading-normal">
+    <footer className="bg-[#4D5E9F] pt-12 pb-8 text-sm leading-6 ">
+      <div className="container grid grid-cols-1 gap-8 pb-8 leading-4 border-b sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 border-gray-500/50 lg:leading-normal">
         {/* Address */}
         <div>
           <h3 className="text-white md:text-[24px] text-[18px] font-normal mb-4">Address</h3>
           <ul className="space-y-2 text-sm">
             <li className="flex items-start gap-2">
-              <FaLocationDot className="mt-1 text-[#715296] md:text-[16px] text-sm" />
-              <span className="md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
+              <FaLocationDot className="mt-1 text-[#7BAADA] md:text-[16px] text-sm" />
+              <span className="md:text-[16px] text-sm leading-[22px] font-[300] text-white">
                 House No: 1, Block: B
                 <br />
                 Banasree, Main Road, Rampura,
@@ -47,21 +47,21 @@ const Footer = () => {
               </span>
             </li>
             <li className="flex items-start gap-2">
-              <FaMobileAlt className="mt-1 text-[#715296] md:text-[16px] text-sm" />
-              <span className="md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
+              <FaMobileAlt className="mt-1 text-[#7BAADA] md:text-[16px] text-sm" />
+              <span className="md:text-[16px] text-sm leading-[22px] font-[300] text-white">
                 +880 1310 333 444,
                 <br />
                 +880 1885 841 489
               </span>
             </li>
             <li className="flex items-center gap-2 ">
-              <IoMail className="text-[#715296] md:text-[16px] text-sm mt-1" />
-              <p className="md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">info@arenawebsecurity.net</p>
+              <IoMail className="text-[#7BAADA] md:text-[16px] text-sm mt-1" />
+              <p className="md:text-[16px] text-sm leading-[22px] font-[300] text-white">info@arenawebsecurity.net</p>
             </li>
 
             <li className="flex items-center gap-2">
-              <FaGlobe className="mt-1 text-[#715296] md:text-[16px] text-sm" />
-              <span className="md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">www.arenawebsecurity.net</span>
+              <FaGlobe className="mt-1 text-[#7BAADA] md:text-[16px] text-sm" />
+              <span className="md:text-[16px] text-sm leading-[22px] font-[300] text-white">www.arenawebsecurity.net</span>
             </li>
           </ul>
         </div>
@@ -69,10 +69,10 @@ const Footer = () => {
         {/* Information */}
         <div className="">
           <h3 className="mb-4 text-lg font-medium text-white">Information</h3>
-          <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
+          <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-white">
             {links.map(({name, href}) => (
               <li key={name} className="flex items-center gap-2 hover:text-[#29aafe] transition">
-                <FaArrowRight className="text-[#715296] md:text-[16px] text-sm" />
+                <FaArrowRight className="text-[#7BAADA] md:text-[16px] text-sm" />
                 <a href={href} target={href.startsWith('http') ? '_blank' : '_self'} rel="noopener noreferrer">
                   {name}
                 </a>
@@ -85,11 +85,11 @@ const Footer = () => {
         <div>
           <h3 className="mb-4 text-lg font-medium text-white md:mt-6 xl:mt-0">Our Courses</h3>
 
-          <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
+          <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-white">
             {courses.map(({name, href}) => (
               <li key={name} className="flex items-start gap-2 hover:text-[#29aafe] transition">
-                <FaArrowRight className="text-[#715296] md:text-[16px] text-sm mt-[5px] shrink-0" />
-                <a href={href} className="text-[#8d8d8d] leading-[22px] block">
+                <FaArrowRight className="text-[#7BAADA] md:text-[16px] text-sm mt-[5px] shrink-0" />
+                <a href={href} className="text-white leading-[22px] block">
                   {name}
                 </a>
               </li>
@@ -100,10 +100,10 @@ const Footer = () => {
         {/* Developers */}
         <div>
           <h3 className="mb-4 text-lg font-medium text-white">Our Services</h3>
-          <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-[#8d8d8d]">
+          <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-white">
             {['Vulnerability Assessment and Penetration Testing', 'Web Application Security Testing', 'Mobile Application Security Testing', 'Network Security Assessment', 'Cloud Security Assessment'].map((dev) => (
               <li key={dev} className="flex items-center gap-2 hover:text-[#29aafe] transition">
-                <FaArrowRight className=" text-[#715296] md:text-[16px] text-sm" />
+                <FaArrowRight className=" text-[#7BAADA] md:text-[16px] text-sm" />
                 <a href="/all-services">{dev}</a>
               </li>
             ))}
@@ -113,18 +113,18 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="container flex flex-col items-center justify-between mt-4 md:flex-row">
-        <p className="md:text-[15px] text-[13px] text-center md:text-left">
+        <p className="md:text-[15px] text-[13px] text-center md:text-left text-white">
           Copyright © 2025 All Rights Reserved by
           <span className="text-[#29aafe] text-[13px] md:text-[15px]"> Arena Web Security</span>.
         </p>
         <div className="flex gap-3 mt-4 md:mt-0">
-          <a href="https://www.facebook.com/ArenaBangladesh" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#33353d] text-[#885cbe] hover:bg-[#3b5998] transition">
+          <a href="https://www.facebook.com/ArenaBangladesh" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#33353d] text-[#7BAADA] hover:bg-transparent transition">
             <FaFacebookF />
           </a>
-          <a href="https://bd.linkedin.com/company/arena-web-security" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#33353d] text-[#885cbe] hover:bg-[#007bb6] transition">
+          <a href="https://bd.linkedin.com/company/arena-web-security" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#33353d] text-[#7BAADA] hover:bg-transparent transition">
             <FaLinkedinIn />
           </a>
-          <a href="https://www.youtube.com/c/LearnwithCyber71" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#33353d] text-[#885cbe] hover:bg-[#007bb6]  transition">
+          <a href="https://www.youtube.com/c/LearnwithCyber71" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#33353d] text-[#7BAADA] hover:bg-transparent transition">
             <FaYoutube />
           </a>
         </div>
