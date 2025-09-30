@@ -176,7 +176,7 @@ const Apply = (e) => {
   }
 
   return (
-    <div className="lg:w-[70%] shadow-sm   applyCardPadding relative">
+    <div className="lg:w-[70%] shadow-sm applyCardPadding relative">
       <Dialog open={open} handler={handleOpen} size="md">
         {sucess && <Confetti width={750} height={350} />}
         <div className="px-5 py-10 text-center">
@@ -208,22 +208,22 @@ const Apply = (e) => {
       </Dialog>
 
       <form onSubmit={(e) => RegistationSucess(e)} className="relative shadow-sm">
-        <h1 className="md:text-2xl text-[20px] font-medium py-3 mt-2 text-center  applicationTitle text-white">Student Application Form</h1>
-        <div className="flex mt-4">
+        <h1 className="md:text-2xl text-[20px] font-medium py-3 mt-4 text-center  applicationTitle text-white">Student Application Form</h1>
+        <div className="flex">
           {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
-          <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#0c9669] mt-6 ">Registration Details :</p>
+          <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#7BAADA] mt-5">Registration Details :</p>
         </div>
         <div className="relative w-full col-span-6 mt-2 md:col-span-3 md:mt-0 group">
           <div className="flex items-center mt-4 space-x-6">
             <p className="text-sm font-[300] ">Prefix*:</p>
             <div className="flex items-center">
-              <input type="radio" id="mr" name="prefix" value="male" onChange={(e) => setGander(e.target.value)} className="text-indigo-600 form-radio" />
+              <input type="radio" id="mr" name="prefix" value="male" onChange={(e) => setGander(e.target.value)} className="text-[#7BAADA] form-radio" />
               <label htmlFor="mr" className="ml-2 text-sm text-gray-700">
                 Mr.
               </label>
             </div>
             <div className="flex items-center">
-              <input type="radio" id="missMrs" name="prefix" value="female" onChange={(e) => setGander(e.target.value)} className="text-indigo-600 form-radio" />
+              <input type="radio" id="missMrs" name="prefix" value="female" onChange={(e) => setGander(e.target.value)} className="text-[#7BAADA] form-radio" />
               <label htmlFor="missMrs" className="ml-2 text-sm text-gray-700">
                 Miss/Mrs.
               </label>
@@ -245,15 +245,15 @@ const Apply = (e) => {
                 sx={{
                   '& .MuiOutlinedInput-root': {
                     '&:hover fieldset': {
-                      borderColor: '#5BA9DB', // Border color on hover
+                      borderColor: '#7BAADA', // Border color on hover
                     },
                     '& fieldset': {
-                      borderColor: '#5BA9DB', // Default border color
+                      borderColor: '#7BAADA', // Default border color
                     },
-                    '&.Mui-focused fieldset': {
-                      borderColor: '#7B5DA7', // Border color on focus
-                      borderWidth: '1px',
-                    },
+                    // '&.Mui-focused fieldset': {
+                    //   borderColor: '#7B5DA7', // Border color on focus
+                    //   borderWidth: '1px',
+                    // },
                   },
                 }}
               />
@@ -267,8 +267,8 @@ const Apply = (e) => {
                 name="student_mobile"
                 inputStyle={{
                   width: '100%',
-                  border: '1px solid #5BA9DB',
-                  borderBottom: '1px solid #5BA9DB',
+                  border: '1px solid #7BAADA',
+                  borderBottom: '1px solid #7BAADA',
                   borderRadius: '5px',
                   padding: '26px 50px 26px 70px', // leave space for the flag button
                   transition: 'border-color 0.3s ease',
@@ -309,15 +309,15 @@ const Apply = (e) => {
                 sx={{
                   '& .MuiOutlinedInput-root': {
                     '&:hover fieldset': {
-                      borderColor: '#5BA9DB',
+                      borderColor: '#7BAADA',
                     },
                     '& fieldset': {
-                      borderColor: '#5BA9DB',
+                      borderColor: '#7BAADA',
                     },
-                    '&.Mui-focused fieldset': {
-                      borderColor: '#7B5DA7',
-                      borderWidth: '1px',
-                    },
+                    // '&.Mui-focused fieldset': {
+                    //   borderColor: '#7B5DA7',
+                    //   borderWidth: '1px',
+                    // },
                   },
                 }}
               />
@@ -335,15 +335,15 @@ const Apply = (e) => {
                 sx={{
                   '& .MuiOutlinedInput-root': {
                     '&:hover fieldset': {
-                      borderColor: '#5BA9DB',
+                      borderColor: '#7BAADA',
                     },
                     '& fieldset': {
-                      borderColor: '#5BA9DB',
+                      borderColor: '#7BAADA',
                     },
-                    '&.Mui-focused fieldset': {
-                      borderColor: '#7B5DA7',
-                      borderWidth: '1px',
-                    },
+                    // '&.Mui-focused fieldset': {
+                    //   borderColor: '#7B5DA7',
+                    //   borderWidth: '1px',
+                    // },
                   },
                 }}
               />
@@ -363,15 +363,15 @@ const Apply = (e) => {
                 sx={{
                   '& .MuiOutlinedInput-root': {
                     '&:hover fieldset': {
-                      borderColor: '#5BA9DB',
+                      borderColor: '#7BAADA',
                     },
                     '& fieldset': {
-                      borderColor: '#5BA9DB',
+                      borderColor: '#7BAADA',
                     },
-                    '&.Mui-focused fieldset': {
-                      borderColor: '#7B5DA7',
-                      borderWidth: '1px',
-                    },
+                    // '&.Mui-focused fieldset': {
+                    //   borderColor: '#7B5DA7',
+                    //   borderWidth: '1px',
+                    // },
                   },
                 }}
               />
@@ -391,15 +391,15 @@ const Apply = (e) => {
                   sx={{
                     '& .MuiOutlinedInput-root': {
                       '&:hover fieldset': {
-                        borderColor: '#5BA9DB',
+                        borderColor: '#7BAADA',
                       },
                       '& fieldset': {
-                        borderColor: '#5BA9DB',
+                        borderColor: '#7BAADA',
                       },
-                      '&.Mui-focused fieldset': {
-                        borderColor: '#7B5DA7',
-                        borderWidth: '1px',
-                      },
+                      // '&.Mui-focused fieldset': {
+                      //   borderColor: '#7B5DA7',
+                      //   borderWidth: '1px',
+                      // },
                     },
                   }}
                 />
@@ -416,15 +416,15 @@ const Apply = (e) => {
                   sx={{
                     '& .MuiOutlinedInput-root': {
                       '&:hover fieldset': {
-                        borderColor: '#5BA9DB',
+                        borderColor: '#7BAADA',
                       },
                       '& fieldset': {
-                        borderColor: '#5BA9DB',
+                        borderColor: '#7BAADA',
                       },
-                      '&.Mui-focused fieldset': {
-                        borderColor: '#7B5DA7',
-                        borderWidth: '1px',
-                      },
+                      // '&.Mui-focused fieldset': {
+                      //   borderColor: '#7B5DA7',
+                      //   borderWidth: '1px',
+                      // },
                     },
                   }}
                 />
@@ -451,15 +451,15 @@ const Apply = (e) => {
                 sx={{
                   '& .MuiOutlinedInput-root': {
                     '&:hover fieldset': {
-                      borderColor: '#5BA9DB',
+                      borderColor: '#7BAADA',
                     },
                     '& fieldset': {
-                      borderColor: '#5BA9DB',
+                      borderColor: '#7BAADA',
                     },
-                    '&.Mui-focused fieldset': {
-                      borderColor: '#7B5DA7',
-                      borderWidth: '1px',
-                    },
+                    // '&.Mui-focused fieldset': {
+                    //   borderColor: '#7B5DA7',
+                    //   borderWidth: '1px',
+                    // },
                   },
                 }}
               />
@@ -484,10 +484,10 @@ const Apply = (e) => {
                       '& fieldset': {
                         borderColor: '#5BA9DB',
                       },
-                      '&.Mui-focused fieldset': {
-                        borderColor: '#7B5DA7',
-                        borderWidth: '1px',
-                      },
+                      // '&.Mui-focused fieldset': {
+                      //   borderColor: '#7B5DA7',
+                      //   borderWidth: '1px',
+                      // },
                     },
                   }}
                 />
@@ -510,10 +510,10 @@ const Apply = (e) => {
                       '& fieldset': {
                         borderColor: '#5BA9DB',
                       },
-                      '&.Mui-focused fieldset': {
-                        borderColor: '#7B5DA7',
-                        borderWidth: '1px',
-                      },
+                      // '&.Mui-focused fieldset': {
+                      //   borderColor: '#7B5DA7',
+                      //   borderWidth: '1px',
+                      // },
                     },
                   }}
                 />
@@ -610,10 +610,10 @@ const Apply = (e) => {
                     '& fieldset': {
                       borderColor: '#5BA9DB',
                     },
-                    '&.Mui-focused fieldset': {
-                      borderColor: '#7B5DA7',
-                      borderWidth: '1px',
-                    },
+                    // '&.Mui-focused fieldset': {
+                    //   borderColor: '#7B5DA7',
+                    //   borderWidth: '1px',
+                    // },
                   },
                 }}
               >
@@ -663,10 +663,10 @@ const Apply = (e) => {
                     '& fieldset': {
                       borderColor: '#5BA9DB',
                     },
-                    '&.Mui-focused fieldset': {
-                      borderColor: '#7B5DA7',
-                      borderWidth: '1px',
-                    },
+                    // '&.Mui-focused fieldset': {
+                    //   borderColor: '#7B5DA7',
+                    //   borderWidth: '1px',
+                    // },
                   },
                 }}
               >
@@ -698,7 +698,7 @@ const Apply = (e) => {
           </div>
           {/* <div className="flex w-full mt-1">
        
-            <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#0c9669] mt-6 ">
+            <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#7BAADA] mt-6 ">
               Work Information :
             </p>
           </div>
@@ -771,7 +771,7 @@ const Apply = (e) => {
           )}
 
           <div className="flex w-full mt-1">
-            <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#0c9669] mt-6 ">Educational Background :</p>
+            <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#7BAADA] mt-6 ">Educational Background :</p>
           </div>
 
           <div className="flex items-center mb-1">
@@ -880,7 +880,7 @@ const Apply = (e) => {
           )}
 
           <div className="flex w-full mt-1">
-            <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#0c9669] mt-6 ">Alternative Contact :</p>
+            <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#7BAADA] mt-6 ">Alternative Contact :</p>
           </div>
 
           <div className="grid grid-cols-6 gap-x-2">
@@ -902,10 +902,10 @@ const Apply = (e) => {
                     '& fieldset': {
                       borderColor: '#5BA9DB',
                     },
-                    '&.Mui-focused fieldset': {
-                      borderColor: '#7B5DA7',
-                      borderWidth: '1px',
-                    },
+                    // '&.Mui-focused fieldset': {
+                    //   borderColor: '#7B5DA7',
+                    //   borderWidth: '1px',
+                    // },
                   },
                 }}
               />
@@ -931,10 +931,10 @@ const Apply = (e) => {
                       '& fieldset': {
                         borderColor: '#5BA9DB',
                       },
-                      '&.Mui-focused fieldset': {
-                        borderColor: '#7B5DA7',
-                        borderWidth: '1px',
-                      },
+                      // '&.Mui-focused fieldset': {
+                      //   borderColor: '#7B5DA7',
+                      //   borderWidth: '1px',
+                      // },
                     },
                   }}
                 />
@@ -955,10 +955,10 @@ const Apply = (e) => {
                       '& fieldset': {
                         borderColor: '#5BA9DB',
                       },
-                      '&.Mui-focused fieldset': {
-                        borderColor: '#7B5DA7',
-                        borderWidth: '1px',
-                      },
+                      // '&.Mui-focused fieldset': {
+                      //   borderColor: '#7B5DA7',
+                      //   borderWidth: '1px',
+                      // },
                     },
                   }}
                 />
@@ -967,7 +967,7 @@ const Apply = (e) => {
           </div>
           <div className="flex w-full mt-1">
             {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
-            <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#0c9669] mt-6 ">Others :</p>
+            <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#7BAADA] mt-6 ">Others :</p>
           </div>
 
           <TextField

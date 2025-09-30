@@ -14,53 +14,51 @@ const page = async () => {
   const data = await NavberData()
   return (
     <div className="px-3 md:px-12">
-      <div className=" mt-5  mx-auto  shadow-[0px_0px_5px_0px_rgba(0,0,0,0.3)]  my-10 pr-3 rounded-2xl relative ">
-        <div className="flex 2xl:h-[600px] xl:h-[90vh]  lg:h-[50vh] overflow-clip gap-2 relative  ">
+      <div className="mt-5 mx-auto shadow-[0px_0px_5px_0px_rgba(0,0,0,0.3)]  my-10 pr-3 rounded-2xl relative ">
+        <div className="flex 2xl:h-[640px] xl:h-[90vh] lg:h-[50vh] overflow-clip gap-2 relative">
           <div className="relative w-[50%] hidden lg:block">
-            <div className="px-5 py-6 bg-gradient-to-bl  from-[#7d58a5] to-[#56b5e3] rounded-s-2xl text-center h-full">
+            <div className="px-5 py-6 text-white bg-gradient-to-bl from-[#7d58a5] to-[#56b5e3] rounded-s-2xl text-center h-full">
               {/* Admission Info */}
-              <h1 className="text-2xl font-mono text-[#FBC453] mt-2 monoFont">Admission 2025</h1>
-              <hr className="mx-10 my-3 border-black/10 " />
-              <h2 className="text-xl text-[#FFD321] font-medium">Admission going on</h2>
-              <p className="mt-1 text-white">
-                Duration : <span className="text-[#FBC453] font-semibold text-1xl ">4 Months </span>
+              <h1 className="text-2xl font-semibold text-[#FFD321] uppercase mt-2">Admission 2025</h1>
+              <hr className="mx-10 my-3 border-black/10" />
+              <h2 className="text-xl font-semibold text-[#FFD321]">Admission going on</h2>
+              <p className="mt-1">
+                Duration : <span className="text-[#FFD321] font-semibold text-1xl ">4 Months </span>
                 of Hands-on training
               </p>
               <hr className="mx-10 my-3 border-black/10 " />
 
               {/* Master Ethical Hacking */}
               <h3 className="mt-4 text-xl font-medium text-white">Master the art of</h3>
-              <h2 className="text-xl font-bold text-white ">
-                Ethical <span className="text-[#FFD321]">H</span>ack
-                <span className="text-[#FFD321]">i</span>ng
-              </h2>
+              <h2 className="text-xl font-semibold text-[#FFD321]">Ethical Hacking</h2>
 
               {/* Topics */}
               <ul className="max-w-xs mx-auto mt-5 space-y-2 text-left text-white">
                 <li className="flex items-center gap-x-1">
-                  <AiOutlineSafety className="text-2xl text-purple-600" />
+                  <AiOutlineSafety className="text-2xl text-[#FFD321]" />
                   Cyber Security
                 </li>
                 <li className="flex items-center gap-x-1">
-                  <AiOutlineSafety className="text-2xl text-purple-600" />
+                  <AiOutlineSafety className="text-2xl text-[#FFD321]" />
                   Digital Forensics
                 </li>
                 <li className="flex items-center gap-x-1">
-                  <AiOutlineSafety className="text-2xl text-purple-600" />
+                  <AiOutlineSafety className="text-2xl text-[#FFD321]" />
                   Freelancing
                 </li>
                 <li className="flex items-center gap-x-1">
-                  <AiOutlineSafety className="text-2xl text-purple-600" />
+                  <AiOutlineSafety className="text-2xl text-[#FFD321]" />
                   Open Source Intelligence
                 </li>
                 <li className="flex items-center gap-x-1">
-                  <AiOutlineSafety className="text-2xl text-purple-600" />
+                  <AiOutlineSafety className="text-2xl text-[#FFD321]" />
                   Linux
                 </li>
-                <div className="max-w-[350px] max-h-[200px]">
-                  <img src="/Cy.png" className="w-[220px] max-h-[150px]" alt="image" />
-                </div>
               </ul>
+
+              <div className="w-[45%] mx-auto h-[200px] mt-4">
+                <img src="/Cy.png" className="w-full h-full" alt="image" />
+              </div>
             </div>
           </div>
           {/* Addmission Form */}
