@@ -144,33 +144,36 @@ const Login = () => {
     //     </button>
     //   </form>
     // </div>
-    <div className="lg:w-[50%] w-full px-3 md:px-0 mx-auto shadow-[0px_0px_5px_0px_rgba(0,0,0,0.1)] rounded-lg ">
+
+    <div className="lg:w-[50%] w-full px-3 md:px-0 mx-auto bg-white text-[#1F202F] shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] rounded-2xl relative">
       <form className="m-5 " onSubmit={(e) => UserLogin(e)}>
-        <h1 className="text-2xl font-bold text-center text-[#4cb1f1]">Login</h1>
-        <p className="mt-1 mb-10 text-sm text-center text-gray-600">Enter your Email and Password with Login</p>
+        {/* Updated title with yellow color to match Apply.js */}
+        <h1 className="text-2xl font-bold text-center text-[#7BAADA]">Login</h1>
+        <p className="mt-1 mb-10 text-sm text-center">Enter your Email and Password with Login</p>
 
-        {/* Email */}
+        {/* Email - Updated with border styling to match Apply.js */}
         <div className="mx-auto mb-5 ">
-          <input type="email" name="email" className="w-full py-3 px-4 bg-[#F5F5F5] rounded text-sm text-gray-700  placeholder:text-gray-400 outline-none" placeholder="Enter Your Email" required />
+          <input type="email" name="email" className="w-full py-3 px-4 bg-white rounded text-sm text-gray-700 placeholder:text-gray-400 outline-none border-2 border-[#7BAADA] focus:border-[#5BA9DB] transition-colors duration-300" placeholder="Enter Your Email" required />
         </div>
 
-        {/* Password */}
+        {/* Password - Updated with border styling to match Apply.js */}
         <div className="relative mx-auto mb-5 ">
-          {eye ? <input type="text" name="password" className="w-full py-3 px-4 bg-[#F5F5F5] rounded text-sm text-gray-700  placeholder:text-gray-400 outline-none" placeholder="Enter Your Password" required /> : <input type="password" name="password" className="w-full py-3 px-4 bg-[#F5F5F5] rounded text-sm text-gray-700  placeholder:text-gray-400 outline-none" placeholder="Enter Your Password" required />}
+          {eye ? <input type="text" name="password" className="w-full py-3 px-4 bg-white rounded text-sm text-gray-700 placeholder:text-gray-400 outline-none border-2 border-[#7BAADA] focus:border-[#5BA9DB] transition-colors duration-300" placeholder="Enter Your Password" required /> : <input type="password" name="password" className="w-full py-3 px-4 bg-white rounded text-sm text-gray-700 placeholder:text-gray-400 outline-none border-2 border-[#7BAADA] focus:border-[#5BA9DB] transition-colors duration-300" placeholder="Enter Your Password" required />}
 
-          {eye ? <FaEye onClick={() => setEye(!eye)} className="absolute right-3 top-3.5 text-gray-600 cursor-pointer" /> : <FaEyeSlash onClick={() => setEye(!eye)} className="absolute right-3 top-3.5 text-gray-600 cursor-pointer" />}
+          {/* Updated icon colors to match design */}
+          {eye ? <FaEye onClick={() => setEye(!eye)} className="absolute right-3 top-3.5 text-[#7BAADA] cursor-pointer hover:text-[#5BA9DB] transition-colors" /> : <FaEyeSlash onClick={() => setEye(!eye)} className="absolute right-3 top-3.5 text-[#7BAADA] cursor-pointer hover:text-[#5BA9DB] transition-colors" />}
         </div>
 
-        {/* Link */}
-        <p className="mx-auto text-sm text-right text-gray-600 ">
+        {/* Link - Updated colors */}
+        <p className="mx-auto text-sm text-right">
           New here? &nbsp;
-          <Link href="admission" className="font-semibold text-blue-500">
+          <Link href="admission" className="font-medium text-[#7BAADA] hover:opacity-85 duration-200">
             Apply for your ID now!
           </Link>
         </p>
 
-        {/* Submit Button */}
-        <button type="submit" disabled={pending} className={` w-full mx-auto mt-2 py-2.5 rounded text-white font-semibold text-sm block ${pending ? 'bg-[#90bde0]' : 'bg-gradient-to-r from-[#4cb1f1] to-[#7f5eff]'}`}>
+        {/* Submit Button - Updated to match Apply.js button styling */}
+        <button type="submit" disabled={pending} className={`w-full mx-auto mt-2 py-2.5 rounded text-white font-semibold text-sm block transition-colors duration-300 ${pending ? 'bg-[#90bde0] cursor-not-allowed' : 'bg-gradient-to-r from-[#7BAADA] to-[#5BA9DB] hover:from-[#5BA9DB] hover:to-[#7BAADA]'}`}>
           Login
         </button>
       </form>
