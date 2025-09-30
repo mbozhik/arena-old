@@ -126,7 +126,7 @@ const MobileNav = ({uid}) => {
         <article className="items-center justify-center hidden lg:flex">
           <ul className="flex items-center font-semibold text-white gap-x-4 ">
             {uid ? (
-              <li className="mt-2">
+              <li className="">
                 <LogOut />
               </li>
             ) : (
