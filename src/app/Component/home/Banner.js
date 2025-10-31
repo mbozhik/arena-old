@@ -5,13 +5,13 @@ import {useState, useEffect} from 'react'
 
 const banners = [
   {
-    src: '/banner/banner1.png',
+    src: '/banner/banner.jpg',
     title: 'Arena Web Security',
     subtitle: 'New window of World Wide Web',
     description: 'Arena Web Security is the first and most trusted cyber security company in Bangladesh, established in 2012. Over the years, Arena has provided advanced Cyber Security Services and Professional Training to clients across the globe - including the Government and Ministries of Bangladesh, Military, Banking Sector, Educational Institutions, and Private Organizations.',
   },
   {
-    src: '/banner/banner2.webp',
+    src: '/banner/banner.jpg',
     title: 'Arena Web Security',
     subtitle: 'Hacking was passion, Security is our profession',
     description: 'Arena Web Security is the first and most trusted cyber security company in Bangladesh, established in 2012. Over the years, Arena has provided advanced Cyber Security Services and Professional Training to clients across the globe - including the Government and Ministries of Bangladesh, Military, Banking Sector, Educational Institutions, and Private Organizations.',
