@@ -41,7 +41,22 @@ const Profiledetails = async ({data, paymetdata}) => {
           <div className="w-full">
             <div className="p-3 bg-white border border-gray-200 rounded-lg shadow-sm">
               <p className="mb-2 text-xs font-medium tracking-wide text-center text-gray-600 uppercase">Admission Status</p>
-              <div className="flex justify-center">{data?.data?.discount_user ? <p className="w-full px-4 py-2 text-sm font-bold text-center text-white rounded-full shadow-md bg-gradient-to-r from-green-500 to-green-600">✓ Admission Done</p> : !paymetdata?.data?.total?.total_amount || paymetdata?.data?.total?.total_amount === 0 ? <p className="w-full px-4 py-2 text-sm font-bold text-center text-white border-2 border-orange-400 rounded-full shadow-md bg-gradient-to-r from-orange-500 to-red-500">⚡ Complete Payment</p> : paymetdata?.data?.total.total_amount >= data?.data?.course_fee_divide ? <p className="w-full px-4 py-2 text-sm font-bold text-center text-white rounded-full shadow-md bg-gradient-to-r from-green-500 to-green-600">✓ Admission Done</p> : <p className="w-full px-4 py-2 text-sm font-bold text-center text-white rounded-full shadow-md bg-gradient-to-r from-blue-500 to-blue-600">💰 Seat Booked</p>}</div>
+              <div className="flex justify-center">
+                {/* Admission status logic with proper conditions */}
+                {data?.data?.discount_user ? (
+                  // User has discount - admission done
+                  <p className="w-full px-4 py-2 text-sm font-bold text-center text-white rounded-full shadow-md bg-gradient-to-r from-green-500 to-green-600">Admission Done</p>
+                ) : !paymetdata?.data?.total?.total_amount || paymetdata?.data?.total?.total_amount === 0 ? (
+                  // No payment or zero amount - pending status
+                  <p className="w-full px-4 py-2 text-sm font-bold text-center text-white border-2 border-orange-400 rounded-full shadow-md bg-gradient-to-r from-orange-500 to-red-500">Pending</p>
+                ) : paymetdata?.data?.total.total_amount >= data?.data?.course_fee_divide ? (
+                  // Payment meets course fee requirement - admission done
+                  <p className="w-full px-4 py-2 text-sm font-bold text-center text-white rounded-full shadow-md bg-gradient-to-r from-green-500 to-green-600">Admission Done</p>
+                ) : (
+                  // Partial payment - seat booked
+                  <p className="w-full px-4 py-2 text-sm font-bold text-center text-white rounded-full shadow-md bg-gradient-to-r from-blue-500 to-blue-600">Seat Booking</p>
+                )}
+              </div>
             </div>
           </div>
 
