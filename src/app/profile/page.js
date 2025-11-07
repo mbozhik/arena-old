@@ -28,7 +28,14 @@ const page = async () => {
         </>
       )}
 
-      <div className={data?.data.admission === true ? 'mt-20' : ''}>
+      <>
+        <h6 className="mt-5 text-center CountTitle">Admission Time Remaining</h6>
+        <div className="relative ProfileImages"></div>
+        <ProfileTime />
+      </>
+
+      {/* Profile Details Section with proper spacing */}
+      <div className="mt-6 md:mt-10">
         <Profiledetails data={data} paymetdata={paymetdata} />
       </div>
 

@@ -259,6 +259,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../app/Images/profile/profile.svg);
+  border-radius: 12px;
+  overflow: hidden;
 }
 .ProfileImages::after {
   content: '';
