@@ -58,7 +58,7 @@ const courses = [
 const OurCourses = () => {
   return (
     <div className="container pt-8 mx-auto md:pt-10 xl:px-0 ">
-      <h5 className="text-center text-[18px] md:text-[24px] xl:text-[26px] font-bold text-[#7BAADA]  mb-2">Our Courses</h5>
+      <h5 className="text-center text-[24px] xl:text-[32px] font-bold text-[#7BAADA] mb-2 font-poppins">Our Courses</h5>
       <h6 className="text-center text-gray-600 text-[11px] md:text-sm md:mb-10 mb-5">Arena Web Security is the best place to do Cyber Security & Ethical Hacking, OSINT, Linux and Freelancing Course. To become a cyber hero it is your first step. We design the entire course from basic to advance. We focus hardly on our learners.</h6>
 
       <Swiper

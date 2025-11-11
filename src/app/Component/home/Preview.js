@@ -13,7 +13,7 @@ const Preview = () => {
         </div> */}
         <div className="">
           <article className="py-2 ">
-            <h5 className="text-center text-[18px] md:text-[24px] xl:text-[26px] font-bold text-[#7BAADA]  mb-2"> Preview of Your Future</h5>
+            <h5 className="text-center text-[24px] xl:text-[32px] font-bold text-[#7BAADA] mb-2 font-poppins"> Preview of Your Future</h5>
             <p className="text-center text-gray-500 text-[11px] md:text-sm md:mb-3 mb-2">Your Skill. Your Career. Your Global Path.</p>
             <h6 className="text-center text-gray-600 text-[11px] md:text-sm mb-4">
               Arena Web Security is not just about learning. It is about transforming your skill into real income,

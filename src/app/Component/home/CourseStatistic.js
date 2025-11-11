@@ -5,7 +5,7 @@ const CourseStatistic = () => {
     <div className="container relative pt-8 md:pt-10">
       {/* Header Section */}
       <div className="mb-10 text-center">
-        <h5 className="text-[32px] font-bold text-[#7BAADA] mb-2 font-poppins">Company Statistics</h5>
+        <h5 className="text-center text-[24px] xl:text-[32px] font-bold text-[#7BAADA] mb-2 font-poppins">Company Statistics</h5>
         <p className="text-[14px] text-[#757575] font-normal">Statistics measures the whole progressing report which is organised by Arena Web Security.</p>
       </div>
 

@@ -101,7 +101,7 @@ const courses = [
 const Services = () => {
   return (
     <div className="container pt-8 mx-auto md:pt-10">
-      <h5 className="text-center text-[18px] md:text-[24px] xl:text-[26px] font-bold text-[#7BAADA]  mb-2">Our Services</h5>
+      <h5 className="text-center text-[24px] xl:text-[32px] font-bold text-[#7BAADA] mb-2 font-poppins">Our Services</h5>
       <h6 className="text-center text-gray-600 md:text-sm  md:mb-10 mb-5 text-[11px]">Get motivation from leaders and see your success from the window!</h6>
 
       <Swiper
