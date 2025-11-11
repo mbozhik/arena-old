@@ -22,7 +22,7 @@ const page = async () => {
         <></>
       ) : (
         <>
-          <h6 className="mt-5 text-center CountTitle">Admission Time Remaining</h6>
+          <h6 className="mt-5 text-center CountTitle rounded-xl">Admission Time Remaining</h6>
           <div className="relative ProfileImages"></div>
           <ProfileTime />
         </>
