@@ -186,12 +186,12 @@ export function AllServices() {
 
                 {/* Text Content Container */}
                 <div
-                  className="px-5 pt-32 pb-10   rounded-[10px] bg-white mt-[-120px] h-full  
+                  className="px-5 pt-32 pb-10   rounded-[10px] bg-white mt-[-115px] h-full  
                shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-[0px_0px_9px_0px_rgba(0,0,0,0.3)]"
                 >
                   <p
                     // href={course.link}
-                    className="text-[#7BAADA] text-[16px] md:text-lg font-normal hover:text-black hover:font-medium "
+                    className="text-[#7BAADA] text-[16px] md:text-lg font-semibold hover:text-black duration-300 "
                   >
                     {course.title}
                   </p>
