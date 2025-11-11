@@ -34,7 +34,8 @@ const Footer = () => {
       <div className="container grid grid-cols-1 gap-8 pb-8 leading-4 border-b sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 border-gray-500/50 lg:leading-normal">
         {/* Address */}
         <div>
-          <h3 className="text-white md:text-[24px] text-[18px] font-normal mb-4">Address</h3>
+          <h3 className="mb-4 text-lg font-medium text-white">Address</h3>
+
           <ul className="space-y-2 text-sm">
             <li className="flex items-start gap-2">
               <FaLocationDot className="mt-1 text-[#7BAADA] md:text-[16px] text-sm" />
@@ -71,7 +72,7 @@ const Footer = () => {
           <h3 className="mb-4 text-lg font-medium text-white">Information</h3>
           <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-white">
             {links.map(({name, href}) => (
-              <li key={name} className="flex items-center gap-2 hover:text-[#29aafe] transition">
+              <li key={name} className="flex items-center gap-2 hover:text-[#7BAADA] hover:translate-x-0.5 duration-300">
                 <FaArrowRight className="text-[#7BAADA] md:text-[16px] text-sm" />
                 <a href={href} target={href.startsWith('http') ? '_blank' : '_self'} rel="noopener noreferrer">
                   {name}
@@ -87,9 +88,9 @@ const Footer = () => {
 
           <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-white">
             {courses.map(({name, href}) => (
-              <li key={name} className="flex items-start gap-2 hover:text-[#29aafe] transition">
+              <li key={name} className="flex items-start gap-2 hover:text-[#7BAADA] hover:translate-x-0.5 duration-300">
                 <FaArrowRight className="text-[#7BAADA] md:text-[16px] text-sm mt-[5px] shrink-0" />
-                <a href={href} className="text-white leading-[22px] block">
+                <a href={href} className="leading-[22px] block">
                   {name}
                 </a>
               </li>
@@ -102,8 +103,8 @@ const Footer = () => {
           <h3 className="mb-4 text-lg font-medium text-white">Our Services</h3>
           <ul className="space-y-2 md:text-[16px] text-sm leading-[22px] font-[300] text-white">
             {['Vulnerability Assessment and Penetration Testing', 'Web Application Security Testing', 'Mobile Application Security Testing', 'Network Security Assessment', 'Cloud Security Assessment'].map((dev) => (
-              <li key={dev} className="flex items-center gap-2 hover:text-[#29aafe] transition">
-                <FaArrowRight className=" text-[#7BAADA] md:text-[16px] text-sm" />
+              <li key={dev} className="flex items-center gap-2 hover:text-[#7BAADA] hover:translate-x-0.5 duration-300">
+                <FaArrowRight className="text-[#7BAADA] md:text-[16px] text-sm" />
                 <a href="/all-services">{dev}</a>
               </li>
             ))}
