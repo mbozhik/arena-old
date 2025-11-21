@@ -49,7 +49,7 @@ const MobileNav = ({uid}) => {
     }
   }, [nav])
   return (
-    <div className={`lg:flex ${!scrolling && pathname === '/' ? 'navber2' : 'navber2'} lg:px-10 md:px-5 relative font-bold uppercase`}>
+    <div className={`lg:flex ${!scrolling && pathname === '/' ? 'navber2' : 'navber2'} lg:px-0 md:px-5 relative font-bold uppercase`}>
       <div className="container flex justify-between mx-auto font-bold">
         {/* Hamburger Menu - now shows on md and below */}
 

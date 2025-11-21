@@ -15,9 +15,9 @@ const page = async () => {
   return (
     <div className="px-3 md:px-12">
       <div className="mt-5 mx-auto shadow-[0px_0px_5px_0px_rgba(0,0,0,0.3)] my-10 rounded-2xl relative overflow-hidden">
-        <div className="flex 2xl:h-[640px] xl:h-[90vh] lg:h-[50vh] overflow-clip gap-2 relative flex-col xl:flex-row">
+        <div className="flex h-auto xl:h-[90vh] 2xl:h-[640px] overflow-clip gap-2 relative flex-col xl:flex-row">
           <div className="relative w-full xl:w-[50%]">
-            <div className="px-5 py-6 text-white bg-gradient-to-bl from-[#7d58a5] to-[#56b5e3] rounded-s-2xl text-center h-full">
+            <div className="px-5 py-6 text-white bg-gradient-to-bl from-[#7d58a5] to-[#56b5e3] rounded-2xl md:rounded-s-2xl text-center h-full">
               {/* Admission Info */}
               <h1 className="text-2xl font-semibold text-[#FFD321] uppercase mt-2">Admission 2025</h1>
               <hr className="mx-10 my-3 border-black/10" />
@@ -56,7 +56,7 @@ const page = async () => {
                 </li>
               </ul>
 
-              <div className="w-full xl:w-[45%] mx-auto h-[200px] mt-4">
+              <div className="w-full mx-auto h-[30vh] lg:h-[35vh] xl:w-full xl:h-[205px] mt-4">
                 <img src="/Cy.png" className="w-full h-full" alt="image" />
               </div>
             </div>

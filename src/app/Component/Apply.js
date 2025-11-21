@@ -176,7 +176,7 @@ const Apply = (e) => {
   }
 
   return (
-    <div className="lg:w-[70%] shadow-sm applyCardPadding relative">
+    <div className="relative shadow-sm applyCardPadding">
       <Dialog open={open} handler={handleOpen} size="md">
         {sucess && <Confetti width={750} height={350} />}
         <div className="px-5 py-10 text-center">
@@ -208,7 +208,7 @@ const Apply = (e) => {
       </Dialog>
 
       <form onSubmit={(e) => RegistationSucess(e)} className="relative shadow-sm">
-        <h1 className="md:text-2xl text-[20px] font-medium py-3 mt-4 text-center  applicationTitle text-white">Student Application Form</h1>
+        <h1 className="md:text-2xl text-[20px] font-medium py-3 mt-4 text-center rounded-xl applicationTitle text-white">Student Application Form</h1>
         <div className="flex">
           {/* <input type="checkbox" onChange={() => setCopy(!copy)} /> */}
           <p className="font-poppins text-[18px] md:text-2xl font-medium text-[#7BAADA] mt-5">Registration Details :</p>

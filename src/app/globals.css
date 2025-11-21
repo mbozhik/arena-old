@@ -224,14 +224,19 @@ body {
   }
 }
 
-/* Application scroll ber */
 .applyCardPadding {
   padding: 0px 20px 10px 20px;
-  background: #ffffff;
-  border-radius: 2px !important;
   height: 100%;
-  overflow-y: scroll;
+  border-radius: 1rem !important;
+  background: #ffffff;
   position: relative;
+}
+
+/* Application scroll ber */
+@media (min-width: 1140px) {
+  .applyCardPadding {
+    overflow-y: scroll;
+  }
 }
 
 .applyCardPadding::-webkit-scrollbar {
