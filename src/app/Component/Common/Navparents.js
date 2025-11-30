@@ -16,7 +16,8 @@ const Navparents = ({data, uid}) => {
       <Marque data={data} />
       <div className="px-4 py-2 mx-auto ">
         <div className="grid grid-cols-1 gap-2 mt-2 mb-2 lg:grid-cols-3">
-          <div className="flex items-center justify-center w-full col-span-1 px-4 md:col-start-2 md:col-span-1 lg:col-span-2">
+          <div></div>
+          <div className="flex items-center justify-center w-full col-span-1 px-4 md:col-start-2 md:col-span-1 lg:col-span-1">
             <Link href="/" className="flex items-center gap-4">
               <img
                 className="mx-auto w-52"
@@ -33,7 +34,7 @@ const Navparents = ({data, uid}) => {
               />
             </Link>
           </div>
-          <div className="flex items-center justify-center w-full col-span-1 lg:justify-end md:pr-20">
+          <div className="flex items-center justify-center w-full col-span-1 lg:justify-end xl:pr-20">
             <a
               target="_blank"
               href="https://www.facebook.com/ArenaBangladesh/"

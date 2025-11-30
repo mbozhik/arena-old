@@ -10,6 +10,7 @@ export const metadata = {
   title: 'Ethical Hacking & Advanced Python Course Combo Offer!',
   description: 'Level up your skills in Python and Ethical Hacking! Our expert-led courses empower you to excel in IT security. Enroll now for a brighter future!',
 }
+
 const page = async () => {
   const data = await NavberData()
   return (
@@ -56,8 +57,8 @@ const page = async () => {
                 </li>
               </ul>
 
-              <div className="w-full mx-auto h-[30vh] lg:h-[35vh] xl:w-full xl:h-[205px] mt-4">
-                <img src="/Cy.png" className="w-full h-full" alt="image" />
+              <div className="max-w-[400px] max-h-[250px] mx-auto xl:px-4 mt-4">
+                <img src="/Cy.png" className="w-[350px] max-h-[200px]" alt="image" />
               </div>
             </div>
           </div>
